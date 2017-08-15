@@ -4,9 +4,61 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-08-11T09:09:30Z</updated>
+    <updated>2017-08-15T10:08:57Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>Microsoft Imagine의 Azure 혜택 </title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/microsoft-imaginei-azure-ii.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.329</id>
+
+    <published>2017-08-15T10:08:57Z</published>
+    <updated>2017-08-15T10:08:57Z</updated>
+
+    <summary><![CDATA[ Microsoft Imagine (구 DreamSpark) 가입 후, 상단 메뉴 Resources -&gt; Subscriptions -&gt; Visual Studio (MSDN) subscriptions 으로 이동. visualstudio.com 에서 아래 혜택 확인. $25 monthly Azure credit for 12 monthsOn-demand access to Xamarin University3-month subscription to PluralsightPeriodic email communications...]]></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[
+<div>
+
+<div>
+
+
+<div>Microsoft Imagine (구 DreamSpark) 가입 후, <br />
+
+</div>
+
+
+
+<div>상단 메뉴 Resources -&gt; Subscriptions -&gt; Visual Studio (MSDN) subscriptions 으로 이동. visualstudio.com 에서 아래 혜택 확인.<br />
+
+</div>
+
+<ul><li>$25 monthly Azure credit for 12 months</li><li>On-demand access to Xamarin University</li><li>3-month subscription to Pluralsight</li><li>Periodic email communications with latest trends, news, benefit and product announcements</li></ul>
+
+<div>Featured에서 Azure 항목을 보면, $300/year 가용</div>
+
+
+
+<div><br />
+
+</div>
+
+
+</div>
+
+</div>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>어느 인터넷 은행과 그냥 오래된 은행</title>
@@ -738,28 +790,6 @@ com.ibm.team.repository.migration.internal.service.IllegalVersionException: CRJA
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
 </code></pre>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>xbox360 사진</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/06/xbox360.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.247</id>
-
-    <published>2017-06-25T12:41:57Z</published>
-    <updated>2017-07-09T14:53:45Z</updated>
-
-    <summary></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p><a href="http://blog.youre.space/vergence/uploads/20170625_212139_HDR.jpg"><img alt="20170625_212139_HDR.jpg" src="http://blog.youre.space/vergence/assets_c/2017/06/20170625_212139_HDR-thumb-360xauto-155.jpg" width="360" height="360" class="mt-image-none" style="" /></a><a href="http://blog.youre.space/vergence/uploads/20170625_213512_HDR.jpg"><img alt="20170625_213512_HDR.jpg" src="http://blog.youre.space/vergence/assets_c/2017/06/20170625_213512_HDR-thumb-360xauto-154.jpg" width="360" height="360" class="mt-image-none" style="" /></a><a href="http://blog.youre.space/vergence/uploads/20170625_213445_HDR.jpg"><img alt="20170625_213445_HDR.jpg" src="http://blog.youre.space/vergence/assets_c/2017/06/20170625_213445_HDR-thumb-360xauto-153.jpg" width="360" height="360" class="mt-image-none" style="" /></a><a href="http://blog.youre.space/vergence/uploads/20170625_213412_HDR.jpg"><img alt="20170625_213412_HDR.jpg" src="http://blog.youre.space/vergence/assets_c/2017/06/20170625_213412_HDR-thumb-360xauto-152.jpg" width="360" height="360" class="mt-image-none" style="" /></a></p>
-]]>
         
     </content>
 </entry>
