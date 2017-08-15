@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>yongbin.yu</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/yongbinyu/" />
+    <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/yongbinyu/atom.xml" />
+    <id>tag:weblog.youre.space,2017-07-10:/yongbinyu/9</id>
+    <updated>2017-07-09T14:36:01Z</updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>farmbot</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/yongbinyu/2016/08/farmbot.html" />
+    <id>tag:weblog.youre.space,2016:/yongbinyu//9.63</id>
+
+    <published>2016-08-01T05:52:40Z</published>
+    <updated>2017-07-09T14:36:01Z</updated>
+
+    <summary> 7월까지 $2900 한화 330만원 가든, 로프탑, 인도어등에서 사용가능 자석 소켓 구조로 해드를 교체가능함 기본 소켓 - 관수, 토양센서, Seeding, 잡초제거 소켓 전기, 가스, 물 노즐이 있기떄문에 필요에 따라 소켓 자작이 가능함 라즈베리 파이 컴퓨터, 아두이노 MEGA 마이크로 컨트롤러, RAMPS...</summary>
+    <author>
+        <name>yongbin.yu</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/yongbinyu/">
+        <![CDATA[<ul>
+<li>7월까지 $2900 한화 330만원</li>
+<li>가든, 로프탑, 인도어등에서 사용가능</li>
+<li>자석 소켓 구조로 해드를 교체가능함</li>
+<li>기본 소켓 - 관수, 토양센서, Seeding, 잡초제거 소켓</li>
+<li>전기, 가스, 물 노즐이 있기떄문에 필요에 따라 소켓 자작이 가능함</li>
+<li>라즈베리 파이 컴퓨터, 아두이노 MEGA 마이크로 컨트롤러, RAMPS shield</li>
+<li>영상인식을 통한 잡초제거</li>
+<li>웹기반 소프트웨어를 기반으로한 장비 제어</li>
+<li>무엇보다 오픈하드웨어 / 오픈소스 소프트웨어로 장비 설계도면 및 기반 소프트웨어가 공개</li>
+<li>홈페이지에 좀더 자세한 설명의 풀버전 영상이 있음</li>
+</ul>
+
+<p><a href="https://farmbot-genesis.readme.io/">https://farmbot-genesis.readme.io/</a></p>
+
+<p>영상도 멋있지만, 상세하게 정리되고 계속 업데이트 되는듯한 문서가 인상적.</p>
+]]>
+        
+    </content>
+</entry>
+
+</feed>

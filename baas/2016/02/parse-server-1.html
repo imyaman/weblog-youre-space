@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="https://parse.com/docs/server/guide#migrating 가이드를 보면, 1차로 DB를 변경하고, 2차로 서버를 변경하라고 합니다. 덕분에 MongoDB를 설치하게 되었습니다. Cassandra는 쓰고 있지만, MongoDB는 처음입니다. Debian에 패키지로 2.4 버전을 설치하고 Parse Console에 DB 주소를 입력했습니다. 오류가 표시되네요. 2.6이나 3.0을 설치해야겠습니다. Mongo version 2.4.10 unsupported. 2.6.X and...">
+    <meta name="generator" content="Movable Type 6.3.5">
+    <title>Parse Server 이용 1 - BaaS와 PaaS 차이</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://weblog.youre.space/baas/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://weblog.youre.space/baas/styles_ie.css">
+    <script src="http://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="http://weblog.youre.space/baas/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/baas/atom.xml" />
+    <link rel="canonical" href="http://weblog.youre.space/baas/2016/02/parse-server-1.html" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <link rel="prev" href="http://weblog.youre.space/baas/2015/08/paas-baas.html" title="PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)">
+    <link rel="next" href="http://weblog.youre.space/baas/2016/02/parse-server-mongodb-migration.html" title="Parse Server 이용 2 (DB migration)">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="Parse Server 이용 1">
+    <meta property="og:url" content="http://weblog.youre.space/baas/2016/02/parse-server-1.html">
+    <meta property="og:description" content="https://parse.com/docs/server/guide#migrating 가이드를 보면, 1차로 DB를 변경하고, 2차로 서버를 변경하라고 합니다. 덕분에 MongoDB를 설치하게 되었습니다. Cassandra는 쓰고 있지만, MongoDB는 처음입니다. Debian에 패키지로 2.4 버전을 설치하고 Parse Console에 DB 주소를 입력했습니다. 오류가 표시되네요. 2.6이나 3.0을 설치해야겠습니다. Mongo version 2.4.10 unsupported. 2.6.X and...">
+    <meta property="og:site_name" content="BaaS와 PaaS 차이">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    <!-- Metadata -->
+    <meta itemprop="description" content="https://parse.com/docs/server/guide#migrating 가이드를 보면, 1차로 DB를 변경하고, 2차로 서버를 변경하라고 합니다. 덕분에 MongoDB를 설치하게 되었습니다. Cassandra는 쓰고 있지만, MongoDB는 처음입니다. Debian에 패키지로 2.4 버전을 설치하고 Parse Console에 DB 주소를 입력했습니다. 오류가 표시되네요. 2.6이나 3.0을 설치해야겠습니다. Mongo version 2.4.10 unsupported. 2.6.X and...">
+    <link itemprop="url" href="http://weblog.youre.space/baas/2016/02/parse-server-1.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="http://weblog.youre.space/baas/">
+
+                  BaaS와 PaaS 차이
+
+                </a>
+              </h1>
+              
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/baas/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/baas/">Home</a></li>
+              <li class="breadcrumb-list-item">Parse Server 이용 1</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-21" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">Parse Server 이용 1</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2016-02-08T22:31:55+09:00" itemprop="datePublished">February  8, 2016</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard">Sangyong Gwak</span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p><a href="https://parse.com/docs/server/guide#migrating">https://parse.com/docs/server/guide#migrating</a> 가이드를 보면, 1차로 DB를 변경하고, 2차로 서버를 변경하라고 합니다.</p>
+
+<p>덕분에 MongoDB를 설치하게 되었습니다. Cassandra는 쓰고 있지만, MongoDB는 처음입니다. Debian에 패키지로 2.4 버전을 설치하고 Parse Console에 DB 주소를 입력했습니다. 오류가 표시되네요.
+2.6이나 3.0을 설치해야겠습니다.</p>
+
+<p><code>Mongo version 2.4.10 unsupported. 2.6.X and 3.0.X only</code></p>
+
+<p>오늘의 취미생활.</p>
+
+<p><img alt="Parse migrate MongoDB 2.4 unsupported.png" src="http://cal.youre.space/BaaS/Parse%20migrate%20MongoDB%202.4%20unsupported.png" width="480" class="mt-image-none" style="" /></p>
+
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/baas/2015/08/paas-baas.html" title="PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)">Previous entry</a></li>
+
+
+                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/baas/2016/02/parse-server-mongodb-migration.html" title="Parse Server 이용 2 (DB migration)">Next entry</a></li>
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/21</p>
+  
+  
+</aside>
+
+
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="3">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="http://weblog.youre.space/baas/2017/02/">February 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2017/01/">January 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2016/06/">June 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2016/03/">March 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2016/02/">February 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2015/08/">August 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2014/11/">November 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2014/10/">October 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2014/03/">March 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2014/02/">February 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2014/01/">January 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2013/11/">November 2013</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2013/07/">July 2013</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/baas/2013/02/">February 2013</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="http://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://weblog.youre.space/baas/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/baas/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2017.</p>
+  <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
+</div>
+
+<!-- ad starts -->
+<center>
+<script type="text/javascript">
+clicksor_enable_adhere = false;
+clicksor_enable_inter = false;
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+clicksor_enable_text_link = false;
+clicksor_banner_image_banner = true;
+clicksor_banner_text_banner = true;
+clicksor_layer_banner = false;
+clicksor_mobile_redirect = false;
+clicksor_default_url = '';
+clicksor_banner_border = '#000808';
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#080800';
+clicksor_banner_text_color = '#666666';
+</script>
+<script type="text/javascript" src="http://b.yu0123456.com/show.php?nid=1&amp;pid=330835&amp;adtype=7&amp;sid=588821"></script>
+<center>
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"cal.youre.space"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</center>
+<a href="//go.ad2up.com/afu.php?id=464574"><div style="width: 100%; height: 50px; background-color: green; text-align: center;">
+<h2>세상에서 제일 좋은 집은?</h2>
+</div></a>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<!-- ad ends -->
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="http://weblog.youre.space/baas/mt-theme-scale2.js"></script>
+  </body>
+</html>

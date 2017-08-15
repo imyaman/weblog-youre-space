@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>imyaman</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/" />
+    <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/imyaman/atom.xml" />
+    <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
+    <updated>2017-07-26T06:26:17Z</updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>adlib 광고 JavaScript SDK</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/07/adlib-javascript-sdk.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.322</id>
+
+    <published>2017-07-26T06:25:53Z</published>
+    <updated>2017-07-26T06:26:17Z</updated>
+
+    <summary><![CDATA[adlib API Key : 597830bc0cf2d81d1ff251a2 #띠배너 스크립트 #1 // 모바일웹이 아닌 PC에서 사용하는 경우 광고 노출이 제한적일 수 있습니다.// PC에서 사용중인경우, UserAgent 를 모바일 환경으로 변경해주세요.// 아래 스크립트를 운영중인 사이트에 삽입해주세요. // 광고뷰 로드 스크립트 &lt;div id="banner_adlibr"&gt;&lt;/div&gt;// 사용할 각 플랫폼의...]]></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>adlib API Key : 597830bc0cf2d81d1ff251a2</p>
+<p><br />#띠배너 스크립트 #1</p>
+<p>// 모바일웹이 아닌 PC에서 사용하는 경우 광고 노출이 제한적일 수 있습니다.<br />// PC에서 사용중인경우, UserAgent 를 모바일 환경으로 변경해주세요.<br />// 아래 스크립트를 운영중인 사이트에 삽입해주세요. // 광고뷰 로드 스크립트 <br />&lt;div id="banner_adlibr"&gt;&lt;/div&gt;<br />// 사용할 각 플랫폼의 site id 를 입력해주세요.<br />&lt;script&gt;<br />var adlib_vars = {<br /> inmobi : "inmobi site id",<br /> naver : "naver site id",<br /> adam : "adam site id",<br /> cauly : "cauly site id",<br /> tad : "tad site id",<br /> google_ad_client : "google adsense client id",<br /> google_ad_slot : "google adsense ad slot", <br /> mezzo_media : "mezzo_media",<br /> mezzo_section : "mezzo_section", <br /> mezzo_banner : "mezzo_banner",<br /> uplus_ios : "uplus_ios_id",<br /> uplus_android : "uplus_android_id",<br /> AD_ALIGN: "center" // 필요에 의해 정렬 위치를 변경할 수 있습니다. ex) center, left, right<br />};<br />&lt;/script&gt;<br />&lt;script src="http://ad.adlibr.com/smartad/mweb/load2.jsp?id=597830bc0cf2d81d1ff251a2&amp;render=banner_adlibr&amp;info=adlib_vars"&gt;&lt;/script&gt;</p>
+<p></p>
+<p># 오버레이형 띠배너 스크립트 #2<br />// 아래 스크립트를 운영중인 사이트에 삽입해주세요. // 광고뷰를 하단 고정하는 경우 스크립트 (2)<br />&lt;div id="banner_adlibr"&gt;&lt;/div&gt;<br />// 사용할 각 플랫폼의 site id 를 입력해주세요.<br />&lt;script&gt;<br />var adlib_vars = {<br /> inmobi : "inmobi site id",<br /> naver : "naver site id",<br /> adam : "adam site id",<br /> cauly : "cauly site id",<br /> tad : "tad site id", <br /> google_ad_client : "google adsense client id",<br /> google_ad_slot : "google adsense ad slot", <br /> mezzo_media : "mezzo_media",<br /> mezzo_section : "mezzo_section", <br /> mezzo_banner : "mezzo_banner",<br /> uplus_ios : "uplus_ios_id",<br /> uplus_android : "uplus_android_id", <br /> AD_ALIGN: "center" // 필요에 의해 정렬 위치를 변경할 수 있습니다. ex) center, left, right<br />};<br />&lt;/script&gt;<br />&lt;script src="http://ad.adlibr.com/smartad/mweb/load2.jsp?id=597830bc0cf2d81d1ff251a2&amp;render=banner_adlibr&amp;info=adlib_vars&amp;fixed=bottom"&gt;&lt;/script&gt;</p>
+<p><br /># 전면배너 스크립트</p>
+<p>// 아래 스크립트를 운영중인 사이트에 삽입해주세요. // 본문을 덮는 오버레이형 전면배너<br />&lt;script src="http://ad.adlibr.com/smartad/mweb/inters/load2.jsp?id=597830bc0cf2d81d1ff251a2"&gt;&lt;/script&gt;</p>
+<p></p>
+<p># POP배너 스크립트<br />&lt;script&gt;<br />var adlib_pop_vars = {<br />AD_ALIGN:"BOTTOM_RIGHT", // TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT<br />paddingX:50,<br />paddingY:50,<br />closeBtnImg:"http://cdn1.theinertia.com/wp-content/themes/theinertia/images/close_button.png",<br />closeBtnSize:40,<br />closeBtnX:30, // X 버튼 위치조정<br />closeBtnY:-30, // X 버튼 위치조정<br />autohide:0, // 설정한 sec 이후에 자동 사라짐. // 0이면 사용안함<br />};<br />&lt;/script&gt;<br />&lt;script src="http://ad.adlibr.com/smartad/mweb/pop/load2.jsp?id=597830bc0cf2d81d1ff251a2&amp;info=adlib_pop_vars"&gt;&lt;/script&gt;</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Apteligent Acquisition Announcement</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/05/apteligent-acquisition-announcement.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.288</id>
+
+    <published>2017-05-15T23:21:48Z</published>
+    <updated>2017-07-10T03:08:35Z</updated>
+
+    <summary> #AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;} .aolReplacedBody #aolmail_outlook a{ padding: 0; } .aolReplacedBody { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; font-weight: 400; margin: 0; padding: 0; } .aolReplacedBody .aolmail_ReadMsgBody{ width: 100%; } .aolReplacedBody .aolmail_ExternalClass{ width: 100%; } .aolReplacedBody img { border: 0; max-width: 100%;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p></p>
+
+<p><br />
+<div><br />
+#AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;}   .aolReplacedBody #aolmail_outlook a{    padding: 0;  }  .aolReplacedBody  {    -webkit-text-size-adjust: none;    -ms-text-size-adjust: none;    font-weight: 400;    margin: 0;    padding: 0;  }  .aolReplacedBody .aolmail_ReadMsgBody{    width: 100%;  }  .aolReplacedBody .aolmail_ExternalClass{    width: 100%;  }  .aolReplacedBody img {    border: 0;    max-width: 100%;    height: auto;    outline: none;    display: inline-block;    margin: 0;    padding: 0;    text-decoration: none;    line-height: 100%;  }  .aolReplacedBody #aolmail_backgroundTable{    height: 100% !important;    margin: 0;    padding: 0;    width: 100% !important;  }#AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;}     .aolReplacedBody .aolmail_main {    font-family: Helvetica, Arial, sans-serif;    letter-spacing: 0;  }  .aolReplacedBody .aolmail_main .aolmail_main-td {    padding: 40px 60px;    border: 1px solid #dddddd;    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);    border-radius: 2px;  }  .aolReplacedBody table {    border-spacing: 0;    border-collapse: separate;      }  .aolReplacedBody td {    font-size: 16px;    padding: 0;    font-family: Helvetica, Arial, sans-serif;  }  .aolReplacedBody a {    border: none;    outline: none !important;  }    .aolReplacedBody .aolmail_header td img {    padding: 15px 0 30px;    text-align: left;  }  .aolReplacedBody .aolmail_header .aolmail_logo {    text-align: left;  }    .aolReplacedBody .aolmail_content-td {    font-size: 15px;    line-height: 22px;    padding: 0;    color: #525252;  }  .aolReplacedBody .aolmail_content-td > :first-child {    margin-top: 0;  }  .aolReplacedBody .aolmail_content-td h1 {    font-size: 26px;    line-height: 33px;    color: #282F33;    margin-bottom: 7px;    margin-top: 30px;    font-weight: normal;  }  .aolReplacedBody .aolmail_content-td h2 {    font-size: 18px;    font-weight: bold;    color: #282F33;    margin-top: 30px;    margin-bottom: 7px;  }  .aolReplacedBody .aolmail_content-td h1 + h2 {    margin-top: 0px !important;  }  .aolReplacedBody .aolmail_content-td h2 + h1 {    margin-top: 0px !important;  }  .aolReplacedBody .aolmail_content-td h3 ,.aolReplacedBody   .aolmail_content-td h4 ,.aolReplacedBody   .aolmail_content-td h5 {    font-size: 16px;    font-weight: bold;    margin-bottom: 5px;  }  .aolReplacedBody .aolmail_content-td p {    margin: 0 0 17px 0;    line-height: 1.5;  }  .aolReplacedBody .aolmail_content-td p img,.aolReplacedBody   .aolmail_content-td h1 img,.aolReplacedBody   .aolmail_content-td h2 img,.aolReplacedBody   .aolmail_content-td li img,.aolReplacedBody   .aolmail_content-td .aolmail_intercom-h2b-button img {    margin: 0;    padding: 0;  }  .aolReplacedBody .aolmail_content-td p.aolmail_intro {    font-size: 20px;    line-height: 30px;  }  .aolReplacedBody .aolmail_content-td blockquote {    margin: 40px 0;    font-style: italic;    color: #8C8C8C;    font-size: 18px;    text-align: center;    padding: 0 30px;    font-family: Georgia, sans-serif;    quotes: none;  }  .aolReplacedBody .aolmail_content-td blockquote a {    color: #8C8C8C;  }  .aolReplacedBody .aolmail_content-td ul {    list-style: disc;    margin: 0 0 20px 40px;    padding: 0;  }  .aolReplacedBody .aolmail_content-td ol {    list-style: decimal;    margin: 0 0 20px 40px;    padding: 0;  }  .aolReplacedBody .aolmail_content-td img {    max-width: 100%;    margin: 17px 0;  }  .aolReplacedBody .aolmail_content-td .aolmail_intercom-container {    margin-bottom: 16px;  }  .aolReplacedBody .aolmail_content-td hr {    border: none;    border-top: 1px solid #DDD;    margin: 50px 30% 50px 30%;  }  .aolReplacedBody .aolmail_content-td table {    border-collapse: collapse;    border-spacing: 0;    margin-bottom: 20px;  }  .aolReplacedBody .aolmail_content-td td,.aolReplacedBody   .aolmail_content-td th {    padding: 5px 7px;    border: 1px solid #DADADA;    text-align: left;    vertical-align: top;  }  .aolReplacedBody .aolmail_content-td th {    font-weight: bold;    background: #F6F6F6;  }  .aolReplacedBody .aolmail_content-td a {    color: #1251BA;  }  .aolReplacedBody .aolmail_content td.aolmail_content-td table.aolmail_intercom-container {    margin: 17px 0;  }  .aolReplacedBody .aolmail_content td.aolmail_content-td table.aolmail_intercom-container.aolmail_intercom-align-center {    margin-left: auto;    margin-right: auto;  }  .aolReplacedBody .aolmail_content td.aolmail_content-td table.aolmail_intercom-container td {    background-color: #30435a;    padding: 12px 35px;    border-radius: 3px;    font-family: Helvetica, Arial, sans-serif;    margin: 0;    border: none;  }  .aolReplacedBody .aolmail_content td.aolmail_content-td table.aolmail_intercom-container .aolmail_intercom-h2b-button {    display: inline-block;    color: white;    font-weight: bold;    font-size: 14px;    text-decoration: none;    background-color: #30435a;    border: none !important;    border-radius: 3px;  }  .aolReplacedBody .aolmail_footer-td {    text-align: center;    padding: 21px 30px 15px;  }  .aolReplacedBody .aolmail_footer-td p ,.aolReplacedBody   .aolmail_footer-td a {    font-size: 12px;    color: #b7b7b7;    text-decoration: none;    font-weight: 300;  }  .aolReplacedBody .aolmail_footer-td p {    margin: 0 0 6px 0;  }  .aolReplacedBody .aolmail_footer-td p.aolmail_address {    margin-top: 9px;    line-height: 1.5em;  }  .aolReplacedBody .aolmail_footer-td p.aolmail_powered-by {    margin-top: 18px;  }  .aolReplacedBody .aolmail_footer-td p.aolmail_unsub {    margin: 0;  }  .aolReplacedBody .aolmail_footer .aolmail_unsub a {    text-decoration: underline;    display: block;    margin: 12px 0 0;  }  .aolReplacedBody p.aolmail_unsub a {    text-decoration: underline;  }  .aolReplacedBody .aolmail_footer-td p.aolmail_powered-by a {    font-weight: bold;  }  .aolReplacedBody .aolmail_footer-td textarea {    text-decoration: none;    font-size: 12px;    color: #b7b7b7;    font-family: Helvetica, Arial, sans-serif;    padding: 9px 0;    font-weight: 300;    line-height: normal;  }  .aolReplacedBody a.aolmail_intercom-h2b-button {    background-color: #30435a;    font-size: 14px;    color: #FFF;    font-weight: bold;    border-radius: 3px;    display: inline-block;    text-decoration: none;      }#AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;}   @media screen and (max-width: 595px) {    .aolReplacedBody   {      padding: 10px !important;    }    .aolReplacedBody .aolmail_main {      width: 100% !important;    }    .aolReplacedBody .aolmail_main .aolmail_main-td {      padding: 20px !important;    }    .aolReplacedBody .aolmail_header td {      text-align: center;    }  }  .aolReplacedBody .aolmail_content-td blockquote + * {    margin-top: 20px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h1 {    padding: 20px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h2 {    padding: 0 0 5px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td p {    padding: 10px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td .aolmail_intercom-container {    padding: 5px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td hr + * {    padding-top: 30px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ol ,.aolReplacedBody   .aolmail_ExternalClass .aolmail_content-td ul {    padding: 0 0 20px 40px !important;    margin: 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ol li,.aolReplacedBody   .aolmail_ExternalClass .aolmail_content-td ul li {    padding: 3px 0 !important;    margin: 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass table .aolmail_footer-td p {    padding: 0 0 6px 0 !important;    margin: 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass table .aolmail_footer-td p.aolmail_powered-by ,.aolReplacedBody   .aolmail_ExternalClass table .aolmail_footer-td p.aolmail_unsub {    padding-top: 15px;  }#AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;}   .aolReplacedBody .aolmail_intercom-align-right {  text-align: right !important;}.aolReplacedBody .aolmail_intercom-align-center {  text-align: center !important;}.aolReplacedBody .aolmail_intercom-align-left {  text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-right{  text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left{  text-align: right !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left {  text-align:right !important;}.aolReplacedBody .aolmail_right-to-left li {  text-align:right !important;  direction: rtl;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left img,.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left .aolmail_intercom-h2b-button {  margin-left: 0 !important;}.aolReplacedBody .aolmail_intercom-attachment,.aolReplacedBody .aolmail_intercom-attachments,.aolReplacedBody .aolmail_intercom-attachments td,.aolReplacedBody .aolmail_intercom-attachments th,.aolReplacedBody .aolmail_intercom-attachments tr,.aolReplacedBody .aolmail_intercom-attachments tbody,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img {  border: none !important;  box-shadow: none !important;  padding: 0 !important;  margin: 0 !important;}.aolReplacedBody .aolmail_intercom-attachments {  margin: 10px 0 !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img {  width: 16px !important;  height: 16px !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon {  padding-right: 5px !important;}.aolReplacedBody .aolmail_intercom-attachment {  display: inline-block !important;  margin-bottom: 5px !important;}.aolReplacedBody .aolmail_intercom-interblocks-content-card {  width: 334px !important;  max-height: 136px !important;  max-width: 100% !important;  overflow: hidden !important;  border-radius: 20px !important;  font-size: 16px !important;  border: 1px solid #e0e0e0 !important;}.aolReplacedBody .aolmail_intercom-interblocks-link,.aolReplacedBody .aolmail_intercom-interblocks-article-card {  text-decoration: none !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-icon {  width: 22.5% !important;  height: 136px !important;  float: left !important;  background-color: #fafafa !important;  background-image: url('https://static.intercom-mail.com/assets/article_book-1a595be287f73c0d02f548f513bfc831.png') !important;  background-repeat: no-repeat !important;  background-size: 32px !important;  background-position: center !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-text {  width: 77.5% !important;  float: right !important;  background-color: #fff !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-title,.aolReplacedBody .aolmail_intercom-interblocks-article-title {  color: #519dd4 !important;  font-size: 15px !important;  margin: 16px 18px 12px !important;  line-height: 1.3em !important;  overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-body {  margin: 0 18px 12px !important;  font-size: 14px !important;  color: #65757c !important;  line-height: 1.3em !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author,.aolReplacedBody .aolmail_intercom-interblocks-article-author {  margin: 10px 15px !important;  height: 24px !important;  line-height: normal !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar {  width: 16px !important;  height: 16px !important;  display: inline-block !important;  vertical-align: middle !important;  float: left;  margin-right: 5px;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar-image,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar-image {  width: 16px !important;  height: 16px !important;  border-radius: 50% !important;  margin: 0 !important;  vertical-align: top !important;  font-size: 12px !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-name,.aolReplacedBody .aolmail_intercom-interblocks-article-author-name {  color: #74848b !important;  margin: 0 0 0 5px !important;  font-size: 12px !important;  font-weight: 500 !important;  overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-written-by {  color: #8897a4 !important;  margin: 1px 0 0 5px !important;  font-size: 12px !important;  overflow: hidden !important;  vertical-align: middle !important;  float: left !important;}<div></div></div></p>
+
+<p>  <table><br />
+    <tr><br />
+      <td></td></tr></table></p>
+
+<p>        <br />
+        <br />
+  <table><br />
+    <tr><br />
+      <td><br />
+        <br />
+          <img width="165" height="70" src="https://uploads.intercom-mail-400.com/i/o/24302323/35afbdd815384f874e1ba10d/File1494879713466"><br />
+        <br />
+      </td><br />
+    </tr><br />
+  </table></p>
+
+<p><br />
+        <br />
+        <table><br />
+          <tr><br />
+            <td><br />
+            <br />
+              <p>Hi Sangyong,</p><br />
+<p>I’m happy to announce that we have reached an agreement to be acquired by VMware.</p><br />
+<p>Six years ago, we started with a simple premise -- mobile teams need better tools to understand and diagnose user experience. Over time, our capabilities expanded into the best-in-class mobile app performance monitoring platform. We took our Crash Reporting and Network Insights and applied them to user behavior. Our User Flows allow teams to analyze <i>why</i> behavior changes and negatively impacts user experience.</p><br />
+<p>After our name change from Crittercism to Apteligent, we doubled down on the enterprise, ensuring we met the needs of mission critical and revenue critical mobile teams across all industries. Those enterprises deploying employee and consumer facing applications face an extremely complicated set of hardware, software, and connectivity challenges. Most of all, as their business becomes reliant on mobile technologies, they need visibility into how app performance impacts key business metrics.</p><br />
+<p>Apteligent further reinforces VMware’s commitment to deliver the technical innovations necessary to enable the next generation Digital Workspace with analytics driven user experience, intelligence-based decision automation, and highly scalable mobile-first cross-cloud enterprise solutions.</p><br />
+<p>Apteligent’s capabilities are uniquely positioned to solve these challenges. Our data unifies silos across IT, marketing, and line of business. We have the capability to model and predict how app performance impacts revenue, churn, and engagement. Apteligent’s focus on data insights and actionable, intelligent recommendations accelerates digital transformation for the enterprise.</p><br />
+<p>On a personal note, this would not have been possible without our amazing team. I’d like to take some time to recognize this group of individuals that push the boundaries of big data and enterprise mobility. Thank you for being so dedicated to each other, our product, and our customers. I’d also like to thank our hundreds of enterprise customers. We will not only support you going forward, but have big plans to expand the platform in the future.</p><br />
+<p>VMware is a long-time investor and partner of Apteligent and we’ve been thoroughly impressed with the AirWatch and End User Computing teams. We’re excited to continue the journey with them, and we’re looking forward to revealing the details of our integration soon.</p><br />
+<p>For more information, see <a rel="noopener noreferrer" href="https://via.intercom-mail-400.com/e?ob=nDdqk8vLRXsONAwzwDo4VBKn53wOUiCDEkyMU4MBnKH%2BEpkuIXpBx2OzQ%2BGaS8s5x%2F30N6KDMcsZGQLorqHraPPmlXOQ%2F1pW6rNMRcbK6QM98bQFhckq9ylHBLkdusiGL8Qhib%2BBVT8ktAica3ybog%3D%3D&h=7c0e264943fda16b2f88035b68bdbd2c063739f6-9788788608">this blog post</a> from VMware’s Sumit Dhawan, Senior VP and GM,  End-User Computing, as well as <a rel="noopener noreferrer" href="https://via.intercom-mail-400.com/e?ob=X%2Fvfy9eR2TrCxBXGWgvS1qoMU%2B%2BElusYV8n5%2FPmxaHb6iw6%2ByhjtT8hQ3lPRYuA8EnBteWYo9x9xl%2FV5f9QrCQ%3D%3D&h=14e1d5dc90037c9f66a1cdd99836e7313a82cb56-9788788608">this blog post</a> from Shekar Ayyar, VMWare’s Executive VP,  Strategy and Corporate Development.</p><br />
+<p>Take care,<br />
+Andrew Levy & Robert Kwok<br />
+Co-Founders, Apteligent</p><br />
+            <br />
+            </td><br />
+          </tr><br />
+        </table></p>
+
+<p>      <br />
+    <br />
+  </p>
+
+<p>  <br />
+  <table><br />
+    <tr><br />
+      <td><br />
+        <table><br />
+          <tr><br />
+            <td><br />
+              <br />
+  <p>© 2015 Crittercism, Inc   |   760 Market Street, Suite 1100 San Francisco CA</p></td></tr></table></td></tr></table></p>
+
+<p><br />
+              <br />
+                <br />
+                  <p><a rel="noopener noreferrer" href="https://wg8k5da2.intercom-mail.com/unsubscribe?app_id=wg8k5da2&conversation_id=9788788608&sample=false&user_id=58328983071b4eb0f5d0cf48">Unsubscribe</a></p><br />
+                <br />
+              <br />
+              <br />
+            <br />
+          <br />
+        <br />
+      <br />
+    <br />
+  </p>
+
+<p><img width="1" height="1" alt="intercom" src="https://via.intercom-mail-400.com/o?h=39c29c236e84e9cfa7c65c2efede07ecc8d50f1b-9788788608"></p>
+
+<p><img width="1" height="1" alt="" src="https://spe.via.intercom-mail.com/q/WQoIdrzMtEEduGfCeNuizg~~/AAAAAQA~/RgRa_JpMPkEIAOyJvfMzlQNXCGludGVyY29tWAQAAAWaQgoAA0wVGllRWHMaUhRpbXlhbWFuQG5ldHNjYXBlLm5ldAlRBAAAAABHi3siYmluZGluZyI6IjQwMCIsInVzZXJfaWQiOiI1ODMyODk4MzA3MWI0ZWIwZjVkMGNmNDgiLCJhcHBfaWQiOiJ3ZzhrNWRhMiIsImludGVyY29tX21lc3NhZ2VfaWQiOiIxMDEwNzAwMDEiLCJjb252ZXJzYXRpb25faWQiOiI5Nzg4Nzg4NjA4In0~"></p>
+
+<p></p>
+
+<p><br />
+<br />
+<br />
+</p><br /><br />
+<div>
+#AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;}   .aolReplacedBody #aolmail_outlook a{    padding: 0;  }  .aolReplacedBody  {    -webkit-text-size-adjust: none;    -ms-text-size-adjust: none;    font-weight: 400;    margin: 0;    padding: 0;  }  .aolReplacedBody .aolmail_ReadMsgBody{    width: 100%;  }  .aolReplacedBody .aolmail_ExternalClass{    width: 100%;  }  .aolReplacedBody img {    border: 0;    max-width: 100%;    height: auto;    outline: none;    display: inline-block;    margin: 0;    padding: 0;    text-decoration: none;    line-height: 100%;  }  .aolReplacedBody #aolmail_backgroundTable{    height: 100% !important;    margin: 0;    padding: 0;    width: 100% !important;  }#AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;}     .aolReplacedBody .aolmail_main {    font-family: Helvetica, Arial, sans-serif;    letter-spacing: 0;  }  .aolReplacedBody .aolmail_main .aolmail_main-td {    padding: 40px 60px;    border: 1px solid #dddddd;    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);    border-radius: 2px;  }  .aolReplacedBody table {    border-spacing: 0;    border-collapse: separate;      }  .aolReplacedBody td {    font-size: 16px;    padding: 0;    font-family: Helvetica, Arial, sans-serif;  }  .aolReplacedBody a {    border: none;    outline: none !important;  }    .aolReplacedBody .aolmail_header td img {    padding: 15px 0 30px;    text-align: left;  }  .aolReplacedBody .aolmail_header .aolmail_logo {    text-align: left;  }    .aolReplacedBody .aolmail_content-td {    font-size: 15px;    line-height: 22px;    padding: 0;    color: #525252;  }  .aolReplacedBody .aolmail_content-td &gt; :first-child {    margin-top: 0;  }  .aolReplacedBody .aolmail_content-td h1 {    font-size: 26px;    line-height: 33px;    color: #282F33;    margin-bottom: 7px;    margin-top: 30px;    font-weight: normal;  }  .aolReplacedBody .aolmail_content-td h2 {    font-size: 18px;    font-weight: bold;    color: #282F33;    margin-top: 30px;    margin-bottom: 7px;  }  .aolReplacedBody .aolmail_content-td h1 + h2 {    margin-top: 0px !important;  }  .aolReplacedBody .aolmail_content-td h2 + h1 {    margin-top: 0px !important;  }  .aolReplacedBody .aolmail_content-td h3 ,.aolReplacedBody   .aolmail_content-td h4 ,.aolReplacedBody   .aolmail_content-td h5 {    font-size: 16px;    font-weight: bold;    margin-bottom: 5px;  }  .aolReplacedBody .aolmail_content-td p {    margin: 0 0 17px 0;    line-height: 1.5;  }  .aolReplacedBody .aolmail_content-td p img,.aolReplacedBody   .aolmail_content-td h1 img,.aolReplacedBody   .aolmail_content-td h2 img,.aolReplacedBody   .aolmail_content-td li img,.aolReplacedBody   .aolmail_content-td .aolmail_intercom-h2b-button img {    margin: 0;    padding: 0;  }  .aolReplacedBody .aolmail_content-td p.aolmail_intro {    font-size: 20px;    line-height: 30px;  }  .aolReplacedBody .aolmail_content-td blockquote {    margin: 40px 0;    font-style: italic;    color: #8C8C8C;    font-size: 18px;    text-align: center;    padding: 0 30px;    font-family: Georgia, sans-serif;    quotes: none;  }  .aolReplacedBody .aolmail_content-td blockquote a {    color: #8C8C8C;  }  .aolReplacedBody .aolmail_content-td ul {    list-style: disc;    margin: 0 0 20px 40px;    padding: 0;  }  .aolReplacedBody .aolmail_content-td ol {    list-style: decimal;    margin: 0 0 20px 40px;    padding: 0;  }  .aolReplacedBody .aolmail_content-td img {    max-width: 100%;    margin: 17px 0;  }  .aolReplacedBody .aolmail_content-td .aolmail_intercom-container {    margin-bottom: 16px;  }  .aolReplacedBody .aolmail_content-td hr {    border: none;    border-top: 1px solid #DDD;    margin: 50px 30% 50px 30%;  }  .aolReplacedBody .aolmail_content-td table {    border-collapse: collapse;    border-spacing: 0;    margin-bottom: 20px;  }  .aolReplacedBody .aolmail_content-td td,.aolReplacedBody   .aolmail_content-td th {    padding: 5px 7px;    border: 1px solid #DADADA;    text-align: left;    vertical-align: top;  }  .aolReplacedBody .aolmail_content-td th {    font-weight: bold;    background: #F6F6F6;  }  .aolReplacedBody .aolmail_content-td a {    color: #1251BA;  }  .aolReplacedBody .aolmail_content td.aolmail_content-td table.aolmail_intercom-container {    margin: 17px 0;  }  .aolReplacedBody .aolmail_content td.aolmail_content-td table.aolmail_intercom-container.aolmail_intercom-align-center {    margin-left: auto;    margin-right: auto;  }  .aolReplacedBody .aolmail_content td.aolmail_content-td table.aolmail_intercom-container td {    background-color: #30435a;    padding: 12px 35px;    border-radius: 3px;    font-family: Helvetica, Arial, sans-serif;    margin: 0;    border: none;  }  .aolReplacedBody .aolmail_content td.aolmail_content-td table.aolmail_intercom-container .aolmail_intercom-h2b-button {    display: inline-block;    color: white;    font-weight: bold;    font-size: 14px;    text-decoration: none;    background-color: #30435a;    border: none !important;    border-radius: 3px;  }  .aolReplacedBody .aolmail_footer-td {    text-align: center;    padding: 21px 30px 15px;  }  .aolReplacedBody .aolmail_footer-td p ,.aolReplacedBody   .aolmail_footer-td a {    font-size: 12px;    color: #b7b7b7;    text-decoration: none;    font-weight: 300;  }  .aolReplacedBody .aolmail_footer-td p {    margin: 0 0 6px 0;  }  .aolReplacedBody .aolmail_footer-td p.aolmail_address {    margin-top: 9px;    line-height: 1.5em;  }  .aolReplacedBody .aolmail_footer-td p.aolmail_powered-by {    margin-top: 18px;  }  .aolReplacedBody .aolmail_footer-td p.aolmail_unsub {    margin: 0;  }  .aolReplacedBody .aolmail_footer .aolmail_unsub a {    text-decoration: underline;    display: block;    margin: 12px 0 0;  }  .aolReplacedBody p.aolmail_unsub a {    text-decoration: underline;  }  .aolReplacedBody .aolmail_footer-td p.aolmail_powered-by a {    font-weight: bold;  }  .aolReplacedBody .aolmail_footer-td textarea {    text-decoration: none;    font-size: 12px;    color: #b7b7b7;    font-family: Helvetica, Arial, sans-serif;    padding: 9px 0;    font-weight: 300;    line-height: normal;  }  .aolReplacedBody a.aolmail_intercom-h2b-button {    background-color: #30435a;    font-size: 14px;    color: #FFF;    font-weight: bold;    border-radius: 3px;    display: inline-block;    text-decoration: none;      }#AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;}   @media screen and (max-width: 595px) {    .aolReplacedBody   {      padding: 10px !important;    }    .aolReplacedBody .aolmail_main {      width: 100% !important;    }    .aolReplacedBody .aolmail_main .aolmail_main-td {      padding: 20px !important;    }    .aolReplacedBody .aolmail_header td {      text-align: center;    }  }  .aolReplacedBody .aolmail_content-td blockquote + * {    margin-top: 20px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h1 {    padding: 20px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h2 {    padding: 0 0 5px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td p {    padding: 10px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td .aolmail_intercom-container {    padding: 5px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td hr + * {    padding-top: 30px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ol ,.aolReplacedBody   .aolmail_ExternalClass .aolmail_content-td ul {    padding: 0 0 20px 40px !important;    margin: 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ol li,.aolReplacedBody   .aolmail_ExternalClass .aolmail_content-td ul li {    padding: 3px 0 !important;    margin: 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass table .aolmail_footer-td p {    padding: 0 0 6px 0 !important;    margin: 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass table .aolmail_footer-td p.aolmail_powered-by ,.aolReplacedBody   .aolmail_ExternalClass table .aolmail_footer-td p.aolmail_unsub {    padding-top: 15px;  }#AOLMsgPart_2_cc6c6656-c7d2-4bca-9d62-60b0d0286ff5 td{color: black;}   .aolReplacedBody .aolmail_intercom-align-right {  text-align: right !important;}.aolReplacedBody .aolmail_intercom-align-center {  text-align: center !important;}.aolReplacedBody .aolmail_intercom-align-left {  text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-right{  text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left{  text-align: right !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left {  text-align:right !important;}.aolReplacedBody .aolmail_right-to-left li {  text-align:right !important;  direction: rtl;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left img,.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left .aolmail_intercom-h2b-button {  margin-left: 0 !important;}.aolReplacedBody .aolmail_intercom-attachment,.aolReplacedBody .aolmail_intercom-attachments,.aolReplacedBody .aolmail_intercom-attachments td,.aolReplacedBody .aolmail_intercom-attachments th,.aolReplacedBody .aolmail_intercom-attachments tr,.aolReplacedBody .aolmail_intercom-attachments tbody,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img {  border: none !important;  box-shadow: none !important;  padding: 0 !important;  margin: 0 !important;}.aolReplacedBody .aolmail_intercom-attachments {  margin: 10px 0 !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img {  width: 16px !important;  height: 16px !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon {  padding-right: 5px !important;}.aolReplacedBody .aolmail_intercom-attachment {  display: inline-block !important;  margin-bottom: 5px !important;}.aolReplacedBody .aolmail_intercom-interblocks-content-card {  width: 334px !important;  max-height: 136px !important;  max-width: 100% !important;  overflow: hidden !important;  border-radius: 20px !important;  font-size: 16px !important;  border: 1px solid #e0e0e0 !important;}.aolReplacedBody .aolmail_intercom-interblocks-link,.aolReplacedBody .aolmail_intercom-interblocks-article-card {  text-decoration: none !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-icon {  width: 22.5% !important;  height: 136px !important;  float: left !important;  background-color: #fafafa !important;  background-image: url('https://static.intercom-mail.com/assets/article_book-1a595be287f73c0d02f548f513bfc831.png') !important;  background-repeat: no-repeat !important;  background-size: 32px !important;  background-position: center !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-text {  width: 77.5% !important;  float: right !important;  background-color: #fff !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-title,.aolReplacedBody .aolmail_intercom-interblocks-article-title {  color: #519dd4 !important;  font-size: 15px !important;  margin: 16px 18px 12px !important;  line-height: 1.3em !important;  overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-body {  margin: 0 18px 12px !important;  font-size: 14px !important;  color: #65757c !important;  line-height: 1.3em !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author,.aolReplacedBody .aolmail_intercom-interblocks-article-author {  margin: 10px 15px !important;  height: 24px !important;  line-height: normal !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar {  width: 16px !important;  height: 16px !important;  display: inline-block !important;  vertical-align: middle !important;  float: left;  margin-right: 5px;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar-image,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar-image {  width: 16px !important;  height: 16px !important;  border-radius: 50% !important;  margin: 0 !important;  vertical-align: top !important;  font-size: 12px !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-name,.aolReplacedBody .aolmail_intercom-interblocks-article-author-name {  color: #74848b !important;  margin: 0 0 0 5px !important;  font-size: 12px !important;  font-weight: 500 !important;  overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-written-by {  color: #8897a4 !important;  margin: 1px 0 0 5px !important;  font-size: 12px !important;  overflow: hidden !important;  vertical-align: middle !important;  float: left !important;}<div>
+
+  <table>
+    <tr>
+      <td>
+
+        
+        
+  <table>
+    <tr>
+      <td>
+        
+          <img width="165" height="70" src="https://uploads.intercom-mail-400.com/i/o/24302323/35afbdd815384f874e1ba10d/File1494879713466">
+        
+      </td>
+    </tr>
+  </table>
+
+
+        
+        <table>
+          <tr>
+            <td>
+            
+              <p>Hi Sangyong,</p>
+<p>I’m happy to announce that we have reached an agreement to be acquired by VMware.</p>
+<p>Six years ago, we started with a simple premise -- mobile teams need better tools to understand and diagnose user experience. Over time, our capabilities expanded into the best-in-class mobile app performance monitoring platform. We took our Crash Reporting and Network Insights and applied them to user behavior. Our User Flows allow teams to analyze <i>why</i> behavior changes and negatively impacts user experience.</p>
+<p>After our name change from Crittercism to Apteligent, we doubled down on the enterprise, ensuring we met the needs of mission critical and revenue critical mobile teams across all industries. Those enterprises deploying employee and consumer facing applications face an extremely complicated set of hardware, software, and connectivity challenges. Most of all, as their business becomes reliant on mobile technologies, they need visibility into how app performance impacts key business metrics.</p>
+<p>Apteligent further reinforces VMware’s commitment to deliver the technical innovations necessary to enable the next generation Digital Workspace with analytics driven user experience, intelligence-based decision automation, and highly scalable mobile-first cross-cloud enterprise solutions.</p>
+<p>Apteligent’s capabilities are uniquely positioned to solve these challenges. Our data unifies silos across IT, marketing, and line of business. We have the capability to model and predict how app performance impacts revenue, churn, and engagement. Apteligent’s focus on data insights and actionable, intelligent recommendations accelerates digital transformation for the enterprise.</p>
+<p>On a personal note, this would not have been possible without our amazing team. I’d like to take some time to recognize this group of individuals that push the boundaries of big data and enterprise mobility. Thank you for being so dedicated to each other, our product, and our customers. I’d also like to thank our hundreds of enterprise customers. We will not only support you going forward, but have big plans to expand the platform in the future.</p>
+<p>VMware is a long-time investor and partner of Apteligent and we’ve been thoroughly impressed with the AirWatch and End User Computing teams. We’re excited to continue the journey with them, and we’re looking forward to revealing the details of our integration soon.</p>
+<p>For more information, see <a rel="noopener noreferrer" href="https://via.intercom-mail-400.com/e?ob=nDdqk8vLRXsONAwzwDo4VBKn53wOUiCDEkyMU4MBnKH%2BEpkuIXpBx2OzQ%2BGaS8s5x%2F30N6KDMcsZGQLorqHraPPmlXOQ%2F1pW6rNMRcbK6QM98bQFhckq9ylHBLkdusiGL8Qhib%2BBVT8ktAica3ybog%3D%3D&amp;h=7c0e264943fda16b2f88035b68bdbd2c063739f6-9788788608">this blog post</a> from VMware’s Sumit Dhawan, Senior VP and GM, &nbsp;End-User Computing, as well as <a rel="noopener noreferrer" href="https://via.intercom-mail-400.com/e?ob=X%2Fvfy9eR2TrCxBXGWgvS1qoMU%2B%2BElusYV8n5%2FPmxaHb6iw6%2ByhjtT8hQ3lPRYuA8EnBteWYo9x9xl%2FV5f9QrCQ%3D%3D&amp;h=14e1d5dc90037c9f66a1cdd99836e7313a82cb56-9788788608">this blog post</a> from Shekar Ayyar, VMWare’s Executive VP, &nbsp;Strategy and Corporate Development.</p>
+<p>Take care,<br />Andrew Levy &amp; Robert Kwok<br />Co-Founders, Apteligent</p>
+            
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+  
+  <table>
+    <tr>
+      <td>
+        <table>
+          <tr>
+            <td>
+              
+  <p>© 2015 Crittercism, Inc   |   760 Market Street, Suite 1100 San Francisco CA</p>
+
+
+              
+                
+                  <p><a rel="noopener noreferrer" href="https://wg8k5da2.intercom-mail.com/unsubscribe?app_id=wg8k5da2&amp;conversation_id=9788788608&amp;sample=false&amp;user_id=58328983071b4eb0f5d0cf48">Unsubscribe</a></p>
+                
+              
+              
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+<img width="1" height="1" alt="intercom" src="https://via.intercom-mail-400.com/o?h=39c29c236e84e9cfa7c65c2efede07ecc8d50f1b-9788788608">
+
+<img width="1" height="1" alt="" src="https://spe.via.intercom-mail.com/q/WQoIdrzMtEEduGfCeNuizg~~/AAAAAQA~/RgRa_JpMPkEIAOyJvfMzlQNXCGludGVyY29tWAQAAAWaQgoAA0wVGllRWHMaUhRpbXlhbWFuQG5ldHNjYXBlLm5ldAlRBAAAAABHi3siYmluZGluZyI6IjQwMCIsInVzZXJfaWQiOiI1ODMyODk4MzA3MWI0ZWIwZjVkMGNmNDgiLCJhcHBfaWQiOiJ3ZzhrNWRhMiIsImludGVyY29tX21lc3NhZ2VfaWQiOiIxMDEwNzAwMDEiLCJjb252ZXJzYXRpb25faWQiOiI5Nzg4Nzg4NjA4In0~">
+
+
+
+
+</div>
+</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Splunk Light 6.6 Is Here</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/05/splunk-light-66-is-here.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.287</id>
+
+    <published>2017-05-09T22:40:39Z</published>
+    <updated>2017-07-21T00:43:45Z</updated>
+
+    <summary> ---- Original Message ---- Subject: Splunk Light 6.6 Is Here Sent: May 10, 2017 4:33 AM From: &quot;Splunk Inc.&quot; To: imyaman@netscape.net Cc: If you have trouble viewing this email, read the online version . Simplified Data Analysis, Easier Management...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p></p>
+<p>---- Original Message ----<br /> Subject: Splunk Light 6.6 Is Here<br /> Sent: May 10, 2017 4:33 AM<br /> From: "Splunk Inc." <br /> To: imyaman@netscape.net<br /> Cc:</p>
+<p><br /> If you have trouble viewing this email, read the online version .</p>
+<p></p>
+<p><br /> Simplified Data Analysis, Easier Management at Scale with Splunk Enterprise 6.6</p>
+<p> </p>
+<p></p>
+<p>Download Now</p>
+<p> </p>
+<p>  Announcing Splunk Light 6.6         <br /> --------------------------------------------------------------------------------------------------</p>
+<p>Simplified Data Analysis and More</p>
+<p>     </p>
+<p>Dear Sangyong,</p>
+<p>We are excited to announce that Splunk Light 6.6 is now available for download !</p>
+<p>Splunk Light 6.6 makes it easier than ever for a wide range of users to leverage datasets, get answers and share insights.</p>
+<p>In Splunk Light 6.6:<br /> *Dataset explorer allows you to use a prepared dataset to create/schedule a report and export it in CSV format<br /> *Dashboard drilldown makes it easier to build a guided dashboard navigation experience without writing any Simple XML</p>
+<p>* Trellis layout enables you to build multiple visualizations powered by a single search to compare different segments of a dataset</p>
+<p>Download the latest version today !</p>
+<p>The Splunk Team</p>
+<p>More Resources<br /> *Read the documentation <br /> *Splunk Light new feature release notes <br /> * Compare Splunk Light to Splunk Enterprise and use the one that's right for you</p>
+<p>  <br />  </p>
+<p>     </p>
+<p>                                                           </p>
+<p></p>
+<p><br /> Splunk, Splunk&gt;, Listen to Your Data, The Engine for Machine Data, Splunk Cloud, Splunk Light, and SPL are trademarks of Splunk Inc., registered in the United States and other countries. All other brand names, product names or trademarks belong to their respective owners. ©2017 Splunk Inc. All rights reserved.<br /> This is a commercial email. To unsubscribe from future emails or to update your e-mail preferences click here .<br /> To view our Privacy Policy, click here .<br /> Splunk Inc. | 270 Brannan St. | San Francisco, CA 94107</p>
+<p><br /><br />---- Original Message ----<br />Subject: Splunk Light 6.6 Is Here<br />Sent: May 10, 2017 4:33 AM<br />From: "Splunk Inc." &lt;newsletter@splunk.com&gt;<br />To: imyaman@netscape.net<br />Cc: <br /><br /></p>
+<table>
+<tbody>
+<tr>
+<td>If you have trouble viewing this email, <a href="http://s1528.t.en25.com/e/es?s=1528&amp;e=1657663&amp;elqTrackId=765a8178ba4c4d9888a1f89130a84434&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1">read the online version</a>.</td>
+</tr>
+</tbody>
+</table>
+<div>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td>Simplified Data Analysis, Easier Management at Scale with Splunk Enterprise 6.6</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td><a href="http://s1528.t.en25.com/e/er?s=1528&amp;lid=248&amp;elqTrackId=907148b559ed41bbbc276b3c72cc8026&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1"><img src="http://img.en25.com/eloquaimages/clients/SplunkInc/%7Bf35ddc86-31f3-4cae-b893-a3a55a750371%7D_logo_splunk_black_low.png" /></a></td>
+<td>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td><a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=fe5ef4c46ff74786941a4b39553cc42d&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">Download Now</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td>
+<div>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td>Announcing Splunk Light 6.6         </td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<br />
+<table>
+<tbody>
+<tr>
+<td></td>
+<td>Simplified Data Analysis and More</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr><th>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td><br />Dear Sangyong,<br /><br />We are excited to announce that Splunk Light 6.6 is now available for <a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=8340CC75094CC66ACB29D07E610D7345&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">download</a>!<br /><br />Splunk Light 6.6 makes it easier than ever for a wide range of users to leverage datasets, get answers and share insights.<br /><br />In Splunk Light 6.6:<br />
+<ul>
+<li><b>Dataset explorer</b> allows you to use a prepared dataset to create/schedule a report and export it in CSV format</li>
+<li><b>Dashboard drilldown </b>makes it easier to build a guided dashboard navigation experience without writing any Simple XML</li>
+<li><b>Trellis layout </b>enables you to build multiple visualizations powered by a single search to compare different segments of a dataset</li>
+</ul>
+<span> <a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=8340CC75094CC66ACB29D07E610D7345&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">Download the latest version today</a>!</span><br /><br /> The Splunk Team<br /><br /></td>
+<td><br /> <strong>More Resources</strong><br />
+<ul>
+<li><span><span>Read the </span></span> <a href="http://docs.splunk.com/Documentation/SplunkLight/6.6.0/GettingStarted/Aboutthismanual?elqTrackId=c812429eae78469ebff49adf1d3ad979&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">documentation</a></li>
+<li>Splunk Light new feature <span><span></span></span><span><span> <a href="http://docs.splunk.com/Documentation/SplunkLight/latest/ReleaseNotes/WhatsNewSplunkLight?elqTrackId=4cc81c9f5ee84c6499cd9698654f6aa7&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">release notes</a></span></span></li>
+<li><a href="https://www.splunk.com/en_us/products/splunk-light/splunk-light-vs-splunk-enterprise.html?elqTrackId=b03ced9c39354156bffe2f01077352f3&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">Compare</a> Splunk Light to Splunk Enterprise and use the one that's right for you</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th></tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<th><a href="http://s1528.t.en25.com/e/er?s=1528&amp;lid=239&amp;elqTrackId=CC921E9EFD648BF60B0BDEF1DA9BD012&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1"><img src="http://img.en25.com/EloquaImages/clients/SplunkInc/%7B877b1721-ad6d-49d1-ab58-61c4340d4e3a%7D_LOGO-Splunk-tagline-W-GreyCaret-footer-email.png" /></a></th>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div>                                                           </div>
+<div>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td><img src="http://img.en25.com/eloquaimages/clients/SplunkInc/{f5148764-08c5-404b-a5f7-e4495fb74d68}_spacer.gif" width="10" height="1" /></td>
+<td><i>Splunk, Splunk&gt;, Listen to Your Data, The Engine for Machine Data, Splunk Cloud, Splunk Light, and SPL are trademarks of Splunk Inc., registered in the United States and other countries. All other brand names, product names or trademarks belong to their respective owners. ©2017 Splunk Inc. All rights reserved.<br /> This is a commercial email. To unsubscribe from future emails or to update your e-mail preferences <a href="http://s1528.t.en25.com/e/sl?s=1528&amp;elq=4ad0b12236114e328ae518d5d376ed85">click here</a>.<br /> To view our Privacy Policy, <a href="http://www.splunk.com/view/SP-CAAAAAG?elqTrackId=1cf53f5db2584280b86d76fd02e6647b&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">click here</a>.</i><br /> <b>Splunk Inc. | 270 Brannan St. | San Francisco, CA <a href="tel:94107">94107</a></b></td>
+<td><img src="http://img.en25.com/eloquaimages/clients/SplunkInc/{f5148764-08c5-404b-a5f7-e4495fb74d68}_spacer.gif" width="10" height="1" /></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><img src="http://s1528.t.en25.com/e/FooterImages/FooterImage1?elq=4ad0b12236114e328ae518d5d376ed85&amp;siteid=1528" alt="" /></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo!</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/03/letas-encrypt-is-here-a-open-source-security-certificates-available-at-sashido.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.286</id>
+
+    <published>2017-03-29T00:11:34Z</published>
+    <updated>2017-07-10T03:08:35Z</updated>
+
+    <summary>I love SashiDo and &quot;Let&apos;s Ecrypt&quot;. From: Tanya from SashiDo.io Date: Wednesday, March 29, 2017 at 09:04 Subject: Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo! To: imyaman #AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody #aolmail_outlook a{ padding: 0;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>I love SashiDo and "Let's Ecrypt".</p>
+
+<p>From: Tanya from SashiDo.io <br />
+Date: Wednesday, March 29, 2017 at 09:04<br />
+Subject: Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo!<br />
+To: imyaman </p>
+
+<p>#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody #aolmail_outlook a{ padding: 0; } .aolReplacedBody { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; font-weight: 400; } .aolReplacedBody .aolmail_ReadMsgBody{ width: 100%; } .aolReplacedBody .aolmail_ExternalClass{ width: 100%; } .aolReplacedBody img { border: 0; max-width: 100%; height: auto; outline: none; display: inline-block; margin: 0; padding: 0; text-decoration: none; line-height: 100%; } .aolReplacedBody #aolmail_backgroundTable{ height: 100% !important; margin: 0; padding: 0; width: 100% !important; }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody .aolmail_main { font-family: Helvetica, Arial, sans-serif; letter-spacing: 0; width: 100%; } .aolReplacedBody table { border-spacing: 0; border-collapse: separate; table-layout: fixed; } .aolReplacedBody td { padding: 0; font-family: Helvetica, Arial, sans-serif; } .aolReplacedBody a { border: none; outline: none !important; } .aolReplacedBody .aolmail_content-td { color: #222; line-height: 20px; } .aolReplacedBody .aolmail_content-td &gt; :first-child { margin-top: 0; padding-top: 0; } .aolReplacedBody .aolmail_content-td h1 { font-size: 1.3em; font-weight: bold; line-height: 25px; margin-top: 20px; margin-bottom: 5px; } .aolReplacedBody .aolmail_content-td h1 + h2 { margin-top: 0 !important; } .aolReplacedBody .aolmail_content-td h2 + h1 { margin-top: 0 !important; } .aolReplacedBody .aolmail_content-td h2 { font-size: 1.1em; font-weight: bold; margin: 20px 0 5px; } .aolReplacedBody .aolmail_content-td h3 ,.aolReplacedBody .aolmail_content-td h4 ,.aolReplacedBody .aolmail_content-td h5 { font-size: 13px; font-weight: bold; margin-bottom: 5px; } .aolReplacedBody .aolmail_content-td p { margin: 0 0 15px 0; } .aolReplacedBody .aolmail_content-td p img,.aolReplacedBody .aolmail_content-td h1 img,.aolReplacedBody .aolmail_content-td h2 img,.aolReplacedBody .aolmail_content-td li img,.aolReplacedBody .aolmail_content-td .aolmail_intercom-h2b-button img { margin: 0; padding: 0; } .aolReplacedBody .aolmail_content-td a { color: #1251ba; text-decoration: underline; } .aolReplacedBody .aolmail_content-td strong { color: #606060; } .aolReplacedBody .aolmail_content-td ol,.aolReplacedBody .aolmail_content-td ul { margin: 0 0 20px 40px; padding: 0; list-style: disc; } .aolReplacedBody .aolmail_content-td ol { list-style: decimal; } .aolReplacedBody .aolmail_content-td ol li,.aolReplacedBody .aolmail_content-td ul li { margin: 5px 0; } .aolReplacedBody .aolmail_content-td blockquote { padding: 10px 0; margin: 10px 0; font-style: italic; color: #8C8C8C; } .aolReplacedBody .aolmail_content-td blockquote a { color: #8C8C8C; } .aolReplacedBody .aolmail_content-td img { max-width: 100%; margin: 15px 0 15px; } .aolReplacedBody .aolmail_content-td .aolmail_intercom-container { margin-bottom: 16px; } .aolReplacedBody .aolmail_content-td hr { border: none; border-top: 1px solid #DDD; border-bottom: 0; margin: 20px 0; } .aolReplacedBody .aolmail_content-td table th { font-weight: bold; background: #F6F6F6; } .aolReplacedBody .aolmail_content-td table td,.aolReplacedBody .aolmail_content-td table th { padding: 7px 10px; border: 1px solid #DADADA; text-align: left; vertical-align: top; } .aolReplacedBody .aolmail_content-td table { margin-bottom: 20px; border-collapse: collapse; border-spacing: 0; } .aolReplacedBody .aolmail_content-td table.aolmail_intercom-container.aolmail_intercom-align-center { margin-left: auto; margin-right: auto; } .aolReplacedBody .aolmail_content-td table.aolmail_intercom-container td { border: none; padding: 0; margin: 0; } .aolReplacedBody .aolmail_footer { width: 100%; font-family: Helvetica, Arial, sans-serif; } .aolReplacedBody .aolmail_footer .aolmail_footer-td { padding: 10px 0; text-align: left; width: 100%; font-size: 11px; color: #999999; } .aolReplacedBody .aolmail_footer a { text-decoration: underline; font-size: 11px; color: #999999; }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody .aolmail_content-td blockquote + * { margin-top: 10px !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h1 { padding: 15px 0 5px 0 !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h2 { padding: 0 0 5px 0 !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td p { padding: 10px 0 !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td hr + * { padding-top: 20px !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td .aolmail_intercom-container { padding: 5px 0 !important; } .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ol ,.aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ul { padding: 0 0 20px 40px !important; margin: 0 !important; } .aolReplacedBody img { max-width: 600px !important; } @media (max-width: 600px) { .aolReplacedBody img { max-width: 100% !important; } }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;} .aolReplacedBody .aolmail_intercom-align-right { text-align: right !important;}.aolReplacedBody .aolmail_intercom-align-center { text-align: center !important;}.aolReplacedBody .aolmail_intercom-align-left { text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-right{ text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left{ text-align: right !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left { text-align:right !important;}.aolReplacedBody .aolmail_right-to-left li { text-align:right !important; direction: rtl;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left img,.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left .aolmail_intercom-h2b-button { margin-left: 0 !important;}.aolReplacedBody .aolmail_intercom-attachment,.aolReplacedBody .aolmail_intercom-attachments,.aolReplacedBody .aolmail_intercom-attachments td,.aolReplacedBody .aolmail_intercom-attachments th,.aolReplacedBody .aolmail_intercom-attachments tr,.aolReplacedBody .aolmail_intercom-attachments tbody,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img { border: none !important; box-shadow: none !important; padding: 0 !important; margin: 0 !important;}.aolReplacedBody .aolmail_intercom-attachments { margin: 10px 0 !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img { width: 16px !important; height: 16px !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon { padding-right: 5px !important;}.aolReplacedBody .aolmail_intercom-attachment { display: inline-block !important; margin-bottom: 5px !important;}.aolReplacedBody .aolmail_intercom-interblocks-content-card { width: 334px !important; max-height: 136px !important; max-width: 100% !important; overflow: hidden !important; border-radius: 20px !important; font-size: 16px !important; border: 1px solid #e0e0e0 !important;}.aolReplacedBody .aolmail_intercom-interblocks-link,.aolReplacedBody .aolmail_intercom-interblocks-article-card { text-decoration: none !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-icon { width: 22.5% !important; height: 136px !important; float: left !important; background-color: #fafafa !important; background-image: url('https://static.intercom-mail.com/assets/article_book-1a595be287f73c0d02f548f513bfc831.png') !important; background-repeat: no-repeat !important; background-size: 32px !important; background-position: center !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-text { width: 77.5% !important; float: right !important; background-color: #fff !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-title,.aolReplacedBody .aolmail_intercom-interblocks-article-title { color: #519dd4 !important; font-size: 15px !important; margin: 16px 18px 12px !important; line-height: 1.3em !important; overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-body { margin: 0 18px 12px !important; font-size: 14px !important; color: #65757c !important; line-height: 1.3em !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author,.aolReplacedBody .aolmail_intercom-interblocks-article-author { margin: 10px 15px !important; height: 24px !important; line-height: normal !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar { width: 16px !important; height: 16px !important; display: inline-block !important; vertical-align: middle !important; float: left; margin-right: 5px;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar-image,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar-image { width: 16px !important; height: 16px !important; border-radius: 50% !important; margin: 0 !important; vertical-align: top !important; font-size: 12px !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-name,.aolReplacedBody .aolmail_intercom-interblocks-article-author-name { color: #74848b !important; margin: 0 0 0 5px !important; font-size: 12px !important; font-weight: 500 !important; overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-written-by { color: #8897a4 !important; margin: 1px 0 0 5px !important; font-size: 12px !important; overflow: hidden !important; vertical-align: middle !important; float: left !important;}</p>
+
+<p>Hey there!</p>
+
+<p>It's been a busy month for us at SashiDo.</p>
+
+<p>After releasing our Automatic Database Backups feature last week, now we have something else to announce :)</p>
+
+<p>You know that we care about your user experience and want to make it better and better, so we have decided to implement something really cool to our platform and that's Let's Encrypt.</p>
+
+<p>Let's Encrypt is a free, automated, and open certificate authority (CA) that issues domain-validated security certificates. They let people and organizations around the world obtain, renew, and manage SSL/TLS certificates. </p>
+
+<p>Their certificates can be used by websites to enable secure HTTPS connections.</p>
+
+<p>The key benefits of the Let’s Encrypt certificates are:</p>
+
+<p>cost-free</p>
+
+<p>automatic installation</p>
+
+<p>trusted by all major browsers</p>
+
+<p>Starting from today, every user of SashiDo can set up SSL on the custom domain name used with their app.</p>
+
+<p>You will be able to activate the SSL within a few clicks of the mouse. What is more, once you enable your certificate, we will renew it every 3 months for you automatically, so will you no longer have to worry about it :)</p>
+
+<p>How to use Let’s Encrypt at SashiDo:</p>
+
+<p>You can activate your Let's Encrypt certificate through your app dashboard -> App Settings -> Emails & Hosting.</p>
+
+<p>If you need additional information about the certificate you can refer to our blog post and of course you can always send us an email at support@sashido.io or reach us over the live chat :)</p>
+
+<p>Best,<br />
+SashiDo.io team </p>
+
+<p>Don't want to get emails like this? Unsubscribe</p>
+
+<p>￼ </p><p>I love SashiDo and "Let's Ecrypt".</p>
+<br />From: Tanya from SashiDo.io &#60;tanya.valeva@sashidoio.intercom-mail.com&#62;Date: Wednesday, March 29, 2017 at 09:04Subject: Let’s Encrypt is Here – Open Source Security Certificates Available at SashiDo!To: imyaman &#60;imyaman@netscape.net&#62;<br /><br />
+<div>
+#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;}   .aolReplacedBody #aolmail_outlook a{    padding: 0;  }  .aolReplacedBody  {    -webkit-text-size-adjust: none;    -ms-text-size-adjust: none;    font-weight: 400;  }  .aolReplacedBody .aolmail_ReadMsgBody{    width: 100%;  }  .aolReplacedBody .aolmail_ExternalClass{    width: 100%;  }  .aolReplacedBody img {    border: 0;    max-width: 100%;    height: auto;    outline: none;    display: inline-block;    margin: 0;    padding: 0;    text-decoration: none;    line-height: 100%;  }  .aolReplacedBody #aolmail_backgroundTable{    height: 100% !important;    margin: 0;    padding: 0;    width: 100% !important;  }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;}     .aolReplacedBody .aolmail_main {    font-family: Helvetica, Arial, sans-serif;    letter-spacing: 0;    width: 100%;  }  .aolReplacedBody table {    border-spacing: 0;    border-collapse: separate;    table-layout: fixed;  }  .aolReplacedBody td {    padding: 0;    font-family: Helvetica, Arial, sans-serif;  }  .aolReplacedBody a {    border: none;    outline: none !important;  }    .aolReplacedBody .aolmail_content-td {    color: #222;    line-height: 20px;  }  .aolReplacedBody .aolmail_content-td &gt; :first-child {    margin-top: 0;    padding-top: 0;  }  .aolReplacedBody .aolmail_content-td h1 {    font-size: 1.3em;    font-weight: bold;    line-height: 25px;    margin-top: 20px;    margin-bottom: 5px;  }  .aolReplacedBody .aolmail_content-td h1 + h2 {    margin-top: 0 !important;  }  .aolReplacedBody .aolmail_content-td h2 + h1 {    margin-top: 0 !important;  }  .aolReplacedBody .aolmail_content-td h2 {    font-size: 1.1em;    font-weight: bold;    margin: 20px 0 5px;  }  .aolReplacedBody .aolmail_content-td h3 ,.aolReplacedBody   .aolmail_content-td h4 ,.aolReplacedBody   .aolmail_content-td h5 {    font-size: 13px;    font-weight: bold;    margin-bottom: 5px;  }  .aolReplacedBody .aolmail_content-td p {    margin: 0 0 15px 0;  }  .aolReplacedBody .aolmail_content-td p img,.aolReplacedBody   .aolmail_content-td h1 img,.aolReplacedBody   .aolmail_content-td h2 img,.aolReplacedBody   .aolmail_content-td li img,.aolReplacedBody   .aolmail_content-td .aolmail_intercom-h2b-button img {    margin: 0;    padding: 0;  }  .aolReplacedBody .aolmail_content-td a {    color: #1251ba;    text-decoration: underline;  }  .aolReplacedBody .aolmail_content-td strong {    color: #606060;  }  .aolReplacedBody .aolmail_content-td ol,.aolReplacedBody   .aolmail_content-td ul {    margin: 0 0 20px 40px;    padding: 0;    list-style: disc;  }  .aolReplacedBody .aolmail_content-td ol {    list-style: decimal;  }  .aolReplacedBody .aolmail_content-td ol li,.aolReplacedBody   .aolmail_content-td ul li {    margin: 5px 0;  }  .aolReplacedBody .aolmail_content-td blockquote {    padding: 10px 0;    margin: 10px 0;    font-style: italic;    color: #8C8C8C;  }  .aolReplacedBody .aolmail_content-td blockquote a {    color: #8C8C8C;  }  .aolReplacedBody .aolmail_content-td img {    max-width: 100%;    margin: 15px 0 15px;  }  .aolReplacedBody .aolmail_content-td .aolmail_intercom-container {    margin-bottom: 16px;  }  .aolReplacedBody .aolmail_content-td hr {    border: none;    border-top: 1px solid #DDD;    border-bottom: 0;    margin: 20px 0;  }  .aolReplacedBody .aolmail_content-td table th {    font-weight: bold;    background: #F6F6F6;  }  .aolReplacedBody .aolmail_content-td table td,.aolReplacedBody   .aolmail_content-td table th {    padding: 7px 10px;    border: 1px solid #DADADA;    text-align: left;    vertical-align: top;  }  .aolReplacedBody .aolmail_content-td table {    margin-bottom: 20px;    border-collapse: collapse;    border-spacing: 0;  }  .aolReplacedBody .aolmail_content-td table.aolmail_intercom-container.aolmail_intercom-align-center {    margin-left: auto;    margin-right: auto;  }  .aolReplacedBody .aolmail_content-td table.aolmail_intercom-container td {    border: none;    padding: 0;    margin: 0;  }    .aolReplacedBody .aolmail_footer {    width: 100%;    font-family: Helvetica, Arial, sans-serif;  }  .aolReplacedBody .aolmail_footer .aolmail_footer-td {    padding: 10px 0;    text-align: left;    width: 100%;    font-size: 11px;    color: #999999;  }  .aolReplacedBody .aolmail_footer a {    text-decoration: underline;    font-size: 11px;    color: #999999;  }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;}   .aolReplacedBody .aolmail_content-td blockquote + * {    margin-top: 10px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h1 {    padding: 15px 0 5px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td h2 {    padding: 0 0 5px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td p {    padding: 10px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td hr + * {    padding-top: 20px !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td .aolmail_intercom-container {    padding: 5px 0 !important;  }  .aolReplacedBody .aolmail_ExternalClass .aolmail_content-td ol ,.aolReplacedBody   .aolmail_ExternalClass .aolmail_content-td ul {    padding: 0 0 20px 40px !important;    margin: 0 !important;  }  .aolReplacedBody img {    max-width: 600px !important;  }  @media (max-width: 600px) {    .aolReplacedBody img {      max-width: 100% !important;    }  }#AOLMsgPart_2_d18f1e86-a603-4de7-992d-b0a3893061f4 td{color: black;}   .aolReplacedBody .aolmail_intercom-align-right {  text-align: right !important;}.aolReplacedBody .aolmail_intercom-align-center {  text-align: center !important;}.aolReplacedBody .aolmail_intercom-align-left {  text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-right{  text-align: left !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left{  text-align: right !important;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left {  text-align:right !important;}.aolReplacedBody .aolmail_right-to-left li {  text-align:right !important;  direction: rtl;}.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left img,.aolReplacedBody .aolmail_right-to-left .aolmail_intercom-align-left .aolmail_intercom-h2b-button {  margin-left: 0 !important;}.aolReplacedBody .aolmail_intercom-attachment,.aolReplacedBody .aolmail_intercom-attachments,.aolReplacedBody .aolmail_intercom-attachments td,.aolReplacedBody .aolmail_intercom-attachments th,.aolReplacedBody .aolmail_intercom-attachments tr,.aolReplacedBody .aolmail_intercom-attachments tbody,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img {  border: none !important;  box-shadow: none !important;  padding: 0 !important;  margin: 0 !important;}.aolReplacedBody .aolmail_intercom-attachments {  margin: 10px 0 !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon,.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon img {  width: 16px !important;  height: 16px !important;}.aolReplacedBody .aolmail_intercom-attachments .aolmail_icon {  padding-right: 5px !important;}.aolReplacedBody .aolmail_intercom-attachment {  display: inline-block !important;  margin-bottom: 5px !important;}.aolReplacedBody .aolmail_intercom-interblocks-content-card {  width: 334px !important;  max-height: 136px !important;  max-width: 100% !important;  overflow: hidden !important;  border-radius: 20px !important;  font-size: 16px !important;  border: 1px solid #e0e0e0 !important;}.aolReplacedBody .aolmail_intercom-interblocks-link,.aolReplacedBody .aolmail_intercom-interblocks-article-card {  text-decoration: none !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-icon {  width: 22.5% !important;  height: 136px !important;  float: left !important;  background-color: #fafafa !important;  background-image: url('https://static.intercom-mail.com/assets/article_book-1a595be287f73c0d02f548f513bfc831.png') !important;  background-repeat: no-repeat !important;  background-size: 32px !important;  background-position: center !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-text {  width: 77.5% !important;  float: right !important;  background-color: #fff !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-title,.aolReplacedBody .aolmail_intercom-interblocks-article-title {  color: #519dd4 !important;  font-size: 15px !important;  margin: 16px 18px 12px !important;  line-height: 1.3em !important;  overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-body {  margin: 0 18px 12px !important;  font-size: 14px !important;  color: #65757c !important;  line-height: 1.3em !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author,.aolReplacedBody .aolmail_intercom-interblocks-article-author {  margin: 10px 15px !important;  height: 24px !important;  line-height: normal !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar {  width: 16px !important;  height: 16px !important;  display: inline-block !important;  vertical-align: middle !important;  float: left;  margin-right: 5px;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-avatar-image,.aolReplacedBody .aolmail_intercom-interblocks-article-author-avatar-image {  width: 16px !important;  height: 16px !important;  border-radius: 50% !important;  margin: 0 !important;  vertical-align: top !important;  font-size: 12px !important;}.aolReplacedBody .aolmail_intercom-interblocks-link-author-name,.aolReplacedBody .aolmail_intercom-interblocks-article-author-name {  color: #74848b !important;  margin: 0 0 0 5px !important;  font-size: 12px !important;  font-weight: 500 !important;  overflow: hidden !important;}.aolReplacedBody .aolmail_intercom-interblocks-article-written-by {  color: #8897a4 !important;  margin: 1px 0 0 5px !important;  font-size: 12px !important;  overflow: hidden !important;  vertical-align: middle !important;  float: left !important;}<div>
+
+  <table>
+    <tr>
+      <td>
+        
+          <p>Hey there!</p>
+<p>It's been a busy month for us at SashiDo.</p>
+<p>After releasing our Automatic Database Backups feature last week, now we have something else to announce :)</p>
+<p>You know that we care about your user experience and want to make it better and better, so we have decided to implement something really cool to our platform and that's Let's Encrypt.</p>
+<p><a href="https://via.intercom-mail-100.com/e?ob=m9%2BQLEVigzXe6DyY0HmEO%2B6lMYXS%2FCwdzswhgg3hLUA%3D&h=c421a591346589504c25c03eeed4987e26a7159a-9008604589">Let's Encrypt</a> is a free, automated, and open certificate authority (CA) that issues domain-validated security certificates. They let people and organizations around the world obtain, renew, and manage SSL/TLS certificates.&nbsp;</p>
+<p>Their certificates can be used by websites to enable secure HTTPS connections.</p>
+<p>The key benefits of the Let’s Encrypt certificates are:</p>
+<ul>
+<li>cost-free</li>
+<li>automatic installation</li>
+<li>trusted by all major browsers</li>
+</ul>
+<p>Starting from today, every user of SashiDo can set up SSL on the custom domain name used with their app.</p>
+<p>You will be able to activate the SSL within a few clicks of the mouse. What is more, once you enable your certificate, we will renew it every 3 months for you automatically, so will you no longer have to worry about it :)</p>
+How to use Let’s Encrypt at SashiDo:
+<p>You can activate your Let's Encrypt certificate through your app dashboard -&gt; App Settings -&gt; Emails & Hosting.</p>
+<p>If you need additional information about the certificate you can refer to our <a href="https://via.intercom-mail-100.com/e?ob=Hij651Yaz7rJJ1l5w0IShUWoVArJA4JSp0RB2Qsp5I1IxOok0Vp%2BWIN1T6XcwUPGAVL%2B74a%2BxD5pSNmt89v2Cg%3D%3D&h=0667a1dcfdd64a08035b698523385e274422edaa-9008604589">blog post </a>and of course you can always send us an email at <a href="mailto:support@sashido.io">support@sashido.io</a> or reach us over the live chat :)</p>
+<p>Best,<br /><a href="https://via.intercom-mail-100.com/e?ob=4qabvI%2Fa4L2VJyuEtuoM07QcJdQN40Cd3WK5ItptRis%3D&h=6ad1ec8112c4a9db539f43e8f25ab681f7833068-9008604589">SashiDo.io</a> team <br /></p>
+        
+      </td>
+    </tr>
+  </table>
+
+  
+  <table>
+    <tr>
+      <td>
+        
+          <p>Don't want to get emails like this? <a href="https://ckqg6zry.intercom-mail.com/unsubscribe?app_id=ckqg6zry&conversation_id=9008604589&user_id=576e030c41e3152eb0009672">Unsubscribe</a></p>
+        
+      </td>
+    </tr>
+  </table>
+
+<img src="https://via.intercom-mail-100.com/o?h=416d9c7430de2131271515793672c7851cc432bd-9008604589" width="1" height="1" alt="intercom">
+
+
+</div>
+</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>How to Mobilize your EHR Information Quickly and Securely</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/03/how-to-mobilize-your-ehr-information-quickly-and-securely.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.285</id>
+
+    <published>2017-03-20T01:28:36Z</published>
+    <updated>2017-07-10T03:08:35Z</updated>
+
+    <summary> EHR 정보를 모바일에 적용하는 방법, Electronic Health Record -----Original Message----- From: Kinvey To: imyaman Sent: Sun, Mar 19, 2017 10:05 pm Subject: Sangyong - March 21st Webinar: How to Mobilize your EHR Information Quickly and Securely Not rendering on...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p><br />
+ EHR 정보를 모바일에 적용하는 방법, Electronic Health Record</p>
+
+<p> </p>
+
+<p> </p>
+
+<p>-----Original Message-----<br />
+From: Kinvey <br />
+To: imyaman <br />
+Sent: Sun, Mar 19, 2017 10:05 pm<br />
+Subject: Sangyong - March 21st Webinar: How to Mobilize your EHR Information Quickly and Securely</p>
+
+<p></p>
+
+<p><br />
+Not rendering on your device? Try it in a webpage.</p>
+
+<p><br />
+ </p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>How to Mobilize Your EHR <br />
+Information Quickly <br />
+and Securely<br />
+Tuesday, March 21st 12:00PM ET</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>Click here to register for the webinar!</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p>Hi Sangyong,</p>
+
+<p>You are invited to attend our upcoming webinar, "How to Mobilize your EHR Information Quickly and Securely." The webinar begins at 12:00PM ET, Tuesday, March 21st. </p>
+
+<p>Why You Should Attend: <br />
+With the adoption of electronic records, healthcare has been digitized. However, the data is too difficult to access. Join Niko Skievaski, co-founder and president of Redox (the healthcare API company), and Jikku Venkat, VP of products at Kinvey (the leading HIPAA compliant mobile development platform company), to learn how to strip away all archaic complexity and provide a familiar, modern API. Together, we enable your developers to code once and connect to all your EHR systems and transform this information into secure and engaging patient and provider app experiences - quickly.</p>
+
+<p>What You'll Learn: </p>
+
+<p>Why your app developers don’t need to know anything about HL7, FHIR, CDA, CCD, X12, NCPDP, DICOM, EDI to create modern app experiences.<br />
+Why you don’t need for the world to change; everything you need to innovate is already in place.<br />
+How to build apps that will scale across your enterprise and beyond.<br />
+That HIPAA compliant apps can be easy to build - you can start prototyping today.</p>
+
+<p><br />
+We hope to see you there!</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><br />
+Register Now</p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p></p>
+
+<p><br />
+ <br />
+	<br />
+		<br />
+			<br />
+			<br />
+				<br />
+					<br />
+						<br />
+ <br />
+					<br />
+					<br />
+						</p>
+
+<p>						<br />
+						Kinvey, Inc						<br />
+99 Summer St<br />
+						<br />
+Suite 1500   <br />
+						<br />
+Boston, MA 02110<br />
+						<br />
+ <br />
+						<br />
+						<br />
+					<br />
+				<br />
+			<br />
+			<br />
+You are receiving this message from Kinvey. If you would like to unsubscribe, you can do so here. <br />
+			<br />
+View our Privacy Policy.<br />
+			<br />
+		<br />
+	</p>
+
+<p><br />
+</p>
+<div> EHR 정보를 모바일에 적용하는 방법, Electronic Health Record<br />
+</div>
+
+<div> <br />
+</div>
+
+<div> <br />
+</div>
+
+<div>-----Original Message-----<br />
+From: Kinvey &lt;info@kinvey.com&gt;<br />
+To: imyaman &lt;imyaman@netscape.net&gt;<br />
+Sent: Sun, Mar 19, 2017 10:05 pm<br />
+Subject: Sangyong - March 21st Webinar: How to Mobilize your EHR Information Quickly and Securely<br />
+<br />
+
+
+<div>
+#AOLMsgPart_2_231cea92-61c7-4bba-befb-68ec0c1e0396 td{color: black;} .aolReplacedBody  {  background-color: #eeeeee;  } .aolReplacedBody a img{border: none;}.aolReplacedBody .aolmail_ReadMsgBody { width: 100%;}.aolReplacedBody .aolmail_ExternalClass {width: 100%;}
+<div><table>
+
+<tr>
+<td>Not rendering on your device? <a rel="noopener noreferrer" href="http://s1056471332.t.en25.com/e/es?s=1056471332&amp;e=138540&amp;elq=bd3ec5fac63c4a07ac70797a6a91f057">Try it in a webpage</a>.</td></tr></table><br />
+
+ <table><tr><td></td></tr><tr><td><table><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td rowspan="5" colspan="1">
+<div>
+<div><table><tr><td><img alt="" src="http://img.en25.com/EloquaImages/clients/Kinvey/%7B2c9ed9c7-b330-4c0f-938f-471d2b78eacf%7D_redox-logo.png" width="153" height="51"></td></tr></table></div>
+</div>
+</td><td></td>
+<td></td><td></td><td></td></tr><tr><td></td><td rowspan="3" colspan="2">
+<div>
+<div><table><tr><td>
+<img alt="" src="http://img.en25.com/EloquaImages/clients/Kinvey/%7B5b629dbb-7be1-4916-baf6-1a675b022ed4%7D_Screen_Shot_2016-12-21_at_4.45.17_PM.png" width="167" height="41"></td></tr></table></div>
+</div>
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr>
+<td></td><td></td><td rowspan="1" colspan="2">
+<div>
+<div><table><tr><td>
+<img alt="" src="http://img.en25.com/EloquaImages/clients/Kinvey/%7B70db5ba9-9835-48b0-851e-5091279a11c0%7D_Screen_Shot_2017-01-26_at_2.32.58_PM.png" width="36" height="16"></td></tr></table></div>
+</div>
+</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td></tr><tr><td rowspan="1" colspan="12">
+<div>
+<div>
+<table><tr><td><span>
+<div>
+<div><span>How to Mobilize Your EHR <br />
+Information Quickly <br />
+and Securely<br />
+</span><span>Tuesday, March 21st 12:00PM ET</span></div>
+
+</div>
+</span></td></tr></table></div>
+</div>
+</td></tr><tr><td rowspan="1" colspan="11">
+<div>
+<div>
+<table><tr><td><span>
+<div><a rel="noopener noreferrer" href="http://www.example.com/?elqTrackId=1FEBA1475A906EEA59C082FBE049DAE1&amp;elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqaid=1153&amp;elqat=1&amp;elqCampaignId=577"><b></b></a><b><a rel="noopener noreferrer" href="http://s1056471332.t.en25.com/e/er?s=1056471332&amp;lid=324&amp;elqTrackId=C6EF3B06BE2F1142FA0FFC1D77369CC3&amp;elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqaid=1153&amp;elqat=1">Click here to register for the webinar!</a></b><br />
+</div>
+</span></td></tr></table></div>
+
+</div>
+</td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td></tr><tr><td></td><td></td><td rowspan="1" colspan="8">
+<div>
+<div>
+<table><tr><td><span>Hi Sangyong,<br />
+<br />
+You are invited to attend our upcoming webinar, "How to Mobilize your EHR Information Quickly and Securely." The webinar begins at <b>12:00PM ET, Tuesday, March 21st. </b><br />
+<br />
+<b>Why You Should Attend: </b><b><br />
+</b>With
+ the adoption of electronic records, healthcare has been digitized. However, the data is too difficult to access. Join Niko Skievaski, co-founder and president of Redox (the healthcare API company), and Jikku Venkat, VP of products at Kinvey (the leading HIPAA compliant mobile development platform company), to learn how to strip away all archaic complexity and provide a familiar, modern API. Together, we enable your developers to code once and connect to all your EHR systems and transform this information into secure and engaging patient and provider app experiences - quickly.<b><br />
+</b><b><br />
+What You'll Learn: </b><br />
+<ul><li>Why
+ your app developers don’t need to know anything about HL7, FHIR, CDA, CCD, X12, NCPDP, DICOM, EDI to create modern app experiences.</li><li>Why you don’t need for the world to change; everything you need to innovate is already in place.</li><li>How to build apps that will scale across your enterprise and beyond.</li><li>That HIPAA compliant apps can be easy to build - you can start prototyping today.<br />
+<br />
+</li></ul>We hope to see you there!</span></td></tr></table></div>
+</div>
+</td><td></td><td></td></tr><tr><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td>
+<td></td><td></td><td></td><td rowspan="1" colspan="4">
+<div>
+<div>
+<table><tr><td><span>
+<div><a rel="noopener noreferrer" href="http://go.kinvey.com/how-to-mobilize-your-ehr-information-quickly-webinar/?elqTrackId=9dc3c3cfb7104e7ab8d3624db3b192bf&amp;elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqaid=1153&amp;elqat=1&amp;elqCampaignId=577">Register Now</a></div>
+<a rel="noopener noreferrer" href="http://go.kinvey.com/how-to-mobilize-your-ehr-information-quickly-webinar/?elqTrackId=a0e6cba0fcbe4393939dfdcbec64dc63&amp;elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqaid=1153&amp;elqat=1&amp;elqCampaignId=577"></a></span></td></tr></table></div>
+</div>
+
+</td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td></tr></table></td></tr><tr><td></td></tr></table> 
+<table>
+	
+		<tr>
+			<td>
+			<table>
+				
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><span><span><a rel="noopener noreferrer" href="http://www.kinvey.com?elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqCampaignId=577&amp;elqaid=1153&amp;elqat=1&amp;elqTrackId=7bdbfe8f01624f98818f28c6dad3932f"><img alt="" src="http://img.en25.com/EloquaImages/clients/Kinvey/{66db7c15-3b57-4438-9ec1-8606d6ed5bbd}_kinvey-logo-gray.png" height="39"></a><br />
+
+						<br />
+
+						Kinvey, Inc</span></span>
+						
+<div><span><span>99 Summer St</span></span></div>
+
+
+						
+<div><span><span>Suite 1500 &nbsp;&nbsp;</span></span></div>
+
+
+						
+<div><span><span>Boston, MA&nbsp;02110</span></span></div>
+
+
+						
+<div>&nbsp;</div>
+
+						</td>
+						<td><a rel="noopener noreferrer" href="https://twitter.com/kinvey?elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqCampaignId=577&amp;elqaid=1153&amp;elqat=1&amp;elqTrackId=75a39014e597432a9667463bb3b42bd6"><img alt="twitter" src="http://img.en25.com/EloquaImages/clients/Kinvey/%7B41a96234-8832-45b2-b603-3001e4f987f4%7D_twitter.png" height="40"><img src="http://img.en25.com/EloquaImages/clients/Kinvey/{bca871d1-8de0-489d-874a-5b3299a2dee6}_clearbox.png"></a><a rel="noopener noreferrer" href="https://www.linkedin.com/company/kinvey?elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqCampaignId=577&amp;elqaid=1153&amp;elqat=1&amp;elqTrackId=a620118ff7d04970a2c40141d5876bf3"><img alt="linkedin" src="http://img.en25.com/EloquaImages/clients/Kinvey/%7B3c73f2df-8008-4ebf-8e8b-1dabd953f06c%7D_linkedin.png" height="40"><img src="http://img.en25.com/EloquaImages/clients/Kinvey/{bca871d1-8de0-489d-874a-5b3299a2dee6}_clearbox.png"></a><a rel="noopener noreferrer" href="https://www.facebook.com/kinvey?elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqCampaignId=577&amp;elqaid=1153&amp;elqat=1&amp;elqTrackId=a1f6f985739742c9a7bcaab46ce709d3"><img alt="facebook" src="http://img.en25.com/EloquaImages/clients/Kinvey/%7Bd494a0ce-99b3-4d7c-a167-92efdd02ae5e%7D_fb.png" height="40"><img src="http://img.en25.com/EloquaImages/clients/Kinvey/{bca871d1-8de0-489d-874a-5b3299a2dee6}_clearbox.png"></a><a rel="noopener noreferrer" href="https://plus.google.com/+Kinvey/posts?elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqCampaignId=577&amp;elqaid=1153&amp;elqat=1&amp;elqTrackId=0475f20b4313429b90f2de9c3676ce33"><img alt="google plus" src="http://img.en25.com/EloquaImages/clients/Kinvey/%7Bbe0522c4-7ebb-4aff-a0c8-18e8460bf832%7D_gplus.png" height="40"></a></td>
+					</tr>
+				
+			</table>
+
+			
+<div>You are receiving this message from Kinvey. If you would like to unsubscribe, <a rel="noopener noreferrer" href="http://s1056471332.t.en25.com/e/u?s=1056471332&amp;elq=bd3ec5fac63c4a07ac70797a6a91f057">you can do so here.&nbsp;</a></div>
+
+
+			
+<div>View our <a rel="noopener noreferrer" href="http://www.kinvey.com/privacy?elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;elqCampaignId=577&amp;elqaid=1153&amp;elqat=1&amp;elqTrackId=20a9301e3ec34616b78ba242e16b6603"><span>Privacy Policy</span></a>.</div>
+
+			</td>
+		</tr>
+	
+</table>
+
+
+<img alt="" src="http://s1056471332.t.en25.com/e/FooterImages/FooterImage1?elq=bd3ec5fac63c4a07ac70797a6a91f057&amp;siteid=1056471332" width="1px" height="1px"></div>
+
+</div>
+
+</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>NASA가 밝힌 로또 당첨 확률 2배 높이는 법</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/03/nasae-ei-ee-ei-ie-2e-eie-e.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.284</id>
+
+    <published>2017-03-19T04:26:17Z</published>
+    <updated>2017-07-10T03:08:35Z</updated>
+
+    <summary>NASA엔 똑똑한 사람들이 많습니다. 그런 NASA가 밝힌 로또 당첨 확률 2배 높이는 법을 알려드리겠습니다. NASA도 성형 수술이나 중고 자동차에 관심이 많을 것 같긴 합니다. 당첨 확률을 높이려면, 로또를 두 개 사면 됩니다.NASA&#50644; &#46609;&#46609;&#54620; &#49324;&#46988;&#46308;&#51060; &#47566;&#49845;&#45768;&#45796;. &#44536;&#47088; NASA&#44032; &#48157;&#55180; &#47196;&#46608; &#45817;&#52392;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>NASA엔 똑똑한 사람들이 많습니다. 그런 NASA가 밝힌 로또 당첨 확률 2배 높이는 법을 알려드리겠습니다.</p>
+
+<p>NASA도 성형 수술이나 중고 자동차에 관심이 많을 것 같긴 합니다.</p>
+
+<p>당첨 확률을 높이려면, 로또를 두 개 사면 됩니다.</p><p>NASA&#50644; &#46609;&#46609;&#54620; &#49324;&#46988;&#46308;&#51060; &#47566;&#49845;&#45768;&#45796;. &#44536;&#47088; NASA&#44032; &#48157;&#55180; &#47196;&#46608; &#45817;&#52392; &#54869;&#47456; 2&#48176; &#45458;&#51060;&#45716; &#48277;&#51012; &#50508;&#47140;&#46300;&#47532;&#44192;&#49845;&#45768;&#45796;.</p>
+<p>NASA&#46020; &#49457;&#54805; &#49688;&#49696;&#51060;&#45208; &#51473;&#44256; &#51088;&#46041;&#52264;&#50640; &#44288;&#49900;&#51060; &#47566;&#51012; &#44163; &#44057;&#44596; &#54633;&#45768;&#45796;.</p>
+<p>&#45817;&#52392; &#54869;&#47456;&#51012; &#45458;&#51060;&#47140;&#47732;, &#47196;&#46608;&#47484; &#46160; &#44060; &#49324;&#47732; &#46121;&#45768;&#45796;.</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>12 cloud sessions that will inspire and inform your work</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/03/fwd-12-cloud-sessions-that-will-inspire-and-inform-your-work.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.283</id>
+
+    <published>2017-03-07T05:05:18Z</published>
+    <updated>2017-07-10T03:08:34Z</updated>
+
+    <summary>업무에 도움이 되는 클라우드 관련 정보 12가지 ---------- Forwarded message ---------- From: IBM InterConnect 2017 Date: Fri, Mar 3, 2017 at 1:41 AM Subject: 12 cloud sessions that will inspire and inform your work To: imyaman@hanmail.net View this email in...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>업무에 도움이 되는 클라우드 관련 정보 12가지</p>
+<p></p>
+<p>---------- Forwarded message ----------<br /> From: IBM InterConnect 2017 <br /> Date: Fri, Mar 3, 2017 at 1:41 AM<br /> Subject: 12 cloud sessions that will inspire and inform your work<br /> To: imyaman@hanmail.net</p>
+<p><br /> View this email in your browser<br /> <br /> [image: IBM InterConnect 2017]<br /> <br /> *King Kong, Robots &amp; Beer*. What do these have in common other than<br /> entertainment potential? Answer: IBM Cloud.</p>
+<p>Join us at *InterConnect 2017* -- the cloud event of the year. Immerse<br /> yourself in cool tech revolutions like Blockchain, AI, intelligent apps,<br /> intelligent things; well, pretty much everything on Gartner's 2017 top tech<br /> trends list<br /> .<br /> Plus the latest in cloud security.</p>
+<p>Register now</p>
+<p>Here's a teaser - 12 sessions that will inspire and inform your work at<br /> InterConnect:</p>
+<p>- Bringing King Kong to Life in 24K Resolution Using IBM Cloud<br /> - Robots in the Clouds with iPhones: Automating the Mobile App Lifecycle<br /> - BeerPM: Carlsberg's Journey to Process Excellence<br /> - Think Different: Changing the State of Mind When Building Applications<br /> for Cloud<br /> - A Next-Gen, Low-Code Intelligent Virtual Assistant<br /> - Hyperledger Project: A New Kind of Platform for the Next Generation of<br /> the Internet<br /> - Leading the Pack with IBM Cloud at the Boston Marathon<br /> - How to Keep Millions Happy with Games in the Cloud<br /> - Run your enterprise in 90 minutes with IBM Hybrid Cloud Management<br /> - Project STORM: Around the World in 80 Days on an Electric Motorcycle<br /> - Uber for Trucking: How PLM is Disrupting the Trucking Industry ...and<br /> more.</p>
+<p></p>
+<p>Preview all conference sessions</p>
+<p>ibm.com/interconnect<br /> <br /> #ibminterconnect</p>
+<p>© IBM Corp. 2017. IBM, the IBM logo and ibm.com are trademarks of IBM<br /> Corp., registered in many jurisdictions worldwide. Other product and<br /> service names might be trademarks of IBM or other companies. A current list<br /> of IBM trademarks is available on the web at "Copyright and trademark<br /> information" at ibm.com/legal/copytrade.shtml</p>
+<p>If you'd like IBM to refrain from sending you similar e-mails in the<br /> future, please Click Here<br /> .</p>
+<p>You may also mail a written request to IBM US at:</p>
+<p>IBM Corporation, 11501 Burnet Rd, Bldg 904 3B-000, Austin, TX 78758</p>
+<div><br />
+<div>---------- Forwarded message ----------<br />From: <b>IBM InterConnect 2017</b> <span>&lt;<a href="mailto:marketing@emm.ibmmail.com">marketing@emm.ibmmail.com</a>&gt;</span><br />Date: Fri, Mar 3, 2017 at 1:41 AM<br />Subject: 12 cloud sessions that will inspire and inform your work<br />To: <a href="mailto:imyaman@hanmail.net">imyaman@hanmail.net</a><br /><br /><br />
+<div>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td><span><a href="http://jan_alumni.html"></a><a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSLP?e=tDFFC51B33E086FFD26B67440CBB15094A3380958021314DD418FDF69A5B22C8658F9603A3623B33937C43AA5666DC6B78C3B6199105D397F7C8A6379CC3E615D26339AACB6A7A171CD5F3336F15D1A4B0F60B065E33281BAD215BF04F011FEDB"><span>View this email in your browser</span></a></span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSL?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=2&amp;e=2&amp;x=2457906.0"><img alt="IBM InterConnect 2017" src="http://link-em-us.unicaondemand.com/frontend/assets?accountId=256&amp;version=ec_157493_1488274642493_&amp;digitalAssetId=740228&amp;ext=jpg" width="600" height="333" /></a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td><span><b>King Kong, Robots &amp; Beer</b>. What do these have in common other than entertainment potential? Answer: IBM Cloud.<br /><br /> Join us at <b>InterConnect 2017</b> -- the cloud event of the year. Immerse yourself in cool tech revolutions like Blockchain, AI, intelligent apps, intelligent things; well, pretty much everything on <a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSL?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=3&amp;e=2&amp;x=2457906.0">Gartner's 2017 top tech trends list</a>. Plus the latest in cloud security.<br /><br /></span>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td><a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSL?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=4&amp;e=2&amp;x=2457906.0"> Register now </a></td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<br /><span><span>Here's a teaser - 12 sessions that will inspire and inform your work at InterConnect:<br /></span></span>
+<ul>
+<li>Bringing King Kong to Life in 24K Resolution Using IBM Cloud</li>
+<li>Robots in the Clouds with iPhones: Automating the Mobile App Lifecycle</li>
+<li>BeerPM: Carlsberg's Journey to Process Excellence</li>
+<li>Think Different: Changing the State of Mind When Building Applications for Cloud</li>
+<li>A Next-Gen, Low-Code Intelligent Virtual Assistant</li>
+<li>Hyperledger Project: A New Kind of Platform for the Next Generation of the Internet</li>
+<li>Leading the Pack with IBM Cloud at the Boston Marathon</li>
+<li>How to Keep Millions Happy with Games in the Cloud</li>
+<li>Run your enterprise in 90 minutes with IBM Hybrid Cloud Management</li>
+<li>Project STORM: Around the World in 80 Days on an Electric Motorcycle</li>
+<li>Uber for Trucking: How PLM is Disrupting the Trucking Industry</li>
+...and more.</ul>
+<br /><span><span><br /></span></span>
+<table>
+<tbody>
+<tr>
+<td>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td><a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSL?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=5&amp;e=2&amp;x=2457906.0"> <span>Preview all conference sessions </span> </a></td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td> </td>
+<td><span><a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSL?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=6&amp;e=2&amp;x=2457906.0">ibm.com/interconnect</a>   <a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSL?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=7&amp;e=2&amp;x=2457906.0">#ibminterconnect</a><br /><br /></span><span>© IBM Corp. 2017. IBM, the IBM logo and <a href="http://ibm.com">ibm.com</a> are trademarks of IBM Corp., registered in many jurisdictions worldwide. Other product and service names might be trademarks of IBM or other companies. A current list of IBM trademarks is available on the web at "Copyright and trademark information" at <a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSL?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=8&amp;e=2&amp;x=2457906.0">ibm.com/legal/copytrade.shtml</a><br /> <br />If you'd like IBM to refrain from sending you similar e-mails in the future, please <a href="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSL?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=89&amp;e=2&amp;x=2457906.0">Click Here</a>. <br />You may also mail a written request to IBM US at: <br /> <br />IBM Corporation, 11501 Burnet Rd, Bldg 904 3B-000, Austin, TX 78758 <br /> </span></td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+<img src="http://link2-em-us.unicaondemand.com/emessageIRS/servlet/IRSO?v=5&amp;a=10245&amp;r=355785&amp;m=28651&amp;l=-1&amp;e=2" width="1" height="1" /> <img src="http://miq-p4-qa-em.unicaondemand.com/C14R50A.gif?pvci=1883_8260_355785" width="1" height="1" /></div>
+</div>
+</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>오늘의 커피 사진</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/01/post-10.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.282</id>
+
+    <published>2017-01-30T08:23:55Z</published>
+    <updated>2017-07-10T03:08:34Z</updated>
+
+    <summary> 엔제리너스 원두로 만든 커피를 스타벅스 컵에 담았습니다. 여러 모로 불비하네요....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p><img alt="" src="https://freehuman.fr/uploads/images/scaled_full_06ba50cef62aeb88c7f3.jpg" width="320" height="200" class="mt-image-none" style="" /></p>
+
+<p>엔제리너스 원두로 만든 커피를 스타벅스 컵에 담았습니다. 여러 모로 불비하네요.</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>iPhone 6s의 3D 터치에 대해</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2015/10/iphone-6s-3d.html" />
+    <id>tag:weblog.youre.space,2015:/imyaman//12.271</id>
+
+    <published>2015-10-25T06:45:51Z</published>
+    <updated>2017-07-10T03:08:34Z</updated>
+
+    <summary> 아이폰의 3D 터치는 애플답지 않습니다. 아쉬움이 있어 이야기를 꺼내봅니다. 애플다운 애플은, 매킨토시의 마우스에 오직 1개의 버튼만 두었습니다. 오직 1개인 이 버튼은 거의 마우스 절반 크기였습니다. 매킨토시에는 &quot;Contextual menu&quot;라는 것이 있습니다. 윈도우즈의 오른쪽 버튼 메뉴와 비슷한 것입니다. 이 메뉴를 보려면,...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<div class="entry-content" itemprop="articleBody">
+<p>아이폰의 3D 터치는 애플답지 않습니다. 아쉬움이 있어 이야기를 꺼내봅니다.</p>
+<p>애플다운 애플은, 매킨토시의 마우스에 오직 1개의 버튼만 두었습니다. 오직 1개인 이 버튼은 거의 마우스 절반 크기였습니다. 매킨토시에는 "Contextual menu"라는 것이 있습니다. 윈도우즈의 오른쪽 버튼 메뉴와 비슷한 것입니다. 이 메뉴를 보려면, 키보드의 ctrl 키와 마우스 버튼을 누르면 됩니다. 있지만, 엄청 권하는 것은 아닌, 그런 기능입니다. 사실 이 메뉴를 쓰지 않아도 불편하지 않은게 매킨토시입니다. 애초에 마우스 버튼이 1개인 것에서 알아볼 수 있는 특징입니다.</p>
+<p>이 메뉴에 대한 비난 중 핵심은, contextual하다는 겁니다. 다시 말하면 상황에 따라 메뉴 내용이 달라진다는 거죠. 사용자는 그 메뉴를 눌러보기 전까지 그 메뉴의 내용을 알 수 없습니다. 그리고 곳곳에 메뉴를 눌러보고 반복해서 써 봐야 익숙해지는거죠.</p>
+<p>윈도우즈에서는 마우스의 두 번째 버튼이 없으면 살기 힘들겁니다. 윈도우즈에서는 이런 메뉴를 많이 쓰죠. 이 메뉴를 익히면 그만큼 빠르게 작업할 수도 있습니다. 하지만 "익히면" 말인거죠.</p>
+<p>3D 터치도 같은 맥락입니다. 눌러보기 전엔 그게 어떤 동작을 할지 모릅니다. 머리속에 쉽게 개념이 세워지지도 않고요. 앱 아이콘에서는 앱 내에서 할 수 있는 주요한 행위(메모 앱의 경우 새 메모 만들기 같은)를 메뉴로 보여주는데, Photo 앱에서는 사진을 미리보는 기능을 합니다. 사진을 대상으로 할 수 있는 주요한 행위(미리보기, 공유하기)를 메뉴로 보여주는게 아니고요.</p>
+<p>학습의 부담이 있긴 하지만, 결국 사람들은 익숙해질겁니다.</p>
+<p>다만, "Think Different"와 "인간 중심"이라는 이상을 가진 애플다운 애플이 그리운 것 뿐입니다, 개인적으로.</p>
+</div>]]>
+        
+    </content>
+</entry>
+
+</feed>
