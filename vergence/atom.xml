@@ -4,9 +4,56 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-08-16T11:56:43Z</updated>
+    <updated>2017-08-16T12:49:59Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>돈 벌면 뭐하겠노</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/post-73.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.332</id>
+
+    <published>2017-08-16T12:48:27Z</published>
+    <updated>2017-08-16T12:49:59Z</updated>
+
+    <summary>돈 벌면 뭐하겠노. 맥주 사묵겠지....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[돈 벌면 뭐하겠노. 맥주 사묵겠지.
+
+<a href="http://weblog.youre.space/vergence/uploads/20170816_214610_HDR.jpg"><img alt="20170816_214610_HDR.jpg" src="http://weblog.youre.space/vergence/assets_c/2017/08/20170816_214610_HDR-thumb-360xauto-4.jpg" width="360" height="360" class="mt-image-none" style="" /></a>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>2020년엔</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/2020ei.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.331</id>
+
+    <published>2017-08-16T12:10:28Z</published>
+    <updated>2017-08-16T12:10:28Z</updated>
+
+    <summary>2020년엔 세상을 바꾸는 일을 하고 싶습니다. 만분의 일, 억분의 일이라도, 바꾸는 일을 하고 싶습니다. 사실, 2017년에도 하고 싶습니다....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[2020년엔 세상을 바꾸는 일을 하고 싶습니다.<br />
+만분의 일, 억분의 일이라도, 바꾸는 일을 하고 싶습니다.<br />
+사실, 2017년에도 하고 싶습니다.<br />
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>우연히 주식으로 돈 벌었던 이야기</title>
@@ -484,190 +531,6 @@ reload /dev/block/mmcblk0</code></pre>]]>
 <div><a href="http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm">http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm</a><br /><br />단위 변환은 아래와 같이,<br /><a href="http://graphicdesign.stackexchange.com/questions/36482/how-to-convert-between-android-dp-and-css-px">http://graphicdesign.stackexchange.com/questions/36482/how-to-convert-between-android-dp-and-css-px</a><br /><br />폰트 사이즈는 CSS로 상대적인 크기로,<br /><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">https://developer.mozilla.org/en-US/docs/Web/CSS/font-size</a><br /><br /><br /><a href="https://developer.chrome.com/multidevice/webview/pixelperfect">https://developer.chrome.com/multidevice/webview/pixelperfect</a></div>
 </div>
 </div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>카산드라 설치 cassandra, 유저그리드 설치 usergrid</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/iiee-ii-cassandra-iieee-ii-usergrid.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.250</id>
-
-    <published>2017-07-05T01:59:23Z</published>
-    <updated>2017-07-09T14:53:45Z</updated>
-
-    <summary>http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2 apt-get -qq -y purge openjdk* apt-get -qq -y install software-properties-common add-apt-repository ppa:webupd8team/java apt-get -qq update apt-get -qq -y install oracle-java7-installer update-java-alternatives -s java-7-oracle apt-get -qq install oracle-java7-set-default gpg --keyserver pgp.mit.edu --recv-keys F758CE318D77295D gpg --export --armor F758CE318D77295D | sudo apt-key...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2</p>
-
-<p><br />
-apt-get -qq -y purge openjdk*<br />
-apt-get -qq -y install software-properties-common<br />
-add-apt-repository ppa:webupd8team/java<br />
-apt-get -qq update<br />
-apt-get -qq -y install oracle-java7-installer<br />
-update-java-alternatives -s java-7-oracle<br />
-apt-get -qq install oracle-java7-set-default</p>
-
-<p>gpg --keyserver pgp.mit.edu --recv-keys F758CE318D77295D<br />
-gpg --export --armor F758CE318D77295D | sudo apt-key add -<br />
-gpg --keyserver pgp.mit.edu --recv-keys 2B5C1B00<br />
-gpg --export --armor 2B5C1B00 | sudo apt-key add -<br />
-gpg --keyserver pgp.mit.edu --recv-keys 0353B12C<br />
-gpg --export --armor 0353B12C | sudo apt-key add -</p>
-
-<p>apt-get -qq update<br />
-apt-get -qq -y install cassandra</p>
-
-<p>service cassandra stop<br />
-rm -rf /var/lib/cassandra/data/system/*</p>
-
-<p><br />
-apt-get -qq install tomcat7 nginx</p>
-
-<p><br />
-새 organization 만들기</p>
-
-<p># curl -X POST  \<br />
->      -d 'organization=imyaman&username=svr42mp&name=Admin&email=<br />
-svr42mp@yahoo.com&password=baas.io1' \<br />
->      http://localhost:8080/management/organizations<br />
-{<br />
-  "action" : "new organization",<br />
-  "status" : "ok",<br />
-  "data" : {<br />
-    "owner" : {<br />
-      "applicationId" : "00000000-0000-0000-0000-000000000001",<br />
-      "username" : "svr42mp",<br />
-      "name" : "Admin",<br />
-      "email" : "svr42mp@yahoo.com",<br />
-      "activated" : true,<br />
-      "confirmed" : true,<br />
-      "disabled" : false,<br />
-      "properties" : { },<br />
-      "uuid" : "f0e317ea-2f72-11e5-9362-3f286e63b447",<br />
-      "adminUser" : true,<br />
-      "displayEmailAddress" : "Admin ",<br />
-      "htmldisplayEmailAddress" : "Admin &lt;<a />
-com\">svr42mp@yahoo.com&gt;"<br />
-    },<br />
-    "organization" : {<br />
-      "name" : "imyaman",<br />
-      "properties" : null,<br />
-      "uuid" : "f110908a-2f72-11e5-bb16-fdddaa772565",<br />
-      "passwordHistorySize" : 0<br />
-    }<br />
-  },<br />
-  "timestamp" : 1437460641880,<br />
-  "duration" : 994</p>
-
-<p></p>
-
-<p><br />
-================== admin ==============<br />
-curl -X POST  \<br />
-     -d 'organization=imyaman&username=svr42mp&name=Admin&email=<br />
-svr42mp@yahoo.com&password=baas.io1' \<br />
-     http://localhost:8080/management/organizations</p>
-
-<p>curl 'http://localhost:8080/management/token?grant_type=<br />
-password&username=svr42mp&password=baas.io1'</p>
-
-<p>curl -H "Authorization: Bearer<br />
-YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br />
-\<br />
-     -H "Content-Type: application/json" \<br />
-     -X POST -d '{ "name":"baas.io" }' \<br />
-     http://localhost:8080/management/orgs/imyaman/apps</p>
-
-<p>curl -H "Authorization: Bearer<br />
-YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br />
-\<br />
-     -X POST "http://localhost:8080/imyaman/baas.io/users" \<br />
-     -d '{ "username":"bruce", "password":"baasio1", "email":"<br />
-imyaman@hitel.net" }'</p>
-
-<p>curl -H "Authorization: Bearer<br />
-YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br />
-\<br />
-     -X GET "http://localhost:8080/imyaman/baas.io/roles/guest"</p>
-
-<p>curl -H "Authorization: Bearer<br />
-YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br />
-\<br />
-     -X GET "http://localhost:8080/imyaman/baas.io/roles/guest/permissions"</p>
-
-<p>curl -H "Authorization: Bearer<br />
-YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY"<br />
-\<br />
-     -X POST "http://localhost:8080/imyaman/baas.io/roles/guest/permissions"<br />
-\<br />
-     -d '{"permission":"get,post,put,delete:/**"}'</p>
-
-<p>============ ================== ==================<br />
-## as a user<br />
-curl 'http://localhost:8080/imyaman/baas.io/token?grant_<br />
-type=password&username=bruce&password=baasio1'</p>
-
-<p>curl -H "Authorization: Bearer<br />
-YWMtDrgBqC90EeWwMaOzMjpJRAAAAU7TaI2Y_TRmmlPydRYYyexiDqqUxUvWKZg"<br />
-\<br />
-     -X POST -d '[ { "cat":"fluffy" }, { "fish": { "gold":2, "oscar":1 } }<br />
-]' \<br />
-     http://localhost:8080/imyaman/baas.io/pets</p>
-
-<p><br />
-파일 업로드<br />
-http://usergrid.incubator.apache.org/docs/assets-and-<br />
-files/uploading-assets.html<br />
-</p><div><div><a href="http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2">http://imyaman.bekrage.net/ROOT.war_usergrid_1.0.2</a><br /><br /><br />apt-get -qq -y purge openjdk* <br />apt-get -qq -y install software-properties-common<br />add-apt-repository ppa:webupd8team/java<br />apt-get -qq update<br />apt-get -qq -y install oracle-java7-installer<br />update-java-alternatives -s java-7-oracle<br />apt-get -qq install oracle-java7-set-default<br /><br />gpg --keyserver <a href="http://pgp.mit.edu">pgp.mit.edu</a> --recv-keys F758CE318D77295D<br />gpg --export --armor F758CE318D77295D | sudo apt-key add -<br />gpg --keyserver <a href="http://pgp.mit.edu">pgp.mit.edu</a> --recv-keys 2B5C1B00<br />gpg --export --armor 2B5C1B00 | sudo apt-key add -<br />gpg --keyserver <a href="http://pgp.mit.edu">pgp.mit.edu</a> --recv-keys 0353B12C<br />gpg --export --armor 0353B12C | sudo apt-key add -<br /><br />apt-get -qq update<br />apt-get -qq -y install cassandra<br /><br />service cassandra stop<br />rm -rf /var/lib/cassandra/data/system/* <br /><br /><br /></div><div>apt-get -qq install tomcat7 nginx<br /></div><div><br /><br />새 organization 만들기<br /><br /># curl -X POST  \<br />&gt;      -d &#39;organization=imyaman&amp;username=svr42mp&amp;name=Admin&amp;email=<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&amp;password=baas.io1&#39; \<br />&gt;      <a href="http://localhost:8080/management/organizations">http://localhost:8080/management/organizations</a><br />{<br />  &quot;action&quot; : &quot;new organization&quot;,<br />  &quot;status&quot; : &quot;ok&quot;,<br />  &quot;data&quot; : {<br />    &quot;owner&quot; : {<br />      &quot;applicationId&quot; : &quot;00000000-0000-0000-0000-000000000001&quot;,<br />      &quot;username&quot; : &quot;svr42mp&quot;,<br />      &quot;name&quot; : &quot;Admin&quot;,<br />      &quot;email&quot; : &quot;<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&quot;,<br />      &quot;activated&quot; : true,<br />      &quot;confirmed&quot; : true,<br />      &quot;disabled&quot; : false,<br />      &quot;properties&quot; : { },<br />      &quot;uuid&quot; : &quot;f0e317ea-2f72-11e5-9362-3f286e63b447&quot;,<br />      &quot;adminUser&quot; : true,<br />      &quot;displayEmailAddress&quot; : &quot;Admin &lt;<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&gt;&quot;,<br />      &quot;htmldisplayEmailAddress&quot; : &quot;Admin &amp;lt;&lt;a href=\&quot;mailto:<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>\&quot;&gt;<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&lt;/a&gt;&amp;gt;&quot;<br />    },<br />    &quot;organization&quot; : {<br />      &quot;name&quot; : &quot;imyaman&quot;,<br />      &quot;properties&quot; : null,<br />      &quot;uuid&quot; : &quot;f110908a-2f72-11e5-bb16-fdddaa772565&quot;,<br />      &quot;passwordHistorySize&quot; : 0<br />    }<br />  },<br />  &quot;timestamp&quot; : 1437460641880,<br />  &quot;duration&quot; : 994<br /><br /><br /><br /><br /></div>================== admin ==============<br />curl -X POST  \<br />     -d &#39;organization=imyaman&amp;username=svr42mp&amp;name=Admin&amp;email=<a href="mailto:svr42mp@yahoo.com">svr42mp@yahoo.com</a>&amp;password=baas.io1&#39; \<br />     <a href="http://localhost:8080/management/organizations">http://localhost:8080/management/organizations</a><br /><br />curl &#39;<a href="http://localhost:8080/management/token?grant_type=password&amp;username=svr42mp&amp;password=baas.io1">http://localhost:8080/management/token?grant_type=password&amp;username=svr42mp&amp;password=baas.io1</a>&#39;<br /><br />curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br />     -H &quot;Content-Type: application/json&quot; \<br />     -X POST -d &#39;{ &quot;name&quot;:&quot;<a href="http://baas.io">baas.io</a>&quot; }&#39; \<br />     <a href="http://localhost:8080/management/orgs/imyaman/apps">http://localhost:8080/management/orgs/imyaman/apps</a><br /><br />curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br />     -X POST &quot;<a href="http://localhost:8080/imyaman/baas.io/users">http://localhost:8080/imyaman/baas.io/users</a>&quot; \<br />     -d &#39;{ &quot;username&quot;:&quot;bruce&quot;, &quot;password&quot;:&quot;baasio1&quot;, &quot;email&quot;:&quot;<a href="mailto:imyaman@hitel.net">imyaman@hitel.net</a>&quot; }&#39;<br /><br />curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br />     -X GET &quot;<a href="http://localhost:8080/imyaman/baas.io/roles/guest">http://localhost:8080/imyaman/baas.io/roles/guest</a>&quot;<br /><br />curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br />     -X GET &quot;<a href="http://localhost:8080/imyaman/baas.io/roles/guest/permissions">http://localhost:8080/imyaman/baas.io/roles/guest/permissions</a>&quot;<br /><br />curl -H &quot;Authorization: Bearer YWMtiKeh_i9zEeWd2JM4d8wEjQAAAU7TZR7-a8g3ndXqy50EwQmGxDWIYyg2EdY&quot; \<br />     -X POST &quot;<a href="http://localhost:8080/imyaman/baas.io/roles/guest/permissions">http://localhost:8080/imyaman/baas.io/roles/guest/permissions</a>&quot; \<br />     -d &#39;{&quot;permission&quot;:&quot;get,post,put,delete:/**&quot;}&#39;<br /><br />============ ================== ==================<br />## as a user<br />curl &#39;<a href="http://localhost:8080/imyaman/baas.io/token?grant_type=password&amp;username=bruce&amp;password=baasio1">http://localhost:8080/imyaman/baas.io/token?grant_type=password&amp;username=bruce&amp;password=baasio1</a>&#39;<br /><br />curl -H &quot;Authorization: Bearer YWMtDrgBqC90EeWwMaOzMjpJRAAAAU7TaI2Y_TRmmlPydRYYyexiDqqUxUvWKZg&quot; \<br />     -X POST -d &#39;[ { &quot;cat&quot;:&quot;fluffy&quot; }, { &quot;fish&quot;: { &quot;gold&quot;:2, &quot;oscar&quot;:1 } } ]&#39; \<br />     <a href="http://localhost:8080/imyaman/baas.io/pets">http://localhost:8080/imyaman/baas.io/pets</a><br /><br /><br />파일 업로드<br /><a href="http://usergrid.incubator.apache.org/docs/assets-and-files/uploading-assets.html">http://usergrid.incubator.apache.org/docs/assets-and-files/uploading-assets.html</a><br /></div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>mbaas shopping, BaaS 속도 비교</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/mbaas-shopping-baas-ie-ee.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.249</id>
-
-    <published>2017-07-05T01:59:21Z</published>
-    <updated>2017-07-09T14:53:45Z</updated>
-
-    <summary>http://www.infoworld.com/article/2842791/application- development/mbaas-shoot-out-5-cloud-platforms-for-building-mobile-apps.html http://www.infoworld.com/resources/56693/mobile-apps/ pick-the-right-cloud-for-building-your-mobile-apps?nsdr=true http://core0.staticworld.net/assets/media-resource/56693/ifw_dd_mbaas.pdf http://appindex.com/blog/top-mobile-backend-service-mbaas-providers/ $ time sh databoom.t.sh 4m0.38s real 0m0.82s user 0m1.28s system $ time sh parse.t.sh 3m35.01s real 0m0.70s user 0m1.06s system http://www.infoworld.com/article/2842791/application-development/mbaas-shoot-out-5-cloud-platforms-for-building-mobile-apps.htmlhttp://www.infoworld.com/resources/56693/mobile-apps/pick-the-right-cloud-for-building-your-mobile-apps?nsdr=truehttp://core0.staticworld.net/assets/media-resource/56693/ifw_dd_mbaas.pdfhttp://appindex.com/blog/top-mobile-backend-service-mbaas-providers/$ time sh databoom.t.sh 4m0.38s real 0m0.82s user 0m1.28s system$ time sh parse.t.sh 3m35.01s...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>http://www.infoworld.com/article/2842791/application-<br />
-development/mbaas-shoot-out-5-cloud-platforms-for-building-mobile-apps.html</p>
-
-<p>http://www.infoworld.com/resources/56693/mobile-apps/<br />
-pick-the-right-cloud-for-building-your-mobile-apps?nsdr=true</p>
-
-<p>http://core0.staticworld.net/assets/media-resource/56693/ifw_dd_mbaas.pdf</p>
-
-<p>http://appindex.com/blog/top-mobile-backend-service-mbaas-providers/</p>
-
-<p></p>
-
-<p></p>
-
-<p><br />
-$ time sh databoom.t.sh<br />
-    4m0.38s real     0m0.82s user     0m1.28s system</p>
-
-<p>$ time sh parse.t.sh<br />
-    3m35.01s real     0m0.70s user     0m1.06s system<br />
-</p><div><a href="http://www.infoworld.com/article/2842791/application-development/mbaas-shoot-out-5-cloud-platforms-for-building-mobile-apps.html">http://www.infoworld.com/article/2842791/application-development/mbaas-shoot-out-5-cloud-platforms-for-building-mobile-apps.html</a><br /><br /><a href="http://www.infoworld.com/resources/56693/mobile-apps/pick-the-right-cloud-for-building-your-mobile-apps?nsdr=true">http://www.infoworld.com/resources/56693/mobile-apps/pick-the-right-cloud-for-building-your-mobile-apps?nsdr=true</a><br /><br /><a href="http://core0.staticworld.net/assets/media-resource/56693/ifw_dd_mbaas.pdf">http://core0.staticworld.net/assets/media-resource/56693/ifw_dd_mbaas.pdf</a><br /><br /><div><a href="http://appindex.com/blog/top-mobile-backend-service-mbaas-providers/">http://appindex.com/blog/top-mobile-backend-service-mbaas-providers/</a></div><div><a href="http://appindex.com/blog/top-mobile-backend-service-mbaas-providers/"><br /></a></div><div><a href="http://appindex.com/blog/top-mobile-backend-service-mbaas-providers/"><br /></a></div><div><a href="http://appindex.com/blog/top-mobile-backend-service-mbaas-providers/"><br /></a></div><div>$ time sh <a href="http://databoom.t.sh">databoom.t.sh</a><br />    4m0.38s real     0m0.82s user     0m1.28s system<br /><br />$ time sh <a href="http://parse.t.sh">parse.t.sh</a><br />    3m35.01s real     0m0.70s user     0m1.06s system</div></div>]]>
         
     </content>
 </entry>
