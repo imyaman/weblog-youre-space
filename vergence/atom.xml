@@ -4,9 +4,32 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-08-16T12:49:59Z</updated>
+    <updated>2017-08-21T01:02:34Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>youtube 테스트</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/youtube.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.333</id>
+
+    <published>2017-08-21T01:02:05Z</published>
+    <updated>2017-08-21T01:02:34Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/tNDFEXqk7wI" frameborder="0" allowfullscreen=""></iframe>
+</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>돈 벌면 뭐하겠노</title>
@@ -500,35 +523,6 @@ reload /dev/block/mmcblk0</code></pre>]]>
 <div dir="auto"></div>
 <div dir="auto">Gears of War 게임의 트레이닝 부분 하다 보니 그 때 생각이 나네요.</div>
 </div>
-</div>
-</div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>웹 폰트 사이즈 관련 참고자료</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/fwd-i-ii-iii-ee-ieie.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.251</id>
-
-    <published>2017-07-05T01:59:25Z</published>
-    <updated>2017-07-09T14:59:27Z</updated>
-
-    <summary>버튼 사이즈는 48dp로, http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm 단위 변환은 아래와 같이, http://graphicdesign.stackexchange.com/questions/36482/how- to-convert-between-android-dp-and-css-px 폰트 사이즈는 CSS로 상대적인 크기로, https://developer.mozilla.org/en-US/docs/Web/CSS/font-size https://developer.chrome.com/multidevice/webview/pixelperfect 버튼 사이즈는 48dp로, http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm단위 변환은 아래와 같이,http://graphicdesign.stackexchange.com/questions/36482/how-to-convert-between-android-dp-and-css-px폰트 사이즈는 CSS로 상대적인 크기로,https://developer.mozilla.org/en-US/docs/Web/CSS/font-sizehttps://developer.chrome.com/multidevice/webview/pixelperfect...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>버튼 사이즈는 48dp로,<br /> http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm</p>
-<p>단위 변환은 아래와 같이,<br /> http://graphicdesign.stackexchange.com/questions/36482/how-<br /> to-convert-between-android-dp-and-css-px</p>
-<p>폰트 사이즈는 CSS로 상대적인 크기로,<br /> https://developer.mozilla.org/en-US/docs/Web/CSS/font-size</p>
-<p><br /> https://developer.chrome.com/multidevice/webview/pixelperfect</p>
-<div>버튼 사이즈는 48dp로,<br />
-<div>
-<div><a href="http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm">http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm</a><br /><br />단위 변환은 아래와 같이,<br /><a href="http://graphicdesign.stackexchange.com/questions/36482/how-to-convert-between-android-dp-and-css-px">http://graphicdesign.stackexchange.com/questions/36482/how-to-convert-between-android-dp-and-css-px</a><br /><br />폰트 사이즈는 CSS로 상대적인 크기로,<br /><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">https://developer.mozilla.org/en-US/docs/Web/CSS/font-size</a><br /><br /><br /><a href="https://developer.chrome.com/multidevice/webview/pixelperfect">https://developer.chrome.com/multidevice/webview/pixelperfect</a></div>
 </div>
 </div>]]>
         
