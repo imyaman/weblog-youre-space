@@ -4,9 +4,61 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-08-16T12:49:59Z</updated>
+    <updated>2017-08-23T23:14:27Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>Request Tracker 설치</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/request-tracker-ii.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.337</id>
+
+    <published>2017-08-23T22:50:08Z</published>
+    <updated>2017-08-23T23:14:27Z</updated>
+
+    <summary>Request Tracker를 설치했습니다. 필요한 Perl 모듈 중에 2개만 수동으로 설치했고 나머지는 패키지로 설치했습니다. 그리하여 상당히 순조롭게. standalone으로 실행했습니다. standalone은 Starman을 이용하는군요. 외부의 메일 서버와 연결되도록 설정하고, 사용자들 설정하면 동작하겠지요. 어떻게 쓸지는 쓰면서 고민해봐야겠습니다. #경축...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>Request Tracker를 설치했습니다. <br />
+필요한 Perl 모듈 중에 2개만 수동으로 설치했고 나머지는 패키지로 설치했습니다. 그리하여 상당히 순조롭게.</p>
+
+<p>standalone으로 실행했습니다. standalone은 Starman을 이용하는군요.</p>
+
+<p>외부의 메일 서버와 연결되도록 설정하고, 사용자들 설정하면 동작하겠지요.<br />
+어떻게 쓸지는 쓰면서 고민해봐야겠습니다.</p>
+
+<p>#경축</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>공기가 맑습니다</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/eee-eiee.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.334</id>
+
+    <published>2017-08-23T10:37:15Z</published>
+    <updated>2017-08-23T10:37:15Z</updated>
+
+    <summary>지난 봄엔 공기가 심하게 안 좋았습니다. 그 때를 생각하면 지금 공기는 마치 다른 곳의 공기 같아요. 공기가 맑아서 기분이 좋습니다. 하늘도 푸르고 맑고 깊어요....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>지난 봄엔 공기가 심하게 안 좋았습니다. 그 때를 생각하면 지금 공기는 마치 다른 곳의 공기 같아요.</p>
+
+<p>공기가 맑아서 기분이 좋습니다. 하늘도 푸르고 맑고 깊어요.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>돈 벌면 뭐하겠노</title>
@@ -461,74 +513,6 @@ reload /dev/block/mmcblk0</code></pre>]]>
 <div dir="auto"></div>
 <div dir="auto">Gears of War 게임의 트레이닝 부분 하다 보니 그 때 생각이 나네요.</div>
 </div>
-</div>
-</div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Gears of War 하고 떠오른 생각</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/gears-of-war-1.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.327</id>
-
-    <published>2017-07-10T02:32:10Z</published>
-    <updated>2017-08-14T13:57:39Z</updated>
-
-    <summary> 한번은 부소대장 대신해서 수색작전을 한 적이 있습니다. GOP 종심매복은 소대장, 종심수색은 부소대장이 맡아서 했는데, 딱 한 번 부소대장 대신 한 적이 있습니다. GOP에서 철수한 지 오래되지 않은 터라 뭐든 새롭게 해야하는 것이 많았는데, 수색작전도 그랬습니다. 소대원들은 부소대장과 몇 번...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<div id="AOLMsgPart_2_f31c611a-f3bc-4d89-9e3b-1776ff9546b6">
-<div style="margin-bottom: 45px;" class="aolReplacedBody">
-<div style="font-size: 10pt;">
-<div dir="auto">한번은 부소대장 대신해서 수색작전을 한 적이 있습니다. GOP 종심매복은 소대장, 종심수색은 부소대장이 맡아서 했는데, 딱 한 번 부소대장 대신 한 적이 있습니다.</div>
-<div dir="auto"></div>
-<div dir="auto">GOP에서 철수한 지 오래되지 않은 터라 뭐든 새롭게 해야하는 것이 많았는데, 수색작전도 그랬습니다. 소대원들은 부소대장과 몇 번 수색작전 경험이 있긴 했지만.</div>
-<div dir="auto"></div>
-<div dir="auto">횡으로 전개하여 산 정상 쪽으로 좁혀가며 이동하여 적을 찾고, 땅 속에 적이 은신해 있는지 탐침봉으로 땅을 쑤시면서 이동하기는 개뿔...</div>
-<div dir="auto">탐색작전 수행에 대해 설명하는데, 소대원들 눈빛이 '진짜 그렇게 한다고?'</div>
-<div dir="auto">제 머리 속에 든 생각, '아뿔싸. 지난 번에 시간 때우기 식으로 대충한게 분명하구나.'</div>
-<div dir="auto">그 날 처음으로 소대원들과 실제 기동하면서 수색작전 연습했습니다. 게다가 그게 마지막이었습니다.</div>
-<div dir="auto"></div>
-<div dir="auto">지금 생각해보니, 수색작전 전에 소대장으로서 미리 점검했어야 했는데. <span style="font-size: 10pt;">부소대장을 욕하려는 건 아닙니다. 부대가 워낙에 바쁘다보니...</span></div>
-<div dir="auto">전역한 지 한참 되었지만, 지금도 곳곳에 훈련되지 않은 병력이 많을 걸 생각하면, 전쟁 나지 말라고 오늘도 기도합니다.</div>
-<div dir="auto"></div>
-<div dir="auto">Gears of War 게임의 트레이닝 부분 하다 보니 그 때 생각이 나네요.</div>
-</div>
-</div>
-</div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>웹 폰트 사이즈 관련 참고자료</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/fwd-i-ii-iii-ee-ieie.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.251</id>
-
-    <published>2017-07-05T01:59:25Z</published>
-    <updated>2017-07-09T14:59:27Z</updated>
-
-    <summary>버튼 사이즈는 48dp로, http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm 단위 변환은 아래와 같이, http://graphicdesign.stackexchange.com/questions/36482/how- to-convert-between-android-dp-and-css-px 폰트 사이즈는 CSS로 상대적인 크기로, https://developer.mozilla.org/en-US/docs/Web/CSS/font-size https://developer.chrome.com/multidevice/webview/pixelperfect 버튼 사이즈는 48dp로, http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm단위 변환은 아래와 같이,http://graphicdesign.stackexchange.com/questions/36482/how-to-convert-between-android-dp-and-css-px폰트 사이즈는 CSS로 상대적인 크기로,https://developer.mozilla.org/en-US/docs/Web/CSS/font-sizehttps://developer.chrome.com/multidevice/webview/pixelperfect...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>버튼 사이즈는 48dp로,<br /> http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm</p>
-<p>단위 변환은 아래와 같이,<br /> http://graphicdesign.stackexchange.com/questions/36482/how-<br /> to-convert-between-android-dp-and-css-px</p>
-<p>폰트 사이즈는 CSS로 상대적인 크기로,<br /> https://developer.mozilla.org/en-US/docs/Web/CSS/font-size</p>
-<p><br /> https://developer.chrome.com/multidevice/webview/pixelperfect</p>
-<div>버튼 사이즈는 48dp로,<br />
-<div>
-<div><a href="http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm">http://developer.android.com/design/style/metrics-grids.html#48dp-rhythm</a><br /><br />단위 변환은 아래와 같이,<br /><a href="http://graphicdesign.stackexchange.com/questions/36482/how-to-convert-between-android-dp-and-css-px">http://graphicdesign.stackexchange.com/questions/36482/how-to-convert-between-android-dp-and-css-px</a><br /><br />폰트 사이즈는 CSS로 상대적인 크기로,<br /><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">https://developer.mozilla.org/en-US/docs/Web/CSS/font-size</a><br /><br /><br /><a href="https://developer.chrome.com/multidevice/webview/pixelperfect">https://developer.chrome.com/multidevice/webview/pixelperfect</a></div>
 </div>
 </div>]]>
         
