@@ -4,9 +4,32 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-08-27T04:38:35Z</updated>
+    <updated>2017-08-27T05:21:48Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>또</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/e.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.341</id>
+
+    <published>2017-08-27T05:21:48Z</published>
+    <updated>2017-08-27T05:21:48Z</updated>
+
+    <summary>&#53580;&#49828;&#53944;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>&#53580;&#49828;&#53944;</p>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>이</title>
@@ -433,37 +456,6 @@ http://blogsearch.google.co.za/ping/RPC2
 
 
     <div><div><pre>/bin/su - -- imyaman -l -c '/usr/bin/screen -dmS imyaman-sync /home/imyaman/<a href="http://sync.pl">sync.pl</a>'</pre></div></div>
-
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>유닉스 서버 빌려쓴 이야기</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/iei-ie-eei-iie.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.314</id>
-
-    <published>2017-07-20T23:46:06Z</published>
-    <updated>2017-07-21T09:59:02Z</updated>
-
-    <summary><![CDATA[ 아마 처음으로 빌려쓴 것은 컴퓨터공학과 유닉스 워크스테이션 계정인 것 같습니다.&nbsp;동아리 선배가 컴퓨터공학과여서 선배꺼 빌려썼습니다. 정확히 기억은 안 나지만 저장공간은 20MB쯤. 어느 때에는 학생들 수십명이 접속해 있기도 했습니다.운영체제는 Solaris였고요. 선배는 csh을 썼는데, 저는 ksh 사용자라 접속하자 마자 ksh을 실행했던 것...]]></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[
-
-
-
-
-
-
-    <div><div><span>아마 처음으로 빌려쓴 것은 컴퓨터공학과 유닉스 워크스테이션 계정인 것 같습니다.</span><span>&nbsp;동아리 선배가 컴퓨터공학과여서 선배꺼 빌려썼습니다. 정확히 기억은 안 나지만 저장공간은 20MB쯤. 어느 때에는 학생들 수십명이 접속해 있기도 했습니다.</span><span>운영체제는 Solaris였고요. 선배는 csh을 썼는데, 저는 ksh 사용자라 접속하자 마자 ksh을 실행했던 것 생각납니다. 하지만 리소스 많이 쓰면 눈치보여서 그리 많이 활용하진 못했습니다.</span></div><div><span><br /></span></div><div><span>그 때부터 지금까지 감사한 마음으로 잘 쓰고 있는 건 <a href="http://bekrage.net">bekrage.net</a>(예전엔 <a href="http://bekrage.org">bekrage.org</a>)입니다. BeOS 동호회 서버인데, 감사하게도 <a href="http://imyaman.bekrage.net">imyaman.bekrage.net</a> 도메인도 얻어서 잘 쓰고 있습니다, 지금도.</span></div><div><span>심지어는 root 권한도 갖고 있어서 소소한 관리도 하고 있습니다.&nbsp;</span><span>하지만 동호회 웹 사이트가 있는 서버라서 조심스럽게 이용하고 있습니다. 운영체제는 Linux, 한 때 FreeBSD인 적이 있지만.</span></div><div><span><br /></span></div><div><span><a href="http://nocom.nim.to">nocom.nim.to</a> 라는 도메인 네임의 서버를 한동안 빌려 썼습니다. 배재대학교에서 대학원생이 운영했던 것 같습니다. 꽤 지난 일이라 기억이 뚜렸하지 않네요. 주로 쓰진 않았지만 보조로 엄청 유용하게 잘 썼던 것만 기억납니다.&nbsp;</span><span>운영체제는 Linux.</span></div><div><br /></div><div>하이텔 유닉스 동호회에서 유닉스 계정 서비스를 했는데, 도메인 네임은 <a href="http://kouf.org">kouf.org</a> 를 썼습니다, 그 이름은 Korea Unix Forum에서. 운영체제는 Solaris, 초기에 FreeBSD인 적이 있지만. 2년 안 되게 이용했지요.</div><div><br /></div><div><a href="http://lv255.net">lv255.net</a> 처럼 주변분들이 준 계정도 좀 썼군요.</div><div><br /></div><div>근래에는 SKT가 하는 개발자 지원 서비스인 T developers에서 서버 주는게 있어서 한참 잘 쓰고 있습니다. 2년 가까이 썼는데, 이번 달 말에 종료한다고. 운영체제는 Linux. Ubuntu 12.04 여서 각종 유틸리티 소프트웨어들 버전이 낮아서 좀 불편하긴 했지만, 아무튼 고맙게도 잘 썼죠.</div><div><br /></div><div>최근엔 각종 클라우드 서비스들이 무료로 주는 것 잘 쓰고 있습니다. 어쩌다보니 그렇게 생긴 서버가 여러 개네요.</div><div>그리고 항상 함께 해준, 언제나 두 팔 벌려 환영해주는 <a href="http://bekrage.net">bekrage.net</a>.</div><div><br /></div><div>이러고 있습니다. :-)</div></div>
 
 
 ]]>
