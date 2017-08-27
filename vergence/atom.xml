@@ -4,101 +4,9 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-08-27T05:21:48Z</updated>
+    <updated>2017-08-23T23:14:27Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
-
-<entry>
-    <title>또</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/e.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.341</id>
-
-    <published>2017-08-27T05:21:48Z</published>
-    <updated>2017-08-27T05:21:48Z</updated>
-
-    <summary>&#53580;&#49828;&#53944;...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>&#53580;&#49828;&#53944;</p>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>이</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/i.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.340</id>
-
-    <published>2017-08-27T04:38:35Z</published>
-    <updated>2017-08-27T04:38:35Z</updated>
-
-    <summary>&#46608; &#53580;&#49828;&#53944;...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>&#46608; &#53580;&#49828;&#53944;</p>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>어찌된 일이지?</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/iie-iii.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.339</id>
-
-    <published>2017-08-26T07:42:31Z</published>
-    <updated>2017-08-26T07:42:31Z</updated>
-
-    <summary>&#54620;&#44544;&#46020; &#51096; &#48372;&#50668;...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>&#54620;&#44544;&#46020; &#51096; &#48372;&#50668;</p>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>연습이다</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/iiie.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.338</id>
-
-    <published>2017-08-26T07:37:04Z</published>
-    <updated>2017-08-26T07:37:04Z</updated>
-
-    <summary>&#55120;&#55147;...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>&#55120;&#55147;</p>
-
-]]>
-        
-    </content>
-</entry>
 
 <entry>
     <title>Request Tracker 설치</title>
@@ -459,6 +367,154 @@ http://blogsearch.google.co.za/ping/RPC2
 
 
 ]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>유닉스 서버 빌려쓴 이야기</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/iei-ie-eei-iie.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.314</id>
+
+    <published>2017-07-20T23:46:06Z</published>
+    <updated>2017-07-21T09:59:02Z</updated>
+
+    <summary><![CDATA[ 아마 처음으로 빌려쓴 것은 컴퓨터공학과 유닉스 워크스테이션 계정인 것 같습니다.&nbsp;동아리 선배가 컴퓨터공학과여서 선배꺼 빌려썼습니다. 정확히 기억은 안 나지만 저장공간은 20MB쯤. 어느 때에는 학생들 수십명이 접속해 있기도 했습니다.운영체제는 Solaris였고요. 선배는 csh을 썼는데, 저는 ksh 사용자라 접속하자 마자 ksh을 실행했던 것...]]></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[
+
+
+
+
+
+
+    <div><div><span>아마 처음으로 빌려쓴 것은 컴퓨터공학과 유닉스 워크스테이션 계정인 것 같습니다.</span><span>&nbsp;동아리 선배가 컴퓨터공학과여서 선배꺼 빌려썼습니다. 정확히 기억은 안 나지만 저장공간은 20MB쯤. 어느 때에는 학생들 수십명이 접속해 있기도 했습니다.</span><span>운영체제는 Solaris였고요. 선배는 csh을 썼는데, 저는 ksh 사용자라 접속하자 마자 ksh을 실행했던 것 생각납니다. 하지만 리소스 많이 쓰면 눈치보여서 그리 많이 활용하진 못했습니다.</span></div><div><span><br /></span></div><div><span>그 때부터 지금까지 감사한 마음으로 잘 쓰고 있는 건 <a href="http://bekrage.net">bekrage.net</a>(예전엔 <a href="http://bekrage.org">bekrage.org</a>)입니다. BeOS 동호회 서버인데, 감사하게도 <a href="http://imyaman.bekrage.net">imyaman.bekrage.net</a> 도메인도 얻어서 잘 쓰고 있습니다, 지금도.</span></div><div><span>심지어는 root 권한도 갖고 있어서 소소한 관리도 하고 있습니다.&nbsp;</span><span>하지만 동호회 웹 사이트가 있는 서버라서 조심스럽게 이용하고 있습니다. 운영체제는 Linux, 한 때 FreeBSD인 적이 있지만.</span></div><div><span><br /></span></div><div><span><a href="http://nocom.nim.to">nocom.nim.to</a> 라는 도메인 네임의 서버를 한동안 빌려 썼습니다. 배재대학교에서 대학원생이 운영했던 것 같습니다. 꽤 지난 일이라 기억이 뚜렸하지 않네요. 주로 쓰진 않았지만 보조로 엄청 유용하게 잘 썼던 것만 기억납니다.&nbsp;</span><span>운영체제는 Linux.</span></div><div><br /></div><div>하이텔 유닉스 동호회에서 유닉스 계정 서비스를 했는데, 도메인 네임은 <a href="http://kouf.org">kouf.org</a> 를 썼습니다, 그 이름은 Korea Unix Forum에서. 운영체제는 Solaris, 초기에 FreeBSD인 적이 있지만. 2년 안 되게 이용했지요.</div><div><br /></div><div><a href="http://lv255.net">lv255.net</a> 처럼 주변분들이 준 계정도 좀 썼군요.</div><div><br /></div><div>근래에는 SKT가 하는 개발자 지원 서비스인 T developers에서 서버 주는게 있어서 한참 잘 쓰고 있습니다. 2년 가까이 썼는데, 이번 달 말에 종료한다고. 운영체제는 Linux. Ubuntu 12.04 여서 각종 유틸리티 소프트웨어들 버전이 낮아서 좀 불편하긴 했지만, 아무튼 고맙게도 잘 썼죠.</div><div><br /></div><div>최근엔 각종 클라우드 서비스들이 무료로 주는 것 잘 쓰고 있습니다. 어쩌다보니 그렇게 생긴 서버가 여러 개네요.</div><div>그리고 항상 함께 해준, 언제나 두 팔 벌려 환영해주는 <a href="http://bekrage.net">bekrage.net</a>.</div><div><br /></div><div>이러고 있습니다. :-)</div></div>
+
+
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Fixing Chuwi Vi8 Tablet</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/fixing-chuwi-vi8-tablet.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.311</id>
+
+    <published>2017-07-19T14:43:00Z</published>
+    <updated>2017-07-19T14:52:08Z</updated>
+
+    <summary>Below is Android only partition table.Save below to a file &quot;Chuwi_Vi8_AndroidOnlypartition_20170719.tbl&quot;.Use &quot;ManufacturingFlashTool.exe&quot;. partition_table=gpt create -z /dev/block/mmcblk0 create /dev/block/mmcblk0 boot -p /dev/block/mmcblk0 reload /dev/block/mmcblk0 add -b 40 -s 131072 -t efi -u C12A7328-F81F-11D2-BA4B-00A0C93EC93B -l ESP -T 0 -P 0 /dev/block/mmcblk0 add...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>Below is Android only partition table.<br />Save below to a file "Chuwi_Vi8_AndroidOnlypartition_20170719.tbl".<br />Use "ManufacturingFlashTool.exe".</p>
+<pre><code>partition_table=gpt
+create -z /dev/block/mmcblk0
+create /dev/block/mmcblk0
+boot -p /dev/block/mmcblk0
+reload /dev/block/mmcblk0
+add -b 40 -s 131072 -t efi -u C12A7328-F81F-11D2-BA4B-00A0C93EC93B -l ESP -T 0 -P 0 /dev/block/mmcblk0
+add -b 131112 -s 131072 -t data -u 80868086-8086-8086-8086-FFFFFFFFFFF0 -l reserved -T 0 -P 0 /dev/block/mmcblk0
+add -b 262184 -s 32768 -t data -u 80868086-8086-8086-8086-000000000100 -l boot -T 3 -P 15 /dev/block/mmcblk0
+add -b 294952 -s 32768 -t data -u 80868086-8086-8086-8086-000000000101 -l recovery -T 3 -P 14 /dev/block/mmcblk0
+add -b 327720 -s 32768 -t data -u 80868086-8086-8086-8086-000000000102 -l fastboot -T 3 -P 13 /dev/block/mmcblk0
+add -b 360488 -s 32768 -t data -u 80868086-8086-8086-8086-FFFFFFFFFFF1 -l reserved_1 -T 3 -P 0 /dev/block/mmcblk0
+add -b 393256 -s 131072 -t data -u 80868086-8086-8086-8086-000000000104 -l test -T 3 -P 12 /dev/block/mmcblk0
+add -b 524328 -s 65536 -t data -u 80868086-8086-8086-8086-000000000001 -l panic -T 0 -P 0 /dev/block/mmcblk0
+add -b 589864 -s 32768 -t data -u 80868086-8086-8086-8086-000000000002 -l factory -T 0 -P 0 /dev/block/mmcblk0
+add -b 622632 -s 32768 -t data -u 80868086-8086-8086-8086-000000000003 -l misc -T 0 -P 0 /dev/block/mmcblk0
+add -b 655400 -s 32768 -t data -u 80868086-8086-8086-8086-000000000004 -l config -T 0 -P 0 /dev/block/mmcblk0
+add -b 688168 -s 2097152 -t data -u 80868086-8086-8086-8086-000000000005 -l cache -T 0 -P 0 /dev/block/mmcblk0
+add -b 2785320 -s 524288 -t data -u 80868086-8086-8086-8086-000000000006 -l logs -T 0 -P 0 /dev/block/mmcblk0
+add -b 3309608 -s 2097152 -t data -u 80868086-8086-8086-8086-000000000007 -l system -T 0 -P 0 /dev/block/mmcblk0
+add -b 5406760 -s 55197040 -t data -u 80868086-8086-8086-8086-000000000008 -l data -T 0 -P 0 /dev/block/mmcblk0
+reload /dev/block/mmcblk0</code></pre>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>에이리언 커버넌트를 보았습니다</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/post-72.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.310</id>
+
+    <published>2017-07-11T23:57:18Z</published>
+    <updated>2017-07-11T23:57:58Z</updated>
+
+    <summary>에이리언 커버넌트(Alien Covenant)를 보고 기분 나쁜 부분을 이야기 해보려고 합니다. 에이리언 시리즈의 분류를 딱 하나만 짚자면 공포영화입니다. 저는 프로메테우스와 에이리언 커버넌트는 공포가 아닌 다른 기대를 갖고 있습니다. 하지만 그건 제탓이 아닙니다. 영화가 전반부에 다른 기대감을 주었기 때문이거든요. 프로메테우스에서 애써 살린...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>에이리언 커버넌트(Alien Covenant)를 보고 기분 나쁜 부분을 이야기 해보려고 합니다.<br />
+에이리언 시리즈의 분류를 딱 하나만 짚자면 공포영화입니다. 저는 프로메테우스와 에이리언 커버넌트는 공포가 아닌 다른 기대를 갖고 있습니다. 하지만 그건 제탓이 아닙니다. 영화가 전반부에 다른 기대감을 주었기 때문이거든요.</p>
+
+<p>프로메테우스에서 애써 살린 주인공을 에이리언 커버넌트에서는 이미 죽었답니다. 감독 나빠요.<br />
+3에서도, 에이리언 2에서 애써 살린 군인과 꼬마 아이를 이미 죽었다고 했습니다. 주인공 죽지 말라고 응원하면서 봤단 말야. 이런 식이면 앞으로 안 볼 거야!</p>
+
+<p>프로메테우스의 끝에서 Dr. Shaw가 엔지니어가 있는 곳으로 가며 근원에 다가갈 것처럼 기대하게 만듭니다. 에이리언 커버넌트의 이야기는 전혀 그런 것을 잇지 않았습니다. Dr. Shaw가 엔지니어를 만나 뭐라도 이야기를 나누었어야 했다고요. 적어도 엔지니어의 흔적을 찾아 작은 거라도 알게 되었어야 했다고요.</p>
+
+<p>이야기 속 위기를 휴머노이드가 만들어냅니다. 1편부터 프로메테우스까지 회사의 이익을 대변하여 휴머노이드가 보조적인 위기를 만들어냈습니다. 에이리언 커버넌트는 휴머노이드가 주도적으로 자기 욕심으로 위기를 만들어냈습니다. 이것도 싫어요.<br />
+에이리언 시리즈는 폭력적인 에이리언과 살고자 하는 인간의 대립을 핵심으로 끌어왔는데, 에이리언 커버넌트는 휴머노이드가 만든 위험으로 희생되는 인간이라는 예외가 돼버렸어요.</p>
+
+<p>인공지능을 가진 휴머노이드가 정체성을 재정립하고 자기 욕구를 가진다는 가정과 그로 인해 문제가 만들어지는 것이 싫어요. 그럴거면 스릴러 액션 영화로 가든지, "I, Robot"처럼. 공포 영화인 에이리언 시리즈를 그렇게 끌고가지 말아줘.</p>
+
+<p>휴머노이드 데이빗은 왜 엔지니어 종족을 몰살시켰을까? 말도 한 마디 안 붙이고. 프로메테우스에서 자기 때렸다고 그런 건가? 아무튼 개연성이 없습니다.<br />
+감독 양반, 작가 양반, 너무 무성의 한 것 아니오? 엔지니어 종족의 이야기를 꾸미기가 귀찮았나?<br />
+엔지니어가 인간을 왜 만들었는지, 엔지니어는 어떻게 생겨났는지 이야기 해라, 리들리 스콧!</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Gears of War 하고 떠오른 생각</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/gears-of-war.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.289</id>
+
+    <published>2017-07-10T04:28:04Z</published>
+    <updated>2017-07-10T07:59:23Z</updated>
+
+    <summary> 한번은 GOP종심수색작전을 한 적이 있습니다. GOP종심매복은 소대장, 종심수색은 부소대장이 맡아서 했는데, 소대장이지만 GOP종심수색작전을 한 적이 딱 한번 있습니다. GOP에서 철수한 지 오래되지 않은 터라 뭐든 새롭게 해야하는 것이 많았는데, 수색작전도 그랬습니다. 소대원들은 부소대장과 몇 번 수색작전 경험이 있긴 했지만....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<div id="AOLMsgPart_2_f31c611a-f3bc-4d89-9e3b-1776ff9546b6">
+<div style="margin-bottom: 45px;" class="aolReplacedBody">
+<div style="font-size: 10pt;">
+<div dir="auto">한번은 GOP종심수색작전을 한 적이 있습니다. GOP종심매복은 소대장, 종심수색은 부소대장이 맡아서 했는데, 소대장이지만 GOP종심수색작전을 한 적이 딱 한번 있습니다.</div>
+<div dir="auto"></div>
+<div dir="auto">GOP에서 철수한 지 오래되지 않은 터라 뭐든 새롭게 해야하는 것이 많았는데, 수색작전도 그랬습니다. 소대원들은 부소대장과 몇 번 수색작전 경험이 있긴 했지만.</div>
+<div dir="auto"></div>
+<div dir="auto">횡으로 전개하여 산 정상 쪽으로 좁혀가며 이동하여 적을 찾고, 땅 속에 적이 은신해 있는지 탐침봉으로 땅을 쑤시면서 이동하기는 개뿔...</div>
+<div dir="auto">탐색작전 수행에 대해 설명하는데, 소대원들 눈빛이 '진짜 그렇게 한다고?'</div>
+<div dir="auto">제 머리 속에 든 생각, '아뿔싸. 지난 번에 시간 때우기 식으로 대충한게 분명하구나.'</div>
+<div dir="auto">그 날 처음으로 소대원들과 실제 기동하면서 수색작전 연습했습니다. 그리고 그게 마지막이었습니다.</div>
+<div dir="auto"></div>
+<div dir="auto">지금 생각해보니, 수색작전 전에 소대장으로서 미리 점검했어야 했는데. <span style="font-size: 10pt;">부소대장을 욕하려는 건 아닙니다. 부대가 워낙에 바쁘다보니...</span></div>
+<div dir="auto">전역한 지 한참 되었지만, 지금도 곳곳에 훈련되지 않은 병력이 많을 걸 생각하면, 전쟁 나지 말라고 오늘도 기도합니다.</div>
+<div dir="auto"></div>
+<div dir="auto">Gears of War 게임의 트레이닝 부분 하다 보니 그 때 생각이 나네요.</div>
+</div>
+</div>
+</div>]]>
         
     </content>
 </entry>
