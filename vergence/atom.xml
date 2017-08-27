@@ -4,9 +4,32 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-08-26T07:42:31Z</updated>
+    <updated>2017-08-27T04:38:35Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>이</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/i.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.340</id>
+
+    <published>2017-08-27T04:38:35Z</published>
+    <updated>2017-08-27T04:38:35Z</updated>
+
+    <summary>&#46608; &#53580;&#49828;&#53944;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>&#46608; &#53580;&#49828;&#53944;</p>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>어찌된 일이지?</title>
@@ -444,48 +467,6 @@ http://blogsearch.google.co.za/ping/RPC2
 
 
 ]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Fixing Chuwi Vi8 Tablet</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/fixing-chuwi-vi8-tablet.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.311</id>
-
-    <published>2017-07-19T14:43:00Z</published>
-    <updated>2017-07-19T14:52:08Z</updated>
-
-    <summary>Below is Android only partition table.Save below to a file &quot;Chuwi_Vi8_AndroidOnlypartition_20170719.tbl&quot;.Use &quot;ManufacturingFlashTool.exe&quot;. partition_table=gpt create -z /dev/block/mmcblk0 create /dev/block/mmcblk0 boot -p /dev/block/mmcblk0 reload /dev/block/mmcblk0 add -b 40 -s 131072 -t efi -u C12A7328-F81F-11D2-BA4B-00A0C93EC93B -l ESP -T 0 -P 0 /dev/block/mmcblk0 add...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>Below is Android only partition table.<br />Save below to a file "Chuwi_Vi8_AndroidOnlypartition_20170719.tbl".<br />Use "ManufacturingFlashTool.exe".</p>
-<pre><code>partition_table=gpt
-create -z /dev/block/mmcblk0
-create /dev/block/mmcblk0
-boot -p /dev/block/mmcblk0
-reload /dev/block/mmcblk0
-add -b 40 -s 131072 -t efi -u C12A7328-F81F-11D2-BA4B-00A0C93EC93B -l ESP -T 0 -P 0 /dev/block/mmcblk0
-add -b 131112 -s 131072 -t data -u 80868086-8086-8086-8086-FFFFFFFFFFF0 -l reserved -T 0 -P 0 /dev/block/mmcblk0
-add -b 262184 -s 32768 -t data -u 80868086-8086-8086-8086-000000000100 -l boot -T 3 -P 15 /dev/block/mmcblk0
-add -b 294952 -s 32768 -t data -u 80868086-8086-8086-8086-000000000101 -l recovery -T 3 -P 14 /dev/block/mmcblk0
-add -b 327720 -s 32768 -t data -u 80868086-8086-8086-8086-000000000102 -l fastboot -T 3 -P 13 /dev/block/mmcblk0
-add -b 360488 -s 32768 -t data -u 80868086-8086-8086-8086-FFFFFFFFFFF1 -l reserved_1 -T 3 -P 0 /dev/block/mmcblk0
-add -b 393256 -s 131072 -t data -u 80868086-8086-8086-8086-000000000104 -l test -T 3 -P 12 /dev/block/mmcblk0
-add -b 524328 -s 65536 -t data -u 80868086-8086-8086-8086-000000000001 -l panic -T 0 -P 0 /dev/block/mmcblk0
-add -b 589864 -s 32768 -t data -u 80868086-8086-8086-8086-000000000002 -l factory -T 0 -P 0 /dev/block/mmcblk0
-add -b 622632 -s 32768 -t data -u 80868086-8086-8086-8086-000000000003 -l misc -T 0 -P 0 /dev/block/mmcblk0
-add -b 655400 -s 32768 -t data -u 80868086-8086-8086-8086-000000000004 -l config -T 0 -P 0 /dev/block/mmcblk0
-add -b 688168 -s 2097152 -t data -u 80868086-8086-8086-8086-000000000005 -l cache -T 0 -P 0 /dev/block/mmcblk0
-add -b 2785320 -s 524288 -t data -u 80868086-8086-8086-8086-000000000006 -l logs -T 0 -P 0 /dev/block/mmcblk0
-add -b 3309608 -s 2097152 -t data -u 80868086-8086-8086-8086-000000000007 -l system -T 0 -P 0 /dev/block/mmcblk0
-add -b 5406760 -s 55197040 -t data -u 80868086-8086-8086-8086-000000000008 -l data -T 0 -P 0 /dev/block/mmcblk0
-reload /dev/block/mmcblk0</code></pre>]]>
         
     </content>
 </entry>
