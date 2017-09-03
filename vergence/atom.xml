@@ -4,7 +4,7 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-09-03T01:34:38Z</updated>
+    <updated>2017-09-03T01:35:17Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
 
@@ -14,7 +14,7 @@
     <id>tag:weblog.youre.space,2017:/vergence//11.346</id>
 
     <published>2017-09-02T11:31:58Z</published>
-    <updated>2017-09-03T01:34:38Z</updated>
+    <updated>2017-09-03T01:35:17Z</updated>
 
     <summary>Sailfish OS 2.0.4.13 설치 cm-12.1-20150901-SNAPSHOT-YOG4PAO237-hammerhead.zip 파일을 다운로드 받는다.파일은 이곳에 있다. http://mdt-files.com/downloads/magic-device-tool/cyanogenmod/cm-11-20140805-SNAPSHOT-M9-hammerhead.zip sailfishos-hammerhead-release-2.0.4.13-beta5-201610241556.zip 파일을 다운로드 받는다.파일은 이곳에 있다. http://images.devaamo.fi/sfa/hammerhead/beta5/sailfishos-hammerhead-release-2.0.4.13-beta5-201610241556.zip cm 설치하고, sailfishos 설치한다. 오예. Sailfish OS 2.0.5.6 으로 업그레이드 2.0.4.13을 설치하고 2.0.5.6으로 업그레이드하면 정상적으로 부팅되지 않는다. 2.0.5.6으로 업그레이드 후 잘 동작한다는...</summary>
     <author>
@@ -31,8 +31,7 @@
 <h2>Sailfish OS 2.0.5.6 으로 업그레이드</h2>
 <p>2.0.4.13을 설치하고 2.0.5.6으로 업그레이드하면 정상적으로 부팅되지 않는다.</p>
 <p>2.0.5.6으로 업그레이드 후 잘 동작한다는 글이 있는데, 2.0.1.11에서 업그레이드 했다고 한다.<br />아래 두 링크 참조.<br />https://talk.maemo.org/showpost.php?p=1519667&amp;postcount=280<br />https://talk.maemo.org/showthread.php?t=96932&amp;page=28</p>
-<p></p>
-<p>가장 잘 정리된 가이드</p>
+<h2>가장 잘 정리된 가이드</h2>
 <p>아래 링크에서 이 두 파일 cm-12.1-20160704-UNOFFICIAL-hammerhead-nocheck.zip, sailfishos-hammerhead-release-2.0.1.11-cm121-alpha1.zip 을 다운로드 받아서 설치한 후 2.0.5.6 으로 업그레이드 한다.<br />http://talk.maemo.org/showpost.php?p=1509185&amp;postcount=1</p>]]>
         
     </content>
