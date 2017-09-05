@@ -4,7 +4,7 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-09-05T23:36:25Z</updated>
+    <updated>2017-09-05T23:45:59Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
 
@@ -14,9 +14,9 @@
     <id>tag:weblog.youre.space,2017:/vergence//11.347</id>
 
     <published>2017-09-05T23:35:33Z</published>
-    <updated>2017-09-05T23:36:25Z</updated>
+    <updated>2017-09-05T23:45:59Z</updated>
 
-    <summary>하이텔 유닉스 동호회 자유게시판에 2002년 즈음에 쓴 것 같습니다, 앞으로 유닉스는 커널만 남고 유틸리티들은 자유/오픈소스소프트웨어로 된 배포판이 될 것 같다고. 그 때에도 GNU/Hurd를 애써서 노력하면 설치할 수 있었습니다(설치 CD 같은 형태로 패키징된 것은 없었습니다). Solaris나 Tru64, AIX, HP-UX 등 유닉스에는...</summary>
+    <summary>하이텔 유닉스 동호회 자유게시판에 2002년 즈음에 쓴 것 같습니다, 앞으로 유닉스는 커널만 남고 유틸리티들은 자유/오픈소스소프트웨어로 된 배포판이 될 것 같다고. 그 때에도 GNU/Hurd를 애써서 노력하면 설치할 수 있었습니다(설치 CD 같은 형태로 패키징된 것은 없었습니다). Debian은 GNU/Linux 였습니다. GNU의 유틸리티와 Hurd...</summary>
     <author>
         <name>Sangyong Gwak</name>
         <uri>http://weblog.youre.space/vergence/</uri>
@@ -26,7 +26,7 @@
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>하이텔 유닉스 동호회 자유게시판에 2002년 즈음에 쓴 것 같습니다, 앞으로 유닉스는 커널만 남고 유틸리티들은 자유/오픈소스소프트웨어로 된 배포판이 될 것 같다고.</p>
 
-<p>그 때에도 GNU/Hurd를 애써서 노력하면 설치할 수 있었습니다(설치 CD 같은 형태로 패키징된 것은 없었습니다).<br />
+<p>그 때에도 GNU/Hurd를 애써서 노력하면 설치할 수 있었습니다(설치 CD 같은 형태로 패키징된 것은 없었습니다). Debian은 GNU/Linux 였습니다. GNU의 유틸리티와 Hurd 또는 Linux 커널의 조합. 커널과 유틸리티는 분리되고 또 조합될 수 있는 것이었죠.<br />
 Solaris나 Tru64, AIX, HP-UX 등 유닉스에는 GNU의 유틸리티를 한 두 개는 설치했고요. 특히 gzip은 꼭. gcc, gmake 같은 것도 보통.</p>
 
 <p>그 글에 어느 분이 답글을 쓰길, 그렇게 되지는 않을 거다, 무리한 상상이다라고.</p>
