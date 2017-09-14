@@ -4,9 +4,38 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/baas/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/baas/3</id>
-    <updated>2017-07-09T13:30:14Z</updated>
+    <updated>2017-09-14T15:08:46Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>Collaboration, integration and interoperability key to smart cities</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/09/collaboration-integration-and-interoperability-key-to-smart-cities.html" />
+    <id>tag:weblog.youre.space,2017:/baas//3.353</id>
+
+    <published>2017-09-14T15:08:08Z</published>
+    <updated>2017-09-14T15:08:46Z</updated>
+
+    <summary>Long the responsibility of State Governments, the Australian Federal Government has been considering what central role they might play in the development of cities. As the country struggles with population growth, economic transition and climate change, the solutions offered by...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/baas/">
+        <![CDATA[<p>Long the responsibility of State Governments, the Australian Federal Government has been considering what central role they might play in the development of cities. As the country struggles with population growth, economic transition and climate change, the solutions offered by IoT technologies, smart and connected cities and infrastructure is of increasing national interest.</p>
+<p>At a public hearing on 22<sup>nd</sup> August in Sydney, <a href="http://www.zdnet.com/article/iot-enables-the-uberising-of-citizens-iot-alliance-australia/" target="_blank" rel="noopener">the IoT Alliance of Australia (IoTAA) presented a compelling argument</a> for the Federal Government to play a more hands-on role in formally establishing an interoperable and secure framework for open data and case study sharing across all levels of government and industry.</p>
+<p>In a relatively small country like Australia, we think it makes extremely good sense to collaborate, share lessons and best practice as we develop our smart cities. Opportunity, money and time will be wasted if each city and state embarks upon their individual IoT and smart city journey without consideration to collaboration, integration and interoperability.</p>
+<p>Naturally a key part of collaboration is in information and data sharing - between and within government agencies, cities and states. Much to be gained in moving beyond this to open and democratic data sharing between government as well as commercial sectors, particularly as we as so dependent on one another for improved quality of services and life in our cities.</p>
+<p>In the energy management and monitoring space, we believe in the critical importance of generating free and open data and using this data to make informed decisions and to help change behaviour. What could we collectively achieve if we openly shared our data within the context of the city and country, be it energy or water consumption, people movement, shared services and the like?</p>
+<p>Given cities are fundamentally about people, can we also consider encouraging citizens to share their data too?</p>
+<p>The IoTAA believe so. In Sydney, CEO Frank Zeichner noted that citizens are an "unrealised resource" in the IoT ecosystem. If incentivised in the right way, citizens can and will play a greater role in collecting and sharing data - for example, sharing electricity, gas, and water meter data with city councils in exchange for a discount on utility bills.</p>
+<p>By including citizens in this journey, by collaborating across all aspects of our cities and through the generation of open, usable data we believe city planners will truly be able to build informed, smart and evolving cities for the future.</p>
+<p>Buddy is proud to be a member of the IoTAA and support this call for data sharing and collaborating. Moreover, our Buddy Ohm service will actively help organisations unlock, understand and act on their own data.</p>]]>
+        <![CDATA[<p>source : https://buddy.com/blog/collaboration-integration-interoperability-key-smart-cities/</p>]]>
+    </content>
+</entry>
 
 <entry>
     <title>오래된 parse.com JavaScript 예제</title>
@@ -455,35 +484,6 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/baas/">
         <![CDATA[<p><a href="http://www.youtube.com/watch?v=LYP6R_wq1ZA">http://www.youtube.com/watch?v=LYP6R_wq1ZA</a></p>
 <p>모바일 앱 개발자를 위한 백엔드 서비스 ucloud BaaS (baas.io)<br /> 2014년 1월 23일<br /> 발표 동영상</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>IBM이 Cloudant를 샀다고 한다</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/02/ibm-cloudant.html" />
-    <id>tag:weblog.youre.space,2014:/baas//3.14</id>
-
-    <published>2014-02-25T12:55:00Z</published>
-    <updated>2017-07-09T13:30:12Z</updated>
-
-    <summary> http://www.ibm.com/press/us/en/pressrelease/43238.wss 재 작년 baas.io 사업계획서를 쓸 때, BaaS와 관련있는 관련이 있거나 경쟁이 될 사업/기업/제품 중에 DBMS, Oracle 등이 포함되어야 한다고 생각했다.Cloudant는 Database as a Service라는 표현을 쓰고 싶어하지만, BaaS가 제공하는 것처럼 데이터를 관리할 수 있고 인증과 접근권한을 설정할 수...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/baas/">
-        <![CDATA[<div><a href="http://www.ibm.com/press/us/en/pressrelease/43238.wss">
-<div>http://www.ibm.com/press/us/en/pressrelease/43238.wss</div>
-</a>
-<div>재 작년 baas.io 사업계획서를 쓸 때, BaaS와 관련있는 관련이 있거나 경쟁이 될 사업/기업/제품 중에 DBMS, Oracle 등이 포함되어야 한다고 생각했다.Cloudant는 Database as a Service라는 표현을 쓰고 싶어하지만, BaaS가 제공하는 것처럼 데이터를 관리할 수 있고 인증과 접근권한을 설정할 수 있는 기능의 API를 제공하고 있어 BaaS와 다르게 보이지 않는다.IBM이 Cloudant를 샀다고 한다.</div>
-<div>
-<p><a href="https://twitter.com/unixware213/status/438295687969525760">https://twitter.com/unixware213/status/438295687969525760</a></p>
-<p><a href="https://www.facebook.com/andrew.gwak/posts/254078088104093?stream_ref=10">https://www.facebook.com/andrew.gwak/posts/254078088104093?stream_ref=10</a></p>
-</div>
-</div>]]>
         
     </content>
 </entry>
