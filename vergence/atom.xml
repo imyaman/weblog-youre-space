@@ -30,30 +30,6 @@
 </entry>
 
 <entry>
-    <title>olleh WiFi</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/09/olleh-wifi.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.352</id>
-
-    <published>2017-09-13T12:24:26Z</published>
-    <updated>2017-09-13T12:24:26Z</updated>
-
-    <summary>LG G5...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>LG G5</p>
-
-<img alt="" src="http://weblog.youre.space/vergence/21744801_10111328984516034_1240927612_o.png" width="1152" height="2048" />
-]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>유닉스에 대한 기억</title>
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/09/ieii-ei-ei.html" />
     <id>tag:weblog.youre.space,2017:/vergence//11.351</id>
@@ -472,6 +448,38 @@ http://blogsearch.google.co.uk/ping/RPC2
 http://blogsearch.google.co.ve/ping/RPC2
 http://blogsearch.google.co.za/ping/RPC2
 </code></pre>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>booting, rc.local, su, screen, deamon</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/booting-rclocal-su-screen-deamon.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.315</id>
+
+    <published>2017-07-21T11:14:24Z</published>
+    <updated>2017-07-21T11:18:52Z</updated>
+
+    <summary> /bin/su - -- imyaman -l -c &apos;/usr/bin/screen -dmS imyaman-sync /home/imyaman/sync.pl&apos;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[
+
+
+
+
+
+
+
+    <div><div><pre>/bin/su - -- imyaman -l -c '/usr/bin/screen -dmS imyaman-sync /home/imyaman/<a href="http://sync.pl">sync.pl</a>'</pre></div></div>
+
+
+]]>
         
     </content>
 </entry>
