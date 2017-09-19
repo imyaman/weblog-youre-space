@@ -4,9 +4,35 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-09-15T12:31:38Z</updated>
+    <updated>2017-09-19T07:39:34Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>vmware vmx file edit</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/09/vmware-vmx-file-edit.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.357</id>
+
+    <published>2017-09-19T07:39:34Z</published>
+    <updated>2017-09-19T07:39:34Z</updated>
+
+    <summary>scsi0.virtualDev = &quot;lsilogic&quot; ethernet0.virtualDev = &quot;e1000&quot; scsi0.virtualDev = &quot;pvscsi&quot; ethernet0.virtualDev = &quot;vmxnet3&quot;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[scsi0.virtualDev = "lsilogic"<br />
+ethernet0.virtualDev = "e1000"<br />
+<br />
+scsi0.virtualDev = "pvscsi"<br />
+ethernet0.virtualDev = "vmxnet3"
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>3DS 친구 코드</title>
@@ -448,38 +474,6 @@ http://blogsearch.google.co.uk/ping/RPC2
 http://blogsearch.google.co.ve/ping/RPC2
 http://blogsearch.google.co.za/ping/RPC2
 </code></pre>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>booting, rc.local, su, screen, deamon</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/booting-rclocal-su-screen-deamon.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.315</id>
-
-    <published>2017-07-21T11:14:24Z</published>
-    <updated>2017-07-21T11:18:52Z</updated>
-
-    <summary> /bin/su - -- imyaman -l -c &apos;/usr/bin/screen -dmS imyaman-sync /home/imyaman/sync.pl&apos;...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[
-
-
-
-
-
-
-
-    <div><div><pre>/bin/su - -- imyaman -l -c '/usr/bin/screen -dmS imyaman-sync /home/imyaman/<a href="http://sync.pl">sync.pl</a>'</pre></div></div>
-
-
-]]>
         
     </content>
 </entry>
