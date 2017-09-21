@@ -764,7 +764,7 @@ function mtUserOnLoad() {
 function mtEntryOnLoad() {
     var cf = document['comments_form'];
     if (cf && cf.preview) cf.preview.value = '';
-    mtHide('trackbacks-info');
+    
     mtHide('comment-greeting');
     mtHide('comments-form');
     mtFireEvent('usersignin');
