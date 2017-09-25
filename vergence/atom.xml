@@ -4,9 +4,33 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-09-25T08:57:30Z</updated>
+    <updated>2017-09-25T10:23:08Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>애플 앱 스토어에 IPA 업로드한 것이 보이지 않을 때 </title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/09/ii-i-iiii-ipa-ieei-ei-eii-ii-e.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.362</id>
+
+    <published>2017-09-25T10:23:08Z</published>
+    <updated>2017-09-25T10:23:08Z</updated>
+
+    <summary>IPA &#50629;&#47196;&#46300;&#54620; &#44163;&#51060; &#44596; &#49884;&#44036;&#51060; &#51648;&#45208;&#46020; &#48372;&#51060;&#51648; &#50506;&#45716;&#45796;&#47732; Info.plist &#47484; &#54869;&#51064;&#54644;&#48372;&#51088;. NSAppleMusicUsageDescription &#46972;&#45716; key &#50640; string &#53440;&#51077;&#51032; value &#44032; &#51080;&#50612;&#50556;&#54620;&#45796;. &#53945;&#55176; iOS 11 &#46412;&#47928;&#50640; &#50629;&#45936;&#51060;&#53944; &#48716;&#46300;&#54620; &#44221;&#50864;&#46972;&#47732; &#44845; &#51032;&#49900;&#54644;&#48372;&#51088;....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>IPA &#50629;&#47196;&#46300;&#54620; &#44163;&#51060; &#44596; &#49884;&#44036;&#51060; &#51648;&#45208;&#46020; &#48372;&#51060;&#51648; &#50506;&#45716;&#45796;&#47732; Info.plist &#47484; &#54869;&#51064;&#54644;&#48372;&#51088;.<br />
+NSAppleMusicUsageDescription &#46972;&#45716; key &#50640; string &#53440;&#51077;&#51032; value &#44032; &#51080;&#50612;&#50556;&#54620;&#45796;. &#53945;&#55176; iOS 11 &#46412;&#47928;&#50640; &#50629;&#45936;&#51060;&#53944; &#48716;&#46300;&#54620; &#44221;&#50864;&#46972;&#47732; &#44845; &#51032;&#49900;&#54644;&#48372;&#51088;.</p>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>NAVER BLOG RSS URL</title>
@@ -385,27 +409,6 @@ Solaris나 Tru64, AIX, HP-UX 등 유닉스에는 GNU의 유틸리티를 한 두 
 <p>키보드 보안, 암호화 어쩌고... 그런거 사용자 컴퓨터나 전화기에 설치해봤자. 은행 너나 잘 하세요.</p>
 <p>어느 인터넷 은행이 사용자에게 불편함을 야기하는 것들을 제거하고 관심을 받고 있습니다.<br /> 문제가 되면 사업자가 책임 지겠지요.</p>
 <p>그런 철학 없이 그냥 오래된 은행들이 뭘 바꿀 수 있겠어요?</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>요즘 날씨</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/weather.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.325</id>
-
-    <published>2017-08-01T23:29:05Z</published>
-    <updated>2017-08-03T03:45:50Z</updated>
-
-    <summary>요즘 날씨 무척 폭력적입니다. 여름이 더워서 힘들지만 가을 오면 여름 아쉬우니까. 여름도 좋아요....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        요즘 날씨 무척 폭력적입니다. 여름이 더워서 힘들지만 가을 오면 여름 아쉬우니까. 여름도 좋아요.
         
     </content>
 </entry>
