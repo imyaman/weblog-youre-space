@@ -4,7 +4,7 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-09-25T10:23:08Z</updated>
+    <updated>2017-09-25T10:34:35Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
 
@@ -14,7 +14,7 @@
     <id>tag:weblog.youre.space,2017:/vergence//11.362</id>
 
     <published>2017-09-25T10:23:08Z</published>
-    <updated>2017-09-25T10:23:08Z</updated>
+    <updated>2017-09-25T10:34:35Z</updated>
 
     <summary>IPA &#50629;&#47196;&#46300;&#54620; &#44163;&#51060; &#44596; &#49884;&#44036;&#51060; &#51648;&#45208;&#46020; &#48372;&#51060;&#51648; &#50506;&#45716;&#45796;&#47732; Info.plist &#47484; &#54869;&#51064;&#54644;&#48372;&#51088;. NSAppleMusicUsageDescription &#46972;&#45716; key &#50640; string &#53440;&#51077;&#51032; value &#44032; &#51080;&#50612;&#50556;&#54620;&#45796;. &#53945;&#55176; iOS 11 &#46412;&#47928;&#50640; &#50629;&#45936;&#51060;&#53944; &#48716;&#46300;&#54620; &#44221;&#50864;&#46972;&#47732; &#44845; &#51032;&#49900;&#54644;&#48372;&#51088;....</summary>
     <author>
@@ -26,7 +26,6 @@
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>IPA &#50629;&#47196;&#46300;&#54620; &#44163;&#51060; &#44596; &#49884;&#44036;&#51060; &#51648;&#45208;&#46020; &#48372;&#51060;&#51648; &#50506;&#45716;&#45796;&#47732; Info.plist &#47484; &#54869;&#51064;&#54644;&#48372;&#51088;.<br />
 NSAppleMusicUsageDescription &#46972;&#45716; key &#50640; string &#53440;&#51077;&#51032; value &#44032; &#51080;&#50612;&#50556;&#54620;&#45796;. &#53945;&#55176; iOS 11 &#46412;&#47928;&#50640; &#50629;&#45936;&#51060;&#53944; &#48716;&#46300;&#54620; &#44221;&#50864;&#46972;&#47732; &#44845; &#51032;&#49900;&#54644;&#48372;&#51088;.</p>
-
 ]]>
         
     </content>
