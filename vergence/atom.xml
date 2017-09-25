@@ -4,9 +4,34 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-09-21T06:00:23Z</updated>
+    <updated>2017-09-25T08:57:30Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+
+<entry>
+    <title>NAVER BLOG RSS URL</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/09/naver-blog-rss-url.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.361</id>
+
+    <published>2017-09-25T08:57:30Z</published>
+    <updated>2017-09-25T08:57:30Z</updated>
+
+    <summary>I found it at last. http://blog.rss.naver.com/{NAVER ID}.xml...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[I found it at last.<br />
+<br />
+http://blog.rss.naver.com/{NAVER ID}.xml<br />
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>ifttt, zapier, automate.io</title>
@@ -381,32 +406,6 @@ Solaris나 Tru64, AIX, HP-UX 등 유닉스에는 GNU의 유틸리티를 한 두 
     
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         요즘 날씨 무척 폭력적입니다. 여름이 더워서 힘들지만 가을 오면 여름 아쉬우니까. 여름도 좋아요.
-        
-    </content>
-</entry>
-
-<entry>
-    <title>글 쓰기 머신에 Sailfish OS</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/07/e-ie-eii-sailfish-os.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.323</id>
-
-    <published>2017-07-30T10:45:00Z</published>
-    <updated>2017-07-30T10:45:00Z</updated>
-
-    <summary>Sailfish OS 설치된 휴대폰으로 긴 글을 써도 문제가 없을까 생각하고 있습니다. 기본 이메일 앱이 한글을 잘 보내줄 지도 궁금하고요. 자, 보냅니다. -- Sent from my Jolla...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>Sailfish OS 설치된 휴대폰으로 긴 글을 써도 문제가 없을까 생각하고 있습니다. 기본 이메일 앱이 한글을 잘 보내줄 지도 궁금하고요.</p>
-
-<p>자, 보냅니다.</p>
-
-<p>-- <br />
-Sent from my Jolla</p>]]>
         
     </content>
 </entry>
