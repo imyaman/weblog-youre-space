@@ -4,9 +4,31 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-10-22T01:44:03Z</updated>
+    <updated>2017-10-22T05:32:41Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
-    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Ubuntu security update only</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/10/ubuntu-security-update-only.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.370</id>
+
+    <published>2017-10-22T05:30:47Z</published>
+    <updated>2017-10-22T05:32:41Z</updated>
+
+    <summary>저는 이렇게 합니다. apt-get -s dist-upgrade | grep &quot;^Inst&quot; | grep -i securi | awk -F &quot; &quot; {&apos;print $2&apos;} | xargs apt-get instal...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>저는 이렇게 합니다.</p>
+<pre><code>apt-get -s dist-upgrade | grep "^Inst" |<br /> grep -i securi | awk -F " " {'print $2'} |<br /> xargs apt-get instal</code></pre>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Firebase 요금을 검색해봅시다</title>
@@ -404,29 +426,6 @@ Solaris나 Tru64, AIX, HP-UX 등 유닉스에는 GNU의 유틸리티를 한 두 
 어떻게 쓸지는 쓰면서 고민해봐야겠습니다.</p>
 
 <p>#경축</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>공기가 맑습니다</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/eee-eiee.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.334</id>
-
-    <published>2017-08-23T10:37:15Z</published>
-    <updated>2017-08-23T23:14:42Z</updated>
-
-    <summary>지난 봄엔 공기가 심하게 안 좋았습니다. 그 때를 생각하면 지금 공기는 마치 다른 곳의 공기 같아요. 공기가 맑아서 기분이 좋습니다. 하늘도 푸르고 맑고 깊어요....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>지난 봄엔 공기가 심하게 안 좋았습니다. 그 때를 생각하면 지금 공기는 마치 다른 곳의 공기 같아요.</p>
-
-<p>공기가 맑아서 기분이 좋습니다. 하늘도 푸르고 맑고 깊어요.</p>]]>
         
     </content>
 </entry>
