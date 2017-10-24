@@ -4,9 +4,40 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-10-22T05:32:41Z</updated>
+    <updated>2017-10-24T23:57:03Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>웹 사이트에서 예와 아니요</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/10/i-iiiii-ii-iei.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.381</id>
+
+    <published>2017-10-24T23:57:03Z</published>
+    <updated>2017-10-24T23:57:03Z</updated>
+
+    <summary>&#44397;&#47549;&#44397;&#50612;&#50896;&#51032; &#44256;&#51221;&#46108; &#45813;&#48320; &#49324;&#50857;&#51088;&#50752; &#49884;&#49828;&#53596;&#51032; &#52964;&#48036;&#45768;&#52992;&#51060;&#49496; &#52769;&#47732; tone and manner &#48512;&#51221;&#51032; &#54364;&#54788; &#50500;&#45768;&#45796; &#50500;&#45768;&#50724; &#50500;&#45768;&#50836; &#50500;&#45768;&#45348; &#49884;&#49828;&#53596;&#51032; &#49457;&#44201; &#50868;&#50689;&#52404;&#51228; &#44201;&#49885;&#51012; &#44054;&#52632; SNS &#44172;&#51076; &#48512;&#46300;&#47101;&#44256; &#51088;&#50976;&#47196;&#50868; &#50715; &#51076;&#44552;&#51060;&#46993; &#45453;&#45812;&#46384;&#47673;&#44592; &#54616;&#45716; &#53945;&#51221; &#49457;&#54693;&#51032; &#49324;&#50857;&#51088;&#47484; &#50948;&#54620; &#46021;&#53945;&#54620;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>&#44397;&#47549;&#44397;&#50612;&#50896;&#51032; &#44256;&#51221;&#46108; &#45813;&#48320;<br />
+&#49324;&#50857;&#51088;&#50752; &#49884;&#49828;&#53596;&#51032; &#52964;&#48036;&#45768;&#52992;&#51060;&#49496; &#52769;&#47732;<br />
+tone and manner</p>
+<p>&#48512;&#51221;&#51032; &#54364;&#54788; &#50500;&#45768;&#45796; &#50500;&#45768;&#50724; &#50500;&#45768;&#50836; &#50500;&#45768;&#45348;</p>
+<p>&#49884;&#49828;&#53596;&#51032; &#49457;&#44201;<br />
+&#50868;&#50689;&#52404;&#51228; &#44201;&#49885;&#51012; &#44054;&#52632;<br />
+SNS &#44172;&#51076; &#48512;&#46300;&#47101;&#44256; &#51088;&#50976;&#47196;&#50868;<br />
+&#50715; &#51076;&#44552;&#51060;&#46993; &#45453;&#45812;&#46384;&#47673;&#44592; &#54616;&#45716;<br />
+&#53945;&#51221; &#49457;&#54693;&#51032; &#49324;&#50857;&#51088;&#47484; &#50948;&#54620; &#46021;&#53945;&#54620;</p>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Ubuntu security update only</title>
@@ -397,35 +428,6 @@ Solaris나 Tru64, AIX, HP-UX 등 유닉스에는 GNU의 유틸리티를 한 두 
 <p>2.0.5.6으로 업그레이드 후 잘 동작한다는 글이 있는데, 2.0.1.11에서 업그레이드 했다고 한다.<br />아래 두 링크 참조.<br />https://talk.maemo.org/showpost.php?p=1519667&amp;postcount=280<br />https://talk.maemo.org/showthread.php?t=96932&amp;page=28</p>
 <h2>가장 잘 정리된 가이드</h2>
 <p>아래 링크에서 이 두 파일 cm-12.1-20160704-UNOFFICIAL-hammerhead-nocheck.zip, sailfishos-hammerhead-release-2.0.1.11-cm121-alpha1.zip 을 다운로드 받아서 설치한 후 2.0.5.6 으로 업그레이드 한다.<br />http://talk.maemo.org/showpost.php?p=1509185&amp;postcount=1</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Request Tracker 설치</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/08/request-tracker-ii.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.337</id>
-
-    <published>2017-08-23T22:50:08Z</published>
-    <updated>2017-08-23T23:14:27Z</updated>
-
-    <summary>Request Tracker를 설치했습니다. 필요한 Perl 모듈 중에 2개만 수동으로 설치했고 나머지는 패키지로 설치했습니다. 그리하여 상당히 순조롭게. standalone으로 실행했습니다. standalone은 Starman을 이용하는군요. 외부의 메일 서버와 연결되도록 설정하고, 사용자들 설정하면 동작하겠지요. 어떻게 쓸지는 쓰면서 고민해봐야겠습니다. #경축...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>Request Tracker를 설치했습니다. <br />
-필요한 Perl 모듈 중에 2개만 수동으로 설치했고 나머지는 패키지로 설치했습니다. 그리하여 상당히 순조롭게.</p>
-
-<p>standalone으로 실행했습니다. standalone은 Starman을 이용하는군요.</p>
-
-<p>외부의 메일 서버와 연결되도록 설정하고, 사용자들 설정하면 동작하겠지요.<br />
-어떻게 쓸지는 쓰면서 고민해봐야겠습니다.</p>
-
-<p>#경축</p>]]>
         
     </content>
 </entry>
