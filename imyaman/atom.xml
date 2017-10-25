@@ -4,9 +4,35 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2017-10-25T05:10:43Z</updated>
+    <updated>2017-10-25T09:30:17Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>젊음이여 모란으로 오라!! 제10회 모란페스티벌</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/10/iiii-eeie-ie-i10i-eeiiie.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.387</id>
+
+    <published>2017-10-25T09:30:17Z</published>
+    <updated>2017-10-25T09:30:17Z</updated>
+
+    <summary>성남은 9월을 시작으로 10월까지 다양한 축제들로 이어집니다. 오곡백과 무르익어가는 가을! 화창한 날씨에 선선한 바람 불어오는 좋은 날씨 속 가을에 흠뻑 취해 즐기는 축제, 성남의 오랜 전통시장인 모란 페스티벌 현장에 다녀왔습니다. 올해로 10회를 맞고 있는 모란페스티벌. 그 축제의 장을 알리는 문구를...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>성남은 9월을 시작으로 10월까지 다양한 축제들로 이어집니다. 오곡백과 무르익어가는 가을! 화창한 날씨에 선선한 바람 불어오는 좋은 날씨 속 가을에 흠뻑 취해 즐기는 축제, 성남의 오랜 전통시장인 모란 페스티벌 현장에 다녀왔습니다. 올해로 10회를 맞고 있는 모란페스티벌. 그 축제의 장을 알리는 문구를 따라 축제로 들썩한 분위기를 함께 즐기러 들어가 봅니다. 모란역 2번출구를 따라 쿵짝쿵짝 울림을 따라 들어서니 모란오거리에 크게 설치된 무대가 멀리서도 모란페스티벌의 무대라는 것을 알 수 있게 크게 자리하고 있습니다. 한참 식전공연이 진행되고 있고 이른시간부터 자리를 채운 시민들이 눈에 들어오네요. 올해로 10회를 맞.......</p>
+
+<p>출처 : http://seongnamdiary.com/221125143873</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Lucius Annaeus Seneca</title>
@@ -367,35 +393,6 @@
 <p>
 <script async="" src="//platform.twitter.com/widgets.js" charset="utf-8" type="text/javascript"></script>
 </p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>adlib 광고 JavaScript SDK</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/07/adlib-javascript-sdk.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.322</id>
-
-    <published>2017-07-26T06:25:53Z</published>
-    <updated>2017-07-26T06:26:17Z</updated>
-
-    <summary><![CDATA[adlib API Key : 597830bc0cf2d81d1ff251a2 #띠배너 스크립트 #1 // 모바일웹이 아닌 PC에서 사용하는 경우 광고 노출이 제한적일 수 있습니다.// PC에서 사용중인경우, UserAgent 를 모바일 환경으로 변경해주세요.// 아래 스크립트를 운영중인 사이트에 삽입해주세요. // 광고뷰 로드 스크립트 &lt;div id="banner_adlibr"&gt;&lt;/div&gt;// 사용할 각 플랫폼의...]]></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[<p>adlib API Key : 597830bc0cf2d81d1ff251a2</p>
-<p><br />#띠배너 스크립트 #1</p>
-<p>// 모바일웹이 아닌 PC에서 사용하는 경우 광고 노출이 제한적일 수 있습니다.<br />// PC에서 사용중인경우, UserAgent 를 모바일 환경으로 변경해주세요.<br />// 아래 스크립트를 운영중인 사이트에 삽입해주세요. // 광고뷰 로드 스크립트 <br />&lt;div id="banner_adlibr"&gt;&lt;/div&gt;<br />// 사용할 각 플랫폼의 site id 를 입력해주세요.<br />&lt;script&gt;<br />var adlib_vars = {<br /> inmobi : "inmobi site id",<br /> naver : "naver site id",<br /> adam : "adam site id",<br /> cauly : "cauly site id",<br /> tad : "tad site id",<br /> google_ad_client : "google adsense client id",<br /> google_ad_slot : "google adsense ad slot", <br /> mezzo_media : "mezzo_media",<br /> mezzo_section : "mezzo_section", <br /> mezzo_banner : "mezzo_banner",<br /> uplus_ios : "uplus_ios_id",<br /> uplus_android : "uplus_android_id",<br /> AD_ALIGN: "center" // 필요에 의해 정렬 위치를 변경할 수 있습니다. ex) center, left, right<br />};<br />&lt;/script&gt;<br />&lt;script src="http://ad.adlibr.com/smartad/mweb/load2.jsp?id=597830bc0cf2d81d1ff251a2&amp;render=banner_adlibr&amp;info=adlib_vars"&gt;&lt;/script&gt;</p>
-<p></p>
-<p># 오버레이형 띠배너 스크립트 #2<br />// 아래 스크립트를 운영중인 사이트에 삽입해주세요. // 광고뷰를 하단 고정하는 경우 스크립트 (2)<br />&lt;div id="banner_adlibr"&gt;&lt;/div&gt;<br />// 사용할 각 플랫폼의 site id 를 입력해주세요.<br />&lt;script&gt;<br />var adlib_vars = {<br /> inmobi : "inmobi site id",<br /> naver : "naver site id",<br /> adam : "adam site id",<br /> cauly : "cauly site id",<br /> tad : "tad site id", <br /> google_ad_client : "google adsense client id",<br /> google_ad_slot : "google adsense ad slot", <br /> mezzo_media : "mezzo_media",<br /> mezzo_section : "mezzo_section", <br /> mezzo_banner : "mezzo_banner",<br /> uplus_ios : "uplus_ios_id",<br /> uplus_android : "uplus_android_id", <br /> AD_ALIGN: "center" // 필요에 의해 정렬 위치를 변경할 수 있습니다. ex) center, left, right<br />};<br />&lt;/script&gt;<br />&lt;script src="http://ad.adlibr.com/smartad/mweb/load2.jsp?id=597830bc0cf2d81d1ff251a2&amp;render=banner_adlibr&amp;info=adlib_vars&amp;fixed=bottom"&gt;&lt;/script&gt;</p>
-<p><br /># 전면배너 스크립트</p>
-<p>// 아래 스크립트를 운영중인 사이트에 삽입해주세요. // 본문을 덮는 오버레이형 전면배너<br />&lt;script src="http://ad.adlibr.com/smartad/mweb/inters/load2.jsp?id=597830bc0cf2d81d1ff251a2"&gt;&lt;/script&gt;</p>
-<p></p>
-<p># POP배너 스크립트<br />&lt;script&gt;<br />var adlib_pop_vars = {<br />AD_ALIGN:"BOTTOM_RIGHT", // TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT<br />paddingX:50,<br />paddingY:50,<br />closeBtnImg:"http://cdn1.theinertia.com/wp-content/themes/theinertia/images/close_button.png",<br />closeBtnSize:40,<br />closeBtnX:30, // X 버튼 위치조정<br />closeBtnY:-30, // X 버튼 위치조정<br />autohide:0, // 설정한 sec 이후에 자동 사라짐. // 0이면 사용안함<br />};<br />&lt;/script&gt;<br />&lt;script src="http://ad.adlibr.com/smartad/mweb/pop/load2.jsp?id=597830bc0cf2d81d1ff251a2&amp;info=adlib_pop_vars"&gt;&lt;/script&gt;</p>]]>
         
     </content>
 </entry>
