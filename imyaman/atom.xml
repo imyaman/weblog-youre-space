@@ -4,9 +4,35 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2017-10-25T02:22:48Z</updated>
+    <updated>2017-10-25T03:21:27Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>마을갤러리, 논골대안공간 &apos;틈&apos; 산책</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/10/eieee-eeeiee-i-ii.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.385</id>
+
+    <published>2017-10-25T03:21:27Z</published>
+    <updated>2017-10-25T03:21:27Z</updated>
+
+    <summary>전봇대가 늘어서 있는 주택가, 여기 저기 공간마다 주차되어 있는 차들 사이로 현수막이 보입니다. 마을갤러리 논골대안공간 &apos;틈&apos;에서 전시회가 열리고 있습니다! 논골대안공간 &apos;틈&apos;은 양지동에 자리하고 있습니다. &apos;논골&apos;은 논골도서관이 있는 단대동 아닌가?? 의아하실텐데요, 지금은 작은 도로를 사이로 양지동과 단대동이 나뉘지만 예전엔 모두 &apos;논골&apos;이라...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>전봇대가 늘어서 있는 주택가, 여기 저기 공간마다 주차되어 있는 차들 사이로 현수막이 보입니다. 마을갤러리 논골대안공간 '틈'에서 전시회가 열리고 있습니다! 논골대안공간 '틈'은 양지동에 자리하고 있습니다. '논골'은 논골도서관이 있는 단대동 아닌가?? 의아하실텐데요, 지금은 작은 도로를 사이로 양지동과 단대동이 나뉘지만 예전엔 모두 '논골'이라 불렀답니다. 논골대안공간 '틈'은 양지동 주민이 자신이 살고 있는 집의 지하공간을 논골도서관을 중심으로 활동하는 마을센터에 제공하면서 만들어졌답니다. '틈'이 있는 골목입니다. 이른 오전인 9시, 전시회를 보고 싶은데 살짝 망설여집니다. 대개의 갤러리는 10시는 되어야 문을 열.......</p>
+
+<p>출처 : http://seongnamdiary.com/221124814799</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>2017 경기 문화유산알리미(북한산성) 행사 소개</title>
@@ -524,268 +550,6 @@ Co-Founders, Apteligent</p><br />
 
 </div>
 </div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Splunk Light 6.6 Is Here</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/05/splunk-light-66-is-here.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.287</id>
-
-    <published>2017-05-09T22:40:39Z</published>
-    <updated>2017-07-21T00:43:45Z</updated>
-
-    <summary> ---- Original Message ---- Subject: Splunk Light 6.6 Is Here Sent: May 10, 2017 4:33 AM From: &quot;Splunk Inc.&quot; To: imyaman@netscape.net Cc: If you have trouble viewing this email, read the online version . Simplified Data Analysis, Easier Management...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[<p></p>
-<p>---- Original Message ----<br /> Subject: Splunk Light 6.6 Is Here<br /> Sent: May 10, 2017 4:33 AM<br /> From: "Splunk Inc." <br /> To: imyaman@netscape.net<br /> Cc:</p>
-<p><br /> If you have trouble viewing this email, read the online version .</p>
-<p></p>
-<p><br /> Simplified Data Analysis, Easier Management at Scale with Splunk Enterprise 6.6</p>
-<p> </p>
-<p></p>
-<p>Download Now</p>
-<p> </p>
-<p>  Announcing Splunk Light 6.6         <br /> --------------------------------------------------------------------------------------------------</p>
-<p>Simplified Data Analysis and More</p>
-<p>     </p>
-<p>Dear Sangyong,</p>
-<p>We are excited to announce that Splunk Light 6.6 is now available for download !</p>
-<p>Splunk Light 6.6 makes it easier than ever for a wide range of users to leverage datasets, get answers and share insights.</p>
-<p>In Splunk Light 6.6:<br /> *Dataset explorer allows you to use a prepared dataset to create/schedule a report and export it in CSV format<br /> *Dashboard drilldown makes it easier to build a guided dashboard navigation experience without writing any Simple XML</p>
-<p>* Trellis layout enables you to build multiple visualizations powered by a single search to compare different segments of a dataset</p>
-<p>Download the latest version today !</p>
-<p>The Splunk Team</p>
-<p>More Resources<br /> *Read the documentation <br /> *Splunk Light new feature release notes <br /> * Compare Splunk Light to Splunk Enterprise and use the one that's right for you</p>
-<p>  <br />  </p>
-<p>     </p>
-<p>                                                           </p>
-<p></p>
-<p><br /> Splunk, Splunk&gt;, Listen to Your Data, The Engine for Machine Data, Splunk Cloud, Splunk Light, and SPL are trademarks of Splunk Inc., registered in the United States and other countries. All other brand names, product names or trademarks belong to their respective owners. ©2017 Splunk Inc. All rights reserved.<br /> This is a commercial email. To unsubscribe from future emails or to update your e-mail preferences click here .<br /> To view our Privacy Policy, click here .<br /> Splunk Inc. | 270 Brannan St. | San Francisco, CA 94107</p>
-<p><br /><br />---- Original Message ----<br />Subject: Splunk Light 6.6 Is Here<br />Sent: May 10, 2017 4:33 AM<br />From: "Splunk Inc." &lt;newsletter@splunk.com&gt;<br />To: imyaman@netscape.net<br />Cc: <br /><br /></p>
-<table>
-<tbody>
-<tr>
-<td>If you have trouble viewing this email, <a href="http://s1528.t.en25.com/e/es?s=1528&amp;e=1657663&amp;elqTrackId=765a8178ba4c4d9888a1f89130a84434&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1">read the online version</a>.</td>
-</tr>
-</tbody>
-</table>
-<div>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td>Simplified Data Analysis, Easier Management at Scale with Splunk Enterprise 6.6</td>
-</tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr>
-<td> </td>
-<td>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td><a href="http://s1528.t.en25.com/e/er?s=1528&amp;lid=248&amp;elqTrackId=907148b559ed41bbbc276b3c72cc8026&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1"><img src="http://img.en25.com/eloquaimages/clients/SplunkInc/%7Bf35ddc86-31f3-4cae-b893-a3a55a750371%7D_logo_splunk_black_low.png" /></a></td>
-<td>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td><a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=fe5ef4c46ff74786941a4b39553cc42d&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">Download Now</a></td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-<td> </td>
-</tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr>
-<td>
-<div>
-<table>
-<tbody>
-<tr>
-<td> </td>
-<td>Announcing Splunk Light 6.6         </td>
-</tr>
-</tbody>
-</table>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<br />
-<table>
-<tbody>
-<tr>
-<td></td>
-<td>Simplified Data Analysis and More</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr><th>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td><br />Dear Sangyong,<br /><br />We are excited to announce that Splunk Light 6.6 is now available for <a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=8340CC75094CC66ACB29D07E610D7345&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">download</a>!<br /><br />Splunk Light 6.6 makes it easier than ever for a wide range of users to leverage datasets, get answers and share insights.<br /><br />In Splunk Light 6.6:<br />
-<ul>
-<li><b>Dataset explorer</b> allows you to use a prepared dataset to create/schedule a report and export it in CSV format</li>
-<li><b>Dashboard drilldown </b>makes it easier to build a guided dashboard navigation experience without writing any Simple XML</li>
-<li><b>Trellis layout </b>enables you to build multiple visualizations powered by a single search to compare different segments of a dataset</li>
-</ul>
-<span> <a href="https://www.splunk.com/en_us/download/splunk-light.html?elqTrackId=8340CC75094CC66ACB29D07E610D7345&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">Download the latest version today</a>!</span><br /><br /> The Splunk Team<br /><br /></td>
-<td><br /> <strong>More Resources</strong><br />
-<ul>
-<li><span><span>Read the </span></span> <a href="http://docs.splunk.com/Documentation/SplunkLight/6.6.0/GettingStarted/Aboutthismanual?elqTrackId=c812429eae78469ebff49adf1d3ad979&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">documentation</a></li>
-<li>Splunk Light new feature <span><span></span></span><span><span> <a href="http://docs.splunk.com/Documentation/SplunkLight/latest/ReleaseNotes/WhatsNewSplunkLight?elqTrackId=4cc81c9f5ee84c6499cd9698654f6aa7&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">release notes</a></span></span></li>
-<li><a href="https://www.splunk.com/en_us/products/splunk-light/splunk-light-vs-splunk-enterprise.html?elqTrackId=b03ced9c39354156bffe2f01077352f3&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">Compare</a> Splunk Light to Splunk Enterprise and use the one that's right for you</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</th></tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr>
-<td> </td>
-<th><a href="http://s1528.t.en25.com/e/er?s=1528&amp;lid=239&amp;elqTrackId=CC921E9EFD648BF60B0BDEF1DA9BD012&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1"><img src="http://img.en25.com/EloquaImages/clients/SplunkInc/%7B877b1721-ad6d-49d1-ab58-61c4340d4e3a%7D_LOGO-Splunk-tagline-W-GreyCaret-footer-email.png" /></a></th>
-<td> </td>
-</tr>
-</tbody>
-</table>
-<table>
-<tbody>
-<tr>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div>                                                           </div>
-<div>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td>
-<table>
-<tbody>
-<tr>
-<td><img src="http://img.en25.com/eloquaimages/clients/SplunkInc/{f5148764-08c5-404b-a5f7-e4495fb74d68}_spacer.gif" width="10" height="1" /></td>
-<td><i>Splunk, Splunk&gt;, Listen to Your Data, The Engine for Machine Data, Splunk Cloud, Splunk Light, and SPL are trademarks of Splunk Inc., registered in the United States and other countries. All other brand names, product names or trademarks belong to their respective owners. ©2017 Splunk Inc. All rights reserved.<br /> This is a commercial email. To unsubscribe from future emails or to update your e-mail preferences <a href="http://s1528.t.en25.com/e/sl?s=1528&amp;elq=4ad0b12236114e328ae518d5d376ed85">click here</a>.<br /> To view our Privacy Policy, <a href="http://www.splunk.com/view/SP-CAAAAAG?elqTrackId=1cf53f5db2584280b86d76fd02e6647b&amp;elq=4ad0b12236114e328ae518d5d376ed85&amp;elqaid=10742&amp;elqat=1&amp;elqCampaignId=5674">click here</a>.</i><br /> <b>Splunk Inc. | 270 Brannan St. | San Francisco, CA <a href="tel:94107">94107</a></b></td>
-<td><img src="http://img.en25.com/eloquaimages/clients/SplunkInc/{f5148764-08c5-404b-a5f7-e4495fb74d68}_spacer.gif" width="10" height="1" /></td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p><img src="http://s1528.t.en25.com/e/FooterImages/FooterImage1?elq=4ad0b12236114e328ae518d5d376ed85&amp;siteid=1528" alt="" /></p>]]>
         
     </content>
 </entry>
