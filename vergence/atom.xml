@@ -4,9 +4,47 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-11-08T00:54:54Z</updated>
+    <updated>2017-11-16T06:42:02Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Microsoft Web Framework</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/11/microsoft-web-framework.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.501</id>
+
+    <published>2017-11-16T06:42:02Z</published>
+    <updated>2017-11-16T06:42:02Z</updated>
+
+    <summary>1. Microsoft Web Framework (MWF) https://getmwf.com/documentation/distribution-deployment/cdn.html https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/css/mwf-west-european-default.css https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/scripts/uhf-main.var.min.js https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/scripts/mwf-main.amd.min.js https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/scripts/mwf-auto-init-main.var.min.js https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/scripts/mwf-main-no-vendor.amd.min.js 2. Design and UI for UWP apps https://developer.microsoft.com/en-us/windows/apps/design 3. Fabric UI https://developer.microsoft.com/en-us/fabric https://dev.office.com/fabric-js/GetStarted/GetStarted.html...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[1. Microsoft Web Framework (MWF)<br />
+https://getmwf.com/documentation/distribution-deployment/cdn.html<br />
+<br />
+https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/css/mwf-west-european-default.css<br />
+https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/scripts/uhf-main.var.min.js<br />
+<br />
+https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/scripts/mwf-main.amd.min.js<br />
+https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/scripts/mwf-auto-init-main.var.min.js<br />
+https://assets.onestore.ms/cdnfiles/external/mwf/long/v1/v1.26.1/scripts/mwf-main-no-vendor.amd.min.js<br />
+<br />
+<br />
+2. Design and UI for UWP apps<br />
+https://developer.microsoft.com/en-us/windows/apps/design<br />
+<br />
+3. Fabric UI<br />
+https://developer.microsoft.com/en-us/fabric<br />
+https://dev.office.com/fabric-js/GetStarted/GetStarted.html
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>input number padding right</title>
@@ -406,27 +444,6 @@ NSAppleMusicUsageDescription 라는 key 에 string 타입의 value 가 있어야
 http://blog.rss.naver.com/{NAVER ID}.xml<br />
 
 ]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>ifttt, zapier, automate.io</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/09/ifttt-zapier-automateio.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.359</id>
-
-    <published>2017-09-21T06:00:12Z</published>
-    <updated>2017-09-21T06:00:23Z</updated>
-
-    <summary>써보니 모두 좋다....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>써보니 모두 좋다.</p>]]>
         
     </content>
 </entry>
