@@ -4,9 +4,51 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-11-20T13:49:42Z</updated>
+    <updated>2017-11-22T05:12:13Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>두레이 회원 가입 요금 무료</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/11/eei-ii-ei-ie-ee.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.506</id>
+
+    <published>2017-11-22T05:12:13Z</published>
+    <updated>2017-11-22T05:12:13Z</updated>
+
+    <summary># 두레이 회원가입 https://dooray.com/join # 두레이 서비스 이용약관 https://dooray.com/htmls/rules/use_policy.html?version=2.0 # 두레이 개인정보수집 및 이용 https://dooray.com/htmls/rules/privacy_collection_policy.html?version=2.0 # 두레이 이용 요금 # 두레이 무료 이용...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[# 두레이 회원가입<br />
+https://dooray.com/join<br />
+<br />
+# 두레이 서비스 이용약관<br />
+https://dooray.com/htmls/rules/use_policy.html?version=2.0<br />
+<br />
+# 두레이 개인정보수집 및 이용<br />
+
+<div>https://dooray.com/htmls/rules/privacy_collection_policy.html?version=2.0</div>
+
+<div><br />
+</div>
+
+<div># 두레이 이용 요금</div>
+
+<div><br />
+</div>
+
+<div># 두레이 무료 이용<br />
+</div>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>성격심리학 책</title>
@@ -419,29 +461,6 @@ The AOL Instant Messenger team
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>&#55120;&#55147;</p>
 
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>애플 앱 스토어에 IPA 업로드한 것이 보이지 않을 때 </title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/09/ii-i-iiii-ipa-ieei-ei-eii-ii-e.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.362</id>
-
-    <published>2017-09-25T10:23:08Z</published>
-    <updated>2017-09-25T10:35:54Z</updated>
-
-    <summary>IPA 업로드한 것이 긴 시간이 지나도 보이지 않는다면 Info.plist 를 확인해보자. NSAppleMusicUsageDescription 라는 key 에 string 타입의 value 가 있어야한다. 특히 iOS 11 때문에 업데이트 빌드한 경우라면 꼭 의심해보자....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>IPA 업로드한 것이 긴 시간이 지나도 보이지 않는다면 Info.plist 를 확인해보자.
-NSAppleMusicUsageDescription 라는 key 에 string 타입의 value 가 있어야한다. 특히 iOS 11 때문에 업데이트 빌드한 경우라면 꼭 의심해보자.</p>
 ]]>
         
     </content>
