@@ -6,11 +6,11 @@
     <id>tag:weblog.youre.space,2017-07-10:/baas/3</id>
     <updated>2017-09-14T15:08:46Z</updated>
     
-    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.5</generator>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
 
 <entry>
     <title>Collaboration, integration and interoperability key to smart cities</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/09/collaboration-integration-and-interoperability-key-to-smart-cities.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/09/000353.html" />
     <id>tag:weblog.youre.space,2017:/baas//3.353</id>
 
     <published>2017-09-14T15:08:08Z</published>
@@ -39,7 +39,7 @@
 
 <entry>
     <title>오래된 parse.com JavaScript 예제</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/02/parse-dot-com-js-sdk-example.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/02/000028.html" />
     <id>tag:weblog.youre.space,2017:/baas//3.28</id>
 
     <published>2017-02-20T13:55:07Z</published>
@@ -70,7 +70,7 @@
 
 <entry>
     <title>Parse에게 인사</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/01/parse.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2017/01/000027.html" />
     <id>tag:weblog.youre.space,2017:/baas//3.27</id>
 
     <published>2017-01-31T01:48:09Z</published>
@@ -93,7 +93,7 @@
 
 <entry>
     <title>Firebase 요금과 무료 용량</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/06/firebase-price-free-limit.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/06/000026.html" />
     <id>tag:weblog.youre.space,2016:/baas//3.26</id>
 
     <published>2016-06-19T05:06:05Z</published>
@@ -128,7 +128,7 @@ DB 10GB/월이면, 약 300MB/일. 로그인하고 글 목록 갖고 오는 것 �
 
 <entry>
     <title>Firebase에서 entity 생성시각 저장하기</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/06/firebase.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/06/000025.html" />
     <id>tag:weblog.youre.space,2016:/baas//3.25</id>
 
     <published>2016-06-14T13:42:08Z</published>
@@ -163,7 +163,7 @@ DB 10GB/월이면, 약 300MB/일. 로그인하고 글 목록 갖고 오는 것 �
 
 <entry>
     <title>Bluemix Mobile Services 느낌</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/03/bluemix-mobile-services.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/03/000024.html" />
     <id>tag:weblog.youre.space,2016:/baas//3.24</id>
 
     <published>2016-03-19T15:10:39Z</published>
@@ -203,7 +203,7 @@ Parse나 Kinvey는 웹 브라우저에서도 충분히 이용 가능한 JS SDK�
 
 <entry>
     <title>usergrid 2.1.0 ROOT.war</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/02/usergrid-210-rootwar.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/02/000023.html" />
     <id>tag:weblog.youre.space,2016:/baas//3.23</id>
 
     <published>2016-02-25T14:48:34Z</published>
@@ -230,7 +230,7 @@ Parse나 Kinvey는 웹 브라우저에서도 충분히 이용 가능한 JS SDK�
 
 <entry>
     <title>Parse Server 이용 2 (DB migration)</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/02/parse-server-mongodb-migration.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/02/000022.html" />
     <id>tag:weblog.youre.space,2016:/baas//3.22</id>
 
     <published>2016-02-11T14:17:23Z</published>
@@ -275,7 +275,7 @@ Parse의 IP Address가 54.85.239.107 등으로 나오네요. IP Address로 찾�
 
 <entry>
     <title>Parse Server 이용 1</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/02/parse-server-1.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2016/02/000021.html" />
     <id>tag:weblog.youre.space,2016:/baas//3.21</id>
 
     <published>2016-02-08T13:31:55Z</published>
@@ -306,7 +306,7 @@ Parse의 IP Address가 54.85.239.107 등으로 나오네요. IP Address로 찾�
 
 <entry>
     <title>PaaS 쓸까, BaaS 쓸까? (서버 개발자인가, 클라이언트 개발자인가?)</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2015/08/paas-baas.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2015/08/000020.html" />
     <id>tag:weblog.youre.space,2015:/baas//3.20</id>
 
     <published>2015-08-26T15:02:27Z</published>
@@ -348,7 +348,7 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 
 <entry>
     <title>usergrid-android-0.0.8.jar</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2015/08/usergrid-android-008jar.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2015/08/000019.html" />
     <id>tag:weblog.youre.space,2015:/baas//3.19</id>
 
     <published>2015-08-18T09:45:32Z</published>
@@ -372,7 +372,7 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 
 <entry>
     <title>usergrid의 /assets 콜렉션</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2015/08/usergrid-assets.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2015/08/000018.html" />
     <id>tag:weblog.youre.space,2015:/baas//3.18</id>
 
     <published>2015-08-17T13:53:21Z</published>
@@ -406,7 +406,7 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 
 <entry>
     <title>특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/11/-user.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/11/000017.html" />
     <id>tag:weblog.youre.space,2014:/baas//3.17</id>
 
     <published>2014-11-10T09:23:00Z</published>
@@ -440,7 +440,7 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 
 <entry>
     <title>gcm 사용할때나 로그인 할때나 게시판을 열어볼때 딜레이가 발생하는 이유는 무엇인가요..?</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/10/gcm.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/10/000016.html" />
     <id>tag:weblog.youre.space,2014:/baas//3.16</id>
 
     <published>2014-10-17T00:38:00Z</published>
@@ -468,7 +468,7 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 
 <entry>
     <title>2014년 ucloud biz 개발자 컨퍼런스 - ucloud BaaS</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/03/2014-ucloud-biz---ucloud-baas.html" />
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/03/000015.html" />
     <id>tag:weblog.youre.space,2014:/baas//3.15</id>
 
     <published>2014-03-31T10:24:00Z</published>
