@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="하이텔 유닉스 동호회 자유게시판에 2002년 즈음에 쓴 것 같습니다, 앞으로 유닉스는 커널만 남고 유틸리티들은 자유/오픈소스소프트웨어로 된 배포판이 될 것 같다고. 그 때에도 GNU/Hurd를 애써서 노력하면 설치할 수 있었습니다(설치 CD 같은 형태로 패키징된 것은 없었습니다). Debian은 GNU/Linux 였습니다. GNU의 유틸리티와 Hurd...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>유닉스를 예상했던 기억 - vergence의 이상한 세상</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://weblog.youre.space/vergence/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://weblog.youre.space/vergence/styles_ie.css">
+    <script src="http://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="http://weblog.youre.space/vergence/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/vergence/atom.xml" />
+    <link rel="canonical" href="http://weblog.youre.space/vergence/2017/09/000347.html" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <script type="text/javascript">
+        var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+        sp.load("http://splunk2001.youre.space"); // Replace with your own Collector URL
+    </script>
+    <link rel="prev" href="http://weblog.youre.space/vergence/2017/09/000346.html" title="Sailfish OS 2.0.4.13 for Nexus 5">
+    <link rel="next" href="http://weblog.youre.space/vergence/2017/09/000351.html" title="유닉스에 대한 기억">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="유닉스를 예상했던 기억">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2017/09/000347.html">
+    <meta property="og:description" content="하이텔 유닉스 동호회 자유게시판에 2002년 즈음에 쓴 것 같습니다, 앞으로 유닉스는 커널만 남고 유틸리티들은 자유/오픈소스소프트웨어로 된 배포판이 될 것 같다고. 그 때에도 GNU/Hurd를 애써서 노력하면 설치할 수 있었습니다(설치 CD 같은 형태로 패키징된 것은 없었습니다). Debian은 GNU/Linux 였습니다. GNU의 유틸리티와 Hurd...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="하이텔 유닉스 동호회 자유게시판에 2002년 즈음에 쓴 것 같습니다, 앞으로 유닉스는 커널만 남고 유틸리티들은 자유/오픈소스소프트웨어로 된 배포판이 될 것 같다고. 그 때에도 GNU/Hurd를 애써서 노력하면 설치할 수 있었습니다(설치 CD 같은 형태로 패키징된 것은 없었습니다). Debian은 GNU/Linux 였습니다. GNU의 유틸리티와 Hurd...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2017/09/000347.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="http://weblog.youre.space/vergence/">
+
+                  <img alt="vergence의 이상한 세상" src="http://weblog.youre.space/vergence/assets_c/2017/08/Coffee-and-Books-1024x512-thumb-1024x512-3.jpg">
+
+                </a>
+              </h1>
+              <p id="header-description">#취미생활 취미생호라 취미생하로</p>
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/vergence/">Home</a></li>
+
+            <li><a href="http://weblog.youre.space/vergence/about/about-page.html">About</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/vergence/">Home</a></li>
+              <li class="breadcrumb-list-item">유닉스를 예상했던 기억</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-347" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">유닉스를 예상했던 기억</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2017-09-06T08:35:33+09:00" itemprop="datePublished">September  6, 2017</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>하이텔 유닉스 동호회 자유게시판에 2002년 즈음에 쓴 것 같습니다, 앞으로 유닉스는 커널만 남고 유틸리티들은 자유/오픈소스소프트웨어로 된 배포판이 될 것 같다고.</p>
+
+<p>그 때에도 GNU/Hurd를 애써서 노력하면 설치할 수 있었습니다(설치 CD 같은 형태로 패키징된 것은 없었습니다). Debian은 GNU/Linux 였습니다. GNU의 유틸리티와 Hurd 또는 Linux 커널의 조합. 커널과 유틸리티는 분리되고 또 조합될 수 있는 것이었죠.<br />
+Solaris나 Tru64, AIX, HP-UX 등 유닉스에는 GNU의 유틸리티를 한 두 개는 설치했고요. 특히 gzip은 꼭. gcc, gmake 같은 것도 보통.</p>
+
+<p>그 글에 어느 분이 답글을 쓰길, 그렇게 되지는 않을 거다, 무리한 상상이다라고.</p>
+
+<p>지금 돌아보면 꼭 맞지도, 별로 틀리지도 않았다는 생각이 듭니다. 커널만 남을 거라는 건 이런 뜻이었습니다. 유닉스 커널 내 신기능은 거의 없다. 하드웨어 개선에 맞추어 그 하드웨어를 위한 드라이버는 계속 개발될 것이다. 다수가 참여하는 자유/오픈소스소프트웨어 개발의 물결이 자본을 바탕으로한 개발을 압도할 것이다.<br />
+상업용 유닉스 커널이 남을 거라는 예상은 틀렸습니다. 하드웨어 측면에서는 아예 Linux 커널에게 문을 완전 개방하게 되었으니까요.</p>
+
+<p>요즘 Linux 커널 소스코드 묶음을 보면 크기가 엄청 큽니다. 10 몇 MB 정도였을 때가 기억에 있는데요. 커널 컴파일 하려고 설정하다보면 드라이버가 엄청 많아졌다는 걸 실감하게 됩니다.</p>
+
+<p>이제 Solaris에게도 인사를 하게 되면서 새삼 그 때 기억이 떠오릅니다.</p>
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/vergence/2017/09/000346.html" title="Sailfish OS 2.0.4.13 for Nexus 5">Previous entry</a></li>
+
+
+                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/vergence/2017/09/000351.html" title="유닉스에 대한 기억">Next entry</a></li>
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="11">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-category widget">
+  <h3 class="widget-header">Categories</h3>
+  <div class="widget-content">
+    
+      
+    <ul class="widget-list">
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/vergence/2002-2003/">2002-2003 (18)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/vergence/cal/">cal (29)</a>
+      
+      
+      </li>
+      
+    </ul>
+      
+    
+  </div>
+</nav>
+  
+
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="http://weblog.youre.space/vergence/2017/11/">November 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/10/">October 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/09/">September 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/08/">August 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/07/">July 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/06/">June 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/05/">May 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/04/">April 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/03/">March 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/02/">February 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/11/">November 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/10/">October 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/09/">September 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/07/">July 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/06/">June 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/05/">May 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/04/">April 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/03/">March 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/02/">February 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/01/">January 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/12/">December 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/11/">November 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/10/">October 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/09/">September 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/08/">August 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/07/">July 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/11/">November 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/10/">October 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/08/">August 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/06/">June 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/05/">May 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/04/">April 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/03/">March 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2013/11/">November 2013</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2013/08/">August 2013</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2013/05/">May 2013</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2011/09/">September 2011</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/09/">September 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/08/">August 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/07/">July 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/06/">June 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/05/">May 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/04/">April 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2002/02/">February 2002</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-tag-cloud widget">
+  <h3 class="widget-header">Tag Cloud</h3>
+  <div class="widget-content">
+    <ul class="widget-list">
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=finalfantasy&amp;limit=20">finalfantasy</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=firebase&amp;limit=20">firebase</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=leadership&amp;limit=20">leadership</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=neuralnetwork&amp;limit=20">neuralnetwork</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20">리더십</a></li>
+  
+    </ul>
+  </div>
+</div>
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="http://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://weblog.youre.space/vergence/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/vergence/">Home</a></li>
+
+            <li><a href="http://weblog.youre.space/vergence/about/about-page.html">About</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2017.</p>
+  <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
+</div>
+
+<!-- ad starts -->
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<!-- ad ends -->
+
+<!-- AceCounter Log Gathering Script V.7.5.2017020801 -->
+<script language='javascript'>
+	var _AceGID=(function(){var Inf=['gtp14.acecounter.com','8080','AH4A41746571533','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+	var _AceCounter=(function(){var G=_AceGID;var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];if(G.o!=0){var _A=G.val[G.o-1];var _G=(_A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];var _U=(_A[5]).replace(/\,/g,'_');_sc.src=(location.protocol.indexOf('http')==0?location.protocol:'http:')+'//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime());_sm.parentNode.insertBefore(_sc,_sm);return _sc.src;}})();
+</script>
+<noscript><img src='http://gtp14.acecounter.com:8080/?uid=AH4A41746571533&je=n&' border='0' width='0' height='0' alt=''></noscript>	
+<!-- AceCounter Log Gathering Script End -->
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="http://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
+  </body>
+</html>

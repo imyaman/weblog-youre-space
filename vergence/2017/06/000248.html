@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rational Team Concert 업그레이드 하려고, 기존 서버에서 데이터 export 하고 새 서버에서 import 했는데, 오류가 발생했습니다. 6.0.3 에서 6.0.4 로 간 것 뿐인데. 애라. 2017-06-30 05:38:46,400 Repo Tools 2017-06-30 05:38:46,401 java.version=1.7.0 2017-06-30 05:38:46,401 java.runtime.version=pxa6470_27sr4fp1-20170215_01 (SR4 FP1) 2017-06-30 05:38:46,404 Provisioning using...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>Rational Team Concert 6.0.4 migration - vergence의 이상한 세상</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://weblog.youre.space/vergence/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://weblog.youre.space/vergence/styles_ie.css">
+    <script src="http://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="http://weblog.youre.space/vergence/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/vergence/atom.xml" />
+    <link rel="canonical" href="http://weblog.youre.space/vergence/2017/06/000248.html" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <script type="text/javascript">
+        var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+        sp.load("http://splunk2001.youre.space"); // Replace with your own Collector URL
+    </script>
+    <link rel="prev" href="http://weblog.youre.space/vergence/2017/06/000247.html" title="xbox360 사진">
+    <link rel="next" href="http://weblog.youre.space/vergence/2017/07/000249.html" title="mbaas shopping, BaaS 속도 비교">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="Rational Team Concert 6.0.4 migration">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2017/06/000248.html">
+    <meta property="og:description" content="Rational Team Concert 업그레이드 하려고, 기존 서버에서 데이터 export 하고 새 서버에서 import 했는데, 오류가 발생했습니다. 6.0.3 에서 6.0.4 로 간 것 뿐인데. 애라. 2017-06-30 05:38:46,400 Repo Tools 2017-06-30 05:38:46,401 java.version=1.7.0 2017-06-30 05:38:46,401 java.runtime.version=pxa6470_27sr4fp1-20170215_01 (SR4 FP1) 2017-06-30 05:38:46,404 Provisioning using...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="Rational Team Concert 업그레이드 하려고, 기존 서버에서 데이터 export 하고 새 서버에서 import 했는데, 오류가 발생했습니다. 6.0.3 에서 6.0.4 로 간 것 뿐인데. 애라. 2017-06-30 05:38:46,400 Repo Tools 2017-06-30 05:38:46,401 java.version=1.7.0 2017-06-30 05:38:46,401 java.runtime.version=pxa6470_27sr4fp1-20170215_01 (SR4 FP1) 2017-06-30 05:38:46,404 Provisioning using...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2017/06/000248.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="http://weblog.youre.space/vergence/">
+
+                  <img alt="vergence의 이상한 세상" src="http://weblog.youre.space/vergence/assets_c/2017/08/Coffee-and-Books-1024x512-thumb-1024x512-3.jpg">
+
+                </a>
+              </h1>
+              <p id="header-description">#취미생활 취미생호라 취미생하로</p>
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/vergence/">Home</a></li>
+
+            <li><a href="http://weblog.youre.space/vergence/about/about-page.html">About</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/vergence/">Home</a></li>
+              <li class="breadcrumb-list-item">Rational Team Concert 6.0.4 migration</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-248" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">Rational Team Concert 6.0.4 migration</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2017-06-30T15:58:52+09:00" itemprop="datePublished">June 30, 2017</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>Rational Team Concert 업그레이드 하려고, 기존 서버에서 데이터 export 하고 새 서버에서 import 했는데, 오류가 발생했습니다.<br />
+6.0.3 에서 6.0.4 로 간 것 뿐인데.
+애라.</p>
+
+<pre><code>
+2017-06-30 05:38:46,400 Repo Tools
+2017-06-30 05:38:46,401 java.version=1.7.0
+2017-06-30 05:38:46,401 java.runtime.version=pxa6470_27sr4fp1-20170215_01 (SR4 FP1)
+2017-06-30 05:38:46,404 Provisioning using "./conf/jts/provision_profiles".
+2017-06-30 05:38:46,418 repotools-jts -import fromFile=JTSData.tar
+2017-06-30 05:38:46,444 
+ To submit questions about issues, go to the Jazz.net forum at https://jazz.net/forum. 
+ To find more information about a message, see the online product documentation.
+2017-06-30 05:38:46,444 CRJAZ1363I Loading the configuration from "file:conf/jts/teamserver.properties".
+2017-06-30 05:38:50,635 CRJAZ1365I The server is attempting to connect to the following database: "conf/jts/derby/repositoryDB"
+2017-06-30 05:38:50,840 CRJAZ1364I The connection to the following database was successful:
+ Db Product Name: Apache Derby
+  Db Product Version: 10.10.2.0 - (1582446)
+  Db URL: jdbc:derby:conf/jts/derby/repositoryDB;create=true
+  Jdbc Driver Name: Apache Derby Embedded JDBC Driver
+  Jdbc Driver Version: 10.10.2.0 - (1582446)
+  SchemaPrefix: 
+ 
+2017-06-30 05:38:54,451 CRJAZ1779I This server is configured as a JTS.
+2017-06-30 05:38:54,454 CRJAZ2558I Setting the local server rename state to false and the openServerDescriptionServiceTemporarily state to false.
+2017-06-30 05:38:54,513 CRJAZ2523I Setting the global server rename state to false and the validation state to false.
+2017-06-30 05:38:54,709 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:38:54,851 CRJAZ2105I Checking for a running server...
+2017-06-30 05:38:55,011 CRJAZ2084I The import operation requires approximately 93K of free space at "/tmp".
+2017-06-30 05:42:29,636 Creating the tables for the database "conf/jts/derby/repositoryDB" without indices.
+2017-06-30 05:42:57,586 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:43:00,631 The user "ADMIN" has logged in to the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:00,741 The user "ADMIN" has logged out of the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:00,752 CRJZS5650I Indices directory is /opt/IBM/JazzTeamServer/server/conf/jts/indices
+2017-06-30 05:43:00,765 The database tables were created successfully.
+2017-06-30 05:43:03,533 CRJAZ1365I The server is attempting to connect to the following database: "conf/jts/derby/repositoryDB"
+2017-06-30 05:43:03,556 CRJAZ1364I The connection to the following database was successful:
+ Db Product Name: Apache Derby
+  Db Product Version: 10.10.2.0 - (1582446)
+  Db URL: jdbc:derby:conf/jts/derby/repositoryDB;create=true
+  Jdbc Driver Name: Apache Derby Embedded JDBC Driver
+  Jdbc Driver Version: 10.10.2.0 - (1582446)
+  SchemaPrefix: 
+ 
+2017-06-30 05:43:05,334 CRJAZ1971I The server is configured with: 
+  Public URI: "https://rational.youre.space:9443/jts"
+2017-06-30 05:43:06,559 The user "ADMIN" has logged in to the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:06,560 Importing the data from the file "JTSData.tar" into the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:06,560 Using encoding "UTF-8" for TAR file headers.
+2017-06-30 05:43:06,569 
+Reading the TAR file /opt/IBM/JazzTeamServer/server/JTSData.tar...
+2017-06-30 05:43:06,581 Finished reading the TAR file "/opt/IBM/JazzTeamServer/server/JTSData.tar" in 13 ms.
+2017-06-30 05:43:06,581 Using deserializer caching options to improve migration performance.
+2017-06-30 05:43:06,581 Configured to update database stats every 1800000ms.
+2017-06-30 05:43:06,581 Importing contents from JTSData.tar into the repository.
+2017-06-30 05:43:06,681 
+Migrating data exported from the following model versions
+2017-06-30 05:43:06,681 	Namespace URI = com.ibm.team.repository.friends, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.jfs.resource, Version = 9
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.repository.auth, Version = 4
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.links, Version = 7
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.reports, Version = 1.9
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.markers, Version = 3
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.applicationmigration, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.dashboard, Version = 1.7
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.serviceability, Version = 1.0.1
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.repository.discovery, Version = 1
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.diagnostictests, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.vvc, Version = 13
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.validity, Version = 2
+2017-06-30 05:43:06,682 	Namespace URI = com.ibm.team.globalconfiguration, Version = 3
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.repository, Version = 38
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.opaque, Version = 1
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.compatibilitypack, Version = 1
+2017-06-30 05:43:06,683 	Namespace URI = com.ibm.team.process, Version = 24
+2017-06-30 05:43:06,728 CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+2017-06-30 05:43:06,728 
+Imported 0 items, 0 item states in 147 ms. 0 item states skipped. Error importing 0 elements.
+2017-06-30 05:43:06,728 Total time spent writing to the blackboard:  0 ms.
+2017-06-30 05:43:06,729 Total time spent reading from the blackboard:  0 ms.
+2017-06-30 05:43:06,729 
+2017-06-30 05:43:06,729 
+2017-06-30 05:43:06,729 ##############################################################################################
+2017-06-30 05:43:06,729                                 ****** Migration Errors ******
+2017-06-30 05:43:06,729 CRJAZ0656I **ERROR** Migration completed with errors. The imported database is in an inconsistent state and should not be used without further analysis.
+Check the migration log "/opt/IBM/JazzTeamServer/server/repotools-jts_import.log" for details.
+2017-06-30 05:43:06,730 ##############################################################################################
+2017-06-30 05:43:06,730 The user "ADMIN" has logged out of the database "conf/jts/derby/repositoryDB".
+2017-06-30 05:43:08,285 CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+com.ibm.team.repository.migration.internal.service.IllegalVersionException: CRJAZ2403E The version of the data that you are trying to import does not match the version of this tool.  The "com.ibm.team.vvc" component in the exported file uses version "13". However, this import tool can handle only version "19".
+	at com.ibm.team.repository.migration.internal.service.MigrationHandlerDispatcher.assertAllModelVersionsEqualToCurrent(MigrationHandlerDispatcher.java:97)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importData(AbstractMigrationService.java:1027)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importRepositoryOptionalVerifyPreserve(AbstractMigrationService.java:881)
+	at com.ibm.team.repository.migration.internal.service.AbstractMigrationService.importRepositoryOptionalVerify(AbstractMigrationService.java:831)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord.invoke(ExportProxyServiceRecord.java:361)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord.access$0(ExportProxyServiceRecord.java:347)
+	at org.eclipse.soda.sat.core.internal.record.ExportProxyServiceRecord$ExportedServiceInvocationHandler.invoke(ExportProxyServiceRecord.java:56)
+	at com.sun.proxy.$Proxy1353.importRepositoryOptionalVerify(Unknown Source)
+	at com.ibm.team.repotools.commands.local.internal.ImportCommand.importData(ImportCommand.java:288)
+	at com.ibm.team.repotools.commands.local.internal.ImportCommand.execute(ImportCommand.java:205)
+	at com.ibm.team.repotools.command.AbstractCommand.execute(AbstractCommand.java:68)
+	at com.ibm.team.repotools.rcp.internal.RepositoryToolsApplication.run(RepositoryToolsApplication.java:838)
+	at com.ibm.team.repotools.rcp.internal.RepositoryToolsApplication.start(RepositoryToolsApplication.java:928)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:95)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:56)
+	at java.lang.reflect.Method.invoke(Method.java:620)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438)
+</code></pre>
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/vergence/2017/06/000247.html" title="xbox360 사진">Previous entry</a></li>
+
+
+                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/vergence/2017/07/000249.html" title="mbaas shopping, BaaS 속도 비교">Next entry</a></li>
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/218</p>
+  
+  
+</aside>
+
+
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="11">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-category widget">
+  <h3 class="widget-header">Categories</h3>
+  <div class="widget-content">
+    
+      
+    <ul class="widget-list">
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/vergence/2002-2003/">2002-2003 (18)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/vergence/cal/">cal (29)</a>
+      
+      
+      </li>
+      
+    </ul>
+      
+    
+  </div>
+</nav>
+  
+
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="http://weblog.youre.space/vergence/2017/11/">November 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/10/">October 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/09/">September 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/08/">August 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/07/">July 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/06/">June 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/05/">May 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/04/">April 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/03/">March 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2017/02/">February 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/11/">November 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/10/">October 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/09/">September 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/07/">July 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/06/">June 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/05/">May 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/04/">April 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/03/">March 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/02/">February 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2016/01/">January 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/12/">December 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/11/">November 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/10/">October 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/09/">September 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/08/">August 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2015/07/">July 2015</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/11/">November 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/10/">October 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/08/">August 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/06/">June 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/05/">May 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/04/">April 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2014/03/">March 2014</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2013/11/">November 2013</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2013/08/">August 2013</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2013/05/">May 2013</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2011/09/">September 2011</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/09/">September 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/08/">August 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/07/">July 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/06/">June 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/05/">May 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2004/04/">April 2004</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/vergence/2002/02/">February 2002</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-tag-cloud widget">
+  <h3 class="widget-header">Tag Cloud</h3>
+  <div class="widget-content">
+    <ul class="widget-list">
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=finalfantasy&amp;limit=20">finalfantasy</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=firebase&amp;limit=20">firebase</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=leadership&amp;limit=20">leadership</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=neuralnetwork&amp;limit=20">neuralnetwork</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20">리더십</a></li>
+  
+    </ul>
+  </div>
+</div>
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="http://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://weblog.youre.space/vergence/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/vergence/">Home</a></li>
+
+            <li><a href="http://weblog.youre.space/vergence/about/about-page.html">About</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2017.</p>
+  <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
+</div>
+
+<!-- ad starts -->
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<!-- ad ends -->
+
+<!-- AceCounter Log Gathering Script V.7.5.2017020801 -->
+<script language='javascript'>
+	var _AceGID=(function(){var Inf=['gtp14.acecounter.com','8080','AH4A41746571533','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+	var _AceCounter=(function(){var G=_AceGID;var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];if(G.o!=0){var _A=G.val[G.o-1];var _G=(_A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];var _U=(_A[5]).replace(/\,/g,'_');_sc.src=(location.protocol.indexOf('http')==0?location.protocol:'http:')+'//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime());_sm.parentNode.insertBefore(_sc,_sm);return _sc.src;}})();
+</script>
+<noscript><img src='http://gtp14.acecounter.com:8080/?uid=AH4A41746571533&je=n&' border='0' width='0' height='0' alt=''></noscript>	
+<!-- AceCounter Log Gathering Script End -->
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="http://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
+  </body>
+</html>
