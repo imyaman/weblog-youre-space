@@ -4,9 +4,175 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2017-12-13T23:55:30Z</updated>
+    <updated>2017-12-21T01:40:18Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Service Notice: DoubleClick for Publishers &amp; DoubleClick Ad Exchange</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000517.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.517</id>
+
+    <published>2017-12-21T01:40:18Z</published>
+    <updated>2017-12-21T01:40:18Z</updated>
+
+    <summary> Google Hyperlink Dear Customer, We’ve identified certain vendor files that may contain XSS vulnerabilities which could pose a security risk. Please check if you are hosting these files and remove them with the help of your webmaster. These are...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[
+
+  
+    
+    
+    
+      Google
+    
+  
+  
+    <table>
+      
+        <tr>
+          <td>
+            Hyperlink
+            <table>
+              
+                <tr>
+                  <td>
+                    <img src="http://services.google.com/fh/files/emails/temp_vert_top.gif" alt="pubtalk logo" width="550" height="14">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="http://www.google.com/doubleclick/images/logos/doubleclick_logo_41.png">
+                    <img alt="clickable image" src="http://www.google.com/doubleclick/images/logos/doubleclick_logo_41.png"></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong> </strong>
+<p>
+                    Dear Customer,<br />
+                                   <br />
+We’ve identified certain vendor files that may contain XSS vulnerabilities which could pose a security risk. Please check if you are hosting these files and remove them with the help of your webmaster.  These are the currently identified third-party vendor files:
+<p>
+1. adform/IFrameManager.html
+<p>
+2. admotion/afa-iframe.htm
+<p>
+3. bonzai/bonzaiBuster.html
+<p>
+4. exponential/buster.html
+<p>
+5. eyeblaster/addineyeV2.html
+<p>
+6. eyewonder/interim.html
+<p>
+7. flashtalking/ftlocal.html
+<p>
+8. ipinyou/py_buster.html
+<p>
+9. jivox/jivoxibuster.html
+<p>
+10. mediaplex/mojofb_v9.html
+<p>
+11. mixpo/framebust.html
+<p>
+12. predicta/predicta_bf.html
+<p>
+13. rockabox/rockabox_buster.html
+<p>
+14. liquidus/iframeX.htm
+<p>
+15. controbox/iframebuster.html
+<p>
+16. spongecell/spongecell-spongecellbuster.html
+<p>
+17. unicast/unicastIFD.html
+<p>
+18. adrime/adrime_burst.2.0.0.htm
+<p>
+19. revjet/revjet_buster.html
+<p>
+20. kpsule/iframebuster.html
+<p>
+We have disabled these vendors where possible for all DoubleClick for Publishers and DoubleClick Ad Exchange customers. However, any of the mentioned files hosted on your site may still pose a risk and should be taken down. We will notify you as we learn more.
+<p>
+For more information please refer to this <a href="https://www.google.com/appserve/mkt/p/AIR_RmE-NTRWWjpbC5t2HcHvBPr6u-E-g7zLQhhoOfHuYYDEEGWRzz4tqvk2eI-EonRtw6a6yLFHUozHGZ93ex74vNIi56lHepheq5PuwGlTxmU-6OWizIDaD2U">Help Center article</a>.
+<p>
+                   Regards,<br />
+<p>
+                    The DoubleClick for Publishers and DoubleClick Ad Exchange Teams<br />
+                    <span><br />
+                    </span>
+                  </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="http://www.google.com/images/cmyk/images_invite_2231905/dottedline.jpg" alt="" width="487" height="1">
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <table>
+                      
+                        <tr>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                          <td>
+                          </td>
+                        </tr>
+                      
+                    </table>
+                  </td>
+                  <td>
+                     
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="http://services.google.com/fh/files/emails/temp_vert_bottom.gif" alt="pubtalk logo" width="550" height="14">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    © 2016 Google Inc. 1600 Amphitheatre Parkway,
+                    Mountain View, CA 94043<br />
+                    <br />The information in this e-mail message is confidential and intended only for the use of the individual identified above and those other employees of the company identified above with a need to know such information for the purposes of such company&#39;s business. If the reader of this message is not the intended recipient, or the employee or agent responsible to deliver it to the intended recipient, you are hereby notified that any dissemination, distribution or copying of this communication is strictly prohibited. If you have received this communication in error, please immediately notify us by e-mail, and delete the original message.
+<p>
+                    You have received this mandatory email service
+                    announcement to update you about important
+                    information regarding your DoubleClick product
+                    or account.<br />
+                  </p></td>
+                </tr>
+              
+            </table>
+          </td>
+        </tr>
+      
+    </table>
+  <img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AIR_RmHlrHVeUqo7D4HUiOxpbKlC-EN8dzLznZDrPHyqvVXYrw.gif">
+
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Security alert for your linked Google Account</title>
@@ -337,32 +503,6 @@
         <![CDATA[<p>고양영상미디어센터 미디어누리 영상제작단이 만든 매거진 8회입니다. 미디어누리제작단은 고양시민들의 자발적인 영상제작단입니다. 이번 매거진 8회에는 백로야 안녕, 오해, 고명수 하늘을 날다, 할머니 할아버지 왜 태권도를 하세요,숙빈최씨에 관한 내용이 담겨져 있습니다.</p>
 
 <p>출처 : http://blog.naver.com/letsgoyang/221137647820</p>
-
-<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>고양e 팟캐스트와 함께 떠나는 마을공동체 이야기 &quot;마을고양e&quot; - 고.목.들 -</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000493.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.493</id>
-
-    <published>2017-11-11T07:21:49Z</published>
-    <updated>2017-11-11T07:21:49Z</updated>
-
-    <summary>고양영상미디어센터 라디오 제작단이 만든 팟캐스트입니다. &quot;마을고양e&quot;는 고양시의 자치공동체사업에 참가한 라디오제작단의 프로젝트 팟캐스트입니다. 고양시민들의 목소리가 들려~~~ 고양시에 살고있는 어린이들이 꿈꾸는 동네는 어떤모습일까요~~???? 고.목.들에서 확인해 보시죠~~ 출처 : http://blog.naver.com/letsgoyang/221137651259 ---------------------------------------------------------------------------Visit this link to stop these emails: http://zpr.io/ntuyE...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[<p>고양영상미디어센터 라디오 제작단이 만든 팟캐스트입니다. "마을고양e"는 고양시의 자치공동체사업에 참가한 라디오제작단의 프로젝트 팟캐스트입니다. 고양시민들의 목소리가 들려~~~ 고양시에 살고있는 어린이들이 꿈꾸는 동네는 어떤모습일까요~~???? 고.목.들에서 확인해 보시죠~~</p>
-
-<p>출처 : http://blog.naver.com/letsgoyang/221137651259</p>
 
 <p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
 ]]>
