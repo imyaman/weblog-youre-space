@@ -4,32 +4,9 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2017-12-26T14:45:26Z</updated>
+    <updated>2017-12-21T16:12:55Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
-
-<entry>
-    <title>OKKY가 주는 Azure 크레딧 24만원</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/12/000520.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.520</id>
-
-    <published>2017-12-26T14:33:44Z</published>
-    <updated>2017-12-26T14:45:26Z</updated>
-
-    <summary>Azure 상품 이용할 수 있는 크레딧 24만원을 준답니다, 30일간 쓸 수 있는. 방법은,1. http://okky.kr 접속2. 우측 하단 Azure 평가판 체험하기 배너 클릭3. 서비스 가입4. subscription 메뉴에서 크레딧 확인 신용카드 정보 입력이 필요하지만, 자동으로 과금되지는 않는답니다....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p class="0">Azure 상품 이용할 수 있는 크레딧 24만원을 준답니다, 30일간 쓸 수 있는.</p>
-<p class="0">방법은,<br />1. http://okky.kr 접속<br />2. 우측 하단 Azure 평가판 체험하기 배너 클릭<br />3. 서비스 가입<br />4. subscription 메뉴에서 크레딧 확인</p>
-<p class="0">신용카드 정보 입력이 필요하지만, 자동으로 과금되지는 않는답니다.</p>]]>
-        
-    </content>
-</entry>
 
 <entry>
     <title>Nintendo Network ID reset</title>
@@ -429,6 +406,31 @@ SNS &#44172;&#51076; &#48512;&#46300;&#47101;&#44256; &#51088;&#50976;&#47196;&#
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>저는 이렇게 합니다.</p>
 <pre><code>apt-get -s dist-upgrade | grep "^Inst" |<br /> grep -i securi | awk -F " " {'print $2'} |<br /> xargs apt-get instal</code></pre>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Firebase 요금을 검색해봅시다</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/10/000369.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.369</id>
+
+    <published>2017-10-22T01:36:09Z</published>
+    <updated>2017-10-22T01:44:03Z</updated>
+
+    <summary>Google에 &quot;Firebase 요금&quot;이라는 검색어를 넣으면, 이 블로그의 글이 하나 보입니다.이 링크를 클릭해도 됩니다. https://www.google.co.kr/search?q=firebase+요금 검색 결과 중에 아래와 같은 항목이 보입니다. Firebase 요금과 무료 용량 - BaaS와 PaaS 차이 - connexus recallhttp://weblog.youre.space/baas/2016/06/firebase-price-free-limit.htmlJun 19, 2016 - Firebase의 무료 용량을 살펴보았습니다. https://firebase.google.com/pricing/...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    <category term="firebase" label="firebase" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>Google에 "Firebase 요금"이라는 검색어를 넣으면, 이 블로그의 글이 하나 보입니다.<br />이 링크를 클릭해도 됩니다.</p>
+<p><a href="https://www.google.co.kr/search?q=firebase+요금">https://www.google.co.kr/search?q=firebase+요금</a></p>
+<p>검색 결과 중에 아래와 같은 항목이 보입니다.</p>
+<p>Firebase 요금과 무료 용량 - BaaS와 PaaS 차이 - connexus recall<br /><a href="http://weblog.youre.space/baas/2016/06/firebase-price-free-limit.html">http://weblog.youre.space/baas/2016/06/firebase-price-free-limit.html</a><br />Jun 19, 2016 - Firebase의 무료 용량을 살펴보았습니다. https://firebase.google.com/pricing/ 저장 공간은, DB 10GB, 파일 5GB, 호스팅 1GB까지 된답니다.</p>]]>
         
     </content>
 </entry>
