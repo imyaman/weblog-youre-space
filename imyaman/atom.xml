@@ -31,326 +31,6 @@
 </entry>
 
 <entry>
-    <title>Service Notice: DoubleClick for Publishers &amp; DoubleClick Ad Exchange</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000517.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.517</id>
-
-    <published>2017-12-21T01:40:18Z</published>
-    <updated>2017-12-21T01:40:18Z</updated>
-
-    <summary> Google Hyperlink Dear Customer, We’ve identified certain vendor files that may contain XSS vulnerabilities which could pose a security risk. Please check if you are hosting these files and remove them with the help of your webmaster. These are...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-    
-    
-      Google
-    
-  
-  
-    <table>
-      
-        <tr>
-          <td>
-            Hyperlink
-            <table>
-              
-                <tr>
-                  <td>
-                    <img src="http://services.google.com/fh/files/emails/temp_vert_top.gif" alt="pubtalk logo" width="550" height="14">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="http://www.google.com/doubleclick/images/logos/doubleclick_logo_41.png">
-                    <img alt="clickable image" src="http://www.google.com/doubleclick/images/logos/doubleclick_logo_41.png"></a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  </td>
-                </tr>
-                <tr>
-                  <td><strong> </strong>
-<p>
-                    Dear Customer,<br />
-                                   <br />
-We’ve identified certain vendor files that may contain XSS vulnerabilities which could pose a security risk. Please check if you are hosting these files and remove them with the help of your webmaster.  These are the currently identified third-party vendor files:
-<p>
-1. adform/IFrameManager.html
-<p>
-2. admotion/afa-iframe.htm
-<p>
-3. bonzai/bonzaiBuster.html
-<p>
-4. exponential/buster.html
-<p>
-5. eyeblaster/addineyeV2.html
-<p>
-6. eyewonder/interim.html
-<p>
-7. flashtalking/ftlocal.html
-<p>
-8. ipinyou/py_buster.html
-<p>
-9. jivox/jivoxibuster.html
-<p>
-10. mediaplex/mojofb_v9.html
-<p>
-11. mixpo/framebust.html
-<p>
-12. predicta/predicta_bf.html
-<p>
-13. rockabox/rockabox_buster.html
-<p>
-14. liquidus/iframeX.htm
-<p>
-15. controbox/iframebuster.html
-<p>
-16. spongecell/spongecell-spongecellbuster.html
-<p>
-17. unicast/unicastIFD.html
-<p>
-18. adrime/adrime_burst.2.0.0.htm
-<p>
-19. revjet/revjet_buster.html
-<p>
-20. kpsule/iframebuster.html
-<p>
-We have disabled these vendors where possible for all DoubleClick for Publishers and DoubleClick Ad Exchange customers. However, any of the mentioned files hosted on your site may still pose a risk and should be taken down. We will notify you as we learn more.
-<p>
-For more information please refer to this <a href="https://www.google.com/appserve/mkt/p/AIR_RmE-NTRWWjpbC5t2HcHvBPr6u-E-g7zLQhhoOfHuYYDEEGWRzz4tqvk2eI-EonRtw6a6yLFHUozHGZ93ex74vNIi56lHepheq5PuwGlTxmU-6OWizIDaD2U">Help Center article</a>.
-<p>
-                   Regards,<br />
-<p>
-                    The DoubleClick for Publishers and DoubleClick Ad Exchange Teams<br />
-                    <span><br />
-                    </span>
-                  </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="http://www.google.com/images/cmyk/images_invite_2231905/dottedline.jpg" alt="" width="487" height="1">
-                  </td>
-                </tr>
-                <tr>
-                  <td colspan="2">
-                    <table>
-                      
-                        <tr>
-                          <td>
-                          </td>
-                          <td>
-                          </td>
-                          <td>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                  <td>
-                     
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="http://services.google.com/fh/files/emails/temp_vert_bottom.gif" alt="pubtalk logo" width="550" height="14">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    © 2016 Google Inc. 1600 Amphitheatre Parkway,
-                    Mountain View, CA 94043<br />
-                    <br />The information in this e-mail message is confidential and intended only for the use of the individual identified above and those other employees of the company identified above with a need to know such information for the purposes of such company&#39;s business. If the reader of this message is not the intended recipient, or the employee or agent responsible to deliver it to the intended recipient, you are hereby notified that any dissemination, distribution or copying of this communication is strictly prohibited. If you have received this communication in error, please immediately notify us by e-mail, and delete the original message.
-<p>
-                    You have received this mandatory email service
-                    announcement to update you about important
-                    information regarding your DoubleClick product
-                    or account.<br />
-                  </p></td>
-                </tr>
-              
-            </table>
-          </td>
-        </tr>
-      
-    </table>
-  <img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AIR_RmHlrHVeUqo7D4HUiOxpbKlC-EN8dzLznZDrPHyqvVXYrw.gif">
-
-
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Security alert for your linked Google Account</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000516.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.516</id>
-
-    <published>2017-12-13T23:55:30Z</published>
-    <updated>2017-12-13T23:55:30Z</updated>
-
-    <summary>.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}Sangyong GwakYour account imyaman@netscape.net is listed as the...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}<table><tr></tr><tr><td><table><tr><td><table><tr><td></td><td><table><tr><td><img width="92" height="32" src="https://www.gstatic.com/accountalerts/email/googlelogo_color_188x64dp.png"></td><td>Sangyong Gwak</td><td><img width="28" height="28" src="https://lh3.googleusercontent.com/-vpS8eo20gm4/AAAAAAAAAAI/AAAAAAAAACw/VB7Z1LHKcJg/s96/photo.jpg"></td></tr></table><div><table><tr><td><img height="40px" src="https://www.gstatic.com/images/branding/product/2x/email_48dp.png"></td><td></td><td><span>Your account <a>imyaman@netscape.net</a> is listed as the recovery email for <a>svr5unixware@gmail.com</a>.</span> <span><span>Don&#39;t recognize this account? <a href="https://www.google.com/appserve/mkt/p/AIR_RmHwNwGjva22zK5SVogVWhJg9fwONYmOkpfwFTD3msPoiyl4tKnzOG2h9iewQTwzKI1ezUQcZF1lTJrpPwa9QwpWffVuUPGijHh1aT2U9ZTiHWjTzEo48wSDhRW6suJQlGlhQXAXsPdEdVKxTqB5hbMZQdZ-6Ck7Zl1UpozP4FnlEJ_s5mS2GO3rXT-ydZ0v_0XHgKjeRvEk5DLpD-m84jLp-4G-PEbQoscWNBo7hjrgj_t5n0UV1lj3gg">click here</a>.</span></span></td></tr></table></div></td><td></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div><div>New sign-in to your linked account<br /><a>svr5unixware@gmail.com</a></div></div><div><div>Your Google Account was just signed in to from a new LG Nexus 5 device. You&#39;re getting this email to make sure it was you.<div><a href="https://www.google.com/appserve/mkt/p/AIR_RmHQ9iEi6cxfTiF-oZdz4HKUx6szGFZzap8psdmeWP-0He307mG0j7pDDIFz37VpH8-aMuAkiqeiGI_hgZo7WcdRGuQrVnGycY0Svb2G-dhf8s5dXIjmWQrgLCV0ZVPKG6RLFyrqKinN4f4mnfUu_kyK8EWiNCp6EY8YXaz6-UgPfXIfDRskh6ZG7w2v4zAgYZEcJPLkjzP9ZBpK-da-tJtlNmSoEWR0QcG-zXgsQBjWjTopVUf-XeH5OEwu6xsyoqRleaudG7Kyj7ZsYfC2_BbAqEqEBenexZFRDC61gWOzr38eG88cEEcGfWFxokDda6-j68NpSfmR1a2oUoeh8X5VxygI5kDtdhIY"><table><tr></tr><tr><td><a href="https://www.google.com/appserve/mkt/p/AIR_RmHQ9iEi6cxfTiF-oZdz4HKUx6szGFZzap8psdmeWP-0He307mG0j7pDDIFz37VpH8-aMuAkiqeiGI_hgZo7WcdRGuQrVnGycY0Svb2G-dhf8s5dXIjmWQrgLCV0ZVPKG6RLFyrqKinN4f4mnfUu_kyK8EWiNCp6EY8YXaz6-UgPfXIfDRskh6ZG7w2v4zAgYZEcJPLkjzP9ZBpK-da-tJtlNmSoEWR0QcG-zXgsQBjWjTopVUf-XeH5OEwu6xsyoqRleaudG7Kyj7ZsYfC2_BbAqEqEBenexZFRDC61gWOzr38eG88cEEcGfWFxokDda6-j68NpSfmR1a2oUoeh8X5VxygI5kDtdhIY">CHECK ACTIVITY</a></td></tr><tr></tr></table></a></div></div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td></td><td><div><div><div>You received this email to let you know about important changes to your Google Account and services.</div><div>© 2017 Google Inc.,<a>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div><div>et:100</div></div></td><td></td></tr></table></td></tr></table></td></tr><tr></tr></table><img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AIR_RmEchFJpoMs5OzT9Di0mFDw_iX27ZcheQ9chvk_xnuCs.gif">
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Security alert</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000515.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.515</id>
-
-    <published>2017-12-13T23:55:29Z</published>
-    <updated>2017-12-13T23:55:29Z</updated>
-
-    <summary>.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}Sangyong GwakNew device signed in tosvr5unixware@gmail.comYour Google Account...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}<table><tr></tr><tr><td><table><tr><td><table><tr><td></td><td><table><tr><td><img width="92" height="32" src="https://www.gstatic.com/accountalerts/email/googlelogo_color_188x64dp.png"></td><td>Sangyong Gwak</td><td><img width="28" height="28" src="https://lh3.googleusercontent.com/-vpS8eo20gm4/AAAAAAAAAAI/AAAAAAAAACw/VB7Z1LHKcJg/s96/photo.jpg"></td></tr></table></td><td></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div><div>New device signed in to<br /><a>svr5unixware@gmail.com</a></div></div><div><div>Your Google Account was just signed in to from a new LG Nexus 5 device. You&#39;re getting this email to make sure it was you.<div><a href="https://www.google.com/appserve/mkt/p/AIR_RmFSzLD_OyAQJRIJwcW9osK_Ql2rLFnc6EEGnpjMpoCKr0pzbKsPEBO8Ao0Y0CefFJdZCzKxE1g_-UOe_9hbZ1mtGu_NlK_KFsPM157smVtUGKY2PVliqJGrfQhiAbsB_tTaBJru5fbaKb5hfQEbrdkpe-EGwvjr2T_KWLy88ostMr8Hkvgl2afID-ltb7xe0xofU43L3JJb0SaVwFd09B_UKlkDQphjzR22NDRkeR0M69kqn8RQUgshwcuOUhPw_WfuA_Lfjnawsv4L_zroBJ3gcYS5jF2R7v5qdg8j4BAPAzlKfXXE_8B2N9qSXTByifzfya20xhtBIJZzY4jM_Ea_m8NKZRPynoKR"><table><tr></tr><tr><td><a href="https://www.google.com/appserve/mkt/p/AIR_RmFSzLD_OyAQJRIJwcW9osK_Ql2rLFnc6EEGnpjMpoCKr0pzbKsPEBO8Ao0Y0CefFJdZCzKxE1g_-UOe_9hbZ1mtGu_NlK_KFsPM157smVtUGKY2PVliqJGrfQhiAbsB_tTaBJru5fbaKb5hfQEbrdkpe-EGwvjr2T_KWLy88ostMr8Hkvgl2afID-ltb7xe0xofU43L3JJb0SaVwFd09B_UKlkDQphjzR22NDRkeR0M69kqn8RQUgshwcuOUhPw_WfuA_Lfjnawsv4L_zroBJ3gcYS5jF2R7v5qdg8j4BAPAzlKfXXE_8B2N9qSXTByifzfya20xhtBIJZzY4jM_Ea_m8NKZRPynoKR">CHECK ACTIVITY</a></td></tr><tr></tr></table></a></div></div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td></td><td><div><div><div>You received this email to let you know about important changes to your Google Account and services.</div><div>© 2017 Google Inc.,<a>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div><div>et:100</div></div></td><td></td></tr></table></td></tr></table></td></tr><tr></tr></table><img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AIR_RmGNp5hUqRNvFH5U7-QK1_NwJFF6L77hmCVuY8hmjFPS.gif">
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Security alert</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000514.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.514</id>
-
-    <published>2017-12-08T14:49:01Z</published>
-    <updated>2017-12-08T14:49:01Z</updated>
-
-    <summary>.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}Sangyong GwakNew device signed in tosvr5unixware@gmail.comYour Google Account...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}<table><tr></tr><tr><td><table><tr><td><table><tr><td></td><td><table><tr><td><img width="92" height="32" src="https://www.gstatic.com/accountalerts/email/googlelogo_color_188x64dp.png"></td><td>Sangyong Gwak</td><td><img width="28" height="28" src="https://lh3.googleusercontent.com/-vpS8eo20gm4/AAAAAAAAAAI/AAAAAAAAACw/VB7Z1LHKcJg/s96/photo.jpg"></td></tr></table></td><td></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div><div>New device signed in to<br /><a>svr5unixware@gmail.com</a></div></div><div><div>Your Google Account was just signed in to from a new LG Nexus 5 device. You&#39;re getting this email to make sure it was you.<div><a href="https://www.google.com/appserve/mkt/p/AIR_RmF6lBtSkkzYaKXSeat-MuOGFzf_LJwVekAqk6a0_hcLFbla9S3KgtXwDIH16f3qh83nrgZ3w7wt9Z3FgofSSqW8aYqg0u2P0Fxu_9hmH6Gh6gW7vM7WQL7v-6vknyDq6cGccR1-NBH3YERaubmnjIDTRiUrHLfHjM2AUGvEvMH7CrPvyeIgNc1Nwqty4vMDah_ixs_X4AZ9fnY7xYI9wgae83u-b89oiCCWVcnmtPOkmfGJ6T6qyHV4SF8rIWZSganCy-tH3YDwPnZFx9RUytQhXyFmMRcmccIotfkOt2_cEyqxgJLPDTMNQQ4ZpR73FXHSLJ_iKqvLmuwSvToIIBGrM_yHP9f0iLvD"><table><tr></tr><tr><td><a href="https://www.google.com/appserve/mkt/p/AIR_RmF6lBtSkkzYaKXSeat-MuOGFzf_LJwVekAqk6a0_hcLFbla9S3KgtXwDIH16f3qh83nrgZ3w7wt9Z3FgofSSqW8aYqg0u2P0Fxu_9hmH6Gh6gW7vM7WQL7v-6vknyDq6cGccR1-NBH3YERaubmnjIDTRiUrHLfHjM2AUGvEvMH7CrPvyeIgNc1Nwqty4vMDah_ixs_X4AZ9fnY7xYI9wgae83u-b89oiCCWVcnmtPOkmfGJ6T6qyHV4SF8rIWZSganCy-tH3YDwPnZFx9RUytQhXyFmMRcmccIotfkOt2_cEyqxgJLPDTMNQQ4ZpR73FXHSLJ_iKqvLmuwSvToIIBGrM_yHP9f0iLvD">CHECK ACTIVITY</a></td></tr><tr></tr></table></a></div></div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td></td><td><div><div><div>You received this email to let you know about important changes to your Google Account and services.</div><div>© 2017 Google Inc.,<a>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div><div>et:100</div></div></td><td></td></tr></table></td></tr></table></td></tr><tr></tr></table><img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AIR_RmF5Yws5fHHDxMV6lV6A9xxBLMdllY2_azNll5laoDQ.gif">
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Security alert</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000512.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.512</id>
-
-    <published>2017-12-06T05:07:34Z</published>
-    <updated>2017-12-06T05:07:34Z</updated>
-
-    <summary>.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}Sangyong GwakNew device signed in tosvr5unixware@gmail.comYour Google Account...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}<table><tr></tr><tr><td><table><tr><td><table><tr><td></td><td><table><tr><td><img width="92" height="32" src="https://www.gstatic.com/accountalerts/email/googlelogo_color_188x64dp.png"></td><td>Sangyong Gwak</td><td><img width="28" height="28" src="https://lh3.googleusercontent.com/-vpS8eo20gm4/AAAAAAAAAAI/AAAAAAAAACw/VB7Z1LHKcJg/s96/photo.jpg"></td></tr></table></td><td></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div><div>New device signed in to<br /><a>svr5unixware@gmail.com</a></div></div><div><div>Your Google Account was just signed in to from a new LG Nexus 5 device. You&#39;re getting this email to make sure it was you.<div><a href="https://www.google.com/appserve/mkt/p/AFvIGUeeeu7yplIFT8NXE-61XxDNitA4xaKBTxSZL86zUlSQegkRZxGccYwPKgAb0N3V5Ncsv9g8iJaQcn52zmF_fpD0WOiNdTBeGkJjCA0E0tEbVSP7_9ebA55kvMY8OdbryjvGtB1YNlSbIn9tIMfz-J_lslXEfgsP7SrNbhf4ps6eqNTgY9xVzTaDQ0p_9LGM2xm6WNIaCsePy4eU1s1PZw5VwVAv6SHj2VJQ2YvmDKe8yDv-T4jpdDFY1eKzShKGy21XfxG_8M_0uOuycoi0zFlROr65er-VAX1ycGDujMMXcJpAtvz3Qj-1F8t79Gb_mUp96c_BXranr1cqe3nAT1weO7hS0IoNdCgx"><table><tr></tr><tr><td><a href="https://www.google.com/appserve/mkt/p/AFvIGUeeeu7yplIFT8NXE-61XxDNitA4xaKBTxSZL86zUlSQegkRZxGccYwPKgAb0N3V5Ncsv9g8iJaQcn52zmF_fpD0WOiNdTBeGkJjCA0E0tEbVSP7_9ebA55kvMY8OdbryjvGtB1YNlSbIn9tIMfz-J_lslXEfgsP7SrNbhf4ps6eqNTgY9xVzTaDQ0p_9LGM2xm6WNIaCsePy4eU1s1PZw5VwVAv6SHj2VJQ2YvmDKe8yDv-T4jpdDFY1eKzShKGy21XfxG_8M_0uOuycoi0zFlROr65er-VAX1ycGDujMMXcJpAtvz3Qj-1F8t79Gb_mUp96c_BXranr1cqe3nAT1weO7hS0IoNdCgx">CHECK ACTIVITY</a></td></tr><tr></tr></table></a></div></div></div></td><td><div></div></td></tr><tr><td><div></div></td><td><div></div></td><td><div></div></td></tr><tr><td></td><td><div><div><div>You received this email to let you know about important changes to your Google Account and services.</div><div>© 2017 Google Inc.,<a>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div><div>et:100</div></div></td><td></td></tr></table></td></tr></table></td></tr><tr></tr></table><img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AFvIGUeY90jmi9nEiI3WUBb_wgYeJrgSdDU6kfcOl_FinJoWOA.gif">
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>New sign-in from Chrome OS</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000509.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.509</id>
-
-    <published>2017-12-03T03:01:54Z</published>
-    <updated>2017-12-03T03:01:54Z</updated>
-
-    <summary>.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}New sign-in from Chrome OSHi Sangyong,Your Google Account...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}<table><tr></tr><tr><td></td><td><table><tr><td><table><tr><td><img width="92" height="32" src="https://www.gstatic.com/accountalerts/email/googlelogo_color_188x64dp.png"></td><td><img width="32" height="32" src="https://www.gstatic.com/accountalerts/email/keyhole.png"></td></tr></table></td></tr><tr></tr><tr><td><table><tr><td colspan="3"></td></tr><tr><td></td><td>New sign-in from Chrome OS</td><td></td></tr><tr><td colspan="3"></td></tr></table></td></tr><tr><td><table><tr><td rowspan="3"></td><td></td><td rowspan="3"></td></tr><tr><td><table><tr><td>Hi Sangyong,</td></tr><tr><td>Your Google Account <a>svr5unixware@gmail.com</a> was just used to sign in on <span>Chrome OS</span>.<table><tr><td></td><td><img src="https://lh3.googleusercontent.com/-vpS8eo20gm4/AAAAAAAAAAI/AAAAAAAAACw/VB7Z1LHKcJg/s96/photo.jpg" width="48px" height="48px"></td><td></td><td><span>Sangyong Gwak</span><br /><span><a>svr5unixware@gmail.com</a></span></td></tr><tr><td></td><td><img src="https://www.gstatic.com/accountalerts/email/down_arrow.png" width="4px" height="10px"></td></tr><tr><td></td><td><img src="https://www.gstatic.com/accountalerts/devices/chrome_device_wallpaper_big.png" width="48px" height="48px"></td><td></td><td><span>Chrome OS</span><br /><span>Sunday, December 3, 2017 11:58 AM (South Korea Time)<br />Seoul, South Korea*</span></td></tr></table><b>Don&#39;t recognize this activity?</b><br />Review your <a href="https://accounts.google.com/AccountChooser?Email=svr5unixware@gmail.com&amp;continue=https://myaccount.google.com/new-device/nt/1512269892000?rfn%3D31%26rfnc%3D1%26eid%3D-9003246083486666445%26et%3D0%26asae%3D2%26anexp%3Dtvt-control--hsc-control_b">recently used devices</a> now.<br /><br />Why are we sending this? We take security very seriously and we want to keep you in the loop on important actions in your account.<br />We were unable to determine whether you have used this browser or device with your account before. This can happen when you sign in for the first time on a new computer, phone or browser, when you use your browser's incognito or private browsing mode or clear your cookies, or when somebody else is accessing your account.</td></tr><tr><td>The Google Accounts team</td></tr><tr></tr><tr><td><table><tr><td>*The location is approximate and determined by the IP address it was coming from.<br /></td></tr><tr><td>This email can't receive replies. To give us feedback on this alert, <a href="https://support.google.com/accounts/contact/device_alert_feedback?hl=en">click here</a>.<br />For more information, visit the <a href="https://support.google.com/accounts/answer/2733203">Google Accounts Help Center</a>.</td></tr></table></td></tr></table></td></tr><tr></tr></table></td></tr><tr></tr><tr><td><tr><td><table><tr><td>You received this mandatory email service announcement to update you about important changes to your Google product or account.</td></tr><tr></tr><tr><td><div>&copy; 2017 Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</div><div>et:31</div></td></tr></table></td></tr></td></tr></table></td><td></td></tr><tr></tr></table>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Sangyong Gwak followed you on Google+</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000508.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.508</id>
-
-    <published>2017-12-02T13:44:59Z</published>
-    <updated>2017-12-02T13:44:59Z</updated>
-
-    <summary>To share and get the latest, follow SangyongFOLLOWSangyong Gwak followed people you might know. View allEunjin Lee1 person in commonFOLLOWUnsubscribe from these emails. View Sangyong&apos;s profile or block Sangyong completely.Google Inc., 1600 Amphitheatre Pkwy, Mountain View, CA 94043 USA...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[<div><div><table><tr><td><a href="https://plus.google.com/_/notifications/emlink?emr=03164792188728925313&emid=CNCF8fy569cCFQJbUwodbdkNxw&path=%2F115259021149372963421&dt=1512222007998&ub=CIRCLE_PERSONAL_ADD"><img width="75" height="75" src="https://lh3.googleusercontent.com/-J-bFsQwdK58/AAAAAAAAAAI/AAAAAAAAD9Q/gOh_aqVhswY/s75-c-k-a-no/photo.jpg" /></a></td><td>To share and get the latest, follow <a href="https://plus.google.com/_/notifications/emlink?emr=03164792188728925313&emid=CNCF8fy569cCFQJbUwodbdkNxw&path=%2F115259021149372963421&dt=1512222007998&ub=CIRCLE_PERSONAL_ADD">Sangyong</a><div><a href="https://plus.google.com/_/notifications/emlink?emr=03164792188728925313&emid=CNCF8fy569cCFQJbUwodbdkNxw&path=%2F115259021149372963421&dt=1512222007998&ub=CIRCLE_PERSONAL_ADD" rel="acbf115259021149372963421">FOLLOW</a></div></td></tr></table><div><div>Sangyong Gwak followed people you might know. <a href="https://plus.google.com/_/notifications/emlink?emr=03164792188728925313&emid=CNCF8fy569cCFQJbUwodbdkNxw&path=%2F115259021149372963421&dt=1512222007998&ub=CIRCLE_PERSONAL_ADD">View all</a></div><table><tr><td><img width="60" height="60" src="https://lh5.googleusercontent.com/-7UHHdc5ubgs/AAAAAAAAAAI/AAAAAAAAMeg/sHOFVvZtuOE/s75-c-k-a-no/photo.jpg" /></td><td><div><div><a href="https://plus.google.com/_/notifications/emlink?emr=03164792188728925313&emid=CNCF8fy569cCFQJbUwodbdkNxw&path=%2F104280786145555174420&dt=1512222007998&ub=CIRCLE_PERSONAL_ADD">Eunjin Lee</a></div><div>1 person in common</div></div><a href="https://plus.google.com/_/notifications/emlink?emr=03164792188728925313&emid=CNCF8fy569cCFQJbUwodbdkNxw&path=%2F104280786145555174420&dt=1512222007998&ub=CIRCLE_PERSONAL_ADD" rel="acs104280786145555174420">FOLLOW</a></td><td colspan="4"></td></tr></table></div></div><div><table><tr><td><a href="https://notifications.google.com/unsubscribe/AJ7SsMlrE_qvGS-9BjVP3GpGqA2mtfKg-t_ffInHIOvZZY7m89JrSvaUOkU-DIabqjLbmVdpw3JnmoZ9cvpVf44pHLCg7K6WFw_kHrF_T_8bRNLYNVTK6AjjNG4fsH1SgkypJQ-jdXWqr7f6oT82BPpZkrDrr-6dxp61vuKOuxwjZRLhYPhcdPw">Unsubscribe</a> from these emails. <a href="https://plus.google.com/_/notifications/emlink?emr=03164792188728925313&emid=CNCF8fy569cCFQJbUwodbdkNxw&path=%2F115259021149372963421&dt=1512222007998&ub=CIRCLE_PERSONAL_ADD">View</a> Sangyong's profile or <a href="https://plus.google.com/_/notifications/emlink?emr=03164792188728925313&emid=CNCF8fy569cCFQJbUwodbdkNxw&path=%2F115259021149372963421%2Fop%2Fblock&dt=1512222007998&ub=CIRCLE_PERSONAL_ADD">block</a> Sangyong completely.<br />Google Inc., 1600 Amphitheatre Pkwy, Mountain View, CA 94043 USA<br /></td><td><img src="https://ssl.gstatic.com/images/branding/google_plus/1x/gplus_word_89x27dp.png" /></td></tr></table></div></div>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>New sign-in from Firefox on Windows</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/12/000507.html" />
-    <id>tag:weblog.youre.space,2017:/imyaman//12.507</id>
-
-    <published>2017-12-02T12:29:55Z</published>
-    <updated>2017-12-02T12:29:55Z</updated>
-
-    <summary>.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}New sign-in from Firefox on WindowsHi Sangyong,Your Google...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;}.abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;}.afal a {color: #b0b0b0; text-decoration: none;}@media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}}<table><tr></tr><tr><td></td><td><table><tr><td><table><tr><td><img width="92" height="32" src="https://www.gstatic.com/accountalerts/email/googlelogo_color_188x64dp.png"></td><td><img width="32" height="32" src="https://www.gstatic.com/accountalerts/email/keyhole.png"></td></tr></table></td></tr><tr></tr><tr><td><table><tr><td colspan="3"></td></tr><tr><td></td><td>New sign-in from Firefox on Windows</td><td></td></tr><tr><td colspan="3"></td></tr></table></td></tr><tr><td><table><tr><td rowspan="3"></td><td></td><td rowspan="3"></td></tr><tr><td><table><tr><td>Hi Sangyong,</td></tr><tr><td>Your Google Account <a>svr5unixware@gmail.com</a> was just used to sign in from <span>Firefox</span> on <span>Windows</span>.<table><tr><td></td><td><img src="https://lh3.googleusercontent.com/-vpS8eo20gm4/AAAAAAAAAAI/AAAAAAAAABI/XAzNuXQpClU/s96/photo.jpg" width="48px" height="48px"></td><td></td><td><span>Sangyong Gwak</span><br /><span><a>svr5unixware@gmail.com</a></span></td></tr><tr><td></td><td><img src="https://www.gstatic.com/accountalerts/email/down_arrow.png" width="4px" height="10px"></td></tr><tr><td></td><td><img src="https://www.gstatic.com/accountalerts/devices/windows_laptop_wallpaper_big.png" width="48px" height="48px"></td><td></td><td><span>Windows</span><br /><span>Saturday, December 2, 2017 9:26 PM (South Korea Time)<br />South Korea*<br />Firefox</span></td></tr></table><b>Don&#39;t recognize this activity?</b><br />Review your <a href="https://accounts.google.com/AccountChooser?Email=svr5unixware@gmail.com&amp;continue=https://myaccount.google.com/new-device/nt/1512217618000?rfn%3D31%26rfnc%3D1%26eid%3D-2951564202511538244%26et%3D0%26asae%3D2%26anexp%3Dtvt-control--hsc-control_b">recently used devices</a> now.<br /><br />Why are we sending this? We take security very seriously and we want to keep you in the loop on important actions in your account.<br />We were unable to determine whether you have used this browser or device with your account before. This can happen when you sign in for the first time on a new computer, phone or browser, when you use your browser's incognito or private browsing mode or clear your cookies, or when somebody else is accessing your account.</td></tr><tr><td>The Google Accounts team</td></tr><tr></tr><tr><td><table><tr><td>*The location is approximate and determined by the IP address it was coming from.<br /></td></tr><tr><td>This email can't receive replies. To give us feedback on this alert, <a href="https://support.google.com/accounts/contact/device_alert_feedback?hl=en">click here</a>.<br />For more information, visit the <a href="https://support.google.com/accounts/answer/2733203">Google Accounts Help Center</a>.</td></tr></table></td></tr></table></td></tr><tr></tr></table></td></tr><tr></tr><tr><td><tr><td><table><tr><td>You received this mandatory email service announcement to update you about important changes to your Google product or account.</td></tr><tr></tr><tr><td><div>&copy; 2017 Google Inc., 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</div><div>et:31</div></td></tr></table></td></tr></td></tr></table></td><td></td></tr><tr></tr></table>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>성남행복아카데미 &apos;쾌적한 환경에서 강한 경제가 나온다&apos; 최열 환경재단 이사장 강연</title>
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000500.html" />
     <id>tag:weblog.youre.space,2017:/imyaman//12.500</id>
@@ -501,6 +181,214 @@ For more information please refer to this <a href="https://www.google.com/appser
 <p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/fszpjWOc5q8/edwin_markham</p>
 
 <p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>고양e-TV매거진 - 8회 -</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000494.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.494</id>
+
+    <published>2017-11-11T07:21:50Z</published>
+    <updated>2017-11-11T07:21:50Z</updated>
+
+    <summary>고양영상미디어센터 미디어누리 영상제작단이 만든 매거진 8회입니다. 미디어누리제작단은 고양시민들의 자발적인 영상제작단입니다. 이번 매거진 8회에는 백로야 안녕, 오해, 고명수 하늘을 날다, 할머니 할아버지 왜 태권도를 하세요,숙빈최씨에 관한 내용이 담겨져 있습니다. 출처 : http://blog.naver.com/letsgoyang/221137647820 ---------------------------------------------------------------------------Visit this link to stop these emails: http://zpr.io/ntuyE...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>고양영상미디어센터 미디어누리 영상제작단이 만든 매거진 8회입니다. 미디어누리제작단은 고양시민들의 자발적인 영상제작단입니다. 이번 매거진 8회에는 백로야 안녕, 오해, 고명수 하늘을 날다, 할머니 할아버지 왜 태권도를 하세요,숙빈최씨에 관한 내용이 담겨져 있습니다.</p>
+
+<p>출처 : http://blog.naver.com/letsgoyang/221137647820</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>고양e 팟캐스트와 함께 떠나는 마을공동체 이야기 &quot;마을고양e&quot; - 고.목.들 -</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000493.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.493</id>
+
+    <published>2017-11-11T07:21:49Z</published>
+    <updated>2017-11-11T07:21:49Z</updated>
+
+    <summary>고양영상미디어센터 라디오 제작단이 만든 팟캐스트입니다. &quot;마을고양e&quot;는 고양시의 자치공동체사업에 참가한 라디오제작단의 프로젝트 팟캐스트입니다. 고양시민들의 목소리가 들려~~~ 고양시에 살고있는 어린이들이 꿈꾸는 동네는 어떤모습일까요~~???? 고.목.들에서 확인해 보시죠~~ 출처 : http://blog.naver.com/letsgoyang/221137651259 ---------------------------------------------------------------------------Visit this link to stop these emails: http://zpr.io/ntuyE...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>고양영상미디어센터 라디오 제작단이 만든 팟캐스트입니다. "마을고양e"는 고양시의 자치공동체사업에 참가한 라디오제작단의 프로젝트 팟캐스트입니다. 고양시민들의 목소리가 들려~~~ 고양시에 살고있는 어린이들이 꿈꾸는 동네는 어떤모습일까요~~???? 고.목.들에서 확인해 보시죠~~</p>
+
+<p>출처 : http://blog.naver.com/letsgoyang/221137651259</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Helen Hayes</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000492.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.492</id>
+
+    <published>2017-11-11T06:12:15Z</published>
+    <updated>2017-11-11T06:12:15Z</updated>
+
+    <summary>&quot;We relish news of our heroes, forgetting that we are extraordinary to somebody too.&quot; source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/TSDJd3xB844/helen_hayes ---------------------------------------------------------------------------Visit this link to stop these emails: http://zpr.io/ntubP...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>"We relish news of our heroes, forgetting that we are extraordinary to somebody too."</p>
+
+<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/TSDJd3xB844/helen_hayes</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>판교박물관에서 만난 조선시대 선비들의 유랑, 성남여지도를 딛고</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000491.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.491</id>
+
+    <published>2017-11-10T12:20:39Z</published>
+    <updated>2017-11-10T12:20:39Z</updated>
+
+    <summary>[문화나눔교육] 낙낙한 樂樂閑 박물관-성남여지도를 딛고가을빛 좋은 주말 오후 판교박물관에 재미난 수업이 있어 찾아왔습니다. &apos;낙낙한 박물관&apos;이라는 타이틀 아래 진행되는 수업인데요. 여행주간을 맞이해 이 낙낙한 박물관 성남여지도를 딛고라는 교육프로그램에는 뭔가 특별한 것이 있다고 해서 살짝 들여다 보았습니다. 범상치 않은 옷차림의 이분은 누구?...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>[문화나눔교육] 낙낙한 樂樂閑 박물관-성남여지도를 딛고가을빛 좋은 주말 오후 판교박물관에 재미난 수업이 있어 찾아왔습니다. '낙낙한 박물관'이라는 타이틀 아래 진행되는 수업인데요. 여행주간을 맞이해 이 낙낙한 박물관 성남여지도를 딛고라는 교육프로그램에는 뭔가 특별한 것이 있다고 해서 살짝 들여다 보았습니다. 범상치 않은 옷차림의 이분은 누구? 그러고 보니 테이블 마다 낯선 옷가지들이 놓여있습니다. 도포를 예쁘게 차려입은 꼬마선비들이 뭔가를 한참 들여다 보고 있네요. 낙낙한 박물관 교육프로그램은 도포를 입고 박물관 유람을 떠나 지도에 표시된 힌트를 근거로 암호를 풀어야 하는 활동입니다. 박물관에서 탐구를 통해.......</p>
+
+<p>출처 : http://seongnamdiary.com/221137158495</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>제6회 복정동 어울림 빛 축제, 점등식으로 환하게 밝히다!</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000490.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.490</id>
+
+    <published>2017-11-10T10:11:52Z</published>
+    <updated>2017-11-10T10:11:52Z</updated>
+
+    <summary>올해로 6회를 맞고 있는 복정동 어울림 빛 축제가 지난 일요일 오후에 밝게 빛을 냈습니다. 한해가 훌쩍 지나고 이제 달력은 두 장만을 남기고 있네요. 곧 다가올 연말 복정동 일대에 환하게 불을 밝히는 빛축제 점등식 행사로 미리 연말 분위기 느끼고 왔습니다. 해가...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>올해로 6회를 맞고 있는 복정동 어울림 빛 축제가 지난 일요일 오후에 밝게 빛을 냈습니다. 한해가 훌쩍 지나고 이제 달력은 두 장만을 남기고 있네요. 곧 다가올 연말 복정동 일대에 환하게 불을 밝히는 빛축제 점등식 행사로 미리 연말 분위기 느끼고 왔습니다. 해가 뉘엿뉘엿 지고 있는 가운데 복정동 분수광장 야외무대에는 많은 시민들이 두꺼운 옷차림으로 하나 둘 모이기 시작합니다. 제법 쌀쌀해진 날씨에 해가 지는 시각이라 몸을 움츠리게 하는데요. 복정동 어울림 빛 축제 점등식에 복정동 상인회에서 나와 점등식에 참석한 시민들에게 따뜻한 차를 제공하고 있었습니다. 따끈한 차 한 잔을 내주는 따뜻한 손길에 먼저 마음이 녹는 것.......</p>
+
+<p>출처 : http://seongnamdiary.com/221137139349</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>알듯 모르고 있는 경제지식을 배워봐요! 분당도서관 &apos;경제지식특강&apos;</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000489.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.489</id>
+
+    <published>2017-11-10T10:11:51Z</published>
+    <updated>2017-11-10T10:11:51Z</updated>
+
+    <summary>저축, 보험, 연금... 우리가 참 좋아라 하는 돈인데, 막상 금융관련 지식들을 접하면 이해가 더디고 머리가 지끈거립니다. 어려운 경제용어와 복잡한 이율계산... 결국 우리는 백기를 들고 전문가들을 찾곤 하죠. 그런데, 소중한 내 재산!! 내가 완벽히 파악하고 설계하는 것이 든든할 것입니다. 분당도서관에서는 2017년...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>저축, 보험, 연금... 우리가 참 좋아라 하는 돈인데, 막상 금융관련 지식들을 접하면 이해가 더디고 머리가 지끈거립니다. 어려운 경제용어와 복잡한 이율계산... 결국 우리는 백기를 들고 전문가들을 찾곤 하죠. 그런데, 소중한 내 재산!! 내가 완벽히 파악하고 설계하는 것이 든든할 것입니다. 분당도서관에서는 2017년 11월 8일(수), 11월 9일(목) 양일에 걸쳐 경제지식특강을 진행하였습니다. 알듯 그러나 실상은 잘 모르고 있는 경제금융지식과 가계부 쓰는 법 등 알뜰살뜰한 살림을 꾸려가는 데 보탬이 될 유용한 시간들로 구성이 되었습니다. 강좌가 진행되는 2층 제2문화교실입니다. 사전에 30명의 시민들이 신청을 했는데요, 오전 10시.......</p>
+
+<p>출처 : http://seongnamdiary.com/221137130006</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>2017 판교 자율주행모터쇼(PAMS 2017)가 개최됩니다!</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000488.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.488</id>
+
+    <published>2017-11-10T08:09:12Z</published>
+    <updated>2017-11-10T08:09:12Z</updated>
+
+    <summary>오는 11월 16일(목) ~ 11월 18(토) 3일간 판교제로시티 기업지원허브 일원에서 판교 자율주행모터쇼가 개최됩니다 :-) 행사일시 2017. 11. 16.(목) ~ 11. 18.(토) 행사장소 판교제로시티 기업지원허브 일원 (성남시 수정구 대왕판교로 815) 주요내용 자율주행 쇼런(Show-run) 산업박람회 국제포럼 행사 세부내용 1. 자율주행 &amp; EV...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>오는 11월 16일(목) ~ 11월 18(토) 3일간 판교제로시티 기업지원허브 일원에서 판교 자율주행모터쇼가 개최됩니다 :-) 행사일시 2017. 11. 16.(목) ~ 11. 18.(토) 행사장소 판교제로시티 기업지원허브 일원 (성남시 수정구 대왕판교로 815) 주요내용 자율주행 쇼런(Show-run) 산업박람회 국제포럼 행사 세부내용 1. 자율주행 & EV 쇼런 · 자율주행차 vs 인간미션 대결 - 다양한 교통상황 미션을 완수하는 대결 - 사전 온라인 신청 등을 통해 10명 선발 · 자율주행차 시승회 - 직접 차량에 탑승하여 자율주행차 시승 - 사전 온라인 신청 · 대학생 E-포뮬러 경주대회 · EV차량 슬라럼 레이스 - 현대 아이오닉, 삼성 트위지 2개 부분으로 구분하.......</p>
+
+<p>출처 : http://seongnamdiary.com/221137021021</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>전국의 춤명인이 한 자리에! 가을 도심속의 풍물이야기</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2017/11/000487.html" />
+    <id>tag:weblog.youre.space,2017:/imyaman//12.487</id>
+
+    <published>2017-11-10T05:19:33Z</published>
+    <updated>2017-11-10T05:19:33Z</updated>
+
+    <summary>풍물쟁이들과 전국의 춤명인이 함께 합니다. 성남민예총이 준비한 가을 도심속의 풍물이야기 들어보세요. 일시 : 2017년 11월 5일(일) 13:30~16:00 장소 : 야탑역광장 특설무대 넉넉한 수확의 계절 가을 우리가락과 함께 신명나게 놀아봅시다. 성남민예총 송창 회장의 인사말입니다. &quot;좋은 몸짓과 소리가 만들어내는 멋과 흥을 즐기러...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<p>풍물쟁이들과 전국의 춤명인이 함께 합니다. 성남민예총이 준비한 가을 도심속의 풍물이야기 들어보세요. 일시 : 2017년 11월 5일(일) 13:30~16:00 장소 : 야탑역광장 특설무대 넉넉한 수확의 계절 가을 우리가락과 함께 신명나게 놀아봅시다. 성남민예총 송창 회장의 인사말입니다. "좋은 몸짓과 소리가 만들어내는 멋과 흥을 즐기러 오신 여러분! 이런 자리를 많이 만들겠습니다." 화창한 날씨... 야탑광장을 가득 채운 시민들. 우리것이 주는 멋과 흥에 어깨가 들썩입니다. 오늘은 특히 전국의 춤명인들을 모시는 춤쟁이전이라 기대가 됩니다. 북한지방에서 부터 서울, 울산, 진도까지 전국의 춤명인이 한자리에 모이는 자리입니다. 울산 민예.......</p>
+
+<p>출처 : http://seongnamdiary.com/221136892357</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE</p>
 ]]>
         
     </content>
