@@ -1,0 +1,73 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2004/07/000099.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" UnixWare에 대한 미련 NetWare Services와 Real G2 Server 단점과 선호...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>UnixWare와 NetWare - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2004/07/000098.amp.html" title="로버트 프로스트의 가지 않은 길">
+  <link rel="next" href="http://weblog.youre.space/vergence/2004/08/000100.amp.html" title="일상에 대한 불안">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="UnixWare와 NetWare">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2004/07/000099.html">
+    <meta property="og:description" content=" UnixWare에 대한 미련 NetWare Services와 Real G2 Server 단점과 선호...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" UnixWare에 대한 미련 NetWare Services와 Real G2 Server 단점과 선호...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2004/07/000099.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">UnixWare와 NetWare</h1>
+<time datetime="2004-07-27T23:47:41+09:00" itemprop="datePublished">July 27, 2004</time>
+<time datetime="2004-07-27T23:47:41+09:00" itemprop="dateModified">July 27, 2004</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <ul lang="ko">
+<li>UnixWare에 대한 미련</li>
+<li>NetWare Services와 Real G2 Server</li>
+<li>단점과 선호</li>
+</ul>
+  <p lang="ko" title="UnixWare에 대한 미련">언제나 그렇지만 왠지 자꾸 남들이 안하는 것을 건드리고 있다. UnixWare는 객관적으로 볼 때에 그다지 메리트가 없다. 한글 지원이 미비하고 -심지어는 locale도 제대로 지원되지 않고-, 기능의 업데이트도 상당히 더디다. X 서버의 디스플레이는 vesa를 쓰는 것보다도 느리고, opensource 프로그램들의 binary나 pkg도 그다지 활발히 만들어지지도 않는다. 그렇지만 유닉스웨어엔 마음이 끌린다. 시간이 지나도 거의 바뀌지 않는(업데이트가 느리다는 것에 대한 좋은 표현) 시스템과 안정성, 정통성 같은 것. 또 C/C++ 컴파일러의 제공 같은 것들... 결론은 아무래도 좋다는 것이다.<br>
+그간 UnixWare에서 nat 서비스를 할 수 없어 집에서 못 쓰고 있었는데(또 하나의 단점), 이번에 네트웍 공유기를 들여서 새로운 세상이 열린 것 같다. 덕분에 머지않아 집에 있는 모든 컴퓨터엔 갖가지 운영체제가 설치될 것 같다. 쿨럭;; 그렇잖아도 얼마전에 설치했던 eCS 1.0(OS/2)를 지우고 UnixWare 7.1.3을 설치했다. 더불어 UnixWare에 대한 삽질을 좀 했다. UnixWare를 접할 때마다 느끼는 것이지만 UnixWare는 상당히 비밀을 많이 갖고 있다.<br>
+실은 한 컴퓨터에는 Windows Server 2003을 설치하고 Active Directory(AD) 서비스를 하려고 했다. 그리고 다른 컴퓨터에서 로그온하여 편하게 사용할 수 있도록 하려고 했다. 하지만 Windows Server 2003을 설치하고 곧바로 찾아온 귀찮음은 의지를 꺾는다. 하지만 UnixWare에서 NetWare 서비스 설정하고 NDS 설정한 시간은 Windows Server 2003에서 Active Directory 설정을 하는데에 충분한 시간이 아닐까?</p>
+
+<p lang="ko" title="NetWare Services와 Real G2 Server">UnixWare 7.1.3을 설치하고 한참 사용하는데, 갑자기 UnixWare 7.1.1에 들어있던 프로그램들이 생각났다. UnixWare 7.1.1 이후 OpenUnix 8으로 이름을 바꾸면서(지금은 다시 UnixWare가 되었지만) 오래된 상업용 소프트웨어들이 빠지고 OpenSource 소프트웨어들이 들어가게 되었다. 예를 들면, NetScape의 FastTrack이 빠지고 Apache가 들어갔다. 또, NetWare도 빠졌고 Real Server(Media Streaming)도 빠졌다. ArcServ, Tarantella 같은 것들도 빠졌다. 삽질과 새로운 것을 즐기는 사람들에게는 조금 애석한 일이다, 쓸모가 있었건 없었건(없었다는 생각이 강하다) 상업용 소프트웨어들을 접하게 되는 좋은 기회였는데.<br>
+UnixWare 7.1.1 시디에 있는 NetWare 패키지와 Real G2 Server를 7.1.3에 설치해 보았다. 약간의 경고만 나오고 잘 진행되었다. 그리고 그 경고들도 쉽게 대처할 수 있는 것들이었다.<br>
+저번에도 겪었던 실수인데, nws(NetWare Services) 패키지를 설치하기 전에 nwnet 패키지를 먼저 설치해야한다는 것을 자꾸 잊는다. 덕분에 이번에도 몇번의 시행착오 끝에 설치를 할 수 있었다. 하지만 이번에는 또 다른 소득이 있었다. NDS를 설치한 것.<br>
+UnixWare 7.1.1에 들어있는 nws는 4.1 버전이다. 조금 오래된 UnixWare인 것을 감안할 때에 참 다행스러운 것이다. 그나마 4.1이라도 되니 NDS를 쓸 수 있지 않은가. 呵呵 그 이전 버전(3 이나 그 이하)이었다면 좌절했을 것이다.<br>
+사실 UnixWare의 문서는 참 읽기 불편하게 되어있다. 좀 더 정확히 말하면, 항행(navigation)일 불편한 인터페이스를 갖고 있다. 문서는 html로 되어있고 웹 브라우져로 보면, 왼쪽에 목차, 오른쪽에 문서 내용을 보여주는 프레임을 갖고 있는데 이것들이 제대로 동작하지 않을 때도 있고, 가장 큰 문제는 길을 잃는다는 것이다. 문서를 보고 있다가 다른 문서로 이동했을 때(문서 자체가 한 문서를 읽는 중에 다른 문서로 이동하도록 조장하고 있어서 더욱 그렇다) 원래 위치로 돌아가 읽는 것을 계속하기가 어렵다. 공학 심리학(인간 공학) 시간에 배운 것의 좋은 예이다. 인터페이스를 수정할 필요가 있다. 예를 들면, 목차 부분에 계층(hierachy)을 잘 표시하고, 가능하면 프레임을 없애고, 문서 중간에 다른 문서에 대한 링크를 줄이는 것이 좋을 것이다.<br>
+다시 NDS를 설치한 것으로 돌아가서, UnixWare의 문서가 잘 조직되어있었다면 아마도 이미 예전에 쉽게 NDS를 설정할 수 있었을 것이다. 지금에 와서 NDS를 제대로 설정하게 된 것은 다분히 그 못난 문서의 탓이다.<br>
+NDS를 설정하고, 윈도우즈에서 NetWare Administrator v5.1을 설치하고 관리를 해봤다. 그리 나쁘지 않았다. 다만 서버에서 직접 설정하기가 어렵다는 것이 참 아쉽다. 또, NetWare Administrator는 조금 오래되어 보인다(사실 최근 버전을 찾을 수가 없어서 우연히 찾은 오래전 버전을 설치했다).<br>
+Windows의 Active Directory처럼 Windows의 사용자 설정을 따로 두거나 Windows에서의 환경에 착 달라붙은 서비스를 하지는 못하지만 NDS도 좋다는 생각이 든다. 그리고 NetWare는 Macintosh나 OS/2, 심지어는 DOS 등의 운영체제도 지원하니까(아까부터 몇번 비추었지만, 도데체 그런 것들이 무슨 쓸모가 있느냔 말이닷).</p> 
+
+<p lang="ko" title="전망">아마도 NetWare가 Windows의 서비스를 완전히 대체(라기 보다는 이전 지위의 수복)할 수는 없을 것이다. 하지만 다양한 운영체제를 지원한다는 것에서 조금의 잇점은 있는 것 같다.<br>
+그리고 UnixWare의 입장에서는 NetWare 서비스가 된다는 것은 사실 별 의미를 못 갖는다. 이미 GNU/Linux용으로 NetWare를 내놓고 있는 상황이기 때문이다. UnixWare는 조금 낡았고 새로 나오는 것들과 비교해서 부족한 점들이 많이 보인다.<br>
+하지만 문제는, 그런 단점에도 불구하고 UnixWare를 좋아한다는 것이다.</p>
+</div>
+
+/vergence/2004/07/000099.html
+
+  </body>
+</html>
