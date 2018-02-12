@@ -1,0 +1,64 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/baas/2017/02/000028.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다. 오랜만에 취미생활을 하려다가, 왠지 느낌이... 왠지 예제가 있을 것 같았습니다. 역시 있네요. 하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다. https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>오래된 parse.com JavaScript 예제 - BaaS와 PaaS 차이</title>
+
+  <link rel="prev" href="http://weblog.youre.space/baas/2017/01/000027.amp.html" title="Parse에게 인사">
+  <link rel="next" href="http://weblog.youre.space/baas/2017/09/000353.amp.html" title="Collaboration, integration and interoperability key to smart cities">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="오래된 parse.com JavaScript 예제">
+    <meta property="og:url" content="http://weblog.youre.space/baas/2017/02/000028.html">
+    <meta property="og:description" content="왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다. 오랜만에 취미생활을 하려다가, 왠지 느낌이... 왠지 예제가 있을 것 같았습니다. 역시 있네요. 하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다. https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651...">
+    <meta property="og:site_name" content="BaaS와 PaaS 차이">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다. 오랜만에 취미생활을 하려다가, 왠지 느낌이... 왠지 예제가 있을 것 같았습니다. 역시 있네요. 하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다. https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651...">
+    <link itemprop="url" href="http://weblog.youre.space/baas/2017/02/000028.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">오래된 parse.com JavaScript 예제</h1>
+<time datetime="2017-02-20T22:55:07+09:00" itemprop="datePublished">February 20, 2017</time>
+<time datetime="2017-02-20T22:55:07+09:00" itemprop="dateModified">February 20, 2017</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>왠지 있을 것 같았습니다. Parse Server와 JavaScript를 이용해 블로그를 만들어보고 싶은데, 실력은 부족하여 고심했습니다.
+오랜만에 취미생활을 하려다가, 왠지 느낌이...</p>
+
+<p>왠지 예제가 있을 것 같았습니다. 역시 있네요.
+하지만 좀 오래된 버전입니다. Parse Server를 지원하는 JavaScript SDK를 적용하면 올바르게 동작하지 않습니다.
+<a href="https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651">https://code.tutsplus.com/series/building-your-blog-with-parsejs--cms-651</a></p>
+
+<p>이것을 최신 버전의 Parse Server JavaScript SDK와 잘 동작하도록 고쳐보는 것에서 시작해보려고 합니다.</p>
+
+<p><img alt="blog-post.jpg" src="http://blog.youre.space/baas/assets_c/2017/03/blog-post-thumb-320xauto-129.jpg" width="320" class="mt-image-none" style="" /></p>
+
+  
+</div>
+
+/baas/2017/02/000028.html
+
+  </body>
+</html>

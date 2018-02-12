@@ -1,0 +1,61 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/baas/2013/07/000007.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="https://baas.io/docs/ko/devguide/roles.html /** 이 경로에 Create Read Update Delete (아래에는 C, R, U, D로 표현) 권한을 주면, 기본적으로 어느 컬렉션의 어느 엔터티든 자유롭게 접근할 수 있습니다. 위와 같이 권한을 두고, /users/* 경로에 D 권한만 주어도 /users/*에는 CRUD 모두 할 수 있습니다....">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>baas.io의 역할과 권한에 대해서 - BaaS와 PaaS 차이</title>
+
+  <link rel="prev" href="http://weblog.youre.space/baas/2013/02/000006.amp.html" title="한국에서 첫번째로 나온 BaaS, baas.io">
+  <link rel="next" href="http://weblog.youre.space/baas/2013/11/000008.amp.html" title="ICT D.I.Y와 ucloud BaaS(baas.io)">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="baas.io의 역할과 권한에 대해서">
+    <meta property="og:url" content="http://weblog.youre.space/baas/2013/07/000007.html">
+    <meta property="og:description" content="https://baas.io/docs/ko/devguide/roles.html /** 이 경로에 Create Read Update Delete (아래에는 C, R, U, D로 표현) 권한을 주면, 기본적으로 어느 컬렉션의 어느 엔터티든 자유롭게 접근할 수 있습니다. 위와 같이 권한을 두고, /users/* 경로에 D 권한만 주어도 /users/*에는 CRUD 모두 할 수 있습니다....">
+    <meta property="og:site_name" content="BaaS와 PaaS 차이">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="https://baas.io/docs/ko/devguide/roles.html /** 이 경로에 Create Read Update Delete (아래에는 C, R, U, D로 표현) 권한을 주면, 기본적으로 어느 컬렉션의 어느 엔터티든 자유롭게 접근할 수 있습니다. 위와 같이 권한을 두고, /users/* 경로에 D 권한만 주어도 /users/*에는 CRUD 모두 할 수 있습니다....">
+    <link itemprop="url" href="http://weblog.youre.space/baas/2013/07/000007.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">baas.io의 역할과 권한에 대해서</h1>
+<time datetime="2013-07-18T21:17:00+09:00" itemprop="datePublished">July 18, 2013</time>
+<time datetime="2013-07-18T21:17:00+09:00" itemprop="dateModified">July 18, 2013</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p><a href="https://baas.io/docs/ko/devguide/roles.html" target="_blank">https://baas.io/docs/ko/devguide/roles.html</a></p>
+<ul>
+<li>/** 이 경로에 Create Read Update Delete (아래에는 C, R, U, D로 표현) 권한을 주면, 기본적으로 어느 컬렉션의 어느 엔터티든 자유롭게 접근할 수 있습니다.</li>
+<li>위와 같이 권한을 두고, /users/* 경로에 D 권한만 주어도 /users/*에는 CRUD 모두 할 수 있습니다.<br /> 위 권한이 더 넓은 권한을 주고 있어서 위 권한이 적용되는 것입니다.</li>
+<li>/**에 R 권한이 없는 상태에서, /users에 R 권한을 주면 /users 는 읽을 수 있지만 /users/user1은 읽을 수 없습니다.<br /> /users/*에 R 권한을 주어야 /users/user1을 읽을 수 있습니다.</li>
+<li>/users/*에 R 권한을 주고, /users/*/feed에 R 권한을 주지 않으면 /users/user1/feed를 읽을 수 없습니다.</li>
+<li>/users/**에 R 권한을 주면 /user/*/feed에 어떤 권한이 설정되어있든 상관 없이 /users/user1/feed를 읽을 수 있습니다.</li>
+</ul>
+  
+</div>
+
+/baas/2013/07/000007.html
+
+  </body>
+</html>
