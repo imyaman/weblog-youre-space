@@ -1,0 +1,75 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2017/07/000311.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="Below is Android only partition table.Save below to a file &quot;Chuwi_Vi8_AndroidOnlypartition_20170719.tbl&quot;.Use &quot;ManufacturingFlashTool.exe&quot;. partition_table=gpt create -z /dev/block/mmcblk0 create /dev/block/mmcblk0 boot -p /dev/block/mmcblk0 reload /dev/block/mmcblk0 add -b 40 -s 131072 -t efi -u C12A7328-F81F-11D2-BA4B-00A0C93EC93B -l ESP -T 0 -P 0 /dev/block/mmcblk0 add...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Fixing Chuwi Vi8 Tablet - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2017/07/000310.amp.html" title="에이리언 커버넌트를 보았습니다">
+  <link rel="next" href="http://weblog.youre.space/vergence/2017/07/000314.amp.html" title="유닉스 서버 빌려쓴 이야기">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Fixing Chuwi Vi8 Tablet">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2017/07/000311.html">
+    <meta property="og:description" content="Below is Android only partition table.Save below to a file &quot;Chuwi_Vi8_AndroidOnlypartition_20170719.tbl&quot;.Use &quot;ManufacturingFlashTool.exe&quot;. partition_table=gpt create -z /dev/block/mmcblk0 create /dev/block/mmcblk0 boot -p /dev/block/mmcblk0 reload /dev/block/mmcblk0 add -b 40 -s 131072 -t efi -u C12A7328-F81F-11D2-BA4B-00A0C93EC93B -l ESP -T 0 -P 0 /dev/block/mmcblk0 add...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="Below is Android only partition table.Save below to a file &quot;Chuwi_Vi8_AndroidOnlypartition_20170719.tbl&quot;.Use &quot;ManufacturingFlashTool.exe&quot;. partition_table=gpt create -z /dev/block/mmcblk0 create /dev/block/mmcblk0 boot -p /dev/block/mmcblk0 reload /dev/block/mmcblk0 add -b 40 -s 131072 -t efi -u C12A7328-F81F-11D2-BA4B-00A0C93EC93B -l ESP -T 0 -P 0 /dev/block/mmcblk0 add...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2017/07/000311.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Fixing Chuwi Vi8 Tablet</h1>
+<time datetime="2017-07-19T23:43:00+09:00" itemprop="datePublished">July 19, 2017</time>
+<time datetime="2017-07-19T23:43:00+09:00" itemprop="dateModified">July 19, 2017</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>Below is Android only partition table.<br />Save below to a file "Chuwi_Vi8_AndroidOnlypartition_20170719.tbl".<br />Use "ManufacturingFlashTool.exe".</p>
+<pre><code>partition_table=gpt
+create -z /dev/block/mmcblk0
+create /dev/block/mmcblk0
+boot -p /dev/block/mmcblk0
+reload /dev/block/mmcblk0
+add -b 40 -s 131072 -t efi -u C12A7328-F81F-11D2-BA4B-00A0C93EC93B -l ESP -T 0 -P 0 /dev/block/mmcblk0
+add -b 131112 -s 131072 -t data -u 80868086-8086-8086-8086-FFFFFFFFFFF0 -l reserved -T 0 -P 0 /dev/block/mmcblk0
+add -b 262184 -s 32768 -t data -u 80868086-8086-8086-8086-000000000100 -l boot -T 3 -P 15 /dev/block/mmcblk0
+add -b 294952 -s 32768 -t data -u 80868086-8086-8086-8086-000000000101 -l recovery -T 3 -P 14 /dev/block/mmcblk0
+add -b 327720 -s 32768 -t data -u 80868086-8086-8086-8086-000000000102 -l fastboot -T 3 -P 13 /dev/block/mmcblk0
+add -b 360488 -s 32768 -t data -u 80868086-8086-8086-8086-FFFFFFFFFFF1 -l reserved_1 -T 3 -P 0 /dev/block/mmcblk0
+add -b 393256 -s 131072 -t data -u 80868086-8086-8086-8086-000000000104 -l test -T 3 -P 12 /dev/block/mmcblk0
+add -b 524328 -s 65536 -t data -u 80868086-8086-8086-8086-000000000001 -l panic -T 0 -P 0 /dev/block/mmcblk0
+add -b 589864 -s 32768 -t data -u 80868086-8086-8086-8086-000000000002 -l factory -T 0 -P 0 /dev/block/mmcblk0
+add -b 622632 -s 32768 -t data -u 80868086-8086-8086-8086-000000000003 -l misc -T 0 -P 0 /dev/block/mmcblk0
+add -b 655400 -s 32768 -t data -u 80868086-8086-8086-8086-000000000004 -l config -T 0 -P 0 /dev/block/mmcblk0
+add -b 688168 -s 2097152 -t data -u 80868086-8086-8086-8086-000000000005 -l cache -T 0 -P 0 /dev/block/mmcblk0
+add -b 2785320 -s 524288 -t data -u 80868086-8086-8086-8086-000000000006 -l logs -T 0 -P 0 /dev/block/mmcblk0
+add -b 3309608 -s 2097152 -t data -u 80868086-8086-8086-8086-000000000007 -l system -T 0 -P 0 /dev/block/mmcblk0
+add -b 5406760 -s 55197040 -t data -u 80868086-8086-8086-8086-000000000008 -l data -T 0 -P 0 /dev/block/mmcblk0
+reload /dev/block/mmcblk0</code></pre>
+  
+</div>
+
+/vergence/2017/07/000311.html
+
+  </body>
+</html>

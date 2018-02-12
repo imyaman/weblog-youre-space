@@ -1,0 +1,108 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2016/10/000191.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="인공신경망을 이용하여 문장이 어느 나라 언어인지 구분하도록 만들어보았습니다. 모든 언어는 아니고 한국어/일본어/영어만 구분하도록 제한하였습니다. 이건 굳이 인공신경망을 이용하지 않아도 되지만, 인공신경망으로 해보고 싶었습니다. 문장에 각 글자가 얼마나 자주 출현하는지를 바탕으로 영어/프랑스어/폴란드어를 구분하는 예시가 있습니다. http://www.codeproject.com/Articles/13091/Artificial-Neural-Networks-made-easy-with-the-FANN 유사하게 한국어/일본어/영어를 구분하도록 만들어보았습니다. 위...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>인공신경망을 이용한 문장의 언어 구분 - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2016/10/000190.amp.html" title="감사 받고 표창 받은 이야기">
+  <link rel="next" href="http://weblog.youre.space/vergence/2016/11/000192.amp.html" title="X Window System에서 창 최대화 문제">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="인공신경망을 이용한 문장의 언어 구분">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2016/10/000191.html">
+    <meta property="og:description" content="인공신경망을 이용하여 문장이 어느 나라 언어인지 구분하도록 만들어보았습니다. 모든 언어는 아니고 한국어/일본어/영어만 구분하도록 제한하였습니다. 이건 굳이 인공신경망을 이용하지 않아도 되지만, 인공신경망으로 해보고 싶었습니다. 문장에 각 글자가 얼마나 자주 출현하는지를 바탕으로 영어/프랑스어/폴란드어를 구분하는 예시가 있습니다. http://www.codeproject.com/Articles/13091/Artificial-Neural-Networks-made-easy-with-the-FANN 유사하게 한국어/일본어/영어를 구분하도록 만들어보았습니다. 위...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="인공신경망을 이용하여 문장이 어느 나라 언어인지 구분하도록 만들어보았습니다. 모든 언어는 아니고 한국어/일본어/영어만 구분하도록 제한하였습니다. 이건 굳이 인공신경망을 이용하지 않아도 되지만, 인공신경망으로 해보고 싶었습니다. 문장에 각 글자가 얼마나 자주 출현하는지를 바탕으로 영어/프랑스어/폴란드어를 구분하는 예시가 있습니다. http://www.codeproject.com/Articles/13091/Artificial-Neural-Networks-made-easy-with-the-FANN 유사하게 한국어/일본어/영어를 구분하도록 만들어보았습니다. 위...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2016/10/000191.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">인공신경망을 이용한 문장의 언어 구분</h1>
+<time datetime="2016-10-30T23:07:57+09:00" itemprop="datePublished">October 30, 2016</time>
+<time datetime="2016-10-30T23:07:57+09:00" itemprop="dateModified">October 30, 2016</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>인공신경망을 이용하여 문장이 어느 나라 언어인지 구분하도록 만들어보았습니다. 모든 언어는 아니고 한국어/일본어/영어만 구분하도록 제한하였습니다. 이건 굳이 인공신경망을 이용하지 않아도 되지만, 인공신경망으로 해보고 싶었습니다.</p>
+
+<p>문장에 각 글자가 얼마나 자주 출현하는지를 바탕으로 영어/프랑스어/폴란드어를 구분하는 예시가 있습니다.</p>
+
+<p>http://www.codeproject.com/Articles/13091/Artificial-Neural-Networks-made-easy-with-the-FANN</p>
+
+<p>유사하게 한국어/일본어/영어를 구분하도록 만들어보았습니다.
+위 예시는 C++로 만들어져있고, 각 글자를 ASCII로 구분합니다. ASCII의 영문자를 기반으로 해서 ANN의 입력층의 뉴런을 26개로 정하였습니다.
+제가 만든 건 Perl을 이용하여 만들었고, 각 글자를 Unicode로 구분합니다. 한국어/일본어는 글자 종류가 많습니다. 처음엔 Unicode의 모든 범위를 입력층의 뉴런 개수로 정해봤습니다. 즉, 4 bytes이니, 8x8x8x8 개의 입력층을 생각하고 데이터를 만들어보았더니 너무 커서(1 세트에 약 8.5GB) 방법을 바꾸었습니다. 수정한 방법은, Unicode의 글자가 한국어와 일본어 범위에 있는지만 확인하고, 각 언어에 해당하는 글자가 몇개인지 수를 세었습니다. 한자는 제외하였습니다. 영문은 따로 세고요.
+입력층의 뉴런은 3개, 첫번째엔 영문 글자수, 두번째는 한국어 글자수, 세번째는 일본어 글자수를 넣었습니다.
+출력층의 뉴런도 3개, 문장이 영어에 가까우면 첫번째 뉴런이 1, 한국어에 가까우면 두번째 뉴런이 1, 일본어에 가까우면 세번째 뉴런이 1로 출력됩니다.</p>
+
+<p>학습을 위한 데이터는 아래와 같이 만들었습니다. 위키피디아에서 일본 관련 주제를 선택하고, 한국어 문장을 복사했습니다. 예는 아래와 같습니다.</p>
+
+<p><code>
+생활 예술 중 하나인 꽃꽂이(일본어: 生け花 이케바나[*]) 또는 화도(華道)는 16세기 경부터 시작되었다고 전해진다.[3]:123 전통적인 꽃꽂이는 자연적인 상태의 소재와 모습을 중&gt;시[3]:123하고, 그것에 이념적인 의미를 부여해 왔지만, 현대에는 무생물인 철 조각이나 석고, 유리 등과 같은 인위적인 것들을 소재로 활용하는 전위적인 형태도 등장[3]:123했다. 현대에 이르러서 꽃꽂이는 실내 장식의 중요한 요소이자 생활 취미로서 대중에게 보급되고, 서양식으로 변형을 준 플라워 디자인(Flower Design)도 유행하고 있다.[3]:124
+</code></p>
+
+<p>이 문장을 정리하여 다음과 같이 만들었습니다.
+117 184 1,
+0 1 0</p>
+
+<p>이런 항목을 한국어/일본어/영어 총 243건을 만들어서 학습을 시켰습니다.</p>
+
+<p>그리고 아래 문장들을 구분시켜보았습니다. 입력값과 출력값도 아래 함께 표시하였습니다.</p>
+
+<p><code>
+1923년 FA컵 결승전(1923 FA Cup Final)은 1923년 4월 28일 영국 런던의 웸블리 스타디움에서 열린 볼턴 원더러스 FC와 웨스트 햄 유나이티드 FC 간의 1922~23년 FA컵의 마지막 축구 경기다. FA컵 같은 잉글랜드 축구 역사의 초기 컵 대회의 대표적인 표본으로 뽑히는 이 경기는 1923년에 완공된 웸블리 스타디움에서 열린 첫 축구 경기로 기록되어 있다. 영국 국왕 조지 5세가 우승팀에게 경기 후 트로피를 수여하기 위해 관중석에 자리했다.
+&lt; 입력값 =&gt; 113 149 0
+출력값 =&gt; 0.036754, 0.760805, 0.112224 &gt;
+</code></p>
+
+<p>아래는 영어.</p>
+
+<p><code>
+Listing 1 will generate letter frequencies for a file and output them in a format that can be used to generate a training file for the FANN library. Training files for the FANN library must consist of a line containing the input values, followed by a line containing the output values. If we wish to distinguish between three different languages (English, French and Polish), we could choose to represent this by allocating one output variable with a value of 0 for English, 0.5 for French, and 1 for Polish. Neural networks are, however, known to perform better if an output variable is allocated for each language, and that it is set to 1 for the correct language and 0 otherwise.
+&lt; 입력값 =&gt; 682 0 0
+출력값 =&gt; 0.425080, 0.580460, 0.151038 &gt;
+</code></p>
+
+<p>아래는 일본어.</p>
+
+<p><code>
+血友病を治癒したことで、ラスプーチンは皇帝夫妻から絶大な信頼を勝ち取り、「我らの友」「聖なる男」と呼ばれるようになったが、多くの人々はラスプーチンをペテン師だと考えていた[27]。侍医のエフゲニー・ボトキンとウラジーミル・デレヴェンコ（英語版）はラスプーチンの能力は催眠術だと信じており彼を皇帝一家から遠ざけようとし、フェリックス・ユスポフはピョートル・バドマエフから入手したチベット・ハーブでアレクセイを薬漬けにしたと考えていた[28]。しかし、ラスプーチンは1913年以前には催眠術に興味を抱いておらず、また、ユスポフの主張も現在では否定されている[29][30][31]。
+&lt; 입력값 =&gt; 24 0 202
+출력값 =&gt; 0.081207, 0.104823, 0.778959 &gt;
+</code></p>
+
+<p>영어는 잘 구분을 못했습니다. 영어는, 영어라고 표시하는 뉴런이 0.42를, 한국어라고 표시하는 뉴런이 0.58을 출력했습니다. 좀 더 개선을 해봐야겠네요.
+한국어와 일본어는 상대적으로 잘 구분했습니다.</p>
+
+<p>오늘의 취미생활이었습니다.</p>
+
+<p>참고로, 저는 deep learning이나 machine learning이라는 단어보다 artificial neural network라는 단어가 더 익숙합니다.</p>
+
+  
+</div>
+
+/vergence/2016/10/000191.html
+
+  </body>
+</html>

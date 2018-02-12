@@ -1,0 +1,72 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2016/09/000187.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="나와 함께하는 Lemmi(Let&#039;s note CF-J9)는 무선 인터넷 디바이스로 Intel® WiFi Link 5300을 갖고 있습니다. 오래된 녀석이라 그런지 연속사용시간이 좀 길어지면 이 디바이스가 이상해집니다. 커널 내 드라이버에서 에러를 표시하는데, 다시 돌아오지도 않습니다. 이 증상이 특히 대기모드에서 일반모드로 돌아올 때 처음 발생했어서...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Linux에서 WiFi 장치가 반복해서 사라질 때 - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2016/07/000186.amp.html" title="내가 갖고 싶은 키보드">
+  <link rel="next" href="http://weblog.youre.space/vergence/2016/09/000188.amp.html" title="노트북 배터리 리필">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Linux에서 WiFi 장치가 반복해서 사라질 때">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2016/09/000187.html">
+    <meta property="og:description" content="나와 함께하는 Lemmi(Let&#039;s note CF-J9)는 무선 인터넷 디바이스로 Intel® WiFi Link 5300을 갖고 있습니다. 오래된 녀석이라 그런지 연속사용시간이 좀 길어지면 이 디바이스가 이상해집니다. 커널 내 드라이버에서 에러를 표시하는데, 다시 돌아오지도 않습니다. 이 증상이 특히 대기모드에서 일반모드로 돌아올 때 처음 발생했어서...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="나와 함께하는 Lemmi(Let&#039;s note CF-J9)는 무선 인터넷 디바이스로 Intel® WiFi Link 5300을 갖고 있습니다. 오래된 녀석이라 그런지 연속사용시간이 좀 길어지면 이 디바이스가 이상해집니다. 커널 내 드라이버에서 에러를 표시하는데, 다시 돌아오지도 않습니다. 이 증상이 특히 대기모드에서 일반모드로 돌아올 때 처음 발생했어서...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2016/09/000187.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Linux에서 WiFi 장치가 반복해서 사라질 때</h1>
+<time datetime="2016-09-16T23:36:14+09:00" itemprop="datePublished">September 16, 2016</time>
+<time datetime="2016-09-16T23:36:14+09:00" itemprop="dateModified">September 16, 2016</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>나와 함께하는 Lemmi(Let's note CF-J9)는 무선 인터넷 디바이스로 Intel® WiFi Link 5300을 갖고 있습니다. 오래된 녀석이라 그런지 연속사용시간이 좀 길어지면 이 디바이스가 이상해집니다. 커널 내 드라이버에서 에러를 표시하는데, 다시 돌아오지도 않습니다.</p>
+
+<p>이 증상이 특히 대기모드에서 일반모드로 돌아올 때 처음 발생했어서 전력관리 문제라고 생각했습니다. 그래서 아래와 같이 모듈 옵션을 넣었습니다.
+    $ cat /etc/modprobe.d/iwlwifi.conf
+    options iwlwifi bt<em>coex</em>active=0 11n<em>disable=1 swcrypto=1 power</em>save=N</p>
+
+<p>한참 잘 이용했는데, 같은 증상이 발생했습니다. 바쁘기도 해서 응급조치로 아래와 같이 디바이스를 제거했다가 다시 살립니다.
+    $ cat getbackwifi.sh <br />
+    echo 1 > /sys/bus/pci/devices/0000\:0a\:00.0/remove
+    echo 1 > /sys/bus/pci/rescan</p>
+
+<p>dmesg를 한참 살펴보다가 아무래도 무선 인터넷 디바이스에 먼지가 많이 끼었거나, 그 주변에 열이 많이 나서거나 그 디바이스가 낡아서 고장났거나 한 것으로 추측하고 있습니다.
+혹시나하고 아래와 같이 커널 옵션을 넣었습니다.
+    $ egrep pcie<em>aspm /boot/grub/grub.cfg
+        linux   /vmlinuz-4.4.0-21-generic root=UUID=2ea2b279-a0e2-4cd2-8629-d11d618138d5 ro quiet nosplash acpi</em>enforce<em>resources=lax $vt</em>handoff pcie_aspm=off ipv6.disable=1</p>
+
+<p>꽤 장시간 연속으로 Lemmi와 놀고 있는데, 무선 인터넷 디바이스가 사라지지 않고 잘 동작하네요. 일단 이렇게 살아야겠습니다.
+조만간 이 녀석 내부를 말끔히 청소하면 좋겠는데, 방법이 있을런지...</p>
+
+  
+</div>
+
+/vergence/2016/09/000187.html
+
+  </body>
+</html>

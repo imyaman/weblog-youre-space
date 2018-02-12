@@ -1,0 +1,69 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2016/11/000192.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="X Window System에서 창(window)을 최대화(maximize)했을 때 창이 화면 전체를 덮지 않는 경우가 있습니다. 창 최대화/리사이즈는 윈도우 매니저(window manager)의 도움을 받는 건데, 윈도우 매니저가 최대화/리사이즈의 동작을 어떻게 구현했느냐에 따라 달라집니다. 윈도우 매니저는 보통 X의 NETWORKAREA 정보를 참고하여 창의 최대 크기를 정합니다....">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>X Window System에서 창 최대화 문제 - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2016/10/000191.amp.html" title="인공신경망을 이용한 문장의 언어 구분">
+  <link rel="next" href="http://weblog.youre.space/vergence/2017/02/000193.amp.html" title="왜냐면">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="X Window System에서 창 최대화 문제">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2016/11/000192.html">
+    <meta property="og:description" content="X Window System에서 창(window)을 최대화(maximize)했을 때 창이 화면 전체를 덮지 않는 경우가 있습니다. 창 최대화/리사이즈는 윈도우 매니저(window manager)의 도움을 받는 건데, 윈도우 매니저가 최대화/리사이즈의 동작을 어떻게 구현했느냐에 따라 달라집니다. 윈도우 매니저는 보통 X의 NETWORKAREA 정보를 참고하여 창의 최대 크기를 정합니다....">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="X Window System에서 창(window)을 최대화(maximize)했을 때 창이 화면 전체를 덮지 않는 경우가 있습니다. 창 최대화/리사이즈는 윈도우 매니저(window manager)의 도움을 받는 건데, 윈도우 매니저가 최대화/리사이즈의 동작을 어떻게 구현했느냐에 따라 달라집니다. 윈도우 매니저는 보통 X의 NETWORKAREA 정보를 참고하여 창의 최대 크기를 정합니다....">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2016/11/000192.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">X Window System에서 창 최대화 문제</h1>
+<time datetime="2016-11-03T16:06:20+09:00" itemprop="datePublished">November  3, 2016</time>
+<time datetime="2016-11-03T16:06:20+09:00" itemprop="dateModified">November  3, 2016</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>X Window System에서 창(window)을 최대화(maximize)했을 때 창이 화면 전체를 덮지 않는 경우가 있습니다. 창 최대화/리사이즈는 윈도우 매니저(window manager)의 도움을 받는 건데, 윈도우 매니저가 최대화/리사이즈의 동작을 어떻게 구현했느냐에 따라 달라집니다.
+윈도우 매니저는 보통 X의 <em>NET</em>WORKAREA 정보를 참고하여 창의 최대 크기를 정합니다. workarea는 xprop 명령으로 확인할 수 있습니다. xprop 명령을 실행하고 커서가 + 모양으로 바뀌면 데스크탑의 빈 공간을 선택합니다.
+1366x768 해상도의 스크린에서 workarea가 아래와 같이 1366x744로 확인되면, 창을 최대화했을 때 24만큼 채워지지 않는 영역이 생길 수 있습니다.</p>
+
+<p><code>
+_NET_WORKAREA(CARDINAL) = 0, 24, 1366, 744, 0, 24, 1366, 744, 0, 24, 1366, 744, 0, 24, 1366, 744
+</code></p>
+
+<p>FVWM의 경우 workarea를 무시하도록 설정할 수 있습니다.</p>
+
+<p><code>
+Style * EWMHMaximizeIgnoreWorkingArea, EWMHPlacementIgnoreWorkingArea
+</code></p>
+
+<p><a href="EWMHMaximizeIgoreWorkingArea">http://fvwmforums.org/beginnersguide/global.html</a> 문서를 보면,EWMHMaximizeIgoreWorkingArea 라고 표시되어있는데, 오타입니다. EWMHMaximizeIgoreWorkingArea 가 아니고 EWMHMaximizeIgnoreWorkingArea 입니다.</p>
+
+  
+</div>
+
+/vergence/2016/11/000192.html
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2017/10/000428.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" &amp;lt;!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site&#039;s ID. mathiasbynens.be/notes/async-analytics-snippet --&amp;gt; &amp;lt;script&amp;gt; var _gaq=[[&#039;_setAccount&#039;,&#039;UA-XXXXX-X&#039;],[&#039;_trackPageview&#039;]]; (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; g.src=(&#039;https:&#039;==location.protocol?&#039;//ssl&#039;:&#039;//www&#039;)+&#039;.google-analytics.com/ga.js&#039;; s.parentNode.insertBefore(g,s)}(document,&#039;script&#039;)); &amp;lt;/script&amp;gt; 이렇게도 쓰나봅니다....">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Google Analytics JS 코드  - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2017/10/000411.amp.html" title="Final Fantasy : The 4 Heroes of Light">
+  <link rel="next" href="http://weblog.youre.space/vergence/2017/10/000429.amp.html" title="Azure App Service 무료로 쓸 때 주의사항">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Google Analytics JS 코드 ">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2017/10/000428.html">
+    <meta property="og:description" content=" &amp;lt;!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site&#039;s ID. mathiasbynens.be/notes/async-analytics-snippet --&amp;gt; &amp;lt;script&amp;gt; var _gaq=[[&#039;_setAccount&#039;,&#039;UA-XXXXX-X&#039;],[&#039;_trackPageview&#039;]]; (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; g.src=(&#039;https:&#039;==location.protocol?&#039;//ssl&#039;:&#039;//www&#039;)+&#039;.google-analytics.com/ga.js&#039;; s.parentNode.insertBefore(g,s)}(document,&#039;script&#039;)); &amp;lt;/script&amp;gt; 이렇게도 쓰나봅니다....">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" &amp;lt;!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site&#039;s ID. mathiasbynens.be/notes/async-analytics-snippet --&amp;gt; &amp;lt;script&amp;gt; var _gaq=[[&#039;_setAccount&#039;,&#039;UA-XXXXX-X&#039;],[&#039;_trackPageview&#039;]]; (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0]; g.src=(&#039;https:&#039;==location.protocol?&#039;//ssl&#039;:&#039;//www&#039;)+&#039;.google-analytics.com/ga.js&#039;; s.parentNode.insertBefore(g,s)}(document,&#039;script&#039;)); &amp;lt;/script&amp;gt; 이렇게도 쓰나봅니다....">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2017/10/000428.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Google Analytics JS 코드 </h1>
+<time datetime="2017-10-31T22:30:14+09:00" itemprop="datePublished">October 31, 2017</time>
+<time datetime="2017-10-31T22:30:14+09:00" itemprop="dateModified">October 31, 2017</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <pre><code>  &lt;!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.<br />       mathiasbynens.be/notes/async-analytics-snippet --&gt;<br />  &lt;script&gt;<br />    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];<br />    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];<br />    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';<br />    s.parentNode.insertBefore(g,s)}(document,'script'));<br />  &lt;/script&gt;
+</code></pre>
+<p>이렇게도 쓰나봅니다.</p>
+  
+</div>
+
+/vergence/2017/10/000428.html
+
+  </body>
+</html>

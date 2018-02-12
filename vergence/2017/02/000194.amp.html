@@ -1,0 +1,65 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2017/02/000194.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="전에 fetchmail로 메일을 긁어서 처리하는 것을 만든 적이 있습니다. 이번에도 fetchmail을 이용해서 메일을 긁어오고 MovableType에 넣을 생각이었지요. 삽질을 시작하기 전에, 검색 한번 더 해봐야겠다는 생각이 들었습니다. 오잉...? MT 웹 사이트에 플러그인이 있었네요. 세상엔 많은 사람이 있다는 생각을 오늘 또 했습니다....">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>이메일로 MovableType에 글 쓰기 - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2017/02/000193.amp.html" title="왜냐면">
+  <link rel="next" href="http://weblog.youre.space/vergence/2017/02/000195.amp.html" title="생각하고 싶어서">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="이메일로 MovableType에 글 쓰기">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2017/02/000194.html">
+    <meta property="og:description" content="전에 fetchmail로 메일을 긁어서 처리하는 것을 만든 적이 있습니다. 이번에도 fetchmail을 이용해서 메일을 긁어오고 MovableType에 넣을 생각이었지요. 삽질을 시작하기 전에, 검색 한번 더 해봐야겠다는 생각이 들었습니다. 오잉...? MT 웹 사이트에 플러그인이 있었네요. 세상엔 많은 사람이 있다는 생각을 오늘 또 했습니다....">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="전에 fetchmail로 메일을 긁어서 처리하는 것을 만든 적이 있습니다. 이번에도 fetchmail을 이용해서 메일을 긁어오고 MovableType에 넣을 생각이었지요. 삽질을 시작하기 전에, 검색 한번 더 해봐야겠다는 생각이 들었습니다. 오잉...? MT 웹 사이트에 플러그인이 있었네요. 세상엔 많은 사람이 있다는 생각을 오늘 또 했습니다....">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2017/02/000194.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">이메일로 MovableType에 글 쓰기</h1>
+<time datetime="2017-02-02T08:35:55+09:00" itemprop="datePublished">February  2, 2017</time>
+<time datetime="2017-02-02T08:35:55+09:00" itemprop="dateModified">February  2, 2017</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>전에 fetchmail로 메일을 긁어서 처리하는 것을 만든 적이 있습니다. 이번에도 fetchmail을 이용해서 메일을 긁어오고 MovableType에 넣을 생각이었지요.</p>
+
+<p>삽질을 시작하기 전에, 검색 한번 더 해봐야겠다는 생각이 들었습니다. 오잉...? MT 웹 사이트에 플러그인이 있었네요.<br />
+세상엔 많은 사람이 있다는 생각을 오늘 또 했습니다.</p>
+
+<p>이런 속담이 있지 않을까요?<br />
+A search in time saves 9 chores.</p>
+
+<p>이 플러그인은 정말 좋습니다. 멀티블로그에서, 블로그별로 포스팅할 이메일 주소를 설정할 수 있는 점 때문에 특히. 단점은 gmail에서 메일을 받아야하는 점입니다. 하지만 gmail 가입이 어려운 건 아니니 큰 단점은 아닙니다.</p>
+
+<p>앞으로 이메일로 편하게 블로그에 글 쓸 수 있게 되었습니다.<br />
+오늘의 취미생활.</p>
+  
+</div>
+
+/vergence/2017/02/000194.html
+
+  </body>
+</html>

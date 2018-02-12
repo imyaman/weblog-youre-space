@@ -1,0 +1,78 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2015/08/000157.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="리눅스를 서버로 쓰면 shutdown 명령을 쓸 일이 별로 없지만, 데스크탑으로 쓰고 또 자주 쓰기에 이 명령을 밥 먹듯 씁니다. 리눅스는 BSD 유닉스의 특성과 System V 유닉스의 특성을 섞어서 갖고 있는 것을 보게 되는데, 그 중엔 잘 섞이지 않아 어색한 것도...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Linux의 shutdown 명령의 -h 옵션에 대한 유감 - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2015/08/000156.amp.html" title="이번 지뢰 사건에 대해">
+  <link rel="next" href="http://weblog.youre.space/vergence/2015/08/000158.amp.html" title="안중근 장군님께">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Linux의 shutdown 명령의 -h 옵션에 대한 유감">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2015/08/000157.html">
+    <meta property="og:description" content="리눅스를 서버로 쓰면 shutdown 명령을 쓸 일이 별로 없지만, 데스크탑으로 쓰고 또 자주 쓰기에 이 명령을 밥 먹듯 씁니다. 리눅스는 BSD 유닉스의 특성과 System V 유닉스의 특성을 섞어서 갖고 있는 것을 보게 되는데, 그 중엔 잘 섞이지 않아 어색한 것도...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="리눅스를 서버로 쓰면 shutdown 명령을 쓸 일이 별로 없지만, 데스크탑으로 쓰고 또 자주 쓰기에 이 명령을 밥 먹듯 씁니다. 리눅스는 BSD 유닉스의 특성과 System V 유닉스의 특성을 섞어서 갖고 있는 것을 보게 되는데, 그 중엔 잘 섞이지 않아 어색한 것도...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2015/08/000157.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Linux의 shutdown 명령의 -h 옵션에 대한 유감</h1>
+<time datetime="2015-08-14T00:54:57+09:00" itemprop="datePublished">August 14, 2015</time>
+<time datetime="2015-08-14T00:54:57+09:00" itemprop="dateModified">August 14, 2015</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>리눅스를 서버로 쓰면 shutdown 명령을 쓸 일이 별로 없지만, 데스크탑으로 쓰고 또 자주 쓰기에 이 명령을 밥 먹듯 씁니다.</p>
+
+<p>리눅스는 BSD 유닉스의 특성과 System V 유닉스의 특성을 섞어서 갖고 있는 것을 보게 되는데, 그 중엔 잘 섞이지 않아 어색한 것도 있습니다.</p>
+
+<p>shutdown이 바로 그런 놈입니다.
+BSD는 rc 명령과 2개의 모드(single mode와 multi user mode)를 갖고 있습니다. 종료를 할 때엔 shutdow  -h, 재시동을 할 때엔 shutdown -r 옵션을 쓰지요. 각각 halt와 reboot의 첫 글자를 땄습니다.</p>
+
+<p>System V는 init 명령과 7개의 run level(0~6까지)을 갖고 있습니다. 종료를 하거나 재시동을 하는 것 등을 run level의 전환으로 처리합니다. 종료는 level 0으로, 재시동은 level 6으로 전환 하는 것입니다. shutdown에 -i 옵션을 쓰지요. shutdown -i 0, shutdown -i 6처럼요.</p>
+
+<p>리눅스는 init과 run level을 넣은 배포판이 대부분이었습니다. 예전엔  슬랙웨어만 run level 개념이 없는 배포판이었습니다. 지금에 와서는 그렇지 않은 것도 많고 변종이 많아졌지만요.
+아무튼, init 명령과 run level은 System V스러운 것입니다. 그런데 shutdown -h는 BSD스러운 것이지요. </p>
+
+<p>이 점에서 유감입니다. 리눅스에서 run level을 바꾸겠다면 shutdown 명령이 아니라 telinit 명령을 써야합니다. 이 명령이 System V에도 있긴하지만, 아무튼요.</p>
+
+<p>참고로, rc는 run command의 줄임말입니다. rc가 도대체 뭘까 한참을 찾다가 별것 아닌 줄임말인 걸 알고 허탈했던 기억이 있습니다.</p>
+
+<p>또 참고로, System V 유닉스의 /usr/ucb 디렉토리에 가면 -h 옵션을 쓸 수 있는 shutdown이 있습니다. 예를 들면 Solaris. 어쩌다 그렇게 된거냐면...
+SUN사는 System V 유닉스인 Solaris를 만들었습니다. 그 전에는 BSD 유닉스였던 Sun OS(버전 4까지는)를 만들었죠. 그 BSD를 만든게 SUN의 Bill Joy, 대학시절의 그 사람이죠. vi를 만든 것도 그 사람이고요.
+SUN과 AT&amp;T는 System V Release 3(SVR3)에 BSD를 합쳐 다음 버전을 만듭니다. 그게 System V Release 4(SVR4)이지요. 그리고 System V인 Sun OS 5가 나옵니다. 이게 이후에 Solaris로 변하게 되고요. 그러다보니 호환을 위해 compatibility binary를 넣어둔 것이지요.</p>
+
+<p>이야기가 긴데... 사실 이젠 별로 중요하진 않습니다. 다 부질 없는 이야기죠.
+요즘 System V는 run level 1, 2만 쓰도록 권합니다. BSD의 두 모드와 다를 바 없죠. 뭐, 그런거죠.</p>
+
+<p><a href="http://cal.youre.space/assets_c/2015/08/00-58-20-as500a-15.html" onclick="window.open('http://cal.youre.space/assets_c/2015/08/00-58-20-as500a-15.html','popup','width=1050,height=534,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://cal.youre.space/assets_c/2015/08/00-58-20-as500a-thumb-1050x533-15.jpg" width="1050" height="533" alt="00-58-20-as500a.jpg" class="mt-image-none" style="" /></a></p>
+
+  
+</div>
+
+/vergence/2015/08/000157.html
+
+  </body>
+</html>

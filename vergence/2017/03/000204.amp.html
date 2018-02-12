@@ -1,0 +1,54 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2017/03/000204.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="하아... 컴맹이라 별짓하고 있습니다.Parse Server로부터 데이터를 여러개 가져옵니다. var Post = Parse.Object.extend(&quot;Post&quot;); //var blogs = new Post(); var query = new Parse.Query(Post); query.limit(10); query.descending(&quot;createdAt&quot;); query.find({ success: querySuccess, error: queryFailure });function querySuccess(posts){ $.each(posts, function(index, value){ console.log(value.createdAt); console.log(value.get(&quot;title&quot;)); });}이렇게 접근이 가능한데, Parse...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Vue.js Parse.js 함께 쓰고 싶은 마음 - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2017/03/000203.amp.html" title="임시저장">
+  <link rel="next" href="http://weblog.youre.space/vergence/2017/03/000205.amp.html" title="글씨 연습 2017-03-19">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Vue.js Parse.js 함께 쓰고 싶은 마음">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2017/03/000204.html">
+    <meta property="og:description" content="하아... 컴맹이라 별짓하고 있습니다.Parse Server로부터 데이터를 여러개 가져옵니다. var Post = Parse.Object.extend(&quot;Post&quot;); //var blogs = new Post(); var query = new Parse.Query(Post); query.limit(10); query.descending(&quot;createdAt&quot;); query.find({ success: querySuccess, error: queryFailure });function querySuccess(posts){ $.each(posts, function(index, value){ console.log(value.createdAt); console.log(value.get(&quot;title&quot;)); });}이렇게 접근이 가능한데, Parse...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="하아... 컴맹이라 별짓하고 있습니다.Parse Server로부터 데이터를 여러개 가져옵니다. var Post = Parse.Object.extend(&quot;Post&quot;); //var blogs = new Post(); var query = new Parse.Query(Post); query.limit(10); query.descending(&quot;createdAt&quot;); query.find({ success: querySuccess, error: queryFailure });function querySuccess(posts){ $.each(posts, function(index, value){ console.log(value.createdAt); console.log(value.get(&quot;title&quot;)); });}이렇게 접근이 가능한데, Parse...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2017/03/000204.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Vue.js Parse.js 함께 쓰고 싶은 마음</h1>
+<time datetime="2017-03-09T00:01:34+09:00" itemprop="datePublished">March  9, 2017</time>
+<time datetime="2017-03-09T00:01:34+09:00" itemprop="dateModified">March  9, 2017</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>하아... 컴맹이라 별짓하고 있습니다.<br /><br />Parse Server로부터 데이터를 여러개 가져옵니다.<br /><br />    var Post = Parse.Object.extend("Post");<br />    //var blogs = new Post();<br />    var query = new Parse.Query(Post);<br />    query.limit(10);<br />    query.descending("createdAt");<br />    query.find({<br />      success: querySuccess,<br />      error: queryFailure<br />    });<br /><br />function querySuccess(posts){<br />  $.each(posts, function(index, value){<br />    console.log(value.createdAt);<br />    console.log(value.get("title"));<br />  });<br />}<br /><br />이렇게 접근이 가능한데, Parse Object는 createdAt은 바로 접근이 되는데, 다른 컬럼은 get()을 써야합니다.<br />그래서, Vue.js에 쓸 때, <br /><br />  var example2 = new Vue({<br />    el: '#example-2',<br />    data: {<br />      items: posts<br />    }<br />  })<br />라고 하고,<br /><br />          &lt;template v-for="item in items"&gt;<br />          &lt;div class="blog-post"&gt;<br />            &lt;h2 class="blog-post-title"&gt;{{ item.title }}&lt;/h2&gt;<br />            &lt;p class="blog-post-meta"&gt;{{ item.createdAt }} by &lt;a href="#"&gt;imyaman&lt;/a&gt;&lt;/p&gt;<br />            &lt;span&gt;{{ item.content }} {{ item.objectId }}&lt;/span&gt;<br />          &lt;/div&gt;&lt;!-- /.blog-post --&gt;<br />          &lt;/template&gt;<br /><br />이렇게 하면, item.createdAt 만 정상적으로 표시되고, item.title은 정상적으로 표시되지 않습니다.<br />Vue.js에 쓰기 위해 object array를 다시 만들어보았습니다.<br /><br />  $.each(posts, function(index, value){<br />    str = str + '{"title" : "' + value.get('title') + '"}';<br />    if(index+1 != posts.length){ str=str+','; }<br />  }); <br />  str = '[' + str + ']';<br /><br />  postObjects=JSON.parse(str);<br /><br />  var example2 = new Vue({<br />    el: '#example-2',<br />    data: {<br />      items: postObjects<br />    }<br />  })<br /><br />이렇게 하면 템플릿에서 item.title을 쓸 수 있긴한데, 과연 이게 바른 방법인가... 고민되네요.<br />http://blog.sys5.co/renew/index.html  파일에서 실험해보고 있습니다.</p>
+  
+</div>
+
+/vergence/2017/03/000204.html
+
+  </body>
+</html>
