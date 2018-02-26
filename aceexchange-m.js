@@ -29,7 +29,7 @@ var fileref=document.createElement('script');
 fileref.setAttribute("type","text/javascript")
 fileref.setAttribute("src", a);
 //console.log(a);
-document.getElementById("footer-inner").appendChild(fileref);
+document.getElementById("footer-content").appendChild(fileref);
 //document.body.appendChild(fileref);
 //document.write("<script type='text/javascript' src='"+a+"' ><\/script>")
 
