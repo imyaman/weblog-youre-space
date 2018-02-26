@@ -1,0 +1,109 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/imyaman/2018/02/000524.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" Dear Developer, Since 2012, we have enabled extension developers to provide a smooth installation experience on their own pages with inline installation. We have also worked hard to prevent abuse of this feature by disabling inline installation in the...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Updates to Chrome Web Store Policy - imyaman</title>
+
+  <link rel="prev" href="http://weblog.youre.space/imyaman/2017/12/000519.amp.html" title="안녕하세요 노키아 E72 한글입력기 글 보고 연락드립니다.">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Updates to Chrome Web Store Policy">
+    <meta property="og:url" content="http://weblog.youre.space/imyaman/2018/02/000524.html">
+    <meta property="og:description" content=" Dear Developer, Since 2012, we have enabled extension developers to provide a smooth installation experience on their own pages with inline installation. We have also worked hard to prevent abuse of this feature by disabling inline installation in the...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" Dear Developer, Since 2012, we have enabled extension developers to provide a smooth installation experience on their own pages with inline installation. We have also worked hard to prevent abuse of this feature by disabling inline installation in the...">
+    <link itemprop="url" href="http://weblog.youre.space/imyaman/2018/02/000524.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Updates to Chrome Web Store Policy</h1>
+<time datetime="2018-02-26T13:26:45+09:00" itemprop="datePublished">February 26, 2018</time>
+<time datetime="2018-02-26T13:26:45+09:00" itemprop="dateModified">February 26, 2018</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>
+Dear Developer,
+</p>
+<p>
+Since 2012, we have enabled extension developers to provide a smooth
+installation experience on their own pages with <a href="https://www.google.com/appserve/mkt/p/AIR_RmGTWRy6k7c4OY13UNS25fBFcAq2tGGBNxz5jFRzmTAnJoEWWEBRy0Bz1s4X419-l3pobwLqW1T9GaX9wyMzxJ-elv7SphoSzie8EjAlksWSpixzxVhtnaGQgA">inline
+installation</a>. We have also worked hard to prevent abuse of this feature by
+disabling inline installation in the case of deceptive or confusing installation
+flows. Today, we&#39;re announcing an update to these abuse protections.
+</p>
+<p>
+In August 2015, we <a href="https://www.google.com/appserve/mkt/p/AIR_RmG0KIZt722XGCAYLqkMbml_Zk5N780E6lj3eQKxD1Bw1Mn4xp_0wfqrMydQZkUeycHnjzO4O9BFW25cMohJQJ33khm1zQLSGLBHk2QEUptn3yvgZduvh6sTbztonVpNmDJFnZehRScOUvj5TJ2t">announced</a>
+an enforcement scheme for extensions that are distributed by deceptive or
+confusing ads and inline installation pages. In a few weeks, we will upgrade our
+automated inline installation abuse detection to improve our detection speed and
+better detect extensions using deceptive or confusing installation flows. We are
+also expanding enforcement to cover any association with deceptive practices,
+including deceptive ads and landing pages, or installation patterns that suggest
+user confusion.
+</p>
+<p>
+In addition to the existing extension-level protection, our expanded enforcement
+will also use machine learning to evaluate each inline installation request for
+signals of deceptive, confusing, or malicious ads or webpages. When we find
+those signals, we&#39;ll selectively disable that one inline installation request
+and redirect the user to the extension&#39;s page on the Chrome Web Store. This
+selective enforcement will not impact inline installation of that extension from
+other, non-deceptive sources. Developers will not be notified of this
+enforcement, as it happens on an as-needed basis.
+</p>
+<p>
+You can read more about enforcement of inline installation policies in our <a href="https://www.google.com/appserve/mkt/p/AIR_RmHLAKgkGA7O1zFUQw84Nv7jpAt8pKtV7Vj3MQDKKiFllVlDYhEsDN7D3YRYV96fQbSyldwjNGUWDUvHtq-mGWUJruOBgDWy7rdG-90tx9MgK7W9GIPZMwWVZVBaAwA">Enforcement
+FAQ</a>, including how inline pages are re-enabled after being disabled by our
+automated enforcement system.
+</p>
+<p>
+If your extension does not use inline installation, you will not be impacted by
+these enforcement changes. Developers of extensions with inline installation
+disabled for all extension inline installation requests will receive an email
+alert from the Web Store with more information.
+</p>
+<p>
+Sincerely,
+</p>
+<p>
+The Chrome Web Store Team
+</p>
+<p>
+<em>You have received this mandatory service announcement to update you about
+important changes to your account.</em>
+</p>
+<p>
+<em>© 2016 Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043,
+USA</em>
+</p><img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AIR_RmEba2CDCpELTuxU0Fa9ydHwtnCgCyc74DHe9UmJHso.gif">
+
+  
+</div>
+
+/imyaman/2018/02/000524.html
+
+  </body>
+</html>
