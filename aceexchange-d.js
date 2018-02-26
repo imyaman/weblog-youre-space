@@ -26,7 +26,7 @@ var e=function(a){a+="=";for(var c=document.cookie.split(";"),d=0;d<c.length;d++
 a+="?pub_code="+ttx_pub_code+"&area_code="+ttx_ad_area_code+"&pag="+encodeURIComponent(ttx_ad_area_pag);a+="&site_url="+encodeURIComponent("")+"&page_url="+encodeURIComponent(ttx_page_url)+"&refer="+encodeURIComponent(c);a+="&result="+encodeURIComponent(f)+"&bnrs_e="+encodeURIComponent(e("ttx_bnrs_e"))+"&du="+encodeURIComponent(ttx_direct_url);a+="&rndm="+Math.random()+"&cst=";
 
 var fileref=document.createElement('script');
-     fileref.setAttribute("src", a)
+fileref.setAttribute("src", a);
 console.log(a);
 document.body.appendChild(fileref);
 //write("<script type='text/javascript' src='"+a+"' ><\/script>")
