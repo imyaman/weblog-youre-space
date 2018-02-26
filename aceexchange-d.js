@@ -27,9 +27,8 @@ a+="?pub_code="+ttx_pub_code+"&area_code="+ttx_ad_area_code+"&pag="+encodeURICom
 
 var fileref=document.createElement('script');
 documeneetAttribute("src", a);
+console.log(a);
 document.body.appendChild(fileref);
-
-
-write("<script type='text/javascript' src='"+a+"' ><\/script>")
+//write("<script type='text/javascript' src='"+a+"' ><\/script>")
 
 })();
