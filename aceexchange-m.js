@@ -28,7 +28,6 @@ a+="?pub_code="+ttx_pub_code+"&area_code="+ttx_ad_area_code+"&pag="+encodeURICom
 var fileref=document.createElement('script');
 fileref.setAttribute("type","text/javascript")
 fileref.setAttribute("src", a);
-//console.log(a);
 document.getElementById("footer-content").appendChild(fileref);
 //document.body.appendChild(fileref);
 //document.write("<script type='text/javascript' src='"+a+"' ><\/script>")
