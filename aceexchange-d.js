@@ -31,7 +31,7 @@ console.log(fileref);
 console.log(a);
 //document.body.appendChild(fileref);
 //document.getElementById("footer").innerHTML=fileref;
-console.log(document.getElementById("footer"));
+document.getElementById("footer").innerHTML=""+fileref+"";
 //write("<script type='text/javascript' src='"+a+"' ><\/script>")
 
 })();
