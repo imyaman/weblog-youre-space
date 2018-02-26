@@ -29,7 +29,8 @@ var fileref=document.createElement('script');
 fileref.setAttribute("src", a);
 console.log(fileref);
 console.log(a);
-document.body.appendChild(fileref);
+//document.body.appendChild(fileref);
+document.getElementById("footer").innerHTML=fileref;
 //write("<script type='text/javascript' src='"+a+"' ><\/script>")
 
 })();
