@@ -30,6 +30,6 @@ fileref.setAttribute("type","text/javascript")
 fileref.setAttribute("src", a);
 document.getElementById("footer-content").appendChild(fileref);
 //document.body.appendChild(fileref);
-//write("<script type='text/javascript' src='"+a+"' ><\/script>")
+//document.write("<script type='text/javascript' src='"+a+"' ><\/script>")
 
 })();
