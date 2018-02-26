@@ -454,8 +454,9 @@ function checkmobile() {
 
   var fileref=document.createElement('script')
   if(ismobile){
-    window.location="/mobile.html";
+    fileref.setAttribute("src", "/js/file1.js")
   }else{
+    fileref.setAttribute("src", "/js/file1.js")
   }
 </script>
 
