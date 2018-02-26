@@ -1,4 +1,3 @@
-<script>
 var ttx_pub_code="1206269501";
 if("undefined"==typeof ttx_area_info||"null"==typeof ttx_area_info)var ttx_area_info=[];
 ttx_area_info.push({area_code:"1155183758",pag:"PAG"});
@@ -26,4 +25,3 @@ var ttx_total_cookie_name="ttx_t_r";
 var e=function(a){a+="=";for(var c=document.cookie.split(";"),d=0;d<c.length;d++){for(var b=c[d];" "==b.charAt(0);)b=b.substring(1);if(0==b.indexOf(a))return b.substring(a.length,b.length)}return""},f="";try{f=JSON.stringify(JSON.parse(e(ttx_total_cookie_name))[ttx_ad_area_code])}catch(g){}var c="";""==ttx_page_url&&(ttx_page_url=document.URL);""==c&&document.referrer&&(c=document.referrer);var a="//adx-exchange.toast.com/a_request";
 a+="?pub_code="+ttx_pub_code+"&area_code="+ttx_ad_area_code+"&pag="+encodeURIComponent(ttx_ad_area_pag);a+="&site_url="+encodeURIComponent("")+"&page_url="+encodeURIComponent(ttx_page_url)+"&refer="+encodeURIComponent(c);a+="&result="+encodeURIComponent(f)+"&bnrs_e="+encodeURIComponent(e("ttx_bnrs_e"))+"&du="+encodeURIComponent(ttx_direct_url);a+="&rndm="+Math.random()+"&cst=";
 document.write("<script type='text/javascript' src='"+a+"' ><\/script>")})();
-</script>
