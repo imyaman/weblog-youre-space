@@ -12,12 +12,12 @@ function checkmobile() {
 }
   var ismobile = checkmobile();
 
-  var fileref=document.createElement('script')
+  var fileref=document.createElement('script');
   fileref.setAttribute('type','text/javascript'); 
   if(ismobile){
-    fileref.setAttribute("src", "/aceexchange-m_write.js")
+    fileref.setAttribute("src", "/aceexchange-m_write.js");
   }else{
-    fileref.setAttribute("src", "/aceexchange-d_write.js")
+    fileref.setAttribute("src", "/aceexchange-d_write.js");
   }
   document.body.appendChild(fileref);
 </script>
