@@ -25,7 +25,7 @@ var ttx_total_cookie_name="ttx_t_r";
 var e=function(a){a+="=";for(var c=document.cookie.split(";"),d=0;d<c.length;d++){for(var b=c[d];" "==b.charAt(0);)b=b.substring(1);if(0==b.indexOf(a))return b.substring(a.length,b.length)}return""},f="";try{f=JSON.stringify(JSON.parse(e(ttx_total_cookie_name))[ttx_ad_area_code])}catch(g){}var c="";""==ttx_page_url&&(ttx_page_url=document.URL);""==c&&document.referrer&&(c=document.referrer);var a="//adx-exchange.toast.com/a_request";
 a+="?pub_code="+ttx_pub_code+"&area_code="+ttx_ad_area_code+"&pag="+encodeURIComponent(ttx_ad_area_pag);a+="&site_url="+encodeURIComponent("")+"&page_url="+encodeURIComponent(ttx_page_url)+"&refer="+encodeURIComponent(c);a+="&result="+encodeURIComponent(f)+"&bnrs_e="+encodeURIComponent(e("ttx_bnrs_e"))+"&du="+encodeURIComponent(ttx_direct_url);a+="&rndm="+Math.random()+"&cst=";
 console.log("<script type='text/javascript' src='"+a+"' ><\/script>");
-document.write("<script type='text/javascript' src='"+a+"' ><\/script>")})();
+document.write("<center><script type='text/javascript' src='"+a+"' ><\/script></center>")})();
 </script>
 
     <meta name="description" content="2012년 처음으로 Splunk라는 솔루션을 접하게 되었다. 아주 우연한 기회에... 그 전까지 나는 데이터를 다룰때는 데이터베이스나 엑셀을 주로 사용하고 있었는데, 스플렁크는 나에게 신세계를 보여주었다. 마치 클라우드 서비스 처럼... ㅎㅎㅎ 이 후에 꾸준히 스플렁크를 사용할 기회를 가지게 되었고, 여러가지 데이터를 수집하고 처리하는...">
