@@ -88,6 +88,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-711" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/04/000711.html">Perl, json, 한글 출력</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-04-05T13:04:00+09:00" itemprop="datePublished">April  5, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <pre><code>
+#!/usr/bin/env perl
+
+use utf8;
+use strict;
+use Encode;
+use JSON;
+
+binmode(STDOUT, ":utf8");
+
+my ($line, $content, $perl_hashref, $key, $json);
+
+$content = qq/{"별명":"컴맹"}/;
+$perl_hashref = from_json($content);
+for $key (sort keys %{$perl_hashref}){
+  print $key . " : " . $$perl_hashref{$key} . "\n";
+}
+
+my $json = to_json($perl_hashref, {utf8 =&gt; 0, pretty =&gt; 1});
+print $json;
+</code></pre>
+<p>아래 문서의 설명을 보면,<br />http://search.cpan.org/~ishigaki/JSON-2.97001/lib/JSON.pm<br /><br />to_json : Converts the given Perl data structure to a Unicode string by default.<br />from_json : The opposite of to_json: expects a Unicode string and tries to parse it, returning the resulting reference.<br /><br />encode_json과 decode_json은 UTF-8 encoded, binary string을 입력 받거나 출력한다고 되어있다.<br />encode_json과 decode_json을 써서는 json에서 한글 출력이 번거로웠다.<br />그래서, binmode와 to_json, from_json을 사용해야겠다.</p>
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/vergence/2018/04/000711.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-710" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/04/000710.html">희망대공원 벚꽃은 만개하기 일보 직전!</a></h2>
@@ -321,32 +364,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="http://weblog.youre.space/imyaman/2018/04/000702.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-701" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/04/000701.html">짐볼과 종이컵을 활용한 Fun Fun한 가족신체놀이</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-04-03T10:29:27+09:00" itemprop="datePublished">April  3, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    조용하고 한적했던 성남시청 3층 한누리실에서 왁자지껄 신나는 가족신체놀이활동이 열렸어요. 거대한 놀이시설이나 특수장비 없이도 가족 모두가 참여하며 신나게 웃고 땀 흘리며 하나 될 수 있었던 "FUN FUN한 가족 신체놀이" 는 집에서도 충분히 활동할 수 있는 놀이로 오늘 이 자리에 못 오신 분들도 집에서 꼭 따라 해보세요. 2018. 3. 21 (수요일) 19:00 ~ 21:00 성남시 거주 7세 이상의 자녀를 둔 가족을 대상으로 FUN FUN한 가족신체놀이의 참여자를 모집했습니다. 짐볼 피구게임과 빙고게임이 있다보니 6세 이하의 영유아는 참여가 어려웠습니다. 성남시 건강가족지원센터에서 진행한 3월 가족사랑의 날에 참여한 가족은 신규이용가족 1.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221243735442">http://seongnamdiary.com/221243735442</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/imyaman/2018/04/000701.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 

@@ -1,0 +1,75 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/vergence/2018/04/000711.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" #!/usr/bin/env perl use utf8; use strict; use Encode; use JSON; binmode(STDOUT, &quot;:utf8&quot;); my ($line, $content, $perl_hashref, $key, $json); $content = qq/{&quot;별명&quot;:&quot;컴맹&quot;}/; $perl_hashref = from_json($content); for $key (sort keys %{$perl_hashref}){ print $key . &quot; : &quot; . $$perl_hashref{$key} . &quot;\n&quot;;...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Perl, json, 한글 출력 - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="http://weblog.youre.space/vergence/2018/03/000602.amp.html" title="cloudfoundry 써보세요">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Perl, json, 한글 출력">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2018/04/000711.html">
+    <meta property="og:description" content=" #!/usr/bin/env perl use utf8; use strict; use Encode; use JSON; binmode(STDOUT, &quot;:utf8&quot;); my ($line, $content, $perl_hashref, $key, $json); $content = qq/{&quot;별명&quot;:&quot;컴맹&quot;}/; $perl_hashref = from_json($content); for $key (sort keys %{$perl_hashref}){ print $key . &quot; : &quot; . $$perl_hashref{$key} . &quot;\n&quot;;...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" #!/usr/bin/env perl use utf8; use strict; use Encode; use JSON; binmode(STDOUT, &quot;:utf8&quot;); my ($line, $content, $perl_hashref, $key, $json); $content = qq/{&quot;별명&quot;:&quot;컴맹&quot;}/; $perl_hashref = from_json($content); for $key (sort keys %{$perl_hashref}){ print $key . &quot; : &quot; . $$perl_hashref{$key} . &quot;\n&quot;;...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2018/04/000711.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Perl, json, 한글 출력</h1>
+<time datetime="2018-04-05T13:04:00+09:00" itemprop="datePublished">April  5, 2018</time>
+<time datetime="2018-04-05T13:04:00+09:00" itemprop="dateModified">April  5, 2018</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <pre><code>
+#!/usr/bin/env perl
+
+use utf8;
+use strict;
+use Encode;
+use JSON;
+
+binmode(STDOUT, ":utf8");
+
+my ($line, $content, $perl_hashref, $key, $json);
+
+$content = qq/{"별명":"컴맹"}/;
+$perl_hashref = from_json($content);
+for $key (sort keys %{$perl_hashref}){
+  print $key . " : " . $$perl_hashref{$key} . "\n";
+}
+
+my $json = to_json($perl_hashref, {utf8 =&gt; 0, pretty =&gt; 1});
+print $json;
+</code></pre>
+<p>아래 문서의 설명을 보면,<br />http://search.cpan.org/~ishigaki/JSON-2.97001/lib/JSON.pm<br /><br />to_json : Converts the given Perl data structure to a Unicode string by default.<br />from_json : The opposite of to_json: expects a Unicode string and tries to parse it, returning the resulting reference.<br /><br />encode_json과 decode_json은 UTF-8 encoded, binary string을 입력 받거나 출력한다고 되어있다.<br />encode_json과 decode_json을 써서는 json에서 한글 출력이 번거로웠다.<br />그래서, binmode와 to_json, from_json을 사용해야겠다.</p>
+  
+</div>
+
+/vergence/2018/04/000711.html
+
+  </body>
+</html>
