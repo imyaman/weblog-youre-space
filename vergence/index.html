@@ -128,7 +128,7 @@ my ($line, $content, $perl_hashref, $key, $json);
 $content = qq/{"별명":"컴맹"}/;
 $perl_hashref = from_json($content);
 for $key (sort keys %{$perl_hashref}){
-  print $key . " : " . $$perl_hashref{$key} . "\n";
+  print $key . " : " . $perl_hashref-&gt;{$key} . "\n";
 }
 
 my $json = to_json($perl_hashref, {utf8 =&gt; 0, pretty =&gt; 1});
