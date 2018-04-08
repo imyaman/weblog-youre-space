@@ -2,7 +2,7 @@
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit...">
+    <meta name="description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } );...">
     <meta name="generator" content="Movable Type 6.3.6">
     <title>Sangyong 1 - imyagirl</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -32,11 +32,11 @@
     <meta property="og:locale" content="en-us">
     <meta property="og:title" content="Sangyong 1">
     <meta property="og:url" content="http://weblog.youre.space/imyagirl/sangyong-1.html">
-    <meta property="og:description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit...">
+    <meta property="og:description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } );...">
     <meta property="og:site_name" content="imyagirl">
     <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
     <!-- Metadata -->
-    <meta itemprop="description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit...">
+    <meta itemprop="description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } );...">
     <link itemprop="url" href="http://weblog.youre.space/imyagirl/sangyong-1.html">
     <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
   </head>
@@ -82,18 +82,19 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" type="text/javascript"></script>
 </p>
 <div class="container">
-
 <h2>Stacked form</h2>
 <div class="form-group"><label for="email">Email:</label> <input class="form-control" id="email" placeholder="Enter email" name="email" type="email" /></div>
 <div class="form-group"><label for="pwd">Password:</label> <input class="form-control" id="pwd" placeholder="Enter password" name="pswd" type="password" /></div>
 <div class="form-check"><label class="form-check-label"> <input class="form-check-input" name="remember" type="checkbox" /> Remember me </label></div>
-<button type="submit" class="btn btn-primary">Submit</button>
+<button id="submitbutton" class="btn btn-primary">Submit</button></div>
 
-</div>
+<script>
+$('#submitbutton').click( function(){  console.log($('#email').val())  } );
+</script>
                   
                 </div>
                 <footer>
-                   <p>Last update: <time itemprop="dateModified" datetime="2018-04-08T17:53:31+09:00">April  8, 2018  5:53 PM</time></p>
+                   <p>Last update: <time itemprop="dateModified" datetime="2018-04-08T18:06:55+09:00">April  8, 2018  6:06 PM</time></p>
                 </footer>
               </section>
             </div>
