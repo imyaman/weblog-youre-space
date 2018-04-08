@@ -2,7 +2,7 @@
 <html lang="en-us" itemscope itemtype="http://schema.org/WebPage">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } );...">
+    <meta name="description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } ); $(document).ready(function() { // Initialize Firebase var config = { apiKey: &quot;AIzaSyCSynwhhtnCvrwupbcAKsE2DI5P6RdW7V8&quot;, authDomain: &quot;imyaman-weblog.firebaseapp.com&quot;, databaseURL: &quot;https://imyaman-weblog.firebaseio.com&quot;, projectId: &quot;imyaman-weblog&quot;, storageBucket: &quot;imyaman-weblog.appspot.com&quot;, messagingSenderId: &quot;140790358458&quot; }; firebase.initializeApp(config); });...">
     <meta name="generator" content="Movable Type 6.3.6">
     <title>Sangyong 1 - imyagirl</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -32,11 +32,11 @@
     <meta property="og:locale" content="en-us">
     <meta property="og:title" content="Sangyong 1">
     <meta property="og:url" content="http://weblog.youre.space/imyagirl/sangyong-1.html">
-    <meta property="og:description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } );...">
+    <meta property="og:description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } ); $(document).ready(function() { // Initialize Firebase var config = { apiKey: &quot;AIzaSyCSynwhhtnCvrwupbcAKsE2DI5P6RdW7V8&quot;, authDomain: &quot;imyaman-weblog.firebaseapp.com&quot;, databaseURL: &quot;https://imyaman-weblog.firebaseio.com&quot;, projectId: &quot;imyaman-weblog&quot;, storageBucket: &quot;imyaman-weblog.appspot.com&quot;, messagingSenderId: &quot;140790358458&quot; }; firebase.initializeApp(config); });...">
     <meta property="og:site_name" content="imyagirl">
     <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
     <!-- Metadata -->
-    <meta itemprop="description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } );...">
+    <meta itemprop="description" content="Bootstrap Example Stacked form Email: Password: Remember me Submit $(&#039;#submitbutton&#039;).click( function(){ console.log($(&#039;#email&#039;).val()) } ); $(document).ready(function() { // Initialize Firebase var config = { apiKey: &quot;AIzaSyCSynwhhtnCvrwupbcAKsE2DI5P6RdW7V8&quot;, authDomain: &quot;imyaman-weblog.firebaseapp.com&quot;, databaseURL: &quot;https://imyaman-weblog.firebaseio.com&quot;, projectId: &quot;imyaman-weblog&quot;, storageBucket: &quot;imyaman-weblog.appspot.com&quot;, messagingSenderId: &quot;140790358458&quot; }; firebase.initializeApp(config); });...">
     <link itemprop="url" href="http://weblog.youre.space/imyagirl/sangyong-1.html">
     <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
   </head>
@@ -87,14 +87,30 @@
 <div class="form-group"><label for="pwd">Password:</label> <input class="form-control" id="pwd" placeholder="Enter password" name="pswd" type="password" /></div>
 <div class="form-check"><label class="form-check-label"> <input class="form-check-input" name="remember" type="checkbox" /> Remember me </label></div>
 <button id="submitbutton" class="btn btn-primary">Submit</button></div>
+<p>
 
-<script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+
+<script type="text/javascript">
 $('#submitbutton').click( function(){  console.log($('#email').val())  } );
+
+$(document).ready(function() {
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCSynwhhtnCvrwupbcAKsE2DI5P6RdW7V8",
+    authDomain: "imyaman-weblog.firebaseapp.com",
+    databaseURL: "https://imyaman-weblog.firebaseio.com",
+    projectId: "imyaman-weblog",
+    storageBucket: "imyaman-weblog.appspot.com",
+    messagingSenderId: "140790358458"
+  };
+  firebase.initializeApp(config);
+});
 </script>
                   
                 </div>
                 <footer>
-                   <p>Last update: <time itemprop="dateModified" datetime="2018-04-08T18:06:55+09:00">April  8, 2018  6:06 PM</time></p>
+                   <p>Last update: <time itemprop="dateModified" datetime="2018-04-08T18:25:59+09:00">April  8, 2018  6:25 PM</time></p>
                 </footer>
               </section>
             </div>
