@@ -1,0 +1,266 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/imyaman/2018/04/000738.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" Firebase Migration to Crashlytics body{ font-family:Roboto, Helvetica Neue, Helvetica, Arial, sans-serif; font-size:12px; color:#000000; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration:...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Itâs time to upgrade GCM to Firebase Cloud Messaging - imyaman</title>
+
+  <link rel="prev" href="http://weblog.youre.space/imyaman/2018/04/000737.amp.html" title="함께 키우는 육아의 중심 성남!! 분당구청 아이사랑놀이터에 다녀왔어요.">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Itâs time to upgrade GCM to Firebase Cloud Messaging">
+    <meta property="og:url" content="http://weblog.youre.space/imyaman/2018/04/000738.html">
+    <meta property="og:description" content=" Firebase Migration to Crashlytics body{ font-family:Roboto, Helvetica Neue, Helvetica, Arial, sans-serif; font-size:12px; color:#000000; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration:...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" Firebase Migration to Crashlytics body{ font-family:Roboto, Helvetica Neue, Helvetica, Arial, sans-serif; font-size:12px; color:#000000; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration:...">
+    <link itemprop="url" href="http://weblog.youre.space/imyaman/2018/04/000738.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Itâs time to upgrade GCM to Firebase Cloud Messaging</h1>
+<time datetime="2018-04-11T08:05:27+09:00" itemprop="datePublished">April 11, 2018</time>
+<time datetime="2018-04-11T08:05:27+09:00" itemprop="dateModified">April 11, 2018</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+                                
+  
+
+
+   
+      Firebase Migration to Crashlytics
+      
+      
+       
+      
+      
+      
+      
+      
+      
+         body{
+         font-family:Roboto, Helvetica Neue, Helvetica, Arial, sans-serif; 
+         font-size:12px; 
+         color:#000000;
+         -webkit-text-size-adjust: none !important;
+         -webkit-font-smoothing: antialiased !important; 
+         -ms-text-size-adjust: none !important;
+         }
+         table, tr, td { 
+         border-collapse:collapse; 
+         mso-table-lspace:0pt; 
+         mso-table-rspace:0pt; 
+         }
+         a:link, a:visited, a:hover, a:active {
+         color: #4285f4;
+         text-decoration: none;
+         }
+         .appleLinks a {color:#000000 !important; text-decoration:none !important;}
+         strong {
+         font-weight: bold !important;
+         }
+         em {
+         font-style: italic !important;
+         }
+         .yshortcuts a span {
+         color: inherit !important;
+         border-bottom: none !important;
+         }
+         html {
+         -webkit-text-size-adjust: none;
+         -ms-text-size-adjust: 100%;
+         }
+         .ReadMsgBody {
+         width: 100%;
+         }
+         .ExternalClass {
+         width: 100%;
+         }
+         .ExternalClass * {
+         line-height: 100%
+         }
+         td {
+         -webkit-text-size-adjust: none;
+         }
+         a[href^=tel] {
+         color: inherit;
+         text-decoration: none;
+         }
+         .mob-hide {
+         display:none !important;  }
+         div, p, a, li, td { -webkit-text-size-adjust:none; }
+         td { text-decoration:none !important; }
+         a[x-apple-data-detectors] {
+         color: inherit !important;
+         text-decoration: none !important;
+         font-size: inherit !important;
+         font-family: inherit !important;
+         font-weight: inherit !important;
+         line-height: inherit !important;
+         }
+         @media all and (max-width: 600px) {
+         .table-main-gmail { /* Forces Gmail to display Desktop view */
+         width: 100% !important;
+         min-width:100% !important;
+         }
+         }
+      
+   
+   
+       
+      <table>
+        <tr>
+          <td>
+            
+            
+            
+              <table>
+               
+               
+                  <tr>
+                     <td>
+                        <table>
+                           
+                           <tr>
+                              <td>
+                                 <table>
+                                    <tr>
+                                       <td>
+                                          <img src="http://gstatic.com/pantheon/images/iam/email/firebase_lockup.png" height="40" alt="Firebase">
+                                       </td>
+                                    </tr>
+                                </table>
+                              </td>
+                           </tr>
+                           
+                           
+                           <tr>
+                              <td>
+                                 <table>
+                                    <tr>
+                                       <td>
+                                          Hi Sangyong,
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          In 2016, <a href="https://www.google.com/appserve/mkt/p/AFIPhzW_t8J9vAozDojycLNgqQb3WXTHQWua7OQYvaBJbWBeyr-7CSSOoguqA7i0ENVBCcsjipJ2A-W-Sejm_h91zG-4WVGGelpjy3g64fUPH7M_jiK3Yqc2msJxUp5oFEDP8DnVxdn5yvAY9GRaW-abTOVBQ_EbC9nwPaTFE3LFNEMuCMUjidRpMHAht-sLuVgGdyV1SE3p-7xaj0Lv0DOVPMEcgn6Y8IFwsbVE2gePmfbzqaW-TH0HTN9cE3OxIKfj">we launched Firebase Cloud Messaging</a> (FCM), the successor to Google Cloud Messaging (GCM). As the next evolution of GCM, Firebase Cloud Messaging allows you to send notifications and data messages reliably to iOS, Android, and the Web at no cost. In addition, FCM provides you with new features like the easy-to-use notifications interface in the Firebase console, so you can easily target and test notifications to re-engage your users.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                         <strong>In order to devote more time and attention to improving FCM, today we’re announcing that you must upgrade to FCM in the next year. The GCM server and client APIs are deprecated and will be removed as soon as April 11, 2019.  We recommend you upgrade sooner rather than later so you can start taking advantage of the new features in FCM today.</strong>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                         If you have projects that are still using the GCM APIs, you will need to update your client and server code to use FCM before April 11, 2019. Your existing GCM tokens will continue to work with FCM so you won’t lose the ability to send to your existing users.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                         What do I need to do?
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                         You’ll find a complete walkthrough of the FCM upgrade process <a href="https://www.google.com/appserve/mkt/p/AFIPhzUNA39xKUoRgkGsn4pR0rzdyCNAh7S_shkEjD1rQKmyP99AXg3WOH7BOlKpKFJb9VFp_wvHX6KoNsSq5d0x8a5XCfskOiUVMPPTU-sn95YLc0vW339I6_gWjNfB2FcEl8A3axI4EYsrNv3EZkbAEYfY3Dr0T4Q8K3PzYckUdxB0UYaNKA9qKDTbEqi2hOyW_lZyoJ56dUQ">here</a>. You can also check out <a href="https://www.google.com/appserve/mkt/p/AFIPhzWopS_nECDjVQdnixhBTGTbE8ptXi202L1raAtGnwGuo719zxVXg-ctN-Hb5V-VDzu4IcIwi2TQCrANMqRdcI-EWnj4SxGVzoIgkt1xIRQjufm76mX4UjabveX5iX673JQWkGNP3N_5tfgrqtEhu7U">this video</a>, which walks through the migration process. 
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                         If you have questions that aren’t answered in the deprecation documentation, take a look at the <a href="https://www.google.com/appserve/mkt/p/AFIPhzUHBpD2AZBdsiY6UwVlv35Yjzt2dbuZ5bjfVlzNdPXQpm5zTaIJtaRps2BWZDpTDjkYph5oRfrHc6x5CzHCuhHaeCCtVQB6k1nJpFkk2ODq1KdgKrcTmmx3GmmsffpcP6B0wc8HEjjLMuq8p5x5AknEjVfONIwo3pvljmXeJ4URi6s8aLUJDUuApD1Yv1mK">Cloud Messaging FAQs</a> on our support page or reach out to us through one of our <a href="https://www.google.com/appserve/mkt/p/AFIPhzUjFOvn5A6QBClp4Pd3WTpnx40pAwNxC0XHdATwxAJFB_k3WqUK79JjYCQzBNPoleF-ErI13iOqO1P0qUmzkC_-IMPrGSDj0kSEUVzzspEm1QYGoq0ShskMmpiG5h3Y4EV-LWEwUF7wKNr4y6TnwvvdqQU62zmM6-rRKG_gC-kiF0pdbg">other support channels</a>.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                         We look forward to welcoming you to FCM!
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>      
+                           <tr>
+                              <td>
+                                 <table>
+                                    <tr>
+                                      <td>
+                                          Thanks,
+                                       </td>
+                                    </tr>
+                                    <tr>   
+                                       <td>
+                                          Firebase Team
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           
+                                   
+                           <tr>
+                              <td>
+                                 <table>
+                                    <tr>
+                                       <td>
+                                          You have received this mandatory service announcement to update you about important changes to Firebase or your account.
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                              <table>
+                                 <tr>
+                                    <td>
+                                       <img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png" height="24" width="70" alt="Google">
+                                    </td>
+                                    <td>
+                                          <a href="#">Google LLC<br />1600 Amphitheatre Parkway,<br />Mountain View, CA 94043 USA</a>
+                          </td>
+                                 </tr>
+                              </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+                       
+               </td>
+               </tr>
+            </table>
+   <img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AFIPhzXPrqC5WHyYvNuCW1EnmWewHC1Id0DAlSG7mtaI_bKNaA.gif">
+
+
+
+  
+</div>
+
+/imyaman/2018/04/000738.html
+
+  </body>
+</html>
