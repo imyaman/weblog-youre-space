@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="동기 시작은 popit 아티클 어느날 popit에 sonarqube를 이용한 코드 자동리뷰 아티클이 올라왔습니다. http://www.popit.kr/내코드를-자동으로-리뷰해준다면-by-sonarqube/ 조직장(요다 )이 이것을 팀 내에 적용해보자고 해서 (이미 저희 팀은 sonarqube로 정적분석을 하고 있습니다.) 적용을 시작합니다. 생각보다 적용이 쉽지 않으며, 설정 포인트도 많습니다. 물론 한 번 힘들게...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>IntelliJ SonarLint Plugin - redutan</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://weblog.youre.space/redutan/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://weblog.youre.space/redutan/styles_ie.css">
+    <script src="http://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="http://weblog.youre.space/redutan/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/redutan/atom.xml" />
+    <link rel="canonical" href="http://weblog.youre.space/redutan/2018/04/000743.html" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <link rel="prev" href="http://weblog.youre.space/redutan/2018/02/000544.html" title="클린소프트웨어 Part 6. ETS 사례 연구">
+    
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="IntelliJ SonarLint Plugin">
+    <meta property="og:url" content="http://weblog.youre.space/redutan/2018/04/000743.html">
+    <meta property="og:description" content="동기 시작은 popit 아티클 어느날 popit에 sonarqube를 이용한 코드 자동리뷰 아티클이 올라왔습니다. http://www.popit.kr/내코드를-자동으로-리뷰해준다면-by-sonarqube/ 조직장(요다 )이 이것을 팀 내에 적용해보자고 해서 (이미 저희 팀은 sonarqube로 정적분석을 하고 있습니다.) 적용을 시작합니다. 생각보다 적용이 쉽지 않으며, 설정 포인트도 많습니다. 물론 한 번 힘들게...">
+    <meta property="og:site_name" content="redutan">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    <!-- Metadata -->
+    <meta itemprop="description" content="동기 시작은 popit 아티클 어느날 popit에 sonarqube를 이용한 코드 자동리뷰 아티클이 올라왔습니다. http://www.popit.kr/내코드를-자동으로-리뷰해준다면-by-sonarqube/ 조직장(요다 )이 이것을 팀 내에 적용해보자고 해서 (이미 저희 팀은 sonarqube로 정적분석을 하고 있습니다.) 적용을 시작합니다. 생각보다 적용이 쉽지 않으며, 설정 포인트도 많습니다. 물론 한 번 힘들게...">
+    <link itemprop="url" href="http://weblog.youre.space/redutan/2018/04/000743.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="http://weblog.youre.space/redutan/">
+
+                  redutan
+
+                </a>
+              </h1>
+              
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/redutan/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/redutan/">Home</a></li>
+              <li class="breadcrumb-list-item">IntelliJ SonarLint Plugin</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-743" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">IntelliJ SonarLint Plugin</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2018-04-11T16:10:29+09:00" itemprop="datePublished">April 11, 2018</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  동기
+
+시작은 popit 아티클
+
+어느날 popit에 sonarqube를 이용한 코드 자동리뷰 아티클이 올라왔습니다.
+
+http://www.popit.kr/내코드를-자동으로-리뷰해준다면-by-sonarqube/
+
+조직장(요다 )이 이것을 팀 내에 적용해보자고 해서 (이미 저희 팀은 sonarqube로 정적분석을 하고 있습니다.) 적용을 시작합니다.
+
+생각보다 적용이 쉽지 않으며, 설정 포인트도 많습니다. 물론 한 번 힘들게 설정하면 그 이후에는 자동화되기 때문에 tradeoff 할 만 하지요. 적용할 프로젝트 수 자체가 많으면 초기 설정이 조금 힘들 순 있습니다. - 하지만 단순 반복 작업이기 때문에 복사하기-붙여넣기 를 잘하면 되긴 합니다. -
+
+하지만 코드를 작성하고, 커밋하고, 푸시하고, PullRequest를 올려야지 정적분석 피드백을 받을 수 있습니다. 즉, 코드 작성 시와 정적분석 피드백 시 사이의 시간 차가 너무 큽니다.
+
+그래서 코드를 작성과 가능한 가까운 시간에 바로 피드백 을 받는 것이 더 좋지 않을까 하는 생각이 들었습니다.
+
+대안 : SonarLint
+
+그러던 중 팀원 콤틴 이 IDEA plugin인 SonarLint 를 사용하는 것을 추천하였습니다.
+
+팀 내에서 IntelliJ IDEA를 사용하고 있었고, 확실히 합리적인 선택이 될 것 같았습니다.
+
+SonarLint 적용
+
+Install
+
+preference > plugins
+
+SonarLint 검색
+
+결과창 내 Search in repositories 링크 선택 or 하딘 Browse repositories... 버튼 선택
+
+Install and Restart IntelliJ IDEA
+
+Staring과 다운로드 갯수가 많고, 최근 업데이트도 지속되고 있는 것 같아서 믿을만한 플러그인 같습니다
+
+Install 확인
+
+Configuration
+
+기본적인 설정만으로도 충분히 사용할 수 있으며 sonarqube 서버가 없어도 사용에 문제가 없습니다.
+
+SonarQube 서버 연동
+
+서버 연동을 하게 되면 더 다양한 분석룰을 팀 내 전반적으로 일관성 있게 관리할 수 있습니다.
+
+preference > Other Settings > SoanrLint General Settings
+
+Automatically trigger analysis 체크하는 것을 추천
+
+또는 해제하고 commit 시에만 분석하는것도 좋음
+
+위 화면을 통해서 적절하게 설정하면 됨
+
+SoanrLint Project Settings 를 통한 설정도 가능
+
+Commit 시 분석 추가
+
+커밋(Cmd + K ) 창에서
+
+Perform SonarLint analysis 를 선택 (기본으로 체크되어 있음)
+
+개인적으로 추천 commit 할 때마다 분석이 됨
+
+Usage
+
+현재 파일 분석
+
+mac : Cmd + Opt + S
+
+or
+
+그 외 가능한 사용법
+
+전체 파일 분석 : Analyze All Files with SonarLint
+
+VCS(ex: git)상 변경된 분석 검사 : Analyze VCS Changed Files with SonarLint
+
+*Cmd + Opt + A , SonarLint 로 검색한 액션들
+
+Analyze Example
+
+public class AccountRestController {
+
+...
+
+@PostMapping
+
+public ResponseEntity 
+
+IntelliJ SonarLint Plugin was originally published by MJ at DevOOOOOOOOP on April 11, 2018.
+
+source : http://redutan.github.io/2018/04/11/intellij-sonarlint-plugin<br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/nXidW
+
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/redutan/2018/02/000544.html" title="클린소프트웨어 Part 6. ETS 사례 연구">Previous entry</a></li>
+
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/299</p>
+  
+  
+</aside>
+
+
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="17">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="http://weblog.youre.space/redutan/2018/04/">April 2018</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/redutan/2018/02/">February 2018</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="http://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://weblog.youre.space/redutan/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/redutan/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2018.</p>
+  <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
+</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="http://weblog.youre.space/redutan/mt-theme-scale2.js"></script>
+  </body>
+</html>
