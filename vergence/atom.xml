@@ -4,9 +4,30 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2018-04-12T01:18:42Z</updated>
+    <updated>2018-04-12T01:40:12Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>해외 유명 기업에게 거액에 판매된 기업</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/04/000748.html" />
+    <id>tag:weblog.youre.space,2018:/vergence//11.748</id>
+
+    <published>2018-04-12T01:38:25Z</published>
+    <updated>2018-04-12T01:40:12Z</updated>
+
+    <summary>어느 기업이 해외 유명 기업에게 거액에 판매된다는 소식에, 그와 관련된 글이 타임라인에 안 보이게 할 수 있는지 찾고 있는 나는...그 기업에게는 축하할 일이겠으나, 그 기업이 동시대 사람들의 삶을 바꾸었나 생각해보면 모르겠다는 거. 음식점 전단지 없어지게 한 배달 머기시나, 송금 편하게...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>어느 기업이 해외 유명 기업에게 거액에 판매된다는 소식에, 그와 관련된 글이 타임라인에 안 보이게 할 수 있는지 찾고 있는 나는...<br />그 기업에게는 축하할 일이겠으나, 그 기업이 동시대 사람들의 삶을 바꾸었나 생각해보면 모르겠다는 거. 음식점 전단지 없어지게 한 배달 머기시나, 송금 편하게 만든 머시기나, 지하철에 무가지 사라지게 한 스마트폰이랑 비교하자면.<br />그런 관점에서, 다른 대기업이 사업 잘 되서 돈 벌었다 수준의 뉴스 같은 느낌.<br />그 일을 그 회사가 했어도 되고, 안 했어도 문제 없고, 다른 회사가 했어도 별 관심 없는.<br /><br />풍마우불상급 <span class="st">風馬牛不相及</span> 놓아먹이는 말과 소가 서로 미치지 않는다</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>일 잘 하려면 직접 해라</title>
@@ -390,33 +411,6 @@ https://dev.office.com/fabric-js/GetStarted/GetStarted.html
         <![CDATA[<p><input style="text-align: right; padding-right: 32px;" type="number" /></p>
 <pre><code>input style="text-align: right; padding-right: 32px;" type="number" </code></pre>
 <p>I think buttons(up and down) inside an input element are not contents of the input element, and padding-right has not to affect the buttons.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Azure App Service 무료로 쓸 때 주의사항</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/10/000429.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.429</id>
-
-    <published>2017-10-31T14:23:31Z</published>
-    <updated>2017-10-31T22:52:52Z</updated>
-
-    <summary>Location은 West US 2, East Asia, Japan West 중에서 선택하자. pic.twitter.com/NZtbKaTtEk -- Sangyong Gwak (@unixware213) October 31, 2017...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>Location은 West US 2, East Asia, Japan West 중에서 선택하자.</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p dir="ltr" lang="und"><a href="https://t.co/NZtbKaTtEk">pic.twitter.com/NZtbKaTtEk</a></p>
--- Sangyong Gwak (@unixware213) <a href="https://twitter.com/unixware213/status/925368794775666689?ref_src=twsrc%5Etfw">October 31, 2017</a></blockquote>
-<p>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8" type="text/javascript"></script>
-</p>]]>
         
     </content>
 </entry>
