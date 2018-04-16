@@ -76,6 +76,33 @@
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-754" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/04/000754.html">Windows 10 업데이트 할 때 디스크 용량 부족</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-04-16T10:28:23+09:00" itemprop="datePublished">April 16, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>Windows 10 업데이트 할 때 디스크 용량 부족하다고 진행이 안 되는 경우가 있습니다. USB 디스크 연결하면 해결 할 수 있긴 한데, 태블릿 같은 경우는 USB 디스크 연결이 어려울 때가 있습니다. 태블릿에 USB 디스크 연결하기는 어렵고 SD 카드만 가용할 때 해결 방법 설명합니다.</p>
+<p>junction.exe 또는 junction64.exe 파일을 인터넷에서 찾아 다운로드 받습니다. Windows 10 업그레이드에 C:\Windows\SoftwareDistribution 디렉토리를 사용하는데, 이 디렉토리를 SD 카드의 D: 드라이브로 옮기고 C:\Windows\SoftwareDistribution에 연결할 겁니다. 연결을 만들 때 juncion.exe 파일을 이용할 겁니다.</p>
+<p>Administrator 권한으로 CMD를 열고 아래 명령을 이용합니다.</p>
+<pre><code>net stop wuauserv<br />cd C:\Windows<br />xcopy C:\Windows\SoftwareDistribution D:\Windows\SoftwareDistribution /E /H /X /K     <br />; 위 명령에 이어 D라고 대답합니다.<br /><br />rename SoftwareDistribution SoftwareDistribution.del<br />del /s /q SoftwareDistribution.del<br />junction C:\Windows\SoftwareDistribution "D:\Windows\SoftwareDistribution"<br /><br />net start wuauserv</code></pre>
+<p>이렇게 하고 C:\Windows 디렉토리에서 SoftwareDistribution 아이콘을 보면, 아이콘 위에 바로가기 화살표가 있을 겁니다. 이제 업데이트를 시작하면 됩니다.</p>
+<p>keywords : Microsoft, Windows 10, 윈도, 윈도우즈, Upgrade, Update</p>
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/vergence/2018/04/000754.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-747" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/04/000747.html">일 잘 하려면 직접 해라</a></h2>
@@ -308,31 +335,6 @@ print $json;
   </div>
   <div class="entry-more-link">
     <a href="http://weblog.youre.space/vergence/2017/12/000513.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-511" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2017/12/000511.html">Perl로 국기 출력하기</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2017-12-04T20:19:35+09:00" itemprop="datePublished">December  4, 2017</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <div><div>Emoji::NationalFlag - 2017-12-02<br /></div><div><br /></div><div>한 줄 요약 :&nbsp;use utf8; print "\N{REGIONAL INDICATOR SYMBOL LETTER U}"; print "\N{REGIONAL INDICATOR SYMBOL LETTER S}"; 또는&nbsp;Emoji::NationalFlag 모듈 이용</div><div><br /></div><div>출처 :&nbsp;<a href="http://perladvent.org/2017/2017-12-02.html">http://perladvent.org/2017/2017-12-02.html</a></div></div>
-
-
-
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2017/12/000511.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
