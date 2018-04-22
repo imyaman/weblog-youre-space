@@ -88,6 +88,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-764" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/04/000764.html">jolla-xt9 rpm</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-04-22T22:47:21+09:00" itemprop="datePublished">April 22, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>jolla-xt9 rpm download here</p>
+<p><a target="_blank" href="https://drive.google.com/file/d/0B8M6cYC-SdW-amdCSllnSUhDd1E/view?usp=sharing">jolla-xt9-0.5.7-10.6.1.jolla.armv7hl.rpm</a></p>
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/vergence/2018/04/000764.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-763" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/04/000763.html">Leo Buscaglia</a></h2>
@@ -417,33 +440,6 @@ Terms of Service</a>.
   </div>
   <div class="entry-more-link">
     <a href="http://weblog.youre.space/imyaman/2018/04/000755.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-754" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/04/000754.html">Windows 10 업데이트 할 때 디스크 용량 부족</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-04-16T10:28:23+09:00" itemprop="datePublished">April 16, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Windows 10 업데이트 할 때 디스크 용량 부족하다고 진행이 안 되는 경우가 있습니다. USB 디스크 연결하면 해결 할 수 있긴 한데, 태블릿 같은 경우는 USB 디스크 연결이 어려울 때가 있습니다. 태블릿에 USB 디스크 연결하기는 어렵고 SD 카드만 가용할 때 해결 방법 설명합니다.</p>
-<p>junction.exe 또는 junction64.exe 파일을 인터넷에서 찾아 다운로드 받습니다. Windows 10 업그레이드에 C:\Windows\SoftwareDistribution 디렉토리를 사용하는데, 이 디렉토리를 SD 카드의 D: 드라이브로 옮기고 C:\Windows\SoftwareDistribution에 연결할 겁니다. 연결을 만들 때 juncion.exe 파일을 이용할 겁니다.</p>
-<p>Administrator 권한으로 CMD를 열고 아래 명령을 이용합니다.</p>
-<pre><code>net stop wuauserv<br />cd C:\Windows<br />xcopy C:\Windows\SoftwareDistribution D:\Windows\SoftwareDistribution /E /H /X /K     <br />; 위 명령에 이어 D라고 대답합니다.<br /><br />rename SoftwareDistribution SoftwareDistribution.del<br />del /s /q SoftwareDistribution.del<br />junction C:\Windows\SoftwareDistribution "D:\Windows\SoftwareDistribution"<br /><br />net start wuauserv</code></pre>
-<p>이렇게 하고 C:\Windows 디렉토리에서 SoftwareDistribution 아이콘을 보면, 아이콘 위에 바로가기 화살표가 있을 겁니다. 이제 업데이트를 시작하면 됩니다.</p>
-<p>keywords : Microsoft, Windows 10, 윈도, 윈도우즈, Upgrade, Update</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/04/000754.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
