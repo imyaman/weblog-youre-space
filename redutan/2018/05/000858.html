@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="실제 요구(도메인)가 아키텍처 스타일과 패턴의 사용을 유도해야 한다. 도메인이 기술 보다 먼저다. 성공한 CIO와의 인터뷰 Server-Client Architecture 계층형 아키텍처 DIP, QP, PSA, DDD-Lite 헥사고날 아키텍처 To Mobile, Cloud CQRS Materialized Views Event-Driven Architecture Pipeline + Filter Saga 패턴 Long-lived transaction...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>IDDD 4ì¥. ìí¤íì² - redutan</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://weblog.youre.space/redutan/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://weblog.youre.space/redutan/styles_ie.css">
+    <script src="http://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="http://weblog.youre.space/redutan/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/redutan/atom.xml" />
+    <link rel="canonical" href="http://weblog.youre.space/redutan/2018/05/000858.html" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <link rel="prev" href="http://weblog.youre.space/redutan/2018/05/000847.html" title="IDDD 3장. 컨텍스트 맵">
+    
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="IDDD 4ì¥. ìí¤íì²">
+    <meta property="og:url" content="http://weblog.youre.space/redutan/2018/05/000858.html">
+    <meta property="og:description" content="실제 요구(도메인)가 아키텍처 스타일과 패턴의 사용을 유도해야 한다. 도메인이 기술 보다 먼저다. 성공한 CIO와의 인터뷰 Server-Client Architecture 계층형 아키텍처 DIP, QP, PSA, DDD-Lite 헥사고날 아키텍처 To Mobile, Cloud CQRS Materialized Views Event-Driven Architecture Pipeline + Filter Saga 패턴 Long-lived transaction...">
+    <meta property="og:site_name" content="redutan">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    <!-- Metadata -->
+    <meta itemprop="description" content="실제 요구(도메인)가 아키텍처 스타일과 패턴의 사용을 유도해야 한다. 도메인이 기술 보다 먼저다. 성공한 CIO와의 인터뷰 Server-Client Architecture 계층형 아키텍처 DIP, QP, PSA, DDD-Lite 헥사고날 아키텍처 To Mobile, Cloud CQRS Materialized Views Event-Driven Architecture Pipeline + Filter Saga 패턴 Long-lived transaction...">
+    <link itemprop="url" href="http://weblog.youre.space/redutan/2018/05/000858.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="http://weblog.youre.space/redutan/">
+
+                  redutan
+
+                </a>
+              </h1>
+              
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/redutan/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/redutan/">Home</a></li>
+              <li class="breadcrumb-list-item">IDDD 4ì¥. ìí¤íì²</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-858" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">IDDD 4ì¥. ìí¤íì²</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2018-05-10T19:08:23+09:00" itemprop="datePublished">May 10, 2018</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>실제 요구(도메인)가 아키텍처 스타일과 패턴의 사용을 유도해야 한다.</p>
+
+<p>도메인이 기술 보다 먼저다.</p>
+
+<p>성공한 CIO와의 인터뷰</p>
+
+<p>Server-Client Architecture</p>
+
+<p>계층형 아키텍처</p>
+
+<p>DIP, QP, PSA, DDD-Lite</p>
+
+<p>헥사고날 아키텍처</p>
+
+<p>To Mobile, Cloud</p>
+
+<p>CQRS</p>
+
+<p>Materialized Views</p>
+
+<p>Event-Driven Architecture</p>
+
+<p>Pipeline + Filter</p>
+
+<p>Saga 패턴</p>
+
+<p>Long-lived transaction as a sequence of subtransactions.</p>
+
+<p>In a distributed system</p>
+
+<p>이벤트 소싱</p>
+
+<p>모든 변경을 추적 (ex: 보안 감사 등)</p>
+
+<p>이러한 아키텍처 덕분에 결국 회사에 돈이 된다</p>
+
+<p>계층</p>
+
+<p>그림 4.1 DDD가 적용된 전통적인 계층 아키텍처</p>
+
+<p>[출처] https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/</p>
+
+<p>도메인 모델과 비즈니스 로직을 도메인 계층에 격리</p>
+
+<p>하위 계층에만 의존 - 아래에서 위쪽으로 직접 참조 불가 (하지만 Observer 사용 가능)</p>
+
+<p>느슨한 연결 : UI가 애플리케이션(바로 하위) 뿐만 아니라 도메인이나 인프라에도 의존 가능</p>
+
+<p>UI 계층</p>
+
+<p>View나 API 제공</p>
+
+<p>도메인 모델이 아닌 표현 모델(DTO)를 사용 추천</p>
+
+<p>애플리케이션 계층</p>
+
+<p>UI로 부터 매개변수를 받아 리파지토리를 사용해 애그리게잇을 획득하고, 커맨드를 위임</p>
+
+<p>보안과 트랜젝션 담당 (일반적으로 보안을 UI로 올리는 것 같음)</p>
+
+<p>도메인 로직 없으며 도메인 모델(애그리게잇, 도메인 서비스 등)에 위임</p>
+
+<p>도메인 모델에서 발행한 도메인 이벤트를 구독(subscribe)</p>
+
+<p>@Transactionl</p>
+
+<p>void commitBackLogItemToSpring (</p>
+
+<p>String aTanantId , String aBackLogItemId , String aSprintId ) {</p>
+
+<p>// 재료(Aggregate) 준비</p>
+
+<p>BacklogItem backlogItem =</p>
+
+<p>backlogItemRepository . backlogItemOfId ( aTanantId , aBacklogItemId );</p>
+
+<p>Sprint sprint sprintRepository . sprintOfId ( aSprintId );</p>
+
+<p>// 커맨드 위임</p>
+
+<p>backlogItem . commitTo ( sprint );</p>
+
+<p>}</p>
+
+<p>DIP</p>
+
+<p>상위 수준의 모듈은 하위 수준 모듈에 의존해선 안된다. 둘 모두는 반드시 추상화에 의존해야 한다.</p>
+
+<p>추상화는 세부사항에 의존해선 안 된다. 세부사항은 추상화에 의존해야 한다.</p>
+
+<p>하위 구현 컴포넌트가 상위 콤포넌트가 정의한 인터페이스에 의존해야한다.</p>
+
+<p>어라 그러다 보니 계층이 없어진다. 여기에 대칭성을 더하면 어떻게 될까?</p>
+
+<p>헥사고날 또는 포트와 어댑터</p>
+
+<p>헥사고날 아키텍처</p>
+
+<p>[출처] http://alistair.cockburn.us/Hexagonal+architecture</p>
+
+<p>Texi handling Hexagonal Architecture</p>
+
+<p>[출처] https://github.com/seongminwoo/study/blob/master/7-part_series_about_microservices.md</p>
+
+<p>헥사고날의 장점</p>
+
+<p>기능적 요구사항에 따라 애플리케이션 내부를 설계</p>
+
+<p>UI, Infra는 그 다음이다.</p>
+
+<p>애플리케이션 내부가 캡슐화 된다.</p>
+
+<p>Adapter를 통해 기술과 분리</p>
+
+<p>서비스 지향(SOA)</p>
+
+<p>중요한 것은 기술 보다 비즈니스(도메인) 가치가 우선해야 한다</p>
+
+<p>REST: 표현 상태 전송</p>
+
+<p>[출처] https://martinfowler.com/articles/richardsonMaturityModel.html</p>
+
+<p>RESTful HTTP 서버의 주요 특징</p>
+
+<p>Resource : URI</p>
+
+<p>Verbs : GET, POST, PUT, DELETE, …</p>
+
+<p>Hypermedia : 연결된 리소스를 제공. 상호작용, 클라이언트 무상태</p>
+
+<p>RESTful HTTP 클라이언트의 주요 특징</p>
+
+<p>Hypermedia를 바탕으로 상호 작용한다.</p>
+
+<p>REST와 DDD</p>
+
+<p>도메인 모델을 RESTful로 바로 노출하는 것은 좋지 않다.</p>
+
+<p>도메인 모델의 변경이 API와 연결되기 때문에 변경에 취약해지며, 클라이언트와 호환성이 깨진다.</p>
+
+<p>해결책</p>
+
+<p>도메인 모델 -> 표현 모델을 조립 (추천)</p>
+
+<p>Assembler + DTO (PoEAA)</p>
+
+<p>각 상황 별 공유 도메인 모델 사용</p>
+
+<p>공유커널</p>
+
+<p>왜 REST인가</p>
+
+<p>느슨함</p>
+
+<p>CQRS</p>
+
+<p>사용자가 필요로하는 데이터 뷰를 리파지토리로 쿼리하기란 어려울 수 있다.</p>
+
+<p>CQRS = 객체 설계 원칙 + CQS</p>
+
+<p>Command : 객체의 상태를 수정, Void 형</p>
+
+<p>Query : 값을 반환, 수정 X</p>
+
+<p>구현</p>
+
+<p>애그리게잇은 오직 커맨드 메소드만 가지고 있음.(커맨드 모델)</p>
+
+<p>쿼리를 위한 뷰 전용 모델(쿼리 모델)을 생성</p>
+
+<p>CQRS의 영역 살펴보기</p>
+
+<p>출처 : https://docs.microsoft.com/ko-kr/azure/architecture/guide/architecture-styles/cqrs</p>
+
+<p>참고 : https://docs.microsoft.com/ko-kr/azure/architecture/patterns/cqrs</p>
+
+<p>클라이언트와 쿼리 처리기</p>
+
+<p>쿼리 모델(읽기 모델)</p>
+
+<p>필요한 수 만큼 뷰를 지원하기</p>
+
+<p>실용적으로 하라</p>
+
+<p>데이터베이스 테이블 뷰가 오버헤드의 원인이 되지 않을까?</p>
+
+<p>클라이언트가 커맨트 처리를 주도한다.</p>
+
+<p>UI to Argument</p>
+
+<p>커맨드 처리기</p>
+
+<p>카테고리 스타일 : 1 class n methods</p>
+
+<p>전용 스타일 : 1 class 1 method</p>
+
+<p>커맨드 모델(쓰기 모델)은 행동을 수행한다.</p>
+
+<p>public void commitTo ( Sprint aSprint ) {</p>
+
+<p>...</p>
+
+<p>DomainEventPublisher</p>
+
+<p>. instance ()</p>
+
+<p>. publish ( new BacklogItemCommitted (</p>
+
+<p>this . tenant (),</p>
+
+<p>this . backlogItemId (),</p>
+
+<p>this . sprintId ()</p>
+
+<p>));</p>
+
+<p>}</p>
+
+<p>어떤 경우든 쿼리 모델을 업데이트시키기 위해선 도메인 이벤트를 게시해야 한다.</p>
+
+<p>이벤트 구독자가 쿼리 모델을 업데이트 한다.</p>
+
+<p>동기도 가능하고 비동기 도 가능하다.</p>
+
+<p>결국은 일관성이 유지되는 쿼리 모델 다루기</p>
+
+<p>Eventually consistent</p>
+
+<p>지연되는 뷰 데이터 동기화를 해결해야한다.</p>
+
+<p>낙관적 업데이트 기법!</p>
+
+<p>클라이언트에서 publish/subscribe 기법</p>
+
+<p>결국은 동기화되는 지연시간이 문제</p>
+
+<p>이벤트 주도 아키텍처(EDA)</p>
+
+<p>이벤트의 생산, 감지, 소비와 이벤트에 따른 응답 등을 촉진하는 소프트웨어 아키텍처</p>
+
+<p>From 도메인 이벤트</p>
+
+<p>파이프와 필터</p>
+
+<p>$ cat phone_number.txt | grep 303 | wc -1</p>
+
+<p>Spring Cloud Data Flow</p>
+
+<p>그림 4.8 필터를 처리하는 이벤트를 보냄으로써 파이프라인이 만들어진다.</p>
+
+<p>[출처] http://zhangyi.farbox.com/post/coding/understand-scala-stack</p>
+
+<p>이는 가상의 예제이자 개념적 부분을 강조했을 뿐이다. 실제 엔터프라이즈에선 큰 문제를 좀 더 작은 단계로 나누기 위해 이 패턴을 사용하며, 좀 더 쉽게 분산 처리를 이해하고 관리하도록 해준다.</p>
+
+<p>또한 여러 시스템이 오직 자신이 할 일(도메인)만을 걱정하게 되게 해주기도 한다.</p>
+
+<p>장기 실행 프로세스</p>
+
+<p>컴포지트</p>
+
+<p>애그리게잇 집합</p>
+
+<p>이벤트</p>
+
+<p>역시나 중요한 것은 결과적 일관성 (Eventual Consistency)</p>
+
+<p>Saga Pattern</p>
+
+<p>Events/Choreography</p>
+
+<p>Rollback</p>
+
+<p>referecne : https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/</p>
+
+<p>이벤트 소싱</p>
+
+<p>거의 완벽한 수준의 변경 추적</p>
+
+<p>[출처] https://docs.microsoft.com/ko-kr/azure/architecture/patterns/event-sourcing</p>
+
+<p>Replay : 이벤트소싱에서 이벤트를 되감아서 특정 버전 상태로 되돌리는 것</p>
+
+<p>하지만 최신 버전 Replay는 병목의 원인</p>
+
+<p>이를 해결하기 위해서 최신 버전의 상태를 Snapshot 으로 지정해서 최적화</p>
+
+<p>데이터 패브릭과 그리드 기반 분산 컴퓨팅</p>
+
+<p>분산 캐시</p>
+
+<p>ex) hazelcast</p>
+
+<p>데이터 복제</p>
+
+<p>캐시 master/slave</p>
+
+<p>복제를 통한 장애 극복</p>
+
+<p>이벤트 유실 제거 (이벤트 publish/subscribe도 가능)</p>
+
+<p>이벤트 주도 패브릭과 도메인 이벤트</p>
+
+<p>For Domain Event</p>
+
+<p>지속적 쿼리</p>
+
+<p>For CQRS</p>
+
+<p>분산 처리</p>
+
+<p>For Saga 또는 배치 병렬 처리</p>
+
+<p>마무리</p>
+
+<p>Layerd Architecture > DIP > Hexagonal Architecture</p>
+
+<p>SOA, REST, 분산 컴퓨팅</p>
+
+<p>CQRS, Event Sourcing, pipe/filter, Saga</p>
+
+<p>IDDD 4장. 아키텍처 was originally published by MJ at DevOOOOOOOOP on May 08, 2018.</p>
+
+<p>source : http://redutan.github.io/2018/05/08/IDDD-chapter04</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/nXidW</p>
+
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/redutan/2018/05/000847.html" title="IDDD 3장. 컨텍스트 맵">Previous entry</a></li>
+
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/309</p>
+  
+  
+</aside>
+
+
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="17">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="http://weblog.youre.space/redutan/2018/05/">May 2018</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/redutan/2018/04/">April 2018</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/redutan/2018/02/">February 2018</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="http://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://weblog.youre.space/redutan/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/redutan/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2018.</p>
+  <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
+</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="http://weblog.youre.space/redutan/mt-theme-scale2.js"></script>
+  </body>
+</html>
