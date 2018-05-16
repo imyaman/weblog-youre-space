@@ -4,9 +4,37 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2018-05-10T10:08:40Z</updated>
+    <updated>2018-05-16T10:06:28Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>에스토니아 개인 소득 500 이하</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/05/000877.html" />
+    <id>tag:weblog.youre.space,2018:/vergence//11.877</id>
+
+    <published>2018-05-16T10:06:03Z</published>
+    <updated>2018-05-16T10:06:28Z</updated>
+
+    <summary>에스토니아는 개인소득이 500Euro 이하면 개인 세금이 없다는군요. 470Euro를 배당금으로 받는 것과 급여로 받는걸 비교하면. 배당금 : 470 + 법인세금(20%) 94라서 회사 입장에선 564 Euro. 급여 : 470 + 사회세금(?)으로 160이면 회사입장에선 630 Euro... 이지만 유럽 어디서든 의료 보험이 된다고. 에스토니아에...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        에스토니아는 개인소득이 500Euro 이하면 개인 세금이 없다는군요.
+
+470Euro를 배당금으로 받는 것과 급여로 받는걸 비교하면.
+
+배당금 : 470 + 법인세금(20%) 94라서 회사 입장에선 564 Euro.
+급여 : 470 + 사회세금(?)으로 160이면 회사입장에선 630 Euro... 이지만 유럽 어디서든 의료 보험이 된다고.
+
+에스토니아에 세금 내고 디지털 노마드라면 고려해볼 선택지이군요.
+        
+    </content>
+</entry>
 
 <entry>
     <title>Cryptocurrency 구걸</title>
@@ -373,35 +401,6 @@ print $json;
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<div><div>Emoji::NationalFlag - 2017-12-02<br /></div><div><br /></div><div>한 줄 요약 :&nbsp;use utf8; print "\N{REGIONAL INDICATOR SYMBOL LETTER U}"; print "\N{REGIONAL INDICATOR SYMBOL LETTER S}"; 또는&nbsp;Emoji::NationalFlag 모듈 이용</div><div><br /></div><div>출처 :&nbsp;<a href="http://perladvent.org/2017/2017-12-02.html">http://perladvent.org/2017/2017-12-02.html</a></div></div>
 
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Perl로 유니코드 출력하기</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/12/000510.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.510</id>
-
-    <published>2017-12-04T10:50:24Z</published>
-    <updated>2017-12-04T10:58:04Z</updated>
-
-    <summary>Printing Unicode with Perl - 2017-12-01 &#54620; &#51460; &#50836;&#50557; : use utf8; print &quot;\x{1F385}&quot;; print &quot;\N{FATHER CHRISTMAS}&quot;; &#52636;&#52376; : http://www.perladvent.org/2017/2017-12-01.html...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<div>Printing Unicode with Perl - 2017-12-01<br />
-<br />
-</div>
-<div>&#54620; &#51460; &#50836;&#50557; : use utf8; print "\x{1F385}"; print "\N{FATHER CHRISTMAS}";<br />
-<br />
-</div>
-<div>&#52636;&#52376; : <a href="http://www.perladvent.org/2017/2017-12-01.html">http://www.perladvent.org/2017/2017-12-01.html</a></div>
 
 ]]>
         
