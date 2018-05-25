@@ -88,6 +88,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-903" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/05/000903.html">가족과 함께 주말엔 숲으로 가자! 판교 생태공원으로~ 주말가족탐사반 출동!</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-05-25T17:33:59+09:00" itemprop="datePublished">May 25, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    가족과 함께 주말엔 숲으로 가자! 기간 : 2018. 4 ~ 10 (매주 일요일 10 :00 ~ 12 : 00) 장소 : 판교 생태공원(금토산) 주말가족탐사반은 성남녹색소비자연대, 해마을숲학교에서 주관하며 성남시민이라면 누구나 신청이 가능하답니다. 참가비는 무료!!!!주말가족탐사반은 주로 초등학교 저학년, 유치원 등 어린친구들이 참여를 하네요. 판교청소년수련관 앞마당에 엄마, 아빠 손을 잡고 하나 둘 모이기 시작한 친구들. 팀으로 나누어 팀별로 진행을 합니다.오늘의 숲 해설은 힘센 소선생님이시랍니다. 아이들의 눈높이에 맞춰서 설명을 잘 해주시는 숲 해설가 선생님이시네요.금토산은 온 가족이 찾기에 아주 좋은 산이랍니다. 오르기에 험하지도.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221284039408">http://seongnamdiary.com/221284039408</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/imyaman/2018/05/000903.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-902" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/05/000902.html">성남시가정어린이집연합회 출산장려캠페인</a></h2>
@@ -319,299 +345,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="http://weblog.youre.space/imyaman/2018/05/000894.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-893" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/redutan/2018/05/000893.html">IDDD 8장. 도메인 이벤트</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-05-24T01:18:59+09:00" itemprop="datePublished">May 24, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Publish-Subscribe</p>
-
-<p>언제 그리고 왜 도메인 이벤트를 사용할까?</p>
-
-<p>도메인 내 어떤 사건이 발생했을 때</p>
-
-<p>한 트랜잭션에는 한 애그리게잇만 커밋</p>
-
-<p>이벤트의 모델링</p>
-
-<p>어떤 명령에서 어떤 사건이 발생했었음</p>
-
-<p>Command : BacklogItem#commitTo(Spring)</p>
-
-<p>Event : BacklogItemCommitted</p>
-
-<p>백로그 항목이 커밋됐다.(과거형)</p>
-
-<p>package com . saasovation . agilepm . domain . model . product ;</p>
-
-<p>@Value</p>
-
-<p>class BacklogItemCommitted implements DomainEvent {</p>
-
-<p>Date occurredOn ;</p>
-
-<p>BacklogItemId backlogItemId ;</p>
-
-<p>SpringId committedToSprintId ;</p>
-
-<p>TenantId tenantId ;</p>
-
-<p>}</p>
-
-<p>package com . saasovation . agilepm . domain . model ;</p>
-
-<p>interface DomainEvent {</p>
-
-<p>Date occurredOn ();</p>
-
-<p>}</p>
-
-<p>추가사항</p>
-
-<p>멱등성</p>
-
-<p>더 풍부한 상태 전달 (이벤트 소싱!)</p>
-
-<p>애그리게잇의 특성과 함께하기</p>
-
-<p>이벤트를 애그리게잇을 통해서 영속화</p>
-
-<p>식별자</p>
-
-<p>이벤트를 애그리게잇으로 모델링하면 식별자가 필요하다.</p>
-
-<p>도메인 이벤트를 바운디드 컨텍스트 외부로 발행 시 식별자가 필요(With rabbitmq)</p>
-
-<p>외부 구독자 입장에서는 멱등성 관리를 위해서 식별자를 할당할 수 있음</p>
-
-<p>equals 로 일정 부분 해결할 수도 있다 (in 로컬 바운디드 컨텍스트)</p>
-
-<p>도메인 모델에서 이벤트 발행하기</p>
-
-<p>Light-Weight Publish-Subscribe</p>
-
-<p>Reference : https://github.com/redutan/redutan.github.io/wiki/Domain-Event-on-Springframework</p>
-
-<p>발행자</p>
-
-<p>class BacklogItem extends AbstractAggregateRoot  {</p>
-
-<p>void commitTo ( Sprint spint ) {</p>
-
-<p>// Some domain logic</p>
-
-<p>super . registerEvent ( new BacklogItemCommitted (</p>
-
-<p>this . tenantId (),</p>
-
-<p>this . backlogItemId (),</p>
-
-<p>this . sprintId ()</p>
-
-<p>));</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>class BacklogItemService { // Application Service</p>
-
-<p>@TransactionalEventListener</p>
-
-<p>void commitBacklogItem (...) {</p>
-
-<p>backlogItem . commitTo ( sprint ); // Publish BacklogItemCommitted event</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>구독자</p>
-
-<p>class BacklogItemService { // Application Service</p>
-
-<p>@TransactionalEventListener</p>
-
-<p>void handleBacklogItemCommitted ( BacklogItemCommitted event ) {</p>
-
-<p>// BacklogItemCommitted 구독 후 처리</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>중요한 것은 결과적 일관성</p>
-
-<p>뉴스를 원격 바운디드 컨텍스트로 전파하기</p>
-
-<p>시스템 간 결과적 일관성 확보</p>
-
-<p>메시징 인프라의 일관성</p>
-
-<p>구현방법</p>
-
-<p>도메인 모델과 메시지 인프라 저장소 공유</p>
-
-<p>원격 DB with XA</p>
-
-<p>이벤트 저장소</p>
-
-<p>자치 서비스와 시스템</p>
-
-<p>자치 서비스 : 이벤트를 통해서 시스템 간 결합도(독립성!)를 줄이는 기법 (No-RPC)</p>
-
-<p>자치 서비스의 단위는 바운디드 컨텍스트가 되면 좋은 것 같다.</p>
-
-<p>지연 시간 허용</p>
-
-<p>결과적 일관성 을 위해서</p>
-
-<p>도메인 별로 그 때 그 때 달라요.</p>
-
-<p>시스템의 허용치를 만족시키면서도 잘 수행되도록 아키텍처 품질을 높여야 한다.</p>
-
-<p>이벤트 저장소</p>
-
-<p>이벤트의 상태를 유지하기 위해서 저장하는 것이 요구되는 경우가 많다.</p>
-
-<p>@Aspect</p>
-
-<p>class IdentityAccessEventProcessor {</p>
-
-<p>@Before ( "execution(* com.saasovation.identityaccess.application.*.**..))" )</p>
-
-<p>public void listen () {</p>
-
-<p>DomainEventPublisher . instance ()</p>
-
-<p>. subscribe ( new DomainEventSubscriber () {</p>
-
-<p>public void handleEvent ( DomainEvent aDomainEvent ) {</p>
-
-<p>store ( aDomainEvent );</p>
-
-<p>}</p>
-
-<p>public Class  subscribedToEventType () {</p>
-
-<p>return DomainEvent . class ; // 모든 도메인 이벤트</p>
-
-<p>}</p>
-
-<p>});</p>
-
-<p>}</p>
-
-<p>private void store ( DomainEvent aDomainEvent ) {</p>
-
-<p>EventStore . instance (). append ( aDomainEvent );</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>class StoreEvent {</p>
-
-<p>void append ( DomainEvent aDomainEvent ) {</p>
-
-<p>String eventSerializatoin =</p>
-
-<p>EventStore . objectSerializer (). serialize ( aDomainEvent );</p>
-
-<p>StoredEvent storedEvent =</p>
-
-<p>new StoredEvent (</p>
-
-<p>aDomainEvent . getClass (). getName (),</p>
-
-<p>aDomainEvent . occuredOn (),</p>
-
-<p>eventSerialization );</p>
-
-<p>this . session (). save ( storedEvent );</p>
-
-<p>this . setStoredEvent ( storedEvent );</p>
-
-<p>}</p>
-
-<p>}</p>
-
-<p>CREATE TABLE tbl_stored_event (</p>
-
-<p>event_id int ( 11 ) NOT NULL auto_increment ,</p>
-
-<p>event_body varchar ( 65000 ) NOT NULL ,</p>
-
-<p>occurred_on datetime NOT NULL ,</p>
-
-<p>type_name varchar ( 100 ) NOT NULL ,</p>
-
-<p>PRIMARY KEY ( event_id )</p>
-
-<p>)</p>
-
-<p>저장된 이벤트의 전달을 위한 아키텍처 스타일</p>
-
-<p>레스트품 리소스로서 알림 발행하기</p>
-
-<p>이벤트를 REST/WEB API로 발행한다. (이벤트 아이디나 애그리게잇 아이디를 전달)</p>
-
-<p>이벤트 저장소를 통해서 조회하거나, 애그리게잇을 직접 조회한다.</p>
-
-<p>구독 측에서 발행측에 다시 상세 이벤트 정보를 조회한 후 처리한다.</p>
-
-<p>메시징 미들웨어를 통한 알림 발행</p>
-
-<p>메시징 미들웨어를 통해서 이벤트를 발행한다.</p>
-
-<p>메시징 미들웨어를 구독한 구독 측에서 발행 측의 상세 이벤트 정보를 조회한 후 처리 한다.</p>
-
-<p>발행과 구독은 exchange나 queue 개념으로 연결된다.</p>
-
-<p>구현</p>
-
-<p>Skip</p>
-
-<p>멱등 수신자 처리가 중요하다 : At least once</p>
-
-<p>멱등성 : 오퍼레이션이 두 번 이상 수행되어도, 한 번만 수행했을 때와 같은 결과에 이르는 동작을 의미</p>
-
-<p>궁극적으로 이벤트를 추적해야하는 경우가 생기기 때문에 이벤트 저장 기능이 거의 필수적으로 요구된다.</p>
-
-<p>그리고 추적 일관성을 위해서 이벤트 저장은 도메인 로직과 트랜잭션으로 묶이는 것이 중요하다.</p>
-
-<p>마무리</p>
-
-<p>이벤트 만의 고유 식별자가 요구된다.</p>
-
-<p>이벤트 저장소도 필요</p>
-
-<p>어짜피 발행-구독!</p>
-
-<p>멱등성 또는 중복 발행 or 수신 제거 확보</p>
-
-<p>IDDD 8장. 도메인 이벤트 was originally published by MJ at DevOOOOOOOOP on May 24, 2018.</p>
-
-<p>source : http://redutan.github.io/2018/05/24/IDDD-chapter08</p>
-
-<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/nXidW</p>
-
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/redutan/2018/05/000893.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
