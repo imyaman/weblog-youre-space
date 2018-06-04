@@ -88,6 +88,409 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-940" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/redutan/2018/06/000940.html">IDDD 10장. 애그리게잇</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-06-05T01:36:12+09:00" itemprop="datePublished">June  5, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>일관성 경계 내에서 엔터티와 값 객체의 묶음</p>
+
+<p>일관성 경계 의 기준은 같은 트랜잭션인가로 검증된다.</p>
+
+<p>애그리게잇 내의 불변식(invariant)?</p>
+
+<p>스크럼 핵심 도메인에서 애그리게잇 사용하기</p>
+
+<p>기능 목록</p>
+
+<p>제품은 백로그 아이템과 릴리스, 스프린트를 포함한다.</p>
+
+<p>새로운 제품 백로그 아이템을 계획했다.</p>
+
+<p>새로운 제품 릴리스를 계획했다.</p>
+
+<p>새로운 제품 스프린트 일정을 수립했다.</p>
+
+<p>계획된 백로그 아이템에 관한 릴리스 일정을 수립할 수 있다.</p>
+
+<p>일정이 잡힌 백로그 아이템은 스프린트로 커밋할 수 있다.</p>
+
+<p>첫 번째 시도: 큰 클러스터의 애그리게잇</p>
+
+<p>제품이 ~를 포함한다.</p>
+
+<p>컴포지션 VS 객체 그래프</p>
+
+<p>포함 VS (상호) 연결</p>
+
+<p>도메인 로직</p>
+
+<p>백로그 항목을 스프린트로 커밋하면, 이를 시스템에서 제거하도록 허용해선 안 된다.</p>
+
+<p>스프린트가 백로그 항목을 커밋하면, 이를 시스템에서 제거하도록 허용해선 안 된다.</p>
+
+<p>릴리스가 백로그 항목의 일정을 수립하면, 이를 시스템에서 제거하도록 허용해선 안 된다.</p>
+
+<p>백로그 항목의 릴리스 일정을 수립하면, 이를 시스템에서 제거하도록 허용해선 안 된다.</p>
+
+<p>class Product {</p>
+
+<p>private Set  backlogItems ;</p>
+
+<p>private String description ;</p>
+
+<p>private String name ;</p>
+
+<p>private ProductId productId ;</p>
+
+<p>private Set  releases ;</p>
+
+<p>private Set  sprints ;</p>
+
+<p>private TenantId tenantId ;</p>
+
+<p>}</p>
+
+<p>아주 큰 애그리게잇으로 모델링된 Product</p>
+
+<p>Product와는 별도의 애그리게잇 타입으로 모델린된 연관된 개념들</p>
+
+<p>큰 애그리게잇으로 모델링하다보면 변경에 취약해져서 업데이트 상황에서 버전 충돌이 발생할 가능성이 커진다. 위를 예시로 두면 한 명이 backlogItem을 변경하고 다른 한 명이 Spring를 변경할 시 직적접 연관이 없음에도 불구하고 버전 충돌이 발생해서 업데이트가 실패할 확률이 커진다. (애그리게잇의 크기가 커짐에 따라서 충돌 확률도 더 커짐)</p>
+
+<p>두 번째 시도: 다수의 애그리게잇</p>
+
+<p>하나의 큰 애그리게잇 상 Product.java</p>
+
+<p>class Product {</p>
+
+<p>public void planBacklogItem (</p>
+
+<p>String summary , String category , BacklogItemType type , StoryPorints storyPoints ) {</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>...</p>
+
+<p>public void scheduleRelease (</p>
+
+<p>String name , String description , Date begins , Date ends ) {</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>...</p>
+
+<p>public void scheduleSprint (</p>
+
+<p>String name , String goals , Date begins , Date ends ) {</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>여러 개로 분리된 애그리게잇 상 Product.java</p>
+
+<p>class Product {</p>
+
+<p>public BacklogItem planBacklogItem (</p>
+
+<p>String summary , String category , BacklogItemType type , StoryPorints storyPoints ) {</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>...</p>
+
+<p>public Release scheduleRelease (</p>
+
+<p>String name , String description , Date begins , Date ends ) {</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>...</p>
+
+<p>public Sprint scheduleSprint (</p>
+
+<p>String name , String goals , Date begins , Date ends ) {</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>일종의 factory 메서드로써 동작한다.</p>
+
+<p>Product *Srvice 예시</p>
+
+<p>@Service</p>
+
+<p>class ProductBacklogItemService {</p>
+
+<p>@Transactional</p>
+
+<p>public void planProductBacklogItem (</p>
+
+<p>String tenantId , String productId</p>
+
+<p>String summary , String category</p>
+
+<p>String backlogItemType , String storyPoints ) {</p>
+
+<p>Product product =</p>
+
+<p>productRepository . producetOfId (</p>
+
+<p>new TenantId ( tenantId ),</p>
+
+<p>new ProductId ( productId ));</p>
+
+<p>BacklogItem plannedBacklogItem =</p>
+
+<p>product . planBacklogItem (</p>
+
+<p>summary , category ,</p>
+
+<p>BacklogItemType . valueOf ( aBacklogItemType ),</p>
+
+<p>StoryPoints . valueOf ( stroyPoints ));</p>
+
+<p>backlogItemRepository . add ( plannedBacklogItem );</p>
+
+<p>}</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>이와 같이 우린 밖으로 빼서 모델링함으로써(Modeling it away) 트랜잭션 실패 문제를 해결했다. 이제 BacklogItem , Release , Sprint 등의 인스턴스가 사용자의 요청에 따라 얼마든지 동시적으로 안전하게 생성될 수 있다.</p>
+
+<p>그러나 큰 애그리게잇을 조금 다듬어서 동시성 문제를 해결할 수도 있을지도 모른다. 하이버네이트 매핑에서 optmistic-lock 옵셥을 false 로 설정해 트랜잭션 실패가 도미노 처럼 전달되는 상황을 피할 수 있다.</p>
+
+<p>규칙: 진짜 고장자(invariant)를 일관성 경계 안에 모델링하라</p>
+
+<p>*중요한 것은 진짜 고정자를 이해하는 것이다.</p>
+
+<p>고장자(invariant) : 일관성(트랜잭션 일관성)을 유지해야만 한다는 비즈니스 규칙</p>
+
+<p>트랜잭션 일관성 : 동기적, 원자적</p>
+
+<p>결과적 일관성 : 비동기적</p>
+
+<p>한 트랜잭션에 한 애그리게잇만 인스턴스만 포함 : 이는 너무 가혹한 것 같다.</p>
+
+<p>규칙: 작은 애그리게잇으로 설계하라</p>
+
+<p>이 Product 모델에선 다양한 기본 오퍼레이션이 수행될 동안 큰 컬랙션을 여럿 가져오게 된다.</p>
+
+<p>이 큰 클러스터 애그리게잇은 성능이나 확장성이 절대로 좋을 수 없다. 이는 실패로 이어지는 악몽이 될 뿐이다. 거짓 고정자와 컴포지션적 편의성이 설계를 주도했기 때문에 시작부터 문제가 있었으며, 트랜잭션의 종료, 성능, 확장성의 측면에서 안 좋은 영향을 미쳤다.</p>
+
+<p>작은 애그리게잇은? 다른 대상과 일관성을 유지</p>
+
+<p>변경이 되면 엔터티</p>
+
+<p>대치가 되면 값 객체 : 생각보다 상당히 많은 개념이 값 객체로 대치된다.</p>
+
+<p>파생 금융상품 부문에서 약 70% 애그리게잇이 단 하나의 루트 엔터티로 구성된다.</p>
+
+<p>작은 애그리게잇은</p>
+
+<p>성능이 좋음</p>
+
+<p>확장성이 좋음</p>
+
+<p>트랜잭션이 성공할 가능성이 크다</p>
+
+<p>유스케이스를 전부 믿지는 말라</p>
+
+<p>하나의 유스케이스가 여러 트랜잭션을 발생 시킨다면 의심해 보자</p>
+
+<p>이런 경우에서 결과적 일관성을 통해서 문제를 해결할 수 있다. + 지연 업데이트</p>
+
+<p>물론 하나의 유스케이스가 하나의 트랜잭션일 필요는 없다.</p>
+
+<p>규칙: ID로 다른 애그리게잇을 참조하라</p>
+
+<p>객체 그래프가 연결되어 있다고 해서 같은 애그리게잇은 아니다. 그저 다른 애그리게잇을 연결했을 뿐이다.</p>
+
+<p>여기도 결국 결과적 일관성 으로 이어진다.</p>
+
+<p>애그리게잇 ID 참조를 통해 서로 함께 동작하도록 해보자</p>
+
+<p>ID를 통해 경계 밖과 연결을 추론할 수 있는 BacklogItem 애그리게잇</p>
+
+<p>class BacklogItem {</p>
+
+<p>private ProductId productId ;</p>
+
+<p>}</p>
+
+<p>모델 탐색</p>
+
+<p>객체 그래프 탐색과는 다르지만 리파지토르 와 ID 가 있으면 연관 모델을 탐색할 수 있다. : 단전될 도메인 모델(Disconnected Domain Model)</p>
+
+<p>@Service</p>
+
+<p>class ProductBacklogItemService {</p>
+
+<p>@Transactional</p>
+
+<p>public void assignTeaMemberToTask (</p>
+
+<p>String aTenantId ,</p>
+
+<p>String aBacklogItemId ,</p>
+
+<p>String aTaskId ,</p>
+
+<p>String aTeamMemberId ) {</p>
+
+<p>BacklogItem backlogItem =</p>
+
+<p>backlogItemRepository . findById (</p>
+
+<p>new TenantId ( aTenantId ), new BacklogItemId ( aBacklogItemId ));</p>
+
+<p>Team ofTeam =</p>
+
+<p>teamRepository . findById (</p>
+
+<p>backlogItem . tenantId (), backlogItem . teamId ());</p>
+
+<p>backlogItem . assignTeamMemberToTask (</p>
+
+<p>new TeamMemberId ( aTeamMemberId ), ofTeam , new TaskId ( aTaskId ));</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>확장성과 분산</p>
+
+<p>ID 참조를 이용하게 되면 같은 영속화 플랫폼을 사용하지 않고 샤딩과 같은 확장을 통해서 일부 애그리게잇을 손쉽게 확장할 수 있다.</p>
+
+<p>예를 들면 어떤 애그리게잇은 DB를 사용하고 연관되는 다른 애그리게잇은 NoSql을 사용할 수 있다.</p>
+
+<p>도메인 이벤트를 통해서 외부 바운디드 컨텍스트로 분산처리를 더 가속화할 수 있다.</p>
+
+<p>역시나 중요한 것은 결과적 일관성 이다.</p>
+
+<p>규칙: 경계의 밖에서 결과적 일관성을 사용하라</p>
+
+<p>결과적 일관성과 지연 시간 = 도메인 이벤트 발행</p>
+
+<p>동시성 이슈로 인해서 발행된 이벤트 구독이 실패하면? 메시징 매커니즘을 통해서 Retry! > 이것은 쉽지가 않은 것 같다.</p>
+
+<p>누가 해야 하는 일인지 확인하자</p>
+
+<p>데이터의 일관성을 보장하는 주체가 유스케이스를 수행하는 사용자의 일인지를 질문해보자.</p>
+
+<p>만약 그렇다면, 다른 애그리게잇의 규칙들은 고수하는 가운데 트랜잭션을 통해 일관성을 보장하도록 하자.</p>
+
+<p>만약, 다른 사용자나 시스템이 해야 할 일이라면 결과적 일관성을 선택하자.</p>
+
+<p>규칙을 어겨야하는 이유</p>
+
+<p>첫 번째 이유: 사용자 인터페이스의 편의</p>
+
+<p>두 번째 이유: 기술적 매커니즘의 부족</p>
+
+<p>세 번째 이유: 글로벌 트랜잭션</p>
+
+<p>개인적으로 안티패턴. 결과적 일관성을 사용하자</p>
+
+<p>네 번째 이유: 쿼리 성능</p>
+
+<p>캐싱을 통해서 어느정도 해결할 수 있다.</p>
+
+<p>발견을 통해 통찰 얻기</p>
+
+<p>Skip</p>
+
+<p>구현</p>
+
+<p>고유 ID와 루트 엔터리를 생성하라</p>
+
+<p>값 객체 파트를 선호하라</p>
+
+<p>‘데메테르 법칙’과 ‘묻지 말고 시켜라’를 사용하기</p>
+
+<p>데메테르 법칙 : 정보은닉</p>
+
+<p>묻지 말고 시켜라 : 정보은닉 + 응집력</p>
+
+<p>낙관적 동시성</p>
+
+<p>애그리게잇 루트에 버전을 통한 낙관적 락 기법</p>
+
+<p>@Version : JPA를 이용하면 이 선언만으로도 낙관적 락 기법을 사용할 수 있다.</p>
+
+<p>@Entity</p>
+
+<p>@Table ( name = "orders" )</p>
+
+<p>public class Order {</p>
+
+<p>@Id</p>
+
+<p>private Long id ;</p>
+
+<p>@Version</p>
+
+<p>private int version ;</p>
+
+<p>private String description ;</p>
+
+<p>}</p>
+
+<p>의존성 주입을 피하라</p>
+
+<p>애그리게잇에 서비스나 리파지토리를 주입하지 마라</p>
+
+<p>마무리</p>
+
+<p>가능하면 작은 애그리게잇으로 설계하자</p>
+
+<p>일관성 경계, 트랜잭션, 고정자가 중요</p>
+
+<p>객체 그래프 참조 VS ID 참조</p>
+
+<p>경계 외부에서는 결과적 일관성</p>
+
+<p>IDDD 10장. 애그리게잇 was originally published by MJ at DevOOOOOOOOP on June 05, 2018.</p>
+
+<p>source : http://redutan.github.io/2018/06/05/IDDD-chapter10</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/nXidW</p>
+
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/redutan/2018/06/000940.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-939" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/06/000939.html">대전 서구 문화원 갤러리 수묵화를 만나보세요!</a></h2>
@@ -322,32 +725,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="http://weblog.youre.space/imyaman/2018/06/000931.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-930" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/05/000930.html">2018 성남 시민 마음 건강관리 공개 강좌 @성남시청</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-05-31T17:21:16+09:00" itemprop="datePublished">May 31, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    지난밤 천둥과 번개를 동반한 소나기가 내린거 맞나요? 성남시청 파란 하늘에 뽀얀 구름이 둥실 걸렸습니다.바람마저 보드라운 화창한 날씨에 걷는 발걸음도 가볍습니다. 이렇게 날씨 하나만으로도 기분이 달라지는데요, 우리는 살면서 관계의 갈등, 외로움, 불안감, 우울증 등 다양한 스트레스 속에서 힘겨움을 겪기도 합니다. 이럴때 마음의 균형을 잡으려면 어떻게 해야 할까요?2018 성남시민 마음건강관리 공개 강좌 '당신, 참 좋은 사람이다' 잠시 멈춰서 돌아보는 나의 삶, 나의 마음 -2018년 5월 30일(수) 오전 11시 -성남시청 3층 한누리홀 5월 30일, 성남시청 한누리홀에서 성남 시민을 위한 마음 건강 관리 강좌가 열렸습니다. 성남시.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221288614033">http://seongnamdiary.com/221288614033</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/imyaman/2018/05/000930.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
