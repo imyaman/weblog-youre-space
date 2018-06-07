@@ -88,6 +88,253 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-947" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/redutan/2018/06/000947.html">IDDD 111장. 팩토리</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-06-07T12:16:00+09:00" itemprop="datePublished">June  7, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>애그리게잇을 생성하는 책임을 가지는 메소드나 객체를 말한다.</p>
+
+<p>애그리게잇 생성을 캡슐화</p>
+
+<p>도메인 모댈 내의 팩토리</p>
+
+<p>복잡한 객체와 애그리게잇 인스턴스를 생성하는 책임을 별도의 객체로 이동시키자. 여기서의 책임은 도메인 모델과 관련이 있지 않지만, 여전히 도메인 설계를 구성하는 한 요소 다. 모든 복잡한 조립 과정을 캡슐화하고, 클라이언트가 인스턴스화된 객체의 구체적 클래스를 참조할 필요가 없도록 인터페이스를 제공하자. 전체 애그리게잇을 하나의 조각(원자성)으로 생성하고 고정자(Invariant)를 지정하자 [Evans]</p>
+
+<p>팩토리 메소드 : 이 책은 주로 여기만 나옴</p>
+
+<p>팩토리 객체(클래스)</p>
+
+<p>애그리게잇 생성이 매우 복잡하고 다른 객체의 도움이 필요하면 클래스 분리를 하는 것이 좋은 것 같다.</p>
+
+<p>가능한 팩토리 위치</p>
+
+<p>애그리게잇 루트</p>
+
+<p>정정 생성자를 통해서 도메인 의도가 나오면 더 좋다. static Task#forDraft()</p>
+
+<p>아니면 상위 루트에서 하위 엔터리 생성도 가능 Project#createTask()</p>
+
+<p>도메인 서비스 : 서비스 기반 팩토리</p>
+
+<p>ProjectService#createProject()</p>
+
+<p>팩토리 : 이 책은 다루지 않음</p>
+
+<p>ProjectFactory#create()</p>
+
+<p>애그리게잇 루트상의 팩토리 메소드</p>
+
+<p>바운디드 컨텍스트</p>
+
+<p>애그리게잇</p>
+
+<p>팩토리 메소드</p>
+
+<p>식별자와 액세스 컨텍스트</p>
+
+<p>Tenant</p>
+
+<p>offerRegisterationInvitation()</p>
+
+<p>provisionGroup()</p>
+
+<p>provisionRole()</p>
+
+<p>registerUser()</p>
+
+<p>협업 컨텍스트</p>
+
+<p>Calendar</p>
+
+<p>scheduleCalendarEntry()</p>
+
+<p>Forun</p>
+
+<p>startDiscussion()</p>
+
+<p>Discussion</p>
+
+<p>post()</p>
+
+<p>애자일 PM 컨텍스트</p>
+
+<p>Product</p>
+
+<p>planBacklogItem()</p>
+
+<p>scheduleRelease()</p>
+
+<p>scheduleSprint()</p>
+
+<p>CalendarEntry 인스턴스 생성하기</p>
+
+<p>@Entity</p>
+
+<p>class Calendar extends AbstractAggregateRoot {</p>
+
+<p>CalendarEntry scheduleCalendarEntry (...) {</p>
+
+<p>CalendarEntry calendarEntry = new CalendarEntry (...);</p>
+
+<p>this . registerEvent ( new CalendarEntryScheduled (...));</p>
+
+<p>return calendarEntry ;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>유비쿼터스 언어에 부합되는 도메인이 표현됨 : scheduleCalendarEntry</p>
+
+<p>보호절이 없다 : 어짜피 new CalendarEntry(...) 가 책임짐</p>
+
+<p>Setter 를 사용하지 않는다. > 원자성 + 부수효과 줄어듬 + 불변식 강제 가 쉬움</p>
+
+<p>이벤트 발행 : CalendarEntryScheduled</p>
+
+<p>인자의 갯수가 줄어든다.</p>
+
+<p>scheduleCalendarEntry(...) 에서는 11개가 요구되지만, new CalendarEntryScheduled(...) 에서는 9개로 줄어든다.</p>
+
+<p>개인적으로는 이것도 인자를 캡슐화 시켜서 객체로 말아버리는 것이 좋은 것 같다. 9개의 인자라도 너무 많은 것 같음.</p>
+
+<p>하지만</p>
+
+<p>CalendarEntry 를 생성하기 위해서는 꼭 Calendar 인스턴스 가 요구됨</p>
+
+<p>이는 DB 조회라는 부하가 추가됨</p>
+
+<p>Discussion 인스턴스 생성하기</p>
+
+<p>@Entity</p>
+
+<p>class Forum extends AbstractAggregateRoot {</p>
+
+<p>Discussion startDiscussion (</p>
+
+<p>DiscussionId discussionId ,</p>
+
+<p>Author author ,</p>
+
+<p>String subject ) {</p>
+
+<p>if ( this . isClosed ()) {</p>
+
+<p>throw new IllegalStateException ( "Forum is closed" );</p>
+
+<p>}</p>
+
+<p>Discussion discussion = new Discussion (</p>
+
+<p>this . tenant (),</p>
+
+<p>this . forumId (),</p>
+
+<p>discussionId ,</p>
+
+<p>author ,</p>
+
+<p>subject );</p>
+
+<p>registerEvent ( new DiscussionStarted (...));</p>
+
+<p>return discussion ;</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>포럼이 열린 경우에만 토론을 시작할 수 있다. : this.isClosed()</p>
+
+<p>인자 5개 중 3개만 있으면 된다. : 나머지 2개는 포럼에서 제공</p>
+
+<p>역시나 유비쿼터스 언어가 표현된다. : startDiscussion</p>
+
+<p>서비스의 팩토리</p>
+
+<p>package com . saasovation . collaboration . domain . model . collaborator ;</p>
+
+<p>interface CollaboratorSerice {</p>
+
+<p>Author authorFrom ( Tenant tenant , String identity );</p>
+
+<p>Creator creatorFrom ( Tenant tenant , String identity );</p>
+
+<p>Moderator moderatorFrom ( Tenant tenant , String identity );</p>
+
+<p>Owner ownerFrom ( Tenant tenant , String identity );</p>
+
+<p>Participant participantFrom ( Tenant tenant , String identity );</p>
+
+<p>}</p>
+
+<p>// infrastructure.services !!!</p>
+
+<p>package com . saasovation . collaboration . infrastructure . services ;</p>
+
+<p>class UserRoleToCollaborationService implements CollaboratorSerice {</p>
+
+<p>@Override</p>
+
+<p>public Author authorFrom ( Tenant tenant , String identity ) {</p>
+
+<p>return ( Author ) userInRoleAdapter . toCollaborator (</p>
+
+<p>tenant , identity , "Author" , Author . class );</p>
+
+<p>)</p>
+
+<p>}</p>
+
+<p>}</p>
+
+<p>package com . saasovation . collaboration . domain . model . collaborator ;</p>
+
+<p>class Author extends Collaborator {</p>
+
+<p>...</p>
+
+<p>}</p>
+
+<p>기술적 구현이므로 인프라 계층 의 모듈에 위치한다.</p>
+
+<p>어댑터에 의존한다.</p>
+
+<p>UserInRoleAdapter 는 외래 컨텍스트와 의사소통 책임만 갖는다.</p>
+
+<p>CollaboratorTranslator 는 바운디드 컨텍스트 내 도메인 객체로 변환 책임만 갖는다.</p>
+
+<p>협업에서는 identity 식별자와 액세스에서는 username</p>
+
+<p>마무리</p>
+
+<p>유비쿼터스 언어로 애그리게잇을 생성</p>
+
+<p>애그리게잇의 팩토리 메서드 VS 서비스의 팩토리 메서드</p>
+
+<p>IDDD 111장. 팩토리 was originally published by MJ at DevOOOOOOOOP on June 07, 2018.</p>
+
+<p>source : http://redutan.github.io/2018/06/07/IDDD-chapter11</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/nXidW</p>
+
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/redutan/2018/06/000947.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-946" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/06/000946.html">2018년 613 전국동시지방선거 앞두고 소중한 한표! 성남시 발달장애인 참정권 보장 교육현장 @한마음복지관</a></h2>
@@ -698,34 +945,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="http://weblog.youre.space/imyaman/2018/06/000938.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-937" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/06/000937.html">4회_한형일과 함께</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-06-02T17:31:57+09:00" itemprop="datePublished">June  2, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="http://weblog.youre.space/imyaman/ieiei-iiei-eei/">클래식기타 연주방송 로망스</a></li>
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    국내 클래식기타리스트들의 살아있는 연주와 재미있는 음악 이야기를 들려드리는 클래식 기타 연주 방송~ 로망스! ​
-
-
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221290047746">http://blog.naver.com/letsgoyang/221290047746</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/imyaman/2018/06/000937.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
