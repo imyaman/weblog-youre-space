@@ -4,9 +4,34 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2018-05-16T10:06:28Z</updated>
+    <updated>2018-06-26T09:25:57Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>장내세균분석 순위</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/06/000951.html" />
+    <id>tag:weblog.youre.space,2018:/vergence//11.951</id>
+
+    <published>2018-06-26T09:23:59Z</published>
+    <updated>2018-06-26T09:25:57Z</updated>
+
+    <summary>내마음대로 정하는 순위 장내세균분석 순위1. 김석진좋은균연구소2. 바이오일레븐3. 한국의과학연구원4. 메디넥스 선정 사유 친절함 장내유해균분석 1위 김석진좋은균연구소 장내유해균 억제하는 프로바이오틱스 유익균...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>내마음대로 정하는 순위</p>
+<p>장내세균분석 순위<br />1. 김석진좋은균연구소<br />2. 바이오일레븐<br />3. 한국의과학연구원<br />4. 메디넥스</p>
+<p>선정 사유 친절함</p>
+<p>장내유해균분석 1위 김석진좋은균연구소</p>
+<p>장내유해균 억제하는 프로바이오틱스 유익균</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>에스토니아 개인 소득 500 이하</title>
@@ -377,30 +402,6 @@ print $json;
 </div>
 <div>&#50896;&#47928; : <a href="http://www.perladvent.org/2017/2017-12-03.html">http://www.perladvent.org/2017/2017-12-03.html</a>&#13;<br />
 </div>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Perl로 국기 출력하기</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/12/000511.html" />
-    <id>tag:weblog.youre.space,2017:/vergence//11.511</id>
-
-    <published>2017-12-04T11:19:35Z</published>
-    <updated>2017-12-05T00:07:37Z</updated>
-
-    <summary><![CDATA[Emoji::NationalFlag - 2017-12-02한 줄 요약 :&nbsp;use utf8; print "\N{REGIONAL INDICATOR SYMBOL LETTER U}"; print "\N{REGIONAL INDICATOR SYMBOL LETTER S}"; 또는&nbsp;Emoji::NationalFlag 모듈 이용출처 :&nbsp;http://perladvent.org/2017/2017-12-02.html...]]></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<div><div>Emoji::NationalFlag - 2017-12-02<br /></div><div><br /></div><div>한 줄 요약 :&nbsp;use utf8; print "\N{REGIONAL INDICATOR SYMBOL LETTER U}"; print "\N{REGIONAL INDICATOR SYMBOL LETTER S}"; 또는&nbsp;Emoji::NationalFlag 모듈 이용</div><div><br /></div><div>출처 :&nbsp;<a href="http://perladvent.org/2017/2017-12-02.html">http://perladvent.org/2017/2017-12-02.html</a></div></div>
-
 
 ]]>
         
