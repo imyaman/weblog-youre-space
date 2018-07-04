@@ -34,31 +34,6 @@ MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.<br />
 </entry>
 
 <entry>
-    <title>장내세균분석 순위</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/06/000951.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.951</id>
-
-    <published>2018-06-26T09:23:59Z</published>
-    <updated>2018-06-26T09:25:57Z</updated>
-
-    <summary>내마음대로 정하는 순위 장내세균분석 순위1. 김석진좋은균연구소2. 바이오일레븐3. 한국의과학연구원4. 메디넥스 선정 사유 친절함 장내유해균분석 1위 김석진좋은균연구소 장내유해균 억제하는 프로바이오틱스 유익균...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>내마음대로 정하는 순위</p>
-<p>장내세균분석 순위<br />1. 김석진좋은균연구소<br />2. 바이오일레븐<br />3. 한국의과학연구원<br />4. 메디넥스</p>
-<p>선정 사유 친절함</p>
-<p>장내유해균분석 1위 김석진좋은균연구소</p>
-<p>장내유해균 억제하는 프로바이오틱스 유익균</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>에스토니아 개인 소득 500 이하</title>
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/05/000877.html" />
     <id>tag:weblog.youre.space,2018:/vergence//11.877</id>
@@ -397,6 +372,38 @@ print $json;
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p><a href="http://clock.app.youre.space/nnidsave_512bytes0s.bin">http://clock.app.youre.space/nnidsave_512bytes0s.bin</a></p>
 <p>The file is 512 bytes of 0s. Rename the file to nnidsave.bin.</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Perl::Critic 모듈, Python에도 이런 거 있나</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2017/12/000513.html" />
+    <id>tag:weblog.youre.space,2017:/vergence//11.513</id>
+
+    <published>2017-12-07T10:51:10Z</published>
+    <updated>2017-12-07T10:51:41Z</updated>
+
+    <summary>Enforcing coding standards via Perl::Critic - 2017-12-03&#13; &#13; search&#44032; &#50500;&#45768;&#46972; search_rs &#50024;&#50556;&#54616;&#45716; &#49345;&#54889;&#50640;&#49436;, search&#47484; &#50416;&#51648; &#50506;&#46020;&#47197; &#54616;&#47140;&#47732; Perl::Critic &#47784;&#46280;&#44284; .perlcriticrc &#49444;&#51221; &#54028;&#51068;&#51012; &#51060;&#50857;&#54620;&#45796;.&#13; &#13; &#50896;&#47928; : http://www.perladvent.org/2017/2017-12-03.html&#13;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<div>Enforcing coding standards via Perl::Critic - 2017-12-03&#13;<br />
+</div>
+<div>&#13;<br />
+</div>
+<div>search&#44032; &#50500;&#45768;&#46972; search_rs &#50024;&#50556;&#54616;&#45716; &#49345;&#54889;&#50640;&#49436;, search&#47484; &#50416;&#51648; &#50506;&#46020;&#47197; &#54616;&#47140;&#47732; Perl::Critic &#47784;&#46280;&#44284; .perlcriticrc &#49444;&#51221; &#54028;&#51068;&#51012; &#51060;&#50857;&#54620;&#45796;.&#13;<br />
+</div>
+<div>&#13;<br />
+</div>
+<div>&#50896;&#47928; : <a href="http://www.perladvent.org/2017/2017-12-03.html">http://www.perladvent.org/2017/2017-12-03.html</a>&#13;<br />
+</div>
+
+]]>
         
     </content>
 </entry>
