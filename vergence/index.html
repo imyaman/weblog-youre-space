@@ -76,6 +76,32 @@
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-952" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/07/000952.html">MyMusicTaste와 DevOps Korea</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-07-05T07:31:26+09:00" itemprop="datePublished">July  5, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    2018년 7월 14일에 DevOps Korea 행사합니다.
+MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.
+자유롭게 함께 이야기 하는 장소가 되면 좋겠어요.
+
+<a href="http://meetup.devopskorea.com/201807/">http://meetup.devopskorea.com/201807/</a>
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/vergence/2018/07/000952.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-951" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/06/000951.html">장내세균분석 순위</a></h2>
@@ -325,49 +351,6 @@
 </article>
 
 
-              <article id="entry-711" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/04/000711.html">Perl, json, 한글 출력</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-04-05T13:04:00+09:00" itemprop="datePublished">April  5, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <pre><code>
-#!/usr/bin/env perl
-
-use utf8;
-use strict;
-use Encode;
-use JSON;
-
-binmode(STDOUT, ":utf8");
-
-my ($line, $content, $perl_hashref, $key, $json);
-
-$content = qq/{"별명":"컴맹"}/;
-$perl_hashref = from_json($content);
-for $key (sort keys %{$perl_hashref}){
-  print $key . " : " . $perl_hashref-&gt;{$key} . "\n";
-}
-
-my $json = to_json($perl_hashref, {utf8 =&gt; 0, pretty =&gt; 1});
-print $json;
-</code></pre>
-<p>아래 문서의 설명을 보면,<br />http://search.cpan.org/~ishigaki/JSON-2.97001/lib/JSON.pm<br /><br />to_json : Converts the given Perl data structure to a Unicode string by default.<br />from_json : The opposite of to_json: expects a Unicode string and tries to parse it, returning the resulting reference.<br /><br />encode_json과 decode_json은 UTF-8 encoded, binary string을 입력 받거나 출력한다고 되어있다.<br />encode_json과 decode_json을 써서는 json에서 한글 출력이 번거로웠다.<br />그래서, binmode와 to_json, from_json을 사용해야겠다.</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/04/000711.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
               <nav class="page-navigation entry-navigation pagination content-nav">
   <ul class="pagination-list">
 <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;template_id=952&amp;limit=10&amp;archive_type=Index&amp;page=2">Older entries</a></li>
@@ -434,6 +417,10 @@ print $json;
   <div class="widget-content">
     <select>
       <option>Select a Month...</option>
+    
+      <option value="http://weblog.youre.space/vergence/2018/07/">July 2018</option>
+    
+  
     
       <option value="http://weblog.youre.space/vergence/2018/06/">June 2018</option>
     
