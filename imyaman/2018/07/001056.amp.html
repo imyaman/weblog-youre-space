@@ -1,0 +1,333 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/imyaman/2018/07/001056.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" .appleLinksWhite a { color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important; } a { color:#2979ff; font-family:Roboto, arial; font-size:14px; text-decoration:none; } @media only screen and (min-width : 0px) and (max-width : 480px) { .flexible{ width: 100%...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>New Third-Party Subprocessor for Firebase - imyaman</title>
+
+  <link rel="prev" href="http://weblog.youre.space/imyaman/2018/07/001055.amp.html" title="대전 중앙로 지하상가 다양한 즐거움이 가득한 곳">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="New Third-Party Subprocessor for Firebase">
+    <meta property="og:url" content="http://weblog.youre.space/imyaman/2018/07/001056.html">
+    <meta property="og:description" content=" .appleLinksWhite a { color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important; } a { color:#2979ff; font-family:Roboto, arial; font-size:14px; text-decoration:none; } @media only screen and (min-width : 0px) and (max-width : 480px) { .flexible{ width: 100%...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" .appleLinksWhite a { color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important; } a { color:#2979ff; font-family:Roboto, arial; font-size:14px; text-decoration:none; } @media only screen and (min-width : 0px) and (max-width : 480px) { .flexible{ width: 100%...">
+    <link itemprop="url" href="http://weblog.youre.space/imyaman/2018/07/001056.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">New Third-Party Subprocessor for Firebase</h1>
+<time datetime="2018-07-13T07:26:58+09:00" itemprop="datePublished">July 13, 2018</time>
+<time datetime="2018-07-13T07:26:58+09:00" itemprop="dateModified">July 13, 2018</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  
+
+
+
+
+
+
+.appleLinksWhite a {
+  color: #898989 !important;
+  text-decoration: none !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+a {
+  color:#2979ff;
+  font-family:Roboto, arial;
+  font-size:14px;
+  text-decoration:none;
+}
+
+@media only screen and (min-width : 0px) and (max-width : 480px) {
+  .flexible{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;  }
+  .logo_holder, .logo_holder_td, .logo_right_holder, .logo_right_holder_td{width: 100% !important;}
+  .logo_right_holder_inner_td  {text-align:right !important;}
+  .logo_holder_td{padding-left: 16px;}
+  .logo_right_holder_td{padding-left: 16px !important; padding-top: 5px !important; padding-bottom: 15px !important;}
+  .tbl_banner{padding-left : 10px !important; padding-right: 10px !important; }
+  .banner_text_1{padding: 0 20px 15px 20px !important;}
+  .banner_container {background-position:top !important; background-color: #227cdf !important; height:auto !important;}
+  .banner_btn{padding-bottom:20px !important;}
+  .banner_text_2{128px 20px 13px 20px !important; font-size:26px !important;line-height:30px !important;}
+  .bottom_link_container_td{padding:10px 40px !important;}
+  .bottom_link_container_inner{padding:10px 0 !important;}
+  .bottom_link_text_mbl{padding:10px 0 !important;}
+  .outer_wrapper_td{padding:0 5px !important;}
+}
+
+@media only screen and (min-width : 0px) and (max-width : 320px) {
+  .flexible{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;  }
+  .logo_holder, .logo_holder_td, .logo_right_holder, .logo_right_holder_td{width: 100% !important;}
+  .banner_text_2{128px 20px 13px 20px !important; font-size:26px !important;line-height:30px !important;}
+  .logo_right_holder_td{padding-left: 16px !important; padding-top: 5px !important; padding-bottom: 15px !important;}
+  .logo_right_holder_inner_td  {text-align:right !important;}
+  .logo_holder_td{padding-left: 0 !important;}
+  .banner_text_1{padding: 0 20px 15px 20px !important;}
+  .banner_container {background-position:top !important; background-color: #227cdf !important; height:auto !important;}
+  .banner_btn{padding-bottom:20px !important;}
+  .bottom_link_container_td{padding:10px 40px !important;}
+  .bottom_link_text_mbl{padding:10px 0 !important;}
+  .outer_wrapper_td{padding:0 5px !important;}
+  .bottom_link_container_inner{padding:10px 0 !important;}
+  .social_icons_container_inner{width:210px !important;}
+  .tbl_banner{padding-left : 10px !important; padding-right: 10px !important; }
+}
+
+
+
+
+
+  
+  
+  
+    <div>New Third-Party Subprocessor for Firebase</div>
+  
+  
+
+
+<table>
+<tr>
+<td><table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_logo.png" width="261" alt="Google Cloud Platform">
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+
+
+  
+    <a href="https://www.google.com/appserve/mkt/p/AJ-PF7wtgynth3fHV4yv4VNBhoYS1CoPH26qg9onjqo58K_svnCXdYGB2HxijQRvzdrWjabTgSvbEDz-7P0c6T8jbgY11qfr">MY CONSOLE</a>
+  
+
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+
+
+  
+  
+    
+  
+
+
+<tr>
+<td>
+
+
+  
+<p>
+Hello Firebase Customer,
+</p>
+<p>
+We are sending this message to update you on the status of third-party subprocessors who provide customer and technical support for Firebase. <strong>No action is required</strong>. 
+</p>
+
+<p>
+To support you when you need help, we work only with trusted support service providers. We will soon add the following entity to our list of third-party subprocessors:
+</p><ul>
+
+<li><strong>EPAM Systems, Inc </strong></li></ul>
+
+<p>
+This subprocessor will provide services which include, but are not limited to, phone and email support; response, diagnosis and resolution services; incident tracking; labeling and transcription; and responding to customer queries. We verify that our service providers have the required technical expertise, and that they maintain our security and privacy standards. 
+</p>
+
+<p>
+You can view the current list of <a href="https://www.google.com/appserve/mkt/p/AJ-PF7wcbiOeg27Gqkajq4Rmp8rox068Nc5liwzQa-oMV_zmd9e0LixUrdW_X-_N3WA73GQ-9iG6Q_AZLouTK6dUwcsIE7lNY9Gn8P02HxalR7uW0-8">Firebase Third Party Subprocessors</a> at any time.
+</p>
+ 
+  
+
+
+<br />
+Was this information helpful?
+<br />
+
+
+  
+  
+  <a href="https://www.google.com/appserve/mkt/p/AJ-PF7xu5TT5QZ7ECSxWAoThZjj4syV46Wx2HUNBP-Y_79EnL4gHigwVnGjqe9uCv4RomN-bKZS8wlghX7w4RIGZ7uhU7rqlAKN9IGqlvZGtI6XErU0_MhdLo1e3e52IP64MyktogTbEDaba2PBSagtJ0m7Sl4RgjC1rGqxilTnOtSmAZEk4DNQAQlaI8QYoOw">YES</a>
+     
+    <a href="https://www.google.com/appserve/mkt/p/AJ-PF7ywKdhqXyN5HJq6dJVCcUZryyDqBq2kRDJruv_xC8bfIjf0eZ_HYEJa-PzonNMfFYq5Y0XUxunP1rn35uJxIdBOHfWAlwvQwf-t87WblD7XYXPk9LKo5fyA2kyGJAW_qbJASlFZjoOlhRIBkiFOrUKkBYgH8tEoS4ZNBjW4vjguNRT9VmRqgs7WoAff">NO</a>
+  
+  
+
+
+</td>
+</tr>
+<tr>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+
+  
+    <tr>
+      <td>
+        
+          Sincerely,
+        
+      </td>
+    </tr>
+    <tr>
+      <td>
+        
+          The Google Firebase Team
+        
+      </td>
+    </tr>
+  
+
+
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td>
+<table>
+<tr>
+<td>
+<img src="http://services.google.com/fh/files/emails/gcp_free_trail_decs_new.png" width="12" alt="">
+</td>
+<td>
+
+
+  
+  
+  <a href="https://www.google.com/appserve/mkt/p/AJ-PF7wcbiOeg27Gqkajq4Rmp8rox068Nc5liwzQa-oMV_zmd9e0LixUrdW_X-_N3WA73GQ-9iG6Q_AZLouTK6dUwcsIE7lNY9Gn8P02HxalR7uW0-8">DOCUMENTATION</a>
+  
+  
+
+
+</td></tr>
+</table>
+<table>
+<tr>
+<td>
+
+    
+    
+
+
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+</table></td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_footer_logo.png" alt="">
+</td>
+</tr>
+<tr>
+<td>
+<p>© 2018 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
+<br />
+You have received this mandatory service announcement to update you about important changes to Google Cloud Platform or your account.
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AJ-PF7zVt3H6rRLFK7Q6DmxfCbJz4d7lEUBVNNV36l_j1pBL_pKR-mtC0yipGSIRcyWpk6CV5N0Z15GJbS6khKkK3NU-71A7WskfiLXpcxJhWeo"><img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_gplus.png" alt="G+" width="33"></a></td>
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AJ-PF7zFgIM0Bw9-pWgoszzt44w_bcY5er_AfjdqdMT_5Cu15ch0NAfu7LjU4baHhChgDw-Om4qJAAwzydDiAQ_gdASTFThU9TzFng4ZuEiMaw"><img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_blogger.png" alt="Blogger" width="33"></a></td>
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AJ-PF7xR5VH_pB1tnct143wy43wwqnkWnEKkkjfdtxVeWijQzz_3hss5KmdyhPjZc0ctU2ygniHEnlaB9G7y2XsWyaahBDf06DEv-F01iXusCSMVmg"><img src="https://services.google.com/fh/files/emails/gcp_newsletter_email_github.png" alt="GitHub" width="33"></a></td>
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AJ-PF7yppldc0y1W2K6d9jEMT-eJYaosjeR8U3Ni6eg19a206hysV86cP-Q4xol3-2fJ2nc8XT9KaLA0DrLUMTRqceNRYYajq49CO0S6YM1tr9Xo8dzbHhFL"><img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_linkedin.png" alt="LinkedIn" width="33"></a></td>
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AJ-PF7yXySajmtOvZJfE49gbYmQPSGKGLdonF0-kzruCXfjf95aFqVP5YKl-JhQeWbgLpWmg5nvCNTWi_Zt3kGFnPWur_lWZhbh5umbLyA"><img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_twitter.png" alt="Twitter" width="33"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div>
+                                                                                      
+</div>
+<img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AJ-PF7wGWrlAcKskGm7kE7g34N5ChyUlR6WdsEtXBaHRR79lHw.gif">
+
+
+  
+</div>
+
+/imyaman/2018/07/001056.html
+
+  </body>
+</html>
