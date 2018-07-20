@@ -4,9 +4,32 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/baas/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/baas/3</id>
-    <updated>2017-09-14T15:08:46Z</updated>
+    <updated>2018-07-20T23:52:33Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Azure의 App Service 쓸 때 참고사항</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2018/07/001125.html" />
+    <id>tag:weblog.youre.space,2018:/baas//3.1125</id>
+
+    <published>2018-07-20T23:47:08Z</published>
+    <updated>2018-07-20T23:52:33Z</updated>
+
+    <summary>javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요. var client = new WindowsAzure.MobileServiceClient(&apos;https://imyaman.azure-mobile.net/&apos;, &apos;MY-KEY&apos;);var commentsItemTable = client.getTable(&apos;Comments&apos;);commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All; Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다. 앱...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/baas/">
+        <![CDATA[<p>javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요.</p>
+<p>var client = new WindowsAzure.MobileServiceClient('<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fnextlayer.azure-mobile.net%2F&amp;h=AT2pceFEmpwgbuSKFRVO3wRE_aMcXX3FA4GItjX-zDMJNMScqHN5nOomyeGyYE8tEDakqAfutWxmGRL0WWbDTZtMINCFBdgq1fJtepS_sN2NQOCMrrEHY3YsXx_mXOb0pfNTOWOE9axwJdF0" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="hover">https://imyaman.azure-mobile.net/</a>', 'MY-KEY');<br />var commentsItemTable = client.getTable('Comments');<br />commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All;</p>
+<p>Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다.<br /> 앱 세팅에 MS_SkipVersionCheck = true 설정을 하면 해결됩니다.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Collaboration, integration and interoperability key to smart cities</title>
@@ -462,28 +485,6 @@ BaaS로는 baas.io 잘 써왔는데, 지금은 아무 생각 없이 Parse 잘 �
 <p>반면에 baas.io는 html, css, js 파일은 (거의) 고정되어있고, js가 로그인 여부를 확인하여 baas.io API를 통해 데이터를 받아와 웹 브라우저에서 상황에 맞게 표시를 해줍니다. AJAX나 그런 것을 찾아보시면 도움이 될 듯합니다.</p>
 <p>그 래서 progress bar를 표시하긴 하는데, API 응답 속도가 빠르니 다른 웹 사이트에서 페이지 이동할 때와 로딩 시간에는 차이가 없을 겁니다. 다만, 혹시 API 응답 속도가 늦을 경우(일시적인 네트워크 장애 또는 클라이언트 쪽의 문제로 인해서도) progress bar가 없으면 웹 브라우저가 멈춘 것 같거나 반응이 없는 것처럼 보이기 때문에...</p>
 <p>그런겁니다. ^^; 혹시 다른 불편함이 있어서 질문 하셨나요? 아니면 그냥 궁금해서...?</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>2014년 ucloud biz 개발자 컨퍼런스 - ucloud BaaS</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/baas/2014/03/000015.html" />
-    <id>tag:weblog.youre.space,2014:/baas//3.15</id>
-
-    <published>2014-03-31T10:24:00Z</published>
-    <updated>2017-07-09T13:30:13Z</updated>
-
-    <summary>http://www.youtube.com/watch?v=LYP6R_wq1ZA 모바일 앱 개발자를 위한 백엔드 서비스 ucloud BaaS (baas.io) 2014년 1월 23일 발표 동영상...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/baas/">
-        <![CDATA[<p><a href="http://www.youtube.com/watch?v=LYP6R_wq1ZA">http://www.youtube.com/watch?v=LYP6R_wq1ZA</a></p>
-<p>모바일 앱 개발자를 위한 백엔드 서비스 ucloud BaaS (baas.io)<br /> 2014년 1월 23일<br /> 발표 동영상</p>]]>
         
     </content>
 </entry>

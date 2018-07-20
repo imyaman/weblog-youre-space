@@ -88,6 +88,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-1125" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/baas/2018/07/001125.html">Azure의 App Service 쓸 때 참고사항</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-07-21T08:47:08+09:00" itemprop="datePublished">July 21, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요.</p>
+<p>var client = new WindowsAzure.MobileServiceClient('<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fnextlayer.azure-mobile.net%2F&amp;h=AT2pceFEmpwgbuSKFRVO3wRE_aMcXX3FA4GItjX-zDMJNMScqHN5nOomyeGyYE8tEDakqAfutWxmGRL0WWbDTZtMINCFBdgq1fJtepS_sN2NQOCMrrEHY3YsXx_mXOb0pfNTOWOE9axwJdF0" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="hover">https://imyaman.azure-mobile.net/</a>', 'MY-KEY');<br />var commentsItemTable = client.getTable('Comments');<br />commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All;</p>
+<p>Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다.<br /> 앱 세팅에 MS_SkipVersionCheck = true 설정을 하면 해결됩니다.</p>
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/baas/2018/07/001125.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-1124" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/07/001124.html">안나의 백지편지 -제20회- 예순즈음에 배우는 자서전</a></h2>
@@ -335,34 +359,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="http://weblog.youre.space/imyaman/2018/07/001116.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1115" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/07/001115.html">정의란 무엇일까 생각해봅니다.</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-07-13T07:27:57+09:00" itemprop="datePublished">July 13, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <div>&#49888;&#47928; &#44592;&#49324;&#47484; &#48372;&#45796;&#44032;, &#47952; &#51060;&#47088; &#54805;&#54200; &#50630;&#45716; &#44592;&#49324;&#44032; &#51080;&#45208; &#49373;&#44033;&#54616;&#45796;&#44032;, &#51221;&#51032;&#46976; &#47924;&#50631;&#51068;&#44620; &#49373;&#44033;&#54644;&#48389;&#45768;&#45796;.<br />
-<br />
-</div>
-<div>&#44536;&#47084;&#44256; &#51080;&#51004;&#45768;, &#51328; &#51320;&#47532;&#45348;&#50836;.<br />
-</div>
-
-
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/imyaman/2018/07/001115.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 

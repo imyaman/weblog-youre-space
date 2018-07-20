@@ -1,0 +1,56 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="http://weblog.youre.space/baas/2018/07/001125.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요. var client = new WindowsAzure.MobileServiceClient(&#039;https://imyaman.azure-mobile.net/&#039;, &#039;MY-KEY&#039;);var commentsItemTable = client.getTable(&#039;Comments&#039;);commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All; Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다. 앱...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Azure의 App Service 쓸 때 참고사항 - BaaS와 PaaS 차이</title>
+
+  <link rel="prev" href="http://weblog.youre.space/baas/2017/09/000353.amp.html" title="Collaboration, integration and interoperability key to smart cities">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Azure의 App Service 쓸 때 참고사항">
+    <meta property="og:url" content="http://weblog.youre.space/baas/2018/07/001125.html">
+    <meta property="og:description" content="javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요. var client = new WindowsAzure.MobileServiceClient(&#039;https://imyaman.azure-mobile.net/&#039;, &#039;MY-KEY&#039;);var commentsItemTable = client.getTable(&#039;Comments&#039;);commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All; Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다. 앱...">
+    <meta property="og:site_name" content="BaaS와 PaaS 차이">
+    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요. var client = new WindowsAzure.MobileServiceClient(&#039;https://imyaman.azure-mobile.net/&#039;, &#039;MY-KEY&#039;);var commentsItemTable = client.getTable(&#039;Comments&#039;);commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All; Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다. 앱...">
+    <link itemprop="url" href="http://weblog.youre.space/baas/2018/07/001125.html">
+    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Azure의 App Service 쓸 때 참고사항</h1>
+<time datetime="2018-07-21T08:47:08+09:00" itemprop="datePublished">July 21, 2018</time>
+<time datetime="2018-07-21T08:47:08+09:00" itemprop="dateModified">July 21, 2018</time>
+
+by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요.</p>
+<p>var client = new WindowsAzure.MobileServiceClient('<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fnextlayer.azure-mobile.net%2F&amp;h=AT2pceFEmpwgbuSKFRVO3wRE_aMcXX3FA4GItjX-zDMJNMScqHN5nOomyeGyYE8tEDakqAfutWxmGRL0WWbDTZtMINCFBdgq1fJtepS_sN2NQOCMrrEHY3YsXx_mXOb0pfNTOWOE9axwJdF0" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="hover">https://imyaman.azure-mobile.net/</a>', 'MY-KEY');<br />var commentsItemTable = client.getTable('Comments');<br />commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All;</p>
+<p>Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다.<br /> 앱 세팅에 MS_SkipVersionCheck = true 설정을 하면 해결됩니다.</p>
+  
+</div>
+
+/baas/2018/07/001125.html
+
+  </body>
+</html>
