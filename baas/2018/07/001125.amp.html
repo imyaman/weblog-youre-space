@@ -47,6 +47,7 @@ by <span itemprop="author"><a class="fn url" href="http://weblog.youre.space/ver
   <p>javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요.</p>
 <p>var client = new WindowsAzure.MobileServiceClient('<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fnextlayer.azure-mobile.net%2F&amp;h=AT2pceFEmpwgbuSKFRVO3wRE_aMcXX3FA4GItjX-zDMJNMScqHN5nOomyeGyYE8tEDakqAfutWxmGRL0WWbDTZtMINCFBdgq1fJtepS_sN2NQOCMrrEHY3YsXx_mXOb0pfNTOWOE9axwJdF0" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="hover">https://imyaman.azure-mobile.net/</a>', 'MY-KEY');<br />var commentsItemTable = client.getTable('Comments');<br />commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All;</p>
 <p>Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다.<br /> 앱 세팅에 MS_SkipVersionCheck = true 설정을 하면 해결됩니다.</p>
+<p>App Service 상세 메뉴 중에 Overview 아래 쪽에 API -&gt; CORS가 있습니다. Cross origin 관련해서 설정하면 편합니다.<br />cli로 설정해야할 땐 properties.cors.allowedOrigins 키워드로 찾아보세요.</p>
   
 </div>
 
