@@ -4,9 +4,33 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2018-08-25T05:14:16Z</updated>
+    <updated>2018-08-25T18:36:48Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Your Realtime Database &apos;weblog-683a9&apos; has insecure rules</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2018/08/001270.html" />
+    <id>tag:weblog.youre.space,2018:/imyaman//12.1270</id>
+
+    <published>2018-08-25T18:36:47Z</published>
+    <updated>2018-08-25T18:36:48Z</updated>
+
+    <summary>weblog[Firebase] Your Realtime Database &apos;weblog-683a9&apos; has insecure rulesWe&apos;ve detected the following issue(s) with your security rules:any user can read your entire databaseany user can write to your entire databaseWithout strong security rules, anyone who has the address of your database...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Firebase" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
+        <![CDATA[<div><div><img src="https://firebase.google.com/_static/053546c383/images/firebase/lockup.png"></div><table><tr><td><div>weblog</div><div>[Firebase] Your Realtime Database 'weblog-683a9' has insecure rules</div></td><td><img src="https://www.gstatic.com/mobilesdk/180621_mobilesdk/firebase_database_white_24@2x.png"></td><tr></tr></tr></table><div><div><div><table><tr><td><img src="https://www.gstatic.com/mobilesdk/171101_mobilesdk/images/caution_orange_24dp_@2x.png"></td><td><span>We've detected the following issue(s) with your security rules:<ul><li>any user can read your entire database</li><li>any user can write to your entire database</li></ul></span></td></tr></table></div></div><div>Without strong security rules, anyone who has the address of your database can read / write to it, leaving your data vulnerable to attackers stealing, modifying, or deleting data as well as creating costly operations.</div></div><div></div><div><div><div>Insecure Rules</div></div><div>weblog</div><div><div><div>Database</div><div>weblog-683a9</div></div></div><div><div><span><a href="https://firebase.google.com/docs/database/security/resolve-insecurities">Learn more</a></span><span><a href="https://console.firebase.google.com/project/weblog-683a9/database/weblog-683a9/rules">Edit rules</a></span></div></div></div><div></div><div><div><div>If you have questions or feel you've received this message in error, please contact <a href="https://firebase.google.com/support/">Firebase support</a></div><div>Thanks for using Firebase!</div></div></div><div><div>This email is notifying you about important service information regarding your Firebase project</div><div><div>Manage your <a href="https://console.firebase.google.com/subscriptions/project/weblog-683a9">Alert settings</a></div></div></div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png"></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Samuel Butler</title>
@@ -356,31 +380,6 @@
 
 
 <p>출처 : <a href="http://seongnamdiary.com/221344227108">http://seongnamdiary.com/221344227108</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>태풍 이렇게 대비 합시다! - 솔릭 대비 국민행동요령</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/imyaman/2018/08/001255.html" />
-    <id>tag:weblog.youre.space,2018:/imyaman//12.1255</id>
-
-    <published>2018-08-22T06:32:49Z</published>
-    <updated>2018-08-22T06:32:49Z</updated>
-
-    <summary>6년만에 강풍이라는 태풍 솔릭이 오고 있습니다! 인명피해 및 재산피해를 최소화하기 위해 미리부터 국민행동요령을 지켜보아요! 출처 : http://blog.naver.com/letsgoyang/221343758698---------------------------------------------------------------------------Visit this link to stop these emails: http://zpr.io/ntuyE...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/imyaman/">
-        <![CDATA[6년만에 강풍이라는 태풍 솔릭이 오고 있습니다!  인명피해 및 재산피해를 최소화하기 위해 미리부터 국민행동요령을 지켜보아요!
-
-
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221343758698">http://blog.naver.com/letsgoyang/221343758698</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
