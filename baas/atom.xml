@@ -156,7 +156,7 @@ DB 10GB/월이면, 약 300MB/일. 로그인하고 글 목록 갖고 오는 것 �
     <id>tag:weblog.youre.space,2016:/baas//3.25</id>
 
     <published>2016-06-14T13:42:08Z</published>
-    <updated>2017-07-09T13:30:13Z</updated>
+    <updated>2018-08-31T04:46:37Z</updated>
 
     <summary>Parse, Kinvey, usergrid, Azure Mobile Services 등은 하나의 entity를 저장하면 생성시각을 자동으로 함께 저장합니다. 이런 BaaS들은 대부분 entity의 특정 프로퍼티에 접근할 때 rowData.keyname처럼 접근하는데, Parse의 경우는 rowData.get(&apos;comment&apos;)처럼 접근합니다. 생성시각 접근할 때에는 Parse는 rowData.createdAt처럼, Kinvey는 rowData._kmd.ect처럼, usergrid는 rowData.created*1000처럼, Azure는 rowData.createdAt처럼 접근합니다....</summary>
     <author>
