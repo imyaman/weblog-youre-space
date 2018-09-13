@@ -4,9 +4,33 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/mhgim80/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/mhgim80/atom.xml" />
     <id>tag:weblog.youre.space,2017-11-10:/mhgim80/15</id>
-    <updated>2018-08-17T22:32:34Z</updated>
+    <updated>2018-09-13T20:48:42Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Your Realtime Database &apos;weblog-683a9&apos; has insecure rules</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/mhgim80/2018/09/001359.html" />
+    <id>tag:weblog.youre.space,2018:/mhgim80//15.1359</id>
+
+    <published>2018-09-13T20:48:42Z</published>
+    <updated>2018-09-13T20:48:42Z</updated>
+
+    <summary>weblog[Firebase] Your Realtime Database &apos;weblog-683a9&apos; has insecure rulesWe&apos;ve detected the following issue(s) with your security rules:any user can read your entire databaseany user can write to your entire databaseWithout strong security rules, anyone who has the address of your database...</summary>
+    <author>
+        <name>김명환</name>
+        
+    </author>
+    
+        <category term="Firebase" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/mhgim80/">
+        <![CDATA[<div><div><img src="https://firebase.google.com/_static/053546c383/images/firebase/lockup.png"></div><table><tr><td><div>weblog</div><div>[Firebase] Your Realtime Database 'weblog-683a9' has insecure rules</div></td><td><img src="https://www.gstatic.com/mobilesdk/180621_mobilesdk/firebase_database_white_24@2x.png"></td><tr></tr></tr></table><div><div><div><table><tr><td><img src="https://www.gstatic.com/mobilesdk/171101_mobilesdk/images/caution_orange_24dp_@2x.png"></td><td><span>We've detected the following issue(s) with your security rules:<ul><li>any user can read your entire database</li><li>any user can write to your entire database</li></ul></span></td></tr></table></div></div><div>Without strong security rules, anyone who has the address of your database can read / write to it, leaving your data vulnerable to attackers stealing, modifying, or deleting data as well as creating costly operations.</div></div><div></div><div><div><div>Insecure Rules</div></div><div>weblog</div><div><div><div>Database</div><div>weblog-683a9</div></div></div><div><div><span><a href="https://firebase.google.com/docs/database/security/resolve-insecurities">Learn more</a></span><span><a href="https://console.firebase.google.com/project/weblog-683a9/database/weblog-683a9/rules">Edit rules</a></span></div></div></div><div></div><div><div><div>If you have questions or feel you've received this message in error, please contact <a href="https://firebase.google.com/support/">Firebase support</a></div><div>Thanks for using Firebase!</div></div></div><div><div>This email is notifying you about important service information regarding your Firebase project</div><div><div>Manage your <a href="https://console.firebase.google.com/subscriptions/project/weblog-683a9">Alert settings</a></div></div></div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png"></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Your Realtime Database &apos;weblog-683a9&apos; has insecure rules</title>
