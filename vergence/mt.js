@@ -645,7 +645,7 @@ function mtFetchUser(cb) {
     if ( ( cb == 'mtSetUser' ) && mtGetUser() ) {
         var url = document.URL;
         url = url.replace(/#.+$/, '');
-        url += '#comments-open';
+        url += '#comments-form';
         location.href = url;
     } else {
         // we aren't using AJAX for this, since we may have to request
@@ -765,7 +765,8 @@ function mtEntryOnLoad() {
     var cf = document['comments_form'];
     if (cf && cf.preview) cf.preview.value = '';
     mtHide('trackbacks-info');
-    mtHide('comments-open');
+    mtHide('comment-greeting');
+    mtHide('comments-form');
     mtFireEvent('usersignin');
 }
 
@@ -858,7 +859,6 @@ function mtSignOutOnClick() {
 function mtShowGreeting() {
 
     mtShowCaptcha();
-
 }
 
 

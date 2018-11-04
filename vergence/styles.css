@@ -1,2 +1,5 @@
-@import url(http://connexus.youre.space/mt-static/support/theme_static/pico/style_library/base.css);
-@import url(http://connexus.youre.space/mt-static/support/theme_static/pico/style_library/pico-white/screen.css);
+/* This is the StyleCatcher theme addition. Do not remove this block. */
+@import url(http://connexus.youre.space/mt-static/support/theme_static/rainier/css/base.css);
+@import url(http://connexus.youre.space/mt-static/support/theme_static/rainier/css/rainier-white/screen.css);
+/* end StyleCatcher imports */
+
