@@ -1,8 +1,8 @@
 // The cookie name to use for storing the blog-side comment session cookie.
-var mtCookieName = "mt_blog_user";
-var mtCookieDomain = ".weblog.youre.space";
-var mtCookiePath = "/";
-var mtCookieTimeout = 14400;
+var mtCookieName = "";
+var mtCookieDomain = "";
+var mtCookiePath = "";
+var mtCookieTimeout = ;
 
 
 function mtHide(id) {
@@ -640,12 +640,13 @@ function mtGetUser() {
 
 
 var mtFetchedUser = false;
+
 function mtFetchUser(cb) {
     if (!cb) cb = 'mtSetUser';
     if ( ( cb == 'mtSetUser' ) && mtGetUser() ) {
         var url = document.URL;
         url = url.replace(/#.+$/, '');
-        url += '#comments-form';
+        url += '#comments-open';
         location.href = url;
     } else {
         // we aren't using AJAX for this, since we may have to request
@@ -669,11 +670,13 @@ function mtVerifySession(cb) {
 }
 
 
+
 function mtRememberMeOnClick(b) {
     if (!b.checked)
         mtClearUser(b.form);
     return true;
 }
+
 
 
 var mtRequestSubmitted = false;
@@ -711,9 +714,6 @@ function mtCommentSessionVerify(app_user) {
         mtClearUser();
         mtFireEvent('usersignin');
 
-        mtShow('comments-form');
-        mtHide('comments-open-footer');
-
     }
 }
 
@@ -729,8 +729,6 @@ function mtUserOnLoad() {
             if (mtCaptchaVisible)
                 mtHide('comments-open-captcha');
         } else {
-
-            mtHide('comments-form');
 
         }
         if ( u && u.is_banned )
@@ -766,12 +764,13 @@ function mtUserOnLoad() {
 }
 
 
+
+
 function mtEntryOnLoad() {
     var cf = document['comments_form'];
     if (cf && cf.preview) cf.preview.value = '';
     mtHide('trackbacks-info');
-    mtHide('comment-greeting');
-    mtHide('comments-form');
+    mtHide('comments-open');
     mtFireEvent('usersignin');
 }
 
@@ -792,10 +791,11 @@ function mtEntryOnUnload() {
 mtAttachEvent('usersignin', mtUserOnLoad);
 
 
+
 function mtSignIn() {
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=login&blog_id=1';
+    var url = '';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -840,7 +840,7 @@ function mtSignOut(entry_id) {
     mtClearUser();
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1&blog_id=1';
+    var url = '';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -861,55 +861,13 @@ function mtSignOutOnClick() {
 }
 
 
+
 function mtShowGreeting() {
 
-    var reg_reqd = true;
-
-    var cf = document['comments_form'];
-    if (!cf) return;
-
-    var el = document.getElementById('comment-greeting');
-    if (!el)  // legacy MT 4.x element id
-        el = document.getElementById('comment-form-external-auth');
-    if (!el) return;
-
-    var eid = cf.entry_id;
-    var entry_id;
-    if (eid) entry_id = eid.value;
-
-    var phrase;
-    var u = mtGetUser();
-
-    if ( u && u.is_authenticated ) {
-        if ( u.is_banned ) {
-            phrase = 'You do not have permission to comment on this blog. (\<a href=\"javas\cript:void(0);\" onclick=\"return mtSignOutOnClick();\"\>sign out\<\/a\>)';
-        } else {
-            var user_link;
-            if ( u.is_author ) {
-                user_link = '<a href="http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=edit_profile&blog_id=1&return_url=' + encodeURIComponent( location.href );
-                user_link += '">' + u.name + '</a>';
-            } else {
-                // registered user, but not a user with posting rights
-                if (u.url)
-                    user_link = '<a href="' + u.url + '">' + u.name + '</a>';
-                else
-                    user_link = u.name;
-            }
-            // TBD: supplement phrase with userpic if one is available.
-            phrase = 'Thanks for signing in, __NAME__. (\<a href=\"javas\cript:void(0)\" onclick=\"return mtSignOutOnClick();\"\>sign out\<\/a\>)';
-            phrase = phrase.replace(/__NAME__/, user_link);
-        }
-    } else {
-        if (reg_reqd) {
-            phrase = '\<a href=\"javas\cript:void(0)\" onclick=\"return mtSignInOnClick(\'comment-greeting\')\"\>Sign in\<\/a\> to comment.';
-        } else {
-            phrase = '\<a href=\"javas\cript:void(0)\" onclick=\"return mtSignInOnClick(\'comment-greeting\')\"\>Sign in\<\/a\> to comment, or comment anonymously.';
-        }
-    }
-    el.innerHTML = phrase;
-
     mtShowCaptcha();
+
 }
+
 
 
 function mtReplyCommentOnClick(parent_id, author) {
@@ -1090,7 +1048,7 @@ function mtInit() {
         window.onload = function() {};
     }
 
-    mtInitCommenter();
+
 
 }
 
@@ -1129,69 +1087,4 @@ window.onload = mtInit;
 
 
 
-function mtLoggedIn(ott) {
-    var script = document.createElement('script');
-    var ts = new Date().getTime();
-    script.src = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=userinfo&jsonp=mtSaveUserInfo&ott=' + ott;
-    (document.getElementsByTagName('head'))[0].appendChild(script);
-}
-
-function mtRefreshUserInfo(sid) {
-    var script = document.createElement('script');
-    var ts = new Date().getTime();
-    script.src = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=userinfo&jsonp=mtSaveUserInfo&sid=' + sid;
-    (document.getElementsByTagName('head'))[0].appendChild(script);
-}
-
-function mtSaveUserInfo (u) {
-    if ( u.error ) {
-        if ( !user ) {
-            alert('The sign-in attempt was not successful; Please try again.');
-        }
-        return;
-    }
-    user = null;
-    var cmtcookie = mtBakeUserCookie(u);
-    var now = new Date();
-    var cache_period = mtCookieTimeout * 1000;
-
-    // cache anonymous user info for a long period if the
-    // user has requested to be remembered
-    mtFixDate(now);
-    now.setTime(now.getTime() + cache_period);
-    mtSetCookie(mtCookieName, cmtcookie, now, mtCookiePath, mtCookieDomain,
-        location.protocol == 'https:');
-    mtFireEvent('usersignin');
-}
-
-function mtInitCommenter () {
-    /***
-     * If request contains a '#_login' or '#_logout' hash, use this to
-     * also delete the blog-side user cookie, since we're coming back from
-     * a login, logout or edit profile operation.
-     */
-
-    var hash = ( window.location.hash );
-    hash.match( /^#_(.*)$/ );
-    var command = RegExp.$1 || '';
-    if ( command === 'refresh' ) {
-        // Back from profile edit screen.
-        // Reload userinfo with current session ID.
-        var u = mtGetUser();
-        user  = null;
-        mtRefreshUserInfo(u.sid);
-    }
-    else if ( command === 'logout' ) {
-        // clear any logged in state
-        mtClearUser();
-        mtFireEvent('usersignin');
-    }
-    else if ( command.match( /^login_(.*)$/ ) ) {
-        var sid = RegExp.$1;
-        mtLoggedIn(sid);
-    }
-    else {
-        mtFireEvent('usersignin');
-    }
-}
 
