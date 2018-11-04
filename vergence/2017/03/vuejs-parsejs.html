@@ -23,16 +23,15 @@
 
 
     
+    
     <link rel="prev bookmark" href="http://weblog.youre.space/vergence/2017/03/iiii.html" title="임시저장" />
     <link rel="next bookmark" href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html" title="글씨 연습 2017-03-19" />
     
-    
     <title>Vue.js Parse.js 함께 쓰고 싶은 마음 - vergence의 이상한 세상</title>
 </head>
-<body id="classic-blog" class="mt-entry-archive layout-wtt">
+<body id="pico" class="mt-entry-archive layout-w-b">
     <div id="container">
         <div id="container-inner">
-
 
             <div id="header">
     <div id="header-inner">
@@ -47,97 +46,89 @@
 </div>
 
 
+            <div id="nav">
+<div id="nav-inner">
+<ul class="nav-list pkg">
+    <li class="nav-list-item"><a href="http://weblog.youre.space/vergence/">Home</a></li>
+    
+    <li class="nav-list-item"><a href="http://weblog.youre.space/vergence/archives.html">Archives</a></li>
+    <li class="nav-list-item"><a href="http://weblog.youre.space/vergence/atom.xml">Subscribe</a></li>
+</ul>
+</div>
+</div>
+
 
             <div id="content">
                 <div id="content-inner">
 
-
                     <div id="alpha">
                         <div id="alpha-inner">
 
+                            <p class="content-nav">
+                                <a href="http://weblog.youre.space/vergence/2017/03/iiii.html">&laquo; 임시저장</a> |
+                                <a href="http://weblog.youre.space/vergence/">Home</a>
+                                | <a href="http://weblog.youre.space/vergence/2017/03/fountainpen-2017-03-19.html">글씨 연습 2017-03-19 &raquo;</a>
+                            </p>
 
-                            <div id="entry-204" class="entry-asset asset hentry">
+
+                            <h2 class="date-header">March  9, 2017</h2>
+
+
+                            <div id="entry-204" class="entry-asset asset">
                                 <div class="asset-header">
                                     <h1 id="page-title" class="asset-name entry-title">Vue.js Parse.js 함께 쓰고 싶은 마음</h1>
-                                    <div class="asset-meta">
-                                        <span class="byline">
-
-                                            By <span class="vcard author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span> on <abbr class="published" title="2017-03-09T00:01:34+09:00">March  9, 2017 12:01 AM</abbr>
-
-                                        </span>
-
-
-                                    </div>
                                 </div>
-                                <div class="asset-content entry-content">
 
-                                    <div class="asset-body">
+                                <div class="asset-content">
+
+                                    <div class="entry-body">
                                         <p>하아... 컴맹이라 별짓하고 있습니다.<br /><br />Parse Server로부터 데이터를 여러개 가져옵니다.<br /><br />    var Post = Parse.Object.extend("Post");<br />    //var blogs = new Post();<br />    var query = new Parse.Query(Post);<br />    query.limit(10);<br />    query.descending("createdAt");<br />    query.find({<br />      success: querySuccess,<br />      error: queryFailure<br />    });<br /><br />function querySuccess(posts){<br />  $.each(posts, function(index, value){<br />    console.log(value.createdAt);<br />    console.log(value.get("title"));<br />  });<br />}<br /><br />이렇게 접근이 가능한데, Parse Object는 createdAt은 바로 접근이 되는데, 다른 컬럼은 get()을 써야합니다.<br />그래서, Vue.js에 쓸 때, <br /><br />  var example2 = new Vue({<br />    el: '#example-2',<br />    data: {<br />      items: posts<br />    }<br />  })<br />라고 하고,<br /><br />          &lt;template v-for="item in items"&gt;<br />          &lt;div class="blog-post"&gt;<br />            &lt;h2 class="blog-post-title"&gt;{{ item.title }}&lt;/h2&gt;<br />            &lt;p class="blog-post-meta"&gt;{{ item.createdAt }} by &lt;a href="#"&gt;imyaman&lt;/a&gt;&lt;/p&gt;<br />            &lt;span&gt;{{ item.content }} {{ item.objectId }}&lt;/span&gt;<br />          &lt;/div&gt;&lt;!-- /.blog-post --&gt;<br />          &lt;/template&gt;<br /><br />이렇게 하면, item.createdAt 만 정상적으로 표시되고, item.title은 정상적으로 표시되지 않습니다.<br />Vue.js에 쓰기 위해 object array를 다시 만들어보았습니다.<br /><br />  $.each(posts, function(index, value){<br />    str = str + '{"title" : "' + value.get('title') + '"}';<br />    if(index+1 != posts.length){ str=str+','; }<br />  }); <br />  str = '[' + str + ']';<br /><br />  postObjects=JSON.parse(str);<br /><br />  var example2 = new Vue({<br />    el: '#example-2',<br />    data: {<br />      items: postObjects<br />    }<br />  })<br /><br />이렇게 하면 템플릿에서 item.title을 쓸 수 있긴한데, 과연 이게 바른 방법인가... 고민되네요.<br />http://blog.sys5.co/renew/index.html  파일에서 실험해보고 있습니다.</p>
                                     </div>
 
 
+
                                 </div>
+
                                 <div class="asset-footer">
+                                    <p class="asset-footer-info">
+                                        <span class="byline">
 
-    
+                                            By <span class="vcard author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span> on <abbr class="published" title="2017-03-09T00:01:34+09:00">12:01 AM</abbr>
 
+                                        </span>
+
+
+
+
+                                    </p>
 
                                 </div>
                             </div>
 
-
                     
                     
-
 
                         </div>
                     </div>
 
-
                     <div id="beta">
-    <div id="beta-inner">
+                        <div id="beta-inner">
 
-
-    
-    <div class="widget-archive widget-archive-category widget">
-    <h3 class="widget-header">Categories</h3>
+                            <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
     <div class="widget-content">
-    
-        
-        <ul>
-        
-        
-            <li><a href="http://weblog.youre.space/vergence/2002-2003/">2002-2003 (18)</a>
-        
-        
-            </li>
-        
-    
-        
-        
-            <li><a href="http://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
-        
-        
-            </li>
-        
-    
-        
-        
-            <li><a href="http://weblog.youre.space/vergence/cal/">cal (29)</a>
-        
-        
-            </li>
-        
-        </ul>
-        
-    
+        <form method="get" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="11" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
     </div>
 </div>
 
-
-
-
-    <div class="widget-archive-monthly widget-archive widget">
+<div class="widget-archive-monthly widget-archive widget">
     <h3 class="widget-header">Monthly <a href="http://weblog.youre.space/vergence/archives.html">Archives</a></h3>
     <div class="widget-content">
         <ul>
@@ -356,31 +347,6 @@
 
 
 
-<div class="widget-pages widget">
-    <h3 class="widget-header">Pages</h3>
-    <div class="widget-content">
-        <ul>
-    
-            <li class="page page-293"><a href="http://weblog.youre.space/vergence/sample-page.html">Page Example</a></li>
-    
-    
-            <li class="folder folder-13"><strong>about</strong>
-        
-            
-                <ul>
-            
-                    <li class="page page-292"><a href="http://weblog.youre.space/vergence/about/about-page.html">About Page</a></li>
-            
-                </ul>
-            
-        
-            </li>
-        
-    
-        </ul>
-    </div>
-</div>
-
 <div class="widget-syndication widget">
     <div class="widget-content">
         <ul>
@@ -389,36 +355,6 @@
         </ul>
     </div>
 </div>
-<div class="widget-powered widget">
-    <div class="widget-content">
-        <a href="https://www.movabletype.com/"><img src="http://connexus.youre.space/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 7.0.4" width="80" height="61" /></a>
-    </div>
-</div>
-
-
-
-    </div>
-</div>
-
-
-
-    
-<div id="gamma">
-    <div id="gamma-inner">
-    <div class="widget-search widget">
-    <h3 class="widget-header">Search</h3>
-    <div class="widget-content">
-        <form method="get" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
-            <input type="text" id="search" class="ti" name="search" value="" />
-
-            <input type="hidden" name="IncludeBlogs" value="11" />
-
-            <input type="hidden" name="limit" value="20" />
-            <input type="submit" accesskey="4" value="Search" />
-        </form>
-    </div>
-</div>
-
 <div class="widget-about-this-page widget">
     <h3 class="widget-header">
 
@@ -447,29 +383,23 @@
 </div>
 
 
-    </div>
-</div>
 
-
-
+                        </div>
+                    </div>
 
                 </div>
             </div>
-
 
             <div id="footer">
     <div id="footer-inner">
-        <div id="footer-content">
-            <div class="widget-powered widget">
-                <div class="widget-content">
-                    Powered by <a href="https://www.movabletype.org/">Movable Type</a>
-                </div>
-            </div>
+        <ul class="footer-list pkg">
+            <li class="footer-list-item">Powered by <a href="https://www.movabletype.org/">Movable Type</a></li>
 
+        </ul>
+            </div>
         </div>
     </div>
 </div>
-
 
 
         </div>

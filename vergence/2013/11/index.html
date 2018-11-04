@@ -29,10 +29,9 @@
     <link rel="next" href="http://weblog.youre.space/vergence/2014/03/" title="March 2014" />
 
 </head>
-<body id="classic-blog" class="mt-archive-listing mt-datebased-monthly-archive layout-wtt">
+<body id="pico" class="mt-archive-listing mt-datebased-monthly-archive layout-w-b">
     <div id="container">
         <div id="container-inner">
-
 
             <div id="header">
     <div id="header-inner">
@@ -46,6 +45,17 @@
     </div>
 </div>
 
+
+            <div id="nav">
+<div id="nav-inner">
+<ul class="nav-list pkg">
+    <li class="nav-list-item"><a href="http://weblog.youre.space/vergence/">Home</a></li>
+    
+    <li class="nav-list-item"><a href="http://weblog.youre.space/vergence/archives.html">Archives</a></li>
+    <li class="nav-list-item"><a href="http://weblog.youre.space/vergence/atom.xml">Subscribe</a></li>
+</ul>
+</div>
+</div>
 
 
             <div id="content">
@@ -63,23 +73,14 @@
 
 
                             
-                            <div id="entry-135" class="entry-asset asset hentry">
-    <div class="asset-header">
-        <h2 class="asset-name entry-title"><a href="http://weblog.youre.space/vergence/2013/11/sony-vaio-p-gma500-emgd.html" rel="bookmark">Sony Vaio P의 GMA500 그래픽 칩셋에 EMGD드라이버</a></h2>
-        <div class="asset-meta">
-            <span class="byline">
-    
-                By <span class="vcard author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span> on <abbr class="published" title="2013-11-30T23:12:00+09:00">November 30, 2013 11:12 PM</abbr>
-    
-            </span>
+                            <h2 class="date-header">November 30, 2013</h2>
 
-            
-            
 
-        </div>
-    </div>
-    <div class="asset-content entry-content">
-
+<div id="entry-135" class="entry-asset asset">
+    <h3 class="asset-header">
+        <a href="http://weblog.youre.space/vergence/2013/11/sony-vaio-p-gma500-emgd.html">Sony Vaio P의 GMA500 그래픽 칩셋에 EMGD드라이버</a>
+    </h3>
+    <div class="asset-content">
         <div class="asset-body">
             <p>Sony Vaio P25를 쓰고 있는데, 그래픽 칩셋이 GMA500이어서 약간의 삽질 끝에 EMGD(버전 1.8)가 제일 좋은 선택이라는 결론을 내리게 됐습니다.</p>
 <p>GMA500 드라이버에는 3가지 선택지가 있답니다.<br /> 1. EMGD 드라이버<br /> 2. PSB 드라이버<br /> 3. 최신 리눅스 커널에 gma500_gfx 모듈 이용, xorg.conf에 driver 부분에 modesetting을 설정<br /> (참조 https://wiki.ubuntu.com/PoulsboObsoleteDrivers).</p>
@@ -90,11 +91,23 @@
 <p>우선은 아래와 같이 시도해보려고 합니다.<br /> 1. Linux Mint 16에 EMGD 1.18을 시도<br /> 2. Ubuntu 11.04, EMGD 1.8에서 커널만 Linux 3.12.2 (Ubuntu 11.04는 Linux 2.6.38)<br /> 3. PixieLive에서 커널과 EMGD 드라이버만 복사해서 다른 배포판에 적용 (PixieLive는 Linux 3.9.11, xorg 1.10.6, EMGD 1.18)</p>
         </div>
 
+    </div>
+    <div class="asset-footer">
+        <p class="asset-footer-info">
+            <span class="byline">
 
+                By <span class="vcard author"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span> on <abbr class="published" title="2013-11-30T23:12:00+09:00">11:12 PM</abbr>
+
+            </span>
+
+    
+    
+
+        </p>
 
     </div>
-    <div class="asset-footer"></div>
 </div>
+
 
 
 
@@ -110,51 +123,24 @@
                         </div>
                     </div>
 
-
                     <div id="beta">
-    <div id="beta-inner">
+                        <div id="beta-inner">
 
-
-    
-    <div class="widget-archive widget-archive-category widget">
-    <h3 class="widget-header">Categories</h3>
+                            <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
     <div class="widget-content">
-    
-        
-        <ul>
-        
-        
-            <li><a href="http://weblog.youre.space/vergence/2002-2003/">2002-2003 (18)</a>
-        
-        
-            </li>
-        
-    
-        
-        
-            <li><a href="http://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
-        
-        
-            </li>
-        
-    
-        
-        
-            <li><a href="http://weblog.youre.space/vergence/cal/">cal (29)</a>
-        
-        
-            </li>
-        
-        </ul>
-        
-    
+        <form method="get" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="11" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
     </div>
 </div>
 
-
-
-
-    <div class="widget-archive-monthly widget-archive widget">
+<div class="widget-archive-monthly widget-archive widget">
     <h3 class="widget-header">Monthly <a href="http://weblog.youre.space/vergence/archives.html">Archives</a></h3>
     <div class="widget-content">
         <ul>
@@ -373,31 +359,6 @@
 
 
 
-<div class="widget-pages widget">
-    <h3 class="widget-header">Pages</h3>
-    <div class="widget-content">
-        <ul>
-    
-            <li class="page page-293"><a href="http://weblog.youre.space/vergence/sample-page.html">Page Example</a></li>
-    
-    
-            <li class="folder folder-13"><strong>about</strong>
-        
-            
-                <ul>
-            
-                    <li class="page page-292"><a href="http://weblog.youre.space/vergence/about/about-page.html">About Page</a></li>
-            
-                </ul>
-            
-        
-            </li>
-        
-    
-        </ul>
-    </div>
-</div>
-
 <div class="widget-syndication widget">
     <div class="widget-content">
         <ul>
@@ -406,36 +367,6 @@
         </ul>
     </div>
 </div>
-<div class="widget-powered widget">
-    <div class="widget-content">
-        <a href="https://www.movabletype.com/"><img src="http://connexus.youre.space/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 7.0.4" width="80" height="61" /></a>
-    </div>
-</div>
-
-
-
-    </div>
-</div>
-
-
-
-    
-<div id="gamma">
-    <div id="gamma-inner">
-    <div class="widget-search widget">
-    <h3 class="widget-header">Search</h3>
-    <div class="widget-content">
-        <form method="get" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
-            <input type="text" id="search" class="ti" name="search" value="" />
-
-            <input type="hidden" name="IncludeBlogs" value="11" />
-
-            <input type="hidden" name="limit" value="20" />
-            <input type="submit" accesskey="4" value="Search" />
-        </form>
-    </div>
-</div>
-
 <div class="widget-about-this-page widget">
     <h3 class="widget-header">
 
@@ -466,29 +397,23 @@
 </div>
 
 
-    </div>
-</div>
 
-
-
+                        </div>
+                    </div>
 
                 </div>
             </div>
-
 
             <div id="footer">
     <div id="footer-inner">
-        <div id="footer-content">
-            <div class="widget-powered widget">
-                <div class="widget-content">
-                    Powered by <a href="https://www.movabletype.org/">Movable Type</a>
-                </div>
-            </div>
+        <ul class="footer-list pkg">
+            <li class="footer-list-item">Powered by <a href="https://www.movabletype.org/">Movable Type</a></li>
 
+        </ul>
+            </div>
         </div>
     </div>
 </div>
-
 
 
         </div>
