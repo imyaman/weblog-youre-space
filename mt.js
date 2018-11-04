@@ -640,13 +640,12 @@ function mtGetUser() {
 
 
 var mtFetchedUser = false;
-
 function mtFetchUser(cb) {
     if (!cb) cb = 'mtSetUser';
     if ( ( cb == 'mtSetUser' ) && mtGetUser() ) {
         var url = document.URL;
         url = url.replace(/#.+$/, '');
-        url += '#comments-open';
+        url += '#comments-form';
         location.href = url;
     } else {
         // we aren't using AJAX for this, since we may have to request
@@ -670,13 +669,11 @@ function mtVerifySession(cb) {
 }
 
 
-
 function mtRememberMeOnClick(b) {
     if (!b.checked)
         mtClearUser(b.form);
     return true;
 }
-
 
 
 var mtRequestSubmitted = false;
@@ -764,13 +761,12 @@ function mtUserOnLoad() {
 }
 
 
-
-
 function mtEntryOnLoad() {
     var cf = document['comments_form'];
     if (cf && cf.preview) cf.preview.value = '';
     mtHide('trackbacks-info');
-    mtHide('comments-open');
+    mtHide('comment-greeting');
+    mtHide('comments-form');
     mtFireEvent('usersignin');
 }
 
@@ -789,7 +785,6 @@ function mtEntryOnUnload() {
 }
 
 mtAttachEvent('usersignin', mtUserOnLoad);
-
 
 
 function mtSignIn() {
@@ -861,13 +856,10 @@ function mtSignOutOnClick() {
 }
 
 
-
 function mtShowGreeting() {
 
     mtShowCaptcha();
-
 }
-
 
 
 function mtReplyCommentOnClick(parent_id, author) {
@@ -1048,8 +1040,6 @@ function mtInit() {
         window.onload = function() {};
     }
 
-
-
 }
 
 /* for Mozilla/Opera9 */
@@ -1084,7 +1074,5 @@ if (/WebKit/i.test(navigator.userAgent)) { // sniff
 window.onload = mtInit;
 
 // END: fast browser onload init
-
-
 
 
