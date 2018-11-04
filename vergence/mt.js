@@ -1,8 +1,8 @@
 // The cookie name to use for storing the blog-side comment session cookie.
-var mtCookieName = "mt_blog_user";
-var mtCookieDomain = ".weblog.youre.space";
-var mtCookiePath = "/";
-var mtCookieTimeout = 14400;
+var mtCookieName = "";
+var mtCookieDomain = "";
+var mtCookiePath = "";
+var mtCookieTimeout = ;
 
 
 function mtHide(id) {
@@ -645,7 +645,7 @@ function mtFetchUser(cb) {
     if ( ( cb == 'mtSetUser' ) && mtGetUser() ) {
         var url = document.URL;
         url = url.replace(/#.+$/, '');
-        url += '#comments-form';
+        url += '#comments-open';
         location.href = url;
     } else {
         // we aren't using AJAX for this, since we may have to request
@@ -764,9 +764,8 @@ function mtUserOnLoad() {
 function mtEntryOnLoad() {
     var cf = document['comments_form'];
     if (cf && cf.preview) cf.preview.value = '';
-    
-    mtHide('comment-greeting');
-    mtHide('comments-form');
+    mtHide('trackbacks-info');
+    mtHide('comments-open');
     mtFireEvent('usersignin');
 }
 
@@ -790,7 +789,7 @@ mtAttachEvent('usersignin', mtUserOnLoad);
 function mtSignIn() {
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=login&blog_id=11';
+    var url = '';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -835,7 +834,7 @@ function mtSignOut(entry_id) {
     mtClearUser();
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1&blog_id=11';
+    var url = '';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -859,6 +858,7 @@ function mtSignOutOnClick() {
 function mtShowGreeting() {
 
     mtShowCaptcha();
+
 }
 
 
