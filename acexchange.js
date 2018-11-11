@@ -12,6 +12,7 @@ function checkmobile() {
 
   var ismobile = checkmobile();
   if(ismobile){ ttx_ad_area_code="1964536686"; }else{ ttx_ad_area_code="1003162025"; }
+  console.log(ttx_ad_area_code);
 
   var ttx_total_cookie_name = "ttx_t_r";
   var e = function(a) {
