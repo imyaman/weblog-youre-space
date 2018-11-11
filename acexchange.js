@@ -36,5 +36,6 @@ function checkmobile() {
   a += "&site_url=" + encodeURIComponent("") + "&page_url=" + encodeURIComponent(ttx_page_url) + "&refer=" + encodeURIComponent(c);
   a += "&result=" + encodeURIComponent(f) + "&bnrs_e=" + encodeURIComponent(e("ttx_bnrs_e")) + "&du=" + encodeURIComponent(ttx_direct_url);
   a += "&rndm=" + Math.random() + "&cst=";
+  console.log(a);
   document.write("<script type='text/javascript' src='" + a + "' ><\/script>")
 })();
