@@ -4,9 +4,37 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2018-11-04:/vergence/11</id>
-    <updated>2018-11-11T22:37:14Z</updated>
+    <updated>2018-11-12T22:49:25Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 7.0.4</generator>
+
+<entry>
+    <title>연습</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/11/post-81.html" />
+    <id>tag:weblog.youre.space,2018:/vergence//11.1382</id>
+
+    <published>2018-11-12T22:49:00Z</published>
+    <updated>2018-11-12T22:49:25Z</updated>
+
+    <summary> 믿을 수 있는 이사·청소업체를 안심하고 고를 수 있는 방법!...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<div style="display: inline-block; margin: 0px auto; padding: 0;">
+<div style="margin: 10px; background: #fff; border: 1px solid #dae2e3; border-radius: 3px; box-shadow: 1px 1px 1px rgba(0,0,0,0.15);">
+<div style="width: 100%; line-height: 0; border-bottom: 1px solid #dae2e3;"><img src="http://img.tenping.kr/Content/Upload/Images/2018110915140001_Dis_20181109151439.png" style="width: 100%; height: auto; border-radius: 3px;" alt="" /></div>
+<div style="margin: 10px;">
+<div style="margin: 5px 0; color: #333; font-size: 14px; line-height: 1.4em; height: 2.6em; display: -webkit-box; text-overflow: ellipsis; -webkit-line-clamp: 2; -webkit-box-orient: vertical; word-wrap: break-word; font-weight: 300; text-align: left; overflow: hidden;">믿을 수 있는 이사·청소업체를 안심하고 고를 수 있는 방법!</div>
+</div>
+</div>
+</div>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Firebase가 있는데 Azure App Service의 Web Apps를 쓰는 이유</title>
@@ -505,30 +533,6 @@ MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.<br />
 <pre><code>net stop wuauserv<br />cd C:\Windows<br />xcopy C:\Windows\SoftwareDistribution D:\Windows\SoftwareDistribution /E /H /X /K     <br />; 위 명령에 이어 D라고 대답합니다.<br /><br />rename SoftwareDistribution SoftwareDistribution.del<br />del /s /q SoftwareDistribution.del<br />junction C:\Windows\SoftwareDistribution "D:\Windows\SoftwareDistribution"<br /><br />net start wuauserv</code></pre>
 <p>이렇게 하고 C:\Windows 디렉토리에서 SoftwareDistribution 아이콘을 보면, 아이콘 위에 바로가기 화살표가 있을 겁니다. 이제 업데이트를 시작하면 됩니다.</p>
 <p>keywords : Microsoft, Windows 10, 윈도, 윈도우즈, Upgrade, Update</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>일 잘 하려면 직접 해라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/04/post-76.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.747</id>
-
-    <published>2018-04-11T23:17:49Z</published>
-    <updated>2018-04-12T04:26:14Z</updated>
-
-    <summary>전에 모셨던 대대장님이 하신 말씀, &quot;일 잘 하려면 직접 해라.&quot; 내 머리에서 나온 업무이거나 내가 그 업무를 잘 알고 있는 상황에서, 사람들을 시켜 결과물을 만들어내면 아무리 사람들이 열심히 해줘도 내 마음에 찰 수는 없는 것. 내가 타인들 앞에 그 결과물을...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>전에 모셨던 대대장님이 하신 말씀, "일 잘 하려면 직접 해라."</p>
-<p>내 머리에서 나온 업무이거나 내가 그 업무를 잘 알고 있는 상황에서, 사람들을 시켜 결과물을 만들어내면 아무리 사람들이 열심히 해줘도 내 마음에 찰 수는 없는 것. 내가 타인들 앞에 그 결과물을 대표해야할 때는 더욱 더.<br /> 이럴 때, 사람들이 만들어 준 것이 70~80점짜리라면 고맙다고 받는게 상책. 그리고 내가 20~30점 채워 넣는 거. 그리고 일 주기 전에 내가 보완할 시간을 염두에 두는 것.<br /> 9시에 업무를 받았는데 3시에 보고 해야하면, 가용한 시간은 5시간. 점심 시간은 보장해야하니까. 내가 30%의 시간을 쓰고 사람들에게 70% 정도를 주자면, 9시~10시엔 내가 고민 하고 방향 정하고 양식 만들고 초안 만들고, 사람들에게 초안 주면서 2시까지 갖고 오라고 하고, 2시부터 3시까지는 내가 보완하고.</p>
-<p>내가 보완할 생각 없이, 사람들에게 3시까지 갖고 오라고 하면 망하는 거.</p>
-<p>자료 출처를 물으니 "우리 직원들이 가져온 건데..."라고 나경원이 대답했다고.</p>]]>
         
     </content>
 </entry>
