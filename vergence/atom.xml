@@ -4,9 +4,32 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2018-11-04:/vergence/11</id>
-    <updated>2018-11-12T22:51:43Z</updated>
+    <updated>2018-11-26T22:54:03Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 7.0.4</generator>
+
+<entry>
+    <title>이번 통신 장애에 대해</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/11/post-82.html" />
+    <id>tag:weblog.youre.space,2018:/vergence//11.1383</id>
+
+    <published>2018-11-26T22:52:58Z</published>
+    <updated>2018-11-26T22:54:03Z</updated>
+
+    <summary>이번 통신 장애 관련해서 할많하않 하고 싶은 이유 첫번째는, 아무리 비난해도 잘 안 바뀔 거라는 생각입니다. 민간기업이거든요. 공공성이 어쩌고는 우리의 바람일 뿐. 효율 측면에서 보면 어쩔 수 없는 거죠, 지사를 등급으로 나누고 관리를 다르게 하는 것은. 서울 등 대도시에 안...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>이번 통신 장애 관련해서 할많하않 하고 싶은 이유 첫번째는, 아무리 비난해도 잘 안 바뀔 거라는 생각입니다. <br />민간기업이거든요. 공공성이 어쩌고는 우리의 바람일 뿐. 효율 측면에서 보면 어쩔 수 없는 거죠, 지사를 등급으로 나누고 관리를 다르게 하는 것은. 서울 등 대도시에 안 중요한 지사가 어디 있겠습니까. 불이 났네 백업이 없네 어쩌고 해도, 또 불이 안 난다고 확신할 수 없고, 다른 통신사는 불 안 난다는 확신할 수 없고, 모든 망에 백업을 둔다고 할 수도 없을 테니까요.</p>
+<p>효율을 접어두고 생각하려면 공공기관이어야지요. 더 근본적인 부분을 꺼내자면, 통신을 민영화한 것부터 잘못이라고 생각합니다. "공기업의 경영 효율화 및 민영화 방안"이라는 이름으로 시작된 공기업 민영화. 결국 효율화라는게 붙어있거든요.</p>
+<p>통신 중에 기간이 되는 부분 모두 모아 공기업화하고, 효율 생각하지 말고 모두 백업 두고, 주민등록번호 부여하듯 전화번호도 부여하고, 통신의 고객 서비스 부분만 민영화 하였으면 하는 미약하고 개인적인 바람...</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>연습</title>
@@ -500,32 +523,6 @@ MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.<br />
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>jolla-xt9 rpm download here</p>
 <p><a target="_blank" href="https://drive.google.com/file/d/0B8M6cYC-SdW-amdCSllnSUhDd1E/view?usp=sharing">jolla-xt9-0.5.7-10.6.1.jolla.armv7hl.rpm</a></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Windows 10 업데이트 할 때 디스크 용량 부족</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/04/windows-10.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.754</id>
-
-    <published>2018-04-16T01:28:23Z</published>
-    <updated>2018-04-16T01:51:42Z</updated>
-
-    <summary>Windows 10 업데이트 할 때 디스크 용량 부족하다고 진행이 안 되는 경우가 있습니다. USB 디스크 연결하면 해결 할 수 있긴 한데, 태블릿 같은 경우는 USB 디스크 연결이 어려울 때가 있습니다. 태블릿에 USB 디스크 연결하기는 어렵고 SD 카드만 가용할 때 해결...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>Windows 10 업데이트 할 때 디스크 용량 부족하다고 진행이 안 되는 경우가 있습니다. USB 디스크 연결하면 해결 할 수 있긴 한데, 태블릿 같은 경우는 USB 디스크 연결이 어려울 때가 있습니다. 태블릿에 USB 디스크 연결하기는 어렵고 SD 카드만 가용할 때 해결 방법 설명합니다.</p>
-<p>junction.exe 또는 junction64.exe 파일을 인터넷에서 찾아 다운로드 받습니다. Windows 10 업그레이드에 C:\Windows\SoftwareDistribution 디렉토리를 사용하는데, 이 디렉토리를 SD 카드의 D: 드라이브로 옮기고 C:\Windows\SoftwareDistribution에 연결할 겁니다. 연결을 만들 때 juncion.exe 파일을 이용할 겁니다.</p>
-<p>Administrator 권한으로 CMD를 열고 아래 명령을 이용합니다.</p>
-<pre><code>net stop wuauserv<br />cd C:\Windows<br />xcopy C:\Windows\SoftwareDistribution D:\Windows\SoftwareDistribution /E /H /X /K     <br />; 위 명령에 이어 D라고 대답합니다.<br /><br />rename SoftwareDistribution SoftwareDistribution.del<br />del /s /q SoftwareDistribution.del<br />junction C:\Windows\SoftwareDistribution "D:\Windows\SoftwareDistribution"<br /><br />net start wuauserv</code></pre>
-<p>이렇게 하고 C:\Windows 디렉토리에서 SoftwareDistribution 아이콘을 보면, 아이콘 위에 바로가기 화살표가 있을 겁니다. 이제 업데이트를 시작하면 됩니다.</p>
-<p>keywords : Microsoft, Windows 10, 윈도, 윈도우즈, Upgrade, Update</p>]]>
         
     </content>
 </entry>
