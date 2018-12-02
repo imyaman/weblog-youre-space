@@ -118,7 +118,7 @@ SelectionList = new Class(Object, {
             if (!data || (data && !data.label)) {
                 if (!data) data = {};
                 if (row) {
-                    var label = jQuery(row).find('.panel-label').get(0);
+                    var label = row.getElementsByTagName("label")[0];
                     if (label)
                         data.label = label.innerHTML;
                 }
@@ -149,12 +149,9 @@ SelectionList = new Class(Object, {
     },
     render: function() {
         if (!this.container) return;
+        this.container.innerHTML = '';
         var doc = TC.getOwnerDocument(this.container);
         var self = this;
-        // remove child selected-item
-        jQuery(this.container).find('.selected-item').remove();
-        // remove none label
-        jQuery(this.container).find('.none_label').remove();
         var makeclosure = function(x) { return function() { self.remove(x) } };
         for (var i = 0; i < this.itemList.length; i++) {
             var p = this.itemList[i];
@@ -163,20 +160,14 @@ SelectionList = new Class(Object, {
             l.replace(/\s/g, '&nbsp;');
             var link = doc.createElement("span");
             link.setAttribute("id","selected-"+p);
-            link.setAttribute("class","badge badge-pill badge-default sticky-label selected-item");
-            link.setAttribute("aria-label", "Close")
+            link.setAttribute("class","sticky-label selected-item");
             link.onclick = makeclosure(p);
-            link.innerHTML = l + "&nbsp;<span aria-hidden='true' class='tag-pill remove clickable' style='cursor: pointer;'>×</span>";
+            link.innerHTML = l + "&nbsp;<span class='remove clickable'>x</span>";
             this.container.appendChild(link);
             this.container.appendChild(doc.createTextNode(' '));
         }
-        if (this.itemList.length == 0){
-            // append None label
-            var $none_text = jQuery('<span></span>');
-            $none_text.addClass('none_label');
-            $none_text.text(trans('(None)'));
-            jQuery(this.container).append($none_text);
-        }
+        if (this.itemList.length == 0)
+            this.container.innerHTML = trans('(None)');
     },
     items: function() {
         var items = [];
@@ -203,10 +194,10 @@ Panel = new Class(Object, {
         this.element = TC.elementOrId(name + "-panel");
     },
     show: function() {
-        jQuery(this.element).show();
+        TC.removeClassName(this.element, "hidden");
     },
     hide: function() {
-        jQuery(this.element).hide();
+        TC.addClassName(this.element, "hidden");
     }
 });
 
@@ -286,9 +277,6 @@ ListingPanel = new Class(Panel, {
     init: function(name, searchtype) {
         ListingPanel.superClass.init.apply(this, arguments);
 
-        var panelId = name + '-panel';
-        this.footerElement = TC.getElementsByClassName("modal-footer", panelId)[0];
-
         // for closures
         var self = this;
 
@@ -297,7 +285,7 @@ ListingPanel = new Class(Panel, {
 
         // FIXME: name != type...
         this.datasource = new Datasource(this.listData, name, searchtype);
-        this.pager = new Pager(TC.getElementsByTagAndClassName("ul",
+        this.pager = new Pager(TC.getElementsByTagAndClassName("div",
             "pagination", this.element)[0]);
         this.datasource.setPager(this.pager);
         this.datasource.onUpdate = function(ds) {
@@ -315,7 +303,7 @@ ListingPanel = new Class(Panel, {
             this.searchField.form.onsubmit = function() {
                 self.datasource.search(self.searchField.value);
                 if (self.searchReset)
-                    jQuery(self.searchReset).show();
+                    TC.removeClassName(self.searchReset, "hidden");
                 return false;
             };
         }
@@ -325,13 +313,13 @@ ListingPanel = new Class(Panel, {
             this.searchReset.onclick = function() {
                 self.datasource.navigate(0);
                 self.searchField.value = "";
-                jQuery(self.searchReset).hide();
+                TC.addClassName(self.searchReset, "hidden");
                 return false;
             };
         }
 
         var next = TC.getElementsByTagAndClassName("button",
-            "next", this.footerElement);
+            "next", this.element);
         if (next && next.length) {
             this.nextButton = next[0];
             this.nextButton.onclick = function() {
@@ -340,7 +328,7 @@ ListingPanel = new Class(Panel, {
         }
 
         var previous = TC.getElementsByTagAndClassName("button",
-            "previous", this.footerElement);
+            "previous", this.element);
         if (previous && previous.length) {
             this.previousButton = previous[0];
             this.previousButton.onclick = function() {
@@ -349,7 +337,7 @@ ListingPanel = new Class(Panel, {
         }
 
         var cancel = TC.getElementsByTagAndClassName("button",
-            "cancel", this.footerElement);
+            "cancel", this.element);
         if (cancel && cancel.length) {
             this.cancelButton = cancel[0];
             this.cancelButton.onclick = function() {
@@ -358,7 +346,7 @@ ListingPanel = new Class(Panel, {
         }
 
         var close = TC.getElementsByTagAndClassName("button",
-            "close-button", this.footerElement);
+            "close", this.element);
         if (close && close.length) {
             this.closeButton = close[0];
             this.closeButton.onclick = function() {
@@ -377,7 +365,7 @@ ListingPanel = new Class(Panel, {
         }
 
         // selections
-        var items = TC.getElementsByClassName("modal-selections",
+        var items = TC.getElementsByClassName("items",
             this.element);
         if (items && items.length) {
             this.selectionList = new SelectionList(items[0]);

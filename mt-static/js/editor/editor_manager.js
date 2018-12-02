@@ -73,7 +73,8 @@ $.extend(MT.EditorManager, {
     },
 
     insertContent: function(html, field) {
-        app.editors[field].insertContent(html);
+        $('#' + field).data('mt-editor')
+            .insertContent(html);
     }
 });
 
@@ -163,9 +164,6 @@ $.extend(MT.EditorManager.prototype, {
 
     clearDirty: function() {
         this.currentEditor.clearDirty();
-    },
-    reload: function() {
-        this.currentEditor.reload();
     }
 });
 

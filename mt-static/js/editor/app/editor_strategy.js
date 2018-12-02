@@ -18,8 +18,7 @@ $.extend(MT.App.EditorStrategy, {
 $.extend(MT.App.EditorStrategy.prototype, {
     create: function(app, ids, format) {},
     set: function(app, id) {},
-    save: function(app) {},
-    remove: function(app, id) {}
+    save: function(app) {}
 });
 
 })(jQuery);

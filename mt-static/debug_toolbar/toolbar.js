@@ -1,5 +1,5 @@
 jQuery.noConflict();
-(function($j) {
+jQuery(function($j) {
     var COOKIE_NAME = 'dj_debug_panel';
     $j.djDebug = function(data, klass) {
         $j.djDebug.init();
@@ -143,5 +143,7 @@ jQuery.noConflict();
             return;
         }
     });
-    $j.djDebug();
-})(jQuery);
+});
+jQuery(function() {
+    jQuery.djDebug();
+});

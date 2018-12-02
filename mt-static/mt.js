@@ -18,7 +18,7 @@ var itemset_options = {};
 if ((!(navigator.appVersion.indexOf('MSIE') != -1) &&
       (parseInt(navigator.appVersion)==4))) {
     document.write("<style type=\"text/css\">");
-    document.write("body { margin-top: -8px; margin-left: -8px; }");
+    document.write("body { margin-top: -8px; margin-left: -8px; }"); 
     document.write("</style>");
 }
 
@@ -47,7 +47,7 @@ function openManual (section, page) {
         url = HelpBaseURI + 'help/' + section + '/';
     else
         url = HelpBaseURI + 'help/';
-    window.open(url, 'mt_help',
+    window.open(url, 'mt_help', 
 'scrollbars=yes,status=yes,resizable=yes,toolbar=yes,location=yes,menubar=yes');
     return false;
 }
@@ -245,10 +245,10 @@ function setObjectStatus (f, singular, plural, new_status, nameRestrict, args) {
         if (confirm(count == 1 ? trans(singularMessage, singular, named_status) : trans(pluralMessage, count, plural, named_status))) {
             return doForMarkedInThisWindow(f, singular, plural, nameRestrict, status_mode + '_object', args);
         }
-    }
+    } 
 }
 
-function doForMarkedInThisWindow (f, singular, plural, nameRestrict,
+function doForMarkedInThisWindow (f, singular, plural, nameRestrict, 
                                   mode, args, phrase) {
     var count = countMarked(f, nameRestrict);
     if (!count) {
@@ -315,8 +315,8 @@ function submitForm(f, mode) {
 
 function doPluginAction(f, plural, args, phrase) {
     if (!f) {
-        var forms = document.getElementsByTagName( "form" );
-        for ( var i = 0; i < forms.length; i++ ) {
+        var forms = document.getElementsByTagName( "form" );  
+        for ( var i = 0; i < forms.length; i++ ) {  
             var pas = truth( forms[ i ][ 'plugin_action_selector' ] );
             if (pas) {
                 f = forms[ i ];
@@ -600,7 +600,10 @@ function toggleHidden( id ) {
     var id = DOM.getElement( id );
     if ( !id )
         return false;
-    jQuery(id).toggle()
+    if ( DOM.hasClassName( id, 'hidden' ) )
+        DOM.removeClassName( id, 'hidden' );
+    else
+        DOM.addClassName( id, 'hidden' );
     return false;
 }
 
@@ -608,12 +611,12 @@ function toggle( id ) {
     var id = DOM.getElement( id );
     if ( !id )
         return false;
-    if ( jQuery(id).is(':hidden') ) {
-      jQuery(id).show();
-      DOM.addClassName( id, 'active' );
+    if ( DOM.hasClassName( id, 'hidden' ) ) {
+        DOM.removeClassName( id, 'hidden' );
+        DOM.addClassName( id, 'active' );
     } else {
-      jQuery(id).hide();
-      DOM.removeClassName( id, 'active' );
+        DOM.removeClassName( id, 'active' );
+        DOM.addClassName( id, 'hidden' );
     }
     return false;
 }
@@ -634,7 +637,7 @@ function tabToggle(selectedTab, tabs) {
     for (var i = 0; i < tabs.length; i++) {
         var tabObject = getByID(tabs[i] + '-tab');
         var contentObject = getByID(tabs[i] + '-panel');
-
+            
         if (tabObject && contentObject) {
             if (tabs[i] == selectedTab) {
                 DOM.addClassName( tabObject, 'selected-tab' );
@@ -651,10 +654,10 @@ function tabToggle(selectedTab, tabs) {
 function show(id, d, style) {
     var el = getByID(id, d);
     if (!el) return;
-    if ( jQuery(el).is(':hidden') ) {
-        jQuery(el).show();
-    } else if (style) {
-        el.style.display = style;
+    if ( DOM.hasClassName( el, "hidden" ) ) {
+        DOM.removeClassName ( el, "hidden");
+    } else {
+        el.style.display = style ? style : 'block';
     }
     /* hack */
     if ( DOM.hasClassName( el, "autolayout-height-parent" ) )
@@ -664,7 +667,11 @@ function show(id, d, style) {
 function hide(id, d) {
     var el = getByID(id, d);
     if (!el) return;
-    jQuery(el).hide();
+    if ( DOM.hasClassName( el, "hidden" ) ) {
+        return false;
+    } else {
+        DOM.addClassName ( el, "hidden");
+    }
     if ( window.app )
         app.reflow();
 }
@@ -687,17 +694,17 @@ function toggleSubPrefs(c) {
         if (c.type) {
             var on = c.type == 'checkbox' ? c.checked : c.value != 0;
             if (on) {
-                jQuery(div).show();
+                TC.removeClassName(div, "hidden");
             } else {
-                jQuery(div).hide();
+                TC.addClassName(div, "hidden");
             }
             // div.style.display = on ? "block" : "none";
         } else {
             var on = div.style.display && div.style.display != "none";
             if (on) {
-                jQuery(div).hide();
+                TC.addClassName(div, "hidden");
             } else {
-                jQuery(div).show();
+                TC.removeClassName(div, "hidden");
             }
             // div.style.display = on ? "none" : "block";
         }
@@ -1078,12 +1085,12 @@ Datasource = new Class(Object, {
     },
     update: function(html) {
         if (!this.element) return;
-        jQuery('div.alert').remove();
-        if (jQuery(html).hasClass('alert')) {
-            jQuery(this.element).find('table.mt-table').hide();
+        jQuery('div.msg').remove();
+        if (jQuery(html).hasClass('msg')) {
+            jQuery(this.element).find('table.list-heading').hide();
             jQuery(this.element).append(html);
         } else {
-            jQuery(this.element).find('table.mt-table').show();
+            jQuery(this.element).find('table.list-heading').show();
             jQuery(this.element).find('tbody').remove();
             jQuery(this.element).find('thead').after(html);
         }
@@ -1290,127 +1297,79 @@ Pager = new Class(Object, {
             var listStart = (this.state.offset ? this.state.offset : 0) + 1;
             var listEnd = (this.state.offset ? this.state.offset : 0) + this.state.rows;
 
-            if (this.state.listTotal) {
-              // now page
-              var page = Math.ceil(Number(Number(this.state.offset)/Number(this.state.limit)))+1;
-              // page max
-              var page_max = Math.ceil(Number(Number(this.state.listTotal) / Number(this.state.limit)));
-            }
-
             var doc = TC.getOwnerDocument(this.element);
             var self = this;
             // pagination control structure
-            var first_item = doc.createElement('li');
-            first_item.className = 'page-item';
-            var first_link = doc.createElement('a');
-            first_link.href = 'javascript:void(0)';
-            first_link.onclick = function(e) { return self.previous(e) };
-            first_link.className = 'page-link';
-            first_link.innerHTML = trans('Previous');
-            first_item.appendChild(first_link);
-            this.element.appendChild(first_item);
-
-            if(page - 2 >= 1){
-              var item = doc.createElement('li');
-              item.className = 'page-item first-last';
-              var link = doc.createElement('a');
-              link.href = 'javascript:void(0)';
-              link.onclick = function(e) { return self.first(e) };
-              link.className = 'page-link';
-              link.innerHTML = '1';
-              item.appendChild(link);
-              this.element.appendChild(item);
-
-              var hidden_item = doc.createElement('li');
-              hidden_item.className = 'page-item';
-              hidden_item.setAttribute('aria-hidden', 'true');
-              hidden_item.innerHTML = '...';
-              this.element.appendChild(hidden_item);
+            if (this.state.offset > 0) {
+                var link = doc.createElement('a');
+                link.href = 'javascript:void(0)';
+                link.onclick = function(e) { return self.first(e) };
+                link.className = 'pagenav start';
+                link.innerHTML = '&laquo; ' + trans('First');
+                this.element.appendChild(link);
+            } else {
+                var txt = doc.createElement('span');
+                txt.className = 'pagenav start disabled';
+                txt.innerHTML = '&laquo; ' + trans('First');
+                this.element.appendChild(txt);
             }
-            if(page -1 >= 1){
-              var item = doc.createElement('li');
-              item.className = 'page-item';
-              if(page -1 == 1) item.className = 'page-item first-last';
-              var link = doc.createElement('a');
-              link.href = 'javascript:void(0)';
-              link.onclick = function(){ return self.movePage(Number(page - 1)) };
-              link.className = 'page-link';
-              link.innerHTML = String(page - 1);
-              item.appendChild(link);
-              this.element.appendChild(item);
+            if (this.previousOffset() != null) {
+                var link = doc.createElement('a');
+                link.href = 'javascript:void(0)';
+                link.onclick = function(e) { return self.previous(e) };
+                link.className = 'pagenav to-start';
+                link.innerHTML = '&lsaquo; ' + trans('Prev');
+                this.element.appendChild(link);
+            } else {
+                var txt = doc.createElement('span');
+                txt.className = 'pagenav to-start disabled';
+                txt.innerHTML = '&lsaquo; ' + trans('Prev');
+                this.element.appendChild(txt);
             }
-
-            var current_item = doc.createElement('li');
-            current_item.className = 'page-item active';
-            var current_link = doc.createElement('a');
-            // link.href = '#';
-            current_link.className = 'page-link';
-            current_link.innerHTML = page + '<span class="sr-only">(current)</span>';
-            current_item.appendChild(current_link);
-            this.element.appendChild(current_item);
-
-            if(page + 1 <= page_max){
-              var item = doc.createElement('li');
-              item.className = 'page-item';
-              if(page + 1 == page_max) item.className = 'page-item first-last';
-              var link = doc.createElement('a');
-              link.href = 'javascript:void(0)';
-              link.onclick = function(){ return self.movePage(Number(page + 1)) };
-              link.className = 'page-link';
-              link.innerHTML = String(page + 1);
-              item.appendChild(link);
-              this.element.appendChild(item);
+            var showing = doc.createElement('span');
+            showing.className = 'current-rows';
+            if (this.state.listTotal)
+                showing.innerHTML = trans('[_1] &ndash; [_2] of [_3]', listStart, listEnd, this.state.listTotal);
+            else
+                showing.innerHTML = trans('[_1] &ndash; [_2]', listStart, listEnd);
+            this.element.appendChild(showing);
+            if (this.nextOffset() != null) {
+                var link = doc.createElement('a');
+                link.href = 'javascript:void(0)';
+                link.onclick = function(e) { return self.next(e) };
+                link.className = 'pagenav to-end';
+                link.innerHTML = trans('Next') + ' &rsaquo;';
+                this.element.appendChild(link);
+            } else {
+                var txt = doc.createElement('span');
+                txt.className = 'pagenav to-end disabled';
+                txt.innerHTML = trans('Next') + ' &rsaquo;';
+                this.element.appendChild(txt);
             }
-            if(page + 2 <= page_max){
-              var hiddenitem = doc.createElement('li');
-              hiddenitem.className = 'page-item';
-              hiddenitem.setAttribute('aria-hidden', 'true');
-              hiddenitem.innerHTML = '...';
-              this.element.appendChild(hiddenitem);
-
-              var item = doc.createElement('li');
-              item.className = 'page-item first-last';
-              var link = doc.createElement('a');
-              link.href = 'javascript:void(0)';
-              link.onclick = function(e) { return self.last(e) };
-              link.className = 'page-link';
-              link.innerHTML = String(page_max);
-              item.appendChild(link);
-              this.element.appendChild(item);
+            if (this.lastOffset() != null) {
+                var link = doc.createElement('a');
+                link.href = 'javascript:void(0)';
+                link.onclick = function(e) { return self.last(e) };
+                link.className = 'pagenav end';
+                link.innerHTML = trans('Last') + ' &raquo;';
+                this.element.appendChild(link);
+            } else {
+                var txt = doc.createElement('span');
+                txt.className = 'pagenav end disabled';
+                txt.innerHTML = trans('Last') + ' &raquo;';
+                this.element.appendChild(txt);
             }
-
-            var last_item = doc.createElement('li');
-            last_item.className = 'page-item';
-            var last_link = doc.createElement('a');
-            last_link.href = 'javascript:void(0)';
-            last_link.onclick = function(e) { return self.next(e) };
-            last_link.className = 'page-link';
-            last_link.innerHTML = trans('Next');
-            last_item.appendChild(last_link);
-            this.element.appendChild(last_item);
-
-
+            
             if ( window.top.innerHeight < window.innerHeight ) {
                 window.top.scrollTo(
-                    window.top.document.getElementsByClassName('mt-modal')[0].parentNode.offsetLeft,
-                    window.top.document.getElementsByClassName('mt-modal')[0].parentNode.offsetTop
+                    window.top.document.getElementById('mt-dialog-iframe').parentNode.offsetLeft,
+                    window.top.document.getElementById('mt-dialog-iframe').parentNode.offsetTop
                 );
             }
             window.scrollTo( 0, 0 );
         } else {
             this.element.innerHTML = '';
         }
-    },
-    movePage: function(nex_page){
-      if (this.state.listTotal) {
-          var offset = this.state.limit * (nex_page-1);
-          if (offset >= this.state.listTotal) {
-              return false;
-          }
-          this.navigate(offset);
-          return TC.stopEvent(e || window.event);
-      }
-      return false;
     }
 });
 
@@ -1434,7 +1393,7 @@ jQuery.event.special.pre_autosave = {
 
 App.singletonConstructor =
 MT.App = new Class( App, {
-
+  
 
     NAMESPACE: "mt",
     changed: false,
@@ -1448,7 +1407,7 @@ MT.App = new Class( App, {
         this.setDelegate( "navMenu", new this.constructor.NavMenu() );
 
         this.initFormElements();
-
+        
         if ( this.constructor.Resizer ) {
             this.setDelegate( "resizer", new this.constructor.Resizer( this.getIndirectMethod( "resizeComplete" ) ) );
             this.setDelegateListener( "eventMouseUp", "resizer" );
@@ -1457,10 +1416,10 @@ MT.App = new Class( App, {
 
         if ( this.constructor.DefaultValue )
             this.setDelegate( "defaultValue", new this.constructor.DefaultValue() );
-
+        
         if ( this.constructor.TabContainer )
             this.setDelegate( "tabContainer", new this.constructor.TabContainer() );
-
+            
         var forms = DOM.getElementsByTagAndAttribute( this.document, "form", "mt:auto-save" );
         if ( forms.length )
             window.onbeforeunload = this.getIndirectEventListener( "eventBeforeUnload" );
@@ -1484,7 +1443,6 @@ MT.App = new Class( App, {
 
             var es = Array.fromPseudo(
                 forms[ i ].getElementsByTagName( "input" ),
-                forms[ i ].getElementsByTagName( "select" ),
                 forms[ i ].getElementsByTagName( "textarea" )
             );
             for ( var j = 0; j < es.length; j++ ) {
@@ -1502,7 +1460,7 @@ MT.App = new Class( App, {
         }
 
         if ( MT.App.dirty )
-            this.changed = true;
+            this.changed = true;    
     },
 
 
@@ -1592,7 +1550,7 @@ MT.App = new Class( App, {
             else if ( window.Editor )
                 return event.returnValue = window.Editor.strings.unsavedChanges;
         }
-
+        
         return undefined;
     },
 
@@ -1607,7 +1565,7 @@ MT.App = new Class( App, {
             var tagName = element.tagName.toLowerCase();
             var type = element.getAttribute( "type" );
             type = type ? type.toLowerCase() : "";
-            if ( tagName == "button" ||
+            if ( tagName == "button" || 
                 (tagName == "input" && (type == "button" || type == "submit" || type == "image")) ){
                 element.disabled = disable;
                 if( this.eventTarget === element && form.getAttribute( "mt:once" ) && element.getAttribute('value') ) {
@@ -1642,7 +1600,7 @@ MT.App = new Class( App, {
         this.eventTarget = event.target;
 
         switch( command ) {
-
+            
             case "openSelectBlog":
                 app.openDialog( '__mode=dialog_select_weblog&amp;select_favorites=1&return_args='
                     + escape( event.commandElement.getAttribute( "mt:href" ) ) );
@@ -1651,7 +1609,7 @@ MT.App = new Class( App, {
             case "goToLocation":
                 this.gotoLocation( event.commandElement.getAttribute( "href" ) );
                 break;
-
+            
             case "autoSave":
                 this.autoSave();
                 break;
@@ -1682,10 +1640,10 @@ MT.App = new Class( App, {
                 this.openFlyouts.add( name );
 
                 break;
-
+                
             case "closeFlyout":
                 this.closeFlyouts();
-
+                
                 break;
 
             default:
@@ -1725,7 +1683,7 @@ MT.App = new Class( App, {
         }
         return event.stop();
     },
-
+    
 
     /* from blog selector transient */
     gotoUrl: function( url ) {
@@ -1771,8 +1729,8 @@ MT.App = new Class( App, {
         if ( event.keyCode == 9 )
             return event.stop();
     },
-
-
+    
+    
     eventKeyDownAllowTabs: function( event ) {
         if ( event.keyCode == 9 ) {
 		    TC.setSelectionValue( ( event.target || event.srcElement ) , "\t" );
@@ -1782,7 +1740,7 @@ MT.App = new Class( App, {
 
 
     resizeComplete: function( target, xStart, yStart, x, y, width, height ) {
-
+        
         switch ( target.id ) {
             case "textarea-enclosure":
                 var es = [ "text", "text_cpe" ];
@@ -1797,8 +1755,8 @@ MT.App = new Class( App, {
         }
 
     },
-
-
+    
+    
     autoSave: function() {
         /* Fire event */
         jQuery(window).trigger('pre_autosave');
@@ -1816,7 +1774,7 @@ MT.App = new Class( App, {
         /* don't cancel a pending save */
         if ( defined( this.autoSaveReq ) )
             return;
-
+        
         var areas = [
             DOM.getElement( "autosave-notification" ),
             DOM.getElement( "autosave-notification-top" ),
@@ -1843,7 +1801,7 @@ MT.App = new Class( App, {
         log('auto save complete '+r);
         if ( r != "true" )
             return log.error( "Error auto-saving post: "+r );
-
+        
         var areas = [
             DOM.getElement( "autosave-notification" ),
             DOM.getElement( "autosave-notification-top" ),
@@ -1861,10 +1819,10 @@ MT.App = new Class( App, {
                     } );
     },
 
-
+    
     autoSaveError: function( c, r ) {
         this.autoSaveTimer = this.autoSaveReq = undefined;
-
+        
         log.error( "Error auto-saving post" );
         var areas = [
             DOM.getElement( "autosave-notification" ),
@@ -1903,7 +1861,7 @@ MT.App = new Class( App, {
                 }
             }
         }
-
+            
         this.changed = true;
         if ( this.form && this.form["dirty"] ) this.form["dirty"].value = 1;
         if ( autoSaveDelay < 1 )
@@ -1911,7 +1869,7 @@ MT.App = new Class( App, {
 
         if ( defined( this.autoSaveTimer ) )
             return this.autoSaveTimer.reset();
-        if ( this.form && !this.form.submitted ) {
+        if ( !this.form.submitted ) {
             this.autoSaveTimer = new Timer( this.getIndirectMethod( "autoSave" ), autoSaveDelay, 1 );
         }
     },
@@ -1921,7 +1879,7 @@ MT.App = new Class( App, {
         this.changed = false;
     },
 
-
+    
     insertCode: function( code ) {
         if ( this.cpeList )
             this.cpeList[ 0 ].insertCode( code );
@@ -1933,7 +1891,7 @@ MT.App = new Class( App, {
             DOM.focus( txt );
         }
     }
-
+    
 
 } );
 
@@ -1946,7 +1904,7 @@ MT.App.Calendar = new Class( Calendar, {
         if ( data.date && data.date.length )
             data.date = data.date.replace( /^(\S+).*/, "$1" );
         arguments.callee.applySuper( this, arguments );
-
+       
         /* reset invalid dates to the current date */
         if ( !this.dateObject )
             this.dateObject = new Date();
@@ -1972,7 +1930,7 @@ MT.App.Resizer = new Class( Object, {
 
     dragging: false,
     element: null,
-
+    
     xLock: false,
     yLock: false,
 
@@ -1993,9 +1951,9 @@ MT.App.Resizer = new Class( Object, {
 
     eventMouseDown: function( event ) {
         this.dragging = true;
-
+        
         this.reset();
-
+        
         this.target = event.attributeElement.getAttribute( "mt:target" );
 
         /* x or y locking */
@@ -2006,17 +1964,17 @@ MT.App.Resizer = new Class( Object, {
             else if ( lock == "y" || lock == "Y" )
                 this.yLock = true;
         }
-
+        
         /* clone the drag node */
         this.element = event.attributeElement.cloneNode( true );
         /* using the current mouse position, set the positon of the drag obj */
         var d = DOM.getAbsoluteCursorPosition( event );
         this.yStart = d.y;
         this.xStart = d.x;
-
+        
         var dm = DOM.getAbsoluteDimensions( event.attributeElement );
         var adm = DOM.getAbsoluteDimensions( event.attributeElement );
-
+        
         if ( !this.yLock )
             DOM.setTop( this.element,  d.y );
         else
@@ -2029,7 +1987,7 @@ MT.App.Resizer = new Class( Object, {
 
         DOM.setWidth( this.element, dm.offsetWidth );
         DOM.setHeight( this.element, dm.offsetHeight );
-
+        
         var mask = DOM.getElement( "resize-mask" );
         mask.insertBefore( this.element, mask.firstChild );
         DOM.addClassName( this.element, "moving" );
@@ -2044,9 +2002,9 @@ MT.App.Resizer = new Class( Object, {
     eventMouseMove: function( event ) {
         if ( !this.dragging )
             return;
-
+        
         var d = DOM.getAbsoluteCursorPosition( event );
-
+        
         if ( !this.yLock )
             DOM.setTop( this.element, d.y );
 
@@ -2060,12 +2018,12 @@ MT.App.Resizer = new Class( Object, {
     eventMouseUp: function( event ) {
         if ( !this.dragging )
             return;
-
+       
         this.dragging = false;
         var d = DOM.getAbsoluteCursorPosition( event );
-
+            
         DOM.addClassName( "resize-mask", "hidden" );
-
+        
         /* cleanup */
         if ( this.element && this.element.parentNode )
             this.element.parentNode.removeChild( this.element );
@@ -2075,14 +2033,14 @@ MT.App.Resizer = new Class( Object, {
             return this.reset();
 
         var targetDim = DOM.getDimensions( target );
-
+        
         var height = d.y - targetDim.offsetTop;
         if ( !this.yLock ) {
             var hMin = target.getAttribute( "mt:min-height" );
             if ( hMin )
                 if ( height < parseInt( hMin ) )
                     height = parseInt( hMin );
-
+        
             var hMax = target.getAttribute( "mt:max-height" );
             if ( hMax )
                 if ( height > parseInt( hMax ) )
@@ -2097,7 +2055,7 @@ MT.App.Resizer = new Class( Object, {
             if ( wMin )
                 if ( width < parseInt( wMin ) )
                     width = parseInt( wMin );
-
+        
             var wMax = target.getAttribute( "mt:max-width" );
             if ( wMax )
                 if ( width > parseInt( wMax ) )
@@ -2105,11 +2063,11 @@ MT.App.Resizer = new Class( Object, {
 
             log('new width: '+width);
         }
-
+       
         /* give the callback a chance to stop us from setting this height and width */
         if ( this.callback && ( this.callback( target, this.xStart, this.yStart, d.x, d.y, width, height ) ) )
             return this.reset();
-
+        
         if ( !this.yLock )
             DOM.setHeight( target, height );
 
@@ -2119,7 +2077,7 @@ MT.App.Resizer = new Class( Object, {
         var hUpdate = target.getAttribute( "mt:update-field-height" );
         if ( hUpdate && ( hUpdate = DOM.getElement( hUpdate ) ) )
             hUpdate.value = height;
-
+        
         var wUpdate = target.getAttribute( "mt:update-field-width" );
         if ( wUpdate && ( wUpdate = DOM.getElement( wUpdate ) ) )
             wUpdate.value = width;
@@ -2132,7 +2090,7 @@ MT.App.Resizer = new Class( Object, {
         /* remove left over drag obj, if any */
         if ( this.element && this.element.parentNode )
             this.element.parentNode.removeChild( this.element );
-
+        
         this.xStart = this.yStart = this.element = this.target = null;
         this.xLock = this.yLock = false;
     }
@@ -2150,7 +2108,7 @@ MT.App.DefaultValue = new Class( Object, {
             var val = es[ i ].getAttribute( "mt:default" );
             if ( !val )
                 continue;
-
+            
             if ( es[ i ].value != val )
                 DOM.removeClassName( es[ i ], "input-hint" );
         }
@@ -2164,7 +2122,7 @@ MT.App.DefaultValue = new Class( Object, {
             return;
 
         DOM.removeClassName( element, "input-hint" );
-
+        
         if ( element.value == val )
             element.value = "";
     },
@@ -2175,30 +2133,30 @@ MT.App.DefaultValue = new Class( Object, {
         var val = element.getAttribute( "mt:default" );
         if ( !val )
             return;
-
+        
         var opts = {};
         /* simple options for now */
         var opt = element.getAttribute( "mt:delegate-options" );
         if ( opt && opt == "-class" ) {
             opts.noclassChange = true;
         }
-
+        
         if ( element.value != "" )
             return;
-
+        
         element.value = val;
         if ( opts.noclassChange )
             return;
 
         DOM.addClassName( element, "input-hint" );
     },
-
-
+    
+    
     /* hate on IE */
     eventFocusIn: function( event ) {
         return this.eventFocus( event );
     },
-
+    
 
     eventFocusOut: function( event ) {
         this.eventBlur( event );
@@ -2208,8 +2166,8 @@ MT.App.DefaultValue = new Class( Object, {
     eventSubmit: function( event ) {
         return event.stop();
     }
-
-
+    
+    
 } );
 
 
@@ -2244,7 +2202,7 @@ MT.App.TabContainer = new Class( Object, {
             this.selectTab( event.attributeElement, tab );
 
         switch( command ) {
-
+            
             case "setEditorContent":
                 event.stop();
                 app.setEditor( "content" );
@@ -2254,7 +2212,7 @@ MT.App.TabContainer = new Class( Object, {
                 event.stop();
                 app.setEditor( "extended" );
                 break;
-
+            
             case "selectTab":
                 if ( !tab )
                     tab = event.commandElement.getAttribute( "mt:select-tab" );
@@ -2268,7 +2226,7 @@ MT.App.TabContainer = new Class( Object, {
                         Cookie.bake( cookie, tab, undefined, undefined, d );
                     }
                 }
-
+                
                 event.stop();
                 break;
 
@@ -2314,11 +2272,11 @@ MT.App.NavMenu = new Class( Object, {
         var el = DOM.getFirstAncestorByClassName( event.target, "nav-menu", true );
         if ( !el )
             return;
-
+        
         /* if they moused in, but moved to a new menu, reset the in timer */
         if ( this.inTimer && this.el && this.el !== el )
             this.inTimer.stop();
-
+        
         this.al = event.attributeElement;
         this.el = el;
 
@@ -2327,7 +2285,7 @@ MT.App.NavMenu = new Class( Object, {
 
         if ( this.al.getAttribute( "mt:is-opened" ) == "1" )
             return this.openMenu();
-
+       
         var delay = event.attributeElement.getAttribute( "mt:nav-delayed-open" ); // ms
 
         if ( delay ) {
@@ -2396,7 +2354,7 @@ MT.App.NavMenu = new Class( Object, {
             this.outTimer.stop();
         if ( this.inTimer )
             this.inTimer.stop();
-
+        
         var es = DOM.getElementsByClassName( window.document, "show-nav" );
         for ( var i = 0; i < es.length; i++ )
             if ( es[ i ] !== this.el )
@@ -2419,7 +2377,7 @@ MT.App.NavMenu = new Class( Object, {
             for ( var i = 0; i < es.length; i++ )
                 DOM.removeClassName( es[ i ], "show-nav" );
         }
-
+        
         if ( this.inTimer )
             this.inTimer.stop();
 
@@ -2457,9 +2415,9 @@ MT.App.CodePress = new Class( Object, {
         iframe.style.position = 'absolute';
 
         this.options = this.textarea.getAttribute( "mt:editor-options" );
-
+        
         this.textarea.parentNode.insertBefore( this.iframe, this.textarea );
-
+        
         log('textarea attached to editor: codepress');
         this.edit();
     },
@@ -2526,14 +2484,14 @@ MT.App.CodePress = new Class( Object, {
         return 'generic';
     },
 
-
+    
     setOptions: function() {
         if ( this.options.match( 'readonly:on' ) )
             this.toggleReadOnly();
-
+        
         if ( this.options.match( 'autocomplete:off' ) )
             this.toggleAutoComplete();
-
+        
         if ( this.options.match( 'linenumbers:off' ) )
             this.toggleLineNumbers();
     },
@@ -2559,7 +2517,7 @@ MT.App.CodePress = new Class( Object, {
         data[ this.textarea.name ] = this.getCode();
     },
 
-
+    
     getCode: function() {
         var code = this.textarea.disabled ? this.editor.getCode() : this.textarea.value;
         return document.all ? code.replace( /\r$/, '' ) : code;
@@ -2575,7 +2533,7 @@ MT.App.CodePress = new Class( Object, {
         this.editor.autocomplete = this.editor.autocomplete ? false : true;
     },
 
-
+    
     toggleReadOnly: function() {
         this.textarea.readOnly = ( this.textarea.readOnly ) ? false : true;
         // prevent exception on FF + iframe with display:none
@@ -2583,14 +2541,14 @@ MT.App.CodePress = new Class( Object, {
             this.editor.readOnly( this.textarea.readOnly ? true : false );
     },
 
-
+    
     toggleLineNumbers: function() {
         var cn = this.editor.body.className;
         this.editor.body.className = ( cn == '' || cn == 'show-line-numbers' )
             ? 'hide-line-numbers' : 'show-line-numbers';
     },
-
-
+ 
+   
     toggleEditor: function() {
         if ( this.textarea.disabled )
             this.toggleOff( true );
@@ -2613,8 +2571,8 @@ MT.App.CodePress = new Class( Object, {
             Cookie.bake( "codepressoff", 1, undefined, undefined, d );
         }
     },
-
-
+    
+    
     toggleOn: function( cookie ) {
         if ( this.textarea.disabled )
             return;
@@ -2646,22 +2604,16 @@ MT.App.CodePress = new Class( Object, {
 } );
 
 MT.App.CategorySelector = new Class( Component, {
-
+    
 
     opening: false,
-
-
-    initObject: function( element, template, args ) {
+    
+    
+    initObject: function( element, template ) {
         arguments.callee.applySuper( this, arguments );
 
-        if ( !args ) args = {};
-
-        this.catForm = DOM.getElement( args.catForm || "add-category-form" );
-        this.catInput = DOM.getElement( args.catInput || "add-category-input" );
-        this.catInputMovableId = args.catInputMovableId || "add-category-input-movable";
-
-        this.categorySetId = args.categorySetId || 0;
-        this.contentFieldId = args.contentFieldId || 0;
+        this.catForm = DOM.getElement( "add-category-form" );
+        this.catInput = DOM.getElement( "add-category-input" );
 
         this.list = this.addComponent( new List( element + '-list', template ) );
         this.list.setOption( "checkboxSelection", true );
@@ -2679,21 +2631,17 @@ MT.App.CategorySelector = new Class( Component, {
         this.list.setOption( "disableUnSelect", true );
 
         this.parentID = 0;
-        this.categoryList = args.categoryList || MT.App.categoryList;
-        this.selectedCategoryList = args.selectedCategoryList || MT.App.selectedCategoryList;
-        var catlen = this.categoryList.length;
+        var cats = MT.App.categoryList;
+        var selcats = MT.App.selectedCategoryList;
+        var catlen = cats.length;
         var selected = {};
-        for ( var i = 0; i < this.selectedCategoryList; i++ )
-            selected[ this.selectedCategoryList[ i ] ] = true;
+        for ( var i = 0; i < selcats; i++ )
+            selected[ selcats[ i ] ] = true;
         for ( var i = 0; i < catlen; i++ )
-            this.list.addItem( this.categoryList[ i ], selected.hasOwnProperty( this.categoryList[ i ] ) );
-
-        this.catList = args.catList;
-        this.catCache = args.catCache;
-        this.isTag = args.isTag;
+            this.list.addItem( cats[ i ], selected.hasOwnProperty( cats[ i ] ) );
     },
 
-
+    
     destroyObject: function() {
         this.list = null;
         this.catForm = null;
@@ -2712,18 +2660,18 @@ MT.App.CategorySelector = new Class( Component, {
             return event.stop();
         }
     },
-
-
+    
+    
     open: function( el ) {
         if ( el ) {
            this.openingEl = el;
-           jQuery(el).hide();
+           DOM.addClassName( el, "hidden" );
            var closeEl = el.getAttribute( "mt:close-el" );
-           if ( closeEl )
-               jQuery('#' + closeEl).show();
+           if ( closeEl ) 
+               DOM.removeClassName( closeEl, "hidden" );
         }
         DOM.addClassName( "category-field", "selector-active" );
-        jQuery(this.element).show();
+        DOM.removeClassName( this.element, "hidden" );
         this.redraw();
     },
 
@@ -2733,31 +2681,30 @@ MT.App.CategorySelector = new Class( Component, {
         this.opening = true;
         this.list.resetSelection();
         /* this keeps our list order if they made one a primary since the last open */
-        this.list.setSelection( this.selectedCategoryList );
+        this.list.setSelection( MT.App.selectedCategoryList );
         this.opening = false;
     },
 
 
     close: function( el ) {
         if ( el )
-            jQuery(el).hide();
-        jQuery(this.element).hide();
+            DOM.addClassName( el, "hidden" );
+        DOM.addClassName( this.element, "hidden" );
         DOM.removeClassName( "category-field", "selector-active" );
         if ( this.openingEl )
-            jQuery(this.openingEl).show();
+            DOM.removeClassName( this.openingEl, "hidden" );
     },
 
 
     eventClick: function( event ) {
         var command = this.getMouseEventCommand( event );
-        if (!command) return event.stop();
         switch( command ) {
 
             case "close":
                 this.removeMovable();
                 this.close();
                 break;
-
+            
             case "showAddCategory":
                 this.removeMovable();
                 /* show the add category block inside the flyout */
@@ -2765,17 +2712,17 @@ MT.App.CategorySelector = new Class( Component, {
                 if ( id ) {
                     /* adding a sub cat/folder */
                     this.catInput.value = '';
-                    jQuery(this.catForm).hide();
+                    DOM.addClassName( this.catForm, "hidden" );
                     var item = this.list.getListElementFromTarget( event.target );
                     this.catFormMovable = document.createElement( "div" );
-                    this.catFormMovable.innerHTML = Template.process( "categorySelectorAddForm", { div: this.catFormMovable, contentFieldId: this.contentFieldId } );
+                    this.catFormMovable.innerHTML = Template.process( "categorySelectorAddForm", { div: this.catFormMovable } );
                     this.list.content.insertBefore( this.catFormMovable, item.nextSibling );
-                    this.catInputMovable = DOM.getElement( this.catInputMovableId );
-                    jQuery(this.catFormMovable).show();
+                    this.catInputMovable = DOM.getElement( "add-category-input-movable" );
+                    DOM.removeClassName( this.catFormMovable, "hidden" );
                     this.parentID = id;
                     this.catInputMovable.focus();
                 } else {
-                    jQuery(this.catForm).show();
+                    DOM.removeClassName( this.catForm, "hidden" );
                     this.catInput.focus();
                 }
                 break;
@@ -2783,7 +2730,7 @@ MT.App.CategorySelector = new Class( Component, {
             case "cancel":
                 this.removeMovable();
                 /* hide it */
-                jQuery(this.catForm).hide();
+                DOM.addClassName( this.catForm, "hidden" );
                 break;
 
             case "add":
@@ -2795,6 +2742,7 @@ MT.App.CategorySelector = new Class( Component, {
                 return;
 
         }
+        return event.stop();
     },
 
 
@@ -2813,39 +2761,28 @@ MT.App.CategorySelector = new Class( Component, {
         var name = inputElement.value;
         if ( !name || name == "" || name.match( /^\s+$/ ) )
             return;
-
+        
         /* ignore the faded default text that could be in the box */
         var defaultText = inputElement.getAttribute( "mt:default" );
         if ( defaultText && name == defaultText )
             return;
 
-        if ( this.isTag ) {
-            var existTag = jQuery.grep( this.categoryList, function (e, i) {
-                return e.label === name || e.basename === name;
-            } ).length > 0 ? true : false;
-            if ( existTag ) {
-                alert(trans('Same name tag already exists.'));
-                return;
-            }
-        }
-
-        jQuery(this.catForm).hide();
-        jQuery(this.catFormMovable).hide();
+        DOM.addClassName( this.catForm, "hidden" );
+        DOM.addClassName( this.catFormMovable, "hidden" );
         this.catInput.value = '';
-
+        
         var args = {
-            __mode: this.isTag ? "js_add_tag" : "js_add_category",
+            __mode: "js_add_category",
             magic_token: app.form["magic_token"].value,
             blog_id: app.form["blog_id"].value || DOM.getElement("blog-id").value,
-            category_set_id: this.categorySetId,
             parent: parseInt( this.parentID ),
-            _type: this.categorySetId ? 'category' : this.type
+            _type: this.type
         };
         args.label = name;
-
+        
         /* hahah, safari crashes during the keydown */
         new Timer( this.getIndirectMethod( "removeMovable" ), 20, 1 );
-
+        
         TC.Client.call({
             load: this.getIndirectMethod( "createCategoryComplete" ),
             error: this.getIndirectMethod( "createCategoryError" ),
@@ -2865,43 +2802,8 @@ MT.App.CategorySelector = new Class( Component, {
         var obj = eval( "(" + r + ")" );
         if ( obj.error )
             return alert( obj.error );
-        if ( obj.result && obj.result.id ) {
-            obj.result.id = String(obj.result.id);
+        if ( obj.result && obj.result.id )
             this.addCategory( obj.result.id, p.label, obj.result.basename, p.arguments.parent );
-        }
-        if ( app.fieldCategorySelectors ) {
-            if ( app.formValidated ) {
-                var $input = jQuery( this.list.getItem( obj.result.id ) ).find('input');
-
-                var mtValidateError;
-                var mtValidateLastError;
-                $input.parents('.group-container').find('input.content-field.group').each(function (i, e) {
-                    if ( !mtValidateError && jQuery.data( e, 'mtValidateError' ) ) {
-                        mtValidateError = jQuery.data( e, 'mtValidateError' );
-                    }
-                    if ( !mtValidateLastError && jQuery.data( e, 'mtValidateLastError' ) ) {
-                        mtValidateLastError = jQuery.data( e, 'mtValidateLastError' );
-                    }
-                    if ( mtValidateError || mtValidateLastError ) {
-                        return false;
-                    }
-                });
-                if (mtValidateError) {
-                    jQuery.data( $input.get(0), 'mtValidateError', mtValidateError );
-                }
-                if (mtValidateLastError) {
-                    jQuery.data( $input.get(0), 'mtValidateLastError', mtValidateLastError );
-                }
-
-                $input.mtValidate('simple-group');
-            }
-
-            var that = this;
-            Object.values( app.fieldCategorySelectors ).forEach(function (sel) {
-                if ( sel.contentFieldId === that.contentFieldId ) return;
-                sel.addCategory( obj.result.id, p.label, obj.result.basename, p.arguments.parent, true );
-            });
-        }
     },
 
 
@@ -2910,18 +2812,18 @@ MT.App.CategorySelector = new Class( Component, {
     },
 
 
-    addCategory: function( id, name, basename, parent, notSelect ) {
+    addCategory: function( id, name, basename, parent ) {
         var cat = {
             id: id,
             label: name + ( MT.App.objectType && MT.App.objectType == 'page' ? '/' : '' ),
             basename: basename + ( MT.App.objectType && MT.App.objectType == 'page' ? '/' : '' ),
             path: []
         };
-        var catlist = this.categoryList;
+        var catlist = MT.App.categoryList;
         parent = parseInt( parent );
 
         /* single selection, and we're about to select the new folder */
-        if ( this.type == 'folder' && !notSelect )
+        if ( this.type == 'folder' )
             this.list.resetSelection();
 
         if ( parent != 0 ) {
@@ -2940,73 +2842,49 @@ MT.App.CategorySelector = new Class( Component, {
             cat.path.push( parent.id );
             catlist.splice( idx, 0, cat );
             /* update the cache */
-            ( this.catCache || app.catCache ).setItem( "cat:" + cat.id, cat );
+            app.catCache.setItem( "cat:" + cat.id, cat );
             /* add puts the item at the bottom, so we hide it and move it */
-            this.list.addItem( cat, !notSelect, "list-item" );
-            jQuery(this.list.items[ this.list.items.length - 1 ]).hide();
+            this.list.addItem( cat, true, "list-item hidden" );
             var div = this.list.getItem( cat.id );
             div.parentNode.removeChild( div );
             var parentItem = this.list.getItem( parent.id );
             /* move it after the parent */
             this.list.content.insertBefore( div, parentItem.nextSibling );
-            this.list.toggleCheckbox( div, !notSelect ); // added checked attribute again for IE
-            jQuery(div).show();
+            this.list.toggleCheckbox( div, true ); // added checked attribute again for IE
+            DOM.removeClassName( div, "hidden" );
         } else {
             catlist.push( cat );
             /* update the cache */
-            ( this.catCache || app.catCache ).setItem( "cat:" + cat.id, cat );
-            this.list.addItem( cat, !notSelect );
+            app.catCache.setItem( "cat:" + cat.id, cat );
+            this.list.addItem( cat, true );
             if ( catlist.length > 1 ) {
                 var div = this.list.getItem( cat.id );
                 div.parentNode.removeChild( div );
                 /* move it after the parent */
                 this.list.content.insertBefore( div, this.list.content.children[1] );
-                this.list.toggleCheckbox( div, !notSelect ); // added checked attribute again for IE
-                jQuery(div).show();
+                this.list.toggleCheckbox( div, true ); // added checked attribute again for IE
+                DOM.removeClassName( div, "hidden" );
             }
         }
 
         /* recheck selection */
-        this.listItemsSelected( this.list, [ id ] );
+        this.listItemsSelected( this.list );
     },
 
 
     listItemsSelected: function( list, ids ) {
-        this.selectedCategoryList.length = 0;
-        Array.prototype.push.apply(
-            this.selectedCategoryList,
-            Array.fromPseudo( list.getSelectedIDs() )
-        );
-        ( this.catList || app.catList ).redraw();
-        if ( !this.opening && this.type == 'folder' && !this.categorySetId && !this.isTag )
+        MT.App.selectedCategoryList = Array.fromPseudo( list.getSelectedIDs() );
+        app.catList.redraw();
+        if ( !this.opening && this.type == 'folder' )
             this.close();
-        this.setDirtyIfNeeded( list, ids );
     },
 
 
     listItemsUnSelected: function( list, ids ) {
         if ( this.opening || this.type == "folder" )
             return;
-        this.selectedCategoryList.length = 0;
-        Array.prototype.push.apply(
-            this.selectedCategoryList,
-            Array.fromPseudo( list.getSelectedIDs() )
-        );
-        ( this.catList || app.catList ).redraw();
-        this.setDirtyIfNeeded( list, ids );
-    },
-
-    setDirtyIfNeeded: function ( list, ids ) {
-        if ( !ids || ids.length === 0 ) {
-            return;
-        }
-        ids.forEach( function (id) {
-            var input = list.getItem( id ).getElementsByTagName( 'input' );
-            if ( input.length > 0 && input[0].hasAttribute( 'mt:watch-change' ) ) {
-                log( 'found dirty form' );
-                (app.getIndirectMethod( 'setDirty' ))();
-            }
-        });
+        MT.App.selectedCategoryList = Array.fromPseudo( list.getSelectedIDs() );
+        app.catList.redraw();
     }
 
 
@@ -3015,7 +2893,7 @@ MT.App.CategorySelector = new Class( Component, {
 
 
 extend( MT.App.CodePress, {
-
+   
 
     isSupported: function() {
         return ( navigator.userAgent.toLowerCase().match(/webkit/) ) ? false : true;
@@ -3023,16 +2901,16 @@ extend( MT.App.CodePress, {
 
 
     languages: {
-        csharp : 'C#',
-        css : 'CSS',
+        csharp : 'C#', 
+        css : 'CSS', 
         generic : 'Generic',
         html : 'HTML',
-        javascript : 'JavaScript',
-        java : 'Java',
-        perl : 'Perl',
-        ruby : 'Ruby',
-        php : 'PHP',
-        text : 'Text',
+        javascript : 'JavaScript', 
+        java : 'Java', 
+        perl : 'Perl', 
+        ruby : 'Ruby',  
+        php : 'PHP', 
+        text : 'Text', 
         sql : 'SQL',
         vbscript : 'VBScript',
         mt: 'Movable Type'
@@ -3053,15 +2931,8 @@ function showMsg(message, id, type, rebuild, blogID) {
         msg.setAttribute("id", id);
         DOM.addClassName(msg, 'msg');
         DOM.addClassName(msg, 'msg-'+type);
-        DOM.addClassName(msg, 'alert');
-        if (type == 'alert') {
-            type = 'warning';
-        } else if (type == 'error') {
-            type = 'danger';
-        }
-        DOM.addClassName(msg, 'alert-' + type);
     }
-    msg.innerHTML = message + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+    msg.innerHTML = message + '<span class="mt-close-msg close-link clickable icon-remove icon16 action-icon">' + trans('Close') + '</span>';
     if (rebuild == 'all')
         msg.innerHTML += ' ' + trans('[_1]Publish[_2] your site to see these changes take effect.', '<a href="javascript:void(0);" class="rebuild-link" onclick="doRebuild(\''+blogID+'\');">', '</a>');
     if (rebuild == 'index')
@@ -3120,25 +2991,21 @@ function selectAll(id) {
     DOM.getElement( id ).select();
 }
 
-function removeAssetFromList(assetId, prefix) {
-    if ( prefix == null ) {
-        prefix = '';
-    }
-
+function removeAssetFromList(assetId) {
     // remove the node list item
-    var Node = document.getElementById(prefix + "list-asset-" + assetId);
+    var Node = document.getElementById("list-asset-" + assetId);
     if (Node) {
         Node.parentNode.removeChild(Node);
-    }
+    } 
 
     // remove the node's thumbnail
-    var Thumb = document.getElementById(prefix + "list-image-" + assetId);
+    var Thumb = document.getElementById("list-image-" + assetId);
     if (Thumb) {
         Thumb.parentNode.removeChild(Thumb);
     }
 
     // get include_asset_ids and split it
-    var AssetList = document.getElementById(prefix + "include_asset_ids").value;
+    var AssetList = document.getElementById("include_asset_ids").value;
     var Assets = AssetList.split(",");
     var NewAssetList = "";
     for (var i = 0; i < Assets.length; i++) {
@@ -3146,7 +3013,7 @@ function removeAssetFromList(assetId, prefix) {
             NewAssetList = NewAssetList + Assets[i] + ",";
         }
     }
-    document.getElementById(prefix + "include_asset_ids").value = NewAssetList;
+    document.getElementById("include_asset_ids").value = NewAssetList;
 }
 
 function isIE11() {

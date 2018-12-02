@@ -27,12 +27,41 @@ $.extend(config, {
 
 tinymce.create('tinymce.plugins.MTFormattedText', {
     init : function(ed, url) {
-        tinymce.addI18n(tinyMCE.settings.language, {
-            'Insert template': trans('Insert Boilerplate'),
-            'Templates': trans('Name'),
+        ed.onInit.add(function() {
+            ed.windowManager.onOpen.add(function(windowManager, window) {
+                var popup = window.tinyMCEPopup;
+                if (! popup || ! popup.params['plugin_url']) {
+                    return;
+                }
+
+                if (! popup.params['plugin_url'].match(/\/template$/)) {
+                    return;
+                }
+
+
+                // Overwrite messages for the template dialog.
+
+                window.trans = window.parent.trans;
+
+                var requireLangPack = popup.requireLangPack;
+                popup.requireLangPack = function() {
+                    requireLangPack.apply(this, arguments);
+
+                    var url = StaticURI + 'plugins/FormattedTextForTinyMCE/langs/template.js';
+			        if (! tinymce.ScriptLoader.isDone(url)) {
+				        window.document.write('<script type="text/javascript" src="' + url + '"></script>');
+				        tinymce.ScriptLoader.markDone(url);
+			        }
+                };
+            });
+        });
+
+        // Overwrite description for the template button.
+        tinyMCE.addI18n(tinyMCE.settings.language + '.template', {
+            desc: trans('Insert Boilerplate')
         });
     }
-});
+}); 
 
 tinymce.PluginManager.add('mt_formatted_text', tinymce.plugins.MTFormattedText, ['template']);
 

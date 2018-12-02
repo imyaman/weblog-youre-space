@@ -237,16 +237,8 @@ Editor.Iframe = new Class( Component, {
                 if( element && element.ownerDocument === this.document ) 
                     this.savedSelection = range.getBookmark();
             }
-        } else if( selection.getRangeAt ) {
-            try {
-              if (selection.rangeCount > 0) {
-                this.savedSelection = selection.getRangeAt( 0 ).cloneRange();
-              } else {
-                this.savedSelection = this.document.createRange();
-              }
-            } catch(e) {
-            }
-        }
+        } else if( selection.getRangeAt ) 
+            this.savedSelection = selection.getRangeAt( 0 ).cloneRange();
     },
 
 
@@ -649,11 +641,7 @@ Editor.Iframe = new Class( Component, {
                 var nS = anchor.nextSibling;
                 var m = html.match(/^(<.*(?:src|href)=")(.[^"]*)(".*>)$/) || null;
                 if ( m ) html = m[1]+'####'+m[3];
-                if(document.selection){
-                  this.document.execCommand( "insertHTML", false, html );
-                } else {
-                  this.document.body.innerHTML += html;
-                }
+                this.document.execCommand( "insertHTML", false, html );
                 if ( m ) { // FireFox sets the relative path to innerHTML, so replace it to original path.
                     var html = this.document.body.innerHTML;
                     html = html.replace(/####/, m[2]);

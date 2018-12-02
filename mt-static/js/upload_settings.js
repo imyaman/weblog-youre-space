@@ -39,15 +39,15 @@ function is_valid_path(path_, custom){
 }
 
 function uploadDestinationSelect(sel) {
-    var edit = MT.Util.getByID('upload_destination_custom');
+    var edit = getByID('upload_destination_custom');
     var map  = sel.options[sel.selectedIndex].value;
     if (map == '') {
         // Hide and disable Upload Destination selectbox.
-        jQuery(sel).hide();
+        DOM.addClassName(sel, 'hidden');
         sel.setAttribute('disabled', 'disabled');
 
         // Show and enable custom Upload Destination textbox.
-        jQuery(edit).show();
+        DOM.removeClassName(edit, 'hidden');
         edit.removeAttribute('disabled');
         edit.focus();
 
@@ -57,7 +57,7 @@ function uploadDestinationSelect(sel) {
         );
 
         // Hide extra path textbox.
-        jQuery('.upload-extra-path').hide();
+        jQuery('.upload-extra-path').addClass('hidden');
 
         // Add slash and the value in extra path textbox to custom Upload Destination textbox
         // if extra path textbox has value.
@@ -87,6 +87,7 @@ jQuery(function() {
     jQuery.mtValidateAddMessages({
         '.valid-path': trans('You must set a valid path.'),
         '.valid-custom-path': trans('You must set a valid path.'),
-        '.upload-destination': trans('You must set a path beginning with %s or %a.')
+        '.upload-destination': trans('You must set a path begining with %s or %a.')
     });
 });
+
