@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-us" itemscope itemtype="http://schema.org/Blog">
+<html lang="ko_KR" itemscope itemtype="http://schema.org/Blog">
   <head>
-    <script src="/acexchange.js"></script>
     <meta charset="UTF-8">
     <meta name="description" content="#취미생활 취미생호라 취미생하로">
     <title>vergence의 이상한 세상</title>
@@ -27,9 +26,13 @@
 </script>
 
 
+    <script type="text/javascript">
+        var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+        sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
+    </script>
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="article">
-    <meta property="og:locale" content="en-us">
+    <meta property="og:locale" content="ko_KR">
     <meta property="og:title" content="vergence의 이상한 세상">
     <meta property="og:url" content="http://weblog.youre.space/vergence/">
     <meta property="og:description" content="#취미생활 취미생호라 취미생하로">
@@ -40,7 +43,7 @@
     <meta itemprop="name" content="vergence의 이상한 세상">
     <link itemprop="url" href="http://weblog.youre.space/vergence/">
     <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
-</head>
+  </head>
   <body>
     <div id="container">
       <div id="container-inner">
@@ -73,12 +76,12 @@
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
-              <article id="entry-1383" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1377" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/11/post-82.html">이번 통신 장애에 대해</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/12/001377.html">movable type 6과 plack, starman</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-11-27T07:52:58+09:00" itemprop="datePublished">November 27, 2018</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-12-02T22:49:03+09:00" itemprop="datePublished">December  2, 2018</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -87,86 +90,18 @@
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>이번 통신 장애 관련해서 할많하않 하고 싶은 이유 첫번째는, 아무리 비난해도 잘 안 바뀔 거라는 생각입니다. <br />민간기업이거든요. 공공성이 어쩌고는 우리의 바람일 뿐. 효율 측면에서 보면 어쩔 수 없는 거죠, 지사를 등급으로 나누고 관리를 다르게 하는 것은. 서울 등 대도시에 안 중요한 지사가 어디 있겠습니까. 불이 났네 백업이 없네 어쩌고 해도, 또 불이 안 난다고 확신할 수 없고, 다른 통신사는 불 안 난다는 확신할 수 없고, 모든 망에 백업을 둔다고 할 수도 없을 테니까요.</p>
-<p>효율을 접어두고 생각하려면 공공기관이어야지요. 더 근본적인 부분을 꺼내자면, 통신을 민영화한 것부터 잘못이라고 생각합니다. "공기업의 경영 효율화 및 민영화 방안"이라는 이름으로 시작된 공기업 민영화. 결국 효율화라는게 붙어있거든요.</p>
-<p>통신 중에 기간이 되는 부분 모두 모아 공기업화하고, 효율 생각하지 말고 모두 백업 두고, 주민등록번호 부여하듯 전화번호도 부여하고, 통신의 고객 서비스 부분만 민영화 하였으면 하는 미약하고 개인적인 바람...</p>
+    <p>몇가지 모듈이 필요한데, ubuntu의 경우 아래 명령으로 설치하자.</p>
+<p>apt install libcgi-psgi-perl libsoap-lite-perl libimage-size-perl libimage-magick-perl</p>
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/11/post-82.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1382" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/11/post-81.html">연습</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-11-13T07:49:00+09:00" itemprop="datePublished">November 13, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <a href="http://aywer.me/t5m9tknn6r" target="_blank" style="display: inline-block; width:32.5%; text-decoration: none;"><div style="display: inline-block; margin:0px auto; padding:0;"><div style="margin:10px;background:#fff; border:1px solid #dae2e3; border-radius: 3px;box-shadow: 1px 1px 1px rgba(0,0,0,0.15);"><div style="width:100%; line-height: 0; border-bottom:1px solid #dae2e3;"><img src="http://img.tenping.kr/Content/Upload/Images/2018110915140001_Dis_20181109151439.png" style="width:100%;  height: auto; border-radius: 3px;" alt="" ></div><div style="margin:10px;"><div style="margin:5px 0; color:#333; font-size:14px;line-height:1.4em;height:2.6em;display:-webkit-box;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient:vertical;word-wrap:break-word;font-weight:300;text-align:left;overflow: hidden;">믿을 수 있는 이사·청소업체를 안심하고 고를 수 있는 방법!</div></div></div></div></a>
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/11/post-81.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1381" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/11/firebase-azure-app-service-web-apps.html">Firebase가 있는데 Azure App Service의 Web Apps를 쓰는 이유</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-11-12T07:32:15+09:00" itemprop="datePublished">November 12, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Firebase가 있는데 Azure App Service의 Web Apps를 쓰는 이유가 있다고 가정하고 글을 써보려고 합니다.</p>
-<p>더불어 Heroku, Cloud Foundry, back4app, Netlify 등도 이야기 해보고요.</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/11/firebase-azure-app-service-web-apps.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1380" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/11/movable-type-704.html">Movable Type 7.0.4로 업그레이드</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-11-06T08:02:08+09:00" itemprop="datePublished">November  6, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>MT6에서 MT7으로 업그레이드 했습니다. 좋네요. 추천합니다. ㅎㅎ</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/11/movable-type-704.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/vergence/2018/12/001377.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
               <article id="entry-1327" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/09/re-verify-ownership-of-your-domain.html">Re-verify ownership of your domain</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/09/001327.html">Re-verify ownership of your domain</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2018-09-07T13:41:46+09:00" itemprop="datePublished">September  7, 2018</time></li>
@@ -182,14 +117,14 @@
 
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/09/re-verify-ownership-of-your-domain.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/vergence/2018/09/001327.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
               <article id="entry-1281" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/08/xvfb-gl.html">Xvfb GL</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/08/001281.html">Xvfb GL</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2018-08-29T09:44:00+09:00" itemprop="datePublished">August 29, 2018</time></li>
@@ -205,14 +140,14 @@
 
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/08/xvfb-gl.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/vergence/2018/08/001281.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
               <article id="entry-1275" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/08/clova-extensions-kit.html">Clova Extensions Kit β 약관</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/08/001275.html">Clova Extensions Kit β 약관</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2018-08-28T15:06:39+09:00" itemprop="datePublished">August 28, 2018</time></li>
@@ -392,14 +327,14 @@
 </div>
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/08/clova-extensions-kit.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/vergence/2018/08/001275.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
               <article id="entry-1208" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/08/post-80.html">휴가에 아무말</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/08/001208.html">휴가에 아무말</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2018-08-07T15:17:05+09:00" itemprop="datePublished">August  7, 2018</time></li>
@@ -416,14 +351,14 @@
 <img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/38631891_974019069443321_839714407570210816_o.jpg?_nc_cat=0&efg=eyJpIjoidCJ9&oh=5a801abc1b5ed384869bc408f3783110&oe=5C09D666">
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/08/post-80.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/vergence/2018/08/001208.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
               <article id="entry-1119" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/07/post-79.html">포트 포워딩 예시</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/07/001119.html">포트 포워딩 예시</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2018-07-15T22:57:49+09:00" itemprop="datePublished">July 15, 2018</time></li>
@@ -442,14 +377,14 @@
 <p>root@w001 # cat /etc/iptables.rules<br /># Generated by iptables-save v1.6.0 on Sat Jul 14 15:18:13 2018<br />*nat<br />:PREROUTING ACCEPT [33:4792]<br />:INPUT ACCEPT [33:4792]<br />:OUTPUT ACCEPT [13:3996]<br />:POSTROUTING ACCEPT [0:0]<br />-A PREROUTING -i ens3 -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -i ens3 -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -i ens3 -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -p tcp -m tcp --dport 15900 -j DNAT --to-destination 10.1.1.3:59000<br />-A POSTROUTING -o ens3 -j MASQUERADE<br />COMMIT<br /># Completed on Sat Jul 14 15:18:13 2018<br /># Generated by iptables-save v1.6.0 on Sat Jul 14 15:18:13 2018<br />*filter<br />:INPUT ACCEPT [538:51319]<br />:FORWARD ACCEPT [320:109251]<br />:OUTPUT ACCEPT [454:58003]<br />-A FORWARD -p tcp -m tcp --dport 22 -j ACCEPT<br />-A FORWARD -p tcp -m tcp --dport 1022 -j ACCEPT<br />-A FORWARD -p tcp -m tcp --dport 15900 -j ACCEPT<br />COMMIT<br /><br /></p>
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/07/post-79.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/vergence/2018/07/001119.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
               <article id="entry-1098" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/07/iiii-iiie-change.html">암호화폐 신용카드 Change</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/07/001098.html">암호화폐 신용카드 Change</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2018-07-13T07:27:39+09:00" itemprop="datePublished">July 13, 2018</time></li>
@@ -471,14 +406,99 @@
 
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/07/iiii-iiie-change.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/vergence/2018/07/001098.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-952" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/07/000952.html">MyMusicTaste와 DevOps Korea</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-07-05T07:31:26+09:00" itemprop="datePublished">July  5, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>2018년 7월 14일에 DevOps Korea 행사합니다.<br />
+MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.<br />
+자유롭게 함께 이야기 하는 장소가 되면 좋겠어요.</p>
+
+<a href="http://meetup.devopskorea.com/201807/">http://meetup.devopskorea.com/201807/</a>
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/vergence/2018/07/000952.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-877" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/05/000877.html">에스토니아 개인 소득 500 이하</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-05-16T19:06:03+09:00" itemprop="datePublished">May 16, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    에스토니아는 개인소득이 500Euro 이하면 개인 세금이 없다는군요.
+
+470Euro를 배당금으로 받는 것과 급여로 받는걸 비교하면.
+
+배당금 : 470 + 법인세금(20%) 94라서 회사 입장에선 564 Euro.
+급여 : 470 + 사회세금(?)으로 160이면 회사입장에선 630 Euro... 이지만 유럽 어디서든 의료 보험이 된다고.
+
+에스토니아에 세금 내고 디지털 노마드라면 고려해볼 선택지이군요.
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/vergence/2018/05/000877.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-875" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/05/000875.html">Cryptocurrency 구걸</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-05-10T19:08:40+09:00" itemprop="datePublished">May 10, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <div>Cryptocurrency(&#50516;&#54840;&#54868;&#54224;) &#44396;&#44152;&#54633;&#45768;&#45796;. &#44413;&#49892;&#44413;&#49892;<br />
+<br />
+</div>
+<div>BTC 31kTEJDf3aiG72xqWS1we7NmLWSKCvV4KZ<br />
+<br />
+</div>
+<div>ETH 0xcde41b2630a7a7b4c0F5297A70885BfA8e0fb9BA</div>
+
+
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/vergence/2018/05/000875.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
               <nav class="page-navigation entry-navigation pagination content-nav">
   <ul class="pagination-list">
-<li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;template_id=1821&amp;limit=10&amp;archive_type=Index&amp;page=2">Older entries</a></li>
+<li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=11&amp;template_id=952&amp;limit=10&amp;archive_type=Index&amp;page=2">Older entries</a></li>
   </ul>
 </nav>
 
@@ -543,7 +563,7 @@
     <select>
       <option>Select a Month...</option>
     
-      <option value="http://weblog.youre.space/vergence/2018/11/">November 2018</option>
+      <option value="http://weblog.youre.space/vergence/2018/12/">December 2018</option>
     
   
     
@@ -811,27 +831,11 @@
         </nav>
 
   <p class="license">&copy; Copyright 2018.</p>
-  <p class="poweredby">Powered by <a href="https://www.movabletype.org/">Movable Type</a></p>
+  <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a> and <a href="http://youre.space/">youre.space</a></p>
 </div>
-          </div>
-        </footer>
-      </div>
-    </div>
-    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
-    <script src="http://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
 
+<!-- ad starts -->
 <center>
-<script type="text/javascript">
-  ( function() {
-    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"Chitika Weblog"};
-    var placement_id = window.CHITIKA.units.length;
-    window.CHITIKA.units.push(unit);
-    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-}());
-</script>
-<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
-
 <div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
 </center>
 <center>
@@ -854,8 +858,18 @@
   <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
 </div>
 </center>
-
-<div style="width:100%;max-width:800px;margin:0 auto;font-size:14px;"><div style="margin-bottom:5px;padding:6px;display:block;background:#ffffff;border:1px solid #dae2e3;overflow:hidden;"><div style="float:left;width:80px;height:80px;line-height:0;margin-right:10px;display:block;"><a href="http://aywer.me/t5m96x8zqf"><img src="http://img.tenping.kr/Content/Upload/Images/2018112013490001_Squa_20181120134947.jpg?RS=170x170" alt="" width="80" height="80"></a></div><div><div style="height:5rem;line-height:1.6;margin:0;padding:0;display:flex;flex-direction:column;justify-content:space-around;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;-webkit-box-pack:center;text-overflow:ellipsis;overflow:hidden;"><strong><a href="http://aywer.me/t5m96x8zqf" style="color:#333333;font-size:20px;font-weight:bold;font-family:'Malgun Gothic', '맑은고딕', sans-serif;text-decoration:none;">사장님 고페이로 결제 받고 추가 소득 챙겨보세요!</a></strong></div></div></div>  
-  
+<!-- ad ends -->
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="http://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
+<center> <!-- ads -->
+<div id='mmaDisplay'>
+<script src='http://image.cauly.co.kr/websdk/common/lasted/ads.js'></script>
+<script> new CaulyAds({app_code:'EJuPK2Dp',placement:1,displayid:'mmaDisplay', }); </script>
+</div>
+</center>
   </body>
 </html>
