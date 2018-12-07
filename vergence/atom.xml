@@ -4,9 +4,31 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2018-12-05T10:22:17Z</updated>
+    <updated>2018-12-07T07:37:51Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Azure - Cognitive Services - Text Analytics API </title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/12/001381.html" />
+    <id>tag:weblog.youre.space,2018:/vergence//11.1381</id>
+
+    <published>2018-12-07T07:36:36Z</published>
+    <updated>2018-12-07T07:37:51Z</updated>
+
+    <summary>Supplied language is not supported. Pass in one of: ar,da,de,el,en,es,fi,fr,it,ja,nl,no,pl,pt-PT,ru,sv,tr,zh-Hans. See https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview for the complete list of support languages. 그렇군요. ko Korean 한국어는 현재 지원되지 않는거군요....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p><span class="sObjectV" id="s-17">Supplied language is not supported. Pass in one of: ar,da,de,el,en,es,fi,fr,it,ja,nl,no,pl,pt-PT,ru,sv,tr,zh-Hans. See https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview for the complete list of support languages.</span></p>
+<p><span class="sObjectV">그렇군요. ko Korean 한국어는 현재 지원되지 않는거군요.</span></p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>노니 쇳가루 검출만 아니다, &apos;메이드인&apos; 살펴도 독성·농약...제대로 먹는 방법 한가지뿐</title>
@@ -500,32 +522,6 @@ MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.<br />
     <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
         <![CDATA[<p>jolla-xt9 rpm download here</p>
 <p><a target="_blank" href="https://drive.google.com/file/d/0B8M6cYC-SdW-amdCSllnSUhDd1E/view?usp=sharing">jolla-xt9-0.5.7-10.6.1.jolla.armv7hl.rpm</a></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Windows 10 업데이트 할 때 디스크 용량 부족</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/04/000754.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.754</id>
-
-    <published>2018-04-16T01:28:23Z</published>
-    <updated>2018-04-16T01:51:42Z</updated>
-
-    <summary>Windows 10 업데이트 할 때 디스크 용량 부족하다고 진행이 안 되는 경우가 있습니다. USB 디스크 연결하면 해결 할 수 있긴 한데, 태블릿 같은 경우는 USB 디스크 연결이 어려울 때가 있습니다. 태블릿에 USB 디스크 연결하기는 어렵고 SD 카드만 가용할 때 해결...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        <![CDATA[<p>Windows 10 업데이트 할 때 디스크 용량 부족하다고 진행이 안 되는 경우가 있습니다. USB 디스크 연결하면 해결 할 수 있긴 한데, 태블릿 같은 경우는 USB 디스크 연결이 어려울 때가 있습니다. 태블릿에 USB 디스크 연결하기는 어렵고 SD 카드만 가용할 때 해결 방법 설명합니다.</p>
-<p>junction.exe 또는 junction64.exe 파일을 인터넷에서 찾아 다운로드 받습니다. Windows 10 업그레이드에 C:\Windows\SoftwareDistribution 디렉토리를 사용하는데, 이 디렉토리를 SD 카드의 D: 드라이브로 옮기고 C:\Windows\SoftwareDistribution에 연결할 겁니다. 연결을 만들 때 juncion.exe 파일을 이용할 겁니다.</p>
-<p>Administrator 권한으로 CMD를 열고 아래 명령을 이용합니다.</p>
-<pre><code>net stop wuauserv<br />cd C:\Windows<br />xcopy C:\Windows\SoftwareDistribution D:\Windows\SoftwareDistribution /E /H /X /K     <br />; 위 명령에 이어 D라고 대답합니다.<br /><br />rename SoftwareDistribution SoftwareDistribution.del<br />del /s /q SoftwareDistribution.del<br />junction C:\Windows\SoftwareDistribution "D:\Windows\SoftwareDistribution"<br /><br />net start wuauserv</code></pre>
-<p>이렇게 하고 C:\Windows 디렉토리에서 SoftwareDistribution 아이콘을 보면, 아이콘 위에 바로가기 화살표가 있을 겁니다. 이제 업데이트를 시작하면 됩니다.</p>
-<p>keywords : Microsoft, Windows 10, 윈도, 윈도우즈, Upgrade, Update</p>]]>
         
     </content>
 </entry>
