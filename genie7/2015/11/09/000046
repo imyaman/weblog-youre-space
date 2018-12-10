@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <title>요리하는 남자 Archives - genie7</title>
+    <meta name="description" content="반나절만에 쇼핑몰 만들기...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>마젠토(Magento) 체험하기 - genie7</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="http://weblog.youre.space/genie7/styles.css">
     <!--[if lt IE 9]>
@@ -12,7 +14,7 @@
     <link rel="shortcut icon" href="http://weblog.youre.space/genie7/uploads/genie7-chulhyun_cho_512x512.jpg">
     <link rel="start" href="http://weblog.youre.space/genie7/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/genie7/atom.xml" />
-    <link rel="canonical" href="http://weblog.youre.space/genie7/cat/" />
+    <link rel="canonical" href="http://weblog.youre.space/genie7/2015/11/09/000046" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -25,6 +27,21 @@
 </script>
 
 
+    <link rel="prev" href="http://weblog.youre.space/genie7/2015/11/09/000045" title="ROI 계산하기">
+    <link rel="next" href="http://weblog.youre.space/genie7/2015/11/09/000047" title="방문자/순방문자 왜 중요한가?">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="마젠토(Magento) 체험하기">
+    <meta property="og:url" content="http://weblog.youre.space/genie7/2015/11/09/000046">
+    <meta property="og:description" content="반나절만에 쇼핑몰 만들기...">
+    <meta property="og:site_name" content="genie7">
+    <meta property="og:image" content="http://weblog.youre.space/genie7/assets_c/2018/04/genie7-chulhyun_cho_512x512-thumb-320x320-47.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="반나절만에 쇼핑몰 만들기...">
+    <link itemprop="url" href="http://weblog.youre.space/genie7/2015/11/09/000046">
+    <link itemprop="image" href="http://weblog.youre.space/genie7/assets_c/2018/04/genie7-chulhyun_cho_512x512-thumb-320x320-47.jpg">
+    
   </head>
   <body>
     <div id="container">
@@ -56,21 +73,46 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/genie7/">Home</a></li>
-              <li class="breadcrumb-list-item">요리하는 남자 Archives</li>
+              <li class="breadcrumb-list-item">마젠토(Magento) 체험하기</li>
             </ul>
-            <div id="category-main" class="main" role="main">
-              <section id="posts">
-                <h2>요리하는 남자 Archives</h2>
-                <ol>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-46" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">마젠토(Magento) 체험하기</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2015-11-09T22:38:51+09:00" itemprop="datePublished">November  9, 2015</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard">genie7</span></li>
 
-                  <li>
-                    <time datetime="2016-05-15T13:50:51+09:00">May 15, 2016</time>
-                    <a href="http://weblog.youre.space/genie7/2016/05/15/000052">[레시피] 토마토 소스 파스타 만들기</a>
-                  </li>
+  
 
-                </ol>
-              </section>
-              
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>반나절만에 쇼핑몰 만들기</p>
+                  <p>오늘 오후는 오랜만에 외부 세미나에 참석을 했다. 최근에 업무 때문에 관심을 가지게 된 Magento 라는 쇼핑몰 솔루션에 대한 교육이 IBM의 Softlayer 후원으로 진행된다고 해서 참석했다. Magento가 설치형 솔루션이라서 설치 과정 자체는 강사님이 미리 준비해두고, 초기 설정부터 시작했다. 접속하고 나서 ID와 Password, DB name과 DB ID, DB Password 만 입력하니 셋업은 끝.<br /><br />마젠토(Magento)를 전문으로 구축하는 개발자 출신 대표님께서 마젠토(Magento)의 기능을 하나 하나 설명해 주는데, 예전에 Oracle의 RMS(Retail Management System) 과 SAP를 교육받을 때 같은 느낌이었다.<br />쇼핑몰 사이트 관리부터, 카테고리 관리, 상품 관리, 가격 관리, 재고 관리, 프로모션, CMS 등 많은 기능을 기본으로 포함하고 있었고, 성능을 향상하기 위한 캐시(Cache)나 인덱스(Index)도 잘 관리되는 듯하다.<br /><br />마젠토(Magento) 설치가 완료된 후에 처음 접속하면 위와 같은 대시보드 화면이 나타난다. 이건 주문도 하나 하고 나서 본 화면이라 처음 보는 화면과는 차이가 좀 있다.<br /><br />업무 순서별로 하나씩 차례 대로 해보자.<br />첫 번째는 쇼핑몰에 보이는 카테고리를 등록한다.<br />다음은 상품을 등록한다.<br />상품 등록 시에는 상품 설명과 가격, SEO를 위한 메타 정보를 입력할 수 있다.<br />상품 이미지를 올리면 필요한 사이즈에 맞춰 리사이징 작업도 완료된다.<br />상품의 가격과 재고 수량을 입력하고 나면 쇼핑몰 페이지에서 보이게 된다.<br />상품을 할인해서 판매하면 할인 프로모션을 적용할 수 있다.<br />프로모션 룰에서는 조건과 할인 방법에 대한 정보를 입력한다.<br /><br />모두 저장한 후에 쇼핑몰 메인 페이지 로 이동해 보자.<br />메인 페이지에는 CMS를 이용해서 샤오미 캐릭터 거치대 이미지를 배치하였다. 그리고 상단에 카테고리로 만들어진 FOOD가 보이는 것을 확인할 수 있다.<br /><br />FOOD 카테고리를 클릭해 보자.<br />카테고리에 들어가면 선택한 카테고리에 연결된 상품의 리스트가 보인다. 지금은 상품이 하나밖에 없어서...<br />상품 링크를 클릭하면 상품 상세 페이지로 이동할 수 있다.<br />상품명, 가격, 재고, 할인정보, 소셜 네트워크, 살품설명, 리뷰 정보들을 확인할 수 있다.<br />장바구니에 담기 위해 "ADD TOCART" 버튼을 클릭한다.<br />장바구니에 담긴 상품의 정보를 확인할 수 있다.<br />"PROCEED TO CHECKOUT" 버튼을 눌러서 주문서 페이지로 이동한다.<br />빌링 정보, 배송 정보, 배송료, 결제 정보, 주문 요약 정보를 확인한 후 "PLACE ORDER" 버튼을 누르면, 주문 완료 페이지로 이동한다.<br />주문이 완료되었다.<br /><br />이제 관리자용 시스템으로 이동해서 주문된 내역을 확인해보자.<br />관리자 화면에서 새로운 주문을 확인할 수 있다.<br />이후, 배송 준비, 배송 처리, 인보이스 발송을 하면 매출로 등록되는 것을 확인할 수 있다.<br />그 이후에 관리자 시스템의 메인 페이지인 대시보드 화면에서 매출을 확인할 수 있다.<br /><br />쇼핑몰 메인 페이지를 변경하기 위한 CMS 화면을 한번 보자.<br />HTML 에디터를 이용해서 메인 페이지를 구성할 수 있다.<br /><br />오늘은 아주 기본적인 정보만을 등록해 보았지만, 필요한 기능들을 많이 가지고 있고, Marketplace 에서 Extention 기능들을 설치하여 다양한 기능을 추가할 수 있다. 추가로 개발해서 기능을 추가하는 것도 얼마든지 가능하다.<br /><br />다음엔 마젠토(Magento)를 설치부터 사용법까지 하나하나 살펴볼까 한다.</p>
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/genie7/2015/11/09/000045" title="ROI 계산하기">Previous entry</a></li>
+
+
+                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/genie7/2015/11/09/000047" title="방문자/순방문자 왜 중요한가?">Next entry</a></li>
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                
+              </article>
             </div>
             <aside class="widgets related" role="complementary">
               <nav class="widget-search widget">
@@ -317,5 +359,45 @@
     </div>
     <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
     <script src="http://weblog.youre.space/genie7/mt-theme-scale2.js"></script>
-  </body>
+
+<center>
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"genie7"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</center>
+
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+<div class="main_banner" id="main_banner1">
+<script type="text/javascript"> 
+var tad_conf = {
+    targetId : 'main_banner1', clientId : 'MX000603F', slotNo : 2, newWindow : true, test : false
+};
+TadSdk.AdView.init(tad_conf);
+</script>
+</div>
+</center>
+
+</body>
 </html>

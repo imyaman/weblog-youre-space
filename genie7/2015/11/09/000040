@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="상품의 종류를 다양화 하기...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>e커머스 매출을 위한 지표(2) - genie7</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://weblog.youre.space/genie7/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="http://weblog.youre.space/genie7/styles_ie.css">
+    <script src="http://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="http://weblog.youre.space/genie7/uploads/genie7-chulhyun_cho_512x512.jpg">
+    <link rel="start" href="http://weblog.youre.space/genie7/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/genie7/atom.xml" />
+    <link rel="canonical" href="http://weblog.youre.space/genie7/2015/11/09/000040" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <link rel="prev" href="http://weblog.youre.space/genie7/2015/11/09/000039" title="e커머스 매출을 위한 지표(1)">
+    <link rel="next" href="http://weblog.youre.space/genie7/2015/11/09/000041" title="좋은 개발 문화는 회사가 만드는가?">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="e커머스 매출을 위한 지표(2)">
+    <meta property="og:url" content="http://weblog.youre.space/genie7/2015/11/09/000040">
+    <meta property="og:description" content="상품의 종류를 다양화 하기...">
+    <meta property="og:site_name" content="genie7">
+    <meta property="og:image" content="http://weblog.youre.space/genie7/assets_c/2018/04/genie7-chulhyun_cho_512x512-thumb-320x320-47.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="상품의 종류를 다양화 하기...">
+    <link itemprop="url" href="http://weblog.youre.space/genie7/2015/11/09/000040">
+    <link itemprop="image" href="http://weblog.youre.space/genie7/assets_c/2018/04/genie7-chulhyun_cho_512x512-thumb-320x320-47.jpg">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="http://weblog.youre.space/genie7/">
+
+                  genie7
+
+                </a>
+              </h1>
+              
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/genie7/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/genie7/">Home</a></li>
+              <li class="breadcrumb-list-item">e커머스 매출을 위한 지표(2)</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-40" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">e커머스 매출을 위한 지표(2)</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2015-11-09T22:34:09+09:00" itemprop="datePublished">November  9, 2015</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard">genie7</span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>상품의 종류를 다양화 하기</p>
+                  <p>불타는 금요일을 만드려다가, 급격한 체력 저하를 느끼고 귀가하였으나 보충되지 않는 체력으로 글을 쓰려고 끄적이다가 포기하고, 토요일 아침 다시 시도해본다. <br /><br />어제 쓰던 내용에 이어 오늘은 방법 3번 n을 더 큰 수로 만드는 것 즉, 판매하는 상품의 종류를 늘이는 것을 의미하는 상품의 종류를 확대하는 방법에 대해 알아보자.Mr. Cho가 운영했던 "문구닷컴"의 예를 다시 기억해보자. 문구닷컴에서 판매가 발생한 상품은 5개였다. 그러면, 문구닷컴에서 팔고 있는 상품의 종류의 수(x라고 가정하자)는 몇 개일까? 여기서 우리가 얻을 수 있는 유일한 정보는 x는 n보다 크거나 같다는 것이다. 왜냐하면, 판매하는 상품의 수가 5보다 작은 4나 3일 때 실제로 5가지 종류의 상품을 팔 수 없기 때문이다.<br />x를 구하기 위한 조건을 다음과 같이 표현해보자.<br /><br />0 &lt;= n &lt;= x : n은 0보다 크거나 같고 x보다 작거나 같다. 즉,n은 0부터 x까지의 값 중 어느 한 값이 된다.<br /><br />0과 x는 문구닷컴에서 판매를 위해 전시하는 상품의 종류 수를 의미한다. 아무 상품도 전시되지 않았다면 0, 10개의 상품을 전시했다면 x는 10, 100개의 상품을 전시했다면 x는 100이 되는 것이다. 그리고, n은 0과 x의 값 사이의 값이 되므로 x가 10일 때는 0과 10 사이, x가 100일 때는 0과 100 사이의 값이 된다. n의 값을 크게 만들 기 위해서는 x 안에서 최대 값을 만드는 것도 가능하지만 x의 값을 키워서 기존의 n이 더 커질 수 있는 가능성을 높이는 것이다. 이 상황을 말로 잘 풀어서 유사한 상황을 만들어보자. x를 크게 만드는 방법을 다음과 같이 정리해 보자.<br /><br />"카테고리 내의 상품의 종류를 다양화한다" [사례 1]에서Mr. Cho는 상품의 종류를 검정 볼펜,파란 볼펜,빨간 볼펜,흰색 메모장,노란색 메모장의 5종류를 판매하다가, 상품의 종류를 다양화하기 위해 하늘색 메모장을 판매하는 상품으로 추가한다. 이 방법은 상품의 종류를 다양화하는 방법 중에서 가장 기본적인 동일한 상품에서 색상을 다양화하는 방법이다. 유사한 방법으로 상품의 크기를 다양화하는 방법이 있다. 그리고 동일한카테고리의 다른 상품들을 늘이는 방법이 있다. 예를 들면, 볼펜을 팔고 있었는데 연필이나 만년필, 색연필을 추가로 더 판매하는 방법이다. 동일한 필기구 내에서 필기구의 종류를 다양화 하는 방법이 있다.<br /><br />"다른 카테고리의 상품을 판매한다" 앞의 방법과 다른새로운 카테고리 또는 기존의 상품과 관련이 있는 다른 카테고리로 확대하는 방법이다. 기존 상품과의 관련성은 어떻게 찾을 것인지에 대해서는 기존 상품의 속성을 장 정의하고 분석해야 한다. 기존 상품이 필기구였기 때문에 필기를 사용하는 고객을 기준으로 관련성을 찾는 다면, 필기구는 주로 학생이나 직장인들이 사용한다는 정보를 취득하고, 학생과 직장인이 각각 관심 있어 할 만한 카테고리의 상품으로 확대하는 것이다. 이때 학생과 직장인을 모두 타깃 고객으로 삼아 상품을 더 많이 늘일 수 있겠지만, 학생 또는 직장인 중 한 고객을 타깃으로 정한다면, 좀 더 적은 상품을 기반으로 집중해서 효율적인 매출을 발생시킬 수 있다. 이런 방법을 통해 기존 볼펜과 메모지를 팔던 [사례 1]에서 필기구가 아닌 패드류 제품이나 전자펜, 노트북 등으로 확대도 가능하고, 일반 도서 제품으로 확대할 수도 있다.<br /><br />"패키지 상품을 구성한다" 기존 상품 내에서 또는 새로운 상품을 포함하여 패키지 상품을 구성할 수 있다. 볼펜과 메모지를 각각 판매하던 것을 볼펜 + 메모지의 상품을 해로운 상품으로 구성해서 상품의 종류를 다양화하는 는 방법이다.<br /><br />이렇게 상품의 종류를 다양화했을 때 숫자로는 어떤 변화가 발생할 수 있는지 생각해보자. 기존 상품에서 색상이 맘에 들지 않았거나, 메모지의 크기가 맘에 들지 않아 구매를 주저하고, 이탈했던 고객들이 추가 구매가 가능 해지고, 또는 볼펜보다는 만년필, 연필을 선호하는 고객들도 구매를 유도할 수 있다. 상품의 카테고리를 확대하는 경우에도 마찬가지로 기존 필기구의 대체가 될 만한 상품을 통해 추가 구매를 유도할 수 있을 뿐 아니라, 새로운 카테고리에 관심을 가지는 새로운 고객들을 유입 시킬 수 있다.<br /><br /><br />상품 자체의 속성 또는 대상을 확대시키는 것은 이론적으로는 어려운 일이 아니지만 실제로는 예측과 경험을 통해서만 의사결정을 해야 하고, 대부분은 그 경험이 부족한 상태에서 실행해야 하기 때문에 많은 어려움이 따르게 되는 것이다.<br /><br />오늘의 내용은 한 번에 정리가 되지도 않고, 띄엄띄엄 글을 써서 그런지 잘 정리가 안 되는 면도 있는 것 같다. 다음에 다시 한 번 정리를 해봐야 할 듯 싶다. 안 되는 거 붙잡지 말고 다음으로 넘기는 걸로....<br /><br />다음의 내용은 방법 5와 방법 6에 대한 실행 방법을 찾아보려고 한다.<br /><br />To be continued...</p>
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/genie7/2015/11/09/000039" title="e커머스 매출을 위한 지표(1)">Previous entry</a></li>
+
+
+                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/genie7/2015/11/09/000041" title="좋은 개발 문화는 회사가 만드는가?">Next entry</a></li>
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="http://connexus-recall.youre.space:5000/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="5">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-category widget">
+  <h3 class="widget-header">Categories</h3>
+  <div class="widget-content">
+    
+      
+    <ul class="widget-list">
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/cat-51/">해외여행 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/cat-50/">통신 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/it/">IT관리자 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/splunk/">Splunk (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/cat-6/">개발자 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/cat-2/">레시피 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/cat/">요리하는 남자 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/cat-5/">채용 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="http://weblog.youre.space/genie7/cat-4/">파스타 (1)</a>
+      
+      
+      </li>
+      
+    </ul>
+      
+    
+  </div>
+</nav>
+  
+
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="http://weblog.youre.space/genie7/2018/12/">December 2018</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/genie7/2017/05/">May 2017</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/genie7/2016/05/">May 2016</option>
+    
+  
+    
+      <option value="http://weblog.youre.space/genie7/2015/11/">November 2015</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-tag-cloud widget">
+  <h3 class="widget-header">Tag Cloud</h3>
+  <div class="widget-content">
+    <ul class="widget-list">
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=AIRSIM&amp;limit=20">AIRSIM</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=Cooking&amp;limit=20">Cooking</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=IT%20Manager&amp;limit=20">IT Manager</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=IT%EA%B4%80%EB%A6%AC%EC%9E%90&amp;limit=20">IT관리자</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=PM&amp;limit=20">PM</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=recipe&amp;limit=20">recipe</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=Splunk&amp;limit=20">Splunk</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=Tomato%20pasta&amp;limit=20">Tomato pasta</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EB%9D%BC%EC%9D%B4%EC%84%A0%EC%8A%A4&amp;limit=20">라이선스</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EB%A0%88%EC%8B%9C%ED%94%BC&amp;limit=20">레시피</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EB%A1%9C%EA%B7%B8&amp;limit=20">로그</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EB%A1%9C%EB%B0%8D&amp;limit=20">로밍</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EB%AA%A8%EB%B0%94%EC%9D%BC&amp;limit=20">모바일</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0&amp;limit=20">빅데이터</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EC%8A%A4%ED%94%8C%EB%A0%81%ED%81%AC&amp;limit=20">스플렁크</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0&amp;limit=20">시작하기</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EC%97%90%EC%96%B4%EC%8B%AC&amp;limit=20">에어심</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%EC%9A%94%EB%A6%AC&amp;limit=20">요리</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%ED%86%A0%EB%A7%88%ED%86%A0%20%ED%8C%8C%EC%8A%A4%ED%83%80&amp;limit=20">토마토 파스타</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-5"><a href="http://connexus-recall.youre.space:5000/mt-search.cgi?IncludeBlogs=5&amp;tag=%ED%86%B5%EC%8B%A0&amp;limit=20">통신</a></li>
+  
+    </ul>
+  </div>
+</div>
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="http://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://weblog.youre.space/genie7/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="http://weblog.youre.space/genie7/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2018.</p>
+  <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
+</div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="http://weblog.youre.space/genie7/mt-theme-scale2.js"></script>
+
+<center>
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"genie7"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</center>
+
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+<div class="main_banner" id="main_banner1">
+<script type="text/javascript"> 
+var tad_conf = {
+    targetId : 'main_banner1', clientId : 'MX000603F', slotNo : 2, newWindow : true, test : false
+};
+TadSdk.AdView.init(tad_conf);
+</script>
+</div>
+</center>
+
+</body>
+</html>

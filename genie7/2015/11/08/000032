@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <title>요리하는 남자 Archives - genie7</title>
+    <meta name="description" content="e커머스 매출 올리는 산수(算數) - 매출액 계산하기...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>e커머스 데이터 파헤치기-1편 - genie7</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="http://weblog.youre.space/genie7/styles.css">
     <!--[if lt IE 9]>
@@ -12,7 +14,7 @@
     <link rel="shortcut icon" href="http://weblog.youre.space/genie7/uploads/genie7-chulhyun_cho_512x512.jpg">
     <link rel="start" href="http://weblog.youre.space/genie7/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/genie7/atom.xml" />
-    <link rel="canonical" href="http://weblog.youre.space/genie7/cat/" />
+    <link rel="canonical" href="http://weblog.youre.space/genie7/2015/11/08/000032" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -25,6 +27,21 @@
 </script>
 
 
+    
+    <link rel="next" href="http://weblog.youre.space/genie7/2015/11/08/000033" title="e커머스 데이터 파헤치기-2편">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="en-us">
+    <meta property="og:title" content="e커머스 데이터 파헤치기-1편">
+    <meta property="og:url" content="http://weblog.youre.space/genie7/2015/11/08/000032">
+    <meta property="og:description" content="e커머스 매출 올리는 산수(算數) - 매출액 계산하기...">
+    <meta property="og:site_name" content="genie7">
+    <meta property="og:image" content="http://weblog.youre.space/genie7/assets_c/2018/04/genie7-chulhyun_cho_512x512-thumb-320x320-47.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="e커머스 매출 올리는 산수(算數) - 매출액 계산하기...">
+    <link itemprop="url" href="http://weblog.youre.space/genie7/2015/11/08/000032">
+    <link itemprop="image" href="http://weblog.youre.space/genie7/assets_c/2018/04/genie7-chulhyun_cho_512x512-thumb-320x320-47.jpg">
+    
   </head>
   <body>
     <div id="container">
@@ -56,21 +73,44 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/genie7/">Home</a></li>
-              <li class="breadcrumb-list-item">요리하는 남자 Archives</li>
+              <li class="breadcrumb-list-item">e커머스 데이터 파헤치기-1편</li>
             </ul>
-            <div id="category-main" class="main" role="main">
-              <section id="posts">
-                <h2>요리하는 남자 Archives</h2>
-                <ol>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-32" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">e커머스 데이터 파헤치기-1편</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2015-11-08T21:44:04+09:00" itemprop="datePublished">November  8, 2015</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard">genie7</span></li>
 
-                  <li>
-                    <time datetime="2016-05-15T13:50:51+09:00">May 15, 2016</time>
-                    <a href="http://weblog.youre.space/genie7/2016/05/15/000052">[레시피] 토마토 소스 파스타 만들기</a>
-                  </li>
+  
 
-                </ol>
-              </section>
-              
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>e커머스 매출 올리는 산수(算數) - 매출액 계산하기</p>
+                  <p>기업은 목적은 이윤 추구에 있다고 한다.뭐, 개인적으로 이 목적에 동의하지는 않지만 월급 받고 살다 보니 그냥 그렇다고 해 둬야지 뭐. 나중에 내가 회사를 차리게 되면, 난 나와 직원들이받아야 하는 높은급여를정해 놓고 나머지는 다양한 방식으로 사회에 환원할 거다. 그럴 기회나 생기면 다행이겠지만...<br /><br />본론으로 돌아가서e커머스 비즈니스는상품을 최대한 많이 팔아서 매출액을 올리는 것이 e커머스 비즈니스의 가장 기본 목표이다. 주간, 월간, 연간 매출이 있을 수 있으나 편의상 하루에 대한 부분만 고려해 보자.매출액을 계산하는 공식은 다음과 같다.<br /><br />매출액1 =(상품1 X 판매수량1) + (상품2 X 판매수량2) + (상품3 X 판매수량3) + ... + (상품n X 판매수량n)<br /><br />여러 종류의 상품들이 다양하게 팔리기 때문에 상품의 종류는 n가지, 그리고 각 상품이 팔리는 수량도 n가지가 존재하겠네요. 그런데 이 공식을 다른 방식으로도 계산할 수 있습니다.<br /><br />매출액2= (고객1 X 구매금액1) + (고객2 X 구매금액2) + (고객3 X 구매금액3) + ... + (고객m X 구매금액m)<br /><br />각각의 고객이 구매한 금액을 모두 더하는 방식인 거죠. 사실 여기서 고객1, 고객2, 고객3, ..., 고객m은 모두 1이 됩니다. 왜냐하면 각각의 고객이라 함은 1명의 고객을 뜻하니까요.<br />결과적으로 매출액1과 매출액2는 동일한 금액이 됩니다. 그냥 편하게 매출액(=매출액1=매출액2)이라고 부르기로 하죠.<br /><br />매출액1을 높이기 위해서는 어떤 방법이 있을까요? 실제로 가능한지 아닌지는 따지지 않고, 산수(算數)로만 생각해보도록 하지요.<br /><br />- 방법 1 :상품1, 상품2, 상품3, ..., 상품n의 각각의 상품의 가격을 높인다.<br />- 방법 2 : 판매수량1, 판매수량2, 판매수량3, ..., 판매수량n의 각각의 판매수량을 증가시킨다.<br />- 방법 3 : n은 더 큰 수가 될 수 있도록 판매되는 상품을 늘린다.<br /><br />또 있을 수도 있겠지만, 머리가 아플수 있으니 간단하게 여기까지만,<br />그러면, 매출액2를 높이기 위한 방법도 정리해 볼까요? 앞의 식에서 해봤으니 이건 좀 쉽겠지요?<br /><br />- 방법4 : 고객1, 고객2, 고객3, ..., 고객m의 각각의 고객의 값을 높인다. 응? 아니다 이건 아니다. 왜냐하면 고객1, 고객2, 고객3, ..., 고객m은 모두 1이라고 앞에서 언급했다. 1이라고 해놓고 더 큰 값을 만들어 낼 수는 없으니까!<br />- 방법5 : 구매금액1, 구매금액2, 구매금액3, ..., 구매금액m의 각각의 구매금액을 높인다.<br />- 방법 6 : m을 더 큰 수가 될 수 있도록 더 많은 고객이 구매할 수 있도록 한다.<br /><br />이것도 머리가 아플 수 있으니 여기까지만 하자.<br /><br />위에서 말도 안 되는 방법 4를 제외하고, 우리는 매출을 높이기 위한 방법을 찾아 내었다.<br />이제 실행만 하면 된다.<br /><br />To be continued...</p>
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+
+                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/genie7/2015/11/08/000033" title="e커머스 데이터 파헤치기-2편">Next entry</a></li>
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                
+              </article>
             </div>
             <aside class="widgets related" role="complementary">
               <nav class="widget-search widget">
@@ -317,5 +357,45 @@
     </div>
     <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
     <script src="http://weblog.youre.space/genie7/mt-theme-scale2.js"></script>
-  </body>
+
+<center>
+<script type="text/javascript">
+  ( function() {
+    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
+    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"genie7"};
+    var placement_id = window.CHITIKA.units.length;
+    window.CHITIKA.units.push(unit);
+    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
+}());
+</script>
+<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+</center>
+
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+<div class="main_banner" id="main_banner1">
+<script type="text/javascript"> 
+var tad_conf = {
+    targetId : 'main_banner1', clientId : 'MX000603F', slotNo : 2, newWindow : true, test : false
+};
+TadSdk.AdView.init(tad_conf);
+</script>
+</div>
+</center>
+
+</body>
 </html>
