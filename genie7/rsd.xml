@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+<service>
+<engineName>Movable Type 6.3.6</engineName>
+<engineLink>http://www.sixapart.com/movabletype/</engineLink>
+<homePageLink>http://weblog.youre.space/genie7/</homePageLink>
+<apis>
+<api name="MetaWeblog" preferred="true" apiLink="http://connexus-recall.youre.space:5000/mt-xmlrpc.cgi" blogID="5" />
+<api name="MovableType" preferred="false" apiLink="http://connexus-recall.youre.space:5000/mt-xmlrpc.cgi" blogID="5" />
+<api name="Blogger" preferred="false" apiLink="http://connexus-recall.youre.space:5000/mt-xmlrpc.cgi" blogID="5" />
+<api name="Atom" preferred="false" apiLink="http://connexus-recall.youre.space:5000/mt-atom.cgi/weblog" blogID="5" />
+</apis>
+</service>
+</rsd>
