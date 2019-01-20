@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ko" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <title>January 2019 Archives - vergence의 이상한 세상</title>
+    <meta name="description" content="기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요. The behavior for Date objects stored in Firestore is going to change AND YOUR APP MAY BREAK. To hide this warning and ensure your app does not break, you...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>Firebase에서 서버 시각 저장하는 방법 변경 - vergence의 이상한 세상</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="http://weblog.youre.space/vergence/styles.css">
     <!--[if lt IE 9]>
@@ -12,7 +14,7 @@
     
     <link rel="start" href="http://weblog.youre.space/vergence/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/vergence/atom.xml" />
-    <link rel="canonical" href="http://weblog.youre.space/vergence/2019/01/" />
+    <link rel="canonical" href="http://weblog.youre.space/vergence/2019/01/001386.html" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -29,7 +31,21 @@
         var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
         sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
     </script>
-    <link rel="prev" href="http://weblog.youre.space/vergence/2018/12/" title="December 2018">
+    <link rel="prev" href="http://weblog.youre.space/vergence/2019/01/001385.html" title="신한카드 올댓쇼핑 모바일 웹 ">
+    
+    <link rel="amphtml" href="http://weblog.youre.space/vergence/2019/01/001386.amp.html">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Firebase에서 서버 시각 저장하는 방법 변경">
+    <meta property="og:url" content="http://weblog.youre.space/vergence/2019/01/001386.html">
+    <meta property="og:description" content="기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요. The behavior for Date objects stored in Firestore is going to change AND YOUR APP MAY BREAK. To hide this warning and ensure your app does not break, you...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요. The behavior for Date objects stored in Firestore is going to change AND YOUR APP MAY BREAK. To hide this warning and ensure your app does not break, you...">
+    <link itemprop="url" href="http://weblog.youre.space/vergence/2019/01/001386.html">
+    <link itemprop="image" href="http://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     
   </head>
   <body>
@@ -64,46 +80,76 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/vergence/">Home</a></li>
-              <li class="breadcrumb-list-item">January 2019 Archives</li>
+              <li class="breadcrumb-list-item">Firebase에서 서버 시각 저장하는 방법 변경</li>
             </ul>
-            <div id="datebased-main" class="main" role="main">
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-1386" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">Firebase에서 서버 시각 저장하는 방법 변경</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2019-01-20T10:27:53+09:00" itemprop="datePublished">January 20, 2019</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
-              <section id="posts">
-                <h2>January 2019 Archives</h2>
-                <ol class="posts-list">
-  
-                  <li class="posts-list-item">
-                    <time datetime="2019-01-20T10:27:53+09:00">January 20, 2019</time>
-                    <a href="http://weblog.youre.space/vergence/2019/01/001386.html">Firebase에서 서버 시각 저장하는 방법 변경</a>
-                  </li>
-  
 
-  
-                  <li class="posts-list-item">
-                    <time datetime="2019-01-19T21:52:20+09:00">January 19, 2019</time>
-                    <a href="http://weblog.youre.space/vergence/2019/01/001385.html">신한카드 올댓쇼핑 모바일 웹 </a>
-                  </li>
-  
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요.</p>
+<pre><code>
+The behavior for Date objects stored in Firestore is going to change
+AND YOUR APP MAY BREAK.
+To hide this warning and ensure your app does not break, you need to add the
+following code to your app before calling any other Cloud Firestore methods:
 
+  const firestore = new Firestore();
+  const settings = {/* your settings... */ timestampsInSnapshots: true};
+  firestore.settings(settings);
+
+With this change, timestamps stored in Cloud Firestore will be read back as
+Firebase Timestamp objects instead of as system Date objects. So you will also
+need to update code expecting a Date to instead expect a Timestamp. For example:
+
+  // Old:
+  const date = snapshot.get('created_at');
+  // New:
+  const timestamp = snapshot.get('created_at');
+  const date = timestamp.toDate();
+
+Please audit all existing usages of Date when you enable the new behavior. In a
+future release, the behavior will change to the new behavior, so if you do not
+follow these steps, YOUR APP MAY BREAK.
+</code></pre>
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/vergence/2019/01/001385.html" title="신한카드 올댓쇼핑 모바일 웹 ">Previous entry</a></li>
+
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
   
-                  <li class="posts-list-item">
-                    <time datetime="2019-01-16T19:21:41+09:00">January 16, 2019</time>
-                    <a href="http://weblog.youre.space/vergence/2019/01/001384.html">Movable Type 7에서 6로</a>
-                  </li>
+    Please paste Zenback script code here.
   
-                </ol>
-              </section>
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
   
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/344</p>
+  
+  
+</aside>
 
-              <nav class="page-navigation entry-navigation pagination content-nav">
-                <ul class="page-navigation-list">
 
-                  <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/vergence/2018/12/">December 2018</a></li>
-
-
-                </ul>
-              </nav>
+              </article>
             </div>
             <aside class="widgets related" role="complementary">
               <nav class="widget-search widget">
@@ -470,5 +516,31 @@
     </div>
     <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
     <script src="http://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
-  </body>
+
+<center>
+<script type="text/javascript"> 
+clicksor_enable_adhere = false; 
+
+clicksor_default_url = '';
+clicksor_banner_border = '#99CC33'; 
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#000000'; 
+clicksor_banner_text_color = '#666666';
+clicksor_layer_border_color = '';
+clicksor_layer_ad_bg = ''; 
+clicksor_layer_ad_link_color = '';
+clicksor_layer_ad_text_color = ''; 
+clicksor_text_link_bg = '';
+clicksor_text_link_color = ''; 
+clicksor_enable_text_link = false;
+		 
+clicksor_banner_text_banner = true;
+clicksor_banner_image_banner = true; 
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+</script>
+<script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=330835&amp;adtype=20&amp;sid=588821"></script>
+</center>
+
+</body>
 </html>

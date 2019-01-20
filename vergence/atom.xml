@@ -4,9 +4,54 @@
     <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2019-01-19T12:55:26Z</updated>
+    <updated>2019-01-20T01:30:19Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Firebase에서 서버 시각 저장하는 방법 변경</title>
+    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2019/01/001386.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.1386</id>
+
+    <published>2019-01-20T01:27:53Z</published>
+    <updated>2019-01-20T01:30:19Z</updated>
+
+    <summary>기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요. The behavior for Date objects stored in Firestore is going to change AND YOUR APP MAY BREAK. To hide this warning and ensure your app does not break, you...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
+        <![CDATA[<p>기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요.</p>
+<pre><code>
+The behavior for Date objects stored in Firestore is going to change
+AND YOUR APP MAY BREAK.
+To hide this warning and ensure your app does not break, you need to add the
+following code to your app before calling any other Cloud Firestore methods:
+
+  const firestore = new Firestore();
+  const settings = {/* your settings... */ timestampsInSnapshots: true};
+  firestore.settings(settings);
+
+With this change, timestamps stored in Cloud Firestore will be read back as
+Firebase Timestamp objects instead of as system Date objects. So you will also
+need to update code expecting a Date to instead expect a Timestamp. For example:
+
+  // Old:
+  const date = snapshot.get('created_at');
+  // New:
+  const timestamp = snapshot.get('created_at');
+  const date = timestamp.toDate();
+
+Please audit all existing usages of Date when you enable the new behavior. In a
+future release, the behavior will change to the new behavior, so if you do not
+follow these steps, YOUR APP MAY BREAK.
+</code></pre>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>신한카드 올댓쇼핑 모바일 웹 </title>
@@ -491,34 +536,6 @@ MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.<br />
 자유롭게 함께 이야기 하는 장소가 되면 좋겠어요.</p>
 
 <a href="http://meetup.devopskorea.com/201807/">http://meetup.devopskorea.com/201807/</a>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>에스토니아 개인 소득 500 이하</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/vergence/2018/05/000877.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.877</id>
-
-    <published>2018-05-16T10:06:03Z</published>
-    <updated>2018-05-16T10:06:28Z</updated>
-
-    <summary>에스토니아는 개인소득이 500Euro 이하면 개인 세금이 없다는군요. 470Euro를 배당금으로 받는 것과 급여로 받는걸 비교하면. 배당금 : 470 + 법인세금(20%) 94라서 회사 입장에선 564 Euro. 급여 : 470 + 사회세금(?)으로 160이면 회사입장에선 630 Euro... 이지만 유럽 어디서든 의료 보험이 된다고. 에스토니아에...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/vergence/">
-        에스토니아는 개인소득이 500Euro 이하면 개인 세금이 없다는군요.
-
-470Euro를 배당금으로 받는 것과 급여로 받는걸 비교하면.
-
-배당금 : 470 + 법인세금(20%) 94라서 회사 입장에선 564 Euro.
-급여 : 470 + 사회세금(?)으로 160이면 회사입장에선 630 Euro... 이지만 유럽 어디서든 의료 보험이 된다고.
-
-에스토니아에 세금 내고 디지털 노마드라면 고려해볼 선택지이군요.
         
     </content>
 </entry>

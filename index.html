@@ -88,6 +88,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-1386" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2019/01/001386.html">Firebase에서 서버 시각 저장하는 방법 변경</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-20T10:27:53+09:00" itemprop="datePublished">January 20, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요.</p>
+<pre><code>
+The behavior for Date objects stored in Firestore is going to change
+AND YOUR APP MAY BREAK.
+To hide this warning and ensure your app does not break, you need to add the
+following code to your app before calling any other Cloud Firestore methods:
+
+  const firestore = new Firestore();
+  const settings = {/* your settings... */ timestampsInSnapshots: true};
+  firestore.settings(settings);
+
+With this change, timestamps stored in Cloud Firestore will be read back as
+Firebase Timestamp objects instead of as system Date objects. So you will also
+need to update code expecting a Date to instead expect a Timestamp. For example:
+
+  // Old:
+  const date = snapshot.get('created_at');
+  // New:
+  const timestamp = snapshot.get('created_at');
+  const date = timestamp.toDate();
+
+Please audit all existing usages of Date when you enable the new behavior. In a
+future release, the behavior will change to the new behavior, so if you do not
+follow these steps, YOUR APP MAY BREAK.
+</code></pre>
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/vergence/2019/01/001386.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-1385" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2019/01/001385.html">신한카드 올댓쇼핑 모바일 웹 </a></h2>
@@ -370,32 +416,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="http://weblog.youre.space/imyaman/2018/09/001376.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1375" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/09/001375.html">대전 기네스 대전 유일, 최초, 최고의 관광체험 전시공간 5곳! 궁금하시죠?</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-09-25T19:33:43+09:00" itemprop="datePublished">September 25, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    안녕하세요! 대전광역시 공식 관광 블로그 "먼저보슈"입니다. 대전에는 다양한 관광체험 또는 전시 공간이 가득한데요. 그런데! 대전에서만 만날 수 있는 곳들이 있는 거 아시나요? 전국 유일, 최초, 최고의 타이틀을 가진 체험, 전시공간이 대전에 있다는 사실을 알고 계시나요? 이름하여~ 대전 기네스!! 오늘은 대전 기네스 5곳을 소개해드릴게요 :) 궁금하신 분들은 따라오세요! 남들 다 아는 다른 지역에서도 많은 관광명소는 지겨우셨다면, 오로지 대전에서만 경험할 수 있는 유일하고 독특한 것들, 최초와 최고의 기네스 장소 5개를 소개합니다.대전 도심 내 천연동굴을 활용해 만든 국내 최초, 최대 규모 담수어 수족관인 대전 아쿠아리움.......
-
-
-<p>출처 : <a href="http://blog.naver.com/daejeontour/221365330014">http://blog.naver.com/daejeontour/221365330014</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/imyaman/2018/09/001375.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
