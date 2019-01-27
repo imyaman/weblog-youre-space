@@ -441,7 +441,7 @@ MT.util = function () {
         .join('-')
         .replace(/[^a-zA-Z0-9-]/g, '');
     jsonUrl  = [
-        "http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=comment_listing&direction=",
+        "http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=comment_listing&direction=",
         direction,
         "&entry_id=",
         entryID,
@@ -654,7 +654,7 @@ function mtFetchUser(cb) {
         var u = mtGetUser();
         var script = document.createElement('script');
         var ts = new Date().getTime();
-        script.src = 'http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=userinfo&blog_id=12&jsonp=' + cb + '&ts=' + ts + '&sid=' + u.sid;
+        script.src = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=userinfo&blog_id=12&jsonp=' + cb + '&ts=' + ts + '&sid=' + u.sid;
         (document.getElementsByTagName('head'))[0].appendChild(script);
     }
 }
@@ -664,7 +664,7 @@ function mtVerifySession(cb) {
     var script = document.createElement('script');
     var ts = new Date().getTime();
     var u = mtGetUser();
-    script.src = 'http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=verify_session&blog_id=12&jsonp=' + cb + '&ts=' + ts + '&sid=' + u.sid;
+    script.src = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=verify_session&blog_id=12&jsonp=' + cb + '&ts=' + ts + '&sid=' + u.sid;
     (document.getElementsByTagName('head'))[0].appendChild(script);
 }
 
@@ -790,7 +790,7 @@ mtAttachEvent('usersignin', mtUserOnLoad);
 function mtSignIn() {
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=login&blog_id=12';
+    var url = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=login&blog_id=12';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
@@ -835,7 +835,7 @@ function mtSignOut(entry_id) {
     mtClearUser();
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1&blog_id=12';
+    var url = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1&blog_id=12';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;

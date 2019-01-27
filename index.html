@@ -88,12 +88,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
-              <article id="entry-1386" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1404" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2019/01/001386.html">Firebase에서 서버 시각 저장하는 방법 변경</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001404.html">대전 시민가요제 쫄깃쫄깃한 가왕맞추기 여러분도 해보실래요?</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-20T10:27:53+09:00" itemprop="datePublished">January 20, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:52:04+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -102,44 +102,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요.</p>
-<pre><code>
-The behavior for Date objects stored in Firestore is going to change
-AND YOUR APP MAY BREAK.
-To hide this warning and ensure your app does not break, you need to add the
-following code to your app before calling any other Cloud Firestore methods:
+    안녕하세요~^^ 대전광역시 공식 관광블로그 "먼저보슈"입니다. 9월 8일, 오후 7시 둔산동 샘머리공원 특설무대에서는 제 22회 대전시민가요제가 실시되었는데요. 우리나라는 참 음악을 사랑하고 흥이 많은 나라입니다. TV의 노래 관련 프로그램들이 굉장히 많다보니 상대적으로 이런 시민가요제는 사람들이 잘 모르시는 것 같아요. 하지만 TV프로만큼 멋진 음악들을 들으며 가왕을 한번 맞춰보는 시간!! 여러분도 한번 느껴보실래요? 제 22회 대전시민가요제의 가왕은 누구일까요?9월 8일 토요일 오후 7시에 둔산동 샘머리공원 특설무대에서는 제22회 시민가요제가 진행이 되었습니다. 주최는 한국연예예술인 총연합회 대전광역시 지회이며 주관.......
 
-  const firestore = new Firestore();
-  const settings = {/* your settings... */ timestampsInSnapshots: true};
-  firestore.settings(settings);
 
-With this change, timestamps stored in Cloud Firestore will be read back as
-Firebase Timestamp objects instead of as system Date objects. So you will also
-need to update code expecting a Date to instead expect a Timestamp. For example:
+<p>출처 : <a href="http://blog.naver.com/daejeontour/221366865783">http://blog.naver.com/daejeontour/221366865783</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 
-  // Old:
-  const date = snapshot.get('created_at');
-  // New:
-  const timestamp = snapshot.get('created_at');
-  const date = timestamp.toDate();
-
-Please audit all existing usages of Date when you enable the new behavior. In a
-future release, the behavior will change to the new behavior, so if you do not
-follow these steps, YOUR APP MAY BREAK.
-</code></pre>
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2019/01/001386.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001404.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-1385" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1403" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2019/01/001385.html">신한카드 올댓쇼핑 모바일 웹 </a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001403.html">가을나들이 하기 좋은 곳 분당중앙공원 꽃무릇축제로 초대합니다</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-19T21:52:20+09:00" itemprop="datePublished">January 19, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:52:02+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -148,22 +128,24 @@ follow these steps, YOUR APP MAY BREAK.
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>신한카드 올댓쇼핑 모바일 웹</p>
-<p>Shinhancard allthat shopping mobile web</p>
-<p><a href="https://newmallthat.shinhancard.com/">https://newmallthat.shinhancard.com/</a></p>
+    분당중앙공원 꽃무릇축제에 초대합니다. 올여름 예년같지않은 무더위로 많이 힘들었습니다. 사람들도 힘들었지만 농장의 과실들도 더위에 힘들어 이번 추석은 야채를 비롯해 과일가격이 고공행진을 하네요. 그래도 오랫만에 일가친척 모두 한자리에 모여 넉넉한 추석을 보내니 마음만은 풍요로운 한가위가 되었으면 좋겠습니다. 긴 서두~~ 이번 명절 온가족이 함께 모이는 즐거움에 한가지 더해 분당중앙공원에서 열리고 있는 꽃무릇축제에 초대합니다. 개막 : 2018.09.22(토) 온가족 나들이하기 좋은 분당중앙공원에 화사한 가을을 즐길 수 있는 멋진 꽃무릇축제에 함께해요.^^ 분당중앙공원 입구의 황새울광장입니다. 공원중앙에 화사한 꽃사진.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221366838920">http://seongnamdiary.com/221366838920</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2019/01/001385.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001403.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-1384" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1402" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2019/01/001384.html">Movable Type 7에서 6로</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001402.html">일산호수공원 가을꽃축제에서 즐기는 가을데이트</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-16T19:21:41+09:00" itemprop="datePublished">January 16, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:52:01+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -172,20 +154,24 @@ follow these steps, YOUR APP MAY BREAK.
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Movable Type 7에서 Movable Type 6로 돌아왔습니다. MT7으로 이전은 나중에 시도해보려고요. 아직은 이른 것 같아요.</p>
+    진짜 완연한 가을이죠. 이렇게 빨리 가을날씨가 찾아오다니!! 난 준비가 안 되어있다구. 그렇지만 가을꽃들은 정확하게 가을이 오는걸 기다리고 있었나봐요. 우리를 기다리고 있네요!
+
+
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221366840951">http://blog.naver.com/letsgoyang/221366840951</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2019/01/001384.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001402.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-1383" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1401" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/12/001383.html">Watson Analytics 유료</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001401.html">2018 고양가을꽃축제 관람팁!</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-12-15T14:22:20+09:00" itemprop="datePublished">December 15, 2018</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:51:59+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -194,21 +180,24 @@ follow these steps, YOUR APP MAY BREAK.
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Watson Analytics 유료로 사용해보고 싶습니다.</p>
-<p><a href="Watson Analytics 유료">https://community.ibm.com/community/user/businessanalytics/blogs/christina-howell/2017/08/08/how-can-i-connect-my-instance-of-watsonanalytics-t</a></p>
+    매년 업그레이드 되는 고양가을꽃축제에 많은 분들이 어떤 변화와 꽃들이 준비되어있는지 궁금해하시는 것 같아요. 먼저 갔다온 경험을 바탕과 함께 찍은 사진으로 차근차근 설명해드릴게요. 올해 관람포인트는 실내포토존이에요. 실내포토존이 정말정말 잘 되어있어요. 진짜 오천원이 아깝지 않아요. 남녀노소, 연령불문하고 모두가 좋아할만한 인생샷 건질 수 있는 포토존이에요.
+
+
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221366837117">http://blog.naver.com/letsgoyang/221366837117</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/12/001383.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001401.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-1382" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1400" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/12/001382.html">프랑스 노란 조끼 시위에 대한 보도를 보며</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001400.html">일산애놀자 -10화- "일산의 자랑 고양어울림누리"</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-12-11T23:26:13+09:00" itemprop="datePublished">December 11, 2018</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:51:57+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -217,23 +206,24 @@ follow these steps, YOUR APP MAY BREAK.
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>프랑스 노란 조끼 시위에 대한 보도를 보며 또 이런 생각이 듭니다, 한반도에 단기 4351년에도 신민과 노예가 살고 있구나.</p>
-<p>상류층에 대한 불신(세금을 부자들을 위해 쓰고 있다는)이 있는데, 낫으로 불신의 대상의 목을 베지 않았다는 건.<br /> 시위하는 사람은 자신의 경력 단절, 범법자가 될 위험, 부상의 위험, 죽음의 위험을 감수하는 것인데, 살고자...<br /> 이에 반해 고작 공공시설 훼손, 조형물 파손 걱정하는 기사.</p>
-<p>경제적 자유주의와 자본주의의 근간을 흐려놓는, 삼성바이오로직스, 그 회사를 걱정하는 기사. 상장유지 결정에, 주주의 피해를 고려해서라고.</p>
-<p>이런 노예 새끼들 때문에, 오늘도 피곤한 시민들.</p>
+    고양시민이 뭉쳤다! 지역라디오 듣고 기분 좋은 하루 만들기~ 일산FM!!“일산애놀자”는 일산FM과 고양영상미디어센터가 함께 만드는 팟캐스트입니다.우리들이 살고 있는 도시 일산과 관련된 주제를 하나씩 정해서 우리가 직접 경험해보고 그 경험담을 여러분과 함께 나눠보는 시간입니다.
+
+
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221366412536">http://blog.naver.com/letsgoyang/221366412536</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/12/001382.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001400.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-1381" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1399" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/12/001381.html">Azure - Cognitive Services - Text Analytics API </a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001399.html">청춘만세 -10화- "나 혼자 산다! 자취한다 !"</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-12-07T16:36:36+09:00" itemprop="datePublished">December  7, 2018</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:51:56+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -242,118 +232,24 @@ follow these steps, YOUR APP MAY BREAK.
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Supplied language is not supported. Pass in one of: ar,da,de,el,en,es,fi,fr,it,ja,nl,no,pl,pt-PT,ru,sv,tr,zh-Hans. See https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview for the complete list of support languages.</p>
-<p>그렇군요. sentiment에 ko Korean 한국어는 현재 지원되지 않는거군요. 아래 문서를 보면, 한국어는 Key phrases만 지원한답니다.</p>
-<p><a href="https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support">https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support</a></p>
+    고양시민이 뭉쳤다! 지역라디오 듣고 기분 좋은 하루 만들기~ 일산FM!!“청춘만세”는 일산FM과 고양영상미디어센터가 함께 만드는 팟캐스트입니다."청춘만세"는 청년들이 직접 청춘들의 이야기를 전하는 방송입니다. 할 일도 많고 할 말도 많은 청춘이 일상에서 마주하는 고민과 즐거움을 자유롭게 얘기함으로써, 청년들 간의 공감뿐만 아니라 청년을 자녀로 두거나 청년에 관심이 많은 사람들이 청년을 이해하며 함께 소통할 수 있는 장을 마련하고자 합니다. "청춘만세"는 평범한 청춘이 만나는 특별한 세상을 함께 이야기하겠습니다.
+
+
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221366430715">http://blog.naver.com/letsgoyang/221366430715</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/12/001381.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001399.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-1380" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1398" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/genie7/2018/12/001380.html">AIRSIM 카드 소개</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001398.html">호호성공페스티벌에 놀러오세요~</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-12-07T15:08:53+09:00" itemprop="datePublished">December  7, 2018</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard">genie7</span></li>
-
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="http://weblog.youre.space/genie7/cat-50/">통신</a></li>
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p><span class="caps">AIRSIM</span>은 홍콩에서 출시된 데이터기반 <span class="caps">SIM</span>카드이다.<br />
-한국에서는 유심이라고 부르지만 해외에서 심카드로 불리고 있다.</p>
-
-
-<p>에어심의 특징은 다른 트레블심카드처럼 현지에서 구매하는 것이 아니라, 미리 구매해서 액티베이션 날짜를 지정할 수 있다는 것이고, 또한 여러 나라에서 이용 가능하다는 것이다.<br />
-각 나라별로 이용일자에 따라 미리 구매해 놓을 수도 있다.</p>
-
-<p>자세한 설명은 다시한번 하기로 하고, 이번엔 홍콩에서 3일 인도네시아에서 1주일을 지내다가 오는 여행을 계획하는 조길동씨를 위한 유심 구매부터 탑업, 요금제 구매까지의 과정을 설명해보려고 한다.</p>
-
-<p>에어심으로 가능한것<br />
-- 현지 데이터 사용<br />
-- 현지에서 로컬, 동일 존 또는 한국으로 전화걸기<br />
-- 심카드 재사용</p>
-
-<p>불가능한것<br />
-- 한국 전화의 착신전환<br />
-(현재 착신전환 서비스는 홍콩과 싱가폴에서만 가능하고, 한국에서도 가능한지 알아보고 있는 중이다. 안되면 되게하면 되지.)</p>
-
-<p>1. 심카드 구매<br />
-페친이 페이스북에 소개한 글을 보고 바로 이거다 싶어서, 후배를 통해 한국으로 수입해 들여옴. 저에게 연락주시면 구매가능합니다.<br />
-아직 온/오프라인 마트를 통해 공급을 하고 있진 않지만, 개인적으로 연락을 주시면 구매 가능합니다.<br />
-에어심은 선불심카드로 심카드 구매후 요금제 제품을 구입을위해 탑업(충전)이 필요합니다.<br />
-구매 문의는 ( https://m.me/ilovehojin )</p>
-
-<p>2. 심카드 활성화<br />
-심카드는 구매하면 다음과 같은 형태로 배송이 된다.<br />
-<a href="http://weblog.youre.space/genie7/assets_c/2018/12/FDFC491B-193D-484C-87D8-1D0A77E44D26-48.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/FDFC491B-193D-484C-87D8-1D0A77E44D26-48.html','popup','width=3024,height=3025,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/FDFC491B-193D-484C-87D8-1D0A77E44D26-thumb-360xauto-48.jpeg" width="360" height="360" alt="FDFC491B-193D-484C-87D8-1D0A77E44D26.jpeg" class="mt-image-none" style="" /></a><a href="http://weblog.youre.space/genie7/assets_c/2018/12/FC3EBB50-BEB3-4BF9-BD3F-8B8F28BDCC41-50.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/FC3EBB50-BEB3-4BF9-BD3F-8B8F28BDCC41-50.html','popup','width=3024,height=3025,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/FC3EBB50-BEB3-4BF9-BD3F-8B8F28BDCC41-thumb-360xauto-50.jpeg" width="360" height="360" alt="FC3EBB50-BEB3-4BF9-BD3F-8B8F28BDCC41.jpeg" class="mt-image-none" style="" /></a><a href="http://weblog.youre.space/genie7/assets_c/2018/12/CEC6949F-D670-4BF7-8604-2A70F0E197CC-49.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/CEC6949F-D670-4BF7-8604-2A70F0E197CC-49.html','popup','width=3024,height=3025,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/CEC6949F-D670-4BF7-8604-2A70F0E197CC-thumb-360xauto-49.jpeg" width="360" height="360" alt="CEC6949F-D670-4BF7-8604-2A70F0E197CC.jpeg" class="mt-image-none" style="" /></a></p>
-
-<p>스마트폰에 심카드를 넣은후 앱스토어에서 <span class="caps">AIRSIM ROAM</span>이라는 앱을 다운로드 받고 설치한다. 앱을 실행하면 <span class="caps">ICCID</span>를 입력하는 화면이 나타난다. 여기에서 카메라 버튼을 탭하여 심카드가 붙은 카드의 바코드를 인식하거나, 카드에 포함된 정보를 입력하여 심카드를 활성화 한다.<br />
-<a href="http://weblog.youre.space/genie7/assets_c/2018/12/69682246-56BF-4C2D-A736-FD59AF85D92C-69.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/69682246-56BF-4C2D-A736-FD59AF85D92C-69.html','popup','width=1080,height=2161,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/69682246-56BF-4C2D-A736-FD59AF85D92C-thumb-autox720-69.png" width="360" height="720" alt="69682246-56BF-4C2D-A736-FD59AF85D92C.png" class="mt-image-none" style="" /></a></p>
-
-<p>활성화가 완료되면 초기 화면에 선택할 수 있는 메뉴와 잔액이 보인다.</p>
-
-<p>3. 탑업(요금 플랜을 구매하기 위한 충전)<br />
-보통의 선불카드는 탑업된 금액을 이용해 전화, 문자, 또는 요금 플랜을 구매한다. 해외의 경우 상품 구매를 위한 결제에 사용되기도 한다.<br />
-어쨋든 홍콩과 인도네시아에서 사용할 플랜을 구매하기 위해서는 해당 필요한 금액만큼 탑업을 해 놓어야 합니다. <br />
-앱의 TopUp 메뉴를 선택하면 TopUp By Credit Card 라는 버튼이 보이면 이 메뉴를 탭합니다.<br />
-<a href="http://weblog.youre.space/genie7/assets_c/2018/12/7D75A573-1EEA-4786-8477-052D867B01C8-63.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/7D75A573-1EEA-4786-8477-052D867B01C8-63.html','popup','width=1080,height=2161,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/7D75A573-1EEA-4786-8477-052D867B01C8-thumb-autox720-63.png" width="360" height="720" alt="7D75A573-1EEA-4786-8477-052D867B01C8.png" class="mt-image-none" style="" /></a></p>
-
-<p>탑업은 20달러, 40달러, 60달러로 각각 구매할 수 있고, 신용카드와 페이팔을 이용해 결제할 수 있습니다.<br />
-결제가 완료되면 초기화면(Home)에서 잔액(Balance)을 확인할 수 있습니다.<br />
-<a href="http://weblog.youre.space/genie7/assets_c/2018/12/7EE9358B-DA72-45FC-8F69-884E17A80289-66.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/7EE9358B-DA72-45FC-8F69-884E17A80289-66.html','popup','width=1080,height=2161,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/7EE9358B-DA72-45FC-8F69-884E17A80289-thumb-autox720-66.png" width="360" height="720" alt="7EE9358B-DA72-45FC-8F69-884E17A80289.png" class="mt-image-none" style="" /></a></p>
-
-<p>4. 요금제 구매<br />
-나라별로 여행계획 및 거주 일정이 결정되었다면 일정해 따라 해당 국가에서 필요한 요금 플랜을 구매하도록 해보자. 이번 여행은 12월 20일 한국을 출발해서 12월 21일 홍콩에 도착하고, 홍콩에서 23일 인도네시아로 출발해서 23일 인도네시아 도착 29일 인도네시아를 출발해서 한국에 30일에 도착한는 계획입니다.<br />
-즉 해외 요금 플랜은 다음과 같이 필요하게 됩니다.<br />
-12월 21일 ~ 12월 23일 : 홍콩 3일 데이터 및 전화<br />
-12월 23일 ~ 12월 29일 : 인도네시아 7일 데이터 및 전화<br />
-각 국가의 요금을 확인해 봅니다. 요금은 Buy 메뉴에서 확인이 가능합니다.<br />
-홍콩의 요금을 확인하기 위해서는 홍콩 국가를 탭하고, 하단의 Select 버튼을 누릅니다. <br />
-<a href="http://weblog.youre.space/genie7/assets_c/2018/12/82B40611-CC1D-4D6A-AF29-6AC0A63B5292-72.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/82B40611-CC1D-4D6A-AF29-6AC0A63B5292-72.html','popup','width=1125,height=2437,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/82B40611-CC1D-4D6A-AF29-6AC0A63B5292-thumb-autox780-72.png" width="360" height="780" alt="82B40611-CC1D-4D6A-AF29-6AC0A63B5292.png" class="mt-image-none" style="" /></a><a href="http://weblog.youre.space/genie7/assets_c/2018/12/F1DC2F77-9C7F-44DB-BB65-1E5266F5BA19-73.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/F1DC2F77-9C7F-44DB-BB65-1E5266F5BA19-73.html','popup','width=1125,height=2437,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/F1DC2F77-9C7F-44DB-BB65-1E5266F5BA19-thumb-autox780-73.png" width="360" height="780" alt="F1DC2F77-9C7F-44DB-BB65-1E5266F5BA19.png" class="mt-image-none" style="" /></a></p>
-
-<p>3일짜리 데이터 요금을 선택하고 나서 보이스 요금제 선택을 위해 버튼을 탭합니다.<br />
-필요로 하는 통화 시간을 선택하고 나면 해당 플랜의 이용을 시작할 날짜를 선택합니다. 날짜는 홍콩시간을 기준으로 정해집니다. </p>
-
-<p><a href="http://weblog.youre.space/genie7/assets_c/2018/12/2FC8F3D7-2F8F-4B28-8F98-9F04FA64057D-74.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/2FC8F3D7-2F8F-4B28-8F98-9F04FA64057D-74.html','popup','width=1125,height=2437,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/2FC8F3D7-2F8F-4B28-8F98-9F04FA64057D-thumb-autox780-74.png" width="360" height="780" alt="2FC8F3D7-2F8F-4B28-8F98-9F04FA64057D.png" class="mt-image-none" style="" /></a><a href="http://weblog.youre.space/genie7/assets_c/2018/12/FC1E98CA-8A30-41D4-A80A-B95B289AB983-75.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/FC1E98CA-8A30-41D4-A80A-B95B289AB983-75.html','popup','width=1125,height=2437,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/FC1E98CA-8A30-41D4-A80A-B95B289AB983-thumb-autox780-75.png" width="360" height="780" alt="FC1E98CA-8A30-41D4-A80A-B95B289AB983.png" class="mt-image-none" style="" /></a>
- <br />
-장바구니에 넣은후 결제를 진행하면, 탑업된 요금이 차감되고 요금제 구매가 완료됩니다.<br />
-인도네시아도 동일한 방법으로 요금 플랜을 구매합니다.</p>
-
-<p><a href="http://weblog.youre.space/genie7/assets_c/2018/12/08BBF349-0DE5-4A06-84AB-39B1EEA53BA9-84.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/08BBF349-0DE5-4A06-84AB-39B1EEA53BA9-84.html','popup','width=1125,height=2437,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/08BBF349-0DE5-4A06-84AB-39B1EEA53BA9-thumb-autox780-84.png" width="360" height="780" alt="08BBF349-0DE5-4A06-84AB-39B1EEA53BA9.png" class="mt-image-none" style="" /></a><a href="http://weblog.youre.space/genie7/assets_c/2018/12/1ADEC0BD-57CB-4CFE-8E01-2FA6EFF0BDE4-85.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/1ADEC0BD-57CB-4CFE-8E01-2FA6EFF0BDE4-85.html','popup','width=1125,height=2437,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/1ADEC0BD-57CB-4CFE-8E01-2FA6EFF0BDE4-thumb-autox780-85.png" width="360" height="780" alt="1ADEC0BD-57CB-4CFE-8E01-2FA6EFF0BDE4.png" class="mt-image-none" style="" /></a><a href="http://weblog.youre.space/genie7/assets_c/2018/12/DF62223D-EA25-40F7-8E6B-B532A741B4E6-86.html" onclick="window.open('http://weblog.youre.space/genie7/assets_c/2018/12/DF62223D-EA25-40F7-8E6B-B532A741B4E6-86.html','popup','width=1125,height=2437,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://weblog.youre.space/genie7/assets_c/2018/12/DF62223D-EA25-40F7-8E6B-B532A741B4E6-thumb-autox780-86.png" width="360" height="780" alt="DF62223D-EA25-40F7-8E6B-B532A741B4E6.png" class="mt-image-none" style="" /></a></p>
-
-<p>이제 여행과정에 필요한 심카드 구매, 탑업, 요금 플랜 구매는 모두 완료가 되었습니다.<br />
-심카드를 빼서 잘 보관하고 있다가, 여행갈때 심카드를 교체한후에 현지에 도착후 폰을 재시작하면 사용 가능해집니다.<br />
-저의 경우에는 듀얼심 폰을 사용하고 있어서 심카드를 빼놓지 않아도 됩니다.<br />
-또한 데이터 플랜의 경우에는 현지 통신망을 이용하기때문에 심카드가 필요합니다. 다만 <span class="caps">AIRSIM</span> Talk라는 앱을 이용해서 전화를 걸수 있는데 이건 인터넷만 연결되어있으면 전화가 가능하네요.</p>
-
-<p>그래서 조길동은 <br />
-한국에서 심카드 구매 비용 1만원<br />
-홍콩 데이터 3일 + 30분 무료 통화 3.99 달러<br />
-인도네시아 데이터 7일 (17.99 달러) + 60분 통화 (3.99 달러) <br />
-총 25.97달러 ( * 1200원 ) = 약 31,164원<br />
-전체 41,164원으로 10일간의 해외여행에서 데이터 사용과 전화 통화를 해결했다는 이야기입니다.</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="http://weblog.youre.space/genie7/2018/12/001380.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1378" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/12/001378.html">다나와 리포터 약관</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-12-04T15:33:53+09:00" itemprop="datePublished">December  4, 2018</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:51:54+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -362,20 +258,24 @@ follow these steps, YOUR APP MAY BREAK.
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>다나와 리포터 약관 제 1 장 총칙<br /><br /> 제 1 조 목적 <br /><br /> 이 약관은 전기통신사업법 및 정보통신망이용촉진 및 정보보호 등에 관한 법률에 따라 ㈜다나와(이하 "회사"로 약칭) 회원에게 제공하는 다나와 리포터 가입 및 이용조건, 서비스 이용, 권한 및 의무, 책임 등에 관련된 사항을 규정함을 목적으로 합니다. <br /><br /> 제 2 조 약관의 명시와 변경 <br /><br /> 1. 본 약관은 이용자가 알 수 있도록 회사 홈페이지 또는 연결화면에 게시합니다. <br /><br /> 2. 회사는 변경된 약관을 홈페이지에 시행일 10일전부터 공지합니다. 약관은 부칙에 규정된 시행일로부터 그 효력이 발생됩니다. 다만 불가항력 사항, 부득이한 사유가 발생했을 때에는 사전 고지 없이 약관을 변경하여 시행할 수 있습니다. <br /><br /> 3. 회원은 변경된 약관의 적용을 거부할 수 있습니다. 이 경우 다나와 리포터 탈퇴를 거쳐 본 서비스 이용을 중단할 수 있습니다. <br /><br /> 4. 변경된 약관이 시행된 이후에도 계속 회사가 제공하는 서비스를 이용하는 경우에는 다나와 리포터가 변경된 약관에 동의한 것으로 봅니다. <br /><br /> 제 3 조 약관 외 준칙 <br /><br /> 1. 이 약관에 명시되지 않은 사항이 전기통신기본법, 전기통신사업법, 기타 관계법령에 규정되어 있을 때에는 그 규정에 따릅니다. <br /><br /> 2. 회사는 약관에서 명시한 서비스 내용 및 절차에 관한 세부사항을 규율 하는 시행세칙(별도 규정)을 만들 수 있으며, 이는 본 약관과 동일한 동의 절차를 거쳐 효력이 발생하고, 본 약관의 일부를 구성하게 됩니다. <br /><br /> 제 2 장 서비스 이용계약 <br /><br /> 제 4 조 용어의 정의<br /><br /> 1. 콘텐츠 : 다나와 리포터가 다나와 사이트를 통해 올린 게시물 중 회사의 정해진 절차에 따라 채택된 콘텐츠<br /><br /> 2. 다나와 리포터 : '다나와 리포터 약관'에 동의한 다나와 회원<br /><br /> 3. 채택 : 다나와 리포터가 쓴 콘텐츠 중 다나와 운영 담당자에 의해 확대 노출될 필요가 있다고 인정하는 절차<br /><br /> 제 5 조 서비스 이용계약 <br /><br /> 서비스 이용계약은 다나와 회원이 회사가 정한 약관에 동의하여 ID를 발급받은 뒤, 다나와 리포터 가입 양식에 따라 "약관에 동의합니다"라는 물음에 "동의" 버튼을 클릭하는 것으로 서비스 이용신청을 하고, 회사가 이를 승인함으로써 성립합니다. <br /><br /> 제 6 조 서비스 이용신청 <br /><br /> 1. 본 서비스를 이용하기 위해서는 본 약관에 동의한 후 소정의 가입신청서에 서비스 이용 시 필요한 정보를 정확하게 기록해야 합니다. <br /><br /> 2. 다나와 리포터 가입은 무료입니다. <br /><br /> 제 7 조 서비스 이용신청의 승인 <br /><br /> 1. 회사는 회원이 모든 정보를 정확히 기재해 서비스 이용신청을 하는 경우 서비스 이용을 승인합니다. 단, 아래의 경우 승인을 거부하거나 취소할 수 있습니다. <br /><br /> (가) 다른 사람의 ID, 명의 등 타인의 정보를 도용하여 신청한 경우<br /><br /> (나) 가입 신청서의 내용을 허위로 기재하였을 경우<br /><br /> (다) 전기통신기본법령, 전기통신사업법령, 정보통신망 이용촉진 및 정보보호 등에 관한 법률, 정보통신 윤리강령, 정보통신 윤리위 원회 심의 규정, 프로그램 보호법 및 기타 관련 법령과 약관이 금지하는 행위를 한 경우<br /><br /> (라) (다)호에 해당하는 사유로 형사처벌을 받은 경우<br /><br /> (마) 기타 회사가 정한 이용신청 요건에 맞지 않을 경우<br /><br /> (바) 제명 등으로 다나와 (일반)회원자격을 상실했거나 다나와 리포터 자격을 상실했을 경우<br /><br /> 2. 회사는 기술적인 이유나 정책 등의 이유로 인해 이용신청의 승낙을 보류할 수 있습니다. <br /><br /> 3. 사이버머니 지급을 위해 신분증 사본, 본인 명의 통장 사본을 요구할 수 있습니다. 이외에도 회사는 회원에게 추가정보의 입력을 요구할 수 있습니다. <br /><br /> 제 3 장 서비스 제공 및 이용 <br /><br /> 제 8 조 서비스의 제공 <br /><br /> 1. 회사는 본 약관에서 정한 바에 따라 지속적이고 안정적인 서비스의 제공을 위해 노력합니다.<br /><br /> (가) 다나와 리포터가 이용 가능한 서비스 전체<br /><br /> (나) 콘텐츠 작성 및 관리 서비스<br /><br /> (다) 다나와 리포터 전용 커뮤니티 게시판의 열람ㆍ등록ㆍ수정ㆍ삭제ㆍ추천<br /><br /> (라) 기타 회사가 자체 개발하거나 다른 회사와의 협력계약 등을 통해 회원들에게 제공할 일체의 서비스<br /><br /> (마) 회사가 시행하는 각종 이벤트와 서비스 1차 혜택<br /><br /> 2. 회사는 서비스에 장애가 발생할 경우 그 복구에 최선을 다합니다. 다만 시스템 점검, 천재지변, 비상사태, 기타 부득이 한 경우에는 서비스를 일시적으로 중단할 수 있습니다. <br /><br /> 제 9 조 다나와 리포터의 권한과 의무 <br /><br /> 1. 다나와 리포터는 회원가입 후 약관 동의 즉시 콘텐츠 작성 활동을 할 수 있습니다. <br /><br /> 2. 다나와 리포터는 회원가입 즉시 다나와 리포터 전용 게시판 등 다나와 리포터에게 제공되는 서비스를 이용할 권리가 있습니다. <br /><br /> 3. 다나와 리포터가 올린 콘텐츠의 내용에 부정확한 표현이나 잘못된 사실 부분에 대해서는 편집을 요청할 수 있으며, 다나와 리포터는 이에 대한 이견이 없는 한 편집에 적극 협조합니다. <br /><br /> 4. 다나와 리포터가 이미 채택된 글에 대해서 수정하고자 할 경우에는 별도의 협의를 통해 진행합니다. <br /><br /> 5. 다나와 리포터가 다나와 리포터 전용 게시판에 올린 글에 따른 책임은 다나와 리포터 본인에게 있습니다. <br /><br /> 6. 다나와 리포터는 자신의 콘텐츠를 회사의 별도 동의 없이 타 매체에 제공할 수 있습니다. 단, 다나와 청탁에 의해 특별 사이버머니를 받은 콘텐츠일 경우는 회사의 사전 동의 없이 타 매체에 제공할 수 없고, 회사는 동의를 거절할 수 있습니다. <br /><br /> 7. 다나와 리포터 본인의 관리 소홀로 인해 패스워드가 타인에게 유출되어 문제가 발생할 경우, 이로 인한 민형사상의 모든 책임은 다나와 리포터 본인에게 있습니다. <br /><br /> 제 10 조 회사의 권한과 의무 <br /><br /> 1. 회사는 다나와 리포터가 올린 콘텐츠의 사실 여부 확인 및 콘텐츠 편집을 위해 회원에게 해당 내용을 문의할 수 있습니다. <br /><br /> 2. 회사는 다나와 리포터가 아래 제13조 제3항에 해당하는 행위를 하였을 경우에는 사전통지 없이 회원의 게시물을 삭제하고 이용계약을 해지하거나 징계규정에 따라 징계할 수 있습니다. <br /><br /> 3. 회사는 다나와 리포터로 채택된 콘텐츠에 대하여 사이버머니를 현금으로 환급한 경우에는 작성자의 요청이 있더라도 해당 콘텐츠를 삭제하지 않을 수 있습니다. <br /><br /> 4. 회사는 다나와 리포터 본인의 허락 없이 다나와 리포터의 신상정보를 제3자에게 공개할 수 없습니다. 단, 수사기관이 범죄혐의를 소명하여 신상정보 제공 등 수사 협조를 요청하는 경우 이를 수사기관에 제공할 수 있습니다. <br /><br /> 제 11 조 서비스 이용시간 <br /><br /> 1. 서비스는 회사의 업무상 또는 기술상 장애 기타 특별한 지장이 없는 한 연중무휴, 1일 24시간 동안 제공함을 원칙으로 합니다. <br /><br /> 2. 회사가 업무 혹은 기술적 이유로 서비스를 중단하고자 할 경우에는 사전에 서비스 중단 사유 및 시간을 공지해야 합니다. 단, 천재지변, 긴급사태, 시스템 장애 등 예기치 않은 상황의 경우는 사후에 공지할 수 있습니다. <br /><br /> 제 4 장 게시물 <br /><br /> 제 12 조 다나와 리포터의 콘텐츠 저작권 등 <br /><br /> 1. 다나와 리포터가 등록한 콘텐츠에 대한 저작권은 해당 저작자에게 있습니다. <br /><br /> 제 13 조 콘텐츠의 책임범위 및 관리 <br /><br /> 1. 다나와 리포터가 게시하는 콘텐츠로 인해 발생하는 손실이나 문제는 다나와 리포터 개인의 책임이며, 회사는 이에 대해 일체의 책임을 지지 않습니다. 단, 회사의 고의 또는 중과실에 의한 경우는 예외입니다. <br /><br /> 2. 다나와 리포터의 콘텐츠로 인하여 발생하는 회사에 대한 제3자의 각종 청구, 소송 기타 일체의 분쟁에 관하여 해당 다나와 리포터는 그 해결에 소요되는 일체의 비용을 부담하고, 회사를 위해 분쟁을 처리해야 하며, 회사가 제3자에게 손해 또는 손실을 배상 또는 보상해야 하거나 기타 회사에 손해 또는 손실이 발생하는 경우 다나와 리포터는 이를 회사에 배상 또는 보상해야 합니다. <br /><br /> 3. 회사는 다나와 리포터의 콘텐츠가 다음 각 항에 해당되는 경우에는 사전 통지 없이 삭제하거나 징계규정에 따라 다나와 리포터가 게시판의 일부 또는 전부에 접속하는 것을 제한하거나 또는 다나와 리포터 자격을 박탈할 수 있습니다. <br /><br /> (가) 스토킹 : 스토킹(stalking) 등 다른 회원을 괴롭히는 경우<br /><br /> (나) 비방, 욕설 : 근거 없는 내용으로 타인(타 회원)을 비방, 욕설하거나 모욕하는 경우<br /><br /> (다) 음란물 : 음란한 사진, 동영상, 문구, 음향, 그림 등을 게시하는 경우<br /><br /> (라) 다단계, 돈 벌기 등 상업적인 내용의 글을 게시하는 경우<br /><br /> (마) 무단복제, 저작권 침해 : 타인의 게시물을 자신이 쓴 것처럼 위조하여 게시물을 등록하는 등 제3자의 저작권 및 지적재산권을 침해하는 경우<br /><br /> (바) 범죄행위 : 등록된 게시물이 범죄행위에 결부된다고 인정되는 경우<br /><br /> (사) 회사의 저작권, 제3자의 저작권 등 기타 권리를 침해하는 내용인 경우<br /><br /> (아) 사이트의 개설취지에 맞지 않는다고 판단되는 경우<br /><br /> (자) 기타 관계법령을 위반한다고 판단되는 경우<br /><br /> 4. 3항의 원인으로 발생한 각종 손해 및 관계기관에 의한 법적 조치에 따르는 책임은 다나와 리포터 본인에게 있습니다. <br /><br /> 5. 회사는 3항의 이유로 삭제한 콘텐츠의 보관의무를 갖지 않습니다. <br /><br /> 6. 회사는 3항의 이유로 삭제한 콘텐츠에 대한 사이버머니를 지급하지 않습니다. <br /><br /> 7. 회사는 모든 콘텐츠를 검사 또는 검열할 의무를 갖지 않습니다. <br /><br /> 8. 회사는 탈퇴한 다나와 리포터나 제명된 회원의 콘텐츠를 삭제하거나 보관할 의무를 갖지 않습니다. <br /><br /> 9. 콘텐츠가 타인의 저작권 및 지적재산권을 침해한 경우 작성자 본인에게 모든 책임이 있습니다. <br /><br /> 제 14 조 콘텐츠의 이용 <br /><br /> 1. 회사는 다나와 리포터가 등록한 콘텐츠를 다나와 사이트에 노출할 수 있으며 제휴사에 제공할 수 있습니다. 단, 제공에 대한 리포터의 동의가 없는 콘텐츠는 제휴사에 제공하지 않습니다. <br /><br /> 2. 회사가 다나와 리포터 콘텐츠를 이용해 출판을 하고자 할 경우 전화, 팩스, 전자우편 등의 절차를 통해 사전에 다나와 리포터 본인의 동의를 얻어야 합니다. 단, 회원정보에 등록된 연락처가 사실과 다르거나 다나와 리포터가 회사의 연락에 응하지 않아 사전에 동의를 구하지 못한 경우, 회사는 출판된 후에 동의 절차를 구할 수 있습니다. <br /><br /> 3. 출판에 따라 회원에게 지급되는 사이버머니나 제공되는 혜택은 출판 동의 과정에서 함께 공지합니다. <br /><br /> 제 15조 사이버머니 지급 <br /><br /> 1. 회사는 채택된 콘텐츠에 대해 사이버머니를 지급합니다.<br /><br /> 2. 사이버머니에 대한 규정은 다나와 리포터 안내페이지에 따릅니다.<br /><br /> 제 5 장 정보 수정ㆍ가입 해지 및 서비스 이용제한 <br /><br /> 제 16 조 회원정보 수정 <br /><br /> 1. 다나와 리포터는 신상정보가 바뀐 경우 회원정보란을 이용해 즉시 신상정보를 수정해야 합니다. <br /><br /> 2. 회원 정보의 누락 및 오류로 인해 사이버머니 지급이 지연되거나 일시 거절될 수 있습니다. <br /><br /> 제 17 조 회원탈퇴 <br /><br /> 1. 다나와 리포터가 서비스 이용계약을 해지하고자 할 경우, 회원 본인이 직접 회원정보수정 메뉴의 개인정보 관리 페이지에서 해지신청을 할 수 있습니다. <br /><br /> 2. 다나와 리포터가 탈퇴를 요청할 경우, 환급 되지 않은 사이버머니는 소멸될 수 있으며, 이에 대한 상세한 내용은 다나와 리포터 안내페이지에 따릅니다. <br /><br /> 제 18 조 서비스 이용제한 <br /><br /> 다나와 리포터가 다음에 해당하는 행위를 했을 경우 회사는 사전 통지 없이 이용계약을 해지하거나 서비스이용을 제한할 수 있습니다. <br /><br /> (가) 다나와 리포터 가입 또는 변경 시 회원 정보를 허위로 기재한 경우<br /><br /> (나) 타인의 개인정보 또는 회원정보 등을 도용한 경우<br /><br /> (다) 회사, 다른 회원 또는 제3자의 지적재산권 및 기타 권리를 침해하는 경우<br /><br /> (라) 회사에서 제공하는 서비스에 위해를 가하는 등 회사의 업무를 방해하거나 타인의 회사 서비스 이용을 저해시키는 경우<br /><br /> (마) 불량게시물 규정에 위배되는 행위를 한 경우<br /><br /> (바) 기타 회사에서 더 이상 서비스 제공이 어렵다고 판단할 만한 상당한 이유가 있는 경우<br /><br /> 제 6 장 손해배상 및 면책 <br /><br /> 제 19 조 손해배상 <br /><br /> 회사는 무료 서비스 이용과 관련하여 회사의 고의 또는 중과실이 없는 한 다나와 리포터에게 발생한 어떠한 손해에 대해서도 배상 및 보상의 책임을 지지 않습니다. <br /><br /> 제 20 조 면책 <br /><br /> 1. 회사가 천재지변, 비상사태 또는 이에 준하는 불가피한 사정으로 서비스를 중단할 경우, 서비스 중단으로 다나와 리포터에게 발생하는 문제에 대한 책임을 지지 않습니다. <br /><br /> 2. 회사는 다나와 리포터의 귀책사유로 인하여 발생한 서비스 이용 장애에 대한 책임을 지지 않습니다. <br /><br /> 3. 회사는 서비스를 통해 제공된 정보, 제품, 서비스, 소프트웨어, 그래픽, 음성, 동영상의 적합성, 정확성, 시의성, 신빙성에 관한 보증 또는 담보책임을 지지 않습니다. <br /><br /> 4. 회사는 다나와 리포터가 게시한 콘텐츠에 대해 콘텐츠의 적합성, 정확성, 시의성, 신빙성에 관한 보증 또는 담보 책임을 지지 않습니다. <br /><br /> 5. 다나와 리포터가 회사 서비스를 통해 취득한 정보나 서비스에 게시된 다른 회원의 게시물을 통해 법률적, 기타 재정적 사항 등에 관하여 필요한 결정을 하고자 할 때에는 반드시 사전에 전문가와 상의할 것을 권고합니다. <br /><br /> 제 7 장 기타 <br /><br /> 제 21 조 고충처리 <br /><br /> 회사는 개인정보 관리, 서비스 이용 등에 대한 다나와 리포터들의 불편 및 불만 사항, 기타 의견을 홈페이지, 전자우편, 전화, 서면 등을 통해 접수하고 처리합니다. <br /><br /> 제 22 조 분쟁해결 및 관할법원 <br /><br /> 1. 회사 및 회원은 개인정보에 관한 분쟁이 있는 경우 신속하고 효과적인 분쟁해결을 위하여 개인정보분쟁조정위원회에 분쟁의 조정을 신청할 수 있습니다. <br /><br /> 2. 서비스 이용으로 발생한 분쟁에 대한 소송은 관계 법령에 따라 지정되는 법원을 관할법원으로 합니다. <br /><br /> 3. 본 약관의 해석과 적용 및 본 약관과 관련한 일체의 분쟁의 해결에는 대한민국 법령이 적용됩니다. <br /><br /> 4. 본 약관에 별도 규정이 없는 경우 (일반)회원 가입시 동의한 (일반)회원 약관에 따릅니다. <br /><br /> 본 약관은 2013년 9월 23일부터 시행됩니다.</p>
+    호호성공페스티벌에 놀러오세요~ 호호성공 페스티벌 2018. 10. 6.(토) 10:00~18:00 고양시 일산 호수공원 주제광장 내 호호성공페스티벌은? 호호마켓ZONE(창업과정을 수료한 새내기 창업자와 멘토 창업자의 협업 마켓) 직종체험박람회 ZONE (청소년을 위한 미래직업 체험 박람회)
+
+
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221366373701">http://blog.naver.com/letsgoyang/221366373701</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/12/001378.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001398.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-1377" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1397" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/vergence/2018/12/001377.html">movable type 6과 plack, starman</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001397.html">고양시 여성창업지원센터 민간위탁 운영자 선정 공고 안내</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-12-02T22:49:03+09:00" itemprop="datePublished">December  2, 2018</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:51:53+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -384,21 +284,24 @@ follow these steps, YOUR APP MAY BREAK.
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>몇가지 모듈이 필요한데, ubuntu의 경우 아래 명령으로 설치하자.</p>
-<p>apt install libcgi-psgi-perl libsoap-lite-perl libimage-size-perl libimage-magick-perl</p>
+     고양여성창업지원센터의 위탁기간이 2018. 12. 31.자로 만료됨에 따라 위탁운영자 선정방법 및 심사기준을 마련하여 투명하고 공정하게 위탁 운영자를 선정하고자 합니다. 접수기간: 2018. 9. 18.~ 2018. 10. 5. 9:00~18:00 (주말, 공휴일 제외) 접수방법: 직접 방문 접수(우편 접수 불가) 접수장소 및 문의사항: 고양시청 여성가족과 여성인력개발팀(031-8075-3341) *기타 자세한 사항은 첨부해드리는 공고문을 참고하시기 바랍니다.
+
+
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221366374647">http://blog.naver.com/letsgoyang/221366374647</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/vergence/2018/12/001377.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001397.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-1376" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-1396" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2018/09/001376.html">Virgil Thomson</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001396.html">2018년 9월 27일 오후 4시 3분에 저장한 글입니다.</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2018-09-26T14:07:56+09:00" itemprop="datePublished">September 26, 2018</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:51:51+09:00" itemprop="datePublished">January 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -407,15 +310,40 @@ follow these steps, YOUR APP MAY BREAK.
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>"Let your mind alone, and see what happens."</p>
+    고양시민이 뭉쳤다! 지역라디오 듣고 기분 좋은 하루 만들기~ 일산FM!!“문학놀이온에어”는 일산FM과 고양영상미디어센터가 함께 만드는 팟캐스트입니다.놀이와 문학이 결합된 새로운 방식의 문학수업, 자유롭게 생각을 표현하는 놀이수업, 정답도 없고 경쟁도 없는 신나는 수업, 신나는 문학놀이를 팟캐스트를 통해 집에서도 함께 할 수있는 신나는 문학놀이 ON~~AIR !!!
 
-<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/dLflIyHiL_8/virgil_thomson</p>
 
-<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221366400251">http://blog.naver.com/letsgoyang/221366400251</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 
   </div>
   <div class="entry-more-link">
-    <a href="http://weblog.youre.space/imyaman/2018/09/001376.html" itemprop="url">Continue reading</a>
+    <a href="http://weblog.youre.space/imyaman/2019/01/001396.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-1395" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="http://weblog.youre.space/imyaman/2019/01/001395.html">일산애놀자 -9화- "고양시 비밀의 숲 - 산황동"</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-27T20:51:49+09:00" itemprop="datePublished">January 27, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    고양시민이 뭉쳤다! 지역라디오 듣고 기분 좋은 하루 만들기~ 일산FM!!“일산애놀자”는 일산FM과 고양영상미디어센터가 함께 만드는 팟캐스트입니다.우리들이 살고 있는 도시 일산과 관련된 주제를 하나씩 정해서 우리가 직접 경험해보고 그 경험담을 여러분과 함께 나눠보는 시간입니다.
+
+
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221366332034">http://blog.naver.com/letsgoyang/221366332034</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="http://weblog.youre.space/imyaman/2019/01/001395.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
