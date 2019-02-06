@@ -6,9 +6,9 @@
 </head>
 <body>
 
-<a id="001125">http://weblog.youre.space/baas/2018/07/001125.html</a>
-<a id="000353">http://weblog.youre.space/baas/2017/09/000353.html</a>
-<a id="000028">http://weblog.youre.space/baas/2017/02/000028.html</a>
+<a id="001125">http://weblog.youre.space/baas/2018/07/001125.html</a><br>
+<a id="000353">http://weblog.youre.space/baas/2017/09/000353.html</a><br>
+<a id="000028">http://weblog.youre.space/baas/2017/02/000028.html</a><br>
 
 <div id="result"></div>
 
@@ -24,6 +24,26 @@ $("#001125").click(function(){
   console.log("001125");
 
   $.get("baas/bodyonly/001125.html", function( data ) {
+    $( "#result" ).html( data );
+    alert( "Load was performed." );
+  });
+
+});
+
+$("#000353").click(function(){
+  console.log("000353");
+
+  $.get("baas/bodyonly/000353.html", function( data ) {
+    $( "#result" ).html( data );
+    alert( "Load was performed." );
+  });
+
+});
+
+$("#000028").click(function(){
+  console.log("000028");
+
+  $.get("baas/bodyonly/000028.html", function( data ) {
     $( "#result" ).html( data );
     alert( "Load was performed." );
   });
