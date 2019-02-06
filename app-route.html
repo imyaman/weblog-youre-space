@@ -6,9 +6,9 @@
 </head>
 <body>
 
-<a id="001125">http://weblog.youre.space/baas/2018/07/001125.html</a><br>
-<a id="000353">http://weblog.youre.space/baas/2017/09/000353.html</a><br>
-<a id="000028">http://weblog.youre.space/baas/2017/02/000028.html</a><br>
+<a class="button" id="001125">http://weblog.youre.space/baas/2018/07/001125.html</a><br>
+<a class="button" id="000353">http://weblog.youre.space/baas/2017/09/000353.html</a><br>
+<a class="button" id="000028">http://weblog.youre.space/baas/2017/02/000028.html</a><br><br>
 <a href="#!article/000353">#!</a><br>
 <a href="#article/000353">#</a><br>
 <a href="#/article/000353">#/</a><br>
@@ -38,7 +38,7 @@ router
 
 router
   .on('article/:id', function (params) {
-    theIdUrl = params.id;
+    theIdUrl = params.id.toString();
     console.log(theIdUrl);
     $.get("baas/bodyonly/" + theIdUrl + ".html", function( data ) {
       $( "#result" ).html( data );
@@ -46,7 +46,7 @@ router
   })
   .resolve();
 
-$("a").click(function(){
+$("a .button").click(function(){
   var theId=$(this).attr('id');
   console.log(  theId  );
 
