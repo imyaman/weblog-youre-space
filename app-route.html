@@ -26,7 +26,14 @@ var router = new Navigo(root, useHash, hash);
 var theIdUrl;
 
 router
-  .on('/article/:id', function (params) {
+  .on(function () {
+    // show home page here
+    console.log('this is main/root handler');
+  })
+  .resolve();
+
+router
+  .on('article/:id', function (params) {
     theIdUrl = params.id;
     console.log(theIdUrl);
     $.get("baas/bodyonly/" + theIdUrl + ".html", function( data ) {
