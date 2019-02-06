@@ -1,0 +1,52 @@
+<article id="entry-7" class="entry entry-asset asset hentry">
+  <div class="asset-header">
+    <h2 itemprop="name" class="asset-name entry-title">baas.io의 역할과 권한에 대해서</h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2013-07-18T21:17:00+09:00" itemprop="datePublished">July 18, 2013</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+        
+        
+        
+      </ul>
+    </footer>
+  </div>
+  <div class="entry-content asset-content" itemprop="articleBody">
+    <p><a href="https://baas.io/docs/ko/devguide/roles.html" target="_blank">https://baas.io/docs/ko/devguide/roles.html</a></p>
+<ul>
+<li>/** 이 경로에 Create Read Update Delete (아래에는 C, R, U, D로 표현) 권한을 주면, 기본적으로 어느 컬렉션의 어느 엔터티든 자유롭게 접근할 수 있습니다.</li>
+<li>위와 같이 권한을 두고, /users/* 경로에 D 권한만 주어도 /users/*에는 CRUD 모두 할 수 있습니다.<br /> 위 권한이 더 넓은 권한을 주고 있어서 위 권한이 적용되는 것입니다.</li>
+<li>/**에 R 권한이 없는 상태에서, /users에 R 권한을 주면 /users 는 읽을 수 있지만 /users/user1은 읽을 수 없습니다.<br /> /users/*에 R 권한을 주어야 /users/user1을 읽을 수 있습니다.</li>
+<li>/users/*에 R 권한을 주고, /users/*/feed에 R 권한을 주지 않으면 /users/user1/feed를 읽을 수 없습니다.</li>
+<li>/users/**에 R 권한을 주면 /user/*/feed에 어떤 권한이 설정되어있든 상관 없이 /users/user1/feed를 읽을 수 있습니다.</li>
+</ul>
+    
+  </div>
+  <nav class="page-navigation entry-navigation pagination content-nav">
+    <ul class="page-navigation-list">
+      
+      <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/baas/2013/02/000006.html" title="한국에서 첫번째로 나온 BaaS, baas.io">Previous entry</a></li>
+      
+      
+      <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/baas/2013/11/000008.html" title="ICT D.I.Y와 ucloud BaaS(baas.io)">Next entry</a></li>
+      
+    </ul>
+  </nav>
+  <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+  
+  <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/7</p>
+  
+  
+</aside>
+
+
+</article>

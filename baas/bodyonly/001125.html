@@ -1,0 +1,48 @@
+<article id="entry-1125" class="entry entry-asset asset hentry">
+  <div class="asset-header">
+    <h2 itemprop="name" class="asset-name entry-title">Azure의 App Service 쓸 때 참고사항</h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2018-07-21T08:47:08+09:00" itemprop="datePublished">July 21, 2018</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+        
+        
+        
+      </ul>
+    </footer>
+  </div>
+  <div class="entry-content asset-content" itemprop="articleBody">
+    <p>javascript 라이브러리를 이용하여 데이터를 받아왔는데, __createdAt, __updatedAt 컬럼의 값을 받아오질 않는 경우 SystemProperties.All 이 부분을 참고하세요.</p>
+<p>var client = new WindowsAzure.MobileServiceClient('<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fnextlayer.azure-mobile.net%2F&amp;h=AT2pceFEmpwgbuSKFRVO3wRE_aMcXX3FA4GItjX-zDMJNMScqHN5nOomyeGyYE8tEDakqAfutWxmGRL0WWbDTZtMINCFBdgq1fJtepS_sN2NQOCMrrEHY3YsXx_mXOb0pfNTOWOE9axwJdF0" target="_blank" data-ft="{&quot;tn&quot;:&quot;-U&quot;}" rel="noopener nofollow" data-lynx-mode="hover">https://imyaman.azure-mobile.net/</a>', 'MY-KEY');<br />var commentsItemTable = client.getTable('Comments');<br />commentsItemTable.systemProperties = WindowsAzure.MobileServiceTable.SystemProperties.All;</p>
+<p>Azure에서 ZUMO-API-VERSION이 포함된 메시지를 보면, 원인을 추측하지 말고 바로 검색하는 것이 좋습니다.<br /> 앱 세팅에 MS_SkipVersionCheck = true 설정을 하면 해결됩니다.</p>
+<p>App Service 상세 메뉴 중에 Overview 아래 쪽에 API -&gt; CORS가 있습니다. Cross origin 관련해서 설정하면 편합니다.<br />cli로 설정해야할 땐 properties.cors.allowedOrigins 키워드로 찾아보세요.</p>
+    
+  </div>
+  <nav class="page-navigation entry-navigation pagination content-nav">
+    <ul class="page-navigation-list">
+      
+      <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/baas/2017/09/000353.html" title="Collaboration, integration and interoperability key to smart cities">Previous entry</a></li>
+      
+      
+      <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/baas/2019/01/001668.html" title="Your Google Ads account was cancelled due to no spend">Next entry</a></li>
+      
+    </ul>
+  </nav>
+  <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+  
+  <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/325</p>
+  
+  
+</aside>
+
+
+</article>

@@ -1,0 +1,52 @@
+<article id="entry-16" class="entry entry-asset asset hentry">
+  <div class="asset-header">
+    <h2 itemprop="name" class="asset-name entry-title">gcm 사용할때나 로그인 할때나 게시판을 열어볼때 딜레이가 발생하는 이유는 무엇인가요..?</h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2014-10-17T09:38:00+09:00" itemprop="datePublished">October 17, 2014</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+        
+        
+        
+      </ul>
+    </footer>
+  </div>
+  <div class="entry-content asset-content" itemprop="articleBody">
+    <p>gcm 사용할때나 로그인 할때나 게시판을 열어볼때 딜레이가 발생하는 이유는 무엇인가요..?</p>
+<p><em class="id">작성자 : wirk90</em><br /> <span class="date">작성일 : 2014.10.10 오전 5시 55분<br /> 원문 URL : <a href="https://baas.io/support/#!066fd397-f5b2-4804-8a69-b704f4ca474a">https://baas.io/support/#!066fd397-f5b2-4804-8a69-b704f4ca474a</a><br /> </span></p>
+<p>==== ==== ==== ====</p>
+<p>아 마도 baas.io 웹 사이트 이용 시 약간의 로딩 시간이 있는 것을 말씀하시는 것 같습니다. 예를 들면, 로그인 창에서 (원형으로 된) progress bar가 나오고, 다른 페이지 이동 시에도 progress bar가 자주 보입니다.</p>
+<p>baas.io 웹 사이트는 baas.io API를 이용한 하나의 클라이언트입니다. 흔히 보는 웹 사이트들은 서버에서 html, css, js 파일을 동적으로 생성하여 웹 브라우저에게 보내주는데요, 예를 들면, 로그인 전에는 "로그인해주세요"라는 문구가 보이다가 로그인 후에는 "홍길동님, 안녕하세요"라는 문구가 보이는 것은 서버에서 html을 그렇게 수정해서 내려주기 때문입니다.</p>
+<p>반면에 baas.io는 html, css, js 파일은 (거의) 고정되어있고, js가 로그인 여부를 확인하여 baas.io API를 통해 데이터를 받아와 웹 브라우저에서 상황에 맞게 표시를 해줍니다. AJAX나 그런 것을 찾아보시면 도움이 될 듯합니다.</p>
+<p>그 래서 progress bar를 표시하긴 하는데, API 응답 속도가 빠르니 다른 웹 사이트에서 페이지 이동할 때와 로딩 시간에는 차이가 없을 겁니다. 다만, 혹시 API 응답 속도가 늦을 경우(일시적인 네트워크 장애 또는 클라이언트 쪽의 문제로 인해서도) progress bar가 없으면 웹 브라우저가 멈춘 것 같거나 반응이 없는 것처럼 보이기 때문에...</p>
+<p>그런겁니다. ^^; 혹시 다른 불편함이 있어서 질문 하셨나요? 아니면 그냥 궁금해서...?</p>
+    
+  </div>
+  <nav class="page-navigation entry-navigation pagination content-nav">
+    <ul class="page-navigation-list">
+      
+      <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/baas/2014/03/000015.html" title="2014년 ucloud biz 개발자 컨퍼런스 - ucloud BaaS">Previous entry</a></li>
+      
+      
+      <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/baas/2014/11/000017.html" title="특정날짜에 등록된 user를 가져오려면 어떻게 하면 되나요?">Next entry</a></li>
+      
+    </ul>
+  </nav>
+  <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+  
+  <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/16</p>
+  
+  
+</aside>
+
+
+</article>

@@ -1,0 +1,59 @@
+<article id="entry-25" class="entry entry-asset asset hentry">
+  <div class="asset-header">
+    <h2 itemprop="name" class="asset-name entry-title">Firebase에서 entity 생성시각 저장하기</h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2016-06-14T22:42:08+09:00" itemprop="datePublished">June 14, 2016</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+        
+        
+        
+      </ul>
+    </footer>
+  </div>
+  <div class="entry-content asset-content" itemprop="articleBody">
+    <p>Parse, Kinvey, usergrid, Azure Mobile Services 등은 하나의 entity를 저장하면 생성시각을 자동으로 함께 저장합니다. 
+이런 BaaS들은 대부분 entity의 특정 프로퍼티에 접근할 때 rowData.keyname처럼 접근하는데, Parse의 경우는 rowData.get('comment')처럼 접근합니다.
+생성시각 접근할 때에는 Parse는 rowData.createdAt처럼, Kinvey는 rowData._kmd.ect처럼, usergrid는 rowData.created*1000처럼, Azure는 rowData.createdAt처럼 접근합니다. Parse의 경우는 생성시각 같은 프로퍼티에 접근할 때에는 get을 사용하지 않는 예외가 있는 거죠.</p>
+
+<p>Firebase는 entity 생성시각을 자동으로 저장하지 않습니다. 그래서 아래와 같이 명시적으로 정해서 넣어줘야합니다. "createdAt" : {".sv" : "timestamp"} 부분을 주의 깊게 보시기 바랍니다. 서버의 시각을 저장합니다. sv는 Server Value의 줄임말입니다.</p>
+
+<pre><code>curl -X POST -d '{
+    "title" : "블로그, 시험 공부",
+    "date" : "2004-04-25 14:37:23",
+    "author" : "imyaman",
+    "text" : "&lt;ul lang=\u0022ko\u0022&gt;\u000A&lt;li&gt;블로그로 전환&lt;/li&gt;\u000A&lt;li&gt;시험 공부&lt;/li&gt;\u000A&lt;/ul&gt;",
+    "createdAt" : {".sv" : "timestamp"}
+}' 'https://weblog-683a9.firebaseio.com/posts1/.json'
+</code></pre>
+
+    
+  </div>
+  <nav class="page-navigation entry-navigation pagination content-nav">
+    <ul class="page-navigation-list">
+      
+      <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/baas/2016/03/000024.html" title="Bluemix Mobile Services 느낌">Previous entry</a></li>
+      
+      
+      <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="http://weblog.youre.space/baas/2016/06/000026.html" title="Firebase 요금과 무료 용량">Next entry</a></li>
+      
+    </ul>
+  </nav>
+  <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+  
+  <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: http://connexus-recall.youre.space:5000/mt-tb.cgi/25</p>
+  
+  
+</aside>
+
+
+</article>
