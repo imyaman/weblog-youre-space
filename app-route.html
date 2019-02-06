@@ -30,14 +30,14 @@ var theIdUrl;
 
 router
   .on(function () {
-    // show home page here
     console.log('this is main/root handler');
+    // show menu or a list
   })
   .resolve();
 
 router
   .on('article/:id', function (params) {
-    theIdUrl = params.id.toString();
+    theIdUrl = params.id;
     console.log(theIdUrl);
     $.get("baas/bodyonly/" + theIdUrl + ".html", function( data ) {
       $( "#result" ).html( data );
@@ -50,11 +50,6 @@ $(".button").click(function(){
   console.log(  theId  );
 
   $(location).attr('href','#article/' + theId);
-  /*
-  $.get("baas/bodyonly/"+theId+".html", function( data ) {
-    $( "#result" ).html( data );
-  });
-  */
 });
 
 </script> <!-- end of js -->
