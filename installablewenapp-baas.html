@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="YOUR E-SPACE WEBLOG">
+<meta property="og:description" content="YOUR E-SPACE가 제공하는 WEBLOG 서비스입니다. 글쓴이가 자기 글의 완전한 소유자가 되도록, 설치형 블로그를 나누고 있습니다.">
+</head>
+<body>
+
+<a class="button" id="001125">http://weblog.youre.space/baas/2018/07/001125.html</a><br>
+<a class="button" id="000353">http://weblog.youre.space/baas/2017/09/000353.html</a><br>
+<a class="button" id="000028">http://weblog.youre.space/baas/2017/02/000028.html</a><br><br>
+<a href="#article/001125">#</a><br>
+<a href="#article/000353">#</a><br>
+<a href="#article/000028">#</a><br>
+
+<div id="result"></div>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="application/javascript"></script>
+<!-- script src="//cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" type="application/javascript"></script -->
+<script src="//unpkg.com/navigo@6" type="application/javascript"></script>
+
+<script type="application/javascript">
+
+console.log('start my code');
+console.log(window.location);
+
+var root = null;
+var useHash = true; // Defaults to: false
+var hash = '#'; // can be : '#', '#!'
+var router = new Navigo(root, useHash, hash);
+var theIdUrl;
+
+$(".button").click(function(){
+  var theId=$(this).attr('id');
+  console.log(  theId  );
+
+  $(location).attr('href','#article/' + theId);
+  window.location = '#article/' + theId;
+});
+
+router
+  .on(function () {
+    console.log('this is main/root handler');
+    console.log(window.location);
+    // show menu or a list
+  })
+  .resolve();
+
+router
+  .on('/article/:id', function (params) {
+    console.log('this is article handler');
+    console.log(window.location);
+
+    theIdUrl = params.id;
+    console.log(theIdUrl);
+    $.get("https://weblog.youre.space/baas/bodyonly/" + theIdUrl + ".html", function( data ) {
+      $( "#result" ).html( data );
+    });
+
+    $(document).attr("title", "New Title"+theIdUrl);
+    $("meta[property='og\\:title']").attr("content", 'result.title'+theIdUrl);
+    $("meta[property='og\\:description']").attr("content", 'result.title'+theIdUrl);
+
+  })
+  .resolve();
+
+</script> <!-- end of js -->
+
+<!-- script type="text/babel">
+</script --> <!-- end of babel -->
+</body>
+</html>
