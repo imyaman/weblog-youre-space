@@ -42,6 +42,7 @@ router
     $.get("baas/bodyonly/" + theIdUrl + ".html", function( data ) {
       $( "#result" ).html( data );
     });
+    $("meta[property='og\\:title']").attr("content", 'result.title'+theIdUrl);
   })
   .resolve();
 
