@@ -40,7 +40,8 @@ var theIdUrl;
 router
   .on('/article/:id', function (params) {
     theIdUrl = params.id;
-    $.get("baas/bodyonly/"+theId+".html", function( data ) {
+    console.log(theIdUrl);
+    $.get("baas/bodyonly/" + theIdUrl + ".html", function( data ) {
       $( "#result" ).html( data );
     });
   })
