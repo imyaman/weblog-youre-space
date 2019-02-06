@@ -45,6 +45,7 @@ router
       $( "#result" ).html( data );
     });
     $("meta[property='og\\:title']").attr("content", 'result.title'+theIdUrl);
+    $("meta[property='og\\:description']").attr("content", 'result.title'+theIdUrl);
     $("meta[name='og:description']").attr('content', 'result.title'+theIdUrl);
   })
   .resolve();
