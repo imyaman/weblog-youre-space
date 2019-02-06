@@ -25,7 +25,7 @@
 
 var root = null;
 var useHash = true; // Defaults to: false
-var hash = '#!'; // Defaults to: '#'
+var hash = '#'; // can be : '#', '#!'
 var router = new Navigo(root, useHash, hash);
 var theIdUrl;
 
@@ -50,10 +50,12 @@ $(".button").click(function(){
   var theId=$(this).attr('id');
   console.log(  theId  );
 
+  $(location).attr('href','#!article/' + theId);
+  /*
   $.get("baas/bodyonly/"+theId+".html", function( data ) {
     $( "#result" ).html( data );
   });
-
+  */
 });
 
 </script> <!-- end of js -->
