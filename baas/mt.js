@@ -266,7 +266,7 @@ MT.util = function () {
     commentsTotalPages = Math.ceil(totalComments / commentsPerPage);
     pageNum = 1;
     
-    loadingIcon = "<img title='Loading...' src='http://connexus.youre.space/mt-static/images/indicator.white.gif' alt='Loading' />";
+    loadingIcon = "<img title='Loading...' src='https://weblog.youre.space/mt-static/images/indicator.white.gif' alt='Loading' />";
     
     commentContentDiv = M.getEl("comments-content");
     topNav = M.getEl("top-comment-nav");
