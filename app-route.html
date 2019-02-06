@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+<a id="001125">http://weblog.youre.space/baas/2018/07/001125.html</a><br>
+<a id="000353">http://weblog.youre.space/baas/2017/09/000353.html</a><br>
+<a id="000028">http://weblog.youre.space/baas/2017/02/000028.html</a><br>
+
+<div id="result"></div>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="application/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" type="application/javascript"></script>
+<script src="//unpkg.com/navigo@6" type="application/javascript"></script>
+
+<script type="text/babel">
+</script> <!-- end of babel -->
+
+<script type="application/javascript">
+$("a").click(function(){
+  var theId=$(this).attr('id');
+  console.log(  theId  );
+
+  $.get("baas/bodyonly/"+theId+".html", function( data ) {
+    $( "#result" ).html( data );
+  });
+
+});
+
+var root = null;
+var useHash = true; // Defaults to: false
+var hash = '#'; // Defaults to: '#'
+var router = new Navigo(root, useHash, hash);
+var theIdUrl;
+
+router
+  .on('/article/:id', function (params) {
+    theIdUrl = params.id;
+    $.get("baas/bodyonly/"+theId+".html", function( data ) {
+      $( "#result" ).html( data );
+    });
+  })
+  .resolve();
+
+
+</script> <!-- end of js -->
+</body>
+</html>
