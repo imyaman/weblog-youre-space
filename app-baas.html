@@ -10,11 +10,8 @@
 <a id="000353">http://weblog.youre.space/baas/2017/09/000353.html</a>
 <a id="000028">http://weblog.youre.space/baas/2017/02/000028.html</a>
 
-<iframe id="myiframe" name="myiframename">
-<html>
-<body>hello</body>
-</html>
-</iframe>
+<div id="result"></div>
+
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="application/javascript"></script>
 
@@ -25,6 +22,12 @@
 <script type="application/javascript">
 $("#001125").click(function(){
   console.log("001125");
+
+  $.get("bodyonly/001125.html", function( data ) {
+    $( "#result" ).html( data );
+    alert( "Load was performed." );
+  });
+
 });
 
 </script> <!-- end of js -->
