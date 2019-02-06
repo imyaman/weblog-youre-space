@@ -1,0 +1,33 @@
+<article id="entry-<$mt:EntryID$>" class="entry entry-asset asset hentry">
+  <div class="asset-header">
+    <h2 itemprop="name" class="asset-name entry-title"><$mt:EntryTitle$></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="<$mt:EntryDate format_name="iso8601"$>" itemprop="datePublished"><$mt:EntryDate format="%x"$></time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><$mt:EntryAuthorLink show_hcard="1"$></span></li>
+        <mt:IfArchiveTypeEnabled archive_type="Category">
+        <mt:If tag="EntryPrimaryCategory">
+        <li class="asset-meta-list-item">in <mt:EntryPrimaryCategory><a itemprop="articleSection" rel="tag" href="<$mt:CategoryArchiveLink$>"><$mt:CategoryLabel$></a></mt:EntryPrimaryCategory></li>
+        </mt:If>
+        </mt:IfArchiveTypeEnabled>
+      </ul>
+    </footer>
+  </div>
+  <div class="entry-content asset-content" itemprop="articleBody">
+    <$mt:EntryBody$>
+    <$mt:EntryMore$>
+  </div>
+  <nav class="page-navigation entry-navigation pagination content-nav">
+    <ul class="page-navigation-list">
+      <mt:EntryPrevious>
+      <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="<$mt:EntryPermalink encode_html="1"$>" title="<$mt:EntryTitle encode_html="1"$>">Previous entry</a></li>
+      </mt:EntryPrevious>
+      <mt:EntryNext>
+      <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="<$mt:EntryPermalink$>" title="<$mt:EntryTitle encode_html="1"$>">Next entry</a></li>
+      </mt:EntryNext>
+    </ul>
+  </nav>
+  <$mt:Include module="Zenback"$>
+  <$mt:Include module="Comments"$>
+  <$mt:Include module="Trackbacks"$>
+</article>
