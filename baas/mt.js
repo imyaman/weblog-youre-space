@@ -796,7 +796,7 @@ function mtSignIn() {
             var entry_id = document['comments_form'].entry_id.value;
             url += '&entry_id=' + entry_id;
         } else {
-            url += '&return_url=http%3A%2F%2Fweblog.youre.space%2Fbaas%2F';
+            url += '&return_url=https%3A%2F%2Fweblog.youre.space%2Fbaas%2F';
         }
     } else {
         url += '&return_url=' + encodeURIComponent(doc_url);
@@ -841,7 +841,7 @@ function mtSignOut(entry_id) {
             var entry_id = document['comments_form'].entry_id.value;
             url += '&entry_id=' + entry_id;
         } else {
-            url += '&return_url=http%3A%2F%2Fweblog.youre.space%2Fbaas%2F';
+            url += '&return_url=https%3A%2F%2Fweblog.youre.space%2Fbaas%2F';
         }
     } else {
         url += '&return_url=' + encodeURIComponent(doc_url);
