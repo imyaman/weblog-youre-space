@@ -4,9 +4,743 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-02-08T04:42:36Z</updated>
+    <updated>2019-02-08T05:55:30Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Your Google Developers Console project is scheduled for deletion</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001902.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1902</id>
+
+    <published>2019-02-08T05:55:30Z</published>
+    <updated>2019-02-08T05:55:30Z</updated>
+
+    <summary> Project Shutdown Announcement Your Google Cloud Platform project stone-goal-231105 was shut down on 2019-02-08T05:55:10+00:00. If you take no action, after 2019-03-10T05:55:10+00:00, you will be unable to recover this project. If this was unintentional, visit this URL before 2019-03-10T05:55:10+00:00 to...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[  <div>    <p>      <img src="http://www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png">    </p>    <p>      <strong>Project Shutdown Announcement</strong>    </p>        <p>      Your Google Cloud Platform project stone-goal-231105 was shut down on 2019-02-08T05:55:10+00:00.    </p>    <p>      If you take no action, after 2019-03-10T05:55:10+00:00, you will be unable to recover this      project. If this was unintentional, visit this URL before 2019-03-10T05:55:10+00:00 to cancel      the project shutdown:    </p>    <p>      https://console.developers.google.com/project?pendingDeletion=true&amp;organizationId=0    </p>    <p>      If you have any questions, please visit the Developers Console Help at this URL, or contact      support:    </p>    <p>      https://developers.google.com/console/help/new/    </p>    <p>      Thanks,<br />      The Google Developers Console Team    </p>    <div>      <p>        &copy; 2016 Google Inc.  1600 Amphitheatre Parkway, Mountain View, CA 94043      </p>      <p>        You have received this mandatory email service announcement to update you about important        changes to your Google Developers Console product or account.      </p>    </div>  </div>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>중소기업 육성자금 지원 및 영세 소상공인 특례보증 지원 정책</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001901.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1901</id>
+
+    <published>2019-02-08T05:55:28Z</published>
+    <updated>2019-02-08T05:55:28Z</updated>
+
+    <summary>기업하기 좋은 도시는ㅅㄴㅅ성남시의기업 지원 정책들이많이 있지만중소기업 육성자금 지원 정책과소상공인 특례보증 지원 정책을소개해드릴게요!!1. 중소기업 육성자금500억 투입자금 마련이 어려운 기업을 돕기 위해작년보다 200억 증액한500억 투입또한 성남시는융자금 대출 이자 가운데2.0% 해당하는 금액을대신 부담해줘요여성이 CEO인 경우는0.1%를 추가 지원해서최고 2.1%이자를성남시가 대신 부담해줍니다.지원 대상은성남시에 공장 등록...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="성남정책" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[기업하기 좋은 도시는ㅅㄴㅅ성남시의기업 지원 정책들이많이 있지만중소기업 육성자금 지원 정책과소상공인 특례보증 지원 정책을소개해드릴게요!!1. 중소기업 육성자금500억 투입자금 마련이 어려운 기업을 돕기 위해작년보다 200억 증액한500억 투입또한 성남시는융자금 대출 이자 가운데2.0% 해당하는 금액을대신 부담해줘요여성이 CEO인 경우는0.1%를 추가 지원해서최고 2.1%이자를성남시가 대신 부담해줍니다.지원 대상은성남시에 공장 등록 가동 중이면서연간 매출액이 20억 미만인 중소기업과사업자 등록한 지 1~10년 된 기업자세한 사항은 아래 링크를 클릭해서확인하세요!!2. 영세 소상공인 특례보증130억 규모특례.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221460864571">http://seongnamdiary.com/221460864571</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Welcome to Google Cloud Platform</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001900.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1900</id>
+
+    <published>2019-02-08T05:55:26Z</published>
+    <updated>2019-02-08T05:55:26Z</updated>
+
+    <summary> @media screen and (max-width:737px) { .headline_main{padding-top:44px !important;padding-bottom:30px !important; padding-right: 25px !important;padding-left: 25px !important; font-size:24px !important; line-height: 32px !important;} .bigger_wrapper { width: 100% !important; } .left_right_spacing { padding-right: 25px !important; padding-left: 25px !important; } .flexible { width: 100% !important; max-width:...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[ 
+ 
+    
+  
+ 
+ 
+
+
+
+
+ 
+  
+ 
+
+
+
+
+
+    
+    
+    
+  
+@media screen and (max-width:737px) {
+  .headline_main{padding-top:44px !important;padding-bottom:30px !important; padding-right: 25px !important;padding-left: 25px !important; font-size:24px !important; line-height: 32px !important;}
+  .bigger_wrapper {
+    width: 100% !important;
+  }
+  .left_right_spacing {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .flexible {
+    width: 100% !important;
+    max-width: 600px !important;
+  }
+  .webkit {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  .wrapper_new {
+    width: 100% !important;
+  }
+  .four-column {
+    padding-left: 40px !important;
+  }
+  .contents {
+    width: 100% !important;
+  }
+  .bottom_link_footer_td {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .headline {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .banner_text_1 {
+    padding-left: 25px !important;
+  }
+  .footer_wrapper_td, .social_icons_container {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .logo_holder_container {
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+    padding-bottom: 16px !important;
+  }
+  .text {
+    width: 14px !important;
+    min-width: 18px;
+  }
+  .text1 {
+    width: 100% !important;
+  }
+  #ft5 {
+    padding-right: 8px !important;
+  }
+  #ft4 {
+    padding-right: 11px !important;
+  }
+  #ft3 {
+    padding-right: 10px !important;
+  }
+  #ft2 {
+    padding-right: 8px !important;
+  }
+  #ft1 {
+    padding-right: 9px !important;
+  }
+  .contents {
+    display: inline-block !important;
+    width: 100% !important;
+    height: 39px !important;
+  }
+  .five-column {
+    padding-bottom: 5px !important;
+  }
+  .hero_text_class2
+    {
+      padding-left:25px !important;
+    }
+}
+
+@media (max-width:414px) {
+  .banner_logo{width:225px !important;}
+  .logo_holder_container{padding-left:11px !important; padding-right:11px !important; padding-bottom:16px !important;}
+  .headline_main{padding-top:44px !important;padding-bottom:30px !important; padding-right: 25px !important;padding-left: 25px !important; font-size:24px !important; line-height: 32px !important;}
+  #btn2{padding-top:91px !important;}
+  #signoff_outer_cover{padding-top:0px !important;}
+  .headline {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .left_right_spacing {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .body_top_col1, .body_top_col2 {
+    display: block !important;
+    width: 100% !important;
+	box-sizing: border-box;
+    padding-right: 22px !important;
+    padding-left: 22px !important;
+  }
+  .body_top_col1 {
+    padding-top: 0px !important;
+  }
+  .body_top_col2 {
+    display: none !important;
+  }
+  .body_top_col_mob {
+    display: block !important;
+    box-sizing: border-box;
+    padding-right: 22px !important;
+    padding-left: 22px !important;
+    padding-top: 23px !important;
+    padding-bottom: 20px !important;
+    text-align: center !important;
+  }
+  .body_bottom_col1, .body_bottom_col2, .body_bottom_col3  {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+  .body_bottom_col2 {
+    height: 8px !important;
+    min-height: 8px;
+  }
+  .logo_holder_container {
+    width: 100% !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .inner {
+    padding-top: 4px !important;
+  }
+  .banner_text_1 {
+    padding-left: 25px !important; padding-right: 25px !important;
+  }
+  .border_bar {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .footer_wrapper_td {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  .social_icons_container {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+  }
+  #banner2 {
+    background-image: url(http://services.google.com/fh/files/emails/updated_wc_hero_img_mob1.png) !important;
+    background-position: center !important;
+    height: 124px !important;
+    background-size: cover !important;
+  }
+  
+  #logo_above_space
+  {
+    padding-top:5px !important;
+  }
+  
+  .hero_text_class1
+    {
+      height:110px !important;
+    }
+    .hero_text_class2
+    {
+      padding-left:25px !important;
+    }
+  
+}
+@media screen and (min-width: 812px) and (max-width: 812px),
+screen and (min-width: 736px) and (max-width: 736px),
+screen and (min-width: 667px) and (max-width: 667px),
+screen and (min-width: 568px) and (max-width: 568px),
+screen and (min-width: 414px) and (max-width: 414px),
+screen and (min-width: 375px) and (max-width: 375px),
+screen and (min-width: 320px) and (max-width: 320px) {
+  .body {
+    min-width: 100vw !important;
+  }
+}
+
+@media screen yahoo {
+	.yahooHide {
+      display:none !important;
+      font-size:0px !important;
+      line-height:0 !important;
+      height:0px !important;
+      max-height:0px !important;
+      overflow:hidden !important;
+    }
+}
+    
+    
+
+
+
+
+  <img height="1" src="https://www.google.com/appserve/mkt/img/AHANi0aOLmeiIJ1lnWjkdk1UKALVQOHH9A5NUuHo-kv5ie8g.gif" width="3">
+         <div>
+           <div>Complete your profile, start learning with Qwiklabs, and get up and running fast.</div>
+      
+	<table>
+ 
+  <tr>
+            <td>
+
+                <table>
+            <tr>
+              <td>
+                
+                <div>
+                      <table>
+                              <tr>
+                                  <td>
+                                      <table>
+                                          <tr> 
+                                            <td>
+                                               <img src="http://services.google.com/fh/files/emails/gcpexp_new_desk.png" width="306" alt="Google Cloud Platform" height="auto">
+                                            </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr>
+                      </table>
+               </div>
+                
+               <div>
+              <table>
+                  <tr>
+                      <td>
+                         <table>
+                             <tr>
+                                <td>
+                                   <table>
+                                        <tr>
+                                            <td>
+                                            <a href="https://www.google.com/appserve/mkt/p/AHANi0beLz1-aH3U4iym4DW_EykJwhoQEOnZnYVHfzKNm-oKxs0LlZXbls0P2xKpmsubZ97-AK9dN7HPhlTR6g5MLybksfSwbTsJX_xp_loHePbY18zEvgHcpjHqGirCJPRRp5xn0W4Trh2rVe2-3sQW2fe1IT3obvtssXdB1dVmeibZR4O0IbC0-I5OP8KaO3OzE8iTj27LfLrmUtfiPRY7Lnyk0JLR3s1ag7qXOx8pHkB2-7FhV67H8w">Go to your Console</a>
+                                            </td>
+                                          <td>
+                                            <table>
+                                                  <tr>
+                                                    
+                                                    
+                                                    <td>
+													
+                                                        <a href="https://www.google.com/appserve/mkt/p/AHANi0beLz1-aH3U4iym4DW_EykJwhoQEOnZnYVHfzKNm-oKxs0LlZXbls0P2xKpmsubZ97-AK9dN7HPhlTR6g5MLybksfSwbTsJX_xp_loHePbY18zEvgHcpjHqGirCJPRRp5xn0W4Trh2rVe2-3sQW2fe1IT3obvtssXdB1dVmeibZR4O0IbC0-I5OP8KaO3OzE8iTj27LfLrmUtfiPRY7Lnyk0JLR3s1ag7qXOx8pHkB2-7FhV67H8w"><img src="http://services.google.com/fh/files/emails/release_notes_diagonal_array.png" alt="" width="16" /></a>
+                                                    </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                   </td>
+                                 </tr>
+                               </table>
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+                
+            </td>
+         </tr>
+       </table>
+    </td>
+  </tr>
+ 
+<tr>
+  <td>
+    <table>
+              <tr>
+                <td>Welcome to GCP.
+                </td>
+              </tr>
+    </table>
+  <table>
+              <tr>
+                <td>Congratulations on starting your free trial. Complete your profile to get up and running.
+                </td>
+              </tr>
+          </table>
+  </td>
+</tr>
+<tr>
+   <td><table>  
+  <tr>
+    <td>
+      <a href="https://www.google.com/appserve/mkt/p/AHANi0amoVfUBMZJvPaqfDQXmx9lzKwFmy4Igh4xhJLAau3GaIoJXSkunyForX0QhCXYf6D2glZH8AiRqks_-CcHoeLfneVYO1gAxT9xhtVJ_pBO89APwamT25GiCTDwD7s_yjyDGpsx2CfHwMrJskFX8qnv"><span>Complete your profile</span></a>
+     </td>
+  </tr>
+</table>
+</td>
+</tr>
+<tr>
+  <td>
+  <table>
+    <tr>
+    <td>
+  
+  <div>
+     
+      <table>
+     <tr>
+       <td>
+         &nbsp;
+       </td>
+     </tr>
+     <tr>
+       <td>
+         Google data center mural project, St. Ghislain, Belgium by Oli-B
+       </td>
+     </tr>
+   </table>
+      
+  </div>
+  
+</td>
+</tr>
+    
+  </table>
+  <table>
+              <tr>
+                <td>Your GCP free trial
+                </td>
+              </tr>
+          </table>
+  <table>
+              <tr>
+                <td>Welcome to the Google Cloud Platform free trial. Beginning today, you have 12 months and $300 in credit to spend on GCP. To get started, fill out your profile and we’ll send you the resources that are most relevant to your goals and interests.
+                </td>
+              </tr>
+          </table>
+  <table>
+              <tr>
+                <td>Once you’ve completed your profile, try taking a Qwiklabs Quest – these learning labs let you get hands-on with GCP right away. Use the first link below to sign up, and we’ll give you 25 Qwiklabs credits.
+                </td>
+              </tr>
+          </table>
+    </td>
+</tr>
+<tr>
+  <td>
+    <table>
+      <tr>
+        <td>
+            <table>
+                <tr>
+                  
+					<td>
+                      <table>
+                        <tr>
+                          <td>GCP Essentials
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><img src="http://services.google.com/fh/files/emails/welcome_icon1desktop_2x.png" alt="arrow" width="84" />
+                          </td>
+                        </tr>
+                      </table>
+                  	</td>
+                  
+                    <td>
+                      <table>
+                        <tr>
+                          <td>Try a Qwiklabs Quest.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>To get familiar with the platform, we recommend the GCP Essentials Quest.
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table>
+                              <tr>
+                                <td>
+                                  <a href="https://www.google.com/appserve/mkt/p/AHANi0ZoJIFjfHNUFfu5VXDVzLJak-8IeDcQJ_sRaqSLyCxevIWjc18rpMZHj0w1pZQzh0NZqa2hFVXSnC6OX57JTFot98cG61o6X_-txSWvmkLlBYk4jqSL25A3Ve1qzcT0NOKHQ_klkCVmVPdt77947qS9RRoWKmFA6UKe8Fh9e3HmjJzUJzgfgdED5v3jYJtjvo4FH2d-JQuJ-J8GIrLV0FLchXBKQngNm20t">Take the Quest</a>
+                                </td>
+                                <td><a href="https://www.google.com/appserve/mkt/p/AHANi0ZoJIFjfHNUFfu5VXDVzLJak-8IeDcQJ_sRaqSLyCxevIWjc18rpMZHj0w1pZQzh0NZqa2hFVXSnC6OX57JTFot98cG61o6X_-txSWvmkLlBYk4jqSL25A3Ve1qzcT0NOKHQ_klkCVmVPdt77947qS9RRoWKmFA6UKe8Fh9e3HmjJzUJzgfgdED5v3jYJtjvo4FH2d-JQuJ-J8GIrLV0FLchXBKQngNm20t"><img src="http://services.google.com/fh/files/emails/release_notes_diagonal_array.png" alt="arrow" width="16" /></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                  	</td>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>GCP Essentials
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><img src="http://services.google.com/fh/files/emails/welcome_icon1desktop_2x.png" alt="arrow" width="84" />
+                          </td>
+                        </tr>
+                      </table>
+                  	</td>
+                </tr>
+            </table>
+        </td>
+      </tr>
+     </table>
+  </td>
+</tr>
+<tr>
+  <td>&nbsp;</td>
+</tr>
+<tr>
+  <td>
+    <table>
+      <tr>
+        <td>
+          <table>
+            <tr>
+              <td>
+                <table>
+                  <tr>
+                    <td><img src="http://services.google.com/fh/files/emails/welcome_icon2desktop.png" alt="arrow" width="27" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Explore the GCP Console with our interactive Cloud Console tour.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>
+                            <a href="https://www.google.com/appserve/mkt/p/AHANi0YyT0IEiCR_ASoDRzJW-GdeKxgQctg8YcFb2tr4Uc-hm1kaaFJNxIrnq6aWa1gB1qj9KhTCO1I-KZ-FGCe3p0dRefwnDMrHN-yUrGFYkiALMUd7caXQmc4DyyQatpnn1WcFVpx1pGJXpQnFxvdWC0H1-SHwGqmJ4vhdr3lfK6jblwSb56kqgsL3FDwrqUcUNAo52oebZCQWeuQ9qgv-J-NtozEsAYKR3xqPyzG0u3Hk1kKHIEm2qkHWID38XTOLOd6UBgA03e2jmEv5GpZYY0RKZZvzsRuvpYhyoXYWB0cQinpEUQ">Take the tour</a>
+                          </td>
+                          <td><a href="https://www.google.com/appserve/mkt/p/AHANi0YyT0IEiCR_ASoDRzJW-GdeKxgQctg8YcFb2tr4Uc-hm1kaaFJNxIrnq6aWa1gB1qj9KhTCO1I-KZ-FGCe3p0dRefwnDMrHN-yUrGFYkiALMUd7caXQmc4DyyQatpnn1WcFVpx1pGJXpQnFxvdWC0H1-SHwGqmJ4vhdr3lfK6jblwSb56kqgsL3FDwrqUcUNAo52oebZCQWeuQ9qgv-J-NtozEsAYKR3xqPyzG0u3Hk1kKHIEm2qkHWID38XTOLOd6UBgA03e2jmEv5GpZYY0RKZZvzsRuvpYhyoXYWB0cQinpEUQ"><img src="http://services.google.com/fh/files/emails/release_notes_diagonal_array.png" alt="arrow" width="16" /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+              </td>
+              <td>
+                <table>
+                  <tr>
+                    <td><img src="http://services.google.com/fh/files/emails/welcome_icon2desktop.png" alt="arrow" width="27" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Questions about billing? See our FAQ for answers.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table>
+                        <tr>
+                          <td>
+                            <a href="https://www.google.com/appserve/mkt/p/AHANi0ZsrJed4Lc91pQwdphgJDrQ9zT3s3Eb8myPxDaHXhikUXzKTisNkNqhBuY5uPTBe81tWHsavr5Mnv130_W15Xhj7m1ToD05x4HB2XEALCot85sAzZohlLLI0gJe7Te6JOwIE4WEZU4cNj4f5n3y7LKL6L3hdEtk69wnz3FxGmQcAVrzUNuc4rxB99EjRKbYTM4PD9FWVu_n4OViKRXy5psgEFseXrCCItQW5bWvqjA2NNxd_EmHlEpph48tdsMTmulsofA4vRh6SEYRLsOpt7335SVgU68AVZfXm7hrODd-oLft">View FAQ</a>
+                          </td>
+                          <td><a href="https://www.google.com/appserve/mkt/p/AHANi0ZsrJed4Lc91pQwdphgJDrQ9zT3s3Eb8myPxDaHXhikUXzKTisNkNqhBuY5uPTBe81tWHsavr5Mnv130_W15Xhj7m1ToD05x4HB2XEALCot85sAzZohlLLI0gJe7Te6JOwIE4WEZU4cNj4f5n3y7LKL6L3hdEtk69wnz3FxGmQcAVrzUNuc4rxB99EjRKbYTM4PD9FWVu_n4OViKRXy5psgEFseXrCCItQW5bWvqjA2NNxd_EmHlEpph48tdsMTmulsofA4vRh6SEYRLsOpt7335SVgU68AVZfXm7hrODd-oLft"><img src="http://services.google.com/fh/files/emails/release_notes_diagonal_array.png" alt="arrow" width="16" /></a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+ 
+<tr>
+   <td>
+<table>  
+  <tr>
+    <td>
+      <a href="https://www.google.com/appserve/mkt/p/AHANi0YftXS-tufFraiN5li06j4hw9VTC6vIGyGxXZZkQMFEZ_XAWnrW692G2JdUAxPLOq2K91OZX6qCd6sCPaPlz8d0O9b8wa2nQAxGBAh7fHk5ooJSYmyH2JqdhB0He5g0mjFfnp3uIw8M8EMop6V8FrfA"><span>Complete your profile</span></a>
+     </td>
+  </tr>
+</table>
+   </td>
+</tr>
+<tr>
+   <td>   <table>
+ <tr>
+ <td>
+ <table>
+ <tr>
+ <td>See you in the cloud,</td>
+ </tr>
+ <tr>
+ <td>The Google Cloud Platform Team</td>
+ </tr>
+ </table>
+ </td>
+ </tr>
+</table>
+
+  </td>
+</tr>
+ 
+<tr>
+   <td>
+
+ 
+<table>
+ 
+  <tr>
+     <td>
+        <table>
+      
+    <tr>
+       <td>
+         <table>
+            <tr>
+              <td>
+     
+     <table>
+       <tr>
+           <td>
+             <a href="http://www.google.com/appserve/mkt/p/AHANi0YTVJnptUJIjJPiJ9_bLcBSTsI55Zlv6uTJYm5OstCZsjNdPDNKVY4vkjZ5TXVZHcivE13AJ_70vjYrwwB7ZBH-EFIruYJiUpGaW2Av9EdS6V0FJ_uJrm_9s-MJ79hur1uxhSHFxPMGm18Q-_JVMdAnLGFtzpQU04mYJPlYT7y2QoPIC2mjKJ2n4fZbM5mhgsy10M7r1ulX6FlcVOADEhkkZrtFZnj-hjkHpRPXoVlr10Bm-dLdugVmgN7fv5FS8zjX6FV3DEfEuHLVm9pfRolxDo0SVSci_w"><img src="http://services.google.com/fh/files/emails/ic_forums_footer_2x.png" width="18" alt="Forums" height="auto"></a>
+            </td>
+            <td>
+ <a href="http://www.google.com/appserve/mkt/p/AHANi0YTVJnptUJIjJPiJ9_bLcBSTsI55Zlv6uTJYm5OstCZsjNdPDNKVY4vkjZ5TXVZHcivE13AJ_70vjYrwwB7ZBH-EFIruYJiUpGaW2Av9EdS6V0FJ_uJrm_9s-MJ79hur1uxhSHFxPMGm18Q-_JVMdAnLGFtzpQU04mYJPlYT7y2QoPIC2mjKJ2n4fZbM5mhgsy10M7r1ulX6FlcVOADEhkkZrtFZnj-hjkHpRPXoVlr10Bm-dLdugVmgN7fv5FS8zjX6FV3DEfEuHLVm9pfRolxDo0SVSci_w">Forums</a>
+           </td>
+     </tr>
+   </table>
+    
+     <table>
+       <tr>
+           <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0ZM31Qmuo67MFpDe7pwhub1FTeC-6zO4zsqDfGwaIYEnNl6HViV-MTzVewDy0P6gff5muUKTpDQ2Z2vaePMr6RelvE2zZHEZ_NnjStxDRbSOyVCK0T0iZp4zRJLrff7cLCxqs_5Quyu9wk-gtUntC19sr8Ya0PpJjTSqF4smzW18rjR67jJ3h02jlUlc7gCe5cbzVEvOKH_pAhM1XqgbDLGRjTEgaDnX2tfrBISqUl1nYgMYYmxkA"><img src="http://services.google.com/fh/files/emails/ic_support_footer_2x.png" width="18" alt="Support" height="auto"></a>
+           </td>
+           <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0ZM31Qmuo67MFpDe7pwhub1FTeC-6zO4zsqDfGwaIYEnNl6HViV-MTzVewDy0P6gff5muUKTpDQ2Z2vaePMr6RelvE2zZHEZ_NnjStxDRbSOyVCK0T0iZp4zRJLrff7cLCxqs_5Quyu9wk-gtUntC19sr8Ya0PpJjTSqF4smzW18rjR67jJ3h02jlUlc7gCe5cbzVEvOKH_pAhM1XqgbDLGRjTEgaDnX2tfrBISqUl1nYgMYYmxkA">Support</a>
+           </td>
+       </tr>
+   </table>
+     
+     <table>
+      <tr>
+        <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0YxJujGKi_bjLuZ5LWnlwNnxjH5JpPUs4jCHQ4oYVKK2Nbr-Op4MUfdDNtrmWpHm9qHCUzHoxyRqPkyWD_yJgamokGa3LjWv3BScV6wlWI1hL6D51AYK6q7T-Y7gDhldfbfV0NoVLkqI6aAAQgOZ0CaHsW2iKVdulqFlfGQdN6U4EgTHLIQiJOaci_v935GmGkNdudgWvlvBFhNc6n1KFXCNAJSub73vWK59GhUQAdgwJWTlTGoQc-ueSfrpAY1UcDGLwEyLRrMgrbqSEB5VNtgp1g"><img src="http://services.google.com/fh/files/emails/ic_faq_footer_2x.png" width="18" alt="FAQ" height="auto"></a>
+        </td>
+        <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0YxJujGKi_bjLuZ5LWnlwNnxjH5JpPUs4jCHQ4oYVKK2Nbr-Op4MUfdDNtrmWpHm9qHCUzHoxyRqPkyWD_yJgamokGa3LjWv3BScV6wlWI1hL6D51AYK6q7T-Y7gDhldfbfV0NoVLkqI6aAAQgOZ0CaHsW2iKVdulqFlfGQdN6U4EgTHLIQiJOaci_v935GmGkNdudgWvlvBFhNc6n1KFXCNAJSub73vWK59GhUQAdgwJWTlTGoQc-ueSfrpAY1UcDGLwEyLRrMgrbqSEB5VNtgp1g">FAQ</a>
+        </td>
+     </tr>
+   </table>
+     
+     <table>
+       <tr>
+          <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bvbjJSsbzpB0gFKTHffwISNo_Xr5J5DlWomL7ok4YdZPMg-YJL3yH6ufSf9tzb-JA7DKZ7CxKS2QOnoYWKCAyoMKrNDO0_XxRhDwY-fsxj3GpE-HjOIvA0RXpWDIN9CjH591ZuS_DKUN4a4WUewGMSUNcBauFV-3JMbPIcqibUYTohugJLwzDh6uVoK9fiKauNqPUs4JjbuH0H_eoBuE5hHG8fE49Yus5jce4lHfBWfJFx_g"><img src="http://services.google.com/fh/files/emails/ic_documentation_footer_2x.png" width="18" alt="Documentation" height="auto"></a>
+          </td>
+          <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bvbjJSsbzpB0gFKTHffwISNo_Xr5J5DlWomL7ok4YdZPMg-YJL3yH6ufSf9tzb-JA7DKZ7CxKS2QOnoYWKCAyoMKrNDO0_XxRhDwY-fsxj3GpE-HjOIvA0RXpWDIN9CjH591ZuS_DKUN4a4WUewGMSUNcBauFV-3JMbPIcqibUYTohugJLwzDh6uVoK9fiKauNqPUs4JjbuH0H_eoBuE5hHG8fE49Yus5jce4lHfBWfJFx_g">Documentation</a>
+          </td>
+      </tr>
+    </table>
+     
+     <table>
+       <tr>
+           <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0YrqYB33kez0vaYJn7a7nZWsi88cq88sP6k9HAdAO0-VLDvpBC_Kse9qeK01jSqMelZAWu2MXaMy_CpGqzqUviDhC_0PLElnr3uvt-pFq1nveDh_X6l8o04ia5dZLKVyzR7YRIkt8EWav5Pu64RlYNOe5YvcY0zLobJP0MSrkuJ-WiaxHxIhTLbHlLUA922BDwrMh55on4nQbYBIC7TEp2AdYnyC1PLgM-pcN_a4mvcLvvSoHVM4JajaIG6MOQtJjio"><img src="http://services.google.com/fh/files/emails/ic_tutorials_footer_2x.png" width="18" alt="Tutorials" height="auto"></a>
+            </td>
+            <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0YrqYB33kez0vaYJn7a7nZWsi88cq88sP6k9HAdAO0-VLDvpBC_Kse9qeK01jSqMelZAWu2MXaMy_CpGqzqUviDhC_0PLElnr3uvt-pFq1nveDh_X6l8o04ia5dZLKVyzR7YRIkt8EWav5Pu64RlYNOe5YvcY0zLobJP0MSrkuJ-WiaxHxIhTLbHlLUA922BDwrMh55on4nQbYBIC7TEp2AdYnyC1PLgM-pcN_a4mvcLvvSoHVM4JajaIG6MOQtJjio">Tutorials</a>
+             </td>
+       </tr>
+     </table>
+     
+     </td>
+     </tr>
+     </table>
+         </td>
+         </tr>
+      
+     </table>
+     </td>
+     </tr>
+</table>
+</td>
+</tr>
+  
+<tr>
+  <td>
+     <table>
+        <tr>
+            <td> 
+               <img src="http://services.google.com/fh/files/emails/bottom_footer_logo.png" alt="Google Cloud" width="140">
+             </td>
+       </tr>
+       <tr>
+                     <td> 
+                            <a>Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+                       
+                       
+                        This email was sent to imyamanhitelnet@gmail.com because you signed up for a Google Cloud Platform free trial. 
+                              
+                              
+                              </td>
+                    </tr>
+   </table>
+ </td>
+</tr>
+<tr>
+                      <td> 
+                        <table> 
+                          <tr>
+                            
+                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0aDLryeI7KPLVMl6N4Kske9y0gePiPAhxYXUHARpaxhkZzPkKB6d7loezRUGAtG5jgSJogobYNkVHz3vC4fgUQYELfOqO4"><img src="http://services.google.com/fh/files/emails/release_notes_new_icon.png" alt="Google Cloud Blog" width="19"></a></td> 
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0ZUfCt-BXooRzhrKiV1GNPdJ4f2VMqo_XjQr6coHaNv9fX2p5o003FM1n9i0XKXspnR9R2hTTktf_iy01hEbKVV7xxtgH_Pp6BCr23KYvux"><img src="http://services.google.com/fh/files/emails/release_notes_apr_github.png" alt="GitHub" width="17"></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0YxWh-bZtuo65oiVb77zjpLQcb8ZDNPq1g8mFV80tZkP-cmOB9CRA9iW4DvyI8jTKaqfXSlDCywxFEs4fQjmuOMU0OVJgEtSe_fbNfxaWm22D6AhBhStLR3"><img src="http://services.google.com/fh/files/emails/release_notes_apr_linkedin.png" alt="LinkedIn" width="17"></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                             <td><a href="https://www.google.com/appserve/mkt/p/AHANi0ZTKBNwJ4jbxugSvDNqmXLTmX7UcIOW2MB8J9_WkrgLdtCHzGevcldoqnCp3Oz4JDf4EjH-lrEmWCT5Q8Tdl3Re_X1SiZgxtsDr"><img src="http://services.google.com/fh/files/emails/release_notes_apr_twitter.png" alt="Twitter" width="16"></a></td>
+							 <td>&nbsp; &nbsp;</td>
+							 <td><a href="https://www.google.com/appserve/mkt/p/AHANi0ZsSVsl4yrXA-ph_IbDbXtkgt5yj2Vr1gJ1BxWEtKPBXAUIEfTwXqc1CyiApYEGzo2XiVLm_4CEaaaKE_ag2W5R8aGyFiWx3At7AvrRyp8bwg"><img src="http://services.google.com/fh/files/emails/release_notes_apr_facebook.png" alt="Facebook" width="10"></a></td>
+                          </tr>
+                        </table>
+                       </td>
+                    </tr>
+
+  
+    </table>
+
+</div>
+
+
+
+ 
+ 
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>고양문화재단 2월 공연 전시 안내</title>
@@ -472,694 +1206,6 @@
 <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkAVYZXJhQsY4KFAyV7d4t-2BcQ33q4hRwebpoO4ybtf7ynryGykw3YdbjG7NGZKAIh05Pb6FJVbUsvuJfazm3iHfAPrDnoOCY8UFKpZd4vcGI2wSFZZdTFKzrdq14JqC4ImCtpPnKzCRzGyuEfL-2B4vQHVg4Mwn2GuKZd2KNfhuJP1FkOtfQlsR51LkcFhVtY7ti3we4N-2B7HBQFBYjXY2YpImY-3D" alt="" width="1" height="1" />
 
 
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Your Afternoon Digest</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001887.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1887</id>
-
-    <published>2019-02-06T01:02:15Z</published>
-    <updated>2019-02-06T01:02:15Z</updated>
-
-    <summary> Launch Risk Don&apos;t worry--you&apos;re less likely to die from a space launch than from a shark attack. The survival rate is pretty high for both!...</summary>
-    <author>
-        <name>hal9000</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-  
-  
-        <div>
-          <div>Launch Risk<img src="https://imgs.xkcd.com/comics/launch_risk.png"> <p>Don't worry--you're less likely to die from a space launch than from a shark attack. The survival rate is pretty high for both!</p></div>
-        </div>
-  
-<img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkAVYZXJhQsY4KFAyV7d4t-2BeqKes66XLO7OnD665hxdw6FTSnvHH-2BgvGi5-2Bz32vA7wWcr31HQqsghH6QzMeKuARnbeFkUb-2FyD6Zw6r-2Br6b8J0NmcjASKYZXsJNif3TMlPwx2xiY0OQucREs7Sg15y7VaSVCmw0n-2BdVCGSyKiyclU7etBEQzQ2EW162FTLtvTHnaTQefj53-2FbqyXp0dFHYIvk-3D" alt="" width="1" height="1" />
-
-
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Anais Nin</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001886.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1886</id>
-
-    <published>2019-02-05T06:28:43Z</published>
-    <updated>2019-02-05T06:28:43Z</updated>
-
-    <summary>&quot;Dreams are necessary to life.&quot; source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/-P3BwWyahgU/anais_nin ---------------------------------------------------------------------------Visit this link to stop these emails: http://zpr.io/ntubP...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[<p>"Dreams are necessary to life."</p>
-
-<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/-P3BwWyahgU/anais_nin</p>
-
-<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Product updates | February 4, 2019</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001885.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1885</id>
-
-    <published>2019-02-04T18:55:35Z</published>
-    <updated>2019-02-04T18:55:35Z</updated>
-
-    <summary> .appleLinksWhite a {color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important; } @media screen and (min-width: 812px) and (max-width: 812px), screen and (min-width: 736px) and (max-width: 736px), screen and (min-width: 667px) and (max-width: 667px), screen and...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[ 
-
- 
-
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
- 
-
-   
-      
-      
-      
-        
-         .appleLinksWhite a {color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important;  }
-         @media screen and (min-width: 812px) and (max-width: 812px),
-          screen and (min-width: 736px) and (max-width: 736px),
-          screen and (min-width: 667px) and (max-width: 667px),
-          screen and (min-width: 568px) and (max-width: 568px),
-          screen and (min-width: 414px) and (max-width: 414px),
-          screen and (min-width: 375px) and (max-width: 375px),
-          screen and (min-width: 320px) and (max-width: 320px) {
-            .body {
-              min-width: 100vw !important;
-            }
-          }
-         @media screen and (max-width: 737px) {
-           .outer_wrapper_td {
-             padding-left: 20px;
-             padding-right: 20px;
-           }
-            .new_header_width_class
-           {
-             text-align:left !important;
-           }
-           .inner_foot_link {
-             display: inline-block;
-             width: 100% !important;
-             padding: 12px 0 0 !important;
-            }
-           .column1 {
-             max-width: 100% !important;
-             display: table !important;
-           }
-           .four-column {
-             padding-bottom:22px !important;
-           }
-           .text_icon {
-                width: 20px !important;
-                padding-right: 7px !important;
-            }
-                     #sup_fix{
-    line-height:14px;
-                     }
-         }
-         @media screen and (max-width: 414px) {
-           .mob_left_space{padding-left: 20px !important;}
-           .banner_logo{
-             width:225px !important;
-           }
-           .logo_holder_container{padding-top:15px !important;padding-bottom:15px !important;padding-left:15px !important;}
-           .left-right-spacing, .social_icons_container, .footer_wrapper_td, .four-column, .border_bar {
-             padding-left: 25px !important;
-             padding-right: 25px !important;
-           }
-           .outer_wrapper_td {
-             padding-left: 10px;
-             padding-right: 10px;
-           }
-           #columndiv {
-             display: none !important;
-           }
-           .inner {
-             display: inline-block;
-             width: 100% !important;
-             padding: 12px 0 0 !important;
-            }
-            .inner3 {
-              padding-top:17px !important;
-            }
-           .inner4 {
-              padding-top:16px !important;
-            }
-           
-           .contents .text {
-             min-width: 26px;
-             padding-right: 0px !important;
-           }
-           .updated_head_space
-           {
-             padding-top:20px !important;
-           }
-           .gcp_cta_btn_table td
-           {
-             padding-top:17px !important;
-               padding-bottom:12px !important;
-           }
-           .four-column
-           {
-             padding-bottom:15px !important;
-           }
-           .new_header_width_class
-           {
-             text-align:left !important;
-             padding-left:42px !important;
-             padding-right:20px !important;
-       
-           }
-              .left-right-spacing-header {
-             padding-left: 25px !important;
-      
-           }
-           .key_announcement{
-             padding-left: 2px !important
-           }
-           .word-break{display: block !important; height: 1px !important}
-         }
-      
-       
-  #sup_fix{
-    line-height:14px;
-    
-}
-
-  
-   
-   
-      <img height="1" src="https://www.google.com/appserve/mkt/img/AHANi0YIsgKYLZdeui1OcyOYbb4qwfSbhA0J7_6ngrT7ddILKQ.gif" width="3">
-      <div>A regular roundup of what’s new across Google Cloud Platform.</div>
-      <table>
-      <tr>
-         <td>
-            <table>
-            
-      <tr>
-         <td>
- 
-<table>
-            <tr>
-              <td>
-                
-                <div>
-                      <table>
-                              <tr>
-                                  <td>
-                                      <table>
-                                          <tr> 
-                                            <td>
-                                               <img src="http://services.google.com/fh/files/emails/gcp_new_logo_may23_18.png" width="303" alt="Google Cloud Platform" height="auto">
-                                            </td>
-                                          </tr>  
-                                      </table>
-                                  </td>
-                              </tr>
-                      </table>
-               </div>
-                
-               <div>
-                    <table>
-                      <tr>
-                        <td>
-                            <table>  
-                                 <tr> 
-                                    <td>    
-                                      <table>    
-                                        <tr>  
-                                            <td>
-                                            <a href="https://www.google.com/appserve/mkt/p/AHANi0apW6mihZ6JYOzDOS75PoPDQrfwaqIQeyf_pEqf8dZfspDma0Z6bZKdGHGiNADLPhx4Bc_snT8HEVDwyugTX74FX0lfHm1tBS6_KZFRj6Do0M99wQsLfKqKwkhVzTsNAV_ApaUaoPG4oiDI3jzllvzL01ukOz6SZXIN7a1XZLYuptgWxNGFRgVFJ77KAnsuCo0jSs8wB_O0E5bXwuMCOc4hlfHNQsg1DF6f6aKuwXZmQz17K5GQIR9zDhpkjgDuGOy5WAh4yIK_2pigThGrId2kd9-BNLx6i3871EDPe83R3xRoSlVeKt0pzHSJARS5WyTXoEWFn7KCgmGJb6RmIBPkUQ2jCR0wh33Gwdd1fVp3buz0UhPlhg">Go to your Console</a>
-                                            </td>
-                                          <td><a href="https://www.google.com/appserve/mkt/p/AHANi0apW6mihZ6JYOzDOS75PoPDQrfwaqIQeyf_pEqf8dZfspDma0Z6bZKdGHGiNADLPhx4Bc_snT8HEVDwyugTX74FX0lfHm1tBS6_KZFRj6Do0M99wQsLfKqKwkhVzTsNAV_ApaUaoPG4oiDI3jzllvzL01ukOz6SZXIN7a1XZLYuptgWxNGFRgVFJ77KAnsuCo0jSs8wB_O0E5bXwuMCOc4hlfHNQsg1DF6f6aKuwXZmQz17K5GQIR9zDhpkjgDuGOy5WAh4yIK_2pigThGrId2kd9-BNLx6i3871EDPe83R3xRoSlVeKt0pzHSJARS5WyTXoEWFn7KCgmGJb6RmIBPkUQ2jCR0wh33Gwdd1fVp3buz0UhPlhg"><img src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" alt="" width="16" /></a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                   </td>
-                                 </tr>
-                               </table>
-                        </td>
-                      </tr>
-                    </table>
-                </div>
-                
-            </td>
-        </tr>
-        </table>
- 
-<table>
-  <tr>
-  <td>
- <table> 
- <tr><td>
-<table>
-  <tr>
-    <td>
-    </td>
-  </tr>
- <tr>
- <td>
- <table>
- <tr>
-
-
- <td>
- GCP UPDATES&nbsp;<span>|&nbsp;FEBRUARY 4, 2019</span>
- </td>
-
- </tr>
- </table>
- </td>
- </tr>
- </table>
- <table>
-  <tr>
-    
-
-<td>
-
-<table>  
-<tr><td>
-
-<table>
-   <tr>
-     <td>COMPUTE</td>
-   </tr>
-</table>
-<table>
-   <tr>
-      <td>NVIDIA® Tesla® T4 on Compute Engine: beta</td>
-   </tr>
-</table>
-<table>
-<tr>
-      <td>NVIDIA® Tesla® T4 with new NVIDIA ray-tracing features is now available for use with your machine learning inference, ML training, and graphics-intensive visualization workloads. Google Cloud Platform offers these GPUs – which feature NVIDIA Tensor Cores built for ML and 16 GB of GPU memory – for as low as $0.29 USD per hour on preemptible VM instances. <a href="https://www.google.com/appserve/mkt/p/AHANi0bw3x1gyS9cZ50ULQsEnrs4k4uS16xDVXtJhl4v004Nc-BOIvnRN0aNfHTM97ppDMaz8gIFY9pxdrm6XkCbPEDr4BrFnslt_kvHDCvGXHZ2EZkDDIuKgu3MnYNjSYHVqrWLmHd71ScFHJiWVFBewDklGhv-U-fTcMtykWctQ4HOhIYkA4lWQwBFl16yRvspejsE7EI7t2orbj28oZ9wPM9XMDA1RXkehQpGXA5fyWvgck_zYNRolIgGgHeZoHrrsG_wvyOE9eAmXaOA4Jwgs_XhZzE-NWVPUjIRA03DRSgGnnqaYzQA72FD7hyG8mkildw7re-uSqiFpHkhJz0eFEWjsyPvE2qIGFPydPZfT3XRlkTCHNslZ1x5r8W4I09D0O1UVHuBNlkhtUcHvR4">Documentation</a>
-  </td>
-   </tr>
-</table>
-
-<table>
-   <tr>
-      <td>Support for Go 1.11 on Cloud Functions: beta</td>
-   </tr>
-</table>
-<table>
-<tr>
-      <td>Cloud Functions now supports the latest version of Go and Go language features, letting you write functions that scale in response to load and integrate seamlessly with Google Cloud events. <a href="https://www.google.com/appserve/mkt/p/AHANi0ZxFAdeiCwn4ZjX8Semg1AUMwkVHIxCCJ-jsnb6FbpY-s0kNyrsjKnLQtJAB9nZuQTUl9QOADy02VEiVs22vZgUQEmbB546dpVRNJD9S9BhHbZTqMvQ8C1PpyQvkK9uVHleZb4sAZGcHTs_PFz5UdgE848mYzYLFGcOlRuu72coqtokdNDXsrH1L3pJ9L7SQZMn3PDsN92uryEf5y-HTjtJVUvxgKgZwTlha4gpAQ3Q0XXezxtwz9Mf9mlj_wqPXXZaL5h9biARnHTkh3tSZZCBulyQj2_eeaw5jM5vdpCa7EwFeRn12uaNNd751OUPmVlUa6ebQTsA0A4itrNAcyhKMmXzmMJRXkGAqNxKpr3pzVhvuh7tSNU3oStqEId1cYCpmaGNY8fNLs0tvwaJY-cLj4_yigaQBmiYlkKiRHPuf6xwc4o4QhiOAyml5R52uUSTBwQzj0ZrRse3XKKQ68I_JD9fT3wQDLoNXZjFBYyxJswhUTI1jTxc80NQ9KAfsDIV6EByikT7_LTVJiVQWXndrN1QX7mmCyAI7zF_eahth7gtxEggsQjd1MlxuMlha0qGYzfeUcY_R9Nb">Blog</a>
-  </td>
-   </tr>
-</table>
-
-<table>
-   <tr>
-     <td>DATABASES</td>
-   </tr>
-</table>
-<table>
-   <tr>
-      <td>Cloud Spanner now available in the Sydney region (australia-southeast1): GA</td>
-   </tr>
-</table>
-<table>
-<tr>
-      <td>You can now provide lower-latency reads and writes for your users and services located in the Sydney region. <a href="https://www.google.com/appserve/mkt/p/AHANi0b4ckbFiJjPK-qOTNH7BnLiEIhieYzr24ucbkUENjlwLjV6weJwrmbgSK0LAFjyToW6mMr4ClPpaXKDZocFRwdCQrN0cSP12vh_jsEFMmL57O3l6o68P3IBP6KntbuhGs-u_9x_qJf7QLmVIkgRSli8yis28Ql2PoPXl4RL0BpQ4RhymxzFvLCoj5a21kE1USlhzOWqZIEibijwZJHj8dAxOPft1hpKIDDQ321WKPjBe1wYFnvB-2F2PKuhVpL3bVefGG9kyD95PKL2kGz9fVB-ZlQEYvce-WSK2wTbqfE6721QSfvSAg4UTp-ghuawbCLZit0QTjF9ojqJB1N_C0BHsJtafjSg-gcuxo6zPSzqOj27ur_4LdLeIInEdECO3bnAlBq40qnirxPJV2Lyb-9aTT-5vVYyD7TG13C2XF5I1oVzmpXAdagh3-G69l9bTVf-nRYl8X1BI-PkCRREah2TKoNIE0TMGNO-wyUMw84qLCSpN8ErOPeV">Documentation</a>
-  </td>
-   </tr>
-</table>
-  
-<table>
-   <tr>
-      <td>Cloud Spanner now available in the London region (europe-west2): GA</td>
-   </tr>
-</table>
-<table>
-<tr>
-      <td>For any regional configuration, Cloud Spanner maintains three read-write replicas, each within a different GCP zone in that region. <a href="https://www.google.com/appserve/mkt/p/AHANi0b4ckbFiJjPK-qOTNH7BnLiEIhieYzr24ucbkUENjlwLjV6weJwrmbgSK0LAFjyToW6mMr4ClPpaXKDZocFRwdCQrN0cSP12vh_jsEFMmL57O3l6o68P3IBP6KntbuhGs-u_9x_qJf7QLmVIkgRSli8yis28Ql2PoPXl4RL0BpQ4RhymxzFvLCoj5a21kE1USlhzOWqZIEibijwZJHj8dAxOPft1hpKIDDQ321WKPjBe1wYFnvB-2F2PKuhVpL3bVefGG9kyD95PKL2kGz9fVB-ZlQEYvce-WSK2wTbqfE6721QSfvSAg4UTp-ghuawbCLZit0QTjF9ojqJB1N_C0BHsJtafjSg-gcuxo6zPSzqOj27ur_4LdLeIInEdECO3bnAlBq40qnirxPJV2Lyb-9aTT-5vVYyD7TG13C2XF5I1oVzmpXAdagh3-G69l9bTVf-nRYl8X1BI-PkCRREah2TKoNIE0TMGNO-wyUMw84qLCSpN8ErOPeV">Documentation</a>
-  </td>
-   </tr>
-</table>
-
-<table>
-   <tr>
-     <td>NETWORKING</td>
-   </tr>
-</table>
-<table>
-   <tr>
-      <td>Internal Load Balancing support for all ports: beta</td>
-   </tr>
-</table>
-<table>
-<tr>
-      <td>This release removes the constraints for defining forwarding rules, allowing you to match all ports. This provides you with more flexibility when running multiple applications over TCP. <a href="https://www.google.com/appserve/mkt/p/AHANi0Y7O7SE3pOW3KmogATbkBYyUr6BdfBY02QU24nWBsgXCBa5T-XlJkSiK7GYzfsLjVFiOIkOZ0IorqYLubdwTOM2_PTOXQlZIuZTY-JsVsZ2xH48jsHkEpqYMHDEN8pc-hidPUQWxeHhLBwWyvCFPtExoY0OayiA56dzPXY81ktm6vjlflJA0722dScLAGuu1PclCsbac2EPdjsxnoAoOknIZiKybOOQ24mXK__T7K4s9aPFhiEczT8XI1rzV9kVvo-jhxxL_4naUygAZfONX-3A28AN8VSH9NfazJRzdYCZTBH8rOLaNtt-HlOhcugBGAkfwBujmg6pEP0AWl3p0YzLU9mM7pMQKFmUtnjbwMTSUVTJ3PGjSbkAr0j6xuiVtaj4vij8In8gvXh7YO7OOQvhdyHnwjvibKV5QuBO0PCJzaSCcIDimpx6ZSlIEy7_m7kAcy9DjuQ">Documentation</a>
-  </td>
-   </tr>
-</table>
-
-<table>
-   <tr>
-     <td>API MANAGEMENT</td>
-   </tr>
-</table>
-<table>
-   <tr>
-      <td>Monetization in the new Apigee Edge experience: GA</td>
-   </tr>
-</table>
-<table>
-<tr>
-      <td>The API monetization feature is now available in the new Apigee Edge experience, giving you flexible ways to generate revenue from your APIs. Previously, this feature was only available in the classic experience. <a href="https://www.google.com/appserve/mkt/p/AHANi0aIjdzhwdXoFXtoLNyMhOAFK9y5C8BMilPEOriSTjlAfFP7P3gUDWVB9ArvGpevLfOyxp2rhvw_Xu1u849V_Iil8Nz9aw28mGsauu4sU9Io1J7ZHD0XjyjoW-j69U7XQ0uYnjNsvHwuLEDy6x9oJOZ_S2imH_LiCK9LFm3_DALZG_XuN1UmzFB3KZQ5BLdCn82CzA2eOgB6cpY2HMIhN8upUUoAQA">Documentation</a>
-  </td>
-   </tr>
-</table>
-
-<table>
-   <tr>
-     <td>MIGRATION</td>
-   </tr>
-</table>
-<table>
-   <tr>
-      <td>Transfer Appliance now available in Canada: GA</td>
-   </tr>
-</table>
-<table>
-<tr>
-      <td>You can use Transfer Appliance to securely migrate large volumes of data – from hundreds of terabytes to a petabyte – to GCP without disrupting business operations. Contact your Google sales representative to learn more. <a href="https://www.google.com/appserve/mkt/p/AHANi0a_Ekz1aMneTWDu_6c7LikBjRdqTtlBEZIarTJZFC8_MZsh_nK8fJyZ4G0hYDLJaFx-lVrc7aYxJriV7YeoALZb80gm6pYMImz0HEHRmg9CemxJY0zQJbfjwamJZxGQYysBgYsijhK2y1cfaebuUcWiIKHf2IIkGX0AREtxyfbEVCk9Sk1NEqcyfu--CkG1uobSOALunOah0GVRl3UtR90w7fWSkq0gd6J07ovP7PMHTK_DaL44XYxWVOzGt4ghpAh6WT30dlZpKLftioMre7aYiDUBQ-nnX0VaAuhBUaeCrUTq8ed3HfkvAF42hIUUMTpolWAbJA4cc9y1DOAFKUrTKO4_bST7Fa6lQxUA4HoPbWLM1aoUJM4DtTogHQf-iN0NccLtjJ-ylFSITDFLcVpPMKSbP-09K3Zf65A6tJZQpA">Documentation</a>
-  </td>
-   </tr>
-</table>
-
-</td>
-</tr>
-</table>
- <table> 
- 
-<tr> 
- <td> 
- <a href="https://www.google.com/appserve/mkt/p/AHANi0apW6mihZ6JYOzDOS75PoPDQrfwaqIQeyf_pEqf8dZfspDma0Z6bZKdGHGiNADLPhx4Bc_snT8HEVDwyugTX74FX0lfHm1tBS6_KZFRj6Do0M99wQsLfKqKwkhVzTsNAV_ApaUaoPG4oiDI3jzllvzL01ukOz6SZXIN7a1XZLYuptgWxNGFRgVFJ77KAnsuCo0jSs8wB_O0E5bXwuMCOc4hlfHNQsg1DF6f6aKuwXZmQz17K5GQIR9zDhpkjgDuGOy5WAh4yIK_2pigThGrId2kd9-BNLx6i3871EDPe83R3xRoSlVeKt0pzHSJARS5WyTXoEWFn7KCgmGJb6RmIBPkUQ2jCR0wh33Gwdd1fVp3buz0UhPlhg">
- <span>Go to your Console</span> 
- </a>
- </td> 
- </tr> 
- 
-</table>
-<table>
-    <tr>
-        <td>
-            <table>
-				<tr>
-                    <td>See you in the cloud,</td>
-                </tr>
-                <tr>
-                    <td>The Google Cloud Platform Team</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-</td>
-</tr>
-</table>
- </td></tr>
- </table> 
- 
-<table>
-  <tr><td><table>
-    <tr><td>&nbsp;</td></tr>
-    </table></td></tr>
-    <tr>
-        <td>
-
-            <table>
-                
-                <tr>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>
-                                    <table>
-
-                                        <tr>
-                              
-                                         
-    
-    
-
-     <td>
-
-                                          
-  
-
-                                          
-                                            
-
-                                                
-
-                                                <table>
-                                                    <tr>
-                                                        <td> 
-
-                                                                        <table>
-                                                                            <tr>
-
-                                                                                <td>
-                                                                                  
- <table>
-   <tr>
-   
-     
-     
-
-
-    <td>
-
-     
-                                                                                    <a href="https://www.google.com/appserve/mkt/p/AHANi0aUPOdPhyNFIW8Slvk3WJF9v_SK1bvlc5OuZrHfb6f-Ot5p4CdSpyxrHbms6eijtUlcxWbM_Qy4STYIQrurieR7XagZ6aoFwRlVsw9Epdc2SR0_MvEgDHRUzhp4TFTfsfS6tijyEoyKJzKzSjJlOqQdh12Py8sl54hsc7UDHtuTDwf7pWat8D7CHvJvyoATOhSmBFv1Yo8qNfGMEM-KWVHwOq29S72IzKdF_PYe8K5rSfvrjb6J7MsT8OFlo3FMoi4GCVaJmdLGI9TOg4qA7y5w6Y7xkRLKrrQevzxzWBLQE2Y6lN4VDP-dnJPTnYNvT4Izo4FPAnBZ74ySpnyKaPI-un8YA_snCnK6wnaovbompQ"><img src="http://services.google.com/fh/files/emails/release_notes_apr_doc_icon.png" width="12" height="16" alt="Documentation">
-                                                                                    </a>
-     </td>
-   </tr>
-                                                                                  </table>
-                                                                                </td>
-
-
-                                                                                <td>
-                                                                                    <a href="https://www.google.com/appserve/mkt/p/AHANi0aUPOdPhyNFIW8Slvk3WJF9v_SK1bvlc5OuZrHfb6f-Ot5p4CdSpyxrHbms6eijtUlcxWbM_Qy4STYIQrurieR7XagZ6aoFwRlVsw9Epdc2SR0_MvEgDHRUzhp4TFTfsfS6tijyEoyKJzKzSjJlOqQdh12Py8sl54hsc7UDHtuTDwf7pWat8D7CHvJvyoATOhSmBFv1Yo8qNfGMEM-KWVHwOq29S72IzKdF_PYe8K5rSfvrjb6J7MsT8OFlo3FMoi4GCVaJmdLGI9TOg4qA7y5w6Y7xkRLKrrQevzxzWBLQE2Y6lN4VDP-dnJPTnYNvT4Izo4FPAnBZ74ySpnyKaPI-un8YA_snCnK6wnaovbompQ">Documentation</a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-                                                                        
-
-
-                                                        </td>
-                                                      
-                                                        <td>
-
-
-                                                                        <table>
-                                                                            <tr>
-
-                                                                                <td>
-                                                                                   <a href="https://www.google.com/appserve/mkt/p/AHANi0anVPBgV9iZYn9GODCWx9lF9BpBV2V69j9jNeaap80FN-FWW-l1hAuHJRlY8RZG4pJ8kSAD3pxArsS3bZDVh6NJAxE_5YXaZ73NhkoD3OSQBBS6bHjK4JWVt-JJbqtgRcoDNGX3Ur_VTrsUEOwE34GL9nkf4G7xVZ8BB-IxGr7EEJAS7ZlmcKTt5vijpIeZMVO3tn31voIzupiB4aehW2fTw573tK4OmTv9K9xBygqxseyg5AzBZqDl1z2z0eIYyk5a4HQRL1u6jKdrky1wnKchfW_bbJpwOPeCSElSxv4FEEpMPwpcEUIeoJE2bkVkB3n1em1iZ3xJaSPBwag5U3WJmO31_3Q29S9oQwcSlrlvcEe0xPrCOQ">
-										    <img src="http://services.google.com/fh/files/emails/release_notes_apr_support_icon.png" width="14" height="14" alt="Support">
-                                                                                   </a>
-                                                                                </td>
-
-
-                                                                                <td>
-                                                                                    <a href="https://www.google.com/appserve/mkt/p/AHANi0anVPBgV9iZYn9GODCWx9lF9BpBV2V69j9jNeaap80FN-FWW-l1hAuHJRlY8RZG4pJ8kSAD3pxArsS3bZDVh6NJAxE_5YXaZ73NhkoD3OSQBBS6bHjK4JWVt-JJbqtgRcoDNGX3Ur_VTrsUEOwE34GL9nkf4G7xVZ8BB-IxGr7EEJAS7ZlmcKTt5vijpIeZMVO3tn31voIzupiB4aehW2fTw573tK4OmTv9K9xBygqxseyg5AzBZqDl1z2z0eIYyk5a4HQRL1u6jKdrky1wnKchfW_bbJpwOPeCSElSxv4FEEpMPwpcEUIeoJE2bkVkB3n1em1iZ3xJaSPBwag5U3WJmO31_3Q29S9oQwcSlrlvcEe0xPrCOQ">Support</a>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
-
-                                                        </td>
-                                                    </tr>
-                                                </table> 
-
-                                                
-							
-							<table>
-								<tr>
-									<td>
-										
-	                                                                        <table>
-	                                                                            <tr>
-
-	                                                                                <td>
-                                                                                           <a href="https://www.google.com/appserve/mkt/p/AHANi0Yc7ODg-TI1iKjg1cbWtVAdQU0lv3Zk-WP_tPhZ2ts6ZVZ0gGcb1Lrdq-bVuNHU-20frtL_SxMtXD5uM5B3zOkR1rZPEe6M6_dfjYfBp4WHzhkSzqHCLnbNlX4WkTP-Y6f66S8BDlsTPR-QXHLA513NmlMLnLm5Tw73lN3EKqLrI-9cY-FJtlWPOcUxrRU6lhZD7bvLL7NtpbaGhz6Ot7Fqj6dHfvf6Czp-NFyPYe3vpFL2Zp_YX1IEQiCpgCtX5fapQCRGKcQvJuZJFXAqpspDaA7cWwUj44L-dYWOIbmw_g9Zyu0ucCf8xQpZlYlWHgkUW2JCM1I5IMhdOF-hk8YhPBR38jmRNqXIMyZF1JVFgd47YpzFzpiDRCwPzEkP"><img src="http://services.google.com/fh/files/emails/release_notes_apr_mob_icon.png" width="10" height="16" alt="Mobile App">
-                                                                                           </a>
-	                                                                                </td>
-
-
-	                                                                                <td>
-	                                                                                    <a href="https://www.google.com/appserve/mkt/p/AHANi0Yc7ODg-TI1iKjg1cbWtVAdQU0lv3Zk-WP_tPhZ2ts6ZVZ0gGcb1Lrdq-bVuNHU-20frtL_SxMtXD5uM5B3zOkR1rZPEe6M6_dfjYfBp4WHzhkSzqHCLnbNlX4WkTP-Y6f66S8BDlsTPR-QXHLA513NmlMLnLm5Tw73lN3EKqLrI-9cY-FJtlWPOcUxrRU6lhZD7bvLL7NtpbaGhz6Ot7Fqj6dHfvf6Czp-NFyPYe3vpFL2Zp_YX1IEQiCpgCtX5fapQCRGKcQvJuZJFXAqpspDaA7cWwUj44L-dYWOIbmw_g9Zyu0ucCf8xQpZlYlWHgkUW2JCM1I5IMhdOF-hk8YhPBR38jmRNqXIMyZF1JVFgd47YpzFzpiDRCwPzEkP">Mobile app</a>
-	                                                                                </td>
-	                                                                            </tr>
-	                                                                        </table>
-									</td>
-									<td>
-										
-	                                                                        <table>
-	                                                                            <tr>
-
-	                                                                                <td>
-                                                                                           <a href="https://www.google.com/appserve/mkt/p/AHANi0Y7CyBOvcpzngYEjJ0I5uISxItXu4C7QXlHFei4tu795qPjB27D6NEpY5zcI8m_QeNuUPbCGtuDUOMPkJl9L7G0vwNZU2T52k9ywNs6VHXaSEBdcW3gfyjCY3pKTyeGu59gOMsaNrofsAJTouFARRFfzjFy6TX50UvNswQMaI3-kud4_Q8qHxjv9ekfxRufp88xRkvMx6JCfMMOU8o4DForSAJOW_sZympwF320e4rCb1DnyqqQkDWlxBZMgte4RWcT4B99T11yEbcqwzbjLtuuUK_EZ-GQgrIKqS18SbMRNqiUR_nG8ESsjjG0x3zw2sdKtBXgxyjuHiEQ"><img src="http://services.google.com/fh/files/emails/release_notes_apr_feedback_icon.png" width="14" height="14" alt="Feedback">
-                                                                                           </a>
-	                                                                                </td>
-
-
-	                                                                                <td>
-	                                                                                    <a href="https://www.google.com/appserve/mkt/p/AHANi0Y7CyBOvcpzngYEjJ0I5uISxItXu4C7QXlHFei4tu795qPjB27D6NEpY5zcI8m_QeNuUPbCGtuDUOMPkJl9L7G0vwNZU2T52k9ywNs6VHXaSEBdcW3gfyjCY3pKTyeGu59gOMsaNrofsAJTouFARRFfzjFy6TX50UvNswQMaI3-kud4_Q8qHxjv9ekfxRufp88xRkvMx6JCfMMOU8o4DForSAJOW_sZympwF320e4rCb1DnyqqQkDWlxBZMgte4RWcT4B99T11yEbcqwzbjLtuuUK_EZ-GQgrIKqS18SbMRNqiUR_nG8ESsjjG0x3zw2sdKtBXgxyjuHiEQ">Feedback</a>
-	                                                                                </td>
-	                                                                            </tr>
-	                                                                        </table>
-									</td>	
-									
-								</tr>	
-						        </table>		
-
-                                               
-
-
-                                            
-
-
-                                        </td></tr>
-
-                                    </table>
-                                </td>
-                            </tr>
-
-                        </table>
-                    </td>
-                </tr>
-                
-            </table>
-
-
-        </td>
-    </tr>
-</table>
-</td>
-    </tr>
-</table>
- 
-</td></tr>
-           <tr>
-<td>
-                <table>
-                   <tr>
-                     <td> 
-                       <img src="http://services.google.com/fh/files/emails/bottom_footer_logo.png" alt="" width="142">
-                      </td>
-                    </tr>
-                   <tr>
-                     <td> 
-                            <a href="">Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
-                       
-                       
-                        This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive feature announcements about Google Cloud Platform. If you don’t want to receive such emails in the future, please unsubscribe here: <div><a href="https://www.google.com/appserve/mkt/optout/AHANi0buW9EiNjIi4171jHr-yodzUdHe91dqAlPAB0c4n61Fo-SOOfWFYZOM2cgZ55V28H_8kw?hl=en">https://www.google.com/appserve/mkt/optout/AHANi0buW9EiNjIi4171jHr-yodzUdHe91dqAlPAB0c4n61Fo-SOOfWFYZOM2cgZ55V28H_8kw?hl=en</a></div> You can also change your preferences on your account’s profile page by logging in at console.cloud.google.com 
-                              
-                              
-                              </td>
-                    </tr>
-                    <tr>
-                      <td> 
-                        <table> 
-                          <tr>
-                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0awthBEgOj_3jfNSFkPEsXiEGMeiVCrzsgJ_Nk2sovkEVnHo6iL_RSVYSKHrhRItArFwrYXj4R0ARhnCnrqJdfsPjIek4QOnQKurlIYdEdZJC8Sx7-R9HYNdk8ZGt3rNd8S2KzH-kKBXCCGBj5TDipw2D1BLNXGxA1VRo8G5xVgbynFboxiU6tyAbiwSUml7Iit0akBWryT5nGAnOwi2LNbWS6gPxvQYEH0PTaC5b-ZSBhekhtK1UdMxlLddLfZhLDQpxd1cKecVurp8EzeXl5bkVmNuNAyHNj2S97sJI1ajbl2NbazKxW65udsuXX_j0ETqdbeC_qvoBdT71JvnmBQhF8urchremNRQbEoDuemRg"><img src="http://services.google.com/fh/files/emails/release_notes_new_icon.png" alt="Google Cloud Blog" width="19"></a></td> 
-                             <td>&nbsp; &nbsp;</td>
-                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0atj7KdS0pcB-1qi6glty6PkX-UtBg_S38PlH8rYlO0w0LVmz_VXafZIHy-uklT5Bad_IYFtYAhwW3VgxlfbUcNOAnF6zTu8WopqRd2qCgKdKuRpfDrTCF93TjoqjEUaYd-IFpofEtcf0k4mhME7d5e"><img src="http://services.google.com/fh/files/emails/release_notes_apr_github.png" alt="GitHub" width="15"></a></td>
-                             <td>&nbsp; &nbsp;</td>
-                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0adIIdWvHeCbOnQb-VH_XLqxHDaesKPVJVxFE494dYBH1QH6RVBRaPFXXVfTX5JFs7tohNqODTOT6_h5N7ELVLFE2j00t6lnIrS9IQYI_S9NpycBfdfNw9rS3GWd0bCPXwBb0xZlQX-UHz5kMuz9WSvv96Y5cDRViAouv4Cjqc"><img src="http://services.google.com/fh/files/emails/release_notes_apr_linkedin.png" alt="LinkedIn" width="17"></a></td>
-                             <td>&nbsp; &nbsp;</td>
-                             <td><a href="https://www.google.com/appserve/mkt/p/AHANi0bOWqmGB0C0hJsFR8nt8tzpLZxj_Kj4uhp_mGRjUM1wjl--b4r1Q80_WRQv4nAvvsxJs9XhkpEFnuaM_OTe8YZ7zpj2QVHlcq6IlV9k8cnrf5ENyr0n0op4kMnut5yrj7ULcQ"><img src="http://services.google.com/fh/files/emails/release_notes_apr_twitter.png" alt="Twitter" width="16"></a></td>
-							 <td>&nbsp; &nbsp;</td>
-							 <td><a href="https://www.google.com/appserve/mkt/p/AHANi0ZcXxmNllHXU1ZIFfwMTtpb-a4Klx3Dixuv4Gu0pVmRtWJiqyE7HAwjI_p662XxQDAs3hJ-gVqlPRk3WJ5F7k7FBE1UGItEdS_gzC6DNgL-WmdOlgjHiyTZ_YFqivjKP66Fe9N8LLXODlr5mDg-2Q"><img src="http://services.google.com/fh/files/emails/release_notes_apr_facebook.png" alt="Facebook" width="10"></a></td>
-                             
-                           
-                          </tr>
-                        </table>
-                       </td>
-                    </tr>
-                </table>
-         </td> </tr>
- 
-         </table>
-       </td></tr>
-      </table>  
-
-     <img height="1" src="https://www.google.com/appserve/mkt/img/AHANi0YIsgKYLZdeui1OcyOYbb4qwfSbhA0J7_6ngrT7ddILKQ.gif" width="3">
-   
-
- 
 
 ]]>
         
