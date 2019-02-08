@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>ionpocari</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/ionpocari/" />
-    <link rel="self" type="application/atom+xml" href="http://weblog.youre.space/ionpocari/atom.xml" />
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/ionpocari/" />
+    <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/ionpocari/atom.xml" />
     <id>tag:weblog.youre.space,2017-09-06:/ionpocari/14</id>
     <updated>2018-09-07T04:41:51Z</updated>
     <subtitle>포카리님의 북로그를 아카이브합니다. 원래의 웹 사이트가 없어져도 글을 찾을 수 있도록. 원문은 CC-BY 라이선스입니다. http://booklog.kyobobook.co.kr/ionpocari</subtitle>
@@ -10,7 +10,7 @@
 
 <entry>
     <title>Re-verify ownership of your domain</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/ionpocari/001329.html" />
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/ionpocari/001329.html" />
     <id>tag:weblog.youre.space,2018:/ionpocari//14.1329</id>
 
     <published>2018-09-07T04:41:51Z</published>
@@ -23,7 +23,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/ionpocari/">
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/ionpocari/">
         <![CDATA[Please re-verify ownership of www.sys5.co on sys5-f9f83. The previous verification for this domain has been invalidated.  You have 7 days to re-verify ownership of www.sys5.co before it  is removed from Firebase Hosting, which will stop all content from being served from the domain. Please visit the <a href="https://console.firebase.google.com/project/sys5-f9f83/hosting">Firebase Hosting Panel</a> to start the re-verification process.
 ]]>
         
@@ -32,7 +32,7 @@
 
 <entry>
     <title>Re-verify ownership of your domain</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/ionpocari/001328.html" />
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/ionpocari/001328.html" />
     <id>tag:weblog.youre.space,2018:/ionpocari//14.1328</id>
 
     <published>2018-09-07T04:41:50Z</published>
@@ -45,7 +45,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/ionpocari/">
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/ionpocari/">
         <![CDATA[Please re-verify ownership of pacificmedia.sys5.co on pacificmedia-38170. The previous verification for this domain has been invalidated.  You have 7 days to re-verify ownership of pacificmedia.sys5.co before it  is removed from Firebase Hosting, which will stop all content from being served from the domain. Please visit the <a href="https://console.firebase.google.com/project/pacificmedia-38170/hosting">Firebase Hosting Panel</a> to start the re-verification process.
 ]]>
         
@@ -54,7 +54,7 @@
 
 <entry>
     <title>[서평]노후를 위해 오피스텔에 투자하라</title>
-    <link rel="alternate" type="text/html" href="http://weblog.youre.space/ionpocari/000350.html" />
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/ionpocari/000350.html" />
     <id>tag:weblog.youre.space,2017:/ionpocari//14.350</id>
 
     <published>2017-06-21T06:54:31Z</published>
@@ -67,7 +67,7 @@
     </author>
     
     
-    <content type="html" xml:lang="en-us" xml:base="http://weblog.youre.space/ionpocari/">
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/ionpocari/">
         <![CDATA[<div class="reader_head clearfix">
 <ul class="sub">
 <li class="authorsdomain"><span class="domain"><a target="_blank" href="https://getpocket.com/redirect?url=http%3A%2F%2Fbooklog.kyobobook.co.kr%2Fionpocari%2F1695325%2F%230&amp;formCheck=503c13fa578c8288044664abdf124bcc">booklog.kyobobook.co.kr</a></span></li>

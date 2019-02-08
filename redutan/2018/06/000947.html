@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="description" content="애그리게잇을 생성하는 책임을 가지는 메소드나 객체를 말한다. 애그리게잇 생성을 캡슐화 도메인 모댈 내의 팩토리 복잡한 객체와 애그리게잇 인스턴스를 생성하는 책임을 별도의 객체로 이동시키자. 여기서의 책임은 도메인 모델과 관련이 있지 않지만, 여전히 도메인 설계를 구성하는 한 요소 다. 모든 복잡한 조립...">
     <meta name="generator" content="Movable Type 6.3.6">
-    <title>IDDD 111ì¥. í©í ë¦¬ - redutan</title>
+    <title>IDDD 111장. 팩토리 - redutan</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="http://weblog.youre.space/redutan/styles.css">
+    <link rel="stylesheet" href="https://weblog.youre.space/redutan/styles.css">
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="http://weblog.youre.space/redutan/styles_ie.css">
-    <script src="http://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <link rel="stylesheet" href="https://weblog.youre.space/redutan/styles_ie.css">
+    <script src="https://weblog.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
     <![endif]-->
     
-    <link rel="start" href="http://weblog.youre.space/redutan/">
-    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://weblog.youre.space/redutan/atom.xml" />
-    <link rel="canonical" href="http://weblog.youre.space/redutan/2018/06/000947.html" />
+    <link rel="start" href="https://weblog.youre.space/redutan/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/redutan/atom.xml" />
+    <link rel="canonical" href="https://weblog.youre.space/redutan/2018/06/000947.html" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -27,20 +27,20 @@
 </script>
 
 
-    <link rel="prev" href="http://weblog.youre.space/redutan/2018/06/000940.html" title="IDDD 10장. 애그리게잇">
-    
+    <link rel="prev" href="https://weblog.youre.space/redutan/2018/06/000940.html" title="IDDD 10장. 애그리게잇">
+    <link rel="next" href="https://weblog.youre.space/redutan/2018/07/000963.html" title="IDDD 12장. 리파지토리">
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="en-us">
-    <meta property="og:title" content="IDDD 111ì¥. í©í ë¦¬">
-    <meta property="og:url" content="http://weblog.youre.space/redutan/2018/06/000947.html">
+    <meta property="og:title" content="IDDD 111장. 팩토리">
+    <meta property="og:url" content="https://weblog.youre.space/redutan/2018/06/000947.html">
     <meta property="og:description" content="애그리게잇을 생성하는 책임을 가지는 메소드나 객체를 말한다. 애그리게잇 생성을 캡슐화 도메인 모댈 내의 팩토리 복잡한 객체와 애그리게잇 인스턴스를 생성하는 책임을 별도의 객체로 이동시키자. 여기서의 책임은 도메인 모델과 관련이 있지 않지만, 여전히 도메인 설계를 구성하는 한 요소 다. 모든 복잡한 조립...">
     <meta property="og:site_name" content="redutan">
-    <meta property="og:image" content="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    <meta property="og:image" content="https://weblog.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
     <!-- Metadata -->
     <meta itemprop="description" content="애그리게잇을 생성하는 책임을 가지는 메소드나 객체를 말한다. 애그리게잇 생성을 캡슐화 도메인 모댈 내의 팩토리 복잡한 객체와 애그리게잇 인스턴스를 생성하는 책임을 별도의 객체로 이동시키자. 여기서의 책임은 도메인 모델과 관련이 있지 않지만, 여전히 도메인 설계를 구성하는 한 요소 다. 모든 복잡한 조립...">
-    <link itemprop="url" href="http://weblog.youre.space/redutan/2018/06/000947.html">
-    <link itemprop="image" href="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    <link itemprop="url" href="https://weblog.youre.space/redutan/2018/06/000947.html">
+    <link itemprop="image" href="https://weblog.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
     
   </head>
   <body>
@@ -50,7 +50,7 @@
           <div id="header-inner">
             <div id="header-content">
               <h1>
-                <a href="http://weblog.youre.space/redutan/">
+                <a href="https://weblog.youre.space/redutan/">
 
                   redutan
 
@@ -61,7 +61,7 @@
 
             <nav role="navigation">
           <ul>
-            <li><a href="http://weblog.youre.space/redutan/">Home</a></li>
+            <li><a href="https://weblog.youre.space/redutan/">Home</a></li>
 
 
           </ul>
@@ -72,13 +72,13 @@
         <div id="content">
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
-              <li class="breadcrumb-list-item"><a href="http://weblog.youre.space/redutan/">Home</a></li>
-              <li class="breadcrumb-list-item">IDDD 111ì¥. í©í ë¦¬</li>
+              <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/redutan/">Home</a></li>
+              <li class="breadcrumb-list-item">IDDD 111장. 팩토리</li>
             </ul>
             <div id="individual-main" class="main" role="main">
               <article id="entry-947" class="entry entry-asset asset hentry">
                 <div class="asset-header">
-                  <h2 itemprop="name" class="asset-name entry-title">IDDD 111ì¥. í©í ë¦¬</h2>
+                  <h2 itemprop="name" class="asset-name entry-title">IDDD 111장. 팩토리</h2>
                   <footer class="asset-meta">
                     <ul class="asset-meta-list">
                       <li class="asset-meta-list-item">Posted on <time datetime="2018-06-07T12:16:00+09:00" itemprop="datePublished">June  7, 2018</time></li>
@@ -321,8 +321,10 @@
                 <nav class="page-navigation entry-navigation pagination content-nav">
                   <ul class="page-navigation-list">
 
-                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="http://weblog.youre.space/redutan/2018/06/000940.html" title="IDDD 10장. 애그리게잇">Previous entry</a></li>
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/redutan/2018/06/000940.html" title="IDDD 10장. 애그리게잇">Previous entry</a></li>
 
+
+                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="https://weblog.youre.space/redutan/2018/07/000963.html" title="IDDD 12장. 리파지토리">Next entry</a></li>
 
                   </ul>
                 </nav>
@@ -356,7 +358,7 @@
 
         <input type="hidden" name="limit" value="20">
         <button type="submit" name="button">
-          <img alt="Search" src="http://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+          <img alt="Search" src="https://weblog.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
         </button>
       </div>
     </form>
@@ -368,19 +370,23 @@
     <select>
       <option>Select a Month...</option>
     
-      <option value="http://weblog.youre.space/redutan/2018/06/">June 2018</option>
+      <option value="https://weblog.youre.space/redutan/2018/07/">July 2018</option>
     
   
     
-      <option value="http://weblog.youre.space/redutan/2018/05/">May 2018</option>
+      <option value="https://weblog.youre.space/redutan/2018/06/">June 2018</option>
     
   
     
-      <option value="http://weblog.youre.space/redutan/2018/04/">April 2018</option>
+      <option value="https://weblog.youre.space/redutan/2018/05/">May 2018</option>
     
   
     
-      <option value="http://weblog.youre.space/redutan/2018/02/">February 2018</option>
+      <option value="https://weblog.youre.space/redutan/2018/04/">April 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/redutan/2018/02/">February 2018</option>
     
     </select>
   </div>
@@ -390,7 +396,7 @@
 
 <div class="widget-syndication widget section">
   <div class="widget-content">
-    <p><img src="http://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://weblog.youre.space/redutan/atom.xml">Subscribe to this blog's feed</a></p>
+    <p><img src="https://weblog.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="https://weblog.youre.space/redutan/atom.xml">Subscribe to this blog's feed</a></p>
 
   </div>
 </div>
@@ -403,20 +409,20 @@
             <div id="footer-content">
   <nav role="navigation">
           <ul>
-            <li><a href="http://weblog.youre.space/redutan/">Home</a></li>
+            <li><a href="https://weblog.youre.space/redutan/">Home</a></li>
 
 
           </ul>
         </nav>
 
-  <p class="license">&copy; Copyright 2018.</p>
+  <p class="license">&copy; Copyright 2019.</p>
   <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
 </div>
           </div>
         </footer>
       </div>
     </div>
-    <script src="http://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
-    <script src="http://weblog.youre.space/redutan/mt-theme-scale2.js"></script>
+    <script src="https://weblog.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="https://weblog.youre.space/redutan/mt-theme-scale2.js"></script>
   </body>
 </html>
