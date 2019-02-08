@@ -266,7 +266,7 @@ MT.util = function () {
     commentsTotalPages = Math.ceil(totalComments / commentsPerPage);
     pageNum = 1;
     
-    loadingIcon = "<img title='Loading...' src='http://connexus.youre.space/mt-static/images/indicator.white.gif' alt='Loading' />";
+    loadingIcon = "<img title='Loading...' src='https://weblog.youre.space/mt-static/images/indicator.white.gif' alt='Loading' />";
     
     commentContentDiv = M.getEl("comments-content");
     topNav = M.getEl("top-comment-nav");
@@ -441,7 +441,7 @@ MT.util = function () {
         .join('-')
         .replace(/[^a-zA-Z0-9-]/g, '');
     jsonUrl  = [
-        "http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=comment_listing&direction=",
+        "http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=comment_listing&direction=",
         direction,
         "&entry_id=",
         entryID,
@@ -654,7 +654,7 @@ function mtFetchUser(cb) {
         var u = mtGetUser();
         var script = document.createElement('script');
         var ts = new Date().getTime();
-        script.src = 'http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=userinfo&blog_id=8&jsonp=' + cb + '&ts=' + ts + '&sid=' + u.sid;
+        script.src = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=userinfo&blog_id=8&jsonp=' + cb + '&ts=' + ts + '&sid=' + u.sid;
         (document.getElementsByTagName('head'))[0].appendChild(script);
     }
 }
@@ -664,7 +664,7 @@ function mtVerifySession(cb) {
     var script = document.createElement('script');
     var ts = new Date().getTime();
     var u = mtGetUser();
-    script.src = 'http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=verify_session&blog_id=8&jsonp=' + cb + '&ts=' + ts + '&sid=' + u.sid;
+    script.src = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=verify_session&blog_id=8&jsonp=' + cb + '&ts=' + ts + '&sid=' + u.sid;
     (document.getElementsByTagName('head'))[0].appendChild(script);
 }
 
@@ -790,13 +790,13 @@ mtAttachEvent('usersignin', mtUserOnLoad);
 function mtSignIn() {
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=login&blog_id=8';
+    var url = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=login&blog_id=8';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
             url += '&entry_id=' + entry_id;
         } else {
-            url += '&return_url=http%3A%2F%2Fweblog.youre.space%2Fleejungpyo%2F';
+            url += '&return_url=https%3A%2F%2Fweblog.youre.space%2Fleejungpyo%2F';
         }
     } else {
         url += '&return_url=' + encodeURIComponent(doc_url);
@@ -835,13 +835,13 @@ function mtSignOut(entry_id) {
     mtClearUser();
     var doc_url = document.URL;
     doc_url = doc_url.replace(/#.+/, '');
-    var url = 'http://connexus-again.youre.space:5000/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1&blog_id=8';
+    var url = 'http://connexus-recall.youre.space:5000/mt-comments.cgi?__mode=handle_sign_in&static=0&logout=1&blog_id=8';
     if (is_preview) {
         if ( document['comments_form'] ) {
             var entry_id = document['comments_form'].entry_id.value;
             url += '&entry_id=' + entry_id;
         } else {
-            url += '&return_url=http%3A%2F%2Fweblog.youre.space%2Fleejungpyo%2F';
+            url += '&return_url=https%3A%2F%2Fweblog.youre.space%2Fleejungpyo%2F';
         }
     } else {
         url += '&return_url=' + encodeURIComponent(doc_url);
