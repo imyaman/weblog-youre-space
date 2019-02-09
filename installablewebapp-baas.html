@@ -8,9 +8,7 @@
 </head>
 <body>
 
-<div id="result"></div>
-
-
+<div id="mybody"></div>
 
 <div> TEST AREA </br>
 <a class="button" id="001125">http://weblog.youre.space/baas/2018/07/001125.html</a><br>
@@ -61,7 +59,7 @@ router
     theIdUrl = params.id;
     console.log(theIdUrl);
     $.get("https://weblog.youre.space/baas/bodyonly/" + theIdUrl + ".html", function( data ) {
-      $( "#result" ).html( data );
+      $( "#mybody" ).html( data );
     });
 
     $(document).attr("title", "New Title"+theIdUrl);
