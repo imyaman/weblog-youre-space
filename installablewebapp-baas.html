@@ -48,6 +48,13 @@ router
     console.log('this is main/root handler');
     console.log(window.location);
     // show menu or a list
+    $.get("https://weblog.youre.space/baas/latest.html", function( data ) {
+      $( "#mybody" ).html( data );
+    });
+
+    $(document).attr("title", "New Title"+theIdUrl);
+    $("meta[property='og\\:title']").attr("content", 'result.title'+theIdUrl);
+    $("meta[property='og\\:description']").attr("content", 'result.title'+theIdUrl);
   })
   .resolve();
 
