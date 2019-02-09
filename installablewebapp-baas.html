@@ -70,8 +70,8 @@ router
     });
 
     $(document).attr("title", "New Title"+theIdUrl);
-    $("meta[property='og\\:title']").attr("content", 'result.title'+theIdUrl);
-    $("meta[property='og\\:description']").attr("content", 'result.title'+theIdUrl);
+    $("meta[property='og\\:title']").attr("content", 'title: ' + theIdUrl);
+    $("meta[property='og\\:description']").attr("content", 'description: ' + theIdUrl);
 
   })
   .resolve();
