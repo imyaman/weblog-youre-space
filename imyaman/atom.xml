@@ -4,9 +4,600 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-02-10T06:21:46Z</updated>
+    <updated>2019-02-10T22:23:07Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Get started: Take a GCP step-by-step tutorial</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001911.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1911</id>
+
+    <published>2019-02-10T22:23:07Z</published>
+    <updated>2019-02-10T22:23:07Z</updated>
+
+    <summary> @import url(&apos;https://fonts.googleapis.com/css?family=Roboto:400,500,700&apos;); @media screen and (max-width:737px) { .flexible {max-width: 600px !important;} .webkit { width: 100% !important;min-width: 100% !important;} .wrapper_new{width:100% !important;} .contents { width: 100% !important; } #ft5 { padding-right: 8px !important; } #ft4 { padding-right: 11px !important; } #ft3...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[ 
+
+ 
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+  
+  
+
+  
+  
+
+  
+  
+ 
+ 
+
+
+
+
+
+    
+    
+    
+  
+	@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+  
+  
+@media screen and (max-width:737px) {
+.flexible {max-width: 600px !important;}
+.webkit { width: 100% !important;min-width: 100% !important;}
+.wrapper_new{width:100% !important;}
+  .contents {
+    width: 100% !important;
+  }
+  #ft5 {
+    padding-right: 8px !important;
+  }
+  #ft4 {
+    padding-right: 11px !important;
+  }
+  #ft3 {
+    padding-right: 10px !important;
+  }
+  #ft2 {
+    padding-right: 8px !important;
+  }
+  #ft1 {
+    padding-right: 9px !important;
+  }
+  .contents {
+    display: inline-block !important;
+    width: 100% !important;
+    height: 39px !important;
+  }
+}
+@media screen and (max-width:414px) {
+  .flexible { 
+    width: 100% !important;
+    max-width: 600px !important;
+  }
+  .body {
+    padding-left: 10px !important;
+    padding-right: 10px !important
+  }
+  .banner_logo {
+    width: 240px !important;
+  }
+  #columndiv .inner {
+    padding-top: 4px !important;
+  }
+  .logo_holder_container {
+    padding: 24px 13px 13px 10px !important;
+  }
+  .bigger_wrapper_body {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .body_img {
+    width: 100% !important;
+    display: none !important;
+  }
+  .mobile_img {
+    width: 100% !important;
+    display: block !important;
+  }
+  .bottom_icons {
+    padding-top: 2px !important;
+  }
+  .bottom_icons .text_wrapper_inner_td {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .contents {
+    display: block !important;
+    width: 100% !important;
+   
+  }
+  .footer_pad {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .contents .text {
+    min-width: 18px;
+    padding-right: 8px !important;
+  }
+  .contents td {
+    height: auto;
+  }
+  .headline {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    padding-top: 24px !important;
+  }
+  .outer_cover2 {
+    padding-top: 6px !important;
+  }
+  .footer_wrapper_td, .social_icons_container {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .two_col_td {
+    display: block;
+    width: 100% !important;
+  }
+  .split_mobile {
+    display: block;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 8px !important;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+  .split_mobile2 {
+    display: block;
+    width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 20px !important;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+  .grey_section {
+    padding-top: 20px !important;
+    padding-bottom: 23px !important;
+  }
+  .grey_td_head {
+    padding-bottom: 12px !important;
+  }
+  .grey_section .split_mobile td {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+  .grey_section .split_mobile td img {
+    text-align: left !important;
+  }
+  .two_link_td, .two_link_td2 {
+    width: 100% !important;
+    display: block !important;
+  }
+  .two_link_td2 .body_link_tbl_td {
+    padding-left: 0 !important;
+  }
+  .two_link_td2 {
+    padding-top: 12px !important;
+  }
+}
+@media screen and (min-width: 812px) and (max-width: 812px),
+screen and (min-width: 736px) and (max-width: 736px),
+screen and (min-width: 667px) and (max-width: 667px),
+screen and (min-width: 568px) and (max-width: 568px),
+screen and (min-width: 414px) and (max-width: 414px),
+screen and (min-width: 375px) and (max-width: 375px),
+screen and (min-width: 320px) and (max-width: 320px) {
+  .body {
+    min-width: 100vw !important;
+  }
+}
+
+
+    
+  
+
+  
+
+
+
+         <div>
+           <div>Explore resources, take a tour of the GCP console, and find FAQs.</div>
+      
+	<table>
+ 
+  <tr>
+            <td>
+
+                <table>
+            <tr>
+              <td>
+                
+                <div>
+                      <table>
+                              <tr>
+                                  <td>
+                                      <table>
+                                          <tr> 
+                                            <td>
+                                               <img src="http://services.google.com/fh/files/emails/gcpexp_new_desk.png" width="306" alt="Google Cloud Platform" height="auto">
+                                            </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr>
+                      </table>
+               </div>
+                
+               <div>
+              <table>
+                  <tr>
+                      <td>
+                         <table>
+                             <tr>
+                                <td>
+                                   <table>
+                                        <tr>
+                                            <td>
+                                            <a href="https://www.google.com/appserve/mkt/p/AHANi0Y90lQQyiz1oppO8QpHJfCXgfTFqyHk9R53Lbj48dgEyAPDzQ8SZu5-qyLdkWYdvIJ9WTRFTC5m7BN7xf0ps1SVdEsiDViTzPkvKyBDCYhWEfsxGAOF5uOq1AOCUXR4EREA2b6BP36RKQ2rt8OUS-awPfA_SoFan1wdVzVmGu5fr98KWrci2f96zWUsXLt4j4UsFXQAFBH_aA0rDL0bNohPC5ZN1qfDVYKa4PpTPSSTTyh6-4FI5XJTddG70UJ31IAnHQ">Go to your Console</a>
+                                            </td>
+                                          <td>
+                                            <table>
+                                                  <tr>
+                                                    
+                                                    
+                                                    <td>
+													
+                                                        <a href="https://www.google.com/appserve/mkt/p/AHANi0Y90lQQyiz1oppO8QpHJfCXgfTFqyHk9R53Lbj48dgEyAPDzQ8SZu5-qyLdkWYdvIJ9WTRFTC5m7BN7xf0ps1SVdEsiDViTzPkvKyBDCYhWEfsxGAOF5uOq1AOCUXR4EREA2b6BP36RKQ2rt8OUS-awPfA_SoFan1wdVzVmGu5fr98KWrci2f96zWUsXLt4j4UsFXQAFBH_aA0rDL0bNohPC5ZN1qfDVYKa4PpTPSSTTyh6-4FI5XJTddG70UJ31IAnHQ"><img src="http://services.google.com/fh/files/emails/release_notes_diagonal_array.png" alt="" width="16"></a>
+                                                    </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                   </td>
+                                 </tr>
+                               </table>
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+                
+            </td>
+         </tr>
+       </table>
+    </td>
+  </tr>
+ 
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <table>
+                  <tr>
+                    <td>
+                     <table>
+                        <tr>
+                           <td>Get started with GCP.
+                           </td>
+                        </tr>
+                     </table>
+                      </td>
+                  </tr>
+<tr>
+          <td>Try a tutorial to get up and running fast.
+          </td>
+</tr>
+<tr>
+  <td>
+    <table>
+      <tr>
+        <td> </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+          <td>The best way to start exploring Google Cloud Platform is to take one of our tutorials – we’ll guide you through it. If you <a href="https://www.google.com/appserve/mkt/p/AHANi0bdo3T9HouvWy_xDtb8rJQ45GCM-xPZN5O9VzI0OFDd9_5TEy-_p3DFCOTZJibUcRcTe_jxJlrnQ1nuOCZaNI47BKkf7P4nm0MRpc6c7vSyLYvbqczNG7fd8FRKSI1zTjMVhlvl3drWQeFEJIsFykq0">fill out your profile</a>, we’ll also send you resources tailored to your interests.
+          </td>
+</tr>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <table>
+                  <tr>
+                     <td>
+                        <img src="http://services.google.com/fh/files/emails/gcp_ft_gs_compute_vm.png" alt="" width="72">
+                     </td>
+                  </tr>
+               </table>
+            </td>
+            <td>
+               <table>
+                  <tr>
+                     <td>Learn to use virtual machines on GCP.
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <table>
+                           <tr>
+                              <td>
+                                 <table>
+                                    <tr>
+                                       <td>
+                                          <a href="https://www.google.com/appserve/mkt/p/AHANi0a7D8QdcMI84IprR7Ijy8mfWx-xTDODc-71JFwdD59BPBE46Q7n7Fj7UUBIdNAyql51g0z8oVb4wJegmcYoV5-BQebc09NKWHdLZoFSYuD15GaCrQFVfZYstsdpvxx-RKy2LnN3J6NRnFFjpZjsYTRl5anSZbsOcbDI9R8gR-4-GwWLt0frz26alYa2qkgXMnGRO2sQge9nNQQbVPZbVc7QegI_PdUmyIS1rUftLMxoVWvLH6sC8dQPWoeUN6Vrx_SLzHwJe7XQmFw9opl7YtG3M57W56r7j6u2vMXI8yqcyrBUXihR9vH-bU8Fb1cdmWr87SfLLfH8LZ8">Take a tutorial</a>
+                                       </td>
+                                       <td><a href="https://www.google.com/appserve/mkt/p/AHANi0a7D8QdcMI84IprR7Ijy8mfWx-xTDODc-71JFwdD59BPBE46Q7n7Fj7UUBIdNAyql51g0z8oVb4wJegmcYoV5-BQebc09NKWHdLZoFSYuD15GaCrQFVfZYstsdpvxx-RKy2LnN3J6NRnFFjpZjsYTRl5anSZbsOcbDI9R8gR-4-GwWLt0frz26alYa2qkgXMnGRO2sQge9nNQQbVPZbVc7QegI_PdUmyIS1rUftLMxoVWvLH6sC8dQPWoeUN6Vrx_SLzHwJe7XQmFw9opl7YtG3M57W56r7j6u2vMXI8yqcyrBUXihR9vH-bU8Fb1cdmWr87SfLLfH8LZ8"><img src="http://services.google.com/fh/files/emails/release_notes_diagonal_array.png" alt="arrow" width="16"></a>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                               
+                             
+                             
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr>
+          <td>Here are a few other ways to get familiar with GCP:
+          </td>
+</tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                
+                
+                <td>
+                
+                  <img alt="" src="http://services.google.com/fh/files/emails/day1_img2.png" width="30"></td>
+              </tr>
+            </table>
+          </td>
+          <td><strong>Explore the GCP Console.</strong> Check out the <a href="https://www.google.com/appserve/mkt/p/AHANi0bZEFmzxT105Z3BqejpZTzhfvenwd9IKnHL70mfSgx9tUq0jtiTMYUVohvCdJT_aekiV368GlV6jxfvoH0KVjBbWZndc5KCfiAVp2Bo7CDwbYbQ8zfGbIXN2D-17R_-gdJ_bgCHdKmUPVWq9bWCcgaGjejFB97VvYkCSt4v5EJ8tGdfR6O5z63U7GEcfmqpCCcl4t4fsAqWEIpO-5bwu5j-fiDbb9uXpuKvCG6ae9WSXrM6vroPJd8lYbuYtQcK9nQedit_MouuKzqVkWaH1YMnEhpONu5fjq1TSfaamlaMCQ0eZuIGl8sv5Kv_Lk7GjBoi30Et">Cloud Console tour</a> for an interactive walk-through.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                
+                
+                <td>
+                
+                  <img alt="" src="http://services.google.com/fh/files/emails/day1_img3.png" width="32"></td>
+              </tr>
+            </table>
+          </td>
+          <td><strong>Watch a video.</strong> Start with “<a href="https://www.google.com/appserve/mkt/p/AHANi0a4HAZHZ4X1yYpBs2JismRp5pXDg0pC2dS2QYp7U-xurULLxyhUXEa331fUHwwrHwgEeyFgCuew3-xGz5zyl8jwSUIZaxvPfL2k-6gsZL5YXK3oYPhbtovJLUzyHclKJWH-6i6QYP3TlB3_bugOmLPvj2mTyib46dwwCSZRnhMcS3oZa21LzPBR56vxSvNatVeugM_-tEizuOAscQHhauSs4v0Ll7ViSce4UwU3ywd68yts_G6u9De7hPcXq1FjXreGfWmEM6ndQGUDq9lQXR3fYAwmziOMbvc">Navigating Google Cloud Platform</a>,” the intro video for new users.
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+            <table>
+              <tr>
+                
+                
+                <td>
+                
+                  <img alt="" src="http://services.google.com/fh/files/emails/day1_img4.png" width="32"></td>
+              </tr>
+            </table>
+          </td>
+          <td><strong>Browse resources.</strong> Explore the <a href="https://www.google.com/appserve/mkt/p/AHANi0aX7j1EgTn6S4XErE-kpPV7kc6D5kXDFfiazobPCh3IEY35LBWJDvsw5YKKnvQfdeXCcMSSvtVxCKcONHxWlGz5mAN1Untl3C4HWMu6NFO16nJDz9a_AhISFDDOEAFCc1jmIOG4ocVKotORF3jje9SgMLWbV_YRrT1Mnh9zuTSOx_3jN-5gC6Oj2mDdcK6uDkqKJcIZXoksgxHhexJeOspKeatSXX2ia4s-E_WjHZRoQ5SjKKuJUQr6F-eLOHZJbdKrxBRTJiSpB1_Kg0rpnayYYd7qAxuvWLnM0qZVq8bzCfF-ocw">GCP Free Tier FAQ</a> for more info about the program.
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+                  <tr>
+                     <td>
+<table>  
+  <tr>
+    <td>
+      <a href="https://www.google.com/appserve/mkt/p/AHANi0ZNd6-Rflyqg3v9EiaNp3q4UnLJxBA9YJ9V0xLBWdTfQ2waisxf3-HOKLhXEHP9V-JZ_mBD1UDTlhpv4Rwlm5bVCcb1TWggAftVvOic9l-ziidSeZvQPBmFtjRHHqFeMuyGYixYyVEE3a7ZjfQ8QqWvKg"><span>Complete your profile</span></a>
+     </td>
+  </tr>
+</table>
+                     </td>
+                  </tr>
+<tr>
+          <td>See you in the cloud,
+          </td>
+</tr>
+<tr>
+          <td>The Google Cloud Platform Team
+          </td>
+</tr>
+<tr>
+   <td>
+
+ 
+<table>
+ 
+  <tr>
+     <td>
+        <table>
+      
+    <tr>
+       <td>
+         <table>
+            <tr>
+              <td>
+     
+     <table>
+       <tr>
+           <td>
+             <a href="https://www.google.com/appserve/mkt/p/AHANi0bUmpP6hwbYHryGAWQTCiBox8gtXbOw4Xvfk8CiKeTvySnuU-E0fegXQ0JBVbloz8GbPfaUvfcAmDCRJSYHqsfSHda3iZB3kMod3b1x79WyvBKzxC4Dt3bBY99erkWmVoeERgMBlfpojFyapets8-gYHGVIWxGqkViR27tMvNfjk7emIOpmGHoKebIfpYzs3csyTiT7d8GZPux9Imd8rkz5QOtKCTdTEqEBXSCYP0aOwj2tKY3hMvL9areoDnmQXzgXawzB5b4znJujs3AoYyWPj7hR0fHH_T2pVijre-pNtFUIzAo"><img src="http://services.google.com/fh/files/emails/ic_forums_footer_2x.png" width="18" alt="Forums" height="auto"></a>
+            </td>
+            <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bUmpP6hwbYHryGAWQTCiBox8gtXbOw4Xvfk8CiKeTvySnuU-E0fegXQ0JBVbloz8GbPfaUvfcAmDCRJSYHqsfSHda3iZB3kMod3b1x79WyvBKzxC4Dt3bBY99erkWmVoeERgMBlfpojFyapets8-gYHGVIWxGqkViR27tMvNfjk7emIOpmGHoKebIfpYzs3csyTiT7d8GZPux9Imd8rkz5QOtKCTdTEqEBXSCYP0aOwj2tKY3hMvL9areoDnmQXzgXawzB5b4znJujs3AoYyWPj7hR0fHH_T2pVijre-pNtFUIzAo">Forums</a>
+           </td>
+     </tr>
+   </table>
+    
+     <table>
+       <tr>
+           <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0YE2I2aAJwT8_qdXes548BOCxK_JBut1SF5OXgSSmNd06SdjBMD6L87uXQwHYChrOrgkTF0qiDwA-9irSLj1WBWNJc9m_U1nw4UmtsSdsm8Z92ysQfjmK6DgkVehcYLO6ig5ynrISwcleHIpsoGzAQXcAWmEYaAScoD8sHuc36qN2jlg2Sq42vnie7QUZiGxYbK1OAxA6DQ776a0x95GRcBGQsX3sCOaWETcAVxgljKAxKDEJNsZaS0S7jjpWByUor4Jg"><img src="http://services.google.com/fh/files/emails/ic_support_footer_2x.png" width="18" alt="Support" height="auto"></a>
+           </td>
+           <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0YE2I2aAJwT8_qdXes548BOCxK_JBut1SF5OXgSSmNd06SdjBMD6L87uXQwHYChrOrgkTF0qiDwA-9irSLj1WBWNJc9m_U1nw4UmtsSdsm8Z92ysQfjmK6DgkVehcYLO6ig5ynrISwcleHIpsoGzAQXcAWmEYaAScoD8sHuc36qN2jlg2Sq42vnie7QUZiGxYbK1OAxA6DQ776a0x95GRcBGQsX3sCOaWETcAVxgljKAxKDEJNsZaS0S7jjpWByUor4Jg">Support</a>
+           </td>
+       </tr>
+   </table>
+     
+     <table>
+      <tr>
+        <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bmj2F9Rbne45Mv_IwpE0vEYtKBaaHmTlzpZGUQEnz4XWNNrcoxe6lyZ2kWJJqF7LdpLSo_uydpaSV-edn7B4bfI04Q_Rv_NVsswCz9pjjfkPPwygJ-iRBO894VYAW_tI6v9ggri5rpFZpNzUIsAQcdxKwlCurx4DZ9K8SC71_2jpr51Zs5BIFx9uzSI2oWSCSAChS31PNo5apuFVEZIl5R_yvS6cmroX8hHEha45Yo8DDK9tYX8pdQT4VeIX4NiIb5IT5lo9n5bDBNVfz8M4jiDu4e15vnX6DYxI0oY9k"><img src="http://services.google.com/fh/files/emails/ic_faq_footer_2x.png" width="18" alt="FAQ" height="auto"></a>
+        </td>
+        <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bmj2F9Rbne45Mv_IwpE0vEYtKBaaHmTlzpZGUQEnz4XWNNrcoxe6lyZ2kWJJqF7LdpLSo_uydpaSV-edn7B4bfI04Q_Rv_NVsswCz9pjjfkPPwygJ-iRBO894VYAW_tI6v9ggri5rpFZpNzUIsAQcdxKwlCurx4DZ9K8SC71_2jpr51Zs5BIFx9uzSI2oWSCSAChS31PNo5apuFVEZIl5R_yvS6cmroX8hHEha45Yo8DDK9tYX8pdQT4VeIX4NiIb5IT5lo9n5bDBNVfz8M4jiDu4e15vnX6DYxI0oY9k">FAQ</a>
+        </td>
+     </tr>
+   </table>
+     
+     <table>
+       <tr>
+          <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bPyerqOjIm9PBEv0ZzoSIZZu9fRkKiRK4eS7R1g0pFL8xCScYKPpyuDd7G5w0Ihexhtc-m9Eho0merKvwPkuSEHQgakm2MmNQgPM1Yd-RbifF7fTPHrHN2EiyUeaQdg8sh1CTDIl1BjC6_ucduMTuYoaSsxcuM8HM5BUDAqTKL_q_nbZZR5rb1dBbgf-75HUVJV0jogsbJF6RyRL0UiKXPuNYr-EotRgKlCIaqYNMHn5hC4zJ3D8sz9eEbJc7TNyc"><img src="http://services.google.com/fh/files/emails/ic_documentation_footer_2x.png" width="18" alt="Documentation" height="auto"></a>
+          </td>
+          <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bPyerqOjIm9PBEv0ZzoSIZZu9fRkKiRK4eS7R1g0pFL8xCScYKPpyuDd7G5w0Ihexhtc-m9Eho0merKvwPkuSEHQgakm2MmNQgPM1Yd-RbifF7fTPHrHN2EiyUeaQdg8sh1CTDIl1BjC6_ucduMTuYoaSsxcuM8HM5BUDAqTKL_q_nbZZR5rb1dBbgf-75HUVJV0jogsbJF6RyRL0UiKXPuNYr-EotRgKlCIaqYNMHn5hC4zJ3D8sz9eEbJc7TNyc">Documentation</a>
+          </td>
+      </tr>
+    </table>
+     
+     <table>
+       <tr>
+           <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bh81cdtr17ZcMjljlZY2JQv-g7gKpRUIHYyS5gwh8AHRdC_c1JZquYDMKFsEcGTRKULUHTwF3y8Vz1-lw_ydzKLjyNY_dNolxEGBRes24DgghRDMcwWspMVXsKhBMGUE67EFzvKGZXvmX00PAWY2iYOYo3TX4Rb8IvmDEfvPOK7u9BlETOrQZiEx0NBX25Z3je_bgxOPpLbnjfYAJQv7J_TYLroRrtGJ_5naDnjsmauhIMHgNtYKM6IYJYC-ZdQsTnH3U9hfgs7m4STsO6"><img src="http://services.google.com/fh/files/emails/ic_tutorials_footer_2x.png" width="18" alt="Tutorials" height="auto"></a>
+            </td>
+            <td>
+ <a href="https://www.google.com/appserve/mkt/p/AHANi0bh81cdtr17ZcMjljlZY2JQv-g7gKpRUIHYyS5gwh8AHRdC_c1JZquYDMKFsEcGTRKULUHTwF3y8Vz1-lw_ydzKLjyNY_dNolxEGBRes24DgghRDMcwWspMVXsKhBMGUE67EFzvKGZXvmX00PAWY2iYOYo3TX4Rb8IvmDEfvPOK7u9BlETOrQZiEx0NBX25Z3je_bgxOPpLbnjfYAJQv7J_TYLroRrtGJ_5naDnjsmauhIMHgNtYKM6IYJYC-ZdQsTnH3U9hfgs7m4STsO6">Tutorials</a>
+             </td>
+       </tr>
+     </table>
+     
+     </td>
+     </tr>
+     </table>
+         </td>
+         </tr>
+      
+     </table>
+     </td>
+     </tr>
+</table>
+</td>
+</tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+ 
+<tr>
+  <td>
+     <table>
+        <tr>
+            <td> 
+               <img src="http://services.google.com/fh/files/emails/bottom_footer_logo.png" alt="Google Cloud" width="140">
+             </td>
+       </tr>
+       <tr>
+                     <td> 
+                            <a>Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+                       <br />
+                       <br />
+                       This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive updates and tips about your Google Cloud Platform account. If you don’t want to receive such emails in the future, please unsubscribe here: <div><a href="https://www.google.com/appserve/mkt/optout/AHANi0YmTBEfvR-JpWFgK-Zite4Hu5MjnuJufYXmzDzVWzqxjP9EJxG5il3FsgoHW3XmKWWj?hl=en">https://www.google.com/appserve/mkt/optout/AHANi0YmTBEfvR-JpWFgK-Zite4Hu5MjnuJufYXmzDzVWzqxjP9EJxG5il3FsgoHW3XmKWWj?hl=en</a></div>
+You can also change your preferences on your account’s profile page by logging in at <a href="http://www.google.com/appserve/mkt/p/AHANi0ZwLjV7CdLVOnzfPr29IFYS_7ZgYqmxVY1PoGn-AUycdcM9V9TpbnXwVCewvcsLUt09BU2fVU5NaIznhwEZT5bc">console.cloud.google.com</a> 
+                              </td>
+                    </tr>
+   </table>
+ </td>
+</tr>
+<tr>
+                      <td> 
+                        <table> 
+                          <tr>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0aNuTpH-tyK5B73AqNUtAeDtRUihFGpFVQlLUNqkEyvEn8h9vtrpOVqAQq_vBGFBNsT_q_QdA7Nd5sMJqYz97R45N-Cx00yt7qB18fn"><img src="http://services.google.com/fh/files/emails/release_notes_apr_gplus.png" alt="G+" width="22"></a></td>
+                             <td>   </td>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0bNtvxKzWQ8K1PWJIHfadjgo_EAZvJRCwxJsXcxhW8HjFNkVGM2FajmpQI20qRVYWcPCOMIoIxJHugF0Rr-ojwduOVHJ3I"><img src="http://services.google.com/fh/files/emails/gcp_new_blog_footericon.png" alt="Google Cloud Blog" width="24"></a></td> 
+                             <td>   </td>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0ZL-I2Ps6MNcK1mrVqzEwgfIn8skoN2viEvudFy8sBERHdY2mCZ0hiS6dZtoBbtEUVtnyuosDdXweVuhgprvgSDx5f_HV1RnWI3StJFXr6O"><img src="http://services.google.com/fh/files/emails/release_notes_apr_github.png" alt="GitHub" width="17"></a></td>
+                             <td>   </td>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0YnC-nSQbxp9_W-UbdrS9iSrl_nTHGbcEk4Jt_gb_zndRbrHP7mjh9M1oYdplsH2WnZ4lO8vhFUDlIxcAYHOzkr7JzZ7ImmY8JlmgQ_AO6uiwUSsnTJnsTg"><img src="http://services.google.com/fh/files/emails/release_notes_apr_linkedin.png" alt="LinkedIn" width="17"></a></td>
+                             <td>   </td>
+                             <td><a href="https://www.google.com/appserve/mkt/p/AHANi0YDPvua1ICny_zpG3s0gv5NHNeTh63bGlORxSY6mWzLnLK5nMx033mauYO--clGEFna3_ZiGVBek7KiwnY03JRa0ZLlbImqtodM"><img src="http://services.google.com/fh/files/emails/release_notes_apr_twitter.png" alt="Twitter" width="16"></a></td>
+							 <td>   </td>
+							 <td><a href="https://www.google.com/appserve/mkt/p/AHANi0YOIEjt55VIvof1HIzGhgIr_pkb-FVKqRD8WMN-YC4QbBGBMUhd1MjNKJXGP194b6o95nZzOeMLa4cecdv1bUybrIlNQcKY8uxfmlYwKZjS_Q"><img src="http://services.google.com/fh/files/emails/release_notes_apr_facebook.png" alt="Facebook" width="10"></a></td>
+                          </tr>
+                        </table>
+                       </td>
+                    </tr>
+
+  
+	</table>
+
+</div>
+<img height="1" src="https://www.google.com/appserve/mkt/img/AHANi0Z3GqWEvJkqjlZDcGUkr7X5zWqu3E4YxCADoKUKA7hv.gif" width="3">
+
+ 
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Andre Gide</title>
@@ -1165,33 +1756,6 @@ screen and (min-width: 320px) and (max-width: 320px) {
 
 
 
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>명절 남은 전 활용꿀팁! 모둠 전찌개 레시피</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001896.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1896</id>
-
-    <published>2019-02-07T07:00:59Z</published>
-    <updated>2019-02-07T07:00:59Z</updated>
-
-    <summary>아쉬운 설 연휴가 끝났습니다.명절엔 취재기자도 부모님이 계시는 곳에서 휴일을 보내고 왔죠.오랜만에 만나는 반가운 얼굴도 보고함께 맛있는 요리도 만들었습니다.명절 연휴가 끝나고 돌아오는 취재기자에게어머니는 이것저것 맛있는 음식들을 싸주십니다.여느 어머님들의 마음이 다 이와 같겠죠.들고 갈 일이 버겁지만 어머니의 정성이라 무시할 수 없었답니다.짐을 열어보니...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="성남지식" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[아쉬운 설 연휴가 끝났습니다.명절엔 취재기자도 부모님이 계시는 곳에서 휴일을 보내고 왔죠.오랜만에 만나는 반가운 얼굴도 보고함께 맛있는 요리도 만들었습니다.명절 연휴가 끝나고 돌아오는 취재기자에게어머니는 이것저것 맛있는 음식들을 싸주십니다.여느 어머님들의 마음이 다 이와 같겠죠.들고 갈 일이 버겁지만 어머니의 정성이라 무시할 수 없었답니다.짐을 열어보니 넉넉하게 싸주신 전과 만두 등..자취하는 딸 행여나 궁색하게 끼니를 거르지 않을까참 넉넉히도 주셨지요.그런데 이 많은 걸 다 전자렌지에 데워서 먹으려니벌써부터 조금 물리는 느낌입니다.시원한 김치를 넣고 찌개를 끓여먹으면 어떨까 하는 생각에전을.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221460037504">http://seongnamdiary.com/221460037504</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
