@@ -4,9 +4,191 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-02-12T01:28:49Z</updated>
+    <updated>2019-02-12T01:41:00Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>AutoML Natural Language was unable to process your dataset &quot;capstone001&quot;</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001922.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1922</id>
+
+    <published>2019-02-12T01:41:00Z</published>
+    <updated>2019-02-12T01:41:00Z</updated>
+
+    <summary> MY CONSOLE Hello Google Cloud AI Customer, Due to an error, AutoML Natural Language was unable to process your dataset &#34;capstone001&#34;. To see a more detailed error log, go back to your dataset. Additional details ERROR CODES: 3 Last...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[  
+  <div>
+    <table>
+      
+        <tr>
+          <td>
+            <table>
+              
+                <tr>
+                  <td>
+                    <table>
+                      
+                        <tr>
+                          <td>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_logo.png" width="261" alt="Google Cloud Platform">
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    <table>
+                                      
+                                        <tr>
+                                          <td>
+                                            <a href="https://console.cloud.google.com">MY CONSOLE</a>
+                                          </td>
+                                        </tr>
+                                      
+                                    </table>
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                      
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      
+                        <tr>
+                          <td>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    <p>
+                                      Hello Google Cloud AI Customer,
+                                    </p>
+                                    <p>
+                                      Due to an error, AutoML Natural Language was unable to process your dataset &#34;capstone001&#34;.
+                                    </p>
+                                    <p>
+                                      To see a more detailed error log,
+                                      <a href="https://cloud.google.com/automl/ui/text/datasets/details?dataset=TCN7396201036694261977&amp;project=sys5-f9f83">go back to your dataset</a>.
+                                    </p>
+                                    <p>
+                                    </p>
+                                                                        Additional details
+                                    <pre><p>
+ERROR CODES:
+3
+Last error message
+Invalid input found at row 1 of gs://ips_perm_201902111217_733296153493703/import/effba4f32e1b48398fa5f80e9c81cca7/import-shard-0.csv: &#34;row_id,doc_text,information_and_communication_technologies,governance,urban_development,law_and_development,public_sector_development,agriculture,communities_and_human_settlements,health_and_nutrition_and_population,culture_and_development,environment,social_protections_and_labor,industry,macroeconomics_and_economic_growth,international_economics_and_trade,conflict_and_development,finance_and_financial_sector_development,science_and_technology_development,rural_development,poverty_reduction,private_sector_development,informatics,energy,social_development,water_resources,education,transport,water_supply_and_sanitation,gender,infrastructure_economics_and_finance&#34;. Error details: Dataset is not multilabel but more than one label assigned to the same document</p>
+</pre>
+                                                                    </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    Sincerely,
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    The Google Cloud AI Team
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                      
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      
+                        <tr>
+                          <td>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    <img src="http://services.google.com/fh/files/emails/gcp_free_trail_decs_new.png" width="12" alt="">
+                                  </td>
+                                  <td>
+                                    <a href="https://cloud.google.com/natural-language/automl/docs/quickstart">DOCUMENTATION</a>
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                      
+                    </table>
+                  </td>
+                </tr>
+              
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              
+                <tr>
+                  <td>
+                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_footer_logo.png" alt="">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>© 2018 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
+                  </td>
+                </tr>
+              
+            </table>
+          </td>
+        </tr>
+      
+    </table>
+    <div>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+  </div>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>AutoML Natural Language finished processing your dataset &quot;tweets_lactofit&quot;</title>
@@ -1701,33 +1883,6 @@ You can also change your preferences on your account’s profile page by logging
 
 
 
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>외국인 의료관광 안심케어 보험 가입(예기치 못한 사고에 대비하여 외국인 의료 관광객을 보호해 드립니다)</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001907.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1907</id>
-
-    <published>2019-02-08T09:56:54Z</published>
-    <updated>2019-02-08T09:56:54Z</updated>
-
-    <summary>성남시를 찾는외국인 의료 관광객은예기치 못한 사고 발생시보험사에 도움을 요청할 수 있어요!외국인 의료관광객을 위한보험이 가입되어 있으니깐요*.*성남시는분당서울대병원, 분당차병원,분당제생병원, 보바스기념병원 등의료관광 인프라가 잘갖춰져 있어요그래서 성남시를 찾는 의료 관광객이최근 5년 동안2만6786명이나 됩니다.의료 관광객이 더 안심하고찾아올 수 있도록안심케어 보험 가입여기는 의료관광 도시, 성남시성남시는 오늘도그대와 함께...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="성남정책" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[성남시를 찾는외국인 의료 관광객은예기치 못한 사고 발생시보험사에 도움을 요청할 수 있어요!외국인 의료관광객을 위한보험이 가입되어 있으니깐요*.*성남시는분당서울대병원, 분당차병원,분당제생병원, 보바스기념병원 등의료관광 인프라가 잘갖춰져 있어요그래서 성남시를 찾는 의료 관광객이최근 5년 동안2만6786명이나 됩니다.의료 관광객이 더 안심하고찾아올 수 있도록안심케어 보험 가입여기는 의료관광 도시, 성남시성남시는 오늘도그대와 함께 ^:)
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221461073111">http://seongnamdiary.com/221461073111</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
