@@ -4,9 +4,191 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-02-12T01:41:00Z</updated>
+    <updated>2019-02-12T01:47:07Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>AutoML Natural Language was unable to process your dataset &quot;capstone002&quot;</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001923.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1923</id>
+
+    <published>2019-02-12T01:47:07Z</published>
+    <updated>2019-02-12T01:47:07Z</updated>
+
+    <summary> MY CONSOLE Hello Google Cloud AI Customer, Due to an error, AutoML Natural Language was unable to process your dataset &#34;capstone002&#34;. To see a more detailed error log, go back to your dataset. Additional details ERROR CODES: 4 Last...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[  
+  <div>
+    <table>
+      
+        <tr>
+          <td>
+            <table>
+              
+                <tr>
+                  <td>
+                    <table>
+                      
+                        <tr>
+                          <td>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_logo.png" width="261" alt="Google Cloud Platform">
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    <table>
+                                      
+                                        <tr>
+                                          <td>
+                                            <a href="https://console.cloud.google.com">MY CONSOLE</a>
+                                          </td>
+                                        </tr>
+                                      
+                                    </table>
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                      
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      
+                        <tr>
+                          <td>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    <p>
+                                      Hello Google Cloud AI Customer,
+                                    </p>
+                                    <p>
+                                      Due to an error, AutoML Natural Language was unable to process your dataset &#34;capstone002&#34;.
+                                    </p>
+                                    <p>
+                                      To see a more detailed error log,
+                                      <a href="https://cloud.google.com/automl/ui/text/datasets/details?dataset=TCN2808593744797044021&amp;project=sys5-f9f83">go back to your dataset</a>.
+                                    </p>
+                                    <p>
+                                    </p>
+                                                                        Additional details
+                                    <pre><p>
+ERROR CODES:
+4
+Last error message
+File unreadable or invalid gs://sys5-f9f83-lcm/uploads/capstone002/20190212104217442/merged.csv.txt</p>
+</pre>
+                                                                    </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    Sincerely,
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    The Google Cloud AI Team
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                      
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table>
+                      
+                        <tr>
+                          <td>
+                            <table>
+                              
+                                <tr>
+                                  <td>
+                                    <img src="http://services.google.com/fh/files/emails/gcp_free_trail_decs_new.png" width="12" alt="">
+                                  </td>
+                                  <td>
+                                    <a href="https://cloud.google.com/natural-language/automl/docs/quickstart">DOCUMENTATION</a>
+                                  </td>
+                                </tr>
+                              
+                            </table>
+                          </td>
+                        </tr>
+                      
+                    </table>
+                  </td>
+                </tr>
+              
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table>
+              
+                <tr>
+                  <td>
+                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_footer_logo.png" alt="">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>© 2018 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
+                  </td>
+                </tr>
+              
+            </table>
+          </td>
+        </tr>
+      
+    </table>
+    <div>
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </div>
+  </div>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>AutoML Natural Language was unable to process your dataset &quot;capstone001&quot;</title>
@@ -1824,62 +2006,6 @@ You can also change your preferences on your account’s profile page by logging
         </div>
   
 <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkAVYZXJhQsY4KFAyV7d4t-2BfWJ-2BwVOhqXeJBu7HBQsRDu-2B5-2FCVfBOoGEl7CQkPDSRnVwIdxt-2BdAkaMNFEmagePcTbL2ALs-2FHpSo0TFIxLa-2FnT65UScnGLgvmtMquoOmzwqS1ZZ1NqIls7GJv7NAdhekPyhmHF8rZ9b62nyxLp23-2Fbs9Ogzie-2FPubXoKuL8t4Gx37UR5zwPPAfF4MiZK06v28-3D" alt="" width="1" height="1" />
-
-
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Your Afternoon Digest</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001908.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1908</id>
-
-    <published>2019-02-09T01:04:16Z</published>
-    <updated>2019-02-09T01:04:16Z</updated>
-
-    <summary> Pet Sematary - Trailer 2 url: http://trailers.apple.com/trailers/paramount/pet-sematary/ Saint Judy - Trailer url: http://trailers.apple.com/trailers/independent/saint-judy/ Under The Eiffel Tower - Clip url: http://trailers.apple.com/trailers/independent/under-the-eiffel-tower/ The Amityville Murders - Clip url: http://trailers.apple.com/trailers/independent/the-amityville-murders/...</summary>
-    <author>
-        <name>hal9000</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-  
-  
-        <div>
-          <div>Pet Sematary - Trailer 2</div>
-            <div>
-              url: http://trailers.apple.com/trailers/paramount/pet-sematary/
-            </div>
-        </div>
-        <div>
-          <div>Saint Judy - Trailer</div>
-            <div>
-              url: http://trailers.apple.com/trailers/independent/saint-judy/
-            </div>
-        </div>
-        <div>
-          <div>Under The Eiffel Tower - Clip</div>
-            <div>
-              url: http://trailers.apple.com/trailers/independent/under-the-eiffel-tower/
-            </div>
-        </div>
-        <div>
-          <div>The Amityville Murders - Clip</div>
-            <div>
-              url: http://trailers.apple.com/trailers/independent/the-amityville-murders/
-            </div>
-        </div>
-  
-<img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkAVYZXJhQsY4KFAyV7d4t-2BcswX8X6wrLbaeJoCntofKlaCY27VKjmctWMWEaxaIXWgaH9zwWWDuBEnWbkerwjMYrr76F50kwBqmT6r9h6xAvVbMb6mF9D8zVKh-2BVG83BqlBaNuhlBnCMm7dg1kwDW0nrZ5jvt2JeXmmAtYLH0zN8vpQyyAIwXXJupeEQTwqbpD0NojYmTNaRe3QduLfjlKA-3D" alt="" width="1" height="1" />
 
 
 
