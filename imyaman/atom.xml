@@ -4,9 +4,196 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-02-13T06:16:56Z</updated>
+    <updated>2019-02-13T15:25:17Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Help improve the Google Cloud Platform developer experience</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001931.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1931</id>
+
+    <published>2019-02-13T15:25:17Z</published>
+    <updated>2019-02-13T15:25:17Z</updated>
+
+    <summary> Google Cloud Platform a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration: none; } .appleLinks a {color:#000000 !important; text-decoration:none !important;} strong { font-weight: bold !important; } em { font-style: italic !important; } body { -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+
+
+Google Cloud Platform
+
+
+
+
+
+
+
+
+
+a:link, a:visited, a:hover, a:active {
+color: #4285f4;
+text-decoration: none;
+}
+.appleLinks a {color:#000000 !important; text-decoration:none !important;}
+strong {
+font-weight: bold !important;
+}
+em {
+font-style: italic !important;
+}
+body {
+-webkit-text-size-adjust: none !important;
+-webkit-font-smoothing: antialiased !important;
+-ms-text-size-adjust: none !important;
+}
+.yshortcuts a span {
+color: inherit !important;
+border-bottom: none !important;
+}
+html {
+-webkit-text-size-adjust: none;
+-ms-text-size-adjust: 100%;
+}
+.ReadMsgBody {
+width: 100%;
+}
+.ExternalClass {
+width: 100%;
+}
+.ExternalClass * {
+line-height: 100%
+}
+td {
+-webkit-text-size-adjust: none;
+}
+a[href^=tel] {
+color: inherit;
+text-decoration: none;
+}
+.mob-hide {
+display:none !important; }
+div, p, a, li, td { -webkit-text-size-adjust:none; }
+td { text-decoration:none !important; }
+a[x-apple-data-detectors] {
+color: inherit !important;
+text-decoration: none !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+}
+@media only screen and (max-width:600px) {
+.pd_ltrt
+{
+padding-left:20px !important;
+padding-right:20px !important;
+}
+.center
+{
+text-align:center !important;
+margin:0 auto !important;
+}
+}
+@media only screen and (max-width:360px) {
+.logo_width{
+width:100px !important;
+}
+}
+
+
+
+
+<div>
+
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a href="#"><img src="http://services.google.com/fh/files/emails/google_cloud_platform_lockup.png" width="240" alt="Google Cloud Platform"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<a href="#"><img src="http://services.google.com/fh/files/emails/final_couple_zoomedout_600.png" width="600" alt=" Improve the developer experience"></a></td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>Hello,
+</td>
+</tr>
+<tr>
+<td>Help shape the future of Google Cloud Platform (GCP) by taking a survey about how you use GCP and how to make it better. The survey takes about 15 minutes. Your responses are confidential and your participation is voluntary.</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a href="https://www.google.com/appserve/mkt/p/AHANi0azCVOmyJI7bcFhlA39QLRkZQ-eVGMZeYe3Rqp1MjZVZhnCL2lr3YBqNWrMEztWws5GK0QvmsSRNDIKpb51cE3W5y7yUtuokiIe_T357keelos2q5-i0z_f2Z-_71_7aBBtoFFfCRBkxc665UWQexB7bD-zsQ4Agi1vH8TY5Lp8UrprHlaa2PFN77HueOJxb1dGZGZf5nNkKoNqmUgosEGbcK8_kycJff7ZdESaGF3QEmONxlXfpuLy">Take the survey</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>Thank you for your time. Your input will help us improve GCP and the developer experience.</td>
+</tr>
+<tr>
+<td>See you in the cloud,</td>
+</tr>
+<tr>
+<td><strong>The Google Cloud Platform Developer Experience team</strong></td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a href="#">© 2019 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+</td>
+</tr>
+<tr>
+<td>This email was sent to <a href="#">imyamanhitelnet@gmail.com</a> because you indicated that you are willing to provide feedback about Google Cloud Platform. If you don&#39;t want to receive such emails in the future, please unsubscribe <a href="https://www.google.com/appserve/mkt/optout/AHANi0adujm18ohUYsq2wwlUK0fI_aGpTZi3i8i_qODY9RKGi2MDGr21UoawzEa6YBL1L0s0?hl=en">here</a>. You can also change your preferences on your account&#39;s profile page by logging in at <a href="https://www.google.com/appserve/mkt/p/AHANi0aOk93OspDHfQyyBKykhD_kWcEYmhIRgfkF-byYiIe8HMbW3BMZAmc8spjH07edF6hazqZq81_cD5c1L8-UCQmaCn-HHC1F3qV4UqmYxe99HKauU30m7E21pCzj">console.cloud.google.com</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+</div>
+
+<img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AHANi0aOezGCiyb1M_-A4YVJDTlzO94KBo0KwQAyWYb1CxNA.gif">
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Arthur C. Clarke</title>
@@ -1381,33 +1568,6 @@ You can also change your preferences on your account’s profile page by logging
 <p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/sEDLGxHD2Qs/jean_de_la_fontaine</p>
 
 <p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>모바일 성남사랑상품권 서포터즈 참여자 모집</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001916.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1916</id>
-
-    <published>2019-02-11T05:38:38Z</published>
-    <updated>2019-02-11T05:38:38Z</updated>
-
-    <summary>올해 성남사랑상품권발행 규모는1090억원!!!점점 규모가 커지는성남사랑상품권을더욱 쉽게 사용할 수 있도록모바일 성남사랑상품권이출시될 예정입니다.그런데 출시 전에꼼꼼한 점검 과정이 필요하겠죠?그래서 모바일 성남사랑상품권서포터즈 참여자를 모집합니다!!!관심 있으신 분들은위의 공고문을 확인하신 후접수 서류를 작성하셔서성남시청 동관 9층시장현대화과 유통행정팀으로방문 접수하시면 됩니다시민 여러분의많은 참여 부탁드립니다!!여기는 지역 상권이 살아나는 도시, 성남시성남시는...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="성남정책" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[올해 성남사랑상품권발행 규모는1090억원!!!점점 규모가 커지는성남사랑상품권을더욱 쉽게 사용할 수 있도록모바일 성남사랑상품권이출시될 예정입니다.그런데 출시 전에꼼꼼한 점검 과정이 필요하겠죠?그래서 모바일 성남사랑상품권서포터즈 참여자를 모집합니다!!!관심 있으신 분들은위의 공고문을 확인하신 후접수 서류를 작성하셔서성남시청 동관 9층시장현대화과 유통행정팀으로방문 접수하시면 됩니다시민 여러분의많은 참여 부탁드립니다!!여기는 지역 상권이 살아나는 도시, 성남시성남시는 오늘도그대와 함께 ^:)
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221463003687">http://seongnamdiary.com/221463003687</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
