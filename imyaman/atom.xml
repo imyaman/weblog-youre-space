@@ -4,196 +4,9 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-02-13T15:25:17Z</updated>
+    <updated>2019-02-13T06:16:56Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
-
-<entry>
-    <title>Help improve the Google Cloud Platform developer experience</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001931.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1931</id>
-
-    <published>2019-02-13T15:25:17Z</published>
-    <updated>2019-02-13T15:25:17Z</updated>
-
-    <summary> Google Cloud Platform a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration: none; } .appleLinks a {color:#000000 !important; text-decoration:none !important;} strong { font-weight: bold !important; } em { font-style: italic !important; } body { -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important;...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-
-Google Cloud Platform
-
-
-
-
-
-
-
-
-
-a:link, a:visited, a:hover, a:active {
-color: #4285f4;
-text-decoration: none;
-}
-.appleLinks a {color:#000000 !important; text-decoration:none !important;}
-strong {
-font-weight: bold !important;
-}
-em {
-font-style: italic !important;
-}
-body {
--webkit-text-size-adjust: none !important;
--webkit-font-smoothing: antialiased !important;
--ms-text-size-adjust: none !important;
-}
-.yshortcuts a span {
-color: inherit !important;
-border-bottom: none !important;
-}
-html {
--webkit-text-size-adjust: none;
--ms-text-size-adjust: 100%;
-}
-.ReadMsgBody {
-width: 100%;
-}
-.ExternalClass {
-width: 100%;
-}
-.ExternalClass * {
-line-height: 100%
-}
-td {
--webkit-text-size-adjust: none;
-}
-a[href^=tel] {
-color: inherit;
-text-decoration: none;
-}
-.mob-hide {
-display:none !important; }
-div, p, a, li, td { -webkit-text-size-adjust:none; }
-td { text-decoration:none !important; }
-a[x-apple-data-detectors] {
-color: inherit !important;
-text-decoration: none !important;
-font-size: inherit !important;
-font-family: inherit !important;
-font-weight: inherit !important;
-line-height: inherit !important;
-}
-@media only screen and (max-width:600px) {
-.pd_ltrt
-{
-padding-left:20px !important;
-padding-right:20px !important;
-}
-.center
-{
-text-align:center !important;
-margin:0 auto !important;
-}
-}
-@media only screen and (max-width:360px) {
-.logo_width{
-width:100px !important;
-}
-}
-
-
-
-
-<div>
-
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<a href="#"><img src="http://services.google.com/fh/files/emails/google_cloud_platform_lockup.png" width="240" alt="Google Cloud Platform"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<a href="#"><img src="http://services.google.com/fh/files/emails/final_couple_zoomedout_600.png" width="600" alt=" Improve the developer experience"></a></td>
-</tr>
-<tr>
-<td>
-<table>
-
-<tr>
-<td>Hello,
-</td>
-</tr>
-<tr>
-<td>Help shape the future of Google Cloud Platform (GCP) by taking a survey about how you use GCP and how to make it better. The survey takes about 15 minutes. Your responses are confidential and your participation is voluntary.</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<a href="https://www.google.com/appserve/mkt/p/AHANi0azCVOmyJI7bcFhlA39QLRkZQ-eVGMZeYe3Rqp1MjZVZhnCL2lr3YBqNWrMEztWws5GK0QvmsSRNDIKpb51cE3W5y7yUtuokiIe_T357keelos2q5-i0z_f2Z-_71_7aBBtoFFfCRBkxc665UWQexB7bD-zsQ4Agi1vH8TY5Lp8UrprHlaa2PFN77HueOJxb1dGZGZf5nNkKoNqmUgosEGbcK8_kycJff7ZdESaGF3QEmONxlXfpuLy">Take the survey</a>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>Thank you for your time. Your input will help us improve GCP and the developer experience.</td>
-</tr>
-<tr>
-<td>See you in the cloud,</td>
-</tr>
-<tr>
-<td><strong>The Google Cloud Platform Developer Experience team</strong></td>
-</tr>
-
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<a href="#">© 2019 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
-</td>
-</tr>
-<tr>
-<td>This email was sent to <a href="#">imyamanhitelnet@gmail.com</a> because you indicated that you are willing to provide feedback about Google Cloud Platform. If you don&#39;t want to receive such emails in the future, please unsubscribe <a href="https://www.google.com/appserve/mkt/optout/AHANi0adujm18ohUYsq2wwlUK0fI_aGpTZi3i8i_qODY9RKGi2MDGr21UoawzEa6YBL1L0s0?hl=en">here</a>. You can also change your preferences on your account&#39;s profile page by logging in at <a href="https://www.google.com/appserve/mkt/p/AHANi0aOk93OspDHfQyyBKykhD_kWcEYmhIRgfkF-byYiIe8HMbW3BMZAmc8spjH07edF6hazqZq81_cD5c1L8-UCQmaCn-HHC1F3qV4UqmYxe99HKauU30m7E21pCzj">console.cloud.google.com</a>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-
-</div>
-
-<img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AHANi0aOezGCiyb1M_-A4YVJDTlzO94KBo0KwQAyWYb1CxNA.gif">
-
-
-]]>
-        
-    </content>
-</entry>
 
 <entry>
     <title>Arthur C. Clarke</title>
@@ -397,1105 +210,6 @@ width:100px !important;
 </entry>
 
 <entry>
-    <title>AutoML Natural Language was unable to process your dataset &quot;capstone002&quot;</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001923.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1923</id>
-
-    <published>2019-02-12T01:47:07Z</published>
-    <updated>2019-02-12T01:47:07Z</updated>
-
-    <summary> MY CONSOLE Hello Google Cloud AI Customer, Due to an error, AutoML Natural Language was unable to process your dataset &#34;capstone002&#34;. To see a more detailed error log, go back to your dataset. Additional details ERROR CODES: 4 Last...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[  
-  <div>
-    <table>
-      
-        <tr>
-          <td>
-            <table>
-              
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_logo.png" width="261" alt="Google Cloud Platform">
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <table>
-                                      
-                                        <tr>
-                                          <td>
-                                            <a href="https://console.cloud.google.com">MY CONSOLE</a>
-                                          </td>
-                                        </tr>
-                                      
-                                    </table>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <p>
-                                      Hello Google Cloud AI Customer,
-                                    </p>
-                                    <p>
-                                      Due to an error, AutoML Natural Language was unable to process your dataset &#34;capstone002&#34;.
-                                    </p>
-                                    <p>
-                                      To see a more detailed error log,
-                                      <a href="https://cloud.google.com/automl/ui/text/datasets/details?dataset=TCN2808593744797044021&amp;project=sys5-f9f83">go back to your dataset</a>.
-                                    </p>
-                                    <p>
-                                    </p>
-                                                                        Additional details
-                                    <pre><p>
-ERROR CODES:
-4
-Last error message
-File unreadable or invalid gs://sys5-f9f83-lcm/uploads/capstone002/20190212104217442/merged.csv.txt</p>
-</pre>
-                                                                    </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    Sincerely,
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    The Google Cloud AI Team
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <img src="http://services.google.com/fh/files/emails/gcp_free_trail_decs_new.png" width="12" alt="">
-                                  </td>
-                                  <td>
-                                    <a href="https://cloud.google.com/natural-language/automl/docs/quickstart">DOCUMENTATION</a>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-              
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <table>
-              
-                <tr>
-                  <td>
-                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_footer_logo.png" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>© 2018 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
-                  </td>
-                </tr>
-              
-            </table>
-          </td>
-        </tr>
-      
-    </table>
-    <div>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    </div>
-  </div>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>AutoML Natural Language was unable to process your dataset &quot;capstone001&quot;</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001922.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1922</id>
-
-    <published>2019-02-12T01:41:00Z</published>
-    <updated>2019-02-12T01:41:00Z</updated>
-
-    <summary> MY CONSOLE Hello Google Cloud AI Customer, Due to an error, AutoML Natural Language was unable to process your dataset &#34;capstone001&#34;. To see a more detailed error log, go back to your dataset. Additional details ERROR CODES: 3 Last...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[  
-  <div>
-    <table>
-      
-        <tr>
-          <td>
-            <table>
-              
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_logo.png" width="261" alt="Google Cloud Platform">
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <table>
-                                      
-                                        <tr>
-                                          <td>
-                                            <a href="https://console.cloud.google.com">MY CONSOLE</a>
-                                          </td>
-                                        </tr>
-                                      
-                                    </table>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <p>
-                                      Hello Google Cloud AI Customer,
-                                    </p>
-                                    <p>
-                                      Due to an error, AutoML Natural Language was unable to process your dataset &#34;capstone001&#34;.
-                                    </p>
-                                    <p>
-                                      To see a more detailed error log,
-                                      <a href="https://cloud.google.com/automl/ui/text/datasets/details?dataset=TCN7396201036694261977&amp;project=sys5-f9f83">go back to your dataset</a>.
-                                    </p>
-                                    <p>
-                                    </p>
-                                                                        Additional details
-                                    <pre><p>
-ERROR CODES:
-3
-Last error message
-Invalid input found at row 1 of gs://ips_perm_201902111217_733296153493703/import/effba4f32e1b48398fa5f80e9c81cca7/import-shard-0.csv: &#34;row_id,doc_text,information_and_communication_technologies,governance,urban_development,law_and_development,public_sector_development,agriculture,communities_and_human_settlements,health_and_nutrition_and_population,culture_and_development,environment,social_protections_and_labor,industry,macroeconomics_and_economic_growth,international_economics_and_trade,conflict_and_development,finance_and_financial_sector_development,science_and_technology_development,rural_development,poverty_reduction,private_sector_development,informatics,energy,social_development,water_resources,education,transport,water_supply_and_sanitation,gender,infrastructure_economics_and_finance&#34;. Error details: Dataset is not multilabel but more than one label assigned to the same document</p>
-</pre>
-                                                                    </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    Sincerely,
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    The Google Cloud AI Team
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <img src="http://services.google.com/fh/files/emails/gcp_free_trail_decs_new.png" width="12" alt="">
-                                  </td>
-                                  <td>
-                                    <a href="https://cloud.google.com/natural-language/automl/docs/quickstart">DOCUMENTATION</a>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-              
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <table>
-              
-                <tr>
-                  <td>
-                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_footer_logo.png" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>© 2018 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
-                  </td>
-                </tr>
-              
-            </table>
-          </td>
-        </tr>
-      
-    </table>
-    <div>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    </div>
-  </div>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>AutoML Natural Language finished processing your dataset &quot;tweets_lactofit&quot;</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001921.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1921</id>
-
-    <published>2019-02-12T01:28:49Z</published>
-    <updated>2019-02-12T01:28:49Z</updated>
-
-    <summary> MY CONSOLE Hello Google Cloud AI Customer, AutoML Natural Language finished processing your dataset &#34;tweets_lactofit&#34;. To continue your progress, go back to your dataset. Sincerely, The Google Cloud AI Team DOCUMENTATION © 2018 Google LLC 1600 Amphitheatre Parkway, Mountain...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[  
-  <div>
-    <table>
-      
-        <tr>
-          <td>
-            <table>
-              
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_logo.png" width="261" alt="Google Cloud Platform">
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <table>
-                                      
-                                        <tr>
-                                          <td>
-                                            <a href="https://console.cloud.google.com">MY CONSOLE</a>
-                                          </td>
-                                        </tr>
-                                      
-                                    </table>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <p>
-                                      Hello Google Cloud AI Customer,
-                                    </p>
-                                    <p>
-                                      AutoML Natural Language finished processing your dataset &#34;tweets_lactofit&#34;.
-                                    </p>
-                                    <p>
-                                      To continue your progress,
-                                      <a href="https://cloud.google.com/automl/ui/text/datasets/details?dataset=TCN23716290538918156&amp;project=sys5-f9f83">go back to your dataset</a>.
-                                    </p>
-                                    <p>
-                                    </p>
-                                                                      </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    Sincerely,
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td>
-                                    The Google Cloud AI Team
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      
-                        <tr>
-                          <td>
-                            <table>
-                              
-                                <tr>
-                                  <td>
-                                    <img src="http://services.google.com/fh/files/emails/gcp_free_trail_decs_new.png" width="12" alt="">
-                                  </td>
-                                  <td>
-                                    <a href="https://cloud.google.com/natural-language/automl/docs/quickstart">DOCUMENTATION</a>
-                                  </td>
-                                </tr>
-                              
-                            </table>
-                          </td>
-                        </tr>
-                      
-                    </table>
-                  </td>
-                </tr>
-              
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <table>
-              
-                <tr>
-                  <td>
-                    <img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_footer_logo.png" alt="">
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <p>© 2018 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
-                  </td>
-                </tr>
-              
-            </table>
-          </td>
-        </tr>
-      
-    </table>
-    <div>
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-    </div>
-  </div>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Try an App Engine codelab</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001920.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.1920</id>
-
-    <published>2019-02-11T19:31:55Z</published>
-    <updated>2019-02-11T19:31:55Z</updated>
-
-    <summary> @media screen and (max-width:737px) { .flexible {max-width: 600px !important;} .webkit { width: 100% !important;min-width: 100% !important;} .wrapper_new{width:100% !important;} .contents { width: 100% !important; } .bullet_td {} .contents { display: inline-block !important; width: 100% !important; height: 39px !important; } #footer_tr1...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[ 
- 
- 
- 
-  
-  
-
-
-
- 
- 
-
-
-  
-  
-
-
-  
- 
- 
-   
- 
- 
-
-
-
-
-    
-    
-    
-  
-@media screen and (max-width:737px) {
-.flexible {max-width: 600px !important;}
-.webkit { width: 100% !important;min-width: 100% !important;}
-.wrapper_new{width:100% !important;}
-  .contents {
-    width: 100% !important;
-  }
-  .bullet_td {}
-  .contents {
-    display: inline-block !important;
-    width: 100% !important;
-    height: 39px !important;
-  }
-  #footer_tr1 {
-    padding-bottom: 0px !important;
-  }
-  #footer_tr2 {
-    padding-top: 0px !important;
-  }
-  
-}
-@media screen and (max-width:414px) {
-  .desk_grey_section {
-    display: none !important;
-  }
-  .mob_grey_section {
-    display: table-cell !important;
-  }
-  .flexible { 
-    width: 100% !important;
-    max-width: 600px !important;
-  }
-  .body {
-    padding-left: 10px !important;
-    padding-right: 10px !important
-  }
-  .banner_logo {
-    width: 240px !important;
-  }
-  #columndiv .inner {
-    padding-top: 4px !important;
-  }
-  .logo_holder_container {
-    padding: 24px 13px 13px 10px !important;
-  }
-  .bigger_wrapper_body {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-  }
-   .bigger_wrapper_body_3msg {
-    padding-left: 25px !important;
-    padding-right: 0px !important;
-  }
-  .bigger_wrapper_body_3msg .bottom_link_footer_td {
-    padding-right:25px !important;
-  }
-  .space_3msg{
-    padding-left:0px !important;
-  }
-  .pad_right25{
-    padding-right:25px !important;
-  }
-  .bullet_td {
-    padding-left: 0px !important;
-  }
-  .btm_pad {
-    padding-bottom: 17px !important;
-  }
-  .body_img {
-    width: 100% !important;
-    display: none !important;
-  }
-  .mobile_img {
-    width: 100% !important;
-    display: block !important;
-  }
-  .bottom_icons {
-    padding-top: 2px !important;
-  }
-  .bottom_icons .text_wrapper_inner_td {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-  }
-  .contents {
-    display: block !important;
-    width: 100% !important;
-   
-  }
-  .macro_wrapper .para1 {
-    padding-right: 0px !important;
-  }
-  .footer_pad {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-  }
-  .contents .text {
-    min-width: 18px;
-    padding-right: 8px !important;
-  }
-  .contents td {
-    height: auto;
-  }
-  .headline {}
-  .outer_cover2 {
-    padding-top: 6px !important;
-  }
-  .footer_wrapper_td, .social_icons_container {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-  }
-  .two_col_td {
-    display: block;
-    width: 100% !important;
-  }
-  .split_mobile {
-    display: block;
-    width: 100% !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    padding-bottom: 8px !important;
-    text-align: left !important;
-    box-sizing: border-box;
-  }
-  .split_mobile2 {
-    display: block;
-    width: 100% !important;
-    padding-left: 24px !important;
-    padding-right: 20px !important;
-    text-align: left !important;
-    box-sizing: border-box;
-  }
-  .grey_section {
-    padding-top: 20px !important;
-    padding-bottom: 23px !important;
-  }
-  .grey_td_head {
-    padding-bottom: 12px !important;
-  }
-  .grey_section .split_mobile td {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    text-align: left !important;
-  }
-  .grey_section .split_mobile td img {
-    text-align: left !important;
-  }
-  .two_link_td, .two_link_td2 {
-    width: 100% !important;
-    display: block !important;
-  }
-  .two_link_td2 .body_link_tbl_td {
-    padding-left: 0 !important;
-    padding-top: 12px !important;
-  }
-  .bullet_table {
-    width: 100%  !important;
-    display: block  !important;
-  }
-  .headline_3msg{
-       padding-top:20px !important;
-  }
-  .em3_cta_sec .docs_link {
-      display: inline-block;
-      margin-top: 18px;
-      clear: both;
-  }
-
-}
-@media screen and (min-width: 812px) and (max-width: 812px),
-screen and (min-width: 736px) and (max-width: 736px),
-screen and (min-width: 667px) and (max-width: 667px),
-screen and (min-width: 568px) and (max-width: 568px),
-screen and (min-width: 414px) and (max-width: 414px),
-screen and (min-width: 375px) and (max-width: 375px),
-screen and (min-width: 320px) and (max-width: 320px) {
-  .body {
-    min-width: 100vw !important;
-  }
-}
-
-@media screen yahoo {
-  .yahooHide {
-    display:none !important;
-    font-size:0px !important;
-    line-height:0 !important;
-    height:0px !important;
-    max-height:0px !important;
-    overflow:hidden !important;
-  }
-}
-
-
-    
-
-
-
-
-         <div>
-           <div>Get step-by-step instructions to create and deploy an app.</div>
-      
-	<table>
- 
-  <tr>
-            <td>
-
-                <table>
-            <tr>
-              <td>
-                
-                <div>
-                      <table>
-                              <tr>
-                                  <td>
-                                      <table>
-                                          <tr> 
-                                            <td>
-                                               <img src="http://services.google.com/fh/files/emails/gcpexp_new_desk.png" width="306" alt="Google Cloud Platform" height="auto">
-                                            </td>
-                                          </tr>
-                                      </table>
-                                  </td>
-                              </tr>
-                      </table>
-               </div>
-                
-               <div>
-              <table>
-                  <tr>
-                      <td>
-                         <table>
-                             <tr>
-                                <td>
-                                   <table>
-                                        <tr>
-                                            <td>
-                                            <a href="https://www.google.com/appserve/mkt/p/AHANi0Z84Um0n0vQZh0YN14X54Fm2dYdPj5xozUnOtuLK0sAKjHLpcKIxjBJKPWi3qIGqJ-m7WFFEMW8JLwuwWclvvR1Wn17MgUktWTSGP2Qlsrj2I6jdreNF7wbxFjaCCDSA8pAfnKEXjFWZi_1wVzJnDf4azZSDZqKAaZfnEcc6_iIloMQhqCEp3wxyYhXoRAAca8WYtztKY2KhresKvfspOT98Zji8j3vqCBTNo23BNJocnVQ8nPH93vcO5BO5YbgNmWKuZzU">Go to your Console</a>
-                                            </td>
-                                          <td>
-                                            <table>
-                                                  <tr>
-                                                    
-                                                    
-                                                    <td>
-													
-                                                        <a href="https://www.google.com/appserve/mkt/p/AHANi0Z84Um0n0vQZh0YN14X54Fm2dYdPj5xozUnOtuLK0sAKjHLpcKIxjBJKPWi3qIGqJ-m7WFFEMW8JLwuwWclvvR1Wn17MgUktWTSGP2Qlsrj2I6jdreNF7wbxFjaCCDSA8pAfnKEXjFWZi_1wVzJnDf4azZSDZqKAaZfnEcc6_iIloMQhqCEp3wxyYhXoRAAca8WYtztKY2KhresKvfspOT98Zji8j3vqCBTNo23BNJocnVQ8nPH93vcO5BO5YbgNmWKuZzU"><img src="http://services.google.com/fh/files/emails/release_notes_diagonal_array.png" alt="" width="16"></a>
-                                                    </td>
-                                              </tr>
-                                            </table>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                   </td>
-                                 </tr>
-                               </table>
-                        </td>
-                      </tr>
-                    </table>
-                </div>
-                
-            </td>
-         </tr>
-       </table>
-    </td>
-  </tr>
- 
-<tr>
-   <td>
-      <table>
-         <tr>
-            <td>
-               <table>
-                  <tr>
-                    <td>
-                     <table>
-                        <tr>
-                           <td><span>Build</span> your App Engine skills.
-                           </td>
-                        </tr>
-                       
-                       <tr>
-                           <td>Get hands-on to discover features and capabilities.
-                           </td>
-                        </tr>
-                       
-                     </table>
-                      </td>
-                  </tr>
-<tr>
-          <td>Google App Engine is a fully managed platform that lets you focus on code, not managing infrastructure. Take a tutorial to start exploring.
-          </td>
-</tr>
-
-<tr>
-   <td>
-      <table>
-         <tr>
-            <td>
-               <img src="http://services.google.com/fh/files/emails/gcp_engagement_app_engine_msg1.png" width="32" height="">
-            </td>
-            <td>
-               <table>
-<tr>
-          <td>Try an App Engine codelab.
-          </td>
-</tr>
-<tr>
-          <td>These guides give you step-by-step support with everything from getting started to deploying an app on Google Cloud Platform.
-          </td>
-</tr>
-                  <tr>
-                     <td>
-                        <table>
-                           <tr>
-                              <td>
-                                  
-                                          <table>
-                                             <tr>
-                                                <td>
-                                                   <table>
-                                                      <tr>
-                                                        
-                                                         <td>
-                                                           <table>
-                                                                 <tr>
-                                                                     <td>
-                                                                       <a href="https://www.google.com/appserve/mkt/p/AHANi0Yb-2M3OwGWVY_ObqQmGUtjqpNGAXcCCywc0bt86YGYlcD6UUnyXPy4Y3TOmIdLcHBLNQlexoDI4T0kPNvL7z9ANzhLkMIJg-g5i3uRLYuJsKlURXacyX9BV2gQugBkguB4hAJad6r2wpk-Hrh6Vp6UQXZvqjm1B8ADoPE6C1n2QMHs1MsCYjYvkoM10ChMsRK4cucjlEBgZpSRx5g9BQ3VewO0SBkxLKC2FcCzo45lfftFq5VEuMli0zPe8DzMU-1XB1AuKhqmFsWF2L6CmrB5rxjjM6iOHIu46f9RNC189Uqx"><img src="http://services.google.com/fh/files/emails/gcp_engagement_code_lab_msg1.png" width="18"></a>
-                                                                   </td>
-                                                             </tr>
-                                                           </table>
-                                                         </td>
-                                                         <td>
-                                                            <a href="https://www.google.com/appserve/mkt/p/AHANi0Yb-2M3OwGWVY_ObqQmGUtjqpNGAXcCCywc0bt86YGYlcD6UUnyXPy4Y3TOmIdLcHBLNQlexoDI4T0kPNvL7z9ANzhLkMIJg-g5i3uRLYuJsKlURXacyX9BV2gQugBkguB4hAJad6r2wpk-Hrh6Vp6UQXZvqjm1B8ADoPE6C1n2QMHs1MsCYjYvkoM10ChMsRK4cucjlEBgZpSRx5g9BQ3VewO0SBkxLKC2FcCzo45lfftFq5VEuMli0zPe8DzMU-1XB1AuKhqmFsWF2L6CmrB5rxjjM6iOHIu46f9RNC189Uqx">View codelabs</a>
-                                                         </td>
-                                                     
-                                                      </tr>
-                                                   </table>
-                                                </td>
-                                             </tr>
-                                          </table>
-                                          
-                                          
-                              </td>
-                           </tr>
-                        </table>
-                     </td>
-                  </tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-   </td>
-</tr>
-                 
-                 
-<tr>
-          <td>Choosing between App Engine standard or flexible environments? Our <a href="https://www.google.com/appserve/mkt/p/AHANi0YeVfozGUyAHI-APltAoZuOuUksxXeAu3isCkoYenhKYySpLA0CLVLVwXvCsHvVKonkvV-ONVZcwiQmhtYhs6zJiNzqhHiV5-hRNoXwyoLnrTKS0zhzlmYWudp1MF37FgBOhvyu2tJMGvHCpy3ocet_4YzCIceBAZepb5yrGuliGYvQYFSRSfeGeebzib2DpZGexsFOvRD85piwlXx38w4zxsBCqMA_XmK0GQrzS3LTL5ezpqe8RZLLv9upo4V4iGHoK063LLNSoWEmI9h8MkbqdKUy5obPw4Bi3GIns0cm69g4cdI">overview</a> can help you decide.
-          </td>
-</tr>
-                
-                 <tr>
-                     <td>
-<tr>
-          <td>See you in the cloud,
-          </td>
-</tr>
-<tr>
-          <td>The Google Cloud Platform Team
-          </td>
-</tr>
-              </td></tr>
-<tr>
-   <td>
-
- 
-<table>
- 
-  <tr>
-     <td>
-        <table>
-      
-    <tr>
-       <td>
-         <table>
-            <tr>
-              <td>
-     
-     <table>
-       <tr>
-           <td>
-             <a href="https://www.google.com/appserve/mkt/p/AHANi0Y0Dmgdl4JXRSds0bjr4YYLQFAkLYhKaXuy2bkDvC6Jo4e_0Rzho_6em6uDUfjw4XeG4VSBUC7YMtRf7OHEPGLfKLJiKPKw34xCP5Hs3J3FWnZTWjt2fUu0AwZ4wrejRqZfuFVDBG7RRkPKzWLJRnvgmdcVYhcI8ER7hMsvTR-Kad294jX1PZ-omJVJgK5sbF4XFjQCpwhNiLKiSwP7G5SLNf77JcVe-VU-yYxuDmq0UX9MijFMWg3ovG-FYYM-V9pW6yaDdiFBLwAQqGcNw21DxBlPUP5bS4L63nHohWig_dwz4la4hg"><img src="http://services.google.com/fh/files/emails/ic_forums_footer_2x.png" width="18" alt="Forums" height="auto"></a>
-            </td>
-            <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0Y0Dmgdl4JXRSds0bjr4YYLQFAkLYhKaXuy2bkDvC6Jo4e_0Rzho_6em6uDUfjw4XeG4VSBUC7YMtRf7OHEPGLfKLJiKPKw34xCP5Hs3J3FWnZTWjt2fUu0AwZ4wrejRqZfuFVDBG7RRkPKzWLJRnvgmdcVYhcI8ER7hMsvTR-Kad294jX1PZ-omJVJgK5sbF4XFjQCpwhNiLKiSwP7G5SLNf77JcVe-VU-yYxuDmq0UX9MijFMWg3ovG-FYYM-V9pW6yaDdiFBLwAQqGcNw21DxBlPUP5bS4L63nHohWig_dwz4la4hg">Forums</a>
-           </td>
-     </tr>
-   </table>
-    
-     <table>
-       <tr>
-           <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0aVhTDj7CB8wza2o7OUfWKWSKBRWJ94VpRfvXwzFZZIkt-B0sntl54ijKtJsunXwbBKZZNn3INy4kyA7q7LM0S13R3c-W1YKmgKqg2LmzHP5JwiyFIVuJSmKhFV_cXBPRsWgIoBnDqErP96a37iiMIqiPakFgU1AQNhNQSjbeA04j_a946AQ860L4PFyb42-gCn_0sRXSdBUKYKIlnEyv8WELrNSWSwBvqD9Okh0_QOVq-poMHicWUtr94sSCME3IYtAwCg"><img src="http://services.google.com/fh/files/emails/ic_support_footer_2x.png" width="18" alt="Support" height="auto"></a>
-           </td>
-           <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0aVhTDj7CB8wza2o7OUfWKWSKBRWJ94VpRfvXwzFZZIkt-B0sntl54ijKtJsunXwbBKZZNn3INy4kyA7q7LM0S13R3c-W1YKmgKqg2LmzHP5JwiyFIVuJSmKhFV_cXBPRsWgIoBnDqErP96a37iiMIqiPakFgU1AQNhNQSjbeA04j_a946AQ860L4PFyb42-gCn_0sRXSdBUKYKIlnEyv8WELrNSWSwBvqD9Okh0_QOVq-poMHicWUtr94sSCME3IYtAwCg">Support</a>
-           </td>
-       </tr>
-   </table>
-     
-     <table>
-      <tr>
-        <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0bgPdzrSfu0jgTjOXR8uTUE3Bf3ZzlK1DOdOMmlaNegk8O7PuvRKHtfrUVZ89b3Mj2T9HWvSh1l65S2x7fWzM4S8f-jTQEMGFR0v3QkGbXQ8crA7QMYRQG6PMcaGAbVgFWrTL21nGfde-uKz56Ys0CLOabawjH-l_zf2G9kraPlO0gay89lr5gZ-3b6L_d1f9eAyvTfPX6vGWhLKlyRRt0f_R2r89aSFM7fUaCDSmNOwCcSRTIclhq7K9XwLpFSbN2gmzPzfAAGDFMWeTD8cW392i0qNgmkKhMTQGq3og_LEQ"><img src="http://services.google.com/fh/files/emails/ic_faq_footer_2x.png" width="18" alt="FAQ" height="auto"></a>
-        </td>
-        <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0bgPdzrSfu0jgTjOXR8uTUE3Bf3ZzlK1DOdOMmlaNegk8O7PuvRKHtfrUVZ89b3Mj2T9HWvSh1l65S2x7fWzM4S8f-jTQEMGFR0v3QkGbXQ8crA7QMYRQG6PMcaGAbVgFWrTL21nGfde-uKz56Ys0CLOabawjH-l_zf2G9kraPlO0gay89lr5gZ-3b6L_d1f9eAyvTfPX6vGWhLKlyRRt0f_R2r89aSFM7fUaCDSmNOwCcSRTIclhq7K9XwLpFSbN2gmzPzfAAGDFMWeTD8cW392i0qNgmkKhMTQGq3og_LEQ">FAQ</a>
-        </td>
-     </tr>
-   </table>
-     
-     <table>
-       <tr>
-          <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0aUn449Ej_BlSFp9YFdt92e2AddWuufCV1cnVk0kfN3MkwK0-EGSkxPtucNgEUCxHUkp-uJJRPXGvg8VKyf1sedCy7mbXfsanoJm8ezhpk98CqEUshqlTU4ecvu7STi6wCepT_HpQhsptusv2iooziX8YYgA0MA2AX9Auxpe-h1brL4M4W4PtKE-dMVwp8Z9Mzud5yUMxJRYvriHczP3jnNXIJ6jHQHvGZdJC3pGeE3F6IAOcbUzbPT2xJyjzHaa9ENJ79ygDnEjFtgzhE"><img src="http://services.google.com/fh/files/emails/ic_documentation_footer_2x.png" width="18" alt="Documentation" height="auto"></a>
-          </td>
-          <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0aUn449Ej_BlSFp9YFdt92e2AddWuufCV1cnVk0kfN3MkwK0-EGSkxPtucNgEUCxHUkp-uJJRPXGvg8VKyf1sedCy7mbXfsanoJm8ezhpk98CqEUshqlTU4ecvu7STi6wCepT_HpQhsptusv2iooziX8YYgA0MA2AX9Auxpe-h1brL4M4W4PtKE-dMVwp8Z9Mzud5yUMxJRYvriHczP3jnNXIJ6jHQHvGZdJC3pGeE3F6IAOcbUzbPT2xJyjzHaa9ENJ79ygDnEjFtgzhE">Documentation</a>
-          </td>
-      </tr>
-    </table>
-     
-     <table>
-       <tr>
-           <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0YRnDQklHnz_XUkmQqzSMfr79XrdN1MZYhSvnHlhvVusUQ690H-UECTIauVDfm9FVOODTvm-SYlaVCjI6A0VLegRq0lHK1GHn4VadOQiWv7ytmyAVM1phFYzaV010gJ371SLl6hhtAde-hrOti-uB5W7twCeZgnCju8jPTbrfI_mF7548wlcgijUoNjuj_S0VdN5bvZzH5_2A5hHF3K3pZ1vnqNh2Ex8uJpK_V3QTmoxJ9fjFUu5p0ycg2th6KBTZbq0RiaExAafugn9qNWGEk"><img src="http://services.google.com/fh/files/emails/ic_tutorials_footer_2x.png" width="18" alt="Tutorials" height="auto"></a>
-            </td>
-            <td>
- <a href="https://www.google.com/appserve/mkt/p/AHANi0YRnDQklHnz_XUkmQqzSMfr79XrdN1MZYhSvnHlhvVusUQ690H-UECTIauVDfm9FVOODTvm-SYlaVCjI6A0VLegRq0lHK1GHn4VadOQiWv7ytmyAVM1phFYzaV010gJ371SLl6hhtAde-hrOti-uB5W7twCeZgnCju8jPTbrfI_mF7548wlcgijUoNjuj_S0VdN5bvZzH5_2A5hHF3K3pZ1vnqNh2Ex8uJpK_V3QTmoxJ9fjFUu5p0ycg2th6KBTZbq0RiaExAafugn9qNWGEk">Tutorials</a>
-             </td>
-       </tr>
-     </table>
-     
-     </td>
-     </tr>
-     </table>
-         </td>
-         </tr>
-      
-     </table>
-     </td>
-     </tr>
-</table>
-</td>
-</tr>
-               </table>
-            </td>
-         </tr>
-      </table>
-   </td>
-</tr>
- 
-<tr>
-  <td>
-     <table>
-        <tr>
-            <td> 
-               <img src="http://services.google.com/fh/files/emails/bottom_footer_logo.png" alt="Google Cloud" width="140">
-             </td>
-       </tr>
-       <tr>
-                     <td> 
-                            <a>Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
-                       <br />
-                       <br />
-                       This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive updates and tips about your Google Cloud Platform account. If you don’t want to receive such emails in the future, please unsubscribe here: <div><a href="https://www.google.com/appserve/mkt/optout/AHANi0brs1GmJxdChmsaiqBvzdf6AAms5apIHl9tBTkfX9QInacdJDNeG8CX8Ttjqw5b22nz?hl=en">https://www.google.com/appserve/mkt/optout/AHANi0brs1GmJxdChmsaiqBvzdf6AAms5apIHl9tBTkfX9QInacdJDNeG8CX8Ttjqw5b22nz?hl=en</a></div> 
-You can also change your preferences on your account’s profile page by logging in at <a href="http://www.google.com/appserve/mkt/p/AHANi0ZaBo4oQwNFd9mwiL0cZORjy7Ji-ApTvc4QLLFmOYa227rABhs4Yl7ht6XQpl0Twmu1m0X6HDwzJVUnN82OV5zk">console.cloud.google.com</a> 
-                              </td>
-                    </tr>
-   </table>
- </td>
-</tr>
-<tr>
-                      <td> 
-                        <table> 
-                          <tr>
-                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0YLOMzONjKVTi_96JZ4XRjdSyg_Bv9RLLjjicLM5VQJ7mIpJUtWAo7SE2KpRei00-IfFikm-nnH15DSBsTe07MOSvQ6rQSOnGYFqnu0"><img src="http://services.google.com/fh/files/emails/release_notes_apr_gplus.png" alt="G+" width="22"></a></td>
-                             <td>   </td>
-                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0YQQHejYHjXseEzSC7D9STtP20ZD0RYd4QgX5Oy_m11By4MXxLKTd2vtgA_2bOfxi1iJRmJhOsDsHeICq7lTdYgktFCS6A"><img src="http://services.google.com/fh/files/emails/gcp_new_blog_footericon.png" alt="Google Cloud Blog" width="24"></a></td> 
-                             <td>   </td>
-                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0aji51GRMzNguF9Z-GQE00ncg1-05xkUXrThDA9jj_l5G7bALwUvomz1YW9epZDhyH7cDC8Fuhrpz_0CnG5uDwNDSHzfKMolRGNx9ECXZ0V"><img src="http://services.google.com/fh/files/emails/release_notes_apr_github.png" alt="GitHub" width="17"></a></td>
-                             <td>   </td>
-                            <td><a href="https://www.google.com/appserve/mkt/p/AHANi0aE39kKdtmg5BlGUT3JDFBeSq1IephfOY-tnSnohZEbQaFUhYQ7nIrnA53dXMXs3zXAfGJxMQ6dM8O0HDpwphp5owkaHr2szaL3Jx-bFpjXQ0e3KQ4qUu7P"><img src="http://services.google.com/fh/files/emails/release_notes_apr_linkedin.png" alt="LinkedIn" width="17"></a></td>
-                             <td>   </td>
-                             <td><a href="https://www.google.com/appserve/mkt/p/AHANi0am54mDlG_zEDr6lnDbBsRp6Uut5NEIvXr5-T9idbAl9XmAMj3iT_IfstTe2g3CpAEdtZDjNjWl8d5lAr3hWM4pkEaIgU-VE5vM"><img src="http://services.google.com/fh/files/emails/release_notes_apr_twitter.png" alt="Twitter" width="16"></a></td>
-							 <td>   </td>
-							 <td><a href="https://www.google.com/appserve/mkt/p/AHANi0aVQcSht6ePlqRqrZBfEyVeFCktuUo31e8zkiBzKRfIw8cy2TIjXnDVxq3VtMDax1yZPR2SvR6RTpRfKlFPTSMBLjLoN4NswYMrnxqtyzWjhA"><img src="http://services.google.com/fh/files/emails/release_notes_apr_facebook.png" alt="Facebook" width="10"></a></td>
-                          </tr>
-                        </table>
-                       </td>
-                    </tr>
-
- 
-	</table>
-
-</div>
-<img height="1" src="https://www.google.com/appserve/mkt/img/AHANi0aFCVkrnGzoeyHpQG_GIXhE0Fk7uODQr1gjNUFFe4WR.gif" width="3">
-
- 
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>고양시 자원봉사자 취재 신청 안내</title>
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001919.html" />
     <id>tag:weblog.youre.space,2019:/imyaman//12.1919</id>
@@ -1568,6 +282,141 @@ You can also change your preferences on your account’s profile page by logging
 <p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/sEDLGxHD2Qs/jean_de_la_fontaine</p>
 
 <p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>모바일 성남사랑상품권 서포터즈 참여자 모집</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001916.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1916</id>
+
+    <published>2019-02-11T05:38:38Z</published>
+    <updated>2019-02-11T05:38:38Z</updated>
+
+    <summary>올해 성남사랑상품권발행 규모는1090억원!!!점점 규모가 커지는성남사랑상품권을더욱 쉽게 사용할 수 있도록모바일 성남사랑상품권이출시될 예정입니다.그런데 출시 전에꼼꼼한 점검 과정이 필요하겠죠?그래서 모바일 성남사랑상품권서포터즈 참여자를 모집합니다!!!관심 있으신 분들은위의 공고문을 확인하신 후접수 서류를 작성하셔서성남시청 동관 9층시장현대화과 유통행정팀으로방문 접수하시면 됩니다시민 여러분의많은 참여 부탁드립니다!!여기는 지역 상권이 살아나는 도시, 성남시성남시는...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="성남정책" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[올해 성남사랑상품권발행 규모는1090억원!!!점점 규모가 커지는성남사랑상품권을더욱 쉽게 사용할 수 있도록모바일 성남사랑상품권이출시될 예정입니다.그런데 출시 전에꼼꼼한 점검 과정이 필요하겠죠?그래서 모바일 성남사랑상품권서포터즈 참여자를 모집합니다!!!관심 있으신 분들은위의 공고문을 확인하신 후접수 서류를 작성하셔서성남시청 동관 9층시장현대화과 유통행정팀으로방문 접수하시면 됩니다시민 여러분의많은 참여 부탁드립니다!!여기는 지역 상권이 살아나는 도시, 성남시성남시는 오늘도그대와 함께 ^:)
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221463003687">http://seongnamdiary.com/221463003687</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>엄마의 손맛처럼 따뜻한 카페마망 서현도서관 3호점</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001915.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1915</id>
+
+    <published>2019-02-11T05:38:36Z</published>
+    <updated>2019-02-11T05:38:36Z</updated>
+
+    <summary>몇 년 전 수정도서관 근처에 있는 카페마망에 들른 적이 있습니다.지금과는 모습이 조금 달랐던 그때도서관에서 책을 한 권 빌려카페마망 정원에서 책을 보며 음료와 베이커리를 즐겼죠.시끄러운 대로변이 아닌조용한 마을 안에 위치하고 있어서 힐링되었던 기분이아직도 선연하게 떠오릅니다. 오픈된 정원에 이따금씩 참새가 날아와떨어진 빵부스러기를...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="감동성남" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[몇 년 전 수정도서관 근처에 있는 카페마망에 들른 적이 있습니다.지금과는 모습이 조금 달랐던 그때도서관에서 책을 한 권 빌려카페마망 정원에서 책을 보며 음료와 베이커리를 즐겼죠.시끄러운 대로변이 아닌조용한 마을 안에 위치하고 있어서 힐링되었던 기분이아직도 선연하게 떠오릅니다. 오픈된 정원에 이따금씩 참새가 날아와떨어진 빵부스러기를 주워먹는 재미를 보는 것도 좋았습니다.카페마망과 취재기자의 인연은 그렇게 시작되었습니다.얼마 전 다시 찾은 카페마망 1호점!진한 라떼 한 잔에 추억들을 생각하며 시간을 보냈지요.2005년에 처음 문을 열었으니 올해로 벌써14년째입니다.수정노인종합복지관에서 운영하는.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221463016385">http://seongnamdiary.com/221463016385</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>수정도서관 혹부리 영감 인형극 *.* (매월 문화예술 공연이 펼쳐집니다!)</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001914.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1914</id>
+
+    <published>2019-02-11T03:39:21Z</published>
+    <updated>2019-02-11T03:39:21Z</updated>
+
+    <summary>아이고~ 깜짝이야!!수정도서관에혹부리영감이 나타났어요!게다가 도깨비들까지 나왔어요.아이들이 깜짝 놀라기도 했지만무섭지 않은 혹부리영감이었어요. 제가 공연 현장을 직접 다녀왔습니다.지금부터 그 생생한 현장을자세히 소개해드리겠습니다. 수정도서관은 단대공원 옆에 있는데요,주말을 맞아 책을 읽으러 온 시민들이열람실에 많았어요.도서관은 지하2층, 지상 4층인데관리가 잘 돼 깨끗하고 쾌적했어요. 입구에는 혹부리영감 공연 안내판이걸려...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="공연전시" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[아이고~ 깜짝이야!!수정도서관에혹부리영감이 나타났어요!게다가 도깨비들까지 나왔어요.아이들이 깜짝 놀라기도 했지만무섭지 않은 혹부리영감이었어요. 제가 공연 현장을 직접 다녀왔습니다.지금부터 그 생생한 현장을자세히 소개해드리겠습니다. 수정도서관은 단대공원 옆에 있는데요,주말을 맞아 책을 읽으러 온 시민들이열람실에 많았어요.도서관은 지하2층, 지상 4층인데관리가 잘 돼 깨끗하고 쾌적했어요. 입구에는 혹부리영감 공연 안내판이걸려 있었는데요, 부모들과 함께온 아이들이 많았습니다. 공연이 오후 2시부터였는데요,1시30분부터 아이들과 부모들이하나 둘씩 모이기 시작합니다.아이들은 곧 만나게 될 혹부리.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221462910978">http://seongnamdiary.com/221462910978</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>세상에 단 하나뿐인 꽃다발 만들기! 발렌타인데이 최고의 선물</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001913.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1913</id>
+
+    <published>2019-02-11T02:39:45Z</published>
+    <updated>2019-02-11T02:39:45Z</updated>
+
+    <summary>2월14일이 발렌타이데이죠?이 날은 여성이 남성에게초콜릿을 선물하는 날뿐만 아니라주변 사람들에게 감사의 마음을전하는 날로 변하고 있습니다.감사의 마음을 전하고 싶은데무슨 선물을 해야 좋을까요?직접 만들어 주는 게 좋겠죠. 성남여성인력개발센터에서발렌타이데이를 맞이해세상에서 하나뿐인 예쁜 꽃다발만들기 강좌가 있어서 찾아가봤습니다.먼저 성남여성인력개발센터를간단히 소개해야겠죠? 성남여성인력개발센터는1998년 5월 개관해 직업능력개발훈련,전업주부 재취업훈련, 실업자취업훈련,근로자능력개발훈련,...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="성남지식" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[2월14일이 발렌타이데이죠?이 날은 여성이 남성에게초콜릿을 선물하는 날뿐만 아니라주변 사람들에게 감사의 마음을전하는 날로 변하고 있습니다.감사의 마음을 전하고 싶은데무슨 선물을 해야 좋을까요?직접 만들어 주는 게 좋겠죠. 성남여성인력개발센터에서발렌타이데이를 맞이해세상에서 하나뿐인 예쁜 꽃다발만들기 강좌가 있어서 찾아가봤습니다.먼저 성남여성인력개발센터를간단히 소개해야겠죠? 성남여성인력개발센터는1998년 5월 개관해 직업능력개발훈련,전업주부 재취업훈련, 실업자취업훈련,근로자능력개발훈련, 취업지원서비스 등여성의 경제적 자립과사회적 지위향상 등을 지원하고 있습니다. 그래서 교육프로그램이 다.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221462879729">http://seongnamdiary.com/221462879729</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>겨울방학 체험학습 완소 코스 인터렉티브 아트를 즐길 수 있는 미누현대미술관</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/02/001912.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.1912</id>
+
+    <published>2019-02-11T01:40:03Z</published>
+    <updated>2019-02-11T01:40:03Z</updated>
+
+    <summary>요즘 아이들 겨울방학이라 아이들과 함께 즐길 수 있는 활동이 뭐가 있을까 고민들이 많으실텐데요겨울방학 체험활동으로 딱~ 좋은성남 미누현대미술관에 가보세요^^성남 미누현대미술관은 성남 두산아파트 상가 3층에 있구요교통편은 다음과 같습니다BUS : 희망대공원 정류장 하차(30-1, 88번)지하철 8호선 : 신흥역 1번출구, 단대오거리역 4번출구자가용 이용시 주차는 두산아파트...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="공연전시" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[요즘 아이들 겨울방학이라 아이들과 함께 즐길 수 있는 활동이 뭐가 있을까 고민들이 많으실텐데요겨울방학 체험활동으로 딱~ 좋은성남 미누현대미술관에 가보세요^^성남 미누현대미술관은 성남 두산아파트 상가 3층에 있구요교통편은 다음과 같습니다BUS : 희망대공원 정류장 하차(30-1, 88번)지하철 8호선 : 신흥역 1번출구, 단대오거리역 4번출구자가용 이용시 주차는 두산아파트 정문 내 우측 하단 담쪽 주차장 이용저는 차를 갖고 가서 주차하고아파트 단지내 상가 안쪽으로 들어가서계단으로 3층까지 올라갔는데요그러면 헛걸음하십니다 ㅋㅋ대로변에 있는 정문을 이용해 달라는 안내문을 만나실거에요~이곳이 바로 대로변에 있는.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221462840569">http://seongnamdiary.com/221462840569</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>

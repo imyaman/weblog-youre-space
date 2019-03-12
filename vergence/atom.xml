@@ -210,28 +210,6 @@ follow these steps, YOUR APP MAY BREAK.
 </entry>
 
 <entry>
-    <title>Re-verify ownership of your domain</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2018/09/001327.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.1327</id>
-
-    <published>2018-09-07T04:41:46Z</published>
-    <updated>2018-09-07T04:41:46Z</updated>
-
-    <summary>Please re-verify ownership of sys5.co on sys5-f9f83. The previous verification for this domain has been invalidated. You have 7 days to re-verify ownership of sys5.co before it is removed from Firebase Hosting, which will stop all content from being served...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[Please re-verify ownership of sys5.co on sys5-f9f83. The previous verification for this domain has been invalidated.  You have 7 days to re-verify ownership of sys5.co before it  is removed from Firebase Hosting, which will stop all content from being served from the domain. Please visit the <a href="https://console.firebase.google.com/project/sys5-f9f83/hosting">Firebase Hosting Panel</a> to start the re-verification process.
-]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>Xvfb GL</title>
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2018/08/001281.html" />
     <id>tag:weblog.youre.space,2018:/vergence//11.1281</id>
@@ -536,6 +514,34 @@ MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.<br />
 자유롭게 함께 이야기 하는 장소가 되면 좋겠어요.</p>
 
 <a href="http://meetup.devopskorea.com/201807/">http://meetup.devopskorea.com/201807/</a>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>에스토니아 개인 소득 500 이하</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2018/05/000877.html" />
+    <id>tag:weblog.youre.space,2018:/vergence//11.877</id>
+
+    <published>2018-05-16T10:06:03Z</published>
+    <updated>2018-05-16T10:06:28Z</updated>
+
+    <summary>에스토니아는 개인소득이 500Euro 이하면 개인 세금이 없다는군요. 470Euro를 배당금으로 받는 것과 급여로 받는걸 비교하면. 배당금 : 470 + 법인세금(20%) 94라서 회사 입장에선 564 Euro. 급여 : 470 + 사회세금(?)으로 160이면 회사입장에선 630 Euro... 이지만 유럽 어디서든 의료 보험이 된다고. 에스토니아에...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>http://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        에스토니아는 개인소득이 500Euro 이하면 개인 세금이 없다는군요.
+
+470Euro를 배당금으로 받는 것과 급여로 받는걸 비교하면.
+
+배당금 : 470 + 법인세금(20%) 94라서 회사 입장에선 564 Euro.
+급여 : 470 + 사회세금(?)으로 160이면 회사입장에선 630 Euro... 이지만 유럽 어디서든 의료 보험이 된다고.
+
+에스토니아에 세금 내고 디지털 노마드라면 고려해볼 선택지이군요.
         
     </content>
 </entry>
