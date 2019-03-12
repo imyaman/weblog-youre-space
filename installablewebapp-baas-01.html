@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta property="og:title" content="YOUR E-SPACE WEBLOG">
+<meta property="og:description" content="YOUR E-SPACE가 제공하는 WEBLOG 서비스입니다. 글쓴이가 자기 글의 완전한 소유자가 되도록, 설치형 블로그를 나누고 있습니다.">
+
+<link rel="preload" href="//unpkg.com/navigo@6" type="application/javascript" as="script">
+<link rel="preload" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" as="style">
+<link rel="preload" href="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" as="script">
+<link rel="preload" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" as="script">
+<link rel="preload" href="//cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" as="script">
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+</head>
+<body>
+
+<div id="mybody"></div>
+
+<script src="//unpkg.com/navigo@6" type="application/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="application/javascript" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js" type="application/javascript" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js" type="application/javascript"></script>
+<script type="application/javascript">
+
+console.log('start my code');
+console.log(window.location);
+
+var root = null;
+var useHash = true; // Defaults to: false
+var hash = '#'; // can be : '#', '#!'
+var router = new Navigo(root, useHash, hash);
+var theIdUrl;
+
+$(".button").click(function(){
+  var theId=$(this).attr('id');
+  console.log(  theId  );
+
+  $(location).attr('href','#/article/' + theId);
+  window.location = '#/article/' + theId;
+});
+
+router
+  .on(function () {
+    console.log('this is main/root handler');
+    console.log(window.location);
+    // show menu or a list
+    $.get("https://weblog.youre.space/baas/latest.html", function( data ) {
+      $( "#mybody" ).html( data );
+    });
+
+    $(document).attr("title", "POST ID : " + "LATEST" );
+    $("meta[property='og\\:title']").attr("content", 'title: ' + "the last post");
+    $("meta[property='og\\:description']").attr("content", 'description: ' + "the last post");
+  })
+  .resolve();
+
+router
+  .on('/article/:id', function (params) {
+    console.log('this is article handler');
+    console.log(window.location);
+
+    theIdUrl = params.id;
+    console.log(theIdUrl);
+    $.get("https://weblog.youre.space/baas/bodyonly/" + theIdUrl + ".html", function( data ) {
+      $( "#mybody" ).html( data );
+    });
+
+    $(document).attr("title", "New Title"+theIdUrl);
+    $("meta[property='og\\:title']").attr("content", 'title: ' + theIdUrl);
+    $("meta[property='og\\:description']").attr("content", 'description: ' + theIdUrl);
+
+  })
+  .resolve();
+
+</script> <!-- end of js -->
+
+<script type="text/babel">
+</script> <!-- end of babel -->
+</body>
+</html>
