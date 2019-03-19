@@ -147,7 +147,20 @@
   
 </aside>
 -->
-                
+                <div id="comments"></div><div id="disqus_thread"></div>
+            <div style="display:none;" id="disqus_post_title">Splunk(스플렁크)를 시작하며...</div>
+            <div style="display:none;" id="disqus_post_message"><p>2012년 처음으로 <a href=\"http//www.splunk.com\" target=\"_blank\">Splunk</a>라는 솔루션을 접하게 되었다. 아주 우연한 기회에...</p>\n<p>그 전까지 나는 데이터를 다룰때는 데이터베이스나 엑셀을 주로 사용하고 있었는데,</p>\n<p>스플렁크는 나에게 신세계를 보여주었다. 마치 클라우드 서비스 처럼... ㅎㅎㅎ</p>\n<p>이 후에 꾸준히 스플렁크를 사용할 기회를 가지게 되었고,</p>\n<p>여러가지 데이터를 수집하고 처리하는 방법을 익히게 되었는데,</p>\n<p>앞으로 스플렁크의 기본 사용법부터 다양한 활용 방법을 정리해 보려고한다.</p>\n<p>(이 내용을 기초로 해서 조만간 동영상 강의도 만들 계획이다. ^^ )</p>\n<p>이 글은 첫번째 내용으로 스플렁크에 대한 기본 소개를 적어볼까 한다.</p>\n<h4><strong>스플렁크는 뭐하는 놈인가?</strong></h4>\n<p>스플렁크는 한 문장으로 정리하면 다음과 같다.</p>\n<blockquote>\n<p>\"<span style=\"color: #ff0000;\"><strong>머신 데이터</strong></span>를 아무런 <span style=\"color: #ff0000;\"><strong>제약 없이</strong> <strong>수집, 저장, 분석, 시각화</strong></span> 할 수 있는 <span style=\"color: #ff0000;\"><strong>실시간 분산</strong> <strong>플랫폼</strong></span>\"</p>\n</blockquote>\n<ul>\n<li>머신 데이터 : 스플렁크는 서버, 네트워크, 각종 설비, 어플리케이션에서 발생하는 로그와 데이터를 다룬다. 그 외에도 기타 모든 텍스트 형태의 데이터를 다룬다. 이런 데이터는 \"머신\"에서 발생되기 때문에 머신 데이터라 부른다.</li>\n<li>제약 없이 : 워낙에 광범위한 의미의 용어라 완전 동의하지는 않지만, 비정형, 정형 데이터를 다룰수 있고, 데이터의 포맷에 무관하게, 데이터의 용량에 무관하게 데이터를 다룰 수 있다. 또한 발생되는 데이터의 속도와도 무관하게 처리가 가능하다.</li>\n<li>수집 &gt; 저장 &gt; 분석 &gt; 시각화 : 다른 표현으로 엔드 투 엔드 솔루션이라 부를 수 있다. 별도의 외부 솔루션이나 복잡한 코딩, 개발이 없이도 데이터의 생성(수집)부터, 저장하고, 저장된 데이터를 검색하여 분석하고 시각화하는 기능까지 모두 제공한다.</li>\n<li>실시간/분산 : 스플렁크는 모든 데이터를 실시간 처리하고, 처리된 데이터는 즉시 결과를 확인할 수 있다. 성능 향상과 안정성, 용량의 확장을 위해 서버를 선형적 확장할 수 있고, 선형 확장된 환경에서 분산 저장, 분산 검색의 기능을 제공한다.</li>\n</ul>\n<h4><strong>스플렁크의 라이선스 정책</strong></h4>\n<ul>\n<li>영구 라이선스 : 한번 구매를 통해 영구적인 리이선스 권리를 가질 수 있다. 라이선스 구매 후에는 매년 20%의 리뉴얼 비용을 지불하고, 기술지원을 받을 수 있다.</li>\n<li>연간 라이선스 : 1년단위로 유효기간이 종료되는 라이선스이고, 별도의 리뉴얼 비용은 없고, 연간 라이선스 구입으로 유효기간 내에 기술지원이 포함된다.</li>\n<li>라이선스 가격의 결정 요소 : 스플렁크는 서버의 규모나 대수와 상관없이 1일 기준으로 인덱스 서버에 수집되는 로그의 용량을 기준으로 가격이 결정된다. 1일 500MB까지는 무료로 사용이 가능하고, 이를 초과하는 데이터에 대해서는 1GB 단위로 라이선스를 구매할 수 있다. 다음의 <a href=\"http://splk.it/2qhQu1b\" target=\"_blank\">링크</a>에서 스플렁크의 가격을 예측할 수 있으나, 실제로 한국내에서는 온라인 구매가 가능하지 않고, 온라인 구매시에는 파트너사의 기술지원을 받기 어렵다는 점은 참고할 필요가 있다.<br /><br />사용자가 1일 10GB의 영구 라이선스를 구매하면, 사용자는 매일 10GB의 로그를 수집할 수 있고, 로그량 증가에 따른 서버와 저장 장치만 준비하면 된다.</li>\n</ul>\n<h4>스플렁크는 어디에서 얻을 수 있는가?</h4>\n<ul>\n<li>스플렁크는 웹사이트에서 <a href=\"https://www.splunk.com/en_us/download.html\" target=\"_blank\">다운로드</a> 할 수 있다.<br />\n</li>\n<a href=\"http://weblog.youre.space/genie7/uploads/02-Splunk_Download_page.png\"><img alt=\"02-Splunk_Download_page.png\" src=\"http://weblog.youre.space/genie7/assets_c/2018/04/02-Splunk_Download_page-thumb-360xauto-18.png\" width=\"360\" height=\"206\" class=\"mt-image-none\" style=\"\" /></a>\n<li>다운로드를 위해서는 스플렁크 웹사이트에 <a href=\"http://splk.it/2qi1mMq\" target=\"_blank\">회원가입</a>을 해야한다.</li>\n</ul>\n<p>다음 글부터는 스플렁크를 사용하기 위한 방법들을 하나씩 정리할 예정이다.</p>\n<p>하나씩 따라하면 어느 순간 스플렁크를 잘 활용하는 사용자가 되어 있기를 기대해본다.</p>\n<p></p>\n<p></p></div>
+            <script type="text/javascript">
+                var disqus_domain = 'disqus.com';
+                var disqus_shortname = 'youre-space';
+                var disqus_url = 'https://weblog.youre.space/genie7/2017/05/000055.html';
+                var disqus_title = document.getElementById('disqus_post_title').innerHTML;
+                var disqus_message = document.getElementById('disqus_post_message').innerHTML;
+            </script>
+            <script type="text/javascript" src="http://youre-space.disqus.com/embed.js"></script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=youre-space">comments powered by Disqus.</a></noscript>
+
+
                 
               </article>
             </div>
