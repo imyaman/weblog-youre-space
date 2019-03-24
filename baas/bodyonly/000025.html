@@ -1,18 +1,10 @@
-<article id="entry-25" class="entry entry-asset asset hentry">
-  <div class="asset-header">
-    <h2 itemprop="name" class="asset-name entry-title">Firebase에서 entity 생성시각 저장하기</h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2016-06-14T22:42:08+09:00" itemprop="datePublished">June 14, 2016</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="http://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-        
-        
-        
-      </ul>
-    </footer>
-  </div>
-  <div class="entry-content asset-content" itemprop="articleBody">
-    <p>Parse, Kinvey, usergrid, Azure Mobile Services 등은 하나의 entity를 저장하면 생성시각을 자동으로 함께 저장합니다. 
+<header></header>
+<main>
+  <article>
+    <h1>Firebase에서 entity 생성시각 저장하기</h1>
+
+    <section>
+      <p>Parse, Kinvey, usergrid, Azure Mobile Services 등은 하나의 entity를 저장하면 생성시각을 자동으로 함께 저장합니다. 
 이런 BaaS들은 대부분 entity의 특정 프로퍼티에 접근할 때 rowData.keyname처럼 접근하는데, Parse의 경우는 rowData.get('comment')처럼 접근합니다.
 생성시각 접근할 때에는 Parse는 rowData.createdAt처럼, Kinvey는 rowData._kmd.ect처럼, usergrid는 rowData.created*1000처럼, Azure는 rowData.createdAt처럼 접근합니다. Parse의 경우는 생성시각 같은 프로퍼티에 접근할 때에는 get을 사용하지 않는 예외가 있는 거죠.</p>
 
@@ -27,27 +19,28 @@
 }' 'https://weblog-683a9.firebaseio.com/posts1/.json'
 </code></pre>
 
-    
-  </div>
-  <nav class="page-navigation entry-navigation pagination content-nav">
-    <ul class="page-navigation-list">
       
-      <li class="page-navigation-list-item page-navigation-prev"><a href="#/article/000024" title="Bluemix Mobile Services 느낌" rel="prev">이전 글</a></li>
-      
-      
-      <li class="page-navigation-list-item page-navigation-next"><a href="#/article/000026" title="Firebase 요금과 무료 용량" rel="next">다음 글</a></li>
-      
-    </ul>
-  </nav>
-  <!--
+    </section>
+
+    <section>
+        <span>Posted on <time datetime="2016-06-14T22:42:08+09:00">June 14, 2016</time></span>
+        <span>by <a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+        
+        
+        
+    </section>
+  </article>
+</main>
+
+<!--
 <aside id="zenback" class="zenback feedback">
   
     Please paste Zenback script code here.
   
 </aside>
 -->
-  
-  <aside id="trackbacks" class="trackbacks feedback">
+
+<aside id="trackbacks" class="trackbacks feedback">
   <h2>TrackBacks</h2>
   
   <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/25</p>
@@ -56,4 +49,14 @@
 </aside>
 
 
-</article>
+
+<nav>
+  <ul>
+    
+    <li><a href="#/article/newway-000024" title="Bluemix Mobile Services 느낌" rel="prev">이전 글</a></li>
+    
+    
+    <li><a href="#/article/newway-000026" title="Firebase 요금과 무료 용량" rel="next">다음 글</a></li>
+    
+  </ul>
+</nav>
