@@ -73,7 +73,7 @@ router
     console.log('this is main/root handler');
     console.log(window.location);
     // show menu or a list
-    $.get("//weblog-firebase.youre.space/baas/latest.html", function( data ) {
+    $.get("//weblog.youre.space/baas/latest.html", function( data ) {
       $( ".container" ).html( data );
     });
 
@@ -90,7 +90,7 @@ router
 
     theIdUrl = params.id;
     console.log(theIdUrl);
-    $.get("//weblog-firebase.youre.space/baas/bodyonly/" + theIdUrl + ".html", function( data ) {
+    $.get("//weblog.youre.space/baas/bodyonly/" + theIdUrl + ".html", function( data ) {
       $( ".container" ).html( data );
     });
     $(document).attr("title", "Content ID "+theIdUrl);
