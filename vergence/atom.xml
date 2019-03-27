@@ -4,9 +4,59 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2019-03-18T04:21:25Z</updated>
+    <updated>2019-03-18T22:10:13Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>3월 18일의 역사</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/03/002052.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.2052</id>
+
+    <published>2019-03-18T22:10:13Z</published>
+    <updated>2019-03-18T22:10:13Z</updated>
+
+    <summary>✿부산 미 문화원 방화사건 발생1982년 3월 18일 오후 2시 부산 고신대생들이 광주민주화운동 유혈진압 및 독재정권 비호에 대한 미국측의 책임을 물어 부산 미 문화원 1층에 방화한 사건이 발생했다. 때를 같이해서 주변에는 유인물 700여 장이 뿌려졌다. ‘반미’의 금기를 깬 이 사건은 대담하고...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<div><span>✿부산 미 문화원 방화사건 발생</span></div><div><br /></div><div>1982년 3월 18일 오후 2시 부산 고신대생들이 광주민주화운동 유혈진압 및 독재정권 비호에 대한 미국측의 책임을 물어 부산 미 문화원 1층에 방화한 사건이 발생했다. 때를 같이해서 주변에는 유인물 700여 장이 뿌려졌다. ‘반미’의 금기를 깬 이 사건은 대담하고 격렬한 투쟁 방식으로 사람들에게 큰 충격을 안겨줬고, 미 문화</div><div>원이 1980년대 반미투쟁의 표적이 되는 신호탄 역할을 했다.</div><div><br /></div><div>방화를 실행한 고신대생 이미옥 등이 3월 30일 잡히면서 사건의 윤곽이 드러났으며, 주범으로 공개수배된 고신대생 문부식과 김은숙은 4월 1일에 자수했다. 이튿날인 2일에는 문부식의 배후로 지목된 광주민주화운동의 수배자 김현장이 검거됐다.</div><div><br /></div><div>3일 뒤에는 김현장을 은닉한 혐의로 원주교육원장 최기식 신부가 연행되면서 천주교까지 연루되는 사건으로 번졌다.</div><div><br /></div><div>전두환 정권은 평소 탐탁치 않던 천주교에 대대적인 공세를 가하기 시작했고 천주교</div>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>perl open.pm</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/03/002050.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.2050</id>
+
+    <published>2019-03-18T10:43:06Z</published>
+    <updated>2019-03-18T10:43:06Z</updated>
+
+    <summary>Fedora 29&#50640;&#49436; Perl &#44288;&#47144; &quot;Can&apos;t locate open.pm...&quot; &#47700;&#49884;&#51648;&#47484; &#48372;&#44172; &#46108;&#45796;&#47732; perl-open &#54056;&#53412;&#51648;&#47484; &#49444;&#52824;&#54616;&#51088;. yum install perl-open &#44536;&#47084;&#47732; perl-open-1.11&#51060; &#49444;&#52824;&#46112; &#44163;&#51060;&#45796;...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<div>Fedora 29&#50640;&#49436; Perl &#44288;&#47144; "Can't locate <a href="http://open.pm">open.pm</a>..." &#47700;&#49884;&#51648;&#47484; &#48372;&#44172; &#46108;&#45796;&#47732; perl-open &#54056;&#53412;&#51648;&#47484; &#49444;&#52824;&#54616;&#51088;.<br />
+<br />
+</div>
+<div>yum install perl-open <br />
+<br />
+</div>
+<div>&#44536;&#47084;&#47732; perl-open-1.11&#51060; &#49444;&#52824;&#46112; &#44163;&#51060;&#45796;</div>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Re: 오픈그래프 og tag와 저작권</title>
@@ -19,7 +69,7 @@
     <summary> From: Sangyong Gwak Sent: Monday, March 18, 09:54 Subject: &#50724;&#54536;&#44536;&#47000;&#54532; og tag&#50752; &#51200;&#51089;&#44428; To: imyamanhitelnet+12@gmail.com &#53440;&#51064;&#51032; &#50937; &#54168;&#51060;&#51648;(&#51200;&#51089;&#47932;)&#51032; og tag&#47484; &#45236; &#49436;&#48708;&#49828;&#50640;&#49436; &#51060;&#50857;&#54644;&#46020; &#46112;&#44620;? &quot;&#49324;&#49892;&#51032; &#49688;&#51665; &#46384;&#50948;&quot;&#50640;&#45716; &#51200;&#51089;&#44428;&#51012; &#51452;&#51109;&#54624; &#49688; &#50630;&#45796;. &#44172;&#45796;&#44032;, &#51200;&#51089;&#44428;&#51012; &#51452;&#51109;&#54616;&#47140;&#47732; &#45800;&#49692;&#45432;&#46041;(&quot;&#51060;&#47560;&#51032; &#46400;&quot; &#51221;&#46020;&#51032; &#45432;&#46041;) &#51060;&#49345;&#51032;...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -65,6 +115,27 @@
 </entry>
 
 <entry>
+    <title></title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/01/002055.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.2055</id>
+
+    <published>2019-01-20T13:11:41Z</published>
+    <updated>2019-03-27T00:50:58Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        
+        
+    </content>
+</entry>
+
+<entry>
     <title>Firebase에서 서버 시각 저장하는 방법 변경</title>
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/01/001386.html" />
     <id>tag:weblog.youre.space,2019:/vergence//11.1386</id>
@@ -75,7 +146,7 @@
     <summary>기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요. The behavior for Date objects stored in Firestore is going to change AND YOUR APP MAY BREAK. To hide this warning and ensure your app does not break, you...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -120,7 +191,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>신한카드 올댓쇼핑 모바일 웹 Shinhancard allthat shopping mobile web https://newmallthat.shinhancard.com/...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -143,7 +214,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>Movable Type 7에서 Movable Type 6로 돌아왔습니다. MT7으로 이전은 나중에 시도해보려고요. 아직은 이른 것 같아요....</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -164,7 +235,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>Watson Analytics 유료로 사용해보고 싶습니다. https://community.ibm.com/community/user/businessanalytics/blogs/christina-howell/2017/08/08/how-can-i-connect-my-instance-of-watsonanalytics-t...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -186,7 +257,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>프랑스 노란 조끼 시위에 대한 보도를 보며 또 이런 생각이 듭니다, 한반도에 단기 4351년에도 신민과 노예가 살고 있구나. 상류층에 대한 불신(세금을 부자들을 위해 쓰고 있다는)이 있는데, 낫으로 불신의 대상의 목을 베지 않았다는 건. 시위하는 사람은 자신의 경력 단절, 범법자가 될...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -210,7 +281,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>Supplied language is not supported. Pass in one of: ar,da,de,el,en,es,fi,fr,it,ja,nl,no,pl,pt-PT,ru,sv,tr,zh-Hans. See https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview for the complete list of support languages. 그렇군요. sentiment에 ko Korean 한국어는 현재 지원되지 않는거군요. 아래 문서를 보면, 한국어는 Key phrases만 지원한답니다. https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/language-support...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -233,7 +304,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>다나와 리포터 약관 제 1 장 총칙 제 1 조 목적 이 약관은 전기통신사업법 및 정보통신망이용촉진 및 정보보호 등에 관한 법률에 따라 ㈜다나와(이하 &quot;회사&quot;로 약칭) 회원에게 제공하는 다나와 리포터 가입 및 이용조건, 서비스 이용, 권한 및 의무, 책임 등에 관련된...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -254,7 +325,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>몇가지 모듈이 필요한데, ubuntu의 경우 아래 명령으로 설치하자. apt install libcgi-psgi-perl libsoap-lite-perl libimage-size-perl libimage-magick-perl...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -276,7 +347,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>LIBGL_ALWAYS_INDIRECT=1...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -298,7 +369,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary> CEK API 서비스 이용약관 네이버 API 서비스 중 하나인 CEK API 서비스를 이용하기 위해서는 다음의 약관에 동의하셔야 합니다. 약관은 크게 네이버 API 서비스 자체의 이용에 대한 조건을 규정하는 [가. 네이버 API 이용조건]과 특히 CEK API 서비스에 대한 조건을 규정하는...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -484,7 +555,7 @@ follow these steps, YOUR APP MAY BREAK.
     <summary>휴가에 아무말...</summary>
     <author>
         <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
+        <uri>https://weblog.youre.space/vergence/</uri>
     </author>
     
     
@@ -492,84 +563,6 @@ follow these steps, YOUR APP MAY BREAK.
         <![CDATA[<p>휴가에 아무말</p>
 
 <img src="https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/38631891_974019069443321_839714407570210816_o.jpg?_nc_cat=0&efg=eyJpIjoidCJ9&oh=5a801abc1b5ed384869bc408f3783110&oe=5C09D666">]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>포트 포워딩 예시</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2018/07/001119.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.1119</id>
-
-    <published>2018-07-15T13:57:49Z</published>
-    <updated>2018-07-15T14:04:57Z</updated>
-
-    <summary>사설 네트워크에 여러개의 서버가 있고, 그 중 하나의 서버에만 공인 IP가 있는 상황입니다. 외부에서 공인 IP를 통해 사설 네트워크 안의 서버에 접근하고 싶을 때, 포트 포워딩을 이용할 수 있습니다. 공인 IP가 있는 서버를 P1, 사설 네트워크 내부의 서버를 S1, S2라고...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<p>사설 네트워크에 여러개의 서버가 있고, 그 중 하나의 서버에만 공인 IP가 있는 상황입니다. 외부에서 공인 IP를 통해 사설 네트워크 안의 서버에 접근하고 싶을 때, 포트 포워딩을 이용할 수 있습니다.</p>
-<p>공인 IP가 있는 서버를 P1, 사설 네트워크 내부의 서버를 S1, S2라고 하겠습니다.</p>
-<p>iptables로 아래와 같이 하면, P1의 1022 포트로 접근하면, S1의 22번 포트로 연결됩니다. S1의 주소가 10.1.1.3 입니다.</p>
-<p>iptables -A PREROUTING -i ens3 -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />iptables -A PREROUTING -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />iptables -A POSTROUTING -o ens3 -j MASQUERADE<br />iptables -A FORWARD -p tcp -m tcp --dport 22 -j ACCEPT<br />iptables -A FORWARD -p tcp -m tcp --dport 1022 -j ACCEPT<br /><br />저는 이렇게 설정파일을 만들어 쓰고 있습니다.<br />==== ==== ==== ====</p>
-<p>root@w001 # cat /etc/iptables.rules<br /># Generated by iptables-save v1.6.0 on Sat Jul 14 15:18:13 2018<br />*nat<br />:PREROUTING ACCEPT [33:4792]<br />:INPUT ACCEPT [33:4792]<br />:OUTPUT ACCEPT [13:3996]<br />:POSTROUTING ACCEPT [0:0]<br />-A PREROUTING -i ens3 -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -i ens3 -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -i ens3 -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -p tcp -m tcp --dport 1022 -j DNAT --to-destination 10.1.1.3:22<br />-A PREROUTING -p tcp -m tcp --dport 15900 -j DNAT --to-destination 10.1.1.3:59000<br />-A POSTROUTING -o ens3 -j MASQUERADE<br />COMMIT<br /># Completed on Sat Jul 14 15:18:13 2018<br /># Generated by iptables-save v1.6.0 on Sat Jul 14 15:18:13 2018<br />*filter<br />:INPUT ACCEPT [538:51319]<br />:FORWARD ACCEPT [320:109251]<br />:OUTPUT ACCEPT [454:58003]<br />-A FORWARD -p tcp -m tcp --dport 22 -j ACCEPT<br />-A FORWARD -p tcp -m tcp --dport 1022 -j ACCEPT<br />-A FORWARD -p tcp -m tcp --dport 15900 -j ACCEPT<br />COMMIT<br /><br /></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>암호화폐 신용카드 Change</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2018/07/001098.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.1098</id>
-
-    <published>2018-07-12T22:27:39Z</published>
-    <updated>2018-07-12T22:27:39Z</updated>
-
-    <summary>암호화폐 신용카드 Change는 EU 사람들만 쓸 수 있다. http://getchange.com/...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[암호화폐 신용카드 Change는 EU 사람들만 쓸 수 있다.
-<div><br />
-</div>
-
-<div>http://getchange.com/<br />
-</div>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>MyMusicTaste와 DevOps Korea</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2018/07/000952.html" />
-    <id>tag:weblog.youre.space,2018:/vergence//11.952</id>
-
-    <published>2018-07-04T22:31:26Z</published>
-    <updated>2018-07-04T22:37:19Z</updated>
-
-    <summary>2018년 7월 14일에 DevOps Korea 행사합니다. MyMusicTaste의 DevOps 사례를 이야기 할 겁니다. 자유롭게 함께 이야기 하는 장소가 되면 좋겠어요. http://meetup.devopskorea.com/201807/...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>http://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<p>2018년 7월 14일에 DevOps Korea 행사합니다.<br />
-MyMusicTaste의 DevOps 사례를 이야기 할 겁니다.<br />
-자유롭게 함께 이야기 하는 장소가 되면 좋겠어요.</p>
-
-<a href="http://meetup.devopskorea.com/201807/">http://meetup.devopskorea.com/201807/</a>]]>
         
     </content>
 </entry>
