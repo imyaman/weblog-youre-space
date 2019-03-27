@@ -4,9 +4,1616 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-03-18T00:56:17Z</updated>
+    <updated>2019-03-27T07:09:37Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Google Cloud Newsletter, March 2019 | Livestream Google Cloud Next ’19</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/03/002058.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.2058</id>
+
+    <published>2019-03-27T07:09:37Z</published>
+    <updated>2019-03-27T07:09:37Z</updated>
+
+    <summary> @media screen and (min-width: 420px) { .head_gray_pd { padding-left: 20px !important; } } @media screen and (min-width: 731px) and (max-width: 850px) { .banner_text1, .banner_text2 { text-align: center !important; } .left-spacing-mob { padding-bottom: 2px !important; } } @media screen and...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+
+
+
+
+
+
+@media screen and (min-width: 420px) {
+.head_gray_pd {
+padding-left: 20px !important;
+}
+}
+@media screen and (min-width: 731px) and (max-width: 850px) {
+.banner_text1,
+.banner_text2 {
+text-align: center !important;
+}
+.left-spacing-mob {
+padding-bottom: 2px !important;
+}
+}
+@media screen and (max-width: 737px) {
+.mob_cls {
+width: 100% !important;
+max-width: 500px !important;
+}
+.body {
+padding-left: 10px !important;
+padding-right: 10px !important;
+box-sizing: border-box !important;
+background-color: #f8f9fa !important;
+width: auto !important;
+}
+.twitter_icon_box_text2 a,
+.body_heading a,
+.mob_link,
+.sec4_box1 tr td a,
+.sec4_box2 tr td a,
+.subscribe_text a,
+.feedback_text1 a,
+.signup_text a {
+font-weight: 500 !important;
+}
+.foot_wrap {
+padding-left: 50px !important;
+padding-right: 50px !important;
+}
+.banner_text1 {
+color: #ffffff !important;
+font-family: Roboto, arial !important;
+font-size: 24px !important;
+line-height: 32px !important;
+padding-top: 125px !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
+padding-bottom: 20px !important;
+text-align: center !important;
+}
+.banner_text2 {
+color: #ffffff !important;
+font-family: Roboto, arial !important;
+font-size: 14px !important;
+line-height: 24px !important;
+font-weight: 300 !important;
+padding-bottom: 26px !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
+text-align: center !important;
+}
+.sect_plr {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+.flexible {
+width: 100% !important;
+max-width: 600px !important;
+}
+.head_flexible {
+width: 100% !important;
+max-width: 500px !important;
+}
+.tweetbox {
+width: 100% !important;
+}
+.mob_para_head_event {
+padding-bottom: 10px !important;
+}
+.feedback_icon_parent1 {
+width: 100% !important;
+max-width: 110px !important;
+}
+.sec6_lr_pd {
+width: 100% !important;
+max-width: 500px !important;
+}
+.bigger_wrapper_body {
+padding-left: 25px !important;
+padding-right: 25px !important;
+box-sizing: border-box !important;
+}
+.banner_container {
+width: 100% !important;
+}
+.holder_wrap_inner {
+width: 100% !important;
+max-width: 100% !important;
+}
+.body_content_wrapper {
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+.bigger_wrapper_footer_1 {
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+.webkit {
+width: 100% !important;
+min-width: 100% !important;
+}
+.pre_header_text {
+width: 100% !important;
+}
+.body_heading {
+padding-bottom: 8px !important;
+padding-top: 0px !important;
+}
+.body_heading_zero_bot {
+padding-bottom: 0px !important;
+padding-top: 0px !important;
+}
+.body_subheading {
+font-size: 16px !important;
+line-height: 24px !important;
+padding-top: 10px !important;
+}
+.body_text {
+font-size: 14px !important;
+line-height: 24px !important;
+padding-top: 5px !important;
+padding-bottom: 10px !important;
+}
+.two_col_wrapper {
+width: 100% !important;
+max-width: 500px !important;
+}
+.twitter_icon_box_text2 {
+width: 100% !important;
+text-align: left !important;
+padding-bottom: 8px !important;
+}
+.twitter_icon_box_text4 {
+width: 100% !important;
+text-align: left !important
+}
+.twitter_box1_text2 {
+padding-right: 0px !important;
+padding-bottom: 0px !important;
+}
+.sec4_last_text.twitter_box1_text2 {
+padding-bottom: 16px !important;
+}
+.feedback_icon_parent1 {
+float: left !important;
+text-align: left !important;
+}
+.feedback_icon1 {
+width: 20px;
+padding-top: 20px !important;
+}
+.feedback_text1 {
+padding-top: 16px !important;
+text-align: left !important;
+}
+.subscribe_text1,
+.subscribe_text2,
+.subscribe_text3 {
+padding-left: 0px !important;
+padding-right: 0px !important;
+padding-bottom: 20px !important;
+}
+#firsttab {
+padding-left: 0px !important;
+}
+.subscribe_border {
+display: none !important;
+}
+.sub_head2,
+.sub_head3 {
+display: none !important;
+}
+#heroimgtxt3 {
+text-align: left !important;
+padding-left: 0px !important;
+}
+#head1 {
+padding-top: 42px !important;
+}
+#head2 {
+padding-top: 34px !important;
+}
+#head5 {
+padding-top: 34px !important;
+}
+.bluecta {
+text-align: center !important;
+margin: auto;
+}
+#head_text {
+padding-top: 12px !important;
+}
+.banner_text_2 {
+padding-left: 10px !important;
+padding-right: 10px !important;
+}
+.banner_text_1 {
+padding: 6px 10px 6px 10px !important;
+}
+#firsttab .bigger_wrapper_body {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+#thirdtab {
+padding-bottom: 32px !important;
+}
+#secondtab {
+padding-top: 0px !important;
+}
+}
+@media only screen and (min-width: 415px) and (max-width: 500px) {
+.btn_align {
+padding-bottom: 30px !important;
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1_heading2 {
+padding-bottom: 3px !important;
+padding-top: 16px !important;
+}
+.sec1_lnk_pb_mob {
+padding-bottom: 20px !important;
+}
+.section5_box1,
+.section5_box2 {
+width: 100% !important;
+}
+.section5_txt1,
+.section5_txt2 {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+.section5_txt1 {
+padding-bottom: 20px !important;
+}
+.outer {
+width: 100% !important;
+}
+.left_space {
+padding-left: 14px !important;
+}
+.pb_sec4_txt1 {
+padding-bottom: 8px !important;
+}
+.pb_sec4_txt2 {
+padding-bottom: 21px !important;
+}
+.event_btm tr td {
+padding-top: 1px !important;
+}
+.section2_txt1 {
+padding-bottom: 1px!important;
+}
+.section2_txt2 {
+padding-bottom: 20px!important;
+}
+.logo_holder_container {
+padding-left: 7px !important;
+}
+.flexible {
+width: 100% !important;
+max-width: 600px !important;
+}
+.tweetbox {
+width: 100% !important;
+}
+.section5_heading2 {
+padding-top: 0px !important;
+}
+.mob_gray_line {
+width: 100% !important;
+}
+.twitter_icon_box_main {
+width: 100% !important;
+}
+.mob_line_lrpd {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.mob_para_head,
+.section2_txt1,
+.section2_txt2,
+.sec4_lr_pd,
+.sec6_lr_pd,
+.para_heading1,
+.para_heading2,
+.btn_align {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.padtop {
+padding-top: 0px !important;
+}
+.head_gray_row {
+width: 100% !important;
+}
+.head_gray_pd {
+padding-left: 10px !important;
+}
+.banner_rght {
+width: 100% !important;
+max-width: 269px !important;
+}
+.banner_rght tr td {
+text-align: right !important;
+}
+.banner_rght tr td img {
+width: 100% !important;
+}
+.sec3_gray_box {
+width: 100% !important;
+}
+.foot_plr {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.sec4_box1,
+.sec4_box2 {
+width: 100% !important;
+max-width: 100% !important;
+}
+.pt_sec1_mob_bnr {
+padding-top: 0px !important;
+}
+td.sec4_img img {
+width: 100% !important;
+height: auto !important;
+max-width: 414px !important;
+}
+td.section1_img1 img {
+width: 100% !important;
+height: auto !important;
+max-height: 224px !important;
+max-width: 414px !important;
+}
+td.section1_img1 {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1_box1,
+.section1_box2 {
+width: 100% !important;
+height: auto !important;
+max-width: 414px !important;
+}
+.social_icons_container_inner {
+text-align: left !important;
+display: block !important;
+margin: 0 !important;
+}
+.social_icons_container_inner td {
+text-align: left !important;
+}
+.section2_top_td,
+.section2_bottom_td {
+padding-top: 0px !important;
+}
+#fourthtab .twitter_icon_box_text2 {
+padding-top: 14px !important;
+}
+#fourthtab .twitter_box1_text2 {
+padding-bottom: 8px !important;
+}
+#fourthtab .sec3_tab2body {
+padding-top: 4px !important;
+}
+.section1_img1 img {
+width: 100% !important;
+}
+.section1_img2 {
+background-repeat: no-repeat !important;
+height: auto !important;
+}
+.section1_img2 img {
+width: 100% !important;
+}
+.section4_img1,
+.section4_img2,
+.section4_img3,
+.section4_img4 {
+width: 100% !important;
+height: auto !important;
+}
+.split_box_mob {
+display: block !important;
+width: 100% !important;
+}
+.split_box_mob td {}
+.split_box_mob .left-spacing-mob {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1box {
+width: 100% !important;
+max-width: 412px !important;
+}
+.left-spacing-mob {
+padding-left: 32px !important;
+}
+#firsttab.bigger_wrapper_body {
+padding-right: 0px !important;
+padding-left: 0px !important;
+}
+.section5_link {
+display: block !important;
+padding-bottom: 10px !important;
+}
+}
+@media screen and (max-width: 414px) {
+#banner4 {
+background: none !important;
+height: 0px !important;
+}
+.show_in_mobile {
+display: block !important;
+}
+.social_icons_container_inner {
+text-align: left !important;
+display: block !important;
+margin: 0 !important;
+}
+.social_icons_container_inner td {
+text-align: left !important;
+}
+.section2_top_td,
+.section2_bottom_td {
+padding-top: 0px !important;
+}
+#fourthtab .twitter_icon_box_text2 {
+padding-top: 14px !important;
+}
+#fourthtab .twitter_box1_text2 {
+padding-bottom: 8px !important;
+}
+#fourthtab .sec3_tab2body {
+padding-top: 4px !important;
+}
+.section1_img1 img {
+width: 100% !important;
+}
+.section1_img2 {
+background-repeat: no-repeat !important;
+height: auto !important;
+}
+.section1_img2 img {
+width: 100% !important;
+}
+.section4_img1,
+.section4_img2,
+.section4_img3,
+.section4_img4 {
+width: 100% !important;
+height: auto !important;
+}
+.split_box_mob {
+display: block !important;
+width: 100% !important;
+}
+.split_box_mob td {}
+.split_box_mob .left-spacing-mob {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1box {
+width: 100% !important;
+max-width: 412px;
+}
+.left-spacing-mob {
+padding-left: 32px !important;
+}
+#firsttab.bigger_wrapper_body {
+padding-right: 0px !important;
+padding-left: 0px !important;
+}
+.section5_link {
+display: block !important;
+padding-bottom: 10px;
+}
+.btn_align {
+padding-bottom: 30px !important;
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1_heading2 {
+padding-bottom: 3px !important;
+padding-top: 16px !important;
+}
+.section5_box1,
+.section5_box2 {
+width: 100% !important;
+}
+.section5_txt1,
+.section5_txt2 {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+.section5_txt1 {
+padding-bottom: 20px !important;
+}
+.padtop {
+padding-top: 0px !important;
+}
+.section5_heading2new {
+padding-top: 0px !important;
+}
+.mainbannertd {
+padding-left: 25px !important;
+}
+.outer {
+width: 100% !important;
+}
+.left_space {
+padding-left: 14px !important;
+}
+.sec3_mob_lr {
+padding-right: 25px !important;
+padding-left: 25px !important;
+}
+.pb_sec4_txt1 {
+padding-bottom: 8px !important;
+}
+.event_btm tr td {
+padding-top: 1px !important;
+}
+.section2_txt1 {
+padding-bottom: 1px !important;
+}
+.section2_txt2 {
+padding-bottom: 20px !important;
+}
+.logo_holder_container {
+padding-left: 7px !important;
+}
+.sec1_tp tr td {
+padding-top: 10px !important;
+}
+.ban_top {
+padding-top: 20px !important;
+}
+.flexible {
+width: 100% !important;
+max-width: 600px !important;
+}
+.tweetbox {
+width: 100% !important;
+}
+.imginnertd {
+width: 169px !important;
+}
+.section5_heading2 {
+padding-top: 16px !important;
+}
+.mob_gray_line {
+width: 100% !important;
+}
+.twitter_icon_box_main {
+width: 100% !important;
+}
+.mob_line_lrpd {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.mob_para_head,
+.section2_txt1,
+.section2_txt2,
+.sec4_lr_pd,
+.sec6_lr_pd,
+.para_heading2,
+.btn_align,
+.bdy_cnt {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.para_heading2 {
+font-size: 18px !important;
+line-height: 32px !important;
+}
+.head_gray_row {
+width: 100% !important;
+}
+.head_gray_pd {
+padding-left: 10px !important;
+}
+.banner_rght {
+width: 100% !important;
+max-width: 269px !important;
+}
+.banner_rght tr td {
+text-align: right !important;
+}
+.banner_rght tr td img {
+width: 100% !important;
+}
+.sec3_gray_box {
+width: 100% !important;
+}
+.banner_img {
+padding-left: 25px !important;
+}
+.foot_plr {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.sec4_box1,
+.sec4_box2 {
+width: 100% !important;
+max-width: 100% !important;
+}
+.pt_sec1_mob_bnr {
+padding-top: 0px !important;
+}
+td.sec4_img img {
+width: 100% !important;
+height: auto !important;
+max-width: 414px !important;
+}
+td.section1_img1 img {
+width: 100% !important;
+height: auto !important;
+max-height: 224px !important;
+max-width: 414px !important;
+}
+td.section1_img1 {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1_box1,
+.section1_box2 {
+width: 100% !important;
+height: auto !important;
+max-width: 414px !important;
+}
+.para_heading1 {
+font-size: 24px !important;
+font-weight: bold !important;
+line-height: 32px !important;
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.sec4_img {
+width: 246px !important;
+height: auto !important;
+padding-top: 23px !important;
+text-align: center !important;
+}
+.overhead_img{
+line-height: 5px !important;
+}
+.split_box_dis_none{
+display:none !important;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 320px) {
+.section4_module5_td1 {
+width: 100px !important;
+background-size: 100% 100% !important;
+}
+}
+@media screen and (min-width: 812px) and (max-width: 812px),
+screen and (min-width: 736px) and (max-width: 736px),
+screen and (min-width: 667px) and (max-width: 667px),
+screen and (min-width: 568px) and (max-width: 568px),
+screen and (min-width: 414px) and (max-width: 414px),
+screen and (min-width: 375px) and (max-width: 375px),
+screen and (min-width: 320px) and (max-width: 320px) {
+.body {
+min-width: 100vw !important;
+}
+}
+
+
+@media screen yahoo {
+.show_in_mobile {
+display:none !important;
+font-size:0px !important;
+line-height:0 !important;
+height:0px !important;
+max-height:0px !important;
+overflow:hidden !important;
+}
+}
+
+
+
+<div>
+<div>Cloud Services Platform now beta; NCAA March Madness hackathon.</div>
+
+<table>
+<tr><td>You can also view this email in your <a href="https://www.google.com/appserve/mkt/vib/AFnwnKX5yQd1O0Cw7JaKgez69QA2dK39t6hJht-Tk7FLwxQykkUKp4bc1lALIKPCmaGTZhVLSbFQNN8mmFM0VF2MRa924jegkKG_hOF9W_EuYq-noaWRoVnsnkHuNXgzKewtuom27KCXB5F6AT_-8J0KYfB9ZHqn--BcRQ7qAT0NxQKDFapEWhiM3QLZ3eaw4ljrVf5iOvQTry1HakltFxCZI15ntUWJ7JhEC38">browser</a>.</td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+
+<div>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img src="https://services.google.com/fh/files/emails/logo-new-gcp.png" width="202" alt="Google Cloud" height="auto">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+
+
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td><span>NEWSLETTER</span> | <span>MARCH 2019</span></td>
+</tr>
+</table>
+<table>
+<tr>
+<td><img src="https://services.google.com/fh/files/emails/cloud_paper_icon.png" width="40"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+
+</tr>
+<tr>
+<td>
+Google Cloud Next ’19 OnAir: Watch the action live.
+</td>
+</tr>
+<tr>
+<td>
+Get your front-row seat. Livestream our flagship event to see the latest innovations from GCP and G Suite, or catch on-demand replays.
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a href="https://www.google.com/appserve/mkt/p/AFnwnKWKoIvuUDqSEfCFq-JEtjvv0SLOsMWh0tfrMs-jrCxESYZPufLKkYSn_FYZPQf6x-WzL1dXL-2U5spvEudqmmHxyd4byj-1FokXbZRE42yPMV9fousiXRfIidUJ-5mz5WTOsoFbY3tR0nIhTT4kzEAatvfmKQ75tWxTFpM-CW6LfMYx86zS2xSqsqFrd2xbBJ0YWsvOavV1r7oE6OmmSBySSJsnhof6OuIFYbFO8Qcua9FgUvAYQ2nX8HakcXQynNBAk3_M3qF9f80acP6SwwRdUMnw9UeIkYcc8OEo1zJxxUJ3qeTmlOuGPXPVG-nQ4oYc8PqvGzrIujrsCegFaXGWZtdza_K-mmyb1_3kILf91k266g4ZyyiWNVwIN5XUpYbLWWqc4Iu5fhDjHNw2MUvTmryo0cleexfwSTpep5K8fAddhngIMPexnJMDe7HdPlRr3QcyE8JB3tt_KwK9iZE035Rq_YK-74Vo986nB2spdTSHA5KM9-6hdz1bObB6cTxOZibsP8hFedNbq18KAUiucqi-uK1_zNtCvPWyTZ5iau_l2BMRgwzK6W6A4HE5aQX3JzRgB2PhzIXu26ttIKssSppZ7rKOLiYFOe8N-wf1uPaHgOhBKfqtYoyO97cZ2enEDuDXI2XWt006Fh-WhBl6S4kQqUWeRsxcM2p3R3B4qNiwSRtK5KQLcCEqftELefHpd5GQ7vgYTxtmeg"><span>Learn more</span></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+
+
+<td>
+<table>
+<tr>
+<td></td>
+<td>
+<img width="100%" src="http://services.google.com/fh/files/emails/img_mob.png">
+</td>
+</tr>
+</table>
+</td>
+
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><img alt="Cloud Services Platform in beta" src="http://services.google.com/fh/files/emails/cloud-nl-mar-02-sub1-2x.png" width="250"></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>Cloud Services Platform in beta: Hybrid cloud lets you build once, run anywhere.</td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWI3zvDto73JWnL9BlwQ7BNOjzh3amjQA-hdwvevtrmprCDrJqUOzgcEnSQ4PdYlafSl_84OyHnBIk4t2akm7CkPuK8vinp7K52nEsA4XFUt6ogPl35t7R989uHnHCCb7na8wwCH5Zw6rPCWPkOszzXP00cqMh89emC7fkFR2KBt3DmTTnpcLdSzgp2ZaPsfwByKmaKzyWHhRJmCXJDMWAezexRYKG1o7vy2BH9ws8NpdssDvRDzf40mBsQpOGJ50uLhEcsAb904v2xWx5IXgb0RhchQiDGscXGWqw44Bm4J0-rEOV-s39YABG8J5VwaAgTYTik9ctGeATIW8dGXjxssNNWJOwias_HVKTvYxJ78cTvblL5cFTdVSYOXrnEgngo3ziu1_dqnkYGXcd86caxn7_gab8JoETVINPKfXqHQpNh53W20G9Ah9mcvUDTGJfNITUINFyWtdW3_DnfEnRY4JCB26X0fMWU_tQ8BIe7xHK6ukzNUzNSLC81Iv2JGULAbziyMPbR">Learn how   
+
+<img alt="arrow" src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" width="16">
+</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><img alt="NCAA® March Madness® hackathon" src="http://services.google.com/fh/files/emails/cloud-nl-mar-03-sub2-2x.png" width="250"></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>NCAA® March Madness® hackathon: Analyze the action with Google Cloud.</td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVWdyM7GgK-TRztpeSXk_JaKhG040_XJQLXbor6gqJXQCY8T7wWU3Xkc3MURratdmVOr5eB5hCKSajjU2cfpOcUV7bUT9oSfRpWDNY0OOLgj8MG-7pgwsyOfNR1YJbwVgT5gTkk7A3Gge8ZRHu6BD2L5Q91b-4LCc8Yc2EqZ91cy2pZGjVbN3-kObk_FYy28oTBMGSJXpbqtcYOB1P4zAWwUgT8hH1sQnHm3Pnh0yMmAoVva0M105nK7OLzWceNsY-REciArOzNGBhWqW-YYlVvrk7UrwwfPe7jyDJxJsFcUteVs09eR-CyMj3U5eBZZlJHDHqKviJEwW9qNgjP5LtXrDe_cWeVF_96MCng1Eow3X3q44UX9kXvbWLGjkKpNaiObXrjpOUJ5Gsiabx3FVLzgyHrFZs4HpQmLzggMJQC3I8HQl2CMeuXp_DqYj6dXL9kXCr4EPEe3CSmUVC_O9cMl6xbdAH57DvWatTdDnr2GFgybVCwjGy0YG_st8KAEdSJ9w2stjVS4SE4CXM1vkMhtcXXtV8">Make your own predictions   
+
+<img alt="arrow" src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" width="16">
+</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><img alt="Zurich region" src="http://services.google.com/fh/files/emails/cloud-nl-mar-04-sub3-2x.png" width="250"></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>The Zurich region is live: Our sixth EU region delivers even lower latency.</td>
+</tr>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWzVcKcqODrIXYBj0b3baw0ZGPSM1QMGuHyFI8e_UOsZhxjevnqFYyBSb_aGQhBn-4C5ScIf1iEUXyabpEvlfA6rBBxYF9nnCl15qtzk2YUEe8_ERnxH-XsQdebN3V01Z_gbR5zooqzG1mYUu1tQnRkt_m9u2wdAzb3Sl11oPpbNFp6X71bfbk2iI05tlgmnIpoqf8aY6m5k1ATp0iqAchMMQvr_NG23BY937thaSkYDCuP7mwdbWQafpSWLG0Yf8s0UAcDYacncmlHR5c3Fct0TnAN7tX9nRtcgLoUV0K6uyxmI2M6aqrhu4_HzL-vw6CBpJar7VCkT7W8KhfLP1ZLMYh4zlCYPSEb4eFRfgqi_5B4jIE7Y611evBlHP9DN9cUoEsmLgGkPYWKiZFfI3wwpqFV3NB1HQ178nS8DkZy1GP8YQCePP7AZntRGKnMBEGwD9-dx4QPHDq15SUN6z831Z73azRlhjqmxzC938YRIZZOhxmbgZw6UIyT2smJ-7mecnIJsBC5kt-Rlp66VNzg5iXzLkOPf8c9tay5uFa_VpDe0gVlcO1m3kdDhFWmxrZH90ex07L8kk3ixb-FkPNvtF3ZrctwIJbET0bYErE5EDU">See what’s new   
+
+<img alt="arrow" src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" width="16">
+</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td>
+PLATFORM NEWS
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWOdLcTV_38vCcj4MCsh9bKFvWJBUr1QDi22nCA2cV0R63o2vwlzI6Jg7yKxFSpuiMFQN11UDtLqSSMrWmAEAzIZG414Gn1e7TiwW7BAGanZDtFQbK5Ng9QfiX8PI9JWp-6a4b4j9A8gUrjga2K6Ly_nUJ_tAXpxGzZ-MQjjHmzNkXYH86kHad4WsCSq7joOKfJFfx5SYJLl8YmI9tQVSU8DUqFG9ndUAhoU9D5YacxVAFQYmaUfb3NZbjgPb0sH5qsPEAmAREZV5W5FKbp8ZcreDuaq4Vgv_pW8QtQhuBsF5PWnNaemLr7ir9UGAgF2S3OlDJohqT03SBKvPiGve3GhqhAjUiEEhsFFLjxXbCighddDelMtkOuaNfG2UIdYj6I_NVK8XtQkb99z4PvIOcowbsra7vxxENe-d94X516_K3WmCLCxG7cZv5BGjsdLGRUe81IABYG738baJk4G9sln14Q6-Acc9Jn7h5-Pm_0fpu0bmgcoUYxDDGNgT9NIa_m-PjDbdNVNfYMAOX_gmD2liGsy1lqGMEChPfXX_uT0g6V8BO2UkmrB4rTaPYAeB7nzi3SOg">Asymptote-matic: celebrating Pi Day (3/14) with 31,415,926,535,897 pieces of pi.</a></td>
+</tr>
+<tr>
+<td>
+Pi to 31.4 trillion places. It’s a new world record and the first time pi’s been computed in the cloud. How? Google Developer Advocate Emma Haruka Iwao ran 25 Compute Engine nodes without interruption for four months – a full 7.6 machine years.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKX2t1fsOtEsRTKsxOPFDTKy4n7LbTboHGVNTGs5Wq2ZVu0q3w7UK7DT81A-sV0dzMd2uxDwFuTt67TH9ybEXb8TRkdZFFLzjdOGJQOP73GsT1MK8tCJ-H0f0IsbHggGYlq9fq1FvG1Wmb9rdI6Qs93-OsMs97O6FpJXaCaubb2dCIJTlqIX7tOsKGLe0Okx2bzlKTGCistuQ_HAHyxmXaRf7GOxaBDEDnlcbRA0LOM84-kqbXUTOJoG-Xsr4yNBk1-XineORMpSRVj4j6Yu_0GmRAW_pQ85nSCjOBv0VZvR-0UlU5yVS2NJPbMXrL86FQnNE2muuRrCJ_jXkS_DsrYk9qJBfCFGmuNu9c9aqkj1p1cReEzqzpmKQosEqYGeWKfaVv0aqoGoRUn5tXu2Cq4-c_DtsfxMus1TY3v75ilWaoWTK7PTEcwnVC6RqCVxmKAca-_f2lEQQQGYNPhrcfyZi1JEHpZwyv4rZtqCOcekrH3sY_ckh2vzSB6vkmB54G6EvHJUX0lvEWUJV5zVnoPB1DRljKVwk-LhKKBVu-7S5ZmBUpYZ0Y6VHMYipFx-YLxW_UYU0SuwFL43RtexwKzLnjqNC-ZNMmmeT5nCFlv9TpvSgKlxLWVQBdO3DcTjHt0iLIAQA8G2YIfgJZClPoVaFA">RSA Conference 2019: Check out the new GCP security services.</a></td>
+</tr>
+<tr>
+<td>
+<a href="https://www.google.com/appserve/mkt/p/AFnwnKW6cBAST5Eem8XIn-uH62FSTyhQ3uk21_-zKjZ4Z6DjZ98zbNWKqlbunZv0UUv22kzhtFegVLZwAXEHJb8xb5qd-IX1HgjkV-1dAGp-QoAmzySDFMqSITkE1NX0xZA0sa885lLWm8ahCz6gNMipK8MDyI06xBXEQdYshQwo_cyGbVuX9wrtzMdRewgErxnG5kNp6F3x1ncoDVx9DHYIg9aUOG_pK1EI9MSr79UikPKwzt4Fw1JuK2j6eG-0qhOfV2tfvU4Oiv3Z7ddE4qTeEeGip6mRFCz-79F0Drq_oXui80DXmBynCwEfOEJLk-m3naN8IUedLX7AGJEl1TT58O3_wLjhzICs63QM9-Ic4xi1HwkRVo_2d_sIkaKaOduPW7iMVUd0ApFK9heQgmgcXVaRBlvv07nd8fk4T5cIlqnmtW-sivTtDTeggHPKJXVKRyyAM1OjqxBSzamMUaF9PDdbE2qGKDh1dIbsidF5DTHhLJH0cg_vjxZlOC81K8Z6BWjh9s9nt5fGEh0-G2fSRwQTAaRMV4xIJQLe5NockK5kyO562PQn1WLjv0VujPraKS5JyqzrBldnQbiCLy1ezAXFX_25WL0rsQuM0u9PmO1VbFM_Zw">
+Top security companies</a> trust Google Cloud to protect their most sensitive workloads. And now new tools like the Web Risk API, Cloud Armor, and Cloud HSM give everyone the protection of our <a href="https://www.google.com/appserve/mkt/p/AFnwnKXqsygMiaDFLoAyz-2G1bOex1Ulak_gxERhhysXZcvxG7JbkqnrQGk8U59C5AUC2H7pPD0gpIP_vRKeTIZQgreN9Vwz5Wnnpq4behHWZJRJ1JYJ_b-ecdxi6D9OHo-fdygQ_h4hmLAWDASk3hsjwuNhbo0Qi2VeTWU7i9TPL2A3uC6FHYG5F8vsVFkUmzFAQCAvpDWxSNQW2UeD9_zTqUU2-77BwaNarmazi3nHedWilKI-Fe0n6e9-H8LrV-u3x5vDzPXK9uw5j-9ILUyC_qbF9gzuT5D0osc8vTcEqL3pHGyJwT1X8zhURZ8kVQoWGIkGdF00w4XARREXkcDTl789lyydnLjcoLmX">
+global infrastructure and security systems</a>.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUWHQZzY4wHEh_XcUSkG-nA0mIKmzP2IydpnZREMQyWbO_19QRSzdOLI5VxuXQnW7gDhScGVNHbZgkhbBJ160Ts2lkaxWOlUW_ZucJ0p-YnaNPfc7FrUxhl4xXVk_y3mnh7ffjAQCrwN6wQzUlgkqPUwm7nltA5l2fqOUaI_TKZmkd8mbzk2VZCyPrMvvlXenZ4Xkt0B05ffVOTha2BrnkCDcwDIHR4XM87oOVPXX4IYnBkHK-rlPYJ2_u_U_oZS-zgfS_cGEGn6CoeIT8Up6Udou_muc0P9e6I_ObHuHgybQFsGXdYwU3uxIG4u2BidMijXUIhGDtTP0GFfrj9E7lRYZ7mEDdZv_xQRdEQS0yh7xViDJiaf6UeB9MWOB9PQT-zmRDw7dsDTbDkYmEp8NRwGvAyoM9Q8VH60i4FQziCHa2Wy4gRA_FoI24gr-0_GFXlpr79MU8TkqABTNtY4TUnh-zPJcSuqIx1qLZJAJTLh80etc85yUC6exOBjlM6qYFM5T7rH2muavoGDNtu7G1L2xo5fllI1qbzZiY0nw-lkv5pceYfQw2WKwE85gUrQjV0MN25usg3pnQnfX3dkV-VRxKXVAiexO4RbJa3pOb23Aa277CgMBhnr0bdqfCEC00MrDtSwysMq74DKWr8gdd_BC-4Fs4mJfuVC0FN1Igcryeo8LvafDuJZ6X5C39scQ">Build intelligent voice apps with new features, voices, and languages.</a></td>
+</tr>
+<tr>
+<td>
+Transform apps, device interaction, and customer service with the ability to translate, transcribe, and convert text into speech in 21 languages using 57 <a href="https://www.google.com/appserve/mkt/p/AFnwnKWk7Dc_xDvfJW28heiyV7bJlLqoWxUqX2SU3QC-FNOGQXMh5P5eZhdxNJYNxJSPCfc61yjWKMN7GXc6bgIfdbWB8am8lx9ECA0c1SOo3CsqpY0eNuEyiK9Gn-KguKhcQWrG17fWWtMdrLdEmybTZaEe_du3eS9mS4ymOFZy4P_nNVPxdetfjLR9fRN7v43G21w3Z6cvRixVsxzqurphboxR9uU13zJnNOy1utvTt8K2IdsaI6KMhGhJ3J1PtaSQT-vkwHsjn8oUlLCp5KbY2FZmAekUK_juLVhO9nPK0qDtClV-N2xfKUFpoJom40HkqpSxY_MbN3l9qqwP3muaOl2w0vsZKsyBIrG3ElkwydUHVdqazh3KVCk5c2Vm6xr7jH5c9Z2snAtD5DVN8axb3OHglA">
+WaveNet voices</a> – and 111 total voices. Broader international support and up to a 50% price drop make it easy to get started.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVL5aN8XcMes7yVE4bw6yOalTOQGRxW6hoqOw67_IwqunowPj5PFO77I63ASrc0cYMJjX4EFGEEJcYb3hg-ikqjCY8ZSmwsCLgRijjahpb1-8HqrfhjxqyzKQrQcdCFutuCmdtExP-BJYjxk5jT4_aZ3gG5uNnNWCqZgc3Z7RBrpwhNCSjUlYe8AKxJrYHeGpDDYEfdspbGFtAfXWh4X7TxvCs9O5xHDWnhufyfEkcFGFlvshyC7FnRrcORqpHsnI7ATBWiFCz-425vVoXRSlDLffyyLy83W_QA8AkeVKo4Xt1YqI6ppuqDyVNAaCiYZozX6wSvLfugSn21-L8GRVsW4YPa4Zym3Dw3ReiSxmw1JxIDeBKrBvjGaIsSZbfKLKIDFXNtY06SbRgpchMpYVlPJVvv5FvURMapmd6vL1mtcTGHpV3IdbiOVPkq5hWH82liYvr5SlyQ23H8t3_e8UiudKjTkw9QqR74TI6fOeVwTdz6pmFj2ARrkhfxxWFC8KrETx2MCzuhzHydqSXQgGSkZyB2P7FWw9GZBkaioeqVN976Re7ZshIC5IfE-bQlxFiKIvdzwnCskQ_Uu1YoncREfpADY26FoKkh-4FfE2dbjfj-1l_hV7DthGi_aGytVJ8j-W5LQHJmcogynju0XYR2eZUh1b_3NBSyg9QbKA">Push it to the edge with the Cloud IoT Device SDK.
+</a></td>
+</tr>
+<tr>
+<td>
+Check out the Cloud IoT Device SDK and get a sneak peek of what’s in store for <a href="https://www.google.com/appserve/mkt/p/AFnwnKV3DV4MgCbJJgyNcc8lcfDPVm7J2zB3QkvzMQg4KeuHwRQOEMJpHS21heaQ7vVEOWvLAAJ5vac_Mh1u6LYcjHLCwglkLcb2sGiJLJsD0khRtAwPBEED8LX0UIm6Esyfg3xUR_LtQE02wKDwGl01vYtAauJyVq_qIOo8sdMafgBh_oBX2Sg4XqlkUAmqgYH98ugme82qjn29IaJWE5ee8jcZZefFzt8gPNzymzMuh_OyJ6WzB1yhHc6SwmxtnggZE20gVJyMsSd5B7Mcc6AeKE7qsuab2eOAYtlPrvWpYccKA-U2J4kZbFGryxXUPF0do7VXqR354CuwNUhezGqOYy1jJZgtJu224OEy">
+Cloud IoT Edge</a> at Google Cloud Next ’19. Connect microcontroller-class devices directly to Cloud IoT and rapidly prototype, profile, and test in a standard desktop environment.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUcb81OxP6rs6ZTYgu1YR0kZnNAMONWImgw_FQA75ijFupTTMpvXYsiZJ39y-VdXAEEY231Ty3A605VEqigBh6KdF2deZycsG5gIPRqz_T6nsTwhTdeZRqy7Y7I-XgIZ5ogA8WYD-bJ6kQQp9AtdxFUOQx7OB278qc9-seY4Du2pE1W3CPn09n5gs-yGe886wbc_z0n_d7usQvToYtoCzL9TCKhbmNORQCLId3982KeHFZCWsroeWQSr2ksb1BWwbCpTwk3vlwQEWI1TYRb5ImTpnNAYTPFwe5Ydmg9QelZTOoFwyVdEN2kQiMsj0HRxpPSJQsdRLkKi7LMtlyIqIEzW8pGvuNLhuShA2ou3IyE5vg6UvEfPnXyhSuWotZanqtkFT2EEJ5TzxbAvvchbdfTfzQkyRy41tjEUYnDltUIGEBqAuwsMGrTeL0Fr5WOU2Hq839eMmDUn0Xv6OCnHn_-jcAlTg8S-J9ekNjrqP1JvOovCMarg8cO7gmZLbUJVXlPaOGUayx533dzOamRn1W71fap4ZTIJ7VWGOoajTQOkRqu8Gwp-IoBwUw9zzsw-9RlmPkQXQIYDZB7TD7lYjtiHiN12uJ-L5f_MPKCg9SQ">Ready-when-you-need-it storage at scale with Storage Growth Plan.</a></td>
+</tr>
+<tr>
+<td>
+Data growth can be unpredictable, but your storage costs shouldn’t be. Storage Growth Plan lets you move data freely, work between storage classes, and connect it to GCP services like BigQuery, Cloud Dataproc, and Cloud ML Engine – all at a predictable cost.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td>
+RESOURCES
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKU--9SYs5JZ2IqRhkIKfeqcN4KakVzl7-Qkqw988gN8icJaRBuPuKLiq1hSlGYYUXKPhP4kWOm-X2Jlqrn5Yppmqy5VCqwLY58xnpWLPpOCPmfbal_QpKh7b_vKGbjQTvRlXjeXfALnBo3tqStlT0Yq0zHQwK0pTKv2Eh_PZxyN0kDUKz-8ayEgk6PEq-Bighk4zQBnxkEsQgDUrYWGMIwLDzwVdVtDYnin4tnJ6rAhqq46kTGZPpFzNiBRPbkCp2G0IkANjG4-jaLM0w">Cloud Services Platform hybrid management capabilities bring the cloud down to Earth.</a></td>
+</tr>
+<tr>
+<td>
+Learn how new CSP features let you more effectively manage apps and infrastructure on-premises and in the cloud – in the same way, using the same tools.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVEJ4FJ816eIzIzy5MJVZWlncUZjnTcK39uz9jo_V3yOb47Nu0Jj5brkJf6J_jnumdqY3-lxaABUziUWBdWHWiwxvIV0OZO4LgHWJdSkz4OCAz2wgjYDQmbsLnNCtoCuS3PVBi_DR6unTOfJOSQ4bD1SlUeovyYQ_N_EQBRjVsdWdDogic2P6wVoN2DVXOYUK3ABtxkqbZT2b68pDiviRzRRdnkQV_eLaR4ONjBxb6j5CNGTQOUp2XERrN2e8GanGXje5bf1fE2AjueXBuK5gYlmdxl1f0Mypr-W-InmdSCXLdoI7xvH-_ZstVWNOfosyiw87LLoITYG2vcTP7_M9Jp2VSIPNN6kpOUK1SUJMp6C-oSc9Y7SoS5rd1q2pogtuupsbRJ3pQc44GVzNYUvEgK1zMO0J0KsXPUt_iaXwQ5OoHfGkB8yjTwK64FTfWP-xErem_Y43xHD_NAuScq1-Jrx4xyoHxiAVd2RyJPFilpVHquk9fD623CMgym3KGuUNUXUHCH6Fg40-8BrVFwmxMfbN585NWdhVAvIFng7Kc5KO41IfncQscKB--_af-wCyHFvOZuOJlCh3lW6Sw7Q4e5LDY1PfJHHD6v">Get hands-on with CSP. Secure and maintain your Kubernetes clusters with CSP Config Management.</a></td>
+</tr>
+<tr>
+<td>
+Apply a common configuration with all of your administrative policies across your clusters in Kubernetes Engine, in your data center with <a href="https://www.google.com/appserve/mkt/p/AFnwnKXc2amvQ9JSTnyl-xa14xDgyc6AzlfI3xcROO5r1kY4x44eUBRYbfVxmjL17R7Dy-u5oHQn85s0f_4-IbbSIjianMmZhLa53yWKHrEiqOq7QQs7zBQbTuOtjwq4qxqUAfH18wk6mlbB2fgL00MnQ0QSaEP0qaiFvgihQFwKqfU-3aoDxVQES3jDy8UN2bjAEXiGkOEfGJSlgzn87HWDFhDnVRxoFdCDcNwHtgweXi0NvMF98wbjQmubsfE1eJhsmijGv68GJd4cfdMH90zA59GBYb7dYBuCDPcPRHrAtiQSm0X-0vspU1H1sduh6h1rS8Okhx6AKb4W1vyMtBzWII2YRZoWwAs-ym25v5sqQZvb">
+GKE On-Prem</a> – or a combination of both.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKXMepLbzMBnIoIFa-FRCxQ3v5AIvRNaxuxgOpzcjGV3wOfX0A0s2FB2VzGK4Yst_vwYG7KI72FvaWFfFpsU_oP_SXuPv7r4RInmtSPLP9KR9Q8yz3d2NPgXUD2--FobAXdX6xGd4Z3TWhRRYLIN2dBELSyJdRV5BDzIrCHTRxDK9qJQBdQzJhUerbGsU3oklmNL5yeqW7IzpB6fDdQzTO87i_PAsY_uTVC3TRu29-SU6-CA6uYdX337-KxaVCU">Getting started with Colaboratory: A free machine learning and AI sandbox – with free GPUs? Sign me up.</a></td>
+</tr>
+<tr>
+<td>
+Write and execute code, save and share analyses, and develop deep learning apps using libraries, including PyTorch, TensorFlow, Keras, and OpenCV – all for free, right in your browser.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWwySEhHTybYgIWyVKceWmloE7uESaNpeFXvXqCO8Ye2FgJPLIDse-dYoQRQJSsMvKekMjq69vuOdWaWVm6PEt5GZw3Wt9uftuHleANAG7WpCtK4LPaxHcARnbjmk_leBxUOeIdwjGaqADPjy9hsw1NT1a-tZ3MNr_hbFyoKMz9sz2aXA_-Smo07ouO27fwEJhCNxgG0mILUn6ZLTbdWMw4LQZQZx_nVeg6XNCy5eqkTJSBJkkqFU3Px4L4tQNH6g">Git prepped: “awesome-gcp-certifications” repo is your one-stop shop for certification preparation.</a></td>
+</tr>
+<tr>
+<td>
+Dig into this curated list of guides, blog posts, self-assessment quizzes, tutorials, and resources to learn about GCP certifications and how to prepare for them.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUU7k7Y7p1sfvQflOLHxRNTTB1o3MQx6giT8AVY6kSKQxYO2wC0RTlueIIO_U3g5rMsDMatyUsX3-xOpQndpBkO-cL9Aa3tj2zqZIm5osZL5x-PwzqP0VUS5zU4fKYtV4KN--tu-CwXPyPWIj7qfWgs57_1fl8rgt29GVD004rQAs5yIZeLej4FZAsu_kFp1aqBpqgeB6nNeNGrOZECfAZMKj2PfNK1SPfux6JrUbj9sbJUL8sa5GW4W1olQbd0iUMVvqmvpLlu8TXuDs-Y9NPA74NVI1upg8PkDgJhk_FptA1b9rBUvbXawSHbHIP5bkGQbJHgwF0O-XF_808ifflPiGIAJzyeZJerKQnmd37b0bgVMEDNR5QMxgXKwlrGwa-UY-4JBX448acZABKoIJk9Q_aCCw_F6Q8b4oeMpv4q2iQKZbOiW_jOVQGAtlJJsKO9QZyefxOUKafIOM13lVtIliKqH1XXq3-5wnYFMTOSpcJYDUzCC4jKP_ZL61we9NV9WZEQ9TKK4yRtWgUTmoqMr7bfBHUmFl3S95AGpUHNXCkJrwFY4EQmrFwrR7XTcrPpeNO1_bM08tD-EDZx4nrUKg15pmK4_7_d5x8-gzZH_L-POMiyOviI9RJKb8xTaBmRFa4">On Google Cloud, our compliance is yours: How DroneDeploy achieved ISO 27001 certification through Kubernetes Engine.</a></td>
+</tr>
+<tr>
+<td>
+Ease the burden and expense of maintaining compliance – including ISO certifications, HIPAA, GDPR, and over <a href="https://www.google.com/appserve/mkt/p/AFnwnKU8DQ8JUdCsNAh0XlVtq0xHQfkrC4tjefrZmWHfrC6X4nwbeFYTwAR4BcTc5CkmS2G7JTEtoYlabLbUDauV-g7O4Go1GdEx5oePyZTP4yKf1AlNFBcvXZgiydqpX_BJUkKxLFMvH8WtyEeEymCbuxQhL1gAVKshdBH5Ro5nOlfDhwDN1mg0gwRcNITLjazRPmae_NMzcLvJ3GbP0qoQR9C7WFQX4a2zyPL1iZY9SYHOjcLUuJJ8GpLk6ZlIdQqeRv4jA-1Ew3TYUBACLA2rFSv0T0AE-d13fB1Ap5ByfKnbxJ2reOoYSqqWWSBAcBtyxNBRFs5lwmp4dZkN3k0YL4Ya0FawxhdNFYWAm7xHj-Fsm5o_zUwHwBZDtoLYWiic5g">
+30 other compliance protocols</a> – by leveraging ours.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWKynHGQgKvU8fkwsIOTDhadikUGF8zVd5dlmMwXx2j-aJPhr3u6i8NzOJrSjIJoZqyQnBbizF5RXjqLYc5Bd_aq_J9NAnQVVcx7-OLLjhCCzTIIax_ApQIlzRZxMgW6pgKodxdwFyRy5H4AGt7Od4kvVeMZPjqJwcczTsu_NURrU83effvq0NxS8UtJzwPAGPxuQf9_fkG2Lr3M3lQu-B6hLPYYhHiuR6gw6xTxaF8K3fPNblpYxk9zC0jToShHhvN_wc0lnB5beENw4lBhkTfFAPTPoyo5Sj2xPjesuDeBEfdujcX3L05U2h70UhGEjuJ-n4lY5thLqSvwvHPJPOH_DKH59O68Lu4cl84y37m1uI79tAd4aKoifAv_XOzl4si">Game knows game: Here’s how to make GCP your game development platform.</a></td>
+</tr>
+<tr>
+<td>
+Whether building an <a href="https://www.google.com/appserve/mkt/p/AFnwnKXaGWCgRYgetGAT2RaokpV-3l59M8Fv8DUAKapQARPULdtAKOgEBDlL9oCzj-u0MbAP4lR2k5U3mRPtTupcm2d2JWh4KAjsatrDD5-lSR-wEleybGZ76UdN_saey6xCCULA4BLsyWhk5tQe9Y8rWj6D57yq6S51l3fajt7BiCdBgogXJotjCsIxZLXrSSRVtUjQb8zoH7ZLXDVgyCifn0CveDrC3vD5sr2r8eNdiRgSqitvzN7jYPrSwAUCv5aYygaTV_nMjOTdo7vFjnNpqCtcQOwEH3o0L5Tyy6OoV2ps3qrN39kflbB99jGt1eAcLui4gJTUafzBgJ0rbYFx1Etn_Pew01vFG7YLDcJtp-Ia0nER234xdZW1V96vJkHxdHk2QIVLukLyQ4-DI4VT_ag-5xx6N-0wxIb5FZmgwA1v3O4RYV3Cp0PaijCAxgFyHHkdAdR29QauDwq_115maSc_XkToFipjZUr-UQm4-CCtmS_CI-JwpgV8-78t-Gcdc_uPXMQMUHjq-s75UqzJRfMaKSUrnr4PRmkvR58qhLM01F6vnbrD">
+emoji scavenger hunt</a> or <a href="https://www.google.com/appserve/mkt/p/AFnwnKXhiRjSN54Rnfz5k-jHh7PqnuxvIJitMjrkfpytWp7ihXmxVnJ2-sCViyzc8j_CO9G5ylHYlSZvgQAoc2mQSeo9o_WASElXp5ihKaYBzi0jT2l8v2Tm7OfflxQWZCIv_5tHMsjUfiUgii2prrJPWNmAQlBigZff5T_rkpnv0Fo-6FMTeLyFkJQ">
+globally scalable games with Unity</a>, these quickstarts, codelabs, and solutions can up your game.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKW-cwckPVt28ZwTdvDNdKkq0aR6TffBgvCB4ipn2NKXgUndzgAtyICd_OQSFH4g92kvCmizVjgH4LTjxRhR4oCB9o5O3EWDiDi_mNoy1oOSgW7aBrU13QLi0AL_d5CG4Gh58GumZ5j4czLDe8qYvHBLsZTTUDsJU44shrQRfPAJzUNILZc-k6GFzN9rIf9L2yyh61Issw6xAo5bPWddF4c5QyECLxC_2FFrk8Y9BXoLsObb11Hn2EeQZeTl4L29cBezCD56FoEu8E9Hfx5ZkAlFmxJu7r_Aip8WNNYrPJFQ_KPd7JfnpylxTi2DCbfI1jNLxHdt7RvIg1RFdn4CgnSclPqIJwfLoGbmC-40tHMADiM3-gUgnqUF31iaTISLAbOrw2_k9NG6pT538WBE1ltcbDNuZFedj4ocCDG-Sns0kqduAEDE0h7Enmw7-hlDGmxjuMBU61Ocbf2WUAHfSUCn-_-GWQGLl49vbszAVptR86RlIrhRsrCsCiKx5ms7dZwb2sBEWEudeCBcsvGRCxm3KQ579ZMlf_VvDYwnN5GTlfC3ayoXBbzKGyUDfex9jSF7J-mUwi2Ckp8">Superbugs, pathogens, and dog-bite infections get real-time diagnostics from cloud-powered DNA analysis.</a></td>
+</tr>
+<tr>
+<td>
+This scalable, reliable, cost-effective pipeline detects biocontaminants – with a dynamic dashboard for immediate insight and action.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td>
+UPCOMING EVENTS
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img src="http://services.google.com/fh/files/emails/cloud-nl-mar-05-event1-2x.png" alt="O’Reilly AI Conference" width="246" height="72"></td>
+</tr>
+<tr>
+<td>
+<a href="https://www.google.com/appserve/mkt/p/AFnwnKWkvOb5-oT1Y6L1Ak1eHQEdYgRrTeNtqU06tNK2KpdkoUa7lI4Az7UsAK0HpcWZiZAYtEYWSMrPmlN6n4KT1Q79wOzM26QKKTFTWdLev1bPXtiaEWYz2o_9zNAbLFGpkGM-0sojAaKpNKIcQ81PhqQFkISo4N6ungC5Yvr6CUQCgU5wCIxOoD1SMwbTvSk_uHY9ecunzrNsj4ekZzcR">O’Reilly AI Conference</a>
+</td>
+</tr>
+<tr>
+<td>
+<a>April 15–18</a>
+</td>
+</tr>
+</table>
+</td>
+<td> </td>
+<td>
+<table>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.google.com/appserve/mkt/p/AFnwnKULsgERTg6sA2qpMNJeTEwa9JMmG_9fRK3j4Ib1FwxTEpHjd6hWBie9nfvFE4je63cP_d5ZaPaVL3zQ3MltQOenA3nP1WUj3LCXJ-FJts8qrhC2lK7oxAcMIwOSUG9qzsBSmmmSATdbWepgOnNLnbZmzKQ2Jjw4-AF0yeRgfSGYDuV2u_hkmwyXAF5zmj7cvOdWIHwGKWXwEowYYD7SLydfkJCQ_ywP7jKlA1GFgxck6amhOcALHxksM_b-XjWutcuCD9xTJMeh1022Rs4VRJFZ760npiJr5S0as9xhkvLZJy_ZlRPVNG0yM1lSTYG4A4JaLdqK3vHG-fNNTAtBpwfkH6k3Gx-eIofxMHpi0S-Hd1eq_CpAWNK9DqIa6AcBE-u0-3CGXmrKf0yVI1PKStJuCG355abeBWG3_6qvWWv3N5NZ9UTqDIjtVEWCLoHzWA"></a>
+</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>CLOUD ONAIR</td>
+</tr>
+<tr><td>Join live <a href="https://www.google.com/appserve/mkt/p/AFnwnKVIUtBs7LBIrlZO6CLu87-6RtCnJndO6nhimHCemy21vcEt8scsoJbqlbjetw7HdxsQyqulnSTBmpbjF89I_o1252GrsH1lT4s9aIPvAfxGiulsSYOFCoqsiUUTI4iWJllSTt7pfjlBPPeK_FtOW4a69dp77q0TI8feVpqjXkoVhWdfMNXDsTXTgMYrqXgguP_bAONd64Bbh5YzvQGFZ86V_H9Gp4L6jKODj_a7tbHLkRKBngmRAfFG6E_zsPZM3oeqewbHcRmTHYDGiQx5fqd2wK_jpNHnsuBuKXu7Y7kiFWLsWAG4cZ7KQ1ftA2AYu9NkNYu3D9G0naCWdfREDWijYSGp90SYwTUMIz812YETyVGiTVxXinT6N-RuGj-l72O3-KR15CxCLZ7GDL3wdcTeMpG2NXFvSTOP-Wu8oJnssjBJ-khtle8uH1Nm5JFitvLGEftTvIA3yPRJzPwmGGXCfQoEd_0qV1Y-RmbDXFUoyBh1qhdqQpVQRheAT52FHUQsb09L2bmSgQ65GquzWZnJjO1Qu5DaDCy4PVmrvEztCRUIjnuFfMlDodDgVcGBdf4GqcaV5qnmDIISlJH0cV14jF6ZhJCEaURilCRLL6gOwNKBeooAyZGSpcN4KoAaQrU6aPz8OD7oq279NcPLvoXukiN9lGeVjaKVyqaVcNYpiEY0HM0Pp6Kfbb_dSM35fJakafa-jOENGp5XZALWj0WnMQLHZQQ3jezsE5WsSHtSMJ0xay_8concB3KkK6YJpe_Q6Ptzgz_gTAs30IOKAzl63c7eYpWvnYCoACQ">
+Cloud OnAir</a> webinars held weekly by Google Cloud experts.</td>
+</tr>
+</table>
+</td>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>CLOUD ONBOARD</td>
+</tr>
+<tr>
+<td>Attend <a href="https://www.google.com/appserve/mkt/p/AFnwnKXl3XDiR4NV89uWbY-zIJqqRXKHxM5UMNXNVAsK7aLZMbtK67fnfzEcvvpSyqS62j3GN-qIwicC0kFpn0gLqizATG56icYnqeG6MkidOZ_PjbHzIloiaMswCPHMpVkLs7v2mTAUIKP0t5UmEY0aLZxpOTdD8bX9WAk19kHJQgtcjXaMaWsiUNHQ7AS8uvMN59ZggFHHTBG4Dj-GjPnSahOKlwBnoco7NsLN08wKVuQbmHESdeSqF3LNsNI3vqQ3yw2F4yScBPaYSuxhb9qtWTq0emV9pe_yATY4gdsNbRp9ra774-mjLXza9s2NuyAy5fFLJyuSugqSP4uknqaSeCC6X_CvzaTTFD79SGNUrJL43A2EPtndlSnrXeKKd8xL9Ivu4sv-xGf8RPgRWVu5nuYmYH3dkuwK4w">
+Cloud OnBoard</a>, a series of free training events that offer a technical introduction to GCP.</td> </tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>GCP Podcast</td>
+</tr>
+<tr><td>Listen to the <a href="https://www.google.com/appserve/mkt/p/AFnwnKXFeQZY3sWkK6IUi9B6IAd_PvBJ8zkSO-G9lT13YV26WIwPj3WDwX2fEd6Enbd8bwZdzy6L6XyrOyDQ3aok1mpP7bzoxk4mMOKHK2Ryu0ZeuI8cM1TO7If6JEjSL-npMsfRu8SkEzieNWt6k8Vvpblx0qOqCBOGggdny6EPh5TbeMIn7ZoxFp_wWncLyXsxHMAh8xm6hjgGGOUTD5YiRs07K7EvfbO5CiK4kWNIBb-Czo7whq2G6FkjhmLHRwNg_nfxtXt18smraNpGoPDbfzTcvhf3nLFb1nNgpe6xHcdbQSvMdrRJZPByzlw3geu1jkfPaZg">
+GCP Podcast</a>, a weekly roundup of interviews with experts, answers to listener questions, and the Cool Things of the Week segment.</td>
+</tr>
+</table>
+</td>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>Kubernetes Podcast</td>
+</tr>
+<tr>
+<td>Each week, the <a href="https://www.google.com/appserve/mkt/p/AFnwnKXsRbEXi63sbD-LwGgbkJok7Touqx4xx2qb6GBoyOlEKo1Wi7_wjfjJE_do8yABPBzV2190Qx2Xesw8tezxetPa5b8pCbhGLKzoliEo7aNoEWB68PK28nMHquoTGtnh6QETVmcwXahhHtVr1ntpg1jcRdEM0qHDVASd2d3eEPy0dV1holqTjZGZzblC3o1oeT8DhQWqqHtpK2-2x_1ZxGxQAK_xIcwchQqUx6V8E2jHJ5DwUnqZ0Q4I-p4mh7_kO-nSuGthH70WtKTQcwFMD-B_U4sSWpLlRLVU8dWwDH5cbFrgUBc79fRX-p5z8Dd7eqbMfUfe3nDU6QOKnYaKK1eWtA">
+Kubernetes Podcast</a> covers the latest news and insights from the growing Kubernetes community.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td>
+VIDEO RESOURCES
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWbsRnR-P7h6WzJXCsvSmGI4SqmZ8Ys4xS3OR43HSlRsE5GsgbRLLvDKSMsq2iD2U9GJ-xOknZob5prabv1-acXrlhihy-gzZxZ4RPz1UQTPatkLSPFWipgE3YuPtdxAMEyyzAv5am5bYGGhe5KRAgFlsf7t7HJqEXZYzn4F28hcuW45tj0K2f9THd_kyNpKx33xFHTBroTnQJtDQTaSFjLAXtn3DegYAB6bcBBFIszsf6roksoZyIMhWuaXSEGuMCE4QGDN-H8x2vJr1W_8IiqWvgTerRbEYvAII7F5P9KHijcazhoINEgnomNXpU-PW3J-IVj-KR_vmIne1TbwLetBhMesDmMI7jaPxgnizQxXfNs2LO4gf3Y3QWoB1Uh1DYZcLxdJkG0s1dYXXFQH-Ots-b8hyeSB2JeWvk-icRClXYLQlHWSGzpBpGtxDKja4AeCtBM-CbJLUdJAlaXeOcsfvufuVkoxbJt4VLLnVZ9cMvbHyh1xgxf1sNj2YveEA"><img alt="Chatbots" src="http://services.google.com/fh/files/emails/cloud-nl-mar-06-vid1-2x.png" width="250"></a></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>Deconstructing Chatbots: An Overview</td>
+</tr>
+<tr>
+<td>
+
+<a href="https://www.google.com/appserve/mkt/p/AFnwnKWbsRnR-P7h6WzJXCsvSmGI4SqmZ8Ys4xS3OR43HSlRsE5GsgbRLLvDKSMsq2iD2U9GJ-xOknZob5prabv1-acXrlhihy-gzZxZ4RPz1UQTPatkLSPFWipgE3YuPtdxAMEyyzAv5am5bYGGhe5KRAgFlsf7t7HJqEXZYzn4F28hcuW45tj0K2f9THd_kyNpKx33xFHTBroTnQJtDQTaSFjLAXtn3DegYAB6bcBBFIszsf6roksoZyIMhWuaXSEGuMCE4QGDN-H8x2vJr1W_8IiqWvgTerRbEYvAII7F5P9KHijcazhoINEgnomNXpU-PW3J-IVj-KR_vmIne1TbwLetBhMesDmMI7jaPxgnizQxXfNs2LO4gf3Y3QWoB1Uh1DYZcLxdJkG0s1dYXXFQH-Ots-b8hyeSB2JeWvk-icRClXYLQlHWSGzpBpGtxDKja4AeCtBM-CbJLUdJAlaXeOcsfvufuVkoxbJt4VLLnVZ9cMvbHyh1xgxf1sNj2YveEA"><img alt="Play Video" src="http://services.google.com/fh/files/emails/ic_video_24_2px.png" width="22"></a>
+   <a href="https://www.google.com/appserve/mkt/p/AFnwnKWbsRnR-P7h6WzJXCsvSmGI4SqmZ8Ys4xS3OR43HSlRsE5GsgbRLLvDKSMsq2iD2U9GJ-xOknZob5prabv1-acXrlhihy-gzZxZ4RPz1UQTPatkLSPFWipgE3YuPtdxAMEyyzAv5am5bYGGhe5KRAgFlsf7t7HJqEXZYzn4F28hcuW45tj0K2f9THd_kyNpKx33xFHTBroTnQJtDQTaSFjLAXtn3DegYAB6bcBBFIszsf6roksoZyIMhWuaXSEGuMCE4QGDN-H8x2vJr1W_8IiqWvgTerRbEYvAII7F5P9KHijcazhoINEgnomNXpU-PW3J-IVj-KR_vmIne1TbwLetBhMesDmMI7jaPxgnizQxXfNs2LO4gf3Y3QWoB1Uh1DYZcLxdJkG0s1dYXXFQH-Ots-b8hyeSB2JeWvk-icRClXYLQlHWSGzpBpGtxDKja4AeCtBM-CbJLUdJAlaXeOcsfvufuVkoxbJt4VLLnVZ9cMvbHyh1xgxf1sNj2YveEA">Watch now</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKX5iw8SfzpqRnbzaD_Ai3LNLFKyUEhFGPZWjZcbG-UZbeExNZBZcSsslRDSAdx8GfbS2lDqneeqeuywPU-Tkwb3nfGfzB9vXjPn_O4I8GMyPSdNO5ssrBYRxXZs6Mh-AnrZlDO9V9eJSFuHlEH47QdhZdfhLNeLyFlT8PHWaC5NTCwRVbY-ANi2UYy3DmepRbCSXZxNG1ONpoKjIAXpo6ob7JPqdvGhfPKZgLKl6vSEBRvAoRXCvNl2GhVNQvrPPMQlWGTU4qVCxJKssdCrKvO1d4Eq2GdCWOO3Enuj1R8lZqAqAwF2cSGGkqvsQgR0uz471iHMk_VGLjJMeKQrR39Dpk_6frjCEXVqumO3eXCr0CkvcKhsKcdOdsvSF8PXH8_K93mxXK2ifOcJrRMTv2HEoUdqw69CKqS52WZLmbyN_y4"><img alt="Migrating to GCP" src="http://services.google.com/fh/files/emails/cloud-nl-mar-07-vid2-2x.png" width="250"></a></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>Migrating to GCP? First Things First: Virtual Private Clouds </td>
+</tr>
+<tr>
+<td>
+
+<a href="https://www.google.com/appserve/mkt/p/AFnwnKX5iw8SfzpqRnbzaD_Ai3LNLFKyUEhFGPZWjZcbG-UZbeExNZBZcSsslRDSAdx8GfbS2lDqneeqeuywPU-Tkwb3nfGfzB9vXjPn_O4I8GMyPSdNO5ssrBYRxXZs6Mh-AnrZlDO9V9eJSFuHlEH47QdhZdfhLNeLyFlT8PHWaC5NTCwRVbY-ANi2UYy3DmepRbCSXZxNG1ONpoKjIAXpo6ob7JPqdvGhfPKZgLKl6vSEBRvAoRXCvNl2GhVNQvrPPMQlWGTU4qVCxJKssdCrKvO1d4Eq2GdCWOO3Enuj1R8lZqAqAwF2cSGGkqvsQgR0uz471iHMk_VGLjJMeKQrR39Dpk_6frjCEXVqumO3eXCr0CkvcKhsKcdOdsvSF8PXH8_K93mxXK2ifOcJrRMTv2HEoUdqw69CKqS52WZLmbyN_y4"><img alt="Play Video" src="http://services.google.com/fh/files/emails/ic_video_24_2px.png" width="22"></a>
+   <a href="https://www.google.com/appserve/mkt/p/AFnwnKX5iw8SfzpqRnbzaD_Ai3LNLFKyUEhFGPZWjZcbG-UZbeExNZBZcSsslRDSAdx8GfbS2lDqneeqeuywPU-Tkwb3nfGfzB9vXjPn_O4I8GMyPSdNO5ssrBYRxXZs6Mh-AnrZlDO9V9eJSFuHlEH47QdhZdfhLNeLyFlT8PHWaC5NTCwRVbY-ANi2UYy3DmepRbCSXZxNG1ONpoKjIAXpo6ob7JPqdvGhfPKZgLKl6vSEBRvAoRXCvNl2GhVNQvrPPMQlWGTU4qVCxJKssdCrKvO1d4Eq2GdCWOO3Enuj1R8lZqAqAwF2cSGGkqvsQgR0uz471iHMk_VGLjJMeKQrR39Dpk_6frjCEXVqumO3eXCr0CkvcKhsKcdOdsvSF8PXH8_K93mxXK2ifOcJrRMTv2HEoUdqw69CKqS52WZLmbyN_y4">Get started</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKXRuEIKZNGaSagIKPjAN38hoKV5ex-v4n02imq6b_Lg6cY22frZ6GFqBbnV9GsvgQNVYk3SWFuaK-AEbhFPDnIOd7F4ED5wDl_ojp9kOuDDEojKEFsZBalYanO9nuH9Dt2y4YIx8_3df8MxyG_iMkBAMeBeWG7eOTR47jNtsGgyK9qP5Pei6W52U3MTRpy2FIRF7PoOzG8WFU3Ws6KISj-rZ0R-i0HdbYVGidpgGkH5vfXIgjnibULPvp7UNqjt-6dtu9Rlc0yFx6EreM8aFjXooYF1e3c_X23fsRM0zUVymfDHxVqdzDCBV50o9zCZ8e79Z1uf_cQoIevgBUMY_CRQd5LEidscvpp0hQUb6VlxyxGR56rXR7oos_ASLug"><img alt="Cloud Console Tour" src="http://services.google.com/fh/files/emails/cloud-nl-mar-08-vid3-2x.png" width="250"></a></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>Cloud Console Tour: Manage VMs, clusters, or ML APIs in your browser.</td>
+</tr>
+<tr>
+<td>
+
+<a href="https://www.google.com/appserve/mkt/p/AFnwnKXRuEIKZNGaSagIKPjAN38hoKV5ex-v4n02imq6b_Lg6cY22frZ6GFqBbnV9GsvgQNVYk3SWFuaK-AEbhFPDnIOd7F4ED5wDl_ojp9kOuDDEojKEFsZBalYanO9nuH9Dt2y4YIx8_3df8MxyG_iMkBAMeBeWG7eOTR47jNtsGgyK9qP5Pei6W52U3MTRpy2FIRF7PoOzG8WFU3Ws6KISj-rZ0R-i0HdbYVGidpgGkH5vfXIgjnibULPvp7UNqjt-6dtu9Rlc0yFx6EreM8aFjXooYF1e3c_X23fsRM0zUVymfDHxVqdzDCBV50o9zCZ8e79Z1uf_cQoIevgBUMY_CRQd5LEidscvpp0hQUb6VlxyxGR56rXR7oos_ASLug"><img alt="Play Video" src="http://services.google.com/fh/files/emails/ic_video_24_2px.png" width="22"></a>
+   <a href="https://www.google.com/appserve/mkt/p/AFnwnKXRuEIKZNGaSagIKPjAN38hoKV5ex-v4n02imq6b_Lg6cY22frZ6GFqBbnV9GsvgQNVYk3SWFuaK-AEbhFPDnIOd7F4ED5wDl_ojp9kOuDDEojKEFsZBalYanO9nuH9Dt2y4YIx8_3df8MxyG_iMkBAMeBeWG7eOTR47jNtsGgyK9qP5Pei6W52U3MTRpy2FIRF7PoOzG8WFU3Ws6KISj-rZ0R-i0HdbYVGidpgGkH5vfXIgjnibULPvp7UNqjt-6dtu9Rlc0yFx6EreM8aFjXooYF1e3c_X23fsRM0zUVymfDHxVqdzDCBV50o9zCZ8e79Z1uf_cQoIevgBUMY_CRQd5LEidscvpp0hQUb6VlxyxGR56rXR7oos_ASLug">Take the tour</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td>
+OVERHEARD
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td><img src="http://services.google.com/fh/files/emails/twitter-icon-2x.png" width="18" height="16" alt="Twitter"></td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWOoirnNwj1nchI2hB57RDYAhiXxj39tZMzjDfwkG6Ovyl-kvSq78iv5tCJzKAuE4TzeuO8Zo9ykaClbpSgAJIro6EffA31GbzW3dOFgzvDjuGHNEN9ook">@ahmetb</a></td>
+</tr>
+<tr>
+<td> </td>
+<td><img src="http://services.google.com/fh/files/emails/cloud-nl-mar-09-overheard-eyeglasses.png" width="20" alt=""> <a href="https://www.google.com/appserve/mkt/p/AFnwnKVZWm5r-FeKTB9ifxwpHRZ8lfh2GDpddiKY8szoPotAP_o33ivV6dnPfZd1doJkxsmYJLI0v0IwQSf8DDEYGGLI1ubhZrOQr5KdeJp1nN9V98FI5tKrVY_u4gq6xr_Lgs00T8hlcrSlqqPXTi2oMBOm6ce1_fNM651IMzwuCc5cqHyB3fYjYZv5v8l0els">Excited to tell you we’ve been developing a 10-tier microservices demo app at Google. It’s showcasing cloud-native tech like @kubernetesio, @IstioMesh, @grpcio, and @opencensusio.</a></td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVZWm5r-FeKTB9ifxwpHRZ8lfh2GDpddiKY8szoPotAP_o33ivV6dnPfZd1doJkxsmYJLI0v0IwQSf8DDEYGGLI1ubhZrOQr5KdeJp1nN9V98FI5tKrVY_u4gq6xr_Lgs00T8hlcrSlqqPXTi2oMBOm6ce1_fNM651IMzwuCc5cqHyB3fYjYZv5v8l0els">We use it at our keynotes, now it&#39;s open source for you to try out! https://github.com/GoogleCloudPla …</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><img src="http://services.google.com/fh/files/emails/twitter-icon-2x.png" width="18" height="16" alt="Twitter"></td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKX_K3ztf6lE_3YSUVq95-8-Hnp3TByaeqsZjNvK2DDjc-zsPekHe8m9OXBB-4ufEIuMKCpqcrQmujq578uGwleYEq3ano65CF8yF8eizdwQqMVRZKCs0Lxpaw">@dgageot</a></td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWksPGC_2UTMlGa_hSYxjzolMgOlNz8tW0vCfoD0JkWXW-g7-uaLyjh0w6syfa0xQ_2bHAqBOWY4-1xiw6NAYnU8cVRa7kWAcEGz4zRqX62ZQl1MK4qAXcdL-lL4plbfcrhsk8svumdtpXRq1IHmhKfNgbPjcSIeF6UEeNwLp8a1lG7Qxe2NiMrGbumusL0nw">Google is preparing a new Kubernetes development tool.</a> <img src="http://services.google.com/fh/files/emails/cloud-nl-mar-10-overheard-partypopper.png" width="20" alt=""> <img src="http://services.google.com/fh/files/emails/cloud-nl-mar-11-overheard-bottle.png" width="20" alt=""></td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWksPGC_2UTMlGa_hSYxjzolMgOlNz8tW0vCfoD0JkWXW-g7-uaLyjh0w6syfa0xQ_2bHAqBOWY4-1xiw6NAYnU8cVRa7kWAcEGz4zRqX62ZQl1MK4qAXcdL-lL4plbfcrhsk8svumdtpXRq1IHmhKfNgbPjcSIeF6UEeNwLp8a1lG7Qxe2NiMrGbumusL0nw">You&#39;re a Developer and use Kubernetes? We&#39;re interested in collecting your feedback, under NDA.<br />DM me with your GitHub &amp; email.</a></td>
+</tr>
+<tr>
+<td> </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWksPGC_2UTMlGa_hSYxjzolMgOlNz8tW0vCfoD0JkWXW-g7-uaLyjh0w6syfa0xQ_2bHAqBOWY4-1xiw6NAYnU8cVRa7kWAcEGz4zRqX62ZQl1MK4qAXcdL-lL4plbfcrhsk8svumdtpXRq1IHmhKfNgbPjcSIeF6UEeNwLp8a1lG7Qxe2NiMrGbumusL0nw">Let&#39;s make Developer Experience for Kubernetes awesome!<br />It needs some love!</a> <img src="http://services.google.com/fh/files/emails/cloud-nl-mar-12-overheard-hearts.png" width="20" alt=""> <img src="http://services.google.com/fh/files/emails/cloud-nl-mar-12-overheard-hearts.png" width="20" alt=""></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="5">
+<table>
+<tr>
+<td> <span>Follow us on social media.</span></td>
+</tr>
+<tr>
+
+<td>
+<span>Add your voice to the conversation and get the latest news, views, and insights.</span>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUejCc1ApfRBX7JIRb5AzfSmd5IDHZcRfMrWO0Avtr1OjyoZUWiByTpnd2dB537peZ4UVhdgo6UaZAjKDZZ8ODLsftts0jx2reDCEWzPHzbcG5aALCY9YsW7vyAbXuuAQjO"><img src="http://services.google.com/fh/files/emails/release_notes_apr_twitter.png" alt="Twitter" width="17"></a></td>
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVUoYpovqlwTpJCxqvCytIbZ7XHLHbMWQD_AI1bqb6nF5_6NQeZINrgyq60Iibspzo_wTWXreLLclVECJ9iEo-Sers3LgfDe9DNA58lXTdtOEoT1sMrWYt9DGRosP5TXdXupATIKRKfPctKETteW10-raRYmZP_mMMvU7PQYO9faHcyCEDrehvH-VkvOZMbs4ROtyR7VpoVw2qFqUa5emyqoEBmNRF2wmhLFR84lozbNKFDHmMUkVLgoM09K4cIxJuO5KnHECqWUUDR8sjh3IVwACA3Bnj7fm86T8dx-By08eI5AdlEoxzViDottAjJRRiWL9wkTbJfTTH-a-FZy3d67A"><img src="http://services.google.com/fh/files/emails/gcp_new_cloud_blog_icon.png" alt="Google Cloud Blog" width="24"></a></td>
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKX5YWfU16PhzqRl7lOHBl4BWwkPLpGEbvGnv08cS0vJ4MVKQgkMnTTqeOnActcaAf1fTmzGgDbaG-V8GEk4PZdUSQZRcRtaVGGWDM5Pn45Gn80uvXGOReZWj2LLWTYd8qptEHN7umw7AkfmpAF1cAw"><img src="http://services.google.com/fh/files/emails/release_notes_apr_github.png" alt="GitHub" width="16"></a></td>
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUYQR_SGqY6pYz0qtxHMMzTpMrtppyX_X8UvKDm-fxIahLg5o1IyFr6yCHEo7hQuF9gt6oZvkc_fE9aqnyRxf_1YYhVY56zV2hndL9BX_3uxRkzzEc1b8K3oF5n6Fn0d_JOJIvS6gQ0Ey8ChLnk55qFNpUyq2vM9Pe9QnchWA"><img src="http://services.google.com/fh/files/emails/release_notes_apr_linkedin.png" alt="LinkedIn" width="17"></a></td>
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKX-uyGFMx6IjquimYBxpcA8WmN8FWzubB7Q96u5bX1Idh6niz8nYRShMCtxkU1v9WJ27arDs2CbSB0ZNF91UL90h8yGPuk6nXwe2a35D-bKEKezpQ9kIb5HZ2_HdISnEW6JELlFA42Rxl9XsJzj"><img src="http://services.google.com/fh/files/emails/release_notes_apr_facebook.png" alt="Facebook" width="11"></a></td>
+
+
+<td>   </td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVSaYVYIfVEq0VcX9-JqEnNPwWzN1CtuSTzY5CZmxN1RHkRISJbXrIf9tHVBt0YyzEo-JLpwOH4DOl11D-Xpno_KlffJFYmJmJCSlumsTm6UZBLNjxUMTq0bI8AVvoZE6BI7c1X-3UaQxzcyKbdd874NdYIk2e0isXMqaRVHpUrNLXrIiK-2_ci2PyOyhQDTBRnJb_AMp9rIJk5pFM2fyfdChOreyUIqXEClyZ1hzgE2OsiLpl6Y2vTe5fH4R4gTJk3DplVk7gbLaQISvUR-gfUqCHdbKJqznAJ-IPijA6eHDwxKsHSJh_fPrY9b6DRc0zPCnPtg9zbYRaLhD8dRzv-fcvOz42RZo9Hzv4yQ7zLesb1It90qXzSUbngWY6f2O-UwuVdlM_xUZI"><img src="http://services.google.com/fh/files/emails/gcp_new_youtube.png" alt="YouTube" width="22"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table></td>
+</tr>
+</table>
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>
+<table>
+<tr><td>Not subscribed to our newsletter yet? <a href="https://www.google.com/appserve/mkt/p/AFnwnKWIontH0GFv-KPG9hqLhuJuG_OUApl28Wzy8H7yk3TYNus3E924db6jUYcCMTEXGFCheZwN4BKIh3mMYSrGcW3zDaUeCj8ldT6Yx7YLxb45mLrFvJqJ-uLOHOPwyPlIFEeQ4v0D3Is8GRC9KyjJO_qpDg5-pH30c2lcKj2Qs03UOo7DiNft8_caUWlsoRCBRSGJZYKqPBceFc-RySuTl-o0gie0KIuofobGd7cg0xU-0KvLFEUooEbCFCHo0jRBZp2vO1gq_T1tiQQhE1rFBjDdOpRrftbUEUlXiof1rf1km3clk3J-UA9laqX4uuR7qIHbEBpaf8pyPNR_s8H33iKdQJHZ9qZOMazha4o6TA">Sign up</a></td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a href="https://www.google.com/appserve/mkt/p/AFnwnKXgADx1noU1QfIx0ZNRvhUIrCXxdlyiFvsYqmXztkv1p-NOjpROpeS0MSH-x3PnZ5NImTvkFlDWxSo1ZvJ8e85_fpckgzUBFp4UFLBJ_8OtAOpaAxnRT9DEwNg-m9DFGxFNVWeNHnS7eUGowdMANIiSG8I0Aczql9edvJLupntTWumcnaRf8OXZCnxN8-Abtsvi9eo9x_LIMO3D4gj4gLsjh2UxjJxA_JyCxdUqwcAD25w8j51rAu7wyyc4eZcT2St9NqRFzZiuvWXX5XQNQB1jchBO6xOl0AxSblTITZzbKApPjW_xRr8bZyACp3pkbOz6j_JnfsQoa-sw7V9MoIlPckBlv-318A">Go to your Console   <img src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" alt="arrow" width="16"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+
+
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUieglqrogNE84MHrMNcd4aJ7DIxSJBe4MkeAldFtTLb-ro0WVC69cde1N7f4Yfy6WvYex2PBMeOcUhUU76TQSLoGG-MohGmXENGE6YhU34h5JfI8IymJnr4p8R92PlZxKxDGGpEhOavBGkqOMfjh4Ev04XRVnGH9WF5KRxLwt1upZ9Qnzp4ot0tWMpY4I0WCF07tS8kmngRB10MPicTaCpKJneuz0wts29gUl_7w6fI2Rnh12zg9TCe1m4gHYlGOUgoGUXoeWXe1qdPSy-05zcMOIG5frMDCW1MjFch3v3cCoo73IArgPwZ46XxPSkM9MkwE1zbkt8XrWCvFHGhvol2see"><img src="https://services.google.com/fh/files/emails/feedback2_icon.png" width="16" alt="Feedback"></a></td>
+<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUieglqrogNE84MHrMNcd4aJ7DIxSJBe4MkeAldFtTLb-ro0WVC69cde1N7f4Yfy6WvYex2PBMeOcUhUU76TQSLoGG-MohGmXENGE6YhU34h5JfI8IymJnr4p8R92PlZxKxDGGpEhOavBGkqOMfjh4Ev04XRVnGH9WF5KRxLwt1upZ9Qnzp4ot0tWMpY4I0WCF07tS8kmngRB10MPicTaCpKJneuz0wts29gUl_7w6fI2Rnh12zg9TCe1m4gHYlGOUgoGUXoeWXe1qdPSy-05zcMOIG5frMDCW1MjFch3v3cCoo73IArgPwZ46XxPSkM9MkwE1zbkt8XrWCvFHGhvol2see">Feedback</a>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<td>
+<table>
+<tr>
+<td>
+<img src="https://services.google.com/fh/files/emails/bottom_footer_logo.png" width="141" alt="Google Cloud">
+</td>
+</tr>
+<tr>
+
+
+<td>
+
+<a>Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+<br /><br />
+This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive offers from Google Cloud Platform. If you don’t want to receive such emails in the future, please <a href="https://www.google.com/appserve/mkt/optout/AFnwnKVhxaIXlOCDU8dDhDLI6SGCAGeAP_q0AgQa4FHQlBkshMhUcvFe1SoM1Aj5n_GB1mj5?hl=en">unsubscribe here</a>. You can also change your preferences on your account’s profile page by logging in at <a href="https://www.google.com/appserve/mkt/p/AFnwnKVdqtDFyWFRZD9EtfRAOGdzPLC37BQ2NjLWl5kcvXJ6FxwE3-ctRdbwhaEEhmpCwADmVzh4iYBP2o6mfuoKCv0WEw">console.cloud.google.com</a>
+</td>
+</tr>
+</table>
+</td>
+</table></td></tr>
+
+
+
+
+
+</div>
+<img height="1" src="https://www.google.com/appserve/mkt/img/AFnwnKV5wivW0TlNU_YvQk7ps-DHqbHHNk0TXIO8gs109evw.gif" width="3">
+
+
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>성남 우수공예품 전시전 - 명장의 작품을 만나다 (AK플라자/ 3월19일~25일)</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/03/002057.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.2057</id>
+
+    <published>2019-03-27T07:09:34Z</published>
+    <updated>2019-03-27T07:09:34Z</updated>
+
+    <summary>2019 성남 우수공예품 전시전이 3월 19일부터 25일까지 개최되기에 개막전에 다녀왔습니다2019성남 우수공예품 전시전 행사!3월 25일(월요일)까지 AK플라자(서현역) 1층 특별전시장 내 있습니다&apos;민족의 정기와 함께 숨 쉬는 공예&apos; 라는 주제로 3월19일 11시,전시 개막전 행사가 진행되었는데백화점오픈 직후부터 관람객들이 함께 했습니다 열아홉번째 전시전을 하고 있는 2019...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="공연전시" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[2019 성남 우수공예품 전시전이 3월 19일부터 25일까지 개최되기에 개막전에 다녀왔습니다2019성남 우수공예품 전시전 행사!3월 25일(월요일)까지 AK플라자(서현역) 1층 특별전시장 내 있습니다'민족의 정기와 함께 숨 쉬는 공예' 라는 주제로 3월19일 11시,전시 개막전 행사가 진행되었는데백화점오픈 직후부터 관람객들이 함께 했습니다 열아홉번째 전시전을 하고 있는 2019 성남우수공예품전시전은다양한 전통공예품이 전시되었는데요특히 올해는 풍성하게 100점이 전시되었네요아침 일찍 첫날 전시부터공예품을 감상, 구입하기 위해 들른 시민들이 보입니다경기도 나전칠기 무형문화재 배금용 선생의 '나전.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221492590913">http://seongnamdiary.com/221492590913</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>오픈그래프 og tag와 저작권</title>
@@ -1341,58 +2948,6 @@ To learn more about Watson Discovery: ibm.biz/watson-discovery
 
 
 <p>출처 : <a href="http://seongnamdiary.com/221482239233">http://seongnamdiary.com/221482239233</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>성남사랑상품권으로 정자동 카페거리 즐기기!</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/03/002030.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.2030</id>
-
-    <published>2019-03-10T13:10:18Z</published>
-    <updated>2019-03-10T13:10:18Z</updated>
-
-    <summary>여러분혹시 성남사랑상품권 갖고 계신가요?그런데막상 어디서 사용해야할지몰라서 고민이시라구요?정자1동 카페거리에서성남사랑상품권 활용하는 방법지금부터 알려드리겠습니다~ #1. 성남사랑상품권이 뭐예요? 성남에는 성남지역화폐인‘성남사랑상품권’이 있는데요.아동수당, 청년배당 등으로지급되기도 하고,일반 구매도 가능합니다.그런데 말입니다.‘성남사랑상품권’이매력적인 이유가 있는데요.상품권 액면금액의 6%를인센티브로 할인판매한다는 점이죠!!쉽게 말해성남사랑상품권 10만원치를 산다면9만4천원에 구입할 수 있다는 것!!6천원이 절약되었다는 것!! #2. 그럼...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="성남지식" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[여러분혹시 성남사랑상품권 갖고 계신가요?그런데막상 어디서 사용해야할지몰라서 고민이시라구요?정자1동 카페거리에서성남사랑상품권 활용하는 방법지금부터 알려드리겠습니다~ #1. 성남사랑상품권이 뭐예요? 성남에는 성남지역화폐인‘성남사랑상품권’이 있는데요.아동수당, 청년배당 등으로지급되기도 하고,일반 구매도 가능합니다.그런데 말입니다.‘성남사랑상품권’이매력적인 이유가 있는데요.상품권 액면금액의 6%를인센티브로 할인판매한다는 점이죠!!쉽게 말해성남사랑상품권 10만원치를 산다면9만4천원에 구입할 수 있다는 것!!6천원이 절약되었다는 것!! #2. 그럼 ‘성남사랑상품권’은 어디서 살 수 있을까요? 상품.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221481632080">http://seongnamdiary.com/221481632080</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>어린이들을 위한 건축놀이터?! 고양어린이박물관</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/03/002029.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.2029</id>
-
-    <published>2019-03-10T13:10:17Z</published>
-    <updated>2019-03-10T13:10:17Z</updated>
-
-    <summary>[모두의어박, 보다 새로워진 고양어박 Vol.3]2019년을 맞이해서 새롭게 단장한 고양어린이박물관!오늘 소개할 공간은 &apos;건축놀이터&apos;다고~양!건축 체험을 통해 공간과 도시, 그리고 사람들이 살아온 모습과 함께 발전되어 온 건축에 대한 이해를 높일 수 있다고~양!리뉴얼을 통해 공구놀이 체험 등 더욱 다양한 체험을 제공하는 &apos;건축놀이터&apos;로 온 가족이...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[[모두의어박, 보다 새로워진 고양어박 Vol.3]2019년을 맞이해서 새롭게 단장한 고양어린이박물관!오늘 소개할 공간은 '건축놀이터'다고~양!건축 체험을 통해 공간과 도시, 그리고 사람들이 살아온 모습과 함께 발전되어 온 건축에 대한 이해를 높일 수 있다고~양!리뉴얼을 통해 공구놀이 체험 등 더욱 다양한 체험을 제공하는 '건축놀이터'로 온 가족이 함께 놀러오시라 고양~☆더 새로워진 모두의 어박으로 레츠~GO~GO양!
-
-
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221481564491">http://blog.naver.com/letsgoyang/221481564491</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
