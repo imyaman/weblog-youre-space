@@ -88,6 +88,228 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-2104" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/04/002104.html">github webhook payload, perl dancer2 참고</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-10T23:58:33+09:00" itemprop="datePublished">April 10, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>Payload 참고</p>
+<pre><code>
+[Plack::Sandbox::_2fhome_2fimyaman_2fwebhook_2dgithub_2ddevopskoreaorg_2fapp_2epl:9715] debug @2019-04-10 23:54:51&gt; $VAR1 = {
+          'pusher' =&gt; {
+                        'name' =&gt; 'imyaman',
+                        'email' =&gt; 'imyaman@netscape.net'
+                      },
+          'deleted' =&gt; bless( do{\(my $o = 0)}, 'JSON::PP::Boolean' ),
+          'repository' =&gt; {
+                            'updated_at' =&gt; '2019-04-10T14:52:41Z',
+                            'issues_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/issues{/number}',
+                            'created_at' =&gt; 1498210322,
+                            'tags_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/tags',
+                            'issue_comment_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/issues/comments{/number}',
+                            'contributors_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/contributors',
+                            'comments_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/comments{/number}',
+                            'watchers' =&gt; 0,
+                            'git_tags_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/git/tags{/sha}',
+                            'compare_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/compare/{base}...{head}',
+                            'id' =&gt; 95205676,
+                            'assignees_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/assignees{/user}',
+                            'archived' =&gt; $VAR1-&gt;{'deleted'},
+                            'url' =&gt; 'https://github.com/imyaman/sys5-co',
+                            'collaborators_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/collaborators{/collaborator}',
+                            'html_url' =&gt; 'https://github.com/imyaman/sys5-co',
+                            'commits_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/commits{/sha}',
+                            'issue_events_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/issues/events{/number}',
+                            'notifications_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/notifications{?since,all,participating}',
+                            'svn_url' =&gt; 'https://github.com/imyaman/sys5-co',
+                            'fork' =&gt; $VAR1-&gt;{'deleted'},
+                            'git_refs_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/git/refs{/sha}',
+                            'forks_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/forks',
+                            'contents_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/contents/{+path}',
+                            'size' =&gt; 1454,
+                            'has_downloads' =&gt; bless( do{\(my $o = 1)}, 'JSON::PP::Boolean' ),
+                            'node_id' =&gt; 'MDEwOlJlcG9zaXRvcnk5NTIwNTY3Ng==',
+                            'labels_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/labels{/name}',
+                            'milestones_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/milestones{/number}',
+                            'has_projects' =&gt; $VAR1-&gt;{'repository'}{'has_downloads'},
+                            'ssh_url' =&gt; 'git@github.com:imyaman/sys5-co.git',
+                            'keys_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/keys{/key_id}',
+                            'merges_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/merges',
+                            'watchers_count' =&gt; 0,
+                            'trees_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/git/trees{/sha}',
+                            'private' =&gt; $VAR1-&gt;{'deleted'},
+                            'statuses_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/statuses/{sha}',
+                            'has_issues' =&gt; $VAR1-&gt;{'repository'}{'has_downloads'},
+                            'downloads_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/downloads',
+                            'deployments_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/deployments',
+                            'full_name' =&gt; 'imyaman/sys5-co',
+                            'stargazers_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/stargazers',
+                            'blobs_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/git/blobs{/sha}',
+                            'default_branch' =&gt; 'master',
+                            'languages_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/languages',
+                            'stargazers' =&gt; 0,
+                            'description' =&gt; undef,
+                            'teams_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/teams',
+                            'stargazers_count' =&gt; 0,
+                            'git_commits_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/git/commits{/sha}',
+                            'owner' =&gt; {
+                                         'organizations_url' =&gt; 'https://api.github.com/users/imyaman/orgs',
+                                         'avatar_url' =&gt; 'https://avatars0.githubusercontent.com/u/1654540?v=4',
+                                         'gravatar_id' =&gt; '',
+                                         'id' =&gt; 1654540,
+                                         'received_events_url' =&gt; 'https://api.github.com/users/imyaman/received_events',
+                                         'node_id' =&gt; 'MDQ6VXNlcjE2NTQ1NDA=',
+                                         'email' =&gt; 'imyaman@netscape.net',
+                                         'name' =&gt; 'imyaman',
+                                         'following_url' =&gt; 'https://api.github.com/users/imyaman/following{/other_user}',
+                                         'html_url' =&gt; 'https://github.com/imyaman',
+                                         'login' =&gt; 'imyaman',
+                                         'url' =&gt; 'https://api.github.com/users/imyaman',
+                                         'site_admin' =&gt; $VAR1-&gt;{'deleted'},
+                                         'subscriptions_url' =&gt; 'https://api.github.com/users/imyaman/subscriptions',
+                                         'starred_url' =&gt; 'https://api.github.com/users/imyaman/starred{/owner}{/repo}',
+                                         'type' =&gt; 'User',
+                                         'repos_url' =&gt; 'https://api.github.com/users/imyaman/repos',
+                                         'events_url' =&gt; 'https://api.github.com/users/imyaman/events{/privacy}',
+                                         'gists_url' =&gt; 'https://api.github.com/users/imyaman/gists{/gist_id}',
+                                         'followers_url' =&gt; 'https://api.github.com/users/imyaman/followers'
+                                       },
+                            'hooks_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/hooks',
+                            'archive_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/{archive_format}{/ref}',
+                            'name' =&gt; 'sys5-co',
+                            'pulls_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/pulls{/number}',
+                            'subscribers_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/subscribers',
+                            'license' =&gt; {
+                                           'url' =&gt; undef,
+                                           'node_id' =&gt; 'MDc6TGljZW5zZTA=',
+                                           'name' =&gt; 'Other',
+                                           'key' =&gt; 'other',
+                                           'spdx_id' =&gt; 'NOASSERTION'
+                                         },
+                            'mirror_url' =&gt; undef,
+                            'open_issues' =&gt; 0,
+                            'forks' =&gt; 0,
+                            'language' =&gt; 'HTML',
+                            'pushed_at' =&gt; 1554908091,
+                            'events_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/events',
+                            'master_branch' =&gt; 'master',
+                            'git_url' =&gt; 'git://github.com/imyaman/sys5-co.git',
+                            'subscription_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/subscription',
+                            'homepage' =&gt; undef,
+                            'open_issues_count' =&gt; 0,
+                            'clone_url' =&gt; 'https://github.com/imyaman/sys5-co.git',
+                            'branches_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/branches{/branch}',
+                            'releases_url' =&gt; 'https://api.github.com/repos/imyaman/sys5-co/releases{/id}',
+                            'has_pages' =&gt; $VAR1-&gt;{'deleted'},
+                            'has_wiki' =&gt; $VAR1-&gt;{'repository'}{'has_downloads'},
+                            'forks_count' =&gt; 0,
+                            'disabled' =&gt; $VAR1-&gt;{'deleted'}
+                          },
+          'forced' =&gt; $VAR1-&gt;{'deleted'},
+          'sender' =&gt; {
+                        'repos_url' =&gt; 'https://api.github.com/users/imyaman/repos',
+                        'type' =&gt; 'User',
+                        'followers_url' =&gt; 'https://api.github.com/users/imyaman/followers',
+                        'events_url' =&gt; 'https://api.github.com/users/imyaman/events{/privacy}',
+                        'gists_url' =&gt; 'https://api.github.com/users/imyaman/gists{/gist_id}',
+                        'node_id' =&gt; 'MDQ6VXNlcjE2NTQ1NDA=',
+                        'received_events_url' =&gt; 'https://api.github.com/users/imyaman/received_events',
+                        'gravatar_id' =&gt; '',
+                        'avatar_url' =&gt; 'https://avatars0.githubusercontent.com/u/1654540?v=4',
+                        'id' =&gt; 1654540,
+                        'organizations_url' =&gt; 'https://api.github.com/users/imyaman/orgs',
+                        'starred_url' =&gt; 'https://api.github.com/users/imyaman/starred{/owner}{/repo}',
+                        'subscriptions_url' =&gt; 'https://api.github.com/users/imyaman/subscriptions',
+                        'url' =&gt; 'https://api.github.com/users/imyaman',
+                        'site_admin' =&gt; $VAR1-&gt;{'deleted'},
+                        'login' =&gt; 'imyaman',
+                        'html_url' =&gt; 'https://github.com/imyaman',
+                        'following_url' =&gt; 'https://api.github.com/users/imyaman/following{/other_user}'
+                      },
+          'head_commit' =&gt; {
+                             'distinct' =&gt; $VAR1-&gt;{'repository'}{'has_downloads'},
+                             'message' =&gt; 'Update+happytalk.html',
+                             'id' =&gt; '726ce0521cfc061c0f12d63e5970bee51bdd7d84',
+                             'removed' =&gt; [],
+                             'modified' =&gt; [
+                                             'happytalk.html'
+                                           ],
+                             'tree_id' =&gt; '4bcb4192c801ad493158abc88606106339bac87d',
+                             'author' =&gt; {
+                                           'name' =&gt; 'Sangyong+Gwak',
+                                           'email' =&gt; 'imyaman@netscape.net',
+                                           'username' =&gt; 'imyaman'
+                                         },
+                             'url' =&gt; 'https://github.com/imyaman/sys5-co/commit/726ce0521cfc061c0f12d63e5970bee51bdd7d84',
+                             'timestamp' =&gt; '2019-04-10T23:54:50+09:00',
+                             'committer' =&gt; {
+                                              'email' =&gt; 'noreply@github.com',
+                                              'name' =&gt; 'GitHub',
+                                              'username' =&gt; 'web-flow'
+                                            },
+                             'added' =&gt; []
+                           },
+          'base_ref' =&gt; undef,
+          'compare' =&gt; 'https://github.com/imyaman/sys5-co/compare/65342976598d...726ce0521cfc',
+          'ref' =&gt; 'refs/heads/master',
+          'created' =&gt; $VAR1-&gt;{'deleted'},
+          'after' =&gt; '726ce0521cfc061c0f12d63e5970bee51bdd7d84',
+          'before' =&gt; '65342976598dd6f5ed0ec43dccdfb2a8b84a680f',
+          'commits' =&gt; [
+                         {
+                           'removed' =&gt; [],
+                           'id' =&gt; '726ce0521cfc061c0f12d63e5970bee51bdd7d84',
+                           'message' =&gt; 'Update+happytalk.html',
+                           'distinct' =&gt; $VAR1-&gt;{'repository'}{'has_downloads'},
+                           'author' =&gt; {
+                                         'name' =&gt; 'Sangyong+Gwak',
+                                         'email' =&gt; 'imyaman@netscape.net',
+                                         'username' =&gt; 'imyaman'
+                                       },
+                           'tree_id' =&gt; '4bcb4192c801ad493158abc88606106339bac87d',
+                           'modified' =&gt; [
+                                           'happytalk.html'
+                                         ],
+                           'url' =&gt; 'https://github.com/imyaman/sys5-co/commit/726ce0521cfc061c0f12d63e5970bee51bdd7d84',
+                           'committer' =&gt; {
+                                            'username' =&gt; 'web-flow',
+                                            'name' =&gt; 'GitHub',
+                                            'email' =&gt; 'noreply@github.com'
+                                          },
+                           'added' =&gt; [],
+                           'timestamp' =&gt; '2019-04-10T23:54:50+09:00'
+                         }
+                       ]
+        }; in /home/imyaman/webhook-github-devopskoreaorg/app.pl l. 42
+[Plack::Sandbox::_2fhome_2fimyaman_2fwebhook_2dgithub_2ddevopskoreaorg_2fapp_2epl:9715] debug @2019-04-10 23:54:51&gt; undef in /home/imyaman/webhook-github-devopskoreaorg/app.pl l. 44
+</code></pre>
+
+<pre><code>
+  my ($mybody, $mypayload, $mypayloadjson);
+  $mybody = request -> body;
+  $mypayload = $mybody;
+  $mypayload =~ s/payload=//;
+  $mypayload = uri_decode($mypayload);
+  $mypayloadjson = from_json($mypayload);
+  debug Dumper($mypayloadjson);
+</code></pre>
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2019/04/002104.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-2103" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002103.html">중원도서관 '사진으로 보는 성남의 어제와 오늘 전시회'</a></h2>
@@ -330,34 +552,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/imyaman/2019/04/002095.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2094" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002094.html">"노래하는 사람이 늙겠어요?" 노래하며 봉사하는 분당노인종합복지관 시니어합창단</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-09T10:47:37+09:00" itemprop="datePublished">April  9, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/eeie/">감동성남</a></li>
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    분당노인종합복지관 시니어합창단들어보셨나요? 잘 아신다고요?성남에 살면서 이분들을 모르면요,성남 시민이 아니랄 정도로아주 유명하신 어르신 천사들입니다.시니어합창단은 2011년에 창단된성남지역 어르신들의동아리 모임인데요, 창단 후수준 높은 공연을 많이 선보였습니다.합창단은 65세 이상으로 구성됐는데요,평균 나이가 76세라고 합니다.이분들은 동아리모임으로 끝나는 게아니라 성남시는 물론 인근 지역까지재능기부 차원에서 봉사활동을많이 다니고 있습니다.지난 4월5일(목)에는 용인시로봉사활동을 갔는데요, 제가 그 현장을함께 따라가 봤습니다. 따스한 봄날 오후 분당노인종합복지관에시니어합창단이 모였습니.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221509081703">http://seongnamdiary.com/221509081703</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002094.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 

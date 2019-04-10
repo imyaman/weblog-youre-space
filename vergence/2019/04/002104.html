@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko_KR" itemscope itemtype="http://schema.org/Blog">
+<html lang="ko" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="#취미생활 취미생호라 취미생하로">
-    <title>vergence의 이상한 세상</title>
+    <meta name="description" content="Payload 참고 [Plack::Sandbox::_2fhome_2fimyaman_2fwebhook_2dgithub_2ddevopskoreaorg_2fapp_2epl:9715] debug @2019-04-10 23:54:51&amp;gt; $VAR1 = { &#039;pusher&#039; =&amp;gt; { &#039;name&#039; =&amp;gt; &#039;imyaman&#039;, &#039;email&#039; =&amp;gt; &#039;imyaman@netscape.net&#039; }, &#039;deleted&#039; =&amp;gt; bless( do{\(my $o = 0)}, &#039;JSON::PP::Boolean&#039; ), &#039;repository&#039; =&amp;gt; { &#039;updated_at&#039; =&amp;gt; &#039;2019-04-10T14:52:41Z&#039;, &#039;issues_url&#039; =&amp;gt; &#039;https://api.github.com/repos/imyaman/sys5-co/issues{/number}&#039;, &#039;created_at&#039; =&amp;gt; 1498210322,...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>github webhook payload, perl dancer2 참고 - vergence의 이상한 세상</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
     <!--[if lt IE 9]>
@@ -13,7 +14,7 @@
     
     <link rel="start" href="https://weblog.youre.space/vergence/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/vergence/atom.xml" />
-    <link rel="canonical" href="https://weblog.youre.space/vergence/" />
+    <link rel="canonical" href="https://weblog.youre.space/vergence/2019/04/002104.html" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -30,19 +31,22 @@
         var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
         sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
     </script>
+    <link rel="prev" href="https://weblog.youre.space/vergence/2019/03/002078.html" title="아 그렇구나">
+    
+    <link rel="amphtml" href="https://weblog.youre.space/vergence/2019/04/002104.amp.html">
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="ko_KR">
-    <meta property="og:title" content="vergence의 이상한 세상">
-    <meta property="og:url" content="https://weblog.youre.space/vergence/">
-    <meta property="og:description" content="#취미생활 취미생호라 취미생하로">
+    <meta property="og:title" content="github webhook payload, perl dancer2 참고">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2019/04/002104.html">
+    <meta property="og:description" content="Payload 참고 [Plack::Sandbox::_2fhome_2fimyaman_2fwebhook_2dgithub_2ddevopskoreaorg_2fapp_2epl:9715] debug @2019-04-10 23:54:51&amp;gt; $VAR1 = { &#039;pusher&#039; =&amp;gt; { &#039;name&#039; =&amp;gt; &#039;imyaman&#039;, &#039;email&#039; =&amp;gt; &#039;imyaman@netscape.net&#039; }, &#039;deleted&#039; =&amp;gt; bless( do{\(my $o = 0)}, &#039;JSON::PP::Boolean&#039; ), &#039;repository&#039; =&amp;gt; { &#039;updated_at&#039; =&amp;gt; &#039;2019-04-10T14:52:41Z&#039;, &#039;issues_url&#039; =&amp;gt; &#039;https://api.github.com/repos/imyaman/sys5-co/issues{/number}&#039;, &#039;created_at&#039; =&amp;gt; 1498210322,...">
     <meta property="og:site_name" content="vergence의 이상한 세상">
     <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
-    <!-- Microdata -->
-    <meta itemprop="description" content="#취미생활 취미생호라 취미생하로">
-    <meta itemprop="name" content="vergence의 이상한 세상">
-    <link itemprop="url" href="https://weblog.youre.space/vergence/">
+    <!-- Metadata -->
+    <meta itemprop="description" content="Payload 참고 [Plack::Sandbox::_2fhome_2fimyaman_2fwebhook_2dgithub_2ddevopskoreaorg_2fapp_2epl:9715] debug @2019-04-10 23:54:51&amp;gt; $VAR1 = { &#039;pusher&#039; =&amp;gt; { &#039;name&#039; =&amp;gt; &#039;imyaman&#039;, &#039;email&#039; =&amp;gt; &#039;imyaman@netscape.net&#039; }, &#039;deleted&#039; =&amp;gt; bless( do{\(my $o = 0)}, &#039;JSON::PP::Boolean&#039; ), &#039;repository&#039; =&amp;gt; { &#039;updated_at&#039; =&amp;gt; &#039;2019-04-10T14:52:41Z&#039;, &#039;issues_url&#039; =&amp;gt; &#039;https://api.github.com/repos/imyaman/sys5-co/issues{/number}&#039;, &#039;created_at&#039; =&amp;gt; 1498210322,...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2019/04/002104.html">
     <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
   </head>
   <body>
     <div id="container">
@@ -74,23 +78,26 @@
         </header>
         <div id="content">
           <div id="content-inner">
-            <div id="index-main" class="main" role="main">
-
-              <article id="entry-2104" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/04/002104.html">github webhook payload, perl dancer2 참고</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-10T23:58:33+09:00" itemprop="datePublished">April 10, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
+              <li class="breadcrumb-list-item">github webhook payload, perl dancer2 참고</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-2104" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">github webhook payload, perl dancer2 참고</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2019-04-10T23:58:33+09:00" itemprop="datePublished">April 10, 2019</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
 
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Payload 참고</p>
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>Payload 참고</p>
 <pre><code>
 [Plack::Sandbox::_2fhome_2fimyaman_2fwebhook_2dgithub_2ddevopskoreaorg_2fapp_2epl:9715] debug @2019-04-10 23:54:51&gt; $VAR1 = {
           'pusher' =&gt; {
@@ -291,295 +298,34 @@
   debug Dumper($mypayloadjson);
 </code></pre>
 
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/04/002104.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2019/03/002078.html" title="아 그렇구나">Previous entry</a></li>
 
 
-              <article id="entry-2078" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/03/002078.html">아 그렇구나</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-03-31T13:57:29+09:00" itemprop="datePublished">March 31, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
   
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    월말이 되면 ifttt 등의 수량 제한 때문에 새 글이 없구나.<br />
-
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/03/002078.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2056" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/03/002056.html">PD와 제공사의 문제</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-03-27T16:09:32+09:00" itemprop="datePublished">March 27, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
+    Please paste Zenback script code here.
   
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <div>&#54693;&#52488;&#47484; &#51076;&#51032;&#47196; &#51228;&#51089;, &#48176;&#54252;&#54620; &#50612;&#45712; &#50976;&#47749;&#51064;&#51032; &#47928;&#51228;&#44032; &#50500;&#45768;&#46972;, &#51060; &#53080;&#53584;&#52768;&#47484; &#44144;&#47476;&#51648; &#50506;&#44256; &#48169;&#49569;&#54620; PD&#50752; &#51228;&#44277;&#49324;&#51032; &#47928;&#51228;.<br />
-</div>
-<div>&#51228;&#44277;&#49324;&#45716; &#53080;&#53584;&#52768;&#50640; &#48520;&#48277;&#51201;&#51064; &#49548;&#51116;&#44032; &#51080;&#51004;&#47732; &#44152;&#47084;&#51452;&#45716; &#49884;&#49828;&#53596;&#51060; &#51080;&#51012; &#53584;&#45936;, &#51228;&#45824;&#47196; &#51089;&#46041;&#54616;&#51648; &#50506;&#50520;&#51012; &#53552;.<br />
-</div>
-<div>&#54872;&#44221;&#48512;&#44032; &#51648;&#51201;&#54664;&#51004;&#47732;, &#48169;&#49569;&#53685;&#49888;&#49900;&#51032;&#50948;&#50896;&#54924;&#45716; &#46263;&#48513;&#51060;&#46972;&#46020; &#52824;&#47140;&#45208;. &#46263;&#48513;&#46020; &#50504; &#52828;&#45796;&#47732; &#44536;&#46308;&#51008; &#48165; &#47673;&#44256; &#46629;&#47564; &#49912;&#44256; &#51080;&#44192;...</div>
-
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/03/002056.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2052" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/03/002052.html">3월 18일의 역사</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-03-19T07:10:13+09:00" itemprop="datePublished">March 19, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
   
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <div><span>✿부산 미 문화원 방화사건 발생</span></div><div><br /></div><div>1982년 3월 18일 오후 2시 부산 고신대생들이 광주민주화운동 유혈진압 및 독재정권 비호에 대한 미국측의 책임을 물어 부산 미 문화원 1층에 방화한 사건이 발생했다. 때를 같이해서 주변에는 유인물 700여 장이 뿌려졌다. ‘반미’의 금기를 깬 이 사건은 대담하고 격렬한 투쟁 방식으로 사람들에게 큰 충격을 안겨줬고, 미 문화</div><div>원이 1980년대 반미투쟁의 표적이 되는 신호탄 역할을 했다.</div><div><br /></div><div>방화를 실행한 고신대생 이미옥 등이 3월 30일 잡히면서 사건의 윤곽이 드러났으며, 주범으로 공개수배된 고신대생 문부식과 김은숙은 4월 1일에 자수했다. 이튿날인 2일에는 문부식의 배후로 지목된 광주민주화운동의 수배자 김현장이 검거됐다.</div><div><br /></div><div>3일 뒤에는 김현장을 은닉한 혐의로 원주교육원장 최기식 신부가 연행되면서 천주교까지 연루되는 사건으로 번졌다.</div><div><br /></div><div>전두환 정권은 평소 탐탁치 않던 천주교에 대대적인 공세를 가하기 시작했고 천주교</div>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/03/002052.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2050" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/03/002050.html">perl open.pm</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-03-18T19:43:06+09:00" itemprop="datePublished">March 18, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
+  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/352</p>
   
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <div>Fedora 29&#50640;&#49436; Perl &#44288;&#47144; "Can't locate <a href="http://open.pm">open.pm</a>..." &#47700;&#49884;&#51648;&#47484; &#48372;&#44172; &#46108;&#45796;&#47732; perl-open &#54056;&#53412;&#51648;&#47484; &#49444;&#52824;&#54616;&#51088;.<br />
-<br />
-</div>
-<div>yum install perl-open <br />
-<br />
-</div>
-<div>&#44536;&#47084;&#47732; perl-open-1.11&#51060; &#49444;&#52824;&#46112; &#44163;&#51060;&#45796;</div>
-
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/03/002050.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2049" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/03/002049.html">Re: 오픈그래프 og tag와 저작권</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-03-18T13:21:25+09:00" itemprop="datePublished">March 18, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
   
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <div><br />
-<br />
-</div>
-<div>From: Sangyong Gwak<br />
-</div>
-<div>Sent: Monday, March 18, 09:54<br />
-</div>
-<div>Subject: &#50724;&#54536;&#44536;&#47000;&#54532; og tag&#50752; &#51200;&#51089;&#44428;<br />
-</div>
-<div>To: imyamanhitelnet+12@gmail.com<br />
-<br />
-<br />
-</div>
-<div>&#53440;&#51064;&#51032; &#50937; &#54168;&#51060;&#51648;(&#51200;&#51089;&#47932;)&#51032; og tag&#47484; &#45236; &#49436;&#48708;&#49828;&#50640;&#49436; &#51060;&#50857;&#54644;&#46020; &#46112;&#44620;?<br />
-<br />
-<br />
-</div>
-<div>"&#49324;&#49892;&#51032; &#49688;&#51665; &#46384;&#50948;"&#50640;&#45716; &#51200;&#51089;&#44428;&#51012; &#51452;&#51109;&#54624; &#49688; &#50630;&#45796;. &#44172;&#45796;&#44032;, &#51200;&#51089;&#44428;&#51012; &#51452;&#51109;&#54616;&#47140;&#47732; &#45800;&#49692;&#45432;&#46041;("&#51060;&#47560;&#51032; &#46400;" &#51221;&#46020;&#51032; &#45432;&#46041;) &#51060;&#49345;&#51032; &#44163;&#51060; &#54596;&#50836;&#54616;&#45796;.<br />
-<br />
-</div>
-<div>In Feist Publications, Inc. v. Rural Telephone Service Co. 499 US 340 (1991) the United States Supreme Court held that copyright does not extend to a mere compilation of facts. In this case, it was a telephone directory much the same as the one in ProCD v. Zeidenberg 86 F.3d 1447 (7th Cir. 1996).&#160;<br />
-<br />
-</div>
-<div>Furthermore, the Court also ruled that something more than simple "sweat of the brow" labor was required before copyright protection would ensue, with some modicum of authorial originality necessary.&#160;<br />
-<br />
-</div>
-<div>Accordingly, it was held in Feist that copyright did not extend to a telephone directory, no matter how laborious a task its compilation was. The decision in ProCD v. Zeidenberg 86 F. 3d 1447 (7th Cir. 1996) is highly significant, therefore, in that it permits copyright or quasi-copyright protection to be extended to non-copyrightable material through the use of contract.<br />
-<br />
-<br />
-</div>
-<div>https://law.stackexchange.com/questions/762/is-it-always-permissible-to-republish-the-metadata-of-a-website<br />
-<br />
-<br />
-</div>
+</aside>
 
 
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/03/002049.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2055" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/01/002055.html">RStudio 대신 Perl로 데이터 전처리하기</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-20T22:11:41+09:00" itemprop="datePublished">January 20, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/01/002055.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1386" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/01/001386.html">Firebase에서 서버 시각 저장하는 방법 변경</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-20T10:27:53+09:00" itemprop="datePublished">January 20, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>기존의 방식 대로 했더니 아래와 같은 경고 메시지를 받았습니다. 그렇군요, 바뀌었군요.</p>
-<pre><code>
-The behavior for Date objects stored in Firestore is going to change
-AND YOUR APP MAY BREAK.
-To hide this warning and ensure your app does not break, you need to add the
-following code to your app before calling any other Cloud Firestore methods:
-
-  const firestore = new Firestore();
-  const settings = {/* your settings... */ timestampsInSnapshots: true};
-  firestore.settings(settings);
-
-With this change, timestamps stored in Cloud Firestore will be read back as
-Firebase Timestamp objects instead of as system Date objects. So you will also
-need to update code expecting a Date to instead expect a Timestamp. For example:
-
-  // Old:
-  const date = snapshot.get('created_at');
-  // New:
-  const timestamp = snapshot.get('created_at');
-  const date = timestamp.toDate();
-
-Please audit all existing usages of Date when you enable the new behavior. In a
-future release, the behavior will change to the new behavior, so if you do not
-follow these steps, YOUR APP MAY BREAK.
-</code></pre>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/01/001386.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1385" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/01/001385.html">신한카드 올댓쇼핑 모바일 웹 </a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-19T21:52:20+09:00" itemprop="datePublished">January 19, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>신한카드 올댓쇼핑 모바일 웹</p>
-<p>Shinhancard allthat shopping mobile web</p>
-<p><a href="https://newmallthat.shinhancard.com/">https://newmallthat.shinhancard.com/</a></p>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/01/001385.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1384" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/01/001384.html">Movable Type 7에서 6로</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-16T19:21:41+09:00" itemprop="datePublished">January 16, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Movable Type 7에서 Movable Type 6로 돌아왔습니다. MT7으로 이전은 나중에 시도해보려고요. 아직은 이른 것 같아요.</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/01/001384.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <nav class="page-navigation entry-navigation pagination content-nav">
-  <ul class="pagination-list">
-<li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;template_id=952&amp;limit=10&amp;archive_type=Index&amp;page=2">Older entries</a></li>
-  </ul>
-</nav>
-
-
+              </article>
             </div>
             <aside class="widgets related" role="complementary">
               <nav class="widget-search widget">
@@ -937,27 +683,31 @@ follow these steps, YOUR APP MAY BREAK.
     </div>
     <script src="https://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
     <script src="https://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
-<center> <!-- ads -->
-<div id='mmaDisplay'>
-<script src='//image.cauly.co.kr/websdk/common/lasted/ads.js'></script>
-<script> new CaulyAds({app_code:'EJuPK2Dp',placement:1,displayid:'mmaDisplay', }); </script>
-</div>
-</center>
-  
+
 <center>
-<div id="admixer_display"></div>
+<script type="text/javascript"> 
+clicksor_enable_adhere = false; 
+
+clicksor_default_url = '';
+clicksor_banner_border = '#99CC33'; 
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#000000'; 
+clicksor_banner_text_color = '#666666';
+clicksor_layer_border_color = '';
+clicksor_layer_ad_bg = ''; 
+clicksor_layer_ad_link_color = '';
+clicksor_layer_ad_text_color = ''; 
+clicksor_text_link_bg = '';
+clicksor_text_link_color = ''; 
+clicksor_enable_text_link = false;
+		 
+clicksor_banner_text_banner = true;
+clicksor_banner_image_banner = true; 
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+</script>
+<script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=330835&amp;adtype=20&amp;sid=588821"></script>
 </center>
-<script type="text/javascript" src="//scr.nsmartad.com/admixer/admixer.js"></script>
-<script type="text/javascript">
-    new admixer_ad({
-    admixer_key:"zp1v4th5",
-    display_id:"admixer_display",
-    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
-    ad_change:true,  //default : true
-    test : false,//default : false
-    test_display_id : "log"
-});
-</script>  
-  
-  </body>
+
+</body>
 </html>
