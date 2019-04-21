@@ -76,6 +76,29 @@
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-2125" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/04/002125.html">Splunk 스플렁크 HEC에 데이터 넣는 예시</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-21T16:40:01+09:00" itemprop="datePublished">April 21, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>sourcetype은 _json 또는 json_no_timestamp를 써야겠다.<br />index는 이 데이터가 어느 인덱스에 들어갈지를 정하는데 사용한다. HEC 설정에 기본 인덱스가 미리 정해져있다, 그래서 입력 데이터에 index 필드는 선택사항이다.<br />event는 꼭 있어야한다.</p>
+<pre><code>curl -X POST -H 'Authorization: Splunk 0c04fc3c-a84c-46bf-866c-363907385895' -d '{"sourcetype": "json_no_timestamp", "index":"index_anyweb", "event":{"name":"Guy", "number":"0001"} }' http://splunk-8088.youre.space:55900/services/collector</code></pre>
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2019/04/002125.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-2104" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/04/002104.html">github webhook payload, perl dancer2 참고</a></h2>
@@ -547,28 +570,6 @@ follow these steps, YOUR APP MAY BREAK.
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/vergence/2019/01/001385.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-1384" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/01/001384.html">Movable Type 7에서 6로</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-01-16T19:21:41+09:00" itemprop="datePublished">January 16, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Movable Type 7에서 Movable Type 6로 돌아왔습니다. MT7으로 이전은 나중에 시도해보려고요. 아직은 이른 것 같아요.</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/01/001384.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
