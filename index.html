@@ -88,89 +88,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
-              <article id="entry-2125" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-2155" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/04/002125.html">Splunk 스플렁크 HEC에 데이터 넣는 예시</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/04/002155.html">The minimum free disk space reached for /opt/splunk/var/run/splunk/dispatch</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-21T16:40:01+09:00" itemprop="datePublished">April 21, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>sourcetype은 _json 또는 json_no_timestamp를 써야겠다.<br />index는 이 데이터가 어느 인덱스에 들어갈지를 정하는데 사용한다. HEC 설정에 기본 인덱스가 미리 정해져있다, 그래서 입력 데이터에 index 필드는 선택사항이다.<br />event는 꼭 있어야한다.</p>
-<pre><code>curl -X POST -H 'Authorization: Splunk 0c04fc3c-a84c-46bf-866c-363907385895' -d '{"sourcetype": "json_no_timestamp", "index":"index_anyweb", "event":{"name":"Guy", "number":"0001"} }' http://splunk-8088.youre.space:55900/services/collector</code></pre>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/04/002125.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2124" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002124.html">Janine di Giovanni</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-21T14:18:00+09:00" itemprop="datePublished">April 21, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>"Easter is meant to be a symbol of hope, renewal, and new life."</p>
-
-<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/Pj1VKsuLUJU/janine_di_giovanni</p>
-
-<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002124.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2123" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002123.html">Robert H. Schuller</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-20T14:09:07+09:00" itemprop="datePublished">April 20, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>"It is difficult to say what is impossible, for the dream of yesterday is the hope of today and the reality of tomorrow."</p>
-
-<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/DzELuO7MnKI/robert_h_schuller</p>
-
-<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002123.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2122" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002122.html">Google Cloud Newsletter, April 2019 | Announcing Anthos: Build once, run anywhere</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-20T01:14:29+09:00" itemprop="datePublished">April 20, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-30T14:07:29+09:00" itemprop="datePublished">April 30, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -180,1521 +103,92 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
     
+<div>스플렁크를 도커 위에서 실행할 때 이런 메시지를 본다면, 도커의 마운트 옵션을 살펴보자.</div>
 
-
-
-
-
-
-@media screen and (min-width: 420px) {
-.head_gray_pd {
-padding-left: 20px !important;
-}
-}
-@media screen and (min-width: 731px) and (max-width: 850px) {
-.banner_text1,
-.banner_text2 {
-text-align: center !important;
-}
-.left-spacing-mob {
-padding-bottom: 2px !important;
-}
-}
-@media screen and (max-width: 737px) {
-.mob_cls {
-width: 100% !important;
-max-width: 500px !important;
-}
-.body {
-padding-left: 10px !important;
-padding-right: 10px !important;
-box-sizing: border-box !important;
-background-color: #f8f9fa !important;
-width: auto !important;
-}
-.twitter_icon_box_text2 a,
-.body_heading a,
-.mob_link,
-.sec4_box1 tr td a,
-.sec4_box2 tr td a,
-.subscribe_text a,
-.feedback_text1 a,
-.signup_text a {
-font-weight: 500 !important;
-}
-.foot_wrap {
-padding-left: 50px !important;
-padding-right: 50px !important;
-}
-.banner_text1 {
-color: #ffffff !important;
-font-family: Roboto, arial !important;
-font-size: 24px !important;
-line-height: 32px !important;
-padding-top: 125px !important;
-padding-left: 20px !important;
-padding-right: 20px !important;
-padding-bottom: 20px !important;
-text-align: center !important;
-}
-.banner_text2 {
-color: #ffffff !important;
-font-family: Roboto, arial !important;
-font-size: 14px !important;
-line-height: 24px !important;
-font-weight: 300 !important;
-padding-bottom: 26px !important;
-padding-left: 20px !important;
-padding-right: 20px !important;
-text-align: center !important;
-}
-.sect_plr {
-padding-left: 0px !important;
-padding-right: 0px !important;
-}
-.flexible {
-width: 100% !important;
-max-width: 600px !important;
-}
-.head_flexible {
-width: 100% !important;
-max-width: 500px !important;
-}
-.tweetbox {
-width: 100% !important;
-}
-.mob_para_head_event {
-padding-bottom: 10px !important;
-}
-.feedback_icon_parent1 {
-width: 100% !important;
-max-width: 110px !important;
-}
-.sec6_lr_pd {
-width: 100% !important;
-max-width: 500px !important;
-}
-.bigger_wrapper_body {
-padding-left: 25px !important;
-padding-right: 25px !important;
-box-sizing: border-box !important;
-}
-.banner_container {
-width: 100% !important;
-}
-.holder_wrap_inner {
-width: 100% !important;
-max-width: 100% !important;
-}
-.body_content_wrapper {
-padding-left: 0 !important;
-padding-right: 0 !important;
-}
-.bigger_wrapper_footer_1 {
-padding-left: 0 !important;
-padding-right: 0 !important;
-}
-.webkit {
-width: 100% !important;
-min-width: 100% !important;
-}
-.pre_header_text {
-width: 100% !important;
-}
-.body_heading {
-padding-bottom: 8px !important;
-padding-top: 0px !important;
-}
-.body_heading_zero_bot {
-padding-bottom: 0px !important;
-padding-top: 0px !important;
-}
-.body_subheading {
-font-size: 16px !important;
-line-height: 24px !important;
-padding-top: 10px !important;
-}
-.body_text {
-font-size: 14px !important;
-line-height: 24px !important;
-padding-top: 5px !important;
-padding-bottom: 10px !important;
-}
-.two_col_wrapper {
-width: 100% !important;
-max-width: 500px !important;
-}
-.twitter_icon_box_text2 {
-width: 100% !important;
-text-align: left !important;
-padding-bottom: 8px !important;
-}
-.twitter_icon_box_text4 {
-width: 100% !important;
-text-align: left !important
-}
-.twitter_box1_text2 {
-padding-right: 0px !important;
-padding-bottom: 0px !important;
-}
-.sec4_last_text.twitter_box1_text2 {
-padding-bottom: 16px !important;
-}
-.feedback_icon_parent1 {
-float: left !important;
-text-align: left !important;
-}
-.feedback_icon1 {
-width: 20px;
-padding-top: 20px !important;
-}
-.feedback_text1 {
-padding-top: 16px !important;
-text-align: left !important;
-}
-.subscribe_text1,
-.subscribe_text2,
-.subscribe_text3 {
-padding-left: 0px !important;
-padding-right: 0px !important;
-padding-bottom: 20px !important;
-}
-#firsttab {
-padding-left: 0px !important;
-}
-.subscribe_border {
-display: none !important;
-}
-.sub_head2,
-.sub_head3 {
-display: none !important;
-}
-#heroimgtxt3 {
-text-align: left !important;
-padding-left: 0px !important;
-}
-#head1 {
-padding-top: 42px !important;
-}
-#head2 {
-padding-top: 34px !important;
-}
-#head5 {
-padding-top: 34px !important;
-}
-.bluecta {
-text-align: center !important;
-margin: auto;
-}
-#head_text {
-padding-top: 12px !important;
-}
-.banner_text_2 {
-padding-left: 10px !important;
-padding-right: 10px !important;
-}
-.banner_text_1 {
-padding: 6px 10px 6px 10px !important;
-}
-#firsttab .bigger_wrapper_body {
-padding-left: 0px !important;
-padding-right: 0px !important;
-}
-#thirdtab {
-padding-bottom: 32px !important;
-}
-#secondtab {
-padding-top: 0px !important;
-}
-}
-@media only screen and (min-width: 415px) and (max-width: 500px) {
-.btn_align {
-padding-bottom: 30px !important;
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.section1_heading2 {
-padding-bottom: 3px !important;
-padding-top: 16px !important;
-}
-.sec1_lnk_pb_mob {
-padding-bottom: 20px !important;
-}
-.section5_box1,
-.section5_box2 {
-width: 100% !important;
-}
-.section5_txt1,
-.section5_txt2 {
-padding-left: 0px !important;
-padding-right: 0px !important;
-}
-.section5_txt1 {
-padding-bottom: 20px !important;
-}
-.outer {
-width: 100% !important;
-}
-.left_space {
-padding-left: 14px !important;
-}
-.pb_sec4_txt1 {
-padding-bottom: 8px !important;
-}
-.pb_sec4_txt2 {
-padding-bottom: 21px !important;
-}
-.event_btm tr td {
-padding-top: 1px !important;
-}
-.section2_txt1 {
-padding-bottom: 1px!important;
-}
-.section2_txt2 {
-padding-bottom: 20px!important;
-}
-.logo_holder_container {
-padding-left: 7px !important;
-}
-.flexible {
-width: 100% !important;
-max-width: 600px !important;
-}
-.tweetbox {
-width: 100% !important;
-}
-.section5_heading2 {
-padding-top: 0px !important;
-}
-.mob_gray_line {
-width: 100% !important;
-}
-.twitter_icon_box_main {
-width: 100% !important;
-}
-.mob_line_lrpd {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.mob_para_head,
-.section2_txt1,
-.section2_txt2,
-.sec4_lr_pd,
-.sec6_lr_pd,
-.para_heading1,
-.para_heading2,
-.btn_align {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.padtop {
-padding-top: 0px !important;
-}
-.head_gray_row {
-width: 100% !important;
-}
-.head_gray_pd {
-padding-left: 10px !important;
-}
-.banner_rght {
-width: 100% !important;
-max-width: 269px !important;
-}
-.banner_rght tr td {
-text-align: right !important;
-}
-.banner_rght tr td img {
-width: 100% !important;
-}
-.sec3_gray_box {
-width: 100% !important;
-}
-.foot_plr {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.sec4_box1,
-.sec4_box2 {
-width: 100% !important;
-max-width: 100% !important;
-}
-.pt_sec1_mob_bnr {
-padding-top: 0px !important;
-}
-td.sec4_img img {
-width: 100% !important;
-height: auto !important;
-max-width: 414px !important;
-}
-td.section1_img1 img {
-width: 100% !important;
-height: auto !important;
-max-height: 224px !important;
-max-width: 414px !important;
-}
-td.section1_img1 {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.section1_box1,
-.section1_box2 {
-width: 100% !important;
-height: auto !important;
-max-width: 414px !important;
-}
-.social_icons_container_inner {
-text-align: left !important;
-display: block !important;
-margin: 0 !important;
-}
-.social_icons_container_inner td {
-text-align: left !important;
-}
-.section2_top_td,
-.section2_bottom_td {
-padding-top: 0px !important;
-}
-#fourthtab .twitter_icon_box_text2 {
-padding-top: 14px !important;
-}
-#fourthtab .twitter_box1_text2 {
-padding-bottom: 8px !important;
-}
-#fourthtab .sec3_tab2body {
-padding-top: 4px !important;
-}
-.section1_img1 img {
-width: 100% !important;
-}
-.section1_img2 {
-background-repeat: no-repeat !important;
-height: auto !important;
-}
-.section1_img2 img {
-width: 100% !important;
-}
-.section4_img1,
-.section4_img2,
-.section4_img3,
-.section4_img4 {
-width: 100% !important;
-height: auto !important;
-}
-.split_box_mob {
-display: block !important;
-width: 100% !important;
-}
-.split_box_mob td {}
-.split_box_mob .left-spacing-mob {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.section1box {
-width: 100% !important;
-max-width: 412px !important;
-}
-.left-spacing-mob {
-padding-left: 32px !important;
-}
-#firsttab.bigger_wrapper_body {
-padding-right: 0px !important;
-padding-left: 0px !important;
-}
-.section5_link {
-display: block !important;
-padding-bottom: 10px !important;
-}
-}
-@media screen and (max-width: 414px) {
-#banner4 {
-background: none !important;
-height: 0px !important;
-}
-.show_in_mobile {
-display: block !important;
-}
-.social_icons_container_inner {
-text-align: left !important;
-display: block !important;
-margin: 0 !important;
-}
-.social_icons_container_inner td {
-text-align: left !important;
-}
-.section2_top_td,
-.section2_bottom_td {
-padding-top: 0px !important;
-}
-#fourthtab .twitter_icon_box_text2 {
-padding-top: 14px !important;
-}
-#fourthtab .twitter_box1_text2 {
-padding-bottom: 8px !important;
-}
-#fourthtab .sec3_tab2body {
-padding-top: 4px !important;
-}
-.section1_img1 img {
-width: 100% !important;
-}
-.section1_img2 {
-background-repeat: no-repeat !important;
-height: auto !important;
-}
-.section1_img2 img {
-width: 100% !important;
-}
-.section4_img1,
-.section4_img2,
-.section4_img3,
-.section4_img4 {
-width: 100% !important;
-height: auto !important;
-}
-.split_box_mob {
-display: block !important;
-width: 100% !important;
-}
-.split_box_mob td {}
-.split_box_mob .left-spacing-mob {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.section1box {
-width: 100% !important;
-max-width: 412px;
-}
-.left-spacing-mob {
-padding-left: 32px !important;
-}
-#firsttab.bigger_wrapper_body {
-padding-right: 0px !important;
-padding-left: 0px !important;
-}
-.section5_link {
-display: block !important;
-padding-bottom: 10px;
-}
-.btn_align {
-padding-bottom: 30px !important;
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.section1_heading2 {
-padding-bottom: 3px !important;
-padding-top: 16px !important;
-}
-.section5_box1,
-.section5_box2 {
-width: 100% !important;
-}
-.section5_txt1,
-.section5_txt2 {
-padding-left: 0px !important;
-padding-right: 0px !important;
-}
-.section5_txt1 {
-padding-bottom: 20px !important;
-}
-.padtop {
-padding-top: 0px !important;
-}
-.section5_heading2new {
-padding-top: 0px !important;
-}
-.mainbannertd {
-padding-left: 25px !important;
-}
-.outer {
-width: 100% !important;
-}
-.left_space {
-padding-left: 14px !important;
-}
-.sec3_mob_lr {
-padding-right: 25px !important;
-padding-left: 25px !important;
-}
-.pb_sec4_txt1 {
-padding-bottom: 8px !important;
-}
-.event_btm tr td {
-padding-top: 1px !important;
-}
-.section2_txt1 {
-padding-bottom: 1px !important;
-}
-.section2_txt2 {
-padding-bottom: 20px !important;
-}
-.logo_holder_container {
-padding-left: 7px !important;
-}
-.sec1_tp tr td {
-padding-top: 10px !important;
-}
-.ban_top {
-padding-top: 20px !important;
-}
-.flexible {
-width: 100% !important;
-max-width: 600px !important;
-}
-.tweetbox {
-width: 100% !important;
-}
-.imginnertd {
-width: 169px !important;
-}
-.section5_heading2 {
-padding-top: 16px !important;
-}
-.mob_gray_line {
-width: 100% !important;
-}
-.twitter_icon_box_main {
-width: 100% !important;
-}
-.mob_line_lrpd {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.mob_para_head,
-.section2_txt1,
-.section2_txt2,
-.sec4_lr_pd,
-.sec6_lr_pd,
-.para_heading2,
-.btn_align,
-.bdy_cnt {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.para_heading2 {
-font-size: 18px !important;
-line-height: 32px !important;
-}
-.head_gray_row {
-width: 100% !important;
-}
-.head_gray_pd {
-padding-left: 10px !important;
-}
-.banner_rght {
-width: 100% !important;
-max-width: 269px !important;
-}
-.banner_rght tr td {
-text-align: right !important;
-}
-.banner_rght tr td img {
-width: 100% !important;
-}
-.sec3_gray_box {
-width: 100% !important;
-}
-.banner_img {
-padding-left: 25px !important;
-}
-.foot_plr {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.sec4_box1,
-.sec4_box2 {
-width: 100% !important;
-max-width: 100% !important;
-}
-.pt_sec1_mob_bnr {
-padding-top: 0px !important;
-}
-td.sec4_img img {
-width: 100% !important;
-height: auto !important;
-max-width: 414px !important;
-}
-td.section1_img1 img {
-width: 100% !important;
-height: auto !important;
-max-height: 224px !important;
-max-width: 414px !important;
-}
-td.section1_img1 {
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.section1_box1,
-.section1_box2 {
-width: 100% !important;
-height: auto !important;
-max-width: 414px !important;
-}
-.para_heading1 {
-font-size: 24px !important;
-font-weight: bold !important;
-line-height: 32px !important;
-padding-left: 25px !important;
-padding-right: 25px !important;
-}
-.sec4_img {
-width: 246px !important;
-height: auto !important;
-padding-top: 23px !important;
-text-align: center !important;
-}
-.overhead_img{
-line-height: 5px !important;
-}
-.split_box_dis_none{
-display:none !important;
-}
-}
-@media screen and (min-width: 320px) and (max-width: 320px) {
-.section4_module5_td1 {
-width: 100px !important;
-background-size: 100% 100% !important;
-}
-}
-@media screen and (min-width: 812px) and (max-width: 812px),
-screen and (min-width: 736px) and (max-width: 736px),
-screen and (min-width: 667px) and (max-width: 667px),
-screen and (min-width: 568px) and (max-width: 568px),
-screen and (min-width: 414px) and (max-width: 414px),
-screen and (min-width: 375px) and (max-width: 375px),
-screen and (min-width: 320px) and (max-width: 320px) {
-.body {
-min-width: 100vw !important;
-}
-}
-
-
-@media screen yahoo {
-.show_in_mobile {
-display:none !important;
-font-size:0px !important;
-line-height:0 !important;
-height:0px !important;
-max-height:0px !important;
-overflow:hidden !important;
-}
-}
-
-
-
-<div>
-<div>Plus more news from Next ’19 – and over 100 announcements.</div>
-
-<table>
-<tr><td>You can also view this email in your <a href="https://www.google.com/appserve/mkt/vib/AFnwnKWqMHV_ucRrRpZIDR8ircCFXIMhwK61hkbD_cdHDF3t4XqL9H3Ke0HzDjmg2eVwE6BVjU99bMlDfYEfH2A5QSwmHMl2WqEi49yq6MYmjdDZfi0ANNVLh5Xpf0aXbsc0beXMeNCPrsr7J5cI-Go7oohIlevKkajqbpNQ24hmQKQcrKXA289sn5vv6jgZuNamZMAgLfL4h8YwMhn21uqUOm2pH7yroLD0WmsIvQ">browser</a>.</td></tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-
-<div>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<img src="https://services.google.com/fh/files/emails/logo-new-gcp.png" width="202" alt="Google Cloud" height="auto">
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
+<div><br />
 </div>
 
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-
-
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td><span>NEWSLETTER</span> | <span>APRIL 2019</span></td>
-</tr>
-</table>
-<table>
-<tr>
-<td><img src="https://services.google.com/fh/files/emails/cloud_paper_icon.png" width="40"></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-
-</tr>
-<tr>
-<td>
-Introducing Anthos: The open platform for a multi-cloud world.
-</td>
-</tr>
-<tr>
-<td>
-Deploy, run, and manage your apps on-prem or in the cloud of your choice – even AWS or Azure.
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<a href="https://www.google.com/appserve/mkt/p/AFnwnKUJBy9EA1Qn85bZ9fXn-Uu3Y71NWTGoG0_50pRNTldDTqvSZGIJHvgofNKon9jK8zLe5QNzWaAl_0o1wv1--jatvrUqm4PhJKs3On5_bEAv--0r7zuShbOXnc4c8Qw55p4S-DyN4vnidSzPnK2rNQlRBT_GdZ7Ecasr7HHQVr2maaq1KG0PJ5H_Trrya-4qs7cvoBydqcnHAcH_67_yyABPfrnmfxRwSX8G0qopFOySClD7jfi-LJ8cN6b7eRqkNzKRUD8fKM_sD3Icm0LHde1DH-jKuFXA1b15x2c7KeG1FQLqFyvIjuWrJG6TD1nrFaAfjYOQSId2-49f42eujAoAo2_wqafUuKRvHdRSnq-l-KncpriQFoPUNdz1ZicZ0RaaehSi-N-ptqdbP3K8fDoc2ap8RhjIZ38Y6uPIdlmf0q_NEEZ-PgmzcewvGGjf-kbAw1GSfhZc-REsnzSZJqtdc27swtabQ4doyk2m9HDoa_tpoXc7xAvcg2uS7_APn3Gb2wnCjlenueFssvq7Gf9rvrLP3KZcQKjH3EKAOyxi5A2SN6PAKS1eimEUmNosVuaRPw"><span>Start now</span></a>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-
-
-<td>
-<table>
-<tr>
-<td>
-<img width="100%" src="http://services.google.com/fh/files/emails/cloud-nl-apr-01-hero-2x.gif" alt="Start now">
-</td>
-</tr>
-</table>
-</td>
-
-</tr>
-</table>
-<table>
-<tr>
-<td>
-<table>
-<tr><td></td></tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-<tr>
-<td>
-<table>
-
-<tr>
-<td><img alt="See them all" src="http://services.google.com/fh/files/emails/section1_img1.png" width="250"></td>
-</tr>
-
-</table>
-</td>
-<td>
-<table>
-
-<tr>
-<td>Over 100 announcements from Next ’19 – from hybrid cloud to Next ’20.</td>
-</tr>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKXhe4-w3xZzAi0jZ5tUtiXT6L66itrbrl7kYtFTuC5vOvjKWQgv9yCnyBFdfKWY3H8q5SfMbR8iVNquB4tWHxNW7710l6EZ2HyayPsqGHyna2CENxZ6RV3f5RvNPWeQvlFJrKDakBebtsfy6RO1hog53bNpGlSgKcbnClJV6zxCbfFw9FNyALQKvscyrtar7UMRXmrsZTE_gwaRhtBUeBYG9_Nb5mrC8rEzi8Q12U-sKOGOHyamlp4d6ruGX3rKFeQseaZvNt2dZgPql5uSmkymCkQLx1oHO3EafRahFNXjMVROQfEvMrFH-bhwyDKF7mnXs6O0jZtRXSIBgvjt9DHdTgpJyy6SAkFfPl_alB49kba_UxxPaaQC9VdxGmLNOjufeVh-gt_O2Eu5BEtsLAp-sT2FsupMOY255aSFK70-OMAhCurvEzlbMzNMLXgZwTYk992dnsrThvQGpDbY26q5hJk1YsM5IMLE88hN8zuJC1f6--0K9tcuYhq6CnIVR9Mmrb7-9JXCy3mLt_NXjbp9pNXAjJGo2de_Zg">See them all   
-
-<img alt="arrow" src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" width="16">
-</a></td>
-</tr>
-
-</table>
-</td>
-</tr>
-
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-<tr>
-<td>
-<table>
-
-<tr>
-<td><img alt="Read how" src="http://services.google.com/fh/files/emails/section1_img2.png" width="250"></td>
-</tr>
-
-</table>
-</td>
-<td>
-<table>
-
-<tr>
-<td>The future is open: Making cloud-native open source more accessible on GCP.</td>
-</tr>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVyaBvLy3gmRjiRqf13jaq_5M27yyjC6gOgMmVW-qGmmZ_Ta2FbhkejcGDZ1Utj8iwXx30tQrZPYUF05-rO9mfZyYfUfi1ac9F1oQqpcg6jvjN67-14w25vCkl4_cqdAFLM2gg05slrUg9NgAMugI4V__GcLllNOWi8vY7eXQFfHAo7RkSrSRUs-aLuZTi-PT6OT30zWBRe7FCCccyUrkqtvwE8b7RDjsIIL6XhMS1BhNzMZIWsTWgSp493Dv0vatq7M7Xx0RJIyJn7qP1AdVIlybDZy-sPETpXb5R_c7nU-Lnmd1Yz5cVjX6JLAyqCF62yhCp4ASH4TIhOR7y9VP8Y9cbs8gr7yuLynGW1-cLDoLm3Tx7vWarSSVgCofVl1sdeJFVGOpTdcoyurJsrSJFPDWMv2cN_oWGbJYtR_ivHcoIiVCqriadUZmoWPAV7__Eq1Lw1kofVdSuM8NaUN3LilFbzLocHunpX5ABPVHe-qOOEMxVfZAEWaFQQwcbC2aU8CoRlzGNupmA0yNxUiTwsPJ22AM5pdQEK1tp0x6sFbqf2bj8">Read how   
-
-<img alt="arrow" src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" width="16">
-</a></td>
-</tr>
-
-</table>
-</td>
-</tr>
-
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-<tr>
-<td>
-<table>
-
-<tr>
-<td><img alt="Learn more" src="http://services.google.com/fh/files/emails/sec1_img3.png" width="250"></td>
-</tr>
-
-</table>
-</td>
-<td>
-<table>
-
-<tr>
-<td>New security tools for Google Cloud enhance visibility, control, and automation.</td>
-</tr>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWg9i7bPmpZ3T45-e7aviXd3FVqh-sZCqniUne_KdXVamOGWj5SQUGlc1015yOJD1Fv5LyYln38PYiPr_HPCewOyNwXL5HEewL2rf-McC1sg6IrY2YW01qlsuMRao03-NqAuSGQBOlvd__d2Oj7AYDYFTYJ0l1gcJuqb5NxQZDPvLvDr-7rl-wDCHCTFFjtECfZ-H5VwY8ozRqAaW1ruF5Fbw3jR7w9r0PhZ7wUzCtIA0PJZdWjyAXqwmYjDKth9t7eBe_LwGgT25ho2MiRBqSnhGcT5eR09f8jUFCC-q0Gwj9cpa5xYrtmKL9nv0G5lFIyX5KwFH7ZpWwn-j1rO7glWVmWL_Cd55mS_SdVCQbwiXIZgjYdc0FDdfDPH82hDPz-JHlMuPYFR58n-58orMpNJMNB8_oQr23nILCUJDL3GW7sO61b7GIiQitetdsDv104UeIty5WL0MvJOHr8BXkhJzaZL_SNk9alSlqP0IMD_53FBHhbpiz-tzW43NDxEYurcXeQZErdB1WgocSGeUPpwzCPQ6_qojD0Hpc41z3T5fg30HPLgd9ZVqAeN7e0BlAUys_K-lux8kRhknga-Mla">Learn more   
-
-<img alt="arrow" src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" width="16">
-</a></td>
-</tr>
-
-</table>
-</td>
-</tr>
-
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td></td></tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td>
-PLATFORM NEWS
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWRcqkhzlgNpkfJzoTym1_8GG7YWQKJ17lqNgNATOD6cWxEiib7oNLPZ3ccotGIuV5in0JbSocVjIA5PFu1zbu29OXdhGI6WSyeD-_8ig-Vp4h8FxyGRMcECCjBORxmzFE_9HY6S-v7RULqjpG0EiA_3ia1gTDQfGFOt_IoJDp3ykNmYsd8wrgrJRTJajbv2CoCDAHg7J6V-_eB9s7KAtdyv0bxvQD1qX31lAHAeqmapZ58R4Ts7pcBh7GhqGeKrb8ZVBPqMyjSjFmIFRCwTZFFLIB4n3IXRO9KX838oGmHn80Ar19OGQy4WLIttPBTvFJLR13a0FLiafJRqDyDfeZdjiKSON_o4fLkaMtkL-u5SELh7kFMmsY1YMbdh2EDwfIv9YyspHUeKMyrhHVCe14iW1msCgmz61F72UzTV9HA9yfUllbeW3sY0uRZzw99FiDFTerVYUMtgoZBRx-1MX3frW2ttopsNAcRoOgr-c__eW3Hvaja7mUF2Qs3DpoZmjFXS-Dgo2sn9kNqxw3GNKb9wPVupUpS8oYtWH8jJCwcRXKsXoaLiKfx_kx-Zw9AtT2a63b6lQh4YRms9uZtFU_3RlgOWXSAOR3e5pqi390j_Vx8MuFuHgdIr0Y">New cloud networking tools connect, scale, and secure multi-cloud environments.</a></td>
-</tr>
-<tr>
-<td>
-Boost speed, security, and privacy. <a href="https://www.google.com/appserve/mkt/p/AFnwnKWlgL5kh8ZPAYNPR76jerbwdhaigQ1T791ZM-XvnhtEAWyJQdl6K6Qa2e-VzO7iuQHjPqtt1zOZejBIHiIZ0W4uRud-l_ALInjekAD1FzVnsTv-u_aNkkaFftMuQsUBTSXvZKMPZz260NXNeGm9QqqDP98UVsYFVmUBuvQhbh9aL_hIkyqg9DTq6KW5JN67s0JtrR7aPqsg2Mt9_xEbjJoo1So0ZLnNX6mHsR9hBO_OUC4wzDbbrPTzivFHigj0xT6v9Wul-koeZ0cg8U9zD9ODWAWzhQF-q1gKCTP8PhcPYyUTE_8kYr0Y_ZPXQF4QB8uYsVh-D5Mx6fBdYhfNqWB5Yx67fSnvE1gJwk9FXJ92fK7sZDyB1GUF90Q">
-Traffic Director</a> for open service mesh, <a href="https://www.google.com/appserve/mkt/p/AFnwnKWvBN1snkB1odNR0TLtIDZp-3wPaBy467MmdCWn1I3wX_2SD3oTMSMvpuzYDT9Xy2xceYHkvZ2k3VgdRhqkEK4spVLv6Sd3a8hnWcqaU1T6PPpPiV-4KNSQ-sC31wcwnHFEvRpnWcpQNVxh4J9vpkCjxy1-L2SnV5YE51ulT9aF1E85ZjYv1CJPJJ6iyHpCF8e0J0101LQIjJ7S-lxxSYuwk5YWsN6kDZbdP02tkZtC_dLJ39-3-3PbA7L40mYMxu5dd5SEsG_Ue6ux5PBYKj2v8bl8aoJgcTKOHyMOBnnNOgtY7Hc_ykEr7NonS1nY_eNNRilcyD33ywnK1EbxmBZlznPdJDHyoygMOqpVOsk8jdSaeyWdRMYegpWsVmkzL5_BQjPUDwLG7-Rd5Z1hdERn39-OtKEYpJLGSJqZNGM-OERi1AVLAw">
-high availability VPN</a>, and <a href="https://www.google.com/appserve/mkt/p/AFnwnKUKMbH2vkVd8mTIG_uJ3qUoaNWLIm4p-86UAEnwEUqQmE5lXcmCC6PYMUIsc7hNo_wJTEUn2FrnbHasaKAd7vBawtCf_bdO_dfJnbFlUUsFbLf7KGOL-jK7zJps0HPNKbheSycTRtra98XJ0T7k7g8XM-geh4gCLvq9ARLj0Wso3lAuWzPixAwRQjndaD7MW46Y59QZcfBX_iDDfP6OEVuwz8UfR6zWVavqZ1nuPS1StGP2RjStzRXEVQUHHVRUO_8z6ao0038yRi_aT0ikdy8IKYt02lAhkMA-dD4EPBjXcaNkzLAMRNqRE0vrFws0LYuEcZi2VIQralkeLyrXtZCLTpiVz9XQA99GLGUYlqXFNpP0xcT02cHqg3mKrrtv4wY2s6R-FkDjnOmgEVRPFUjxFObxu3jQWxMBViPvqiRn-PUc">
-Cloud Interconnect 100 G – Dedicated</a> will be available in all GCP regions, including <a href="https://www.google.com/appserve/mkt/p/AFnwnKX4B-JAlDV8lhMtbSQM_4EU3VoS1wVmfpHrwAIJGViIdFd9gHskZXkSvxfZu26irUw5aS_W6JBm6wCXLRa-TJJzBooY7t77l5aVzFaqeNnVA9Qc3ORkgQgzuX1DIf4R24VedKJM-89eHhLObjqozAhxPNrxEkIJskw32ySU4-xcjkhkvwQOIEJDhJ05IoZeJNwn-ESU9OvhpCbU3NDl09F4MphdZhwpTMxd9KNl3y8iBHId4QsjyNionMDDD-1SwULSjbCmmewKoTjbfn1cxgPp_SmURDaY7miwM9GLHAaO_0ICfqgtQbtW7cM9t5JJ65wEvPQA-guo6P9OpKR1x4ejl7iWIavUWaExb9Y4UBVSu-Sv9F-6S7E0Unk61Yksd6Ack4sHf7TEdQ1F-SVnLmmim0qC5nIt3cmQGhLz8LBiqUbp1NuRcTcf71Cynz3fysTEcxxOvecUTHzvOvVth7s9w2Nba4F5JOtt3NenL0-pi5VxGDcXeYIy-iZITFG1ZZX6VkbW2OYFJ6P9yFJuFl9tdfvEaVT7mOnzrYqia5-AtoTtdsfqcycsjWUuvfgC">
-new regions</a> slated for Salt Lake City and Seoul in 2020.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVsUIw8__rqsikbwnjp02ayu0FAPvPopP74b4fF9SnjsuXyZ1cVIOGgbHwHLsw8cEnjkNzF6AwgnY6BBrXV9pblp4GXZGJbjNQtogaaa-lAe5-BlNzfMjl5d2HOZ175voaFYL2Iip_c2LhJg6K_4UmxNiSxMkicJHO55Sx6M7sclgx5lN7OAudp20Vv-eoK_exTw_prIUWb_5DaO3Rswcyecek3kr239jAN8X-SpXzJ2fghR8luQCUQYaa54BLcmZsdKVXHrPd6W5-j4mtp_Z3rMc34AWfD8BHfjJZtq4AF8Okcr6UyVR9LvjWdYeASdwPhZuQLo8ExIXfYCXt1XsXrd5UWEuX-3MxU8rHJNiiUNuSyiNeAtVBvTrWt6bZ9J1z7ozxKafoVMPADeLwvpE343Ga3IbpArvvQ29iZ9Oqmd6oOSzV8p8F98jaVag4mQ98ofXAauZ6T9YwpJ2OLIvj4cs_57bKSc_8rXeccF62jjC0oe83sNazX-cBZ3Vdnk-Snfp5yWxt4xYMo32f8MlrwvahyE3NPvPlr0c4AQ051A_X1bu-0ARw005t9PA1OhgzoMVTZpb0Suw">Last chance: Take the 2019 Accelerate State of DevOps survey.</a></td>
-</tr>
-<tr>
-<td>
-Add your voice to the largest and longest study of the DevOps industry. <a href="https://www.google.com/appserve/mkt/p/AFnwnKW-hIoAu-jk2QgEl-TE8Qf8TlXkWERYNlFKAN1WG01YC7EUP2SZC23sIygTMGTMBzukzgxNNoIWNCI0YF2bLsywEr_UXSQ7zDj5WG7IGbJ4z2M4x4WtUOcvZubX_ncJ8Xwdv5ORqOUorfEwlhvc8EtIhDRqL5pAl4yJAW00FLMOOLfg2rN-z230w1MAZp0vQ1ovnifUchzqhXKikSy6iXI7j66pCqt56nE7AD_uFKutCevPOB0BL4mf5NaNwI-qKA7c1A3rYvs5_KY6ZOmgRkQWGLsEwOgRrw08AKMTRcd0UPR942kgB6DU-_L7t8dD6jSfFOenKTuH2uamBNoTbcSoBmvWr81kH2ZIuv3-ZEsxgTtoKCT57wn6QStDunFY7h_PO0bPvC3uOOz9RTUO1uP90sajLhV6vTOpm-0kg8jQ1OvzFIc">
-Take the survey</a> and join the more than 30,000 technical professionals worldwide, across all industries, who have participated to help shape the future of DevOps.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKULmwfylzi3DICaOm26Aj4Ag1ivU9Ij7DcsW1aySZCBmXIkvSOHLlnV5GfwFtm_KCrD4H9QzpcNgE1TZDhqao0u9x7tJ3mBdiHnKGyw3CPcfcnA2n4YZPZiO7xw0pJf4HQT-GZqlZx2bC0-qjjAPBTSlFo_3nx4UivSbSye89X-xl4pjSfRyco9StXFjpw76_hlXcpK75xxUOwhnEOousX5u9A6ANIIBDlafklwJvny8Y7Hhf_xIVfllYEIEtPJUCtZKb_pYyLPGS7_e72ab2sisQVKdNwBttAtLlQRyyBxG9NZEBdeQsZ1bOZ44NJesh5RFkFtRFSJJbGe1txsayP64Uxp5PtWHJjxZokjxGmnmcV1HFX4O4DIpLLuutoa_3l5QTzIHUxqn8xBJBKPyDrFaRhDZFI5JNHAHEX_epsNI41tBbsc6AasKohcT_J4u6T4BvyBnQhkySRhm4y6geubD2Kd7jfxylzaqV851T7jFmdlfMrUdYDGO8WzhOCttXyJatPsxSDKBhFqTxbII6vpc9Jz0Ck98lqklQAbeobfm-n8fkU0seDEuOQicWcHhj9NVqexWmPFGU7jYY8">Announcing Cloud Code: Accelerating cloud-native application development.</a></td>
-</tr>
-<tr>
-<td>
-Develop faster – without sacrificing reliability or security. <a href="http://www.google.com/appserve/mkt/p/AFnwnKXjfXDO1KRO_I-uQmt0yerKr6zfw9efHvvN5Ry8rTwJleFDxUtf1O1fsRduC15O7WrFNrK-gd-TnUBp59xQaRLeVCPrhEYJczKBb_KYcSsW5fGfPfrstEq8BtmIdkYdxeo32BgK03XeB1E95O8lqEwDMeEE8dg9mtnxSxljCskq9wiM5RXT85Z0viygUKkXwv4FBe06g4mjHOLeEp_jBHaKtb8pl2AE4UVdz_SCimjrK2TVWBRuKx4dIXreaoRBXwl3M6uf_6MOhyhUlfGvUkqwU5i2SO3moGymBQ4cdmr6O2RNmG-MO--XAEbfwn-BjTmpIB0zcCFFp9BRDs8nfeOy">
-Cloud Code</a> is a new set of plugins for IntelliJ and Visual Studio Code that help you automate every phase of the software development lifecycle using tools you already have.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWIceSsV3cI2jieok0f09ux5i22U4jJ7Ylr8g76tIWGoIwOi2YZpqeRkEf4frW-ZO4KbhWxXxSp8Z9ZOdXfVAHuPEeRnH5qCEnbQX8dCNJWYeZ9BoXrVzYiucS1a19I0e5oNSYu21vr6z01boaKyr0w6otNSQrbFRvQLHzZUSSaiw1jr0aoVzk4DfZWA21MPOsHXGwlG24QPUbDVEjFkT3jJIq7UJpT515gtJpGQKBPKIdGZ7We62mW7qZr1WgMj_nrgEQclEHAAtwUS8PXqQ4UysZZHsFJSok8xq1iClbJIMiVzIQ9R6TeihQuk3GGOvvoFs2xETE27okWRe8iqG99DODgSbx14AI0Eq0JYatODBxzoJlS59mezMivtnEbYDawjC32nLHeJJXjtIbZ0T0ML91HyQsWkbmcWoi8mQXX76obiwIDoxaLpyM_y1T6S-l7GiotyRhIbcoQUv1NYb9V8F62Z4TB36KJYux3derviO534ur9liNlJWVJ7TYH0JwxJswiHpal2uPO1GNFsRTe-vspy4Vw3KdpBWjYobB_c7qyEG9PWocPG8HNi_UbfQ9DMJPphykvIFam">Cloud Run: The newest member of our serverless compute stack.</a></td>
-</tr>
-<tr>
-<td>
-Build full-stack, end-to-end serverless apps with Cloud Run. Add scale and performance – without managing infrastructure – across databases, storage, messaging, data analytics, machine learning, smart assistants, and more.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKU__NxFK4cV8VyxmLUj2CyFmzbrDJ2ICicTs0Qkzs6z0tL06ASw6bzND0GLVh3VUeFrcgw9ogpz_n4hmac_2hAoe9i4yzPNzQW_D0hlMoQgoOlWTpfWRZLsDOUhlY4-PEHRmgBF8a1blxtwRSJPmS1fHcqJNwjBcCnAahN2Z99CyApOsKd_HGwOBP9LL80BI6RE8QP29ls7NeT3Q-yohsNilLxTSgnoQIc-NlXNTyVzUY7SoVwznd1lfMK9Bh4HCwBhKOmOfgmiqNG9GcHA6kBgjJyriRBKbf2e2DqocC2IxZ26Fwq7mNBLFfhs_xptRp5rRt34HN6UWoopBV7ZNBD-mNKiug_8lm1ZBPwny0oFw6kl_SHVyX1Hx2xlEXm4y_Sd-oWbe_D3v4P3lx_jrdAz7uXR0SJfG4br_Lp1WtxO35-YcaWcZ71Fd-hClCVDjRj-LehEpActec-3eoBflEqMnFWpkHR6LsnsFx7DfC-BY_uk2HJT7xVLfs1SKHnmsQb5DUAjfNQFGcrsv6bMbMrkS48-sS_Oj6sq26jUpls18vW2tfKCzgauC8xxPpFqmA1TzN0WIoGec_F1-Kxe67J40CHPcxLJht0167r7jgzOkKYSoP-2Lu1JJSqj2KK2e8gc5A">The largest update to Google Cloud AI ever.</a></td>
-</tr>
-<tr>
-<td>
-Get the full story on all the new ways to build and deploy AI across Google Cloud. Explore <a href="https://www.google.com/appserve/mkt/p/AFnwnKUeCf3ydp_krprFEg1x7HUXiz7QzbphgTFaaiHMW2Gzjh4sHl-2eMeBM1oFbLTupe0Lo-JneYLRP7uoY10LIn6XyDIy1qwQhAH5gZcjYugwVRkoY5FEw1ahbQZkM-u6g7MSueVhMnNohClGGQ2ItYHJLm_qZ-fvw64byusE_KmyJ-I0m6GPdqT9csNNeBzQrnn_5EVe8wnqdnPjd-p1HSRfOcjTcO22nde3n0Oi7iuTSMpY_zF9FxpBfBunWQ7jnXY-2FQdVtqNyMBdzne_NSPTu7D8iKNzpUlbZYZpEkmPgl7d9aJAwD6B1zytm5Zinwq8C4wo9f4ojotf--4r4tES1hV-UporkAK6yBGIfMSWfA">
-AI Platform</a>, integrated services to build and run AI in the cloud or on-premises, and a broad range of <a href="https://www.google.com/appserve/mkt/p/AFnwnKV8EU_jNS1aWLTWhIFdhhKelntok7JyldsRg82mBdQJoNnlo7uAY8ZJScl8ywVNb4L4vATe5Ck0GtmwOrZTaVk3C-CkmnCmGYX3r9gf_RMk_YhZIvB7_9b1gcFRrtKjnAojwIg1v-woUf2CTUTjfzp_EGh_HT9XN-WY7SV60YLiHPCh2MeSzcGx54sNjIV5LxqZZVho427igT0hi4kBUE1xzFeT_pzEHR46kSd1RwxWGAVNB4MjEu3DdQJQ6oQGsAnFnazFzkq-_14xhv04QCj9Fu-KBWHEnqLAHy4tZPXILzy8cur4SDxSWNQUMiZJsyMjPTOT9yqbZ9IzBbju5gV6OaGtEzWCSDE-WU1Unl9XCz_UZ515PBhHXrqTL-Pm1CdDRQ8ybOufAk8_tmFfX2v5yHhlzkN3O6MFV-9ULmSpazoa5ehbKiV2MMArfUC8upWko00uP0yHvQU7yhVA5IYB_WX-2KjkO_l8AD0dUgC3x6GqU9rBJ0dGJES4cSaBZRG04-UleCt2PFDCFkuFoAb3hNpvhE8haYPFnE5vQWBRvRaLcWUzjq2wADfu6MZpPUafwxUsHhMpwRcbawSkOls5e0BROYy8TmZYtAHf">
-AI capabilities for business and enterprise</a>.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKXTKMucN0kcdWD9QdsKObBapd_81-byydR354jWx1XG3vBuuQOuXNgt1wCmvAa3qOvqA_vZfhsC-YHe4Ak6Aj9h0LnVO7znMu3VzZ1YPG7bPRnYSVzinVKqm_TjxzfFO3Gk61J5GDLtkrci728tKWEXPuloFw0e6M47nbbeFZ4gUL9JJr1YP-UTxVgcyWSiPjLrAPIst_lZLinzrHzyGr2W-o8aBvxbkI3HzyNtkiG8vpEoQu3jVR_rBKa5YooB8G2DL-6fOTLuJnur7kk3zIwzV_6jwDcPtO4IezhODd0if7P0D0vM_W5gwik32ITLpzljtol_I9uLVelMn0mhHQYmM5xKSIVh9hS7ZqJyBuBKvJn0c4VgXyVUd0-9_teYGA7bzmg2qWbJlpSP5oQQ3TfmSrTpw9gRc6yyBpbxg4odqiFd8eVcMw714XP9d3eJnhXZj1B99qOxwrc7pu7U8gOp4OyXnAi9HBi-ETdToXAmI5f5eo-PWhVxZ-XGfD0yeoyDMxr764M-Bs4MVFDGDOdNYeWvyJo2V6yoRjoWGYORt3I4eoNEtBvmr4jyDoNBkBDXuw6Dzttjc2DWqOZJbocB">Supercharge your data from ingestion to insight with smart analytics.</a></td>
-</tr>
-<tr>
-<td>
-Simplify migration, <a href="https://www.google.com/appserve/mkt/p/AFnwnKWR56APZz2oqB79XBtSgdjpfSena80-tzvhh4cujfTUby8LsP6LVFiGDolJ5eFKRfIXP2drs7sFORWXwNd7yhwewgFthqLqx7o0feuAVCqcqZC-aa75hvcGgQPnAAnd7VaYKvCwHL3fmDPmFmJVA9MYuaoIsR1eEqeY--N9uxMXEJR7X96bek5p6T70Fao2PKSQjYCBp0o04M-qiKy-sZvrafo6tMiUt2enCOdE4KKiQEKdrbrgdgYzraEVgjKdZuS_jQb2hIunsSjhXOFQlB_jF4jddrDGszFpyNIX">
-accelerate time to insight</a>, turn data into predictions, and enhance discovery with new tools like <a href="https://www.google.com/appserve/mkt/p/AFnwnKWO3Wx1LksiIIzBiHrmiqKLNf0RvK_HoZqknN7cHpZrVOlo6sKYv_Eb2S8IBo1roKTB56MRSNZl1u0fPWk0a_y6enijeX5EquhySTMnixrxeGj0ZODIKr7l9wxtwpL7JA-RQsN8767oaI_6-HsSkPyjT4zf0ivXceZhNoZCLu557Qfu0leG6p_Rw8mE1CPfj1pprO46sFHYWMN_ICo7CRB4iceOn_YBLW5YbLSBChnxyA-47HN72xgEEvVdqchDfzDLt0k1elFXMvkjkQHlLAR3ca-7lC-nVgkh3wh8VfUyjFcwocY7_EOdKpa9F_KSbkiYhRG4HQLbEmf501C8q4wmJ8bGGALXV_fKGPaRr2h9PA">
-Cloud Data Fusion</a>. When you’re ready, we can <a href="https://www.google.com/appserve/mkt/p/AFnwnKWzwCHJS4TAi5a4AEnKPNfx8GzjXuyvVZO5hRO-5qrC8NykTvNFSE5Tun7dIzdgeII1zoSLI1oAd3zCuxfJQr42LtwmamN2FgVehHyfxDWi9maQ5KUOSIKLBg1cam-nCRpC1jDAb-ypPFvHdcPSkmNFXDS4YazorHZgT_Uk5Z35g02FENAm113QDmNw4LUXwpY3T0A1tDwbyjlofKusl_FLGeMvqnHQVXxqFFsi96EmhVdqvGTGcaV9ULmHBYlXo6-CnkxGzoOZ-MFTzx0Uxp-MbTpwW8zU59YseI2T1S7EAXnSPQuUuyk9nsiHrzaabzlpUKspoiMsiRScidmu3E5JUhwSQeZHpf-lbwrCUyX8eHGHO5zB8ILeGfGsajY5nETt-3u4-7HYWz3zGi53Dp35ew2ec9cny_rcL0gMs5Xd3953hh9ybkQwFwrZtX5HqZSzCKd9NkD-QhW4h34iVikE4gNRuPFXLr6Gs1cmcyIDsiowCBLB1ohB5XiqU-2WH7PpO9Sv_PsPA_l2RmkOfnV_qwqzoPQ3rDBUiSmTess-DnHYO394VVWVisPBbSTOJZpS03eUaPrWi1wDncslOqNJpWGxJn7ubE3Li5nsMlwxsNB4U-vlrlef9c6NRnY3IryLj8qb461s_cXqRclaFgNo5Gvj3dqaQ-6XmE5xXpU4TkolVn79-zcN4YMU89Oo">
-help you make the move</a> with migration planning, training, design guidance, and support.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td></td></tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td>
-RESOURCES
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVTxKRBDH0SviiMZwiCl2KzPG1rdblkE01iGJtkOVkpdlBNW0erO0JYNZbweOKujkXD31-B92fzWEMnWvBgbH1rhjs3UVNphJc4ObwAFORtcF9JxX8QZTROyHR3FGX5d83hkA_Q6djyUersrWT2ueVChA9uV6Vi2sO5etQVZej4i69gYQpcReNYf0ruEms7qdVLgpN7E1WBGJZ5qLr0_CITdaJWJVige6HxD1V5RhlRs0bRPD4wOEZkWigM_meqcKbWgZQXb4JhLxe_UT1jehmOw2ARWvsWHEFgGWj4pBdn9RYmKrhgwcc48FS2T4GuRnaXXShL026E46j3GuZnKTXqlC8CiidjHa_R7yOKQfY">The CI/CD developer hub: Your one-stop shop for continuous integration and deployment.</a></td>
-</tr>
-<tr>
-<td>
-Want to watch expert-led CI/CD videos? Try a quickstart? Learn to architect and implement end-to-end pipelines with these resources.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWQgikg_JDSSSVWHfG5rM3By-q8MPnPOyn90pXrJkZM8GZrRmcevAY8InTXyqPwXp7ukfibbHAdk4FR127EU8d1dFX7XFHzMkiHQ_ZFDU8u_wZsvjho7Jv_KYl-Ph3XsZMIhvj_lsEZmu5sZ5WhbJhStrHyxjQ3irB6LYelfgi2n_bEn4j_GZMY7E7MER4v6pCAzLKJ71l-FK-SLURRQCxm1jqIzuOvxOzmNhBP_h12gsrgS5BgJFI_u9ah71NM5-1B1yjfqOcA918qj4fFHYHMd9Fz8GQzSOlx93-WfUey1AJJ9_6vYTisrRu7v4h1sNtoLE45JOi8iefjzWrxrAy2jR0u3Je3jngywMDGuKrTU_Ws0FqxTofBzD6DW9LoyE5pi_GajEGvfnZFYCsSXiFylRudXDayHfe9NLmgf3scr5iJLF8WqnRrt31oks-EPb37iSzfa_nLKqdkrBvphgVMJcpYMNI5qvead9DLf_Jb4LakSOlxgYr2M68dFB5nRUVL-qB8uzZs_tqXiTF2c09WPrie4xwtmnS9nyePYrRQzSZ2CSKXd4oL">News from our partners at Next ’19: Building a better cloud together.</a></td>
-</tr>
-<tr>
-<td>
-Find the right partner to help with your projects for everything from multi-cloud implementation and marketing analytics to IoT and security.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVKFxYNsXcXx10CQqdshIrxdjrX8d9ltX53CwLlC9vXSOujTUqLHqxo0DwyngIizwUysWP6oX1txhHWWAUBFtalh8bn53-fQnkaH6-YAnBlHtky75slgWnmnKrv3dVxfNMw1AxwYspfzZ-ZA5uDWu-4YlhOZ7o7RtJOpHfdtUv6rMUh_wOdgYvMXcCkDmvpYpeWvrUk6kdxI-Bd0SaavOJ9e5_Uo0HDxDXhl8G0NMJrk_w3MYd9F1wl9kFD63W7fJHe7NQgZQl734UurFpdPSpELrUMfmwa-_ldg-l49wOwHG_EpFPn24pnt7llphCbgf8xx7CM-V-naVoBvG71ZbLQSfgWGOyNNskG8qKD84W5EuQ9VOEsosbPOD4kTIGyPojZEgHy4wFcdYOU9ge78lN8eHYFWO5Q2UXQpES7vHqyTbZ0p1IwsWJqRvulQJJE_DV4lBIbDq0Fl4RZX4bxWAsU_HtEqsWqCFmg4ZRR4be9SqEZtX-0I1qx2Ubv7o-YRhAIiBogHpyaE22aYZy8l6LFaUcRzwkyIQYXDwnlqGEuUzodyd8czaSE5ISRR356vD4omyYxaBqHiVmX36jeBSMGMhmBKeb6lhIVKih2hNcskou9C_54fE6VVsjJ18HiMdBQ3OVVq2sa7ZesWAA7LSC5x88prMZN3YNbv9M8-7bcOp2rICs">Simplify reporting with Sheets data connectors for BigQuery: Automated content updates for <span>G Suite.</span></a></td>
-</tr>
-<tr>
-<td>
-Query datasets from BigQuery using standard SQL in a web UI and visualize the results – without leaving your spreadsheet.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWEMB9wHwryVE_FgDGHav34jy2-MlFlngGRSTJoOdI4-mhAOFY2R9VMb7Cf1SPQ-9uK83xKSPVHLUBDA3n7MOkRuZJBSVpe4-NxjQDQuNjHj0o0LibxIuIwT5OtDmpMPX7_0assQ0ju6GIwxllTsbo6KPa0eCRdLh4e5lDaxFbV7zh-WSR0M5qBpTWw0cnYKoop_sl0Q0JRoULVgYB84jaavQ_paz5awLiH8yDwtJDscb9rmiK51dtrzsE1JmhuTarQ0MztbD6vKpVZ60t1hvZkbV2Jg0Adzv9QmWSwAt1v13gHyafXmnrgFpopT69vudIyBgaMjNYQI3UyLBl04-t8vKkUXhGvHk4KjWC0xzUoPoHerSIGZCrHeWDTZPDxjeV0T1H6KkdldI03v86bZQcumqvX7kNbfBke4hQN-0OZ403F">Honor your Next ’19 resolutions: Turn inspiration into execution with 30 days of free Qwiklabs training.</a></td>
-</tr>
-<tr>
-<td>
-Just click “Join,” enter your email, and explore quests that cover topics from cloud infrastructure and ML to <span>G Suite</span> administration and API solutions.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUUyYLFWwatXpNVO7nxB0F4gjB2YrvrkGjvuEX4G-06C0GxLr5RHXskU5FFzLsK531qU4LoLPeg_udPjPIqJJj9d1ggYkORogdOw3aYzRxBaId-Sq-ufn5NzNSWDopjwaDNQ2wAXzaC38dbUGMPu1CkpwZdLclZOZnZai5IBvbyOUjZ6yMMWX5r-Y8NHUYzQwIS7wbTBqTFUOwj3WiM3QMS9XJPBojHSNmYBSE3hBd_zHMf5j1U0iMWlK5hDR3XqUUTdId1dONUOnNgFNXMBkw6_r5zhOWQrEyb1KCKpjQU4Q">5 “Aha!” moments with GCP.</a></td>
-</tr>
-<tr>
-<td>
-Read the real-life migration tales of a Google Cloud start-up architect – and the five things he wishes he’d known when he started using GCP.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVv3lXD75L9Dk0Xyw8kI2grSyNrVZOITRil_IlA3fQGRrl7O5pCfNNvUTOk_uAgRZq7KLtbFINc-Um49jQ8BvwMZwyI8CuqVwlu1n3ixOEL73BAOAlr7xT83FPU29K1q2dI4fRYphYhGpOVUopPK8ibE-wZfFh7D331GGLWrTZi_jQD-k9a-vVrkxZfNqTmAAj0y0MiGLkW9RrgXdrn1l1arjPxXEYkFYoDogcX1-7JJOkATbq-iw">Preventing bias in ML models – with code.</a></td>
-</tr>
-<tr>
-<td>
-Explore what bias means in machine learning – and techniques for preventing it – in this inaugural post from the new blog by Developer Advocate Sarah Robinson.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWFiLkoT6Iy1X89CfhPJzlA8HDpbs-Ihz6zt6mHIA-Lgfg_deqOBSAHoZKOWGl1PqxucCsTki33flm7Zws6imfGdvGLfqeRaAcNsHCqb5B-GPDjEY7QooEcfyK-mlrymt3EFQxJiuvXQkqrsRsZJOUCWOyWM1aO-s4UB397fumwhHX_2qIDopg2GfiMrdFSvIEY7oob2yLl9DW9PJy0pYwZRkNckNLGbq-ykrEHfUgNNYGSVPm6RgNDhsFwZ-1cRVY_VByYWMWdkCPrsklQSZGuowXPVIsNgCx7zgPBGbGGTWfwHbfg9h_QBdC3y20a_XtlcYuVBxgVM-L5amWFj3Fn1KbxnKBJ_gpcAVmQrST0X0RZiX2vP77AeUbVnNbbxL8iWrPJHdensKhOBZ7mntMjU3FyxbsfX1HraaBth_T5ufnIUxMSGkB5KL1StnYqOp6vKQMe4nNTTvIvOH4ZlnUTYAMISGVNDvR_i3K8qxOy2dj4c31KTuzRN59Tfq8CS_2XtjnpIyclPVib6EzJPdDcN88RyEIF47uVM6vTAzFsFtGB-LFtvmU1HWfmmEJHfY4">Introducing a new Coursera course on site reliability engineering.</a></td>
-</tr>
-<tr>
-<td>
-Learn the basics of reliable systems and dive into the details to build your own set of service-level indicators and objectives.
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td></td></tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr><td>CLOUD ONAIR</td>
-</tr>
-<tr><td>Join live <a href="https://www.google.com/appserve/mkt/p/AFnwnKWmyoj61eqws2fcbnvt8cFQPYQPANe_tqh0qQgrA63h-DP0Hq7GF0xzEWswI5c_kGyjXLOk-r3gLMSt8sPKMU2NS6uDPwKneTvhAIvgr62ajtFwzFtTXbk-eDuQQIWKKTmxq-qhSS3NycU5KLUGjuVmYggTz8xAF_Xy99F0bF0v2w9POWf5Mp-dSyeLnMGpuG7_YIsQUm6zkV8MRUSfNfr5go-XEwExijp3V3bWBpaDDT-n1SImDl21m8xRClj-N2gSdqcz3I10LCJrWyDGf6onIx9S5UGvhSERrb1FdpRjQ1TFFcoRdkENnN9xmHDpmqRfC3O38CEVWCICWZuHp6SSSB3QiO_HxCxIKxtkHrWPPkWE6RAUN6bD5nfjd1QJTw78e1j9DGZEqQhsfUclMhBFFAIoMwzv8e_hCy39DEni6s8-IACui7TX5l-hybfwnZDUl5l4Rbx5pM7lEq_LRkd5xxxkaromzBc3O8hp7FJYRJ56azKcX6B42bCSr8b0MavFmd8zzPtnAeAaCzYIF6W50Auvr2z-nOTM0PREuDyWKlhbrN-bR4qJ-mITHhs0mCGbgpp_tGmIxsdozYzGDi8tdaTEr9eg3OPz38BnFRkw2Lg_OwHKKaAAq-gwzXEvL6IvyGFQ2p_adv1FrKC__sx8TUT-8etLBdgp5fhXhfjksVuKLfYIxtcEFiZf3ZiuFZm1Aqc5lsr81v2bd9ZMcXqrTOtfSoMtusl6MFxRSAJEUhTgfYJAtX3WlZmO93bDh91rwggpeg0LtuBYy3jANv5xVhvErnyyHyO8AP20">
-Cloud OnAir</a> webinars held weekly by Google Cloud experts.</td>
-</tr>
-</table>
-</td>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr><td>CLOUD ONBOARD</td>
-</tr>
-<tr>
-<td>Attend <a href="https://www.google.com/appserve/mkt/p/AFnwnKW7zvLmwN9z7feFw5a-hOwg0CXi0fhvD06gVTcnGJ8aah3RFgEpDLEy85-zdA7l9JdpdvtStYKxlA4zmrztbld7faHy2wfAKYdRf3eH35_s9GFXm_o6qQ18d-H1xO5lf07f8m1ZnqJb3kdQlo7WaB3IG_TcA0vlD8ii2MEnRhbByEmDz7KmCqa1dNd5J193bH2G210tniyAoTjhgTY8iF4mncsbxPT3Bn9-Qd7BJ2xyKjF8uyVy_DcX0fxFDgPQlXh3wbMBK9Fnv3msPTe9LtwEWK9V90cncRrlq7x08lyT_vxfnBxfTGFg2-I2PpQkWvA7BidYbey2dAy0nX3pyoJCSKewKrR7xPZsu01jA-eN_mnbtXNQGREtZ28HRXBRvm2ugADlZIgFm0M5VS_bL2pfnD8gCHahFjo">
-Cloud OnBoard</a>, a series of free training events that offer a technical introduction to GCP.</td> </tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td></td></tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr><td>GCP Podcast</td>
-</tr>
-<tr><td>Listen to the <a href="https://www.google.com/appserve/mkt/p/AFnwnKUDrItrXnWFu4wPOFdfRJutn9SFxkO-vva8HGNx0KmZ6PXmhhfjkoFHvgzskbWuVuQxFI1X4Pz6l-zNW8cT1Wsmm3_5KD_BPVk2slOevyEbLhFmUhI1LI54rX3qlKuYGSumo-JwhHVVy1OaDmlqXoqDHIpVQgWvQc2b9VU0ri9CpA9of7v9lRApWXVoX0vJNTkWxO0_uwbQbe-o7yqdscE5XG1wLo-usa6mXmE9-tCKHrUShWOUNCA0zHGZD_cTmkciVgWeqG3-jO1oZnnWoZOv0DCEVLCitAvL_2Or1F0Zu_11X4qEwAkiRXWZ0hhk_t9CmRCd">
-GCP Podcast</a>, a weekly roundup of interviews with experts, answers to listener questions, and the Cool Things of the Week segment.</td>
-</tr>
-</table>
-</td>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr><td>Kubernetes Podcast</td>
-</tr>
-<tr>
-<td>Each week, the <a href="https://www.google.com/appserve/mkt/p/AFnwnKUhG0pL6d9GcmVFoJxeK_J08fLMxerST9nuIN4XR9EHynswk9a2Hkx1Kr1oyrfr601pcrDSukPpWoGp_mCtAdTFep6WCsuLmhjtiZ7sE9iyhYZLNnzowVou5egpM9IIfMfO0dRKXlTLeqTZAZ0Abs6MIuEbOtnhYl97p7P3jvfRdSPqOSvyzkRH4q2SFHgihReJY4_D-pBOba1bsHwnPT65lrmOQl0gPBlkyH4gohqjMZsLTPrzdDjYvJkJLTryX5Aj6cpN4Cs_5baG8mVNH-fAbv7vLc4fUkmWNoHLPyH7LRgKovRwUYEw2yQJSMNdwjksWye90Xrapxzh89sKFfu39Oc">
-Kubernetes Podcast</a> covers the latest news and insights from the growing Kubernetes community.</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td></td></tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td>
-VIDEO RESOURCES
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-<tr>
-<td>
-<table>
-
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVru4KEFr5zMsHkj0Y-5N-kJxIz4Sr8atG8AmOnq2Dzw7VA7Me-F284gzln4gicRHL0YLRqICG3ZeLtVYxUHXU6srArowWoKSmb468qIs1b_k_S78Hblew_y52EoBEwiW5Bxv_dbY5KbY2WDY93mnLphdYBeMAjBKT-NOg6KB0w3l3Ue5ceJaYnIgI03q0SDqfKolG8HzG1FDoJBFrv6KjZ4fpT0idKE0XD6IEPASEUc57A3e5uFBZLuF4IlewsaFlDjzuKXRJE2u7i6MlEyRkFMbEXplCRYcUcEYe1GJQQpIklL3T_PKUirxY13Bnzg5EBrw5z57Nvm6aFE0QzkXoq0AixSTD9WO-6pQAGyHG6Hq4aV9slPDZvuO_vCicOkECZEhRsG38P3Q"><img alt="Watch them all" src="http://services.google.com/fh/files/emails/video_img1.png" width="250"></a></td>
-</tr>
-
-</table>
-</td>
-<td>
-<table>
-
-<tr>
-<td>Next ’19 on demand: Every keynote, breakout, and spotlight session.</td>
-</tr>
-<tr>
-<td>
-
-<a href="https://www.google.com/appserve/mkt/p/AFnwnKVru4KEFr5zMsHkj0Y-5N-kJxIz4Sr8atG8AmOnq2Dzw7VA7Me-F284gzln4gicRHL0YLRqICG3ZeLtVYxUHXU6srArowWoKSmb468qIs1b_k_S78Hblew_y52EoBEwiW5Bxv_dbY5KbY2WDY93mnLphdYBeMAjBKT-NOg6KB0w3l3Ue5ceJaYnIgI03q0SDqfKolG8HzG1FDoJBFrv6KjZ4fpT0idKE0XD6IEPASEUc57A3e5uFBZLuF4IlewsaFlDjzuKXRJE2u7i6MlEyRkFMbEXplCRYcUcEYe1GJQQpIklL3T_PKUirxY13Bnzg5EBrw5z57Nvm6aFE0QzkXoq0AixSTD9WO-6pQAGyHG6Hq4aV9slPDZvuO_vCicOkECZEhRsG38P3Q"><img alt="Play Video" src="http://services.google.com/fh/files/emails/ic_video_24_2px.png" width="22"></a>
-   <a href="https://www.google.com/appserve/mkt/p/AFnwnKVru4KEFr5zMsHkj0Y-5N-kJxIz4Sr8atG8AmOnq2Dzw7VA7Me-F284gzln4gicRHL0YLRqICG3ZeLtVYxUHXU6srArowWoKSmb468qIs1b_k_S78Hblew_y52EoBEwiW5Bxv_dbY5KbY2WDY93mnLphdYBeMAjBKT-NOg6KB0w3l3Ue5ceJaYnIgI03q0SDqfKolG8HzG1FDoJBFrv6KjZ4fpT0idKE0XD6IEPASEUc57A3e5uFBZLuF4IlewsaFlDjzuKXRJE2u7i6MlEyRkFMbEXplCRYcUcEYe1GJQQpIklL3T_PKUirxY13Bnzg5EBrw5z57Nvm6aFE0QzkXoq0AixSTD9WO-6pQAGyHG6Hq4aV9slPDZvuO_vCicOkECZEhRsG38P3Q">Watch them all</a></td>
-</tr>
-
-</table>
-</td>
-</tr>
-
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-<tr>
-<td>
-<table>
-
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUFS9sf9gqQ763rZPtHzVKUQraWxyB57RSmFy7Lc9MlwmXNjB7obOEBFi54Mvc-396I40v7-QYrJtnveXzol3OzlKATazCukDqOMoEixpkfyBNXBtXfstLINWVp9aIzCgFwbxCYX0vwMGAE3VBZ1OiLyFZXTJhs-f_VuB9kqNjIDN1YxirDQzhpEt-vB5e_ZbMaDY9ibCMYISB7fJTjC-2LyGKYn-NYSAf41_mhtPDCNHNKsrPS4auF_7OEz4-tc8LWNDf91FBHrSeEQ0O9ipLlSrXgzF3fE4CstNfSeMAmgtB4jfuoY18HiDNQHCh8cKA3OdsmOSNPWMowz0K4aqdinR8enm1e8XmW-oNPCQsUSletk2EQ3pXw2c2Lv5IdvHc7_XZdUORntdsuh4gvu944hr4gxHdy-wzi8Yc1JWOorNlP"><img alt="See it here" src="http://services.google.com/fh/files/emails/video_img2.png" width="250"></a></td>
-</tr>
-
-</table>
-</td>
-<td>
-<table>
-
-<tr>
-<td>Next ’19 Developer Keynote: Get to the Fun Part</td>
-</tr>
-<tr>
-<td>
-
-<a href="https://www.google.com/appserve/mkt/p/AFnwnKUFS9sf9gqQ763rZPtHzVKUQraWxyB57RSmFy7Lc9MlwmXNjB7obOEBFi54Mvc-396I40v7-QYrJtnveXzol3OzlKATazCukDqOMoEixpkfyBNXBtXfstLINWVp9aIzCgFwbxCYX0vwMGAE3VBZ1OiLyFZXTJhs-f_VuB9kqNjIDN1YxirDQzhpEt-vB5e_ZbMaDY9ibCMYISB7fJTjC-2LyGKYn-NYSAf41_mhtPDCNHNKsrPS4auF_7OEz4-tc8LWNDf91FBHrSeEQ0O9ipLlSrXgzF3fE4CstNfSeMAmgtB4jfuoY18HiDNQHCh8cKA3OdsmOSNPWMowz0K4aqdinR8enm1e8XmW-oNPCQsUSletk2EQ3pXw2c2Lv5IdvHc7_XZdUORntdsuh4gvu944hr4gxHdy-wzi8Yc1JWOorNlP"><img alt="Play Video" src="http://services.google.com/fh/files/emails/ic_video_24_2px.png" width="22"></a>
-   <a href="https://www.google.com/appserve/mkt/p/AFnwnKUFS9sf9gqQ763rZPtHzVKUQraWxyB57RSmFy7Lc9MlwmXNjB7obOEBFi54Mvc-396I40v7-QYrJtnveXzol3OzlKATazCukDqOMoEixpkfyBNXBtXfstLINWVp9aIzCgFwbxCYX0vwMGAE3VBZ1OiLyFZXTJhs-f_VuB9kqNjIDN1YxirDQzhpEt-vB5e_ZbMaDY9ibCMYISB7fJTjC-2LyGKYn-NYSAf41_mhtPDCNHNKsrPS4auF_7OEz4-tc8LWNDf91FBHrSeEQ0O9ipLlSrXgzF3fE4CstNfSeMAmgtB4jfuoY18HiDNQHCh8cKA3OdsmOSNPWMowz0K4aqdinR8enm1e8XmW-oNPCQsUSletk2EQ3pXw2c2Lv5IdvHc7_XZdUORntdsuh4gvu944hr4gxHdy-wzi8Yc1JWOorNlP">See it here</a></td>
-</tr>
-
-</table>
-</td>
-</tr>
-
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-<tr>
-<td>
-<table>
-
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWA8YSi1MZsdYu2naCCF3svWdltFZNcs8KGGdRccrYR3-h7qKiUcSDljqBWHd2rZd7yQAa61najcR-6kUp48htc7BCQhRozyMzFpAsX9VFNZxqT2mfUnGTym9nlOQgnG_mARi3E_Gkn5f1XwBx0VvfqakPI6TNUM94BnUBxm96J-O0Fh5d198YS37c1zpVGGrdtZ3ZtQ7pRpVHV0NN4H960cczsHTNEqfOT3PHvPsFQVF9OZJenrksrLv1DcTHZeuVSXkW-E7q0OFgERO2NmB5XXbvHHv1MTVmzxmrpUUnA5QMrJhxVQVUzYL3wV5tlJNcsrfrf1c96zZKmw3_mxW9pmQvt7rtO4wHtFXoWv6JoILBE8WCBy-mx5fH6VbNJ-G2yshxqF4Nutsa-n_ITj3YaUZv9cWLXHaHhA4cpL6uGoqo_YA20pm5AhGopukiwA8uOPkYRuue69A"><img alt="Get the latest GCP news" src="http://services.google.com/fh/files/emails/video_img3.png" width="250"></a></td>
-</tr>
-
-</table>
-</td>
-<td>
-<table>
-
-<tr>
-<td>This Week in Cloud</td>
-</tr>
-<tr>
-<td>
-
-<a href="https://www.google.com/appserve/mkt/p/AFnwnKWA8YSi1MZsdYu2naCCF3svWdltFZNcs8KGGdRccrYR3-h7qKiUcSDljqBWHd2rZd7yQAa61najcR-6kUp48htc7BCQhRozyMzFpAsX9VFNZxqT2mfUnGTym9nlOQgnG_mARi3E_Gkn5f1XwBx0VvfqakPI6TNUM94BnUBxm96J-O0Fh5d198YS37c1zpVGGrdtZ3ZtQ7pRpVHV0NN4H960cczsHTNEqfOT3PHvPsFQVF9OZJenrksrLv1DcTHZeuVSXkW-E7q0OFgERO2NmB5XXbvHHv1MTVmzxmrpUUnA5QMrJhxVQVUzYL3wV5tlJNcsrfrf1c96zZKmw3_mxW9pmQvt7rtO4wHtFXoWv6JoILBE8WCBy-mx5fH6VbNJ-G2yshxqF4Nutsa-n_ITj3YaUZv9cWLXHaHhA4cpL6uGoqo_YA20pm5AhGopukiwA8uOPkYRuue69A"><img alt="Play Video" src="http://services.google.com/fh/files/emails/ic_video_24_2px.png" width="22"></a>
-   <a href="https://www.google.com/appserve/mkt/p/AFnwnKWA8YSi1MZsdYu2naCCF3svWdltFZNcs8KGGdRccrYR3-h7qKiUcSDljqBWHd2rZd7yQAa61najcR-6kUp48htc7BCQhRozyMzFpAsX9VFNZxqT2mfUnGTym9nlOQgnG_mARi3E_Gkn5f1XwBx0VvfqakPI6TNUM94BnUBxm96J-O0Fh5d198YS37c1zpVGGrdtZ3ZtQ7pRpVHV0NN4H960cczsHTNEqfOT3PHvPsFQVF9OZJenrksrLv1DcTHZeuVSXkW-E7q0OFgERO2NmB5XXbvHHv1MTVmzxmrpUUnA5QMrJhxVQVUzYL3wV5tlJNcsrfrf1c96zZKmw3_mxW9pmQvt7rtO4wHtFXoWv6JoILBE8WCBy-mx5fH6VbNJ-G2yshxqF4Nutsa-n_ITj3YaUZv9cWLXHaHhA4cpL6uGoqo_YA20pm5AhGopukiwA8uOPkYRuue69A">Get the latest GCP news</a></td>
-</tr>
-
-</table>
-</td>
-</tr>
-
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td></td></tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td>
-OVERHEARD
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td><img src="http://services.google.com/fh/files/emails/twitter-icon-2x.png" width="18" height="16" alt="Twitter"></td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVTurxYw9IRYJE10I9bmU9bf6rSfbyTNhOPupQj5OPuDKyYUEqbFB_ah6-mcfMnum_y_AZ87L0jGWmvLlfstnTsaTrEvZ2LbOEwBcTdwLbaO-sY0LJyIhuI">@steren</a></td>
-</tr>
-<tr>
-<td> </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKU1HOrxf9HSSPh88JhHdTk4MGeDEI2RL0fE0ol8GLfZHMZBz0axvm6FjzJOse8wv15MMASCz6iUk4Aco56VVGSkqZGs_4UmOrG5dymv5CknD_LLJriiHTox_gk43BiDQQ6r0OLCw5hZvPJBO-aAYeqe6Mpqo_Nwn9Qg5l5BIp4T40X33Zm8Km5namE8u9PH">I&#39;m not sure the audience even realized what was actually happening: From 0 to 12,000 container instances in less than 10 seconds. That&#39;s how fast Cloud Run scales your container.</a></td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><img src="http://services.google.com/fh/files/emails/twitter-icon-2x.png" width="18" height="16" alt="Twitter"></td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUdkIYmeu-n_eQuoZyO2LoiZjenKpKXXmIFTKH4X4sBsEi43bymPb--j8ymLfAiIKty10IDkbqu2yFECQTBKnaYJG3nEVJOQt94giy7Sd2CM6bAHYAUp1cBdIow9ftL">@scarey102</a></td>
-</tr>
-<tr>
-<td> </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVnGNAnGHlxE6Mz2PLQdsOLgowHjoW4cJ1NhblJBwJvK6J_S-FrGRgPwz3zTAcag1_cV-mTI-16phUrv9unc5WVTiPrJOd2g1zDx3g1w_Q9dwb4hvk3oKei2VTyJTIplMjjXE0PNwZdk-_Sx3Sa00MXOssKqc-zehoHxCk3MnMdvue9Gyy18o5FkFhxNgR4axdJcTCg">Google Cloud CEO strong on data privacy this morning: &quot;No one at Google will access your data without permission, we don&#39;t have a backdoor to allow any agency to access your data without your permission. You can encrypt data at rest or in transit to our cloud&quot; #NEXT19</a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td colspan="5">
-<table>
-<tr>
-<td> <span>Follow us on social media.</span></td>
-</tr>
-<tr>
-
-<td>
-<span>Add your voice to the conversation and get the latest news, views, and insights.</span>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKXY9zsH9jnSOHUkC5UOvDlWpoljYjqRaNCbDjC4cHpQz6Fi6rRNP9De0YtzgnrWhHYKPTAJPe9eVq6qFwR5vbxomBO9JqwTjVLzqgBZZIcMYWP6so6mWybccgOvjp4nQZyegg"><img src="http://services.google.com/fh/files/emails/release_notes_apr_twitter.png" alt="Twitter" width="17"></a></td>
-<td>   </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKV37WH1nxPZX9kUHCoK2k1G4C5G4LCcRdrIyCR01N1WwYOGuY74CLh2kp_Rpd7eo634HuGiw6r-_BT_OvuY0aqWDesiBkM8uMLlpWLZBcV0B0V2rfwYYmnRe6eZP_WiKoRzPAbqRhhhhsgFV7U0yjwf1k7uiIJIzaaOfN7RJ9azITGSA0XZq8i6lvx5qLOI3SxabpnhLEh8z-d5FVAfNjT0XbOoRCaNbhb3oHQXYr4cARaeo162RBtAsy87yBiOCGizhRrJX6ud90OlJbwj2BnIEGr-YjQMgb46Z8dIt5kw7H2BBNRRiw3mWSUKG0RQlHllcZS_cP6Fuodiw3P3IwrClAQ"><img src="http://services.google.com/fh/files/emails/gcp_new_cloud_blog_icon.png" alt="Google Cloud Blog" width="24"></a></td>
-<td>   </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWd5tsVq48HDYvBQlMoA-tJOpScSnAJSd4GRZXW3qpvw3RX-wKg5hUyzUMxeood5B0Nia5TxI6h8GJH7TDUJd-MVhbaXVfCFGevbwQsVOdg2qHTeietlRiK06qMRnS3QcF0VTdv4eolFkuXfWla-v49"><img src="http://services.google.com/fh/files/emails/release_notes_apr_github.png" alt="GitHub" width="16"></a></td>
-<td>   </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVl-ZmLINhNeBte8kmStDYPVdsqK9hoQz2AG4plDsX4XhgL08qbR28kQOjjbr43FA1iAz9g8WnlS4YzT5wV5vGPZdY4ShLlKuvLrKVouazV69vKqEV6-8T-gGPm1akdJvK0WHyRBXzV50MKEzlRrHtJd6qQg0Xf9jnadyiJGXM"><img src="http://services.google.com/fh/files/emails/release_notes_apr_linkedin.png" alt="LinkedIn" width="17"></a></td>
-<td>   </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKXRWBPRsqLZEYbrxcZI9GGo4f7Ql4hm4tw3lUuKZzBDAqUw22JJaJ6bv60iuJMxEfJp2z_cBtI301p5NyBV6bgOG6oGEaCiGxEz_O_fUAWr21swdukz_xbuZ_AK5amnb-R0QsYeKMVipg9KNQCkoA"><img src="http://services.google.com/fh/files/emails/release_notes_apr_facebook.png" alt="Facebook" width="11"></a></td>
-
-
-<td>   </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWdzn629I6OqNSiBguxY6AkVQBxi3BvQ2hDo0fbQl-GT6FG84jjblrLGioO19MUQUy907Ie9Y26UhCRhaLbhejKkCZ81Xrb9yPeIqc3hA3-b2Upqb8lm0wPf9YQsJzHEVU0mvi0woWeuTgUKv7Fua0LdJJ2zFBXgmZ_KUXtkeUrXcR_x0eKwtguHwQSKRtTBwWfyK5AjrjOaG_yDfp5uFAesT7k4RLyqEB87LseGgMIqovH7vYM6csY0JqA5hNAiqpE3W2KtW6eqPXzPK537tfImXuS4BES00xMn149uj2lDsY_VFxRRIroM9MlNq6Cb_DIgGupFc3uGEvPcvxYNDUZcGtXdzmqRyQ1d3JaQrsJTZdj2URT8jY9NBJmZQ7_mdzJ856LLG786s-2"><img src="http://services.google.com/fh/files/emails/gcp_new_youtube.png" alt="YouTube" width="22"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table></td>
-</tr>
-</table>
-
-
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr><td>
-<table>
-<tr><td>Not subscribed to our newsletter yet? <a href="https://www.google.com/appserve/mkt/p/AFnwnKU3KmG1O88sN6oesJe5zBmT7YoHuxXTDpPMwK_unhJ_Z11Q_Zewtf6m0lM1pQE9IICpaeYUKjWF8mSTCjFntyIcXsj8Q63Dxu4WSk4jVVABGPn3bl_VHemhpFHSJqS--Co-Q_jUh-CalyJJAzV8s1RYpK5rI_eMvwk0X5_4UmKZgUcRBoDt3TFgN3MLAAkczdlfJqUajriwXZSwAS7Op-AtwJEmoVCdeaOPlM3cB-zMyclbPTvFkvVPHY2I3sFc8LVTTaU1Pw5EBSTzCBVVZfjpdPg7qAZyN5Lae__uq4YW_nWeND-vwbYH1zZCjrRy4hRdiDgbe-IccPfCFF_SMz2z37qfV_JWRsW1z-bJTVM">Sign up</a></td></tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<a href="https://www.google.com/appserve/mkt/p/AFnwnKVIiyYYPfMQLOgveWpTaeYDibgUo0NB2W6z6WoUOWROzfA_xGFETXC-WZofVtnRTLiZEB_6n4UeeQULjcomWRJSRQmgtF9eAts7CzpSHatunTCJZr0XtY0OzTiIU2aPafd1ItoviCliAJO8GxqWz79yuapZ3RQa92RLmpLfnkvkxCKh9hVFt8w61iLLj4QWn2-BzeUFh5Wu481glTxDc3cy508iW1NEH8QVWKqZ6GzW6rKgLJA4fd_0hJxtSfxak3nMDcM28O61EfpBAn93Rd5JFuWb9IWWXwHjyc9ryfbHOH9vL1_N2_FAAJ8a8aX9ZlkxMyATGXmh4FU3s3fE8lCyhjqZr_a9oDc">Go to your Console   <img src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" alt="arrow" width="16"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-
-<table>
-<tr>
-
-
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVVvyvI9VqualAHjt4IgtPRLm8YIdgaAbo22mIvcavOfu-ZgKbQUIEKEnl6i7dS0HCNKFYuqUziYx-OfLmIrtXohadQ5TAmbGnxaDb-Z4pc6b10BBDHvMpaP3oiiIE_XO5AbsdjQXOCxZLMRjnbmxeZ1ldVKctu3GCRlRXz50tKXTmPTtxnN8UInO6OMQEx5sjlCDUXYc-YsY5mbrRw_7kM9Z8mDCS5gNMHZJaFPltXuCIqWJXKkOe2EeRqnf0yP-xg2y1XOGBEmiSKvY7c511b3BLDd1YnB1Xnu_Ik6mhsrPlZMMRyuFkRaDBzpt91m03LLRi3Z_-QF68L9IvsgXu5WeO7Xg"><img src="https://services.google.com/fh/files/emails/feedback2_icon.png" width="16" alt="Feedback"></a></td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVVvyvI9VqualAHjt4IgtPRLm8YIdgaAbo22mIvcavOfu-ZgKbQUIEKEnl6i7dS0HCNKFYuqUziYx-OfLmIrtXohadQ5TAmbGnxaDb-Z4pc6b10BBDHvMpaP3oiiIE_XO5AbsdjQXOCxZLMRjnbmxeZ1ldVKctu3GCRlRXz50tKXTmPTtxnN8UInO6OMQEx5sjlCDUXYc-YsY5mbrRw_7kM9Z8mDCS5gNMHZJaFPltXuCIqWJXKkOe2EeRqnf0yP-xg2y1XOGBEmiSKvY7c511b3BLDd1YnB1Xnu_Ik6mhsrPlZMMRyuFkRaDBzpt91m03LLRi3Z_-QF68L9IvsgXu5WeO7Xg">Feedback</a>
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td></td></tr>
-</table>
-</td>
-</tr>
-<td>
-<table>
-<tr>
-<td>
-<img src="https://services.google.com/fh/files/emails/bottom_footer_logo.png" width="141" alt="Google Cloud">
-</td>
-</tr>
-<tr>
-
-
-<td>
-
-<a>Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
-<br /><br />
-This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive offers from Google Cloud Platform. If you don’t want to receive such emails in the future, please <a href="https://www.google.com/appserve/mkt/optout/AFnwnKUD2ct3zU4MjxdrhDK0epBlI93rCWXIUp5PjoIAEFH4k9RKLd5h86cLCqzVrKpayu_WCA?hl=en">unsubscribe here</a>. You can also change your preferences on your account’s profile page by logging in at <a href="https://www.google.com/appserve/mkt/p/AFnwnKVuqOWi2JEtUw4yJJtq5_IEk7o514Lwv_O7KkapAmqWSKThFFpnRDlla7CeiMj4dIAFITUfT9l6SYGEQDxLPa6VejQ">console.cloud.google.com</a>
-</td>
-</tr>
-</table>
-</td>
-</table></td></tr>
-
-
-
-
-
+<div>```<br />
 </div>
-<img height="1" src="https://www.google.com/appserve/mkt/img/AFnwnKUL6ov9vODBXBrhllPHKL99iHSxo-Bg4qlDaZp3U8qHFA.gif" width="3">
 
+<div>root@d675c62c79b7:/opt/splunk/var/lib/splunk# df -h<br />
+Filesystem&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Size&nbsp; Used Avail Use% Mounted on<br />
+/dev/mapper/docker-202:2-260827&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 99G&nbsp; 1.1G&nbsp;&nbsp; 93G&nbsp;&nbsp; 2% /<br />
+tmpfs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.0G&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp; 4.0G&nbsp;&nbsp; 0% /dev<br />
+shm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 64M&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp;&nbsp; 64M&nbsp;&nbsp; 0% /dev/shm<br />
+tmpfs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.0G&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp; 4.0G&nbsp;&nbsp; 0% /sys/fs/cgroup<br />
+tmpfs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4.0G&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp; 4.0G&nbsp;&nbsp; 0% /run/secrets<br />
+/dev/xvdf1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 100G&nbsp;&nbsp; 24G&nbsp;&nbsp; 77G&nbsp; 24% /opt/data<br />
+/dev/xvda2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 16G&nbsp;&nbsp; 14G&nbsp; 477M&nbsp; 97% /opt/splunk/var<br />
+</div>
+
+<div>```</div>
+
+<div><br />
+</div>
+
+<div><br />
+</div>
+
+<div>The minimum free disk space (1024MB) reached for /opt/splunk/var/run/splunk/dispatch. <br />
+</div>
+
+<div><br />
+</div>
+
+<div>
+<div>-v /opt/splunk-new-clean/etc:/opt/splunk/etc <br />
+</div>
+
+<div>-v /opt/splunk-new-clean/var:/opt/splunk/var <br />
+</div>
+
+<div>-v /opt/data:/opt/data</div>
+<br />
+</div>
 
 
   </div>
   <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002122.html" itemprop="url">Continue reading</a>
+    <a href="https://weblog.youre.space/vergence/2019/04/002155.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-2121" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-2154" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002121.html">분당도서관 무료 운영 수강생 모집합니다</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002154.html">푸르른 5월 성남시가 준비한 공연·전시 일정, 한 눈에 확인하기</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-19T16:33:56+09:00" itemprop="datePublished">April 19, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-30T14:01:55+09:00" itemprop="datePublished">April 30, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/eiii/">공연전시</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    온 세상이푸르름으로 가득한봄기운 충만한 5월이네요충만한 계절만큼성남시가 준비한알차 공연과 전시 일정알려드릴게요!공연 일정전시 일정여기는 풍요로운 문화 도시, 성남시성남시는 오늘도그대와 함께^:)
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221526135467">http://seongnamdiary.com/221526135467</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2019/04/002154.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-2153" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002153.html">분당도서관의 이모저모</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-30T14:01:54+09:00" itemprop="datePublished">April 30, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -1705,390 +199,24 @@ This email was sent to imyamanhitelnet@gmail.com because you indicated that you�
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    2019년분당도서관 '길 위의 인문학'4월 23일 ~ 마감시까지수강생을 모집합니다.이번 주제는'조선의 명문사학 서원'한국의 9 개의 서원이유네스코 세계유산으로 등재되기를기원하는 의미에서서원의 가치를 재조명하는 시간을 마련하게 되었습니다.강의와 탐방으로 구성된이번 프로그램은역시 간지나게 무료입니다알차게 구성되어 있으니관심 있는 분들! 많이 참여해주세요!신청을 희망하는 분은분당도서관 홈페이지를 이용해주세요!여기는 역사의 가치를 소중히 여기는 성남시성남시는 오늘도그대와 함께^:)
+    야외 휴게실에화사한 꽃이 가득성남시 정자동의 분당도서관은 1999년 개관한 공공도서관으로 지하 1층과 지상 5층의 큰 규모의 도서관이에요. 요즘 도서관은 각기 다양한 프로그램과 크고 작은 전시 등을 진행하며 문화와 예술, 학업의 장이 되고 있어요. 학생 뿐 아니라 남녀노소 이용하며 조용하기만한 곳이 아니라 조용함 속에서도 굉장히 활발하고 다채로운 이야기 거리들이 이어지고 있더라구요. 도서관에서 가장 중요하게 이용하는 공간은 아마도 자료실과 열람실이 아닐까 해요. 성남시 분당도서관은 1층에 어린이가족열람실이 있고 2층에 종합자료실 격인 전자정보실과 제2문헌정보실, 3층에 제1문헌정보실이 있어요. 좌석을.......
 
 
-<p>출처 : <a href="http://seongnamdiary.com/221517710126">http://seongnamdiary.com/221517710126</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+<p>출처 : <a href="http://seongnamdiary.com/221526150987">http://seongnamdiary.com/221526150987</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 
   </div>
   <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002121.html" itemprop="url">Continue reading</a>
+    <a href="https://weblog.youre.space/imyaman/2019/04/002153.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-2120" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-2152" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002120.html">Update Node.js 6 functions to Node.js 8 or Node.js 10 as soon as possible</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002152.html">우수 중소기업 제품에 아트를 더하다 '아트 콜라보 매칭 데이'(성남산업진흥원)</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-19T06:19:01+09:00" itemprop="datePublished">April 19, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/action-required/">Action Required</a></li>
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    
-
-
-
-
-
-
-.appleLinksWhite a {
-  color: #898989 !important;
-  text-decoration: none !important;
-  cursor: default !important;
-  pointer-events: none !important;
-}
-
-a {
-  color:#2979ff;
-  font-family:Roboto, arial;
-  font-size:14px;
-  text-decoration:none;
-}
-
-@media only screen and (min-width : 0px) and (max-width : 480px) {
-  .flexible{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;  }
-  .logo_holder, .logo_holder_td, .logo_right_holder, .logo_right_holder_td{width: 100% !important;}
-  .logo_right_holder_inner_td  {text-align:right !important;}
-  .logo_holder_td{padding-left: 16px;}
-  .logo_right_holder_td{padding-left: 16px !important; padding-top: 5px !important; padding-bottom: 15px !important;}
-  .tbl_banner{padding-left : 10px !important; padding-right: 10px !important; }
-  .banner_text_1{padding: 0 20px 15px 20px !important;}
-  .banner_container {background-position:top !important; background-color: #227cdf !important; height:auto !important;}
-  .banner_btn{padding-bottom:20px !important;}
-  .banner_text_2{128px 20px 13px 20px !important; font-size:26px !important;line-height:30px !important;}
-  .bottom_link_container_td{padding:10px 40px !important;}
-  .bottom_link_container_inner{padding:10px 0 !important;}
-  .bottom_link_text_mbl{padding:10px 0 !important;}
-  .outer_wrapper_td{padding:0 5px !important;}
-}
-
-@media only screen and (min-width : 0px) and (max-width : 320px) {
-  .flexible{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;  }
-  .logo_holder, .logo_holder_td, .logo_right_holder, .logo_right_holder_td{width: 100% !important;}
-  .banner_text_2{128px 20px 13px 20px !important; font-size:26px !important;line-height:30px !important;}
-  .logo_right_holder_td{padding-left: 16px !important; padding-top: 5px !important; padding-bottom: 15px !important;}
-  .logo_right_holder_inner_td  {text-align:right !important;}
-  .logo_holder_td{padding-left: 0 !important;}
-  .banner_text_1{padding: 0 20px 15px 20px !important;}
-  .banner_container {background-position:top !important; background-color: #227cdf !important; height:auto !important;}
-  .banner_btn{padding-bottom:20px !important;}
-  .bottom_link_container_td{padding:10px 40px !important;}
-  .bottom_link_text_mbl{padding:10px 0 !important;}
-  .outer_wrapper_td{padding:0 5px !important;}
-  .bottom_link_container_inner{padding:10px 0 !important;}
-  .social_icons_container_inner{width:210px !important;}
-  .tbl_banner{padding-left : 10px !important; padding-right: 10px !important; }
-}
-
-
-
-
-
-  
-  
-  
-    <div>Node.js 6 on Cloud Functions is deprecated.</div>
-  
-  
-
-
-<table>
-<tr>
-<td><table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_logo.png" width="261" alt="Google Cloud Platform">
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-
-
-  
-    <a href="https://www.google.com/appserve/mkt/p/AFnwnKUz0w_Pgbd-kHU7xWLC_tRCGapX5VXHHYMK8o-pwlIwjHdoPi97PbwyZ-8LFEtOfvhfd_g6mwpNoWMOeAZo7AAvpxUT">MY CONSOLE</a>
-  
-
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td></tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-
-
-  
-  
-    
-  
-
-
-<tr>
-<td>
-
-
-  
-
-<p>
-Hello Google Cloud Functions Customer,
-</p>
-
-<p>We&#39;re writing to let you know that the Node.js 6 runtime on Cloud Functions is deprecated and will be decommissioned on April 22, 2020. To avoid any potential disruptions or security risks, please <strong>update your functions to use the Node.js 8 (generally available) or Node.js 10 (beta) runtimes as soon as possible</strong>.</p>
-
-What do I need to know?
-
-
-<p>On April 30, 2019, Node.js 6 will be <a href="https://www.google.com/appserve/mkt/p/AFnwnKXaqlKp_qn9j23EvDbneNyqSz0SExxlHyS1S7fsuNOHgVEWbE714BTpLjS8xNrEVf-RwKShVplRcqY9bI-rjg917ixF">marked end-of-life by the Node.js Foundation</a>. At this time, the Node.js Foundation will stop issuing security releases for Node.js 6. To ensure that your functions are on a supported version of Node.js, you must update them to the Node.js 8 or Node.js 10 runtime.
-</p>
-
-<p><strong>What will change?</strong><br />
-Changes on Cloud Functions will occur in stages:
-</p>
-
-<ul>
-
-<li>April 18, 2019: Node.js 6 is deprecated on Cloud Functions. You can continue to create new functions and update existing functions that use Node.js 6. However, this is not recommended since functions using Node.js 6 will no longer receive security updates.</li>
-<li>April 22, 2020: Node.js 6 will be decommissioned on Cloud Functions. You will no longer be able to create new functions or update existing functions that use Node.js 6. Functions using Node.js 6 may be disabled after this date.</li>
-
-</ul>
-
-What do I need to do?
-
-
-<p>
-To ensure that your functions are on a supported version of Node.js, please <strong>migrate them to the Node.js 8 or Node.js 10 runtime as soon as possible</strong>.
-</p>
-
-
-<p><strong>If you are using Google Cloud Functions,</strong> you may need to make some minor adjustments to your functions depending on whether you are migrating to Node.js 8 or Node.js 10. Please see the <a href="https://www.google.com/appserve/mkt/p/AFnwnKWurmYrpp3IHQRGVwFT80etolLifWFOU5Psbo4b2ukj0Bb4M9zO4NyO82DOyMfXWOyicZ6A4_c2HcAjHcdRkk5oQemBgKJGrxKQ84ePMMe9NhbMdbYykVgUe8sMfdse0jEJWSU">Migrating Cloud Functions to newer Node.js runtimes</a> support page for details. Once you have made these changes, re-deploy your function(s). Make sure to select the Node.js 8 or Node.js 10 runtime using <a href="https://www.google.com/appserve/mkt/p/AFnwnKWe66ms3fIDeS4RWMaxaLCcxNzAXNQOdScAYdrVAFbeE4VyvlP6xBhPH1qEmTXmgdoF_xYWwDtxcghmb6vhdhf4M3BKPYUwQEOx7ZBXvlKNQBuH-vAa6MN4f-dIReDV">gcloud</a>, the <a href="https://www.google.com/appserve/mkt/p/AFnwnKXUo8nbiv39bki0qPKRnC58ahy-ubn1yjhKXZt6U1h96pztIVM0PyCNn30WioZpR_Ci2x-Iu3-tWxenUUE6KJ_ocnJKywzO85rDAo5IR0LLZZomEjO8BnD6zMZ6">GCP Console</a>, or the <a href="https://www.google.com/appserve/mkt/p/AFnwnKWqG9awgLnCxs29P77YEUmtzVDU5VHQJ6uUI98rIDsWxbA2UYYoO_9iWv_K25lIFyNT3j72tyKp-gtaCxWbG0qUh5VOhBc4n3U4nZdRmRimLgdPAnyhemXGpBQTAunvR05-thfKpvdlqPCTm1nO3jvzUA0-WubsCV6Lv9pdpJgSV8eEiXry7w">API</a>.</p>
-
-<p>
-<strong>If you are using Cloud Functions for Firebase,</strong> simply re-deploy your function(s) to automatically update from Node.js 6 to Node.js 8. You can also specify the Node.js 8 runtime explicitly by <a href="https://www.google.com/appserve/mkt/p/AFnwnKXYjXIESbgdCLaekUlb2azM9KhkaD-MlwcG-clqaFR3ZNNsWcb_8Of93T3xUZx3nbb8YWAAfMi6iNsIY8hRZ47MRBAv59CZ3PN8Zxhi-4MM9rsTtQ2oRWkgkOGh9aH93vWwWgKqykL8RoeGtwmXrZxo"> using the `engines` field in `package.json`</a>.
-</p>
-
-
-<p>Your projects listed below have been identified as having used Node.js 6 in the past 12 months and may be affected by this change. Please review your functions in these projects and take the actions listed above to migrate off of the Node.js 6 runtime.</p>
-
-
-<ul>
-      <li><a href="https://www.google.com/appserve/mkt/p/AFnwnKXW1vNVcXcNFkgv1-fiJCwtOAEljnJTD9GLiW0x4ZPZLowxx_68J-YfjZtyquQkXaaHe0py95TBtxCBH64_gBWEfs-tjOFF4Xci4NBWjqIo0Aev952l">sys5 (sys5-f9f83)</a>
-</li></ul>
-
-<p>If you have any questions or require assistance, please <strong>reply to this email to contact Google Cloud Support</strong>.</p>
-
-<p>Thank you for being a valued Cloud Functions customer.</p>
- 
-  
-
-
-<br />
-Was this information helpful?
-<br />
-
-
-  
-  
-  <a href="https://www.google.com/appserve/mkt/p/AFnwnKV7zw8m--za8slvusjSyzRXQS9bDrkMpbxN799oMjAqUinfqch-OKBm-fF239dLUDDlYcVIqQAT6Ucr82a5paCI4LMZcKCOiG_dpYzQkA7iaUFK1qhHspy1xdvNvxAGLaMezxOfEej0wAfvwNzfVD7pbAPxt9iwkTadD4iaiKX2kWGSWRN_VmE-HSxbtQ">YES</a>
-     
-    <a href="https://www.google.com/appserve/mkt/p/AFnwnKXD3hsM8XjWRQFu-kGZo1uHA4zKs2MjOnpkV4uO_VQ2CNceK21O-EVkS7DXLW9_WwcvHEnRDi-r0Lew9qUnznjou6C0DvYUHfv3BBNlZQtvjjt4i6BROxQrkctZYetRFKHUSbB8gkm10UNjH8q0JmCZ8VTAkzejeRy8mc5rtJn2cs1fkyzNcG3C5n-m">NO</a>
-  
-  
-
-
-</td>
-</tr>
-<tr>
-<td>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-
-  
-    <tr>
-      <td>
-        
-          Sincerely,
-        
-      </td>
-    </tr>
-    <tr>
-      <td>
-        
-          The Google Cloud Functions Team
-        
-      </td>
-    </tr>
-  
-
-
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td>
-<table>
-<tr>
-<td>
-<img src="http://services.google.com/fh/files/emails/gcp_free_trail_decs_new.png" width="12" alt="">
-</td>
-<td>
-
-
-  
-  
-  <a href="https://www.google.com/appserve/mkt/p/AFnwnKWurmYrpp3IHQRGVwFT80etolLifWFOU5Psbo4b2ukj0Bb4M9zO4NyO82DOyMfXWOyicZ6A4_c2HcAjHcdRkk5oQemBgKJGrxKQ84ePMMe9NhbMdbYykVgUe8sMfdse0jEJWSU">DOCUMENTATION</a>
-  
-  
-
-
-</td></tr>
-</table>
-<table>
-<tr>
-<td>
-<img src="http://services.google.com/fh/files/emails/gcp_free_trail_forum_new.png" width="16" alt="">
-</td>
-<td>
-
-
-  
-    
-    <a href="mailto:cloud-proactive-comms+7ggoieeyguobln_er5u2m1v9-rneal9nlfsueirr7ze6mtu1ntu0nti2otezotc0mq@google.com">SUPPORT</a>
-    
-  
-
-
-</td>
-</tr>
-</table>
-</td></tr>
-</table>
-</td>
-</tr>
-</table></td></tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_cloud_footer_logo.png" alt="">
-</td>
-</tr>
-<tr>
-<td>
-<p>© 2019 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
-<br />
-You have received this mandatory service announcement to update you about important changes to Google Cloud Platform or your account.
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUDh0onFdnpZ4CXxU63C_5S3RrtiF2jMHOfgcs3UFYVy5U751s3PUjPVmvASNjswAtJZKBcBVRZGhB0k7zyWlbpHJOisU3X"><img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_blogger.png" alt="Blogger" width="33"></a></td>
-<td>   </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKXEAmLCNTwhnskqm5UD9I0w_Nok85iP9R_7E8ZjULf6-SJJXkNH691UpanZbuyvkA8iFnEE7U5BKuUUfLhKzqJGQ6WAz13IIak5zSx4Rnu9_g"><img src="https://services.google.com/fh/files/emails/gcp_newsletter_email_github.png" alt="GitHub" width="33"></a></td>
-<td>   </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKUSOOXp4INTNlc3i1jbEPpz_fzGZWWK6FUl9m1K8xnSNTuDbleOL0VLpaiUngDLtshGuWW3SYbPQEmfkg5e16DSex90WYu4XlM-e79uW3fFP4t2SEWf"><img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_linkedin.png" alt="LinkedIn" width="33"></a></td>
-<td>   </td>
-<td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWkPrlasX84g8SM7PAAAGbmCRo_9JzDwcjqruCGLYTwAhfvSjPVThypBMRGdXAKYYCqBFveKuELewjEjFhfPxCbLTlciVF0_a9fEw"><img src="http://services.google.com/fh/files/emails/gcp_newsletter_email_twitter.png" alt="Twitter" width="33"></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<div>
-                                                                                      
-</div>
-<img height="1" width="3" src="https://www.google.com/appserve/mkt/img/AFnwnKWSCn0D_QxiwpWrw-YuSmvg_GRpGQ3yYvPaZnVUWdjLyA.gif">
-
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002120.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2119" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002119.html">세월호 5주기 추모식 및 추모문화제 'Remember 0416'</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-18T16:44:38+09:00" itemprop="datePublished">April 18, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/eeie/">감동성남</a></li>
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    세월호 5주기를 맞아 성남곳곳에서 추모제와 추모문화제가 열렸습니다. 지난 4월 9일에는 세월호 희생자 어머니들이 출연한 연극이 중원청소년수련관 무대에 올랐습니다. 세월호 유족들은 연극,원예, 바느질, 목공일 등을 배우며 슬픔을 누르며 여기까지 왔습니다. 야탑역광장에서 열린 추모문화제 이자리에서 해마다 열리는 행사인데 올해도 지난 해와 같이 춥고 비도 흩뿌리네요 오늘 사회를 맡은 오현정 양 세월호 참사가 일어난 지 5년차가운 날씨도 비바람도 마치 고인들이 함께 하는 것 같다고 304명의 친구들이 생각난다며 사회자의 목소리가 떨립니다.어린 나이에 세상을 떠난 304명 고.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221516861522">http://seongnamdiary.com/221516861522</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002119.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2118" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002118.html">시민이 만들어가는 성남시! 시정모니터 57명 신규 모집</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-18T15:49:06+09:00" itemprop="datePublished">April 18, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-30T12:00:12+09:00" itemprop="datePublished">April 30, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -2099,24 +227,80 @@ You have received this mandatory service announcement to update you about import
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    시민의 목소리를생생하게 전달하는시정모니터단을 모집합니다!4월 17일 ~ 5월 3일까지총 57명을 모집해요시정모니터는 시정 전반에 관한 제안과 아이디어주민불편사항 등을 건의하는시민의 눈과 귀 역할을 합니다우수 제안이나 제보를 한시정모니터에게는소정의 보상금과 표창 등인센티브를 제공합니다.자격 : 20세 이상 성남시민신청 : 신청서와 자기소개서를이메일(miranj@korea.kr), 방문(시청 6층 자치행정과 장미란 주무관),우편 등으로 보내시면 됩니다.▼▼ 신청서와 자기소개서 다운로드▼▼여기는 시민과 함께 성장하는 도시, 성남시성남시는 오늘도그대와 함께^:)
+    기업하기 좋은 도시 성남!성남은 중소기업들이 왕성하게 활동할 수 있도록 많은 지원을 아끼지 않는 성남산업진흥원이 있어 든든합니다.중소기업은 제품을 생산하는데 디자이너가 필요하고 예술인들에겐 자신의 재능을 살리며 조금은 안정적인 재정 지원도 가능한 사업!2018년도에 처음 시작하여 많은 기업과 예술가들의 호평을 받았던 아트콜라보!올해도 7개의 기업과 7명의 예술가가 만나는 아트콜라보 매칭데이가 있어 다녀왔습니다.4월 26일 11시성남산업진흥원 7층 대강당에서7개의 테이블이 마련되어 있고 테이블마다 노트북이 켜 있습니다.기업과 작가가 첫 만남을 갖는아트 콜라보 매칭데이작가는 기업에 대해 알아야하고 기.......
 
 
-<p>출처 : <a href="http://seongnamdiary.com/221516775674">http://seongnamdiary.com/221516775674</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+<p>출처 : <a href="http://seongnamdiary.com/221526018266">http://seongnamdiary.com/221526018266</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 
   </div>
   <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002118.html" itemprop="url">Continue reading</a>
+    <a href="https://weblog.youre.space/imyaman/2019/04/002152.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-2117" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-2151" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002117.html">고양시 생태테마관광 '한강하구 평화이야기'(4/27~5/12)</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002151.html">사랑의 봉사회 효도잔치 "벌써 20년이 넘었네요"</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-18T11:23:05+09:00" itemprop="datePublished">April 18, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-30T12:00:11+09:00" itemprop="datePublished">April 30, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/eeie/">감동성남</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    지난 4월 27일,어르신들에게 점심 한 끼를 대접해 드리는 ‘효도잔치’가단대동 ‘사랑의 봉사회’ 사무실 앞에서 열렸습니다.이 날 효도잔치는오전 11시부터 오후 3시까지 이어졌는데요,단대동뿐 아니라 수정구 다른 동과중원구의 여러 노인정에서도 오셔서자리를 빛내 주셨습니다.사랑의 봉사회는심장병 환우를 돕기 위해 1989년기사님들이 결성한 봉사단입니다.이후 기금마련을 위한 일일찻집을 운영하면서일반인 회원들이 가입해 오늘에 이르고 있는데요,봉사단은 1989년부터 2004년까지성남시를 포함한 전국의 심장병 환우 102명에게 수술기회를 제공했고,그 중 100명이 새로운 생명을 찾았다고 합니다.사회가 변하면서심장병 환.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221526028855">http://seongnamdiary.com/221526028855</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2019/04/002151.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-2150" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002150.html">에어프라이어로 간단하게 담백한 고등어구이 만들기</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-30T12:00:10+09:00" itemprop="datePublished">April 30, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieii-2/">성남지식</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    에어프라이어로 만든 고등어구이로 맛있는 한끼!에어프라이어는 사랑입니다주방가전 중 구입 한 뒤 가장 효율적으로, 자주, 유용하게 사용하는 게 전자렌지다음으로 에어프라이어 인 것 같아요. 오늘은 에어프라이어로 깔끔하게 고등어를 구워 기름 폭탄 없는 깔끔한 한상을 만들어 보려구요. 고등어를 굽는 방법은 여러 가지가 있어요. 석쇠에 굽는 생선구이는 정말 맛있지만 일반 가정에서는 대부분 프라이팬을 이용할 거에요 대신 팬에 구우면 기름이 튀어 위를 덮어야 하고 그럼에도 주변에 튄 기름을 청소하는 번거로움이 있지요. 그게 아니라면 호일을 이용해서 전자렌지를 활용할 수도 있고생선 팬이라고 해서 위아래 뚜껑이 덮.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221526051390">http://seongnamdiary.com/221526051390</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2019/04/002150.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-2149" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002149.html">Product updates | April 29, 2019</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-30T04:03:06+09:00" itemprop="datePublished">April 30, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -2125,42 +309,1096 @@ You have received this mandatory service announcement to update you about import
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    고양시 한강하구 평화이야기 사업이문화체육관광부가 지정한2019 생태테마관광 육성사업 10선에선정되었어요!서울과 맞붙은 대덕생태공원에서 부터행주산성 역사공원 - 행주나루터 - 장항습지까지철책으로 감싸고 있던한강하구를 생태, 역사, 평화의 옷으로갈아 입힌다는 내용이에요!문화체육관광부가 지정한 여행주간(4.27-5.12)에행주산성 역사공원에서는 올해 첫해를 맞은생태테마 육성 사업지답게 다양한 프로그램이 우리를 기다리고 있답니다!!4.27일부터 5.12까지 어떤 프로그램이 있는지 볼까요.이야기가 있는 여행부터 역사 생태체험그리고 한복과 평화자전거 체험까지!NNSC(중립국 감독위원회) 미니 사진전, 고.......
+     
+
+ 
+
+ 
 
 
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221516554244">http://blog.naver.com/letsgoyang/221516554244</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 
+
+
+  
+
+
+
+  
+
+  
+  
+ 
+
+  
+  
+  
+  
+  
+ 
+
+  
+  
+
+
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+ 
+
+   
+      
+      
+      
+        
+         .appleLinksWhite a {color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important;  }
+         @media screen and (min-width: 812px) and (max-width: 812px),
+          screen and (min-width: 736px) and (max-width: 736px),
+          screen and (min-width: 667px) and (max-width: 667px),
+          screen and (min-width: 568px) and (max-width: 568px),
+          screen and (min-width: 414px) and (max-width: 414px),
+          screen and (min-width: 375px) and (max-width: 375px),
+          screen and (min-width: 320px) and (max-width: 320px) {
+            .body {
+              min-width: 100vw !important;
+            }
+          }
+         @media screen and (max-width: 737px) {
+           .outer_wrapper_td {
+             padding-left: 20px;
+             padding-right: 20px;
+           }
+            .new_header_width_class
+           {
+             text-align:left !important;
+           }
+           .inner_foot_link {
+             display: inline-block;
+             width: 100% !important;
+             padding: 12px 0 0 !important;
+            }
+           .column1 {
+             max-width: 100% !important;
+             display: table !important;
+           }
+           .four-column {
+             padding-bottom:22px !important;
+           }
+           .text_icon {
+                width: 20px !important;
+                padding-right: 7px !important;
+            }
+                     #sup_fix{
+    line-height:14px;
+                     }
+         }
+         @media screen and (max-width: 414px) {
+           .mob_left_space{padding-left: 20px !important;}
+           .banner_logo{
+             width:225px !important;
+           }
+           .logo_holder_container{padding-top:15px !important;padding-bottom:15px !important;padding-left:15px !important;}
+           .left-right-spacing, .social_icons_container, .footer_wrapper_td, .four-column, .border_bar {
+             padding-left: 25px !important;
+             padding-right: 25px !important;
+           }
+           .outer_wrapper_td {
+             padding-left: 10px;
+             padding-right: 10px;
+           }
+           #columndiv {
+             display: none !important;
+           }
+           .inner {
+             display: inline-block;
+             width: 100% !important;
+             padding: 12px 0 0 !important;
+            }
+            .inner3 {
+              padding-top:17px !important;
+            }
+           .inner4 {
+              padding-top:16px !important;
+            }
+           
+           .contents .text {
+             min-width: 26px;
+             padding-right: 0px !important;
+           }
+           .updated_head_space
+           {
+             padding-top:20px !important;
+           }
+           .gcp_cta_btn_table td
+           {
+             padding-top:17px !important;
+               padding-bottom:12px !important;
+           }
+           .four-column
+           {
+             padding-bottom:15px !important;
+           }
+           .new_header_width_class
+           {
+             text-align:left !important;
+             padding-left:42px !important;
+             padding-right:20px !important;
+       
+           }
+              .left-right-spacing-header {
+             padding-left: 25px !important;
+      
+           }
+           .key_announcement{
+             padding-left: 2px !important
+           }
+           .word-break{display: block !important; height: 1px !important}
+         }
+      
+       
+  #sup_fix{
+    line-height:14px;
+    
+}
+
+  
+   
+   
+      <img height="1" src="https://www.google.com/appserve/mkt/img/AFnwnKW2zi6bzocadrJ-hHEyG_8f6NON4xM5HsvsMQWD-H7P.gif" width="3">
+      <div>A regular roundup of what’s new across Google Cloud Platform.</div>
+      <table>
+      <tr>
+         <td>
+            <table>
+            
+      <tr>
+         <td>
+ 
+ 
+<table>
+   <tr><td>You can also view this email in your <a href="https://www.google.com/appserve/mkt/vib/AFnwnKUsVvIxCwpsL0zJ5Zqxrqqmgb9kA7mE0jMYwvZE9xO9A4_pPib8BsMW3l6jkr7-Wf1d0C2PGC4Nk4-ya4DYqF85QHWvXUodEDXrf20iQvl2vTKmHXcykbPqbcmrHye_QAePTIBtWv4HORV2hJe_SGbTvz7XAhVcjjpswuYmE8yUEeilnW4H8AhNh4WmnrqtHnLbqlZ-rbOGXAQEqFYy-jrNfoKPsmKcZio">browser</a>.</td></tr>
+            <tr>
+              <td>
+                
+                <div>
+                      <table>
+                              <tr>
+                                  <td>
+                                      <table>
+                                          <tr> 
+                                            <td>
+                                               <img src="http://services.google.com/fh/files/emails/gcp_new_logo_may23_18.png" width="303" alt="Google Cloud Platform" height="auto">
+                                            </td>
+                                          </tr>  
+                                      </table>
+                                  </td>
+                              </tr>
+                      </table>
+               </div>
+                
+               <div>
+                    <table>
+                      <tr>
+                        <td>
+                            <table>  
+                                 <tr> 
+                                    <td>    
+                                      <table>    
+                                        <tr>  
+                                            <td>
+                                            <a href="https://www.google.com/appserve/mkt/p/AFnwnKWKWaw9aPbDdygnFiD6x2ioXFCqzpZZu2h_egNdxk6yxCBlplwjvFqNI9rvZvLpbgnMAKAOSMkhszghZrXKmoCq5fcKDnAsmj77odr5OkB5V9MsbZJO13ygMLTwHRnXxQaEQuqFEm6StdIt20Z6rqxVmIcIXC7REfgZToS2lsJBE2jg4Dx90-zLxI438vd0GRZJTMvXApR83eO7WfrQzkR8LakMAgeX7ajE_AEzrIk69uEp4sKXn0d70aV-PoqIm9kfy7UOlhTaFIF6XzO-9tPDMhn-vDkmiozxnS41ADl8dMSOpZUjnNCpduVmfSrMWfeaWwNLsuRO-TlavnzrsYkjH_mMIMS4zM3Bbq-OP936">Go to your Console</a>
+                                            </td>
+                                          <td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWKWaw9aPbDdygnFiD6x2ioXFCqzpZZu2h_egNdxk6yxCBlplwjvFqNI9rvZvLpbgnMAKAOSMkhszghZrXKmoCq5fcKDnAsmj77odr5OkB5V9MsbZJO13ygMLTwHRnXxQaEQuqFEm6StdIt20Z6rqxVmIcIXC7REfgZToS2lsJBE2jg4Dx90-zLxI438vd0GRZJTMvXApR83eO7WfrQzkR8LakMAgeX7ajE_AEzrIk69uEp4sKXn0d70aV-PoqIm9kfy7UOlhTaFIF6XzO-9tPDMhn-vDkmiozxnS41ADl8dMSOpZUjnNCpduVmfSrMWfeaWwNLsuRO-TlavnzrsYkjH_mMIMS4zM3Bbq-OP936"><img src="http://services.google.com/fh/files/emails/gcp_right_arrow.png" alt="" width="16" /></a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                   </td>
+                                 </tr>
+                               </table>
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+                
+            </td>
+        </tr>
+        </table>
+
+ 
+<table>
+  <tr>
+  <td>
+ <table> 
+ <tr><td>
+<table>
+  <tr>
+    <td>
+    </td>
+  </tr>
+ <tr>
+ <td>
+ <table>
+ <tr>
+
+
+ <td>
+ GCP UPDATES&nbsp;<span>|&nbsp;APRIL 29, 2019</span>
+ </td>
+
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+<table>
+  <tr>
+    
+
+<td>
+
+
+
+</td>
+</tr>
+</table>
+
+ 
+<table>
+  <tr>
+    
+
+<td>
+
+<table>  
+
+<tr><td>
+  
+<table>
+   <tr>
+     <td>ANTHOS</td>
+   </tr>
+</table>
+<table>
+ 
+   <tr>
+      <td>Kubernetes applications in Google Cloud Platform Marketplace: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Kubernetes applications are enterprise-ready containerized solutions with prebuilt deployment templates. This latest launch graduates 48 click-to-deploy commercial Kubernetes applications in GCP Marketplace from beta to GA. <span><br /></span><a href="https://www.google.com/appserve/mkt/p/AFnwnKX16OV7xPgsfUg1Fb1txAkkpxLuigIP6WB469NOgNjxMhOYvIVEQ5CY289mpo-WO2VNa0UapJ6SIaNfv2imp0ldLU196mDvHAERZL62sehnPspMYRgVQ4EMtki_PiSW7y4cYQ582avM-uZfmFmBnFan_GgHVAbnT59cF5bXia0tvHGLgPP_C0GRSRvBFLxSK5VgfdyZ9F7_mR6z6JGny_Nej7url0Qp9HWlsrLhd86B0LSPItydTzvBZhjxbP444uQZw5UPrbHMVKn_Eqstd_t9_AUTgfTqTergcj8vDB0rrIRMAXypDBO9WLUwXE8NToAfvCA9bGBftbXmIIWMvNwmg0mdxnAm0x773RDpyyT9Ej6CS7mdP9BaUNveaC4wWyDWkrGs1ZRvSGTQLTpGjN97ng">Website</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKVV-i4bhqDmUo33QZakkhnvQytiglijyq9X1nwS6oYYNOUTT8IG1oVnEpnwzLJXMpHt2sRoGJpZVYaW8LEVwApYsm9AhlXlD2_if2dgUaUMs5DA4M5TWhvU2EdlpxEW_C5g-ZzOA2Sq6o5XVzzMh5laSmjbdM-HjVdWPYEUbAoyOHzRhn7PpS6VUNdInm5a4pUU4sE-VvC2md3XhdFjLu7B7rcysbDkeY9bI9mBvEXkODS-FaXlkdcxMu0Bvg1Ozik9PEjjBBASKQJ3IcA57hfDOyPaN9iceZ2GD_DSc2B50z2Iau0Qjd3YZ1ZOLOklVivfWn29i-8BbxQLEgMEmuMcLA2Khwcm37IjtjFMktdWi8flsTVbHR1TQPGxoq-tWhkIXtLOoN24tfWJgR-jlVqPjaJpdFYFqXBvOraQIGsXSx7TIQ">Documentation</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>DATABASE</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Bigtable – multi-regional replication: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>You can now set up asynchronous replication between up to four clusters in a single instance – located in any subset of zones worldwide. This removes the same-region restriction for cluster-location selection, giving you the flexibility to make your data available across a region or worldwide. <span><br /></span><a href="https://www.google.com/appserve/mkt/p/AFnwnKVA2DRKnf9crgMwGw2gN5BESivZ5Z6SQ7kehzpO0S8dstrt8lFRekb9J_CSq1QMcbJjD75HxrvKDrGrh5zCNo7vZpXkBsZoFyOrnVX9N8kv2Bnw1GbDcdJoy9WGEYhcG6bZa7LCn0YDtOnm7v1r-k3n-wSLmR6GQA4x8WYhg0ZILfiUrpGQGMcSJGCDLn8pn_8K58MQ_m4MFcE2Qyr3Or0ghsnyVa3amwQieyqE_UfWq1N9Tmsrdrx_ixtq4HPYPbyRYEPiEOKFngRqaUw79U9BVrGtPOcbhqM7iLmaXqlhq25h8fY4Xg5UK9lVbDi7-SEvOP3cIfz0fpvTHQxZ1SD_gDqvgT7Iia2iz4XZ7zVIIm2i_f8tC9-yYYPh-OXGrG7xgJ7fn712DfuDC1A9J_n862YZ6QTozvaGkkcDb6ZBOCtkYrD4">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKUupdte3PMprjDc9h2OKVVWOlvqU3Dq3gocvUzYp9IXJmHzJ9dvLVynTt5vrRiGVvoA1RJ_42fR1AWuH8lva_oyQRpEJko3RRk1Aq8HI5sA7djLlJeKZc-JmUfPDySr_hvhTgdZR9SinbPrUy1zBfZppY4nzgxis2ka_CIsfGzwLshMG8HFLiTSsel-vOmhjcNbPc-D0_0U97D30f-9XDzYka4oBl_hO1xmp5yZGmqVSZr42ab_4HFBuqCBoEVxhxGs6QIgBracFxyNxF-Coskr9JMUGO38ahZiA1jX_1NDLKInktS126MpR2eXM9KGUMJQVrh2B8ouPUjINvsPtV3N3DqtkgIge6OB5wxLlqhSl1n0BacKJZOtHO-hsqnQSvjJjyYyele21yn60WT-sN9VhJncZsAozzZOY1gNFIUKbP6uaJbT9uCDqrQNkXi2I66gGnSLGD_oIvos0jr3jgnbx60hOkJaP6toB4glhbk5_bOJ_xsuY959jA">Blog</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>AI & MACHINE LEARNING</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Document Understanding AI: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This scalable, serverless platform lets you automatically classify, extract, and enrich data within your scanned or digital documents. It turns your documents into structured data, helping to automate document-processing workflows and to unlock hidden knowledge within your organization. <a href="https://www.google.com/appserve/mkt/p/AFnwnKW6BmF5FX9FhGjxC8GK4SAmk5kKezWr4KZ3OfZ0N34qphARYke6c6zfOf3wXoBBVAP6F5QrRjCGdSZn84hySEtdOXhf7p-9Srw5hhkAxXAu7VuZFjBuTyaxEKZH2t4FcpP8ZL6BpGyhtINlb9kZ3KAsyDYIW7I-mdXoD3yYUi84V58l3y82LFarVYGJRScpGOq05cI1ommzKfzt4RK0H7NIprUzHIUwxBTv7239jb0DOCRSZjmgW8bj-YVC7b2GgpkYJXJJZizWKri6NhOkg5sDpK5NOFVLeDhRsf5Tvy8yS3Wkf-zJKccsXPYb-OQbUMOu70V61tfxUuX5lSWOEbIJhV4kEGrhQKnMm7xJS5B7K5190T18W2go7_MQ14VofZlRYu_mP54NX25FU3pVjPGpKxv7Pc_5W3JNN1wLcm-s12B7zQ">Product page</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKWJFl9f18ATNiAjETIr3Pmd_fDrl7cNzHtPophijzNHn4IVLhT5YlElLQDzeQIlqCvhlS9zZh5FSubPV6kADbYclBgbsvkNN4MztMXDtuGfuaJhXFz55w4P9KLrTsbUhFG496x4ormkqTGVmcPtDSQy5y8eWU1VxSCkeVMHlCtbL4jpQW1Spo0eArm7VDWy1GAcYho5OZQuurMjitnoAH4JBMKwPwvnqhclJ422xRMqLwd7I0QlE6JT2rwsvUmlRIRBfRzDaZW1TiSQIulrdqonesDX04o42w_Bv0R_Io90JOeC3sqrfDfGGWKlGWhGc4NnJ707SwyKKlW2GVOmSv1vbHiznhEInVJLzMkojW0ljy-7_BiO2g4y0Hu8xsQOzfmR5X-OlEF-hIRRnw2MTNtAYovXfh2AzaZM2guh3QvJd9GEcJ8Gy5pSWefInOaa7iUW70M1tH85ydQYhczvrQvi4DYTHIY0zk8GYgnr2pLWXd9biAGWJXD5QM7WPfb40VQalGWdINhP_7AlHea_bMqWi4fn-1moJS3WgXiUSrRtxHYw0kbz4LiOTvaOYa3Eyx7oH0rkduouv0CCF-cygDdthnk2wuIO_Ucv6u_mAet81v0">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Contact Center AI: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>We combined the best of Google AI with popular contact-center software to improve your experience and operational efficiency. We partnered with leading telephony providers and systems integrators, so you can easily enable Contact Center AI with your existing solutions. <a href="https://www.google.com/appserve/mkt/p/AFnwnKW3RdAvkMTvQlOgWoC3LYn41GEBOEw2NtSNw_KXpboLRnzgvkytFd2BbAD__EEX6IjYEt-FpuFKovtCv7Yw7rVOk9Hg9gDuZlIA_Iv2R0c9TlB8DJvLRIGrIPXMX52YQwwx1c8bwI1rk8_CpfnSxKrUM10oYff1J4rUm9N8R7F8rrQrr-Sks1MKOFeL6JIRvL99vFURiuUTlF45yGdM_iM4zZ3bymhcSgsoHOUSJd7Qb9QkDGSGBqNrSBPr9jScj_EVLKy4iIXliDBuU87q2_14X6XmqatMFBF0RAQtOvtOQFBxE8ZtAwt-WBVQBSjblPCXdubKfpfc1FW96DuQ-F-Gl2kmz1d7nXC3yy6pTkR_evQhGz3nPFAWRd6WGWQnAvG8kA7y7BNB4GYFl2Rz54HsfeOC">Product page</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKWJFl9f18ATNiAjETIr3Pmd_fDrl7cNzHtPophijzNHn4IVLhT5YlElLQDzeQIlqCvhlS9zZh5FSubPV6kADbYclBgbsvkNN4MztMXDtuGfuaJhXFz55w4P9KLrTsbUhFG496x4ormkqTGVmcPtDSQy5y8eWU1VxSCkeVMHlCtbL4jpQW1Spo0eArm7VDWy1GAcYho5OZQuurMjitnoAH4JBMKwPwvnqhclJ422xRMqLwd7I0QlE6JT2rwsvUmlRIRBfRzDaZW1TiSQIulrdqonesDX04o42w_Bv0R_Io90JOeC3sqrfDfGGWKlGWhGc4NnJ707SwyKKlW2GVOmSv1vbHiznhEInVJLzMkojW0ljy-7_BiO2g4y0Hu8xsQOzfmR5X-OlEF-hIRRnw2MTNtAYovXfh2AzaZM2guh3QvJd9GEcJ8Gy5pSWefInOaa7iUW70M1tH85ydQYhczvrQvi4DYTHIY0zk8GYgnr2pLWXd9biAGWJXD5QM7WPfb40VQalGWdINhP_7AlHea_bMqWi4fn-1moJS3WgXiUSrRtxHYw0kbz4LiOTvaOYa3Eyx7oH0rkduouv0CCF-cygDdthnk2wuIO_Ucv6u_mAet81v0">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>AI Hub: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>AI Hub complements the new AI Platform by offering you managed machine learning APIs, TensorFlow modules, notebooks, end-to-end ML pipelines, and more. Share ML assets within your organization to scale the impact of your ML resources and foster internal reuse and collaboration. <br /><a href="https://www.google.com/appserve/mkt/p/AFnwnKWVa0wzsfwlfSvO2PyEMM_8TgTji6PW_zeLPnfZKqOWcYQalKhaWEUdakGFpIqxzK7f18ZI1C5NXrUBs1NfwH4hDoEBCLZwF1ApOtv83tcWcJmMfrXH6UvFOwUtjqN_wlS5GH8LORYnlXOGWIjBjeVbIGdnjmLoLipirx4-NxZPIK1A6YzLEnZsI6ALLuN13KpVXKl-_nskkwDdQnIAtiMzMHsR6WmxgoVehkHGDF56mgYIkPERxNdC2DkJaoHhusprlMf9lZSdlWj4V5k1gnze1y2EQByuZOGkMFUEeD3-k3umUaONmzgTRlcCK5_KUlEyhetMeBUr5KUwUMfcGI12hCBaf19B9hxMfknODe6jt32Eqxpy53Q">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKUgP9YZrQr_c11o1kqNlOR44xDWhkKKd_YjCJe-eE3RTZZjHnI1onnM_6JGZ90n0XP5iO1y21dBIKLZ8VuId0-YAVPx3FMKG53Ir3ql_HXe4y_R5n57DVUxTRR33LwolRuG4aik46uQ51RMbQb3EjOX6wKGBpkJO5HBIUnQ36DTyyK57lHXQadxTrIaJ-Hu9zQR-BZxg_44nSF1o9QkW-IowRhlU9R8k8NDeOBtwCWrDx7hKNBXSgYgVsR1z-Fs05wertKI62mqUkQPlm-DKSkwEBdCBfEQgZvzu9cvXF4VFbWMWvrQsYgiZrhU-EE7Fle1R2lrH7JdW_jJT7tokQuHnvmJahwLuNK3b2TD2Uuu1LAZOgEVpfej7ZzoBOutqtr_GQYn599W4hXTeY6zZgddqWdcSKimjfUX2VdB8E_UP2dABE3iKOIvOGYPa283lHJ8ENF9xWdS3vaIIN0a-1ZuosJg9AKfORzDljafEY8VcpeK52rNfWOSnr4WNdqc4kButkE46k3_R4low38j_GAU4daBWp366HtXf9nK8K1IL6q8Kam3q8Gcas36qTFHA_qZ-4TzO9Asgfw883Z0OpauDAapFwLkbW5iuho9NMR_LaphjudKQ0uDCHdqEEEhuqWobZ1zC-0n">Blog</a> | <a href="http://www.google.com/appserve/mkt/p/AFnwnKXZm8rK4SoPj8Lfa72jQt5lyJQl2twIx3ADfi7N8KKN1gfNrKhI_r1w89qrOCGf5fypeLVzBRiWCruDh3iaz4_sJ-BAQ9I">Solution</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>AI Platform dashboard: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This release offers a unified landing page for all AI Platform products, providing a managed notebook service and data labeling tools. It also helps you run Kubeflow Pipelines on GCP and move on-premises application code to GCP with minimal changes. <span><br /></span><a href="https://www.google.com/appserve/mkt/p/AFnwnKX_jKDBiy0u6Si2ysYoS09cLus-MB9TXdo1Lt_YYlYOEK_uxjGptHcCB-do10llEuMe-BIN0ENYjzuZu5kp-VnWbPg0UDDaSP2RyTaOk09T1mBo52YtBA-FLTjUb8lNwa9fj1fc_mK7x1ah2XpFh9ZqI6DLMOS0v37E69IQasllHE2sAqTn1ElmYP3eXscOHROU3R5qc3i4iQuzsl294bYPYvV0vfuouI5wgM9MUxOyGr5IugAIRsQgWZGNWVjXRtc-2CmF2Qm8pNDZQiX5Rtm-B0RBymSdMwZx7nro7bPZzFYwyHBe9yqrsCtc0QTdlF08Q4qh7K05_uHSFjPb9LHunpcMidEmmrPJNEE55q9OfW749b-nFnM">Product page</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKUgP9YZrQr_c11o1kqNlOR44xDWhkKKd_YjCJe-eE3RTZZjHnI1onnM_6JGZ90n0XP5iO1y21dBIKLZ8VuId0-YAVPx3FMKG53Ir3ql_HXe4y_R5n57DVUxTRR33LwolRuG4aik46uQ51RMbQb3EjOX6wKGBpkJO5HBIUnQ36DTyyK57lHXQadxTrIaJ-Hu9zQR-BZxg_44nSF1o9QkW-IowRhlU9R8k8NDeOBtwCWrDx7hKNBXSgYgVsR1z-Fs05wertKI62mqUkQPlm-DKSkwEBdCBfEQgZvzu9cvXF4VFbWMWvrQsYgiZrhU-EE7Fle1R2lrH7JdW_jJT7tokQuHnvmJahwLuNK3b2TD2Uuu1LAZOgEVpfej7ZzoBOutqtr_GQYn599W4hXTeY6zZgddqWdcSKimjfUX2VdB8E_UP2dABE3iKOIvOGYPa283lHJ8ENF9xWdS3vaIIN0a-1ZuosJg9AKfORzDljafEY8VcpeK52rNfWOSnr4WNdqc4kButkE46k3_R4low38j_GAU4daBWp366HtXf9nK8K1IL6q8Kam3q8Gcas36qTFHA_qZ-4TzO9Asgfw883Z0OpauDAapFwLkbW5iuho9NMR_LaphjudKQ0uDCHdqEEEhuqWobZ1zC-0n">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>AutoML Video Intelligence: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Create custom models that automatically classify video content with labels that you define. Now you can upload your own video footage and custom tags in order to train models that are specific to your business needs, such as for tagging and retrieving video with custom attributes. <a href="https://www.google.com/appserve/mkt/p/AFnwnKVH554eKMiGCTEn_hSyU321sWhfkJv1ZJopYVUwgAkhsSALvDm2EMuJyoZzcsDjhvwlBnsfpjL60pab0iTWGAn-jr6rpo6IrKpuKBw7O58iZfAWobO6PPLOdE7xVBrTiagrG6KjHq8Ef0BAeaThJ50XtGk14dwWJbh570eoq7-rDHbOrjrV542sP6-xrqW5l8Ue4fdkk5uoNHwf0enWSNEZm1ss-3a4ey182HxS4-5d6jt92I0hmJtZGRDP43MaiuQ_k19x00SFVuymu4Rh9POlEda7iSSusGQ_Jg2JUVXJ0Tulej-RqNRdstPZFf9sokkOmFOAnv8hwW5NYVIiyxNoRhQWjOuM4TgSbeT7YcoUsPRQYA5moXPCnWYvb4WeV4tL4HrLQTPQxVikeXKYcdB9p9EWH2Sftkq0rtdoyg">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKUgP9YZrQr_c11o1kqNlOR44xDWhkKKd_YjCJe-eE3RTZZjHnI1onnM_6JGZ90n0XP5iO1y21dBIKLZ8VuId0-YAVPx3FMKG53Ir3ql_HXe4y_R5n57DVUxTRR33LwolRuG4aik46uQ51RMbQb3EjOX6wKGBpkJO5HBIUnQ36DTyyK57lHXQadxTrIaJ-Hu9zQR-BZxg_44nSF1o9QkW-IowRhlU9R8k8NDeOBtwCWrDx7hKNBXSgYgVsR1z-Fs05wertKI62mqUkQPlm-DKSkwEBdCBfEQgZvzu9cvXF4VFbWMWvrQsYgiZrhU-EE7Fle1R2lrH7JdW_jJT7tokQuHnvmJahwLuNK3b2TD2Uuu1LAZOgEVpfej7ZzoBOutqtr_GQYn599W4hXTeY6zZgddqWdcSKimjfUX2VdB8E_UP2dABE3iKOIvOGYPa283lHJ8ENF9xWdS3vaIIN0a-1ZuosJg9AKfORzDljafEY8VcpeK52rNfWOSnr4WNdqc4kButkE46k3_R4low38j_GAU4daBWp366HtXf9nK8K1IL6q8Kam3q8Gcas36qTFHA_qZ-4TzO9Asgfw883Z0OpauDAapFwLkbW5iuho9NMR_LaphjudKQ0uDCHdqEEEhuqWobZ1zC-0n">Blog</a>
+  </td>
+   </tr>
+</table>
+
+  
+<table>
+   <tr>
+     <td>DATA ANALYTICS</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Dataflow – Flexible Resource Scheduling: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>FlexRS reduces batch-processing costs by using advanced scheduling techniques, the Cloud Dataflow Shuffle service, and a combination of preemptible and regular VM instances. <a href="https://www.google.com/appserve/mkt/p/AFnwnKVZDeHqvNsHLfS5qbLxKG1Cei7mR6U5SJxKazCcuIGBrgGbzTRIHyTtMbJULytSpWODioL-SLB7VWTk-IgDOUuOelTYcBViB6CRNsNtb_DUegPBlR4Qigps2cKMhy09gO6vertzxp4fD115zyrwP5alHC5O7qguoL0aZojxaJEESbH793sqfRzzii7rao75CkG6rRYdXpvDCzX4avJjzUJHMPRpyb88Rr4upupb7_ekzKMje6TfwbFJJCNfrfa8j4ZBj80RS4Ww3sgwNbHqDHGOn1uwx8EIh-n-Gz6TQpw421VSQuiBPQ22lRDJYlblwf5iUNBK5y_MTOlJJ7d-Uffb9IMrKO9q3Q2bYIKrKRqJ7lkd8OSglRCn6QlqQxX8Q6X6E3iBlhlSTX1HNy6V2SKEA7ZXekA-ZA">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKXXXESWC_aS-Lp0_aQ7x24NM1mzsoympAitIYeiMUhxaLb4G9VDIKAnpIaC2DenUEk9MX8pzkhtURA16Ss_CuiKmKJO8NnbdNssGzXvWgbg9D-dl52sNLyTvr27DXeB8t9EWrdNXH6JiFB-DpGdoHXqELcAw5H2yRn_7cDygNDq6D8K0l5PrXS2QE_2i6W_viR2ik7BaLD48ZocKeIG4H0jX_eDcsaFoqF9wcjcrvO36al312lo3-a3ymcxAX3ZRii7-IfQdf1_9tWQ26q9JdpqY6jgROEw_WzJfnYul8IMQPnHa_zQA_RE4s9-dKn_lfGLTIDtsUi1Elpr8hO_r1HpdnK5dOZUhEA1Gyn64ryI2q2Rkj09_78SzPUdJrIvHh0Pp7jzjG-43P_6JVTVWnBwN2dhpTDzQ0oBCCn2Atl0l5vRq8ykV7U_hfwgFp95R6ppfxqMikvtGwfZJdOS5v2_Mt341eDrmiJWVJKisX-EJ0i-GAec-gZa_Z957eQnIoLPlKzDlpARz3GhvqQdEUocR_7bnoKL43KYZS3kXGEczRQnKnv0gn2ktwJrTCBrzaCwKSL5DZGvzxxPe-enawYFjepms-4">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Dataflow Shuffle – new regions: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This feature, available for batch pipelines only, saves resources by moving the shuffle operation out of the worker VM instances and into the Cloud Dataflow service back end. It’s now generally available in the asia-northeast1 (Tokyo) and europe-west4 (Netherlands) regions. <a href="https://www.google.com/appserve/mkt/p/AFnwnKW0kHXRQzHbL2QhBkfEtauDoMfMxzQsims5GKHBKRQhCX-bmrhZ1hl_M8-rRxkHzNSOjGR7hfaCOELT4RdaYJpn8F8sqSOubo3an9doAKjwX0Xk1hv9IA5MTjRtusDC3-VMxKxrh1l5x91H4qXbYQldUHVUryNcOY13-X30xWd-IYDLDdW_rd_7OKzg-SIMM5tpEioH-uBRZOIaHaWJ2lQM5Vly9o2sNG2lsq0QX8lgLlt1LdiYm0Pt2FmBB5VREchuPbW9QynZP3u1ik__tc5R15rrdwO2QOFQtfv5TYhk1yz6U8heD_6_uUqigUKEX0oJ1MAnfrKS9OTqf7e5quRDZqJJDCpICS9ELu2mffayqbEnRnDmguQYXf7UCe3FrkW52cAydeto8zI-Grmr3qE951yvrOonHXnMB1f5RAb5mK6YNzcaNshnTAD-Y7Tv80xjY3ASO9A0JL0sNw">Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>BigQuery Geographic Information Systems: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>BigQuery GIS allows you to analyze and visualize geospatial data in BigQuery by using geography data types and standard SQL geography functions. <a href="https://www.google.com/appserve/mkt/p/AFnwnKUnkAFZJcRigd9GCpVQzUKHyXIqfAyrXBwt3ao2HVu_svTYpDne_T2vERUexLrz5a5AE4q1BGwtentfWtQkB6cFOVFSFB7LxUIAtyQbKltnmkWYM9xQw1n9lep4afbVn2zRaIWZ6TKcH7h9PA4IWwoHD7etPrQKSMOXADIW8hLD38s9r1wVQ70aFpu6v7IvXYFyyLpY6zV0T-Fedf2yh_wJ5wBrxtpu8kZM9PshZUEZ9cARanlF3LjrEPMihfS7N7hMTxfbFjmu023VZSL-qkFi2WNabWZwXMYb1LCfCbOpSgnbuxhPKBh081jB9iZo_omeKgnnxViPdyNo-1VqkgaT0OhPHU3L91ukSeEr74GEgKHDsoRRFrZlemNJbF-hYT7GSOOrbtRB6XKlIWYHc8Y">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKXXXESWC_aS-Lp0_aQ7x24NM1mzsoympAitIYeiMUhxaLb4G9VDIKAnpIaC2DenUEk9MX8pzkhtURA16Ss_CuiKmKJO8NnbdNssGzXvWgbg9D-dl52sNLyTvr27DXeB8t9EWrdNXH6JiFB-DpGdoHXqELcAw5H2yRn_7cDygNDq6D8K0l5PrXS2QE_2i6W_viR2ik7BaLD48ZocKeIG4H0jX_eDcsaFoqF9wcjcrvO36al312lo3-a3ymcxAX3ZRii7-IfQdf1_9tWQ26q9JdpqY6jgROEw_WzJfnYul8IMQPnHa_zQA_RE4s9-dKn_lfGLTIDtsUi1Elpr8hO_r1HpdnK5dOZUhEA1Gyn64ryI2q2Rkj09_78SzPUdJrIvHh0Pp7jzjG-43P_6JVTVWnBwN2dhpTDzQ0oBCCn2Atl0l5vRq8ykV7U_hfwgFp95R6ppfxqMikvtGwfZJdOS5v2_Mt341eDrmiJWVJKisX-EJ0i-GAec-gZa_Z957eQnIoLPlKzDlpARz3GhvqQdEUocR_7bnoKL43KYZS3kXGEczRQnKnv0gn2ktwJrTCBrzaCwKSL5DZGvzxxPe-enawYFjepms-4">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>BigQuery BI Engine: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>With this fully managed in-memory analysis service, you can analyze complex datasets interactively with sub-second query response times and high concurrency through Google Data Studio. In the coming months, BigQuery BI Engine will integrate with connected spreadsheets in Sheets and with partner business intelligence tools. <span><br /></span><a href="https://www.google.com/appserve/mkt/p/AFnwnKWM0aP-LVwHxwcCTvWRDD96PTB4VMi3bZsKrE_xYD4lb0k1-jHudF_0o2nR90rMajxitvnDfurjeab0yhXIHRPY0VCLSZJZ0H2DKAGtb8SbUzBR4B-GKqyMdLM0w3GKR_8-yx0jWi3zXhS82Wye4aZ9Fdesx7pu_R9zmr_hgtuT03JbbHFzqFXY-DR_0ICozLtrZjQszOY0-RnsgssL_b_kDij4Eu732pqS4tDtRrXhNaLC8XRaYd468D0kJ97o7ZHtYqa4O7sMCNWXG6ne9VBFSX595YqlQb42mkPW_vqT2vnSJmNJ5VoXvB7I6zoRXEX7jP9x53jxAX5_TNCGPeKNsyQ8Z3IgKSLz4t9XkyolbTLKwH_FxKKKrRiSA0E">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKXXXESWC_aS-Lp0_aQ7x24NM1mzsoympAitIYeiMUhxaLb4G9VDIKAnpIaC2DenUEk9MX8pzkhtURA16Ss_CuiKmKJO8NnbdNssGzXvWgbg9D-dl52sNLyTvr27DXeB8t9EWrdNXH6JiFB-DpGdoHXqELcAw5H2yRn_7cDygNDq6D8K0l5PrXS2QE_2i6W_viR2ik7BaLD48ZocKeIG4H0jX_eDcsaFoqF9wcjcrvO36al312lo3-a3ymcxAX3ZRii7-IfQdf1_9tWQ26q9JdpqY6jgROEw_WzJfnYul8IMQPnHa_zQA_RE4s9-dKn_lfGLTIDtsUi1Elpr8hO_r1HpdnK5dOZUhEA1Gyn64ryI2q2Rkj09_78SzPUdJrIvHh0Pp7jzjG-43P_6JVTVWnBwN2dhpTDzQ0oBCCn2Atl0l5vRq8ykV7U_hfwgFp95R6ppfxqMikvtGwfZJdOS5v2_Mt341eDrmiJWVJKisX-EJ0i-GAec-gZa_Z957eQnIoLPlKzDlpARz3GhvqQdEUocR_7bnoKL43KYZS3kXGEczRQnKnv0gn2ktwJrTCBrzaCwKSL5DZGvzxxPe-enawYFjepms-4">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Data Fusion: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This fully managed data-integration service for enterprises lets you easily build reliable, scalable data-integration solutions to cleanse, prepare, blend, transfer, and transform data from disparate sources – without having to wrestle with infrastructure. <span><br /></span><a href="https://www.google.com/appserve/mkt/p/AFnwnKWMnJd72mnWefaIKjXjKYRX-9CZ0uCwSl5P50AZ_lcKBuCab7zh3mIfDZSra5lt_uooN7pey_hJWHFmuVDxqb2ZNV1u6eP1WzTOhQOfUxOquKXvmiF-3AP-FY8b6EjrZa16i1SW4GjfEJbfx1B0PipR5zgSxE2oLIhbVKNzyhaPbfijVG6kAHUyLb78pl0lzyY7GHiAyqVOzh8i7-qsgvPXHYVr2Th6FhNzCJ1vk90pQsG40e4QdhvUZvx4UBpRiFpuR4XNdbOz7RpxYRMAIxWN3W0Ed-iaDLxf5bTqujhYiQ41HmSbXzxum0i-CTTnhwEtFva3wuQ1sqiGilqyt_HKqCeUexE1olcnJxezFbYtchx28FTd30ZQN52YglV5qD18">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKXXXESWC_aS-Lp0_aQ7x24NM1mzsoympAitIYeiMUhxaLb4G9VDIKAnpIaC2DenUEk9MX8pzkhtURA16Ss_CuiKmKJO8NnbdNssGzXvWgbg9D-dl52sNLyTvr27DXeB8t9EWrdNXH6JiFB-DpGdoHXqELcAw5H2yRn_7cDygNDq6D8K0l5PrXS2QE_2i6W_viR2ik7BaLD48ZocKeIG4H0jX_eDcsaFoqF9wcjcrvO36al312lo3-a3ymcxAX3ZRii7-IfQdf1_9tWQ26q9JdpqY6jgROEw_WzJfnYul8IMQPnHa_zQA_RE4s9-dKn_lfGLTIDtsUi1Elpr8hO_r1HpdnK5dOZUhEA1Gyn64ryI2q2Rkj09_78SzPUdJrIvHh0Pp7jzjG-43P_6JVTVWnBwN2dhpTDzQ0oBCCn2Atl0l5vRq8ykV7U_hfwgFp95R6ppfxqMikvtGwfZJdOS5v2_Mt341eDrmiJWVJKisX-EJ0i-GAec-gZa_Z957eQnIoLPlKzDlpARz3GhvqQdEUocR_7bnoKL43KYZS3kXGEczRQnKnv0gn2ktwJrTCBrzaCwKSL5DZGvzxxPe-enawYFjepms-4">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>BigQuery flat-rate pricing: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>We now offer a flat-rate pricing model for customers who prefer paying a fixed monthly cost for queries rather than a variable on-demand price. Enroll and purchase dedicated query-processing capacity measured in BigQuery slots. The minimum size is now 500 slots at $10,000 per month. <a href="https://www.google.com/appserve/mkt/p/AFnwnKWD2zJA7wkm1YyrN_NZYHJN2OdSPwiWrbjuMkyQrl1xyNTkog3f2GPYnjr3LTKuswttuxbdTVftWwylEzz0Qcx3hjDlFVtC_6sUpor2ii69Bxu5NF_y_JqHuMW_dpYxIzJ8jZTdWbfI4F9DxGJ8vXyARdE76GpleXZu8MF9M7KEzz3bxNsEHXHqlq_ZBC6tESzVI0o224IRhlCqKgoEeljX1TFDHuJ3LHfTkuKzX014CW96uOY1WZi75AYB4I-2sFUnNQJchA5dhQ67JrNqg_e22i0iLpF7StBuiRlZ7SIv281u0Zd7TO7GoAj2aCRrEtN9OhZwBT5r0enB-hFwb8cfhYujeJObtmez5IAOnMXWLrGqXbOcgYATpiVW4cZ1qOIo6b4pJqggA1me6bCWf7XWXDKksXTRlDI2_ocXzY0SC4k3nrRs">Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>NETWORKING</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Interconnect 100G: beta </td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Cloud Interconnect provides low-latency, highly available connections that enable you to reliably transfer data between your on-premises and VPC networks. With this launch, you can now request 100G connections, in addition to 10G. <a href="https://www.google.com/appserve/mkt/p/AFnwnKU-mdM7NNv_trVI2CQ-eVVwuCQjWL816SLWwbpJTMVWtyaZTmrskMWgBLV2QSm7xJ_0x9kmHroHknEq3EtOruVfkcwMQhVfgJPTc2Y0FXOjQJlcTiEDcTCeXQuhBZfhEzmQok7zNcOovx--SJRZa0Mx3sVRUbRv5XTxuXfNqaUa2HPo7GpKXkxWlgMlzuhMk5aIUW8uztgy0Cr0f9-5liszgOBg4C-xrgvbDyEo6V9HOqvDtWPX8gk7IDkEcJPL1v48yczm0iY7Y0W64jbb5abYoG7cH8aCnIHMYIkX_rJGwiO4d47thn6AMIqVMVJ4Vvzqj2W0BDLcpdR9Z5yakAVyovaVh7ZNADG0zsLTW9b1t4DyFpIINVC42ze-E2MljLbWVWjGAMpV2GqeLo1yvd9NQxV6lwOlY7PyVi0fydUDX2k7SyKE7eU">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKVJpJWtmNFm3NFX9utI4e8bksuUzDcrIJ2wpC04iREuXhp67njRtFEfJG9_46PaTHLmtbkAeeSKjZHiv2R8ZwZL2Q31p79x__0uqHqWrPgCZP8noeYsKwaGfnn-VHTy5BD9Zv2YE-R_bzauvBdq3w0vhkN4lp_QBgQC_Ti91_gvrtq9sYzqPQkatseutNC8Nh96-NHJF7_XBRSg-B-npL9l9QpzxT6VlWBRrGQ-nHTsnSOzRC7PKK9ZNSGIMo_hy2C6bsxRjvGDmFXsCx3g_j2YyBtTcwcfiKUG2FhHhpTnj5osnmxvCd5ZcsXtMpCgJLVwMl8HLVYVpTQlm1ZIQ6MEGbmcnPVPyZR6pOgortsYUbngcq5XOKcpt-czMkdLmBS7vsUeboOnskqrhVdeO9cYll4eBKEM4ay5UBneCnUC5FvkzJ8-pxKiIjKvqpqVvT8qJkkXcGepNqQn0EacT-FEjHEqvvNQTMrVOO-o_Enwnh73cUi8HGKIrh8c08A1LnOpnPX82_KgS931CsHUXjW2x1sgfyv91fZSg1HQhNwLBIYwgmw-v-IPVrKGzqkVyfTuvyi7ntqslejQfrQwqqZPSZWatW5woOFgJzm2lJ7ezTh_2JGJdVeAXmYbVfqA3g">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Traffic Director: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This fully managed traffic control plane for open service mesh lets you easily deploy global load balancing across clusters and VM instances in multiple regions, offload health checking from service proxies, and configure sophisticated traffic control policies. <a href="https://www.google.com/appserve/mkt/p/AFnwnKVQ6it2rlpV1FZ1wxaorhQT2CLGyf_oS1jtskjPk-mwH3RGf55RzJRMR0KvOjJF4jlKn-pGXTRGf_70OmvR3FQsZ5kIWVwBXliPVqzokI2YM5KFRwCvHLM4Gx_rzrhZ94arnqazwCuG_TTQjLE5oL_MxJTls8hmnvrtZa6MLvzSztS9FwUZS1UfbVV9nonjEyxpLyc8Dl_MhQSbwMwoN2Zg64yBD_JA8BquE2RZ4hfibnfWaBcB1DpQQHzSywaYHzqhCS4gHD_KXKBDiTtyhYWKOmjRwgE8RgFvy2ZUD5k8S1HXFbHnGfXNQMO4ikvLcdB4k3jNzt9l6AYy5X9mihUDSZKK9agHa1m2d2mNhHDw3OiepkTej5I3J_8ALCGWQ-JjH9cNp47OB9j5HieT">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKXDs3VgqdI8RSGMV2gUEsp5II6q17dl58Xdebx9DUz-e5gaqKkG3CsjR_xg3QnIHHdvdBnPKg7uEqPGNCfwKI-wSh0Qtdg5ciPIX-NiA_VKP6nIGtc1eX56wpeZQKZ3L2QtlcoTh8CHgQUcAwfyrpuW_gmMSv01MkIPu5Y2_4Zj3LHcQp81wvYnnrJpXl0CPg-Lp6bSt1Bz_vvve2Ns4L5z0YLVxLiNS-pXbkr43n6gIO6TIE5rGZKU4mgmxrN8RRBGikyaopflNG2o7_AzdZJNARl1qDYB8DngYtfA0jNx-QNYPhzwcwW0fS6m27dySfbZBgRNbrMrmmPFI1iPFEwGDb2_x0ALa8atnXpVkDOCDARL-Y4PAQvhrm5GLnn6leBtr-KZvRbjaNZ7qU2VZvVHybPw0Zrm4PeUI9mpoyChfGv21T6VHn9uoihF8PZtFHmbY4p-xsF4N7boxJ7-b2RMuEXrft7OAWB4LRiZUZSy2gDANKn9kE1YSa3ouQI0aafU0CYO5RsnoSDxWlFcr6nL5UYQLCeqv_FtyKu2Y5zVF8c2jykh6OfJK5g8Z489eUJxcC0">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Load Balancing – new L4 Internal TCP/UDP Load Balancing features: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>New features include DNS-based Service Discovery (beta), L4 ILB All-ports (GA), and L4 ILB Failover Groups (beta). <span><br /></span><a href="https://www.google.com/appserve/mkt/p/AFnwnKVJpJWtmNFm3NFX9utI4e8bksuUzDcrIJ2wpC04iREuXhp67njRtFEfJG9_46PaTHLmtbkAeeSKjZHiv2R8ZwZL2Q31p79x__0uqHqWrPgCZP8noeYsKwaGfnn-VHTy5BD9Zv2YE-R_bzauvBdq3w0vhkN4lp_QBgQC_Ti91_gvrtq9sYzqPQkatseutNC8Nh96-NHJF7_XBRSg-B-npL9l9QpzxT6VlWBRrGQ-nHTsnSOzRC7PKK9ZNSGIMo_hy2C6bsxRjvGDmFXsCx3g_j2YyBtTcwcfiKUG2FhHhpTnj5osnmxvCd5ZcsXtMpCgJLVwMl8HLVYVpTQlm1ZIQ6MEGbmcnPVPyZR6pOgortsYUbngcq5XOKcpt-czMkdLmBS7vsUeboOnskqrhVdeO9cYll4eBKEM4ay5UBneCnUC5FvkzJ8-pxKiIjKvqpqVvT8qJkkXcGepNqQn0EacT-FEjHEqvvNQTMrVOO-o_Enwnh73cUi8HGKIrh8c08A1LnOpnPX82_KgS931CsHUXjW2x1sgfyv91fZSg1HQhNwLBIYwgmw-v-IPVrKGzqkVyfTuvyi7ntqslejQfrQwqqZPSZWatW5woOFgJzm2lJ7ezTh_2JGJdVeAXmYbVfqA3g">Blog</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKXvhTcfW26r4ALBaUaT9LWpHPrOl97LoaszJSdrHUjokS8cXUGX_kp1sSKIxDnNNzAaBC6gguesNuE1LfFWkBHEtJcUhZ6NHq6eOhiAd-heqgEGVyGcdNZxiN0cDJlBgbN-fbEGjkgBShhOavoQ5a5GQdPtXHGhEJy1SpBVc5kdPRpbdq6Znb90SerkcyfOPWoWwotS-GCgPs_MPTGpab6lbP01hMUH6mjvTi6NU0bNi05sd1WcP60CS_YKWA436DVwXrZvMpsjGfNfcbbtpoP-tX9KufuKsIGObuGwdyYehKUlpXdcsrWSd7MY2G5zk5Gdx1SRsId9fswmq5TJp8zHB_a1HSZkBsO7OsoqYvFTzPBG26SaM4RNtIPRQwC_nZqSgk5ILlAiD3hd5mHSwk1P-GvX2Uyw7rLb16w">Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>MIGRATION</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>BigQuery Data Transfer Service: beta and alpha </td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Simplify migration to Google Cloud and significantly reduce migration time with BigQuery Data Transfer Service, which automates data and schema migration to BigQuery from Teradata, as well as data loading from Amazon S3, both of which are now in beta. Automated data migration from Amazon Redshift is now in alpha.  <a href="https://www.google.com/appserve/mkt/p/AFnwnKVJa2VADqTgFFf9ko_lCVBY7Lm5Z8cPtpw0g_tjdvNfGoNK5JUax6-sdQTWysAumtn7A5Dh8oS6n8tpQ4etamQDS3G2t9oTxOunuTF9xzMmiaBh75Ba2TuhtdzkDMz7UkT_OaRCGKdU0UpwGQhLhy7dTy-P2QQZclIUF0TWOvjxezweptvXuqwXfWVdaQIBoCTWIleMUEK8Js2QZ8x40fQ_KT2tkx_tnJsxMBYwoc4A0mUq3Q0EV1JGeqmz75o-PMwBFph7nUMyZL9aG2rwJOA9xQSYtyOlQHM50FpsojLmWyNUlDqQF9Kh-jY77UbSb664n4okE03Ec2U4BjJ6ufgt0Q17CaluatSdFkhuYcYrKfhtZtdVC3AQ0_NcUJ28zZsMAD59LQ">Product page</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>SECURITY</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Identity-Aware Proxy – context-aware access: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Get help protecting VM instances – and now both cloud-based and on-premises web apps – with context-aware access, which allows you to enforce access to apps and infrastructure based on a user’s identity and the context of their request. Adopt an application-level access-control model instead of relying on network-level VPNs. <a href="https://www.google.com/appserve/mkt/p/AFnwnKVc5ZKqM5TY4XNAZy-fCkEWDXLuCoCo4burAPpuyz6kkqLBHycoaLGkBcINyS8BUW3r2hhqIL9rqUG00GE1FWUZvzMYUTwxwyeX7FINgzp3y8wr1TZ_RBxNSTlASdWF3_3J6VuKTHi0_dOJv86CH2eyjAB95keYm02PQh1o97WX27gPUzvLw2PZNHPsrtCEBpKfJeplXTRowRORDieh4x51xaoyi_yRcYkvb4SaeffjhGY-R2FOu7ol8UwmSP-wxBwkJjF-UwJRzyuyzsFy8jMTGcgaihUK265czyRHOFhQ4QFIzX7AUu1ULCzMn6x55SZKdfWKio1Timzbk7QZZzaq2GNDao6TAipw_WmwEceT0Fk">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKVH1A7vomDkl0mHeh0-wR1n4B7tvrvux2yDNWDszDWv0Xnr3ldFhxHXyUwGu0kx7a3FTwniVIgdL4NnR3HpwRdCccfFsTqimoijEyq2zByit3tXSx7m5cP7J30i_3LsOj4tNvKLp-wcRLBLZu2zmoV3wE-IAbiejgrA1XuWa5hi_J3awf9BsteS3wCxf6Yc3IupB1O4mO-w24LGa1RZ7WI-8DeDLwkQXvS5u8rKGvp6FSmx-Am6YYJQ2cx0kYvzUK4Js6sYrsGAHCbMeLYxVRC3bGoqR96lP-pd9Xd78VyhULj2YkHFetPpzAlHAMksMhcFTQnmgyTkKeM6y73Rw_3dtALw6WWxb5DtvT3OjHcdMv7f8Vzwi8MQgL60g-hia1zY70yIu0wLGBxR3mT9Bp6ddM1ZITeBfq7pD4vufTkNjsfNVHmjUF0Hf6Ph-7yJIJdy1H8zaCF_oWBKPHv84AiEgxtgsUdF6_qJNY_5anXxfQvx2Bq-UAGs-RoCGAj75wxW3GG2Ozp2koqWI9l1MvZFc1Xm3dd1NM9BksTvipNYQtPXj8hDpFiemBR5zmP8q8wU4jA6tFTzX3aeAF1XcS97jUvwh20XH8RfTFDB5kCCFjYYuGqh5rpr1RszbwEBmJsBHpkQpUFq">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Access Approval: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Approve or dismiss requests for access by Google employees working to support your service. Access Approval will send you an email or Cloud Pub/Sub message with an access request, which you can then choose to approve using the GCP Console or the Access Approval API. <a href="https://www.google.com/appserve/mkt/p/AFnwnKVwBWhGRB63uW11y4Mjg_dtulIxHbKbMItN6OG9aErt9HOtT5E05R2IviNZUs72q0bfPZS7n15mwNq-KxxSOYR9ylomDVSaQ7C2OyJITQ4WyTs0m19qaL9gTiB8aOAdkIBmJvWCzM3PdYBtdPzlbtsjqlitz1V_CVGKaKOITDj0SZ5sGV5MpoWs6UZ5MhpVUKKon4U8h85-rqQtwSA2P6RKZYpEOmiOkpMKnx4vwxy4idcsPsNcyT-06fseJl3OKGsd7PPKu_tQ6qiJRSAcs1DHx0jFE0EnlfHG2bX6njV7pAUp9_o3WzJMSlbeocfZLpcEEmd7ELq1-2-lVgzbat1ncm5hs7rhFvHkW-cdmMiPTevAWZi7wKZpzOVO1QmRwMTOIIOEiz050qkTKA">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKXDkZ36TGZYSwwvn-g1xcx8IeK-0aTNv_MAVmpmLv8rnsQNHNmeWLR3ZNIyWYGlwfyQ_IeXtWXurJgyymu-kAiySBWkUDs0A-e_IgZAI7-12eREqtDVSSpXiC2xQPj3BhHK6sz7TPZniB82dX7_R71y_O6qj1qr49Ywlhp_94d9eObq0qL9jFCoYk-4yUJINocIBG6wTtnyYqeN7uAaZe8bDtAxorRdqDYNQ_U-2zg8sw3zb1DrcpLS3CrBzZ6dWTZFBeVj0c4brPIJgWPvsHJajA5LWhyKJx_l4ay6yJVPpIRWbxYBZ0OzfE-mxITp0cDIefwQI5frUuEjh_4kNCmv0hxK8wQ4bPDLb5c8SDXht-DDZcfRCQD-ZNhbLb8e2lIdxOaWBPx-hqJ2aOHz2cPKFfPAVOf-SInVuG2vn9UnIcfbtptPzmZKANSlX9ypKuXlRxk6WMqIPNQ24o7MnEOfH0__OhiPiVJMZ522OQBlpxeYnFewGjEIt-jwL0OYM5P91ag0vZ86z-REzWrkcgXEvYJ4WOv1clOnAEoWNsiHZc12MlTwlHR3IbgCBf24oeFqGEKe1u8whyBEKc473bIiu3QAUTY">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Security Command Center: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Access this security management and data risk platform for GCP to better understand your security and data attack surface. With capabilities like Security Health Analytics and Cloud Security Scanner, Cloud SCC helps security teams prevent, detect, and respond to threats from a single pane of glass. <a href="https://www.google.com/appserve/mkt/p/AFnwnKX6gwNoSIUwjut8H40F4y-8JRlj47EQuapNuz_cqzuQii9pT3DvuleexVAevkkew1wVIfybvB0Z89-eOpP_toPSn_Wy-MNXghEyFCabyRQyxVDPmb8Q69A4-JMkgk7xi2H1LROYU-Sqno8dURbAPrkW1Bwdj2KxsOfoAavPsOOoscEC_iwg-F2U4GT8hc_juVCTWMyersZVVjhOSYbWwfNWEUjUR0YXXuH_7HrIzs3TIE2oKzqN9G0JCOC4djS81U60NCqsBZx96lVSc8axVdUNbkBbCBciSpwBuJFYDamDXIIpsRSZjquIFn-oJuIkdq_UrR8AWQAH1x0rudlqPYgMwCcCAD0YPx5l7SiGpC1o9JPPv-wj46iU4NS22oXw7d8XgYAqSBKqox4agr3_GQS5KCqRdk6YDvhVS_o">Documentation</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKV0PdhhJsmnorjS0z-dYbXXYO_N-IKYZh2DNVHUHJv_XE-8Nk6PbGzcvqmCK64wFOFnHNnerkL_EuzQQgSgJZ3wDvSO1Ayt-SodEgQWzsG7juSmS4m2DHzKgYToLI2JSZb64M4JpShLpll3QoH0M9B_-dLNZ4u5QWlE1adXBiylOvkFam0Zn5s8wa7GWh9HFTP5snHkcgEwT5ysvmrVyljNlTZD4_HU_MCMEiUv5zVR1yZPv551HuXXd4fFS5FT0aN8l6xu-aDseomqfhU9wZmPpmYTtbmGnDmyi6KTCJtBtCt1roUaWrthMRXDj4c_9JU3Hsbz7qRCwVpkWqm4mncq-jq0lOaTzU-Edcxp2UjKG2wolHnSzDI2TcvZffhDQttw7GUPN4raj18u63sRT5kR3mwR6o5hYH5nyamoCEH8rcI-NVPrfua5FP_s_S_cvxr6ujOcMgDznYAH5jii-W1BqzZrArBWT2eTI13FG73Vk8gbdgPzKTMtCjKhcabGF2IXV9Ibr1aJqcselRCnixtMb7QhDW_sZBM2g5-KnFQAVWuYMHQu">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud SCC – Event Threat Detection: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This new security tool scans Stackdriver logs to detect suspicious activity such as malware, crypto mining, and outgoing DDoS attacks. It flags findings for remediation and surfaces threats in Cloud SCC. <a href="https://www.google.com/appserve/mkt/p/AFnwnKXDkZ36TGZYSwwvn-g1xcx8IeK-0aTNv_MAVmpmLv8rnsQNHNmeWLR3ZNIyWYGlwfyQ_IeXtWXurJgyymu-kAiySBWkUDs0A-e_IgZAI7-12eREqtDVSSpXiC2xQPj3BhHK6sz7TPZniB82dX7_R71y_O6qj1qr49Ywlhp_94d9eObq0qL9jFCoYk-4yUJINocIBG6wTtnyYqeN7uAaZe8bDtAxorRdqDYNQ_U-2zg8sw3zb1DrcpLS3CrBzZ6dWTZFBeVj0c4brPIJgWPvsHJajA5LWhyKJx_l4ay6yJVPpIRWbxYBZ0OzfE-mxITp0cDIefwQI5frUuEjh_4kNCmv0hxK8wQ4bPDLb5c8SDXht-DDZcfRCQD-ZNhbLb8e2lIdxOaWBPx-hqJ2aOHz2cPKFfPAVOf-SInVuG2vn9UnIcfbtptPzmZKANSlX9ypKuXlRxk6WMqIPNQ24o7MnEOfH0__OhiPiVJMZ522OQBlpxeYnFewGjEIt-jwL0OYM5P91ag0vZ86z-REzWrkcgXEvYJ4WOv1clOnAEoWNsiHZc12MlTwlHR3IbgCBf24oeFqGEKe1u8whyBEKc473bIiu3QAUTY">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Android phone – built-in security keys: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>One of the strongest defenses against phishing – FIDO Security Key technology – is now available inside Android phones at no additional cost. You no longer have to buy an actual key, meaning that this security technology is now available to anyone with an Android phone. <a href="https://www.google.com/appserve/mkt/p/AFnwnKVH1A7vomDkl0mHeh0-wR1n4B7tvrvux2yDNWDszDWv0Xnr3ldFhxHXyUwGu0kx7a3FTwniVIgdL4NnR3HpwRdCccfFsTqimoijEyq2zByit3tXSx7m5cP7J30i_3LsOj4tNvKLp-wcRLBLZu2zmoV3wE-IAbiejgrA1XuWa5hi_J3awf9BsteS3wCxf6Yc3IupB1O4mO-w24LGa1RZ7WI-8DeDLwkQXvS5u8rKGvp6FSmx-Am6YYJQ2cx0kYvzUK4Js6sYrsGAHCbMeLYxVRC3bGoqR96lP-pd9Xd78VyhULj2YkHFetPpzAlHAMksMhcFTQnmgyTkKeM6y73Rw_3dtALw6WWxb5DtvT3OjHcdMv7f8Vzwi8MQgL60g-hia1zY70yIu0wLGBxR3mT9Bp6ddM1ZITeBfq7pD4vufTkNjsfNVHmjUF0Hf6Ph-7yJIJdy1H8zaCF_oWBKPHv84AiEgxtgsUdF6_qJNY_5anXxfQvx2Bq-UAGs-RoCGAj75wxW3GG2Ozp2koqWI9l1MvZFc1Xm3dd1NM9BksTvipNYQtPXj8hDpFiemBR5zmP8q8wU4jA6tFTzX3aeAF1XcS97jUvwh20XH8RfTFDB5kCCFjYYuGqh5rpr1RszbwEBmJsBHpkQpUFq">Blog</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>COMPUTE</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Compute Engine – serial port output logging to Stackdriver: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Now you can configure your Compute Engine VM instances to automatically send serial port output to Stackdriver Logging. For VM instances that are no longer running, you will still be able to find and review serial port output preserved in Stackdriver Logging. <a href="https://www.google.com/appserve/mkt/p/AFnwnKWL3rFPTs5f0yKNiUgT-xQx_Z6Y7Q4grO7c2BwB84GnOQ8AiZMfH8x3mPsbKb0LSI1OpStQgm9cedI9RGBjslmvRzoc4QSJ4hdV7_IPsTjRMhBDXXxKDYmeeuDpOioYiDHJq8vXBfAqwQ3nTtMpTWScWj8LtEro3Dm98la4q8VlDVwBDIwpfc20Lq8N1FR2qp6lZBkNKB2SIp-bKRjvXrNZi-sEaS-rFAO4994ep4HGlphT2ontcvWNPDMcFok9EIuXZv9gFLGFBaPZhYe-EOBvPKN8OG08IcwfaXVVP-8QArhf5bVYi5oSczdJbQjARpoqrIaronKr5GFtdVsKz1gOp3mqBqD9wet6aH-J2VgL7U4iHgb2ukYGZNvxGt01pWbqjHf9GfAWP_sWdIiCBtCk8uGy6jNQtiYph_mGoCSBAQBAb4nWMBmA8wTG8iD6lCSRKquqkmSQDSWAEVKV01ulZZSrwJsLEqxf1xg10bkLwpiIGuvuLRNiv_tx9-rcPnbikC39iNzPpVI">Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Kubernetes Engine – managed certificates: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Managed SSL certificates simplify the process of enabling an HTTPS connection. They renew automatically and are revoked when the proxy is deleted. With managed certificates, Cloud Load Balancing will encrypt user connections by default, eliminating manual work. <a href="https://www.google.com/appserve/mkt/p/AFnwnKWGj8isSHP_vUUv3HlxJX7mt5AeGsPwfD0S5Q-dYKidaeQRv3C7cBV-4y8KZcT92NLIx9HBQuuCx3dl8o359lUlzNi_1uKlRmsRKgd87IJn-Xqz28gePZGIGL0lmqNZz6OauUsS6GuLHgxDSZIY2ayEIvgv5DwTnuVauuMxCdRYrGgqZ5xsbONLayW8w9L8Las5xDXezQrhMF_DfE-k2aw4tiyeKzckLzFZsiakYfuOs2MLVTVKzD3AmxlSM_0SHNUDJYIvYb0tojxD-HYWSFPuu7SJgxr-dMbzJplWTFKnOQfARBD7qNsh0FRtyoL_T_r6cIN0fMNsaj0llo9gXax5SEMJlBWcgZaqwlp3dJySvEdj5c8QrV-I84SrKCqDFWOwg1Mg97F8U65Xk3BLCQ2M0BAROzVLhajrjB7mJCrFhL48CHNDTAymjXbDrjsUPub4WZDh6GG7">Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Functions – max instances: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>With this release, you can limit the degree to which your function will scale in response to incoming requests. You can set max instances for an individual function during deployment, and each function can have its own max instances limit. <a href="https://www.google.com/appserve/mkt/p/AFnwnKVpc8cUvMaoukoqqzRx1Q9dQJUv4QmigvpuvgIuiJVE9_-CxI4sQqjtkXqkRVQiMfUOY61vZ_LBPfCOKyrVvMZ3UJJG4mFo40kBjEDagKUSJ0-KlyRI9qpfR4H1CdaIwQPsNyy7ulVgkbHwlXg48SKwnLQtT0MkqNYOs7Vw_2PrsXY8bBMRiqz3qrPEjDf6etCzVmxQd1ULPU0njtJ1E3OfStZtf0uq0DQRkhTI2q__4qzvplXfyWZiNkBTNVcHX2D654TNwfvkjzUqI40A_dCq8aJ2vJ54oIMCh8yVdS-MKYh-MT1NMJECfzmAnXucBTmb0LB5VIOA4ZGpQJehBuxITB9FOwgiXsDZ-SdV05EUuBDcYxlGlM-zK2ooD48KmU8CW444ZtmqwqyYH87B3dEdwV72xFZhgpJ3">Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Compute Engine – Compute-Optimized (C2) VMs: alpha</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This release introduces a new family of VM instances that are optimized for consistent, high-compute workloads and offer a more than 40% performance improvement when compared to current GCP VMs. Using Second Generation Intel Xeon Scalable processors, C2 VMs can run at a sustained clock speed of 3.8 GHz. <a href="https://www.google.com/appserve/mkt/p/AFnwnKU4zqO57FqxT-M6ALoYBn72i9ooFegdr_8Zc27U6QfoxkclLwJ8zRV4Qi7hoEVVgqP2gXXvyWMKjCyUYvwUDe3SNYJPAz82fsJauruHvCqY5YZr_mLGsmnzbOA_7zVEeArsnQHFA0RqKRQqds6qzwr3LI_AT9Zf_TOF_RHu9g8w6ZT-Mw_F1At95rp-2sfPocGSRuph0JUuQJz8nxNRuHGNvxGLOD5ybhnXXtYJGKmiictFMqn1Y09zD2sSyJTBL6pM09v8NfrTD7n2qFW2tgnaK8gUtBSQoWzYTdmFwaVaOs7bm-HHyWmnj_fYnwo-tPcQ7JfZAak7fE7T6QQEmelxypp2rBbWaeCSJrgK6ZItaR7J9P4twWqS0STY1KQt210f8JEQq57yBD98tIwVWkN8Qc1dZ2u0dskkVpxIQy_dULqgChgyFQYDUYzgRf7kZu3icYfVCe06Ou_zwxe6zv1iG5RuAjJW7aY6Gi4I7URjDCGVMWRuAePRcT7Z22su6yDDfGITiYSHkw2ajs81K6A02nHfABcTQaV7S5f0oMJoXomIPw6croaD-blqpHra13plFso4ZizgP0I">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Compute Engine – Memory-Optimized (M2) VMs: alpha</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>M2 VMs offer the highest memory configuration for a Compute Engine VM. They’re ideal for memory-intensive workloads like large in-memory databases and in-memory data analytics workloads. Our newest additions offer up to 12 TB of memory and 416 vCPUs. <a href="https://www.google.com/appserve/mkt/p/AFnwnKU4zqO57FqxT-M6ALoYBn72i9ooFegdr_8Zc27U6QfoxkclLwJ8zRV4Qi7hoEVVgqP2gXXvyWMKjCyUYvwUDe3SNYJPAz82fsJauruHvCqY5YZr_mLGsmnzbOA_7zVEeArsnQHFA0RqKRQqds6qzwr3LI_AT9Zf_TOF_RHu9g8w6ZT-Mw_F1At95rp-2sfPocGSRuph0JUuQJz8nxNRuHGNvxGLOD5ybhnXXtYJGKmiictFMqn1Y09zD2sSyJTBL6pM09v8NfrTD7n2qFW2tgnaK8gUtBSQoWzYTdmFwaVaOs7bm-HHyWmnj_fYnwo-tPcQ7JfZAak7fE7T6QQEmelxypp2rBbWaeCSJrgK6ZItaR7J9P4twWqS0STY1KQt210f8JEQq57yBD98tIwVWkN8Qc1dZ2u0dskkVpxIQy_dULqgChgyFQYDUYzgRf7kZu3icYfVCe06Ou_zwxe6zv1iG5RuAjJW7aY6Gi4I7URjDCGVMWRuAePRcT7Z22su6yDDfGITiYSHkw2ajs81K6A02nHfABcTQaV7S5f0oMJoXomIPw6croaD-blqpHra13plFso4ZizgP0I">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Run: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Cloud Run brings serverless to containers, abstracting away all infrastructure management so that you can focus on building applications. Now you can run stateless HTTP containers in a fully managed environment or in your Kubernetes Engine cluster. <span><br /></span><a href="https://www.google.com/appserve/mkt/p/AFnwnKWCIzt8LNcDMMl1gWCfinNGSgO2dS2WqqHoCGXCZrmAoTVQRl9mcMRr8d7vp0ZQiQD6qED0DbSjnh-OlAnhdGDyLVe_ZkTWhreEDpE86Dwf5m1A6MyrKqoEUbRGzFYQtn9HeEwW-JzzxUP6SxFeGFUn4NX2SClrkSG5sqt-6W0ifYggp0A0OS4AS95ngFgibvAptFHz1KElVvCdlKHpZpbutI-B-4BYCdCnIZ1ke98hylp6i7URe2F8u7lv_dVFGGFs2uavplVYTyqQSht6ouY5LaUF77OU3iknNep0_IlEXqSSwkU5oy7BY7WIJ-ybcbkibl50oCGAvnjaus0nvPpnItLS3xQTJg">Product page</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKVBAiMfmVo6oNRkCifN6L18JrXWPys_uel8NvTA94sQxxFNAakQA2mu9INnEvI6LTrim5b-uU6muS61TreHBiWcLHZ7Doc9KsHLSi_lBgqnnTrnOdsKx6BQ99iq1GsF0ulrvKKKEppZKrsfTgZgfZv5fnhA8CsnxLHurfj4sW9PY5qoKgDYpxieJ-Cso9YUEIGcbLJaPRzNnx56jR0VzH1ly7vV0bvDUvPmMGKkODMVZq-KzUMzuuDHsPzhYg_kfcR_KRTATtQKC79Sre_56bAp4lBE1CDl9j1lS2jxKtEWsAG-MFSCUK84-6zkiAgoHy1pUofAaIQ96srdmTMT8p0Vr1xKK43y2-TJ_QUt6-qRBPxD7xaS8hMDzbsjGue-FyjVWZ4vu8BZU1QABH297CtX-EnCbFQ7mEMeCuVrUJ-KUK0WuIjxd9ZSH6KTS00pRFnvS29g-v6fH8AD1NVoY0f5unKcQm8j2orD0D1a7LKZ33BQZvj1RwUpN8GFCpGmBhU9P-iubVGN3KRUF30m1voStlVO91hHwJAK-2dTDcBLb5gNMU6crqi9AhwAVtPPMzVI8RvV2CbbDGsgckYmByI">Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Compute Engine – explicit locality for snapshots: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Now customers have the ability to control data locality when creating snapshots of zonal or regional persistent disks. To store snapshots, customers can choose a multi-regional Cloud Storage bucket – available in the US, Europe, and Asia – or a specific Cloud Storage region. <a href="https://www.google.com/appserve/mkt/p/AFnwnKXT2bsXtWuHu-4F-9bEVzHeS3WSuI8kbQ3UaClY7HMaM0ZD8fKCZOLNtQFGU-8l1UmgQlDk0iRlJwIsyJHvOOiuE2myADmD3X49tDNMWbPDvTgAf5AWvMmEtRDTcpOZVsNmkHSJEpFFOIrOMKHx1t0oa-BySTibDFEaQSbAdYjQg5hahRPhm3Y0FyVfd7p1yHoVTFCvfGIK-S1hfOXULpFAwyrGOCcREjAYrJc6BUIyaZ5J2ckASczLntcJknn-jkMNwqPNC6B2gyHptC6JG9i5DGvOA8Rdtew3ALtXO5KQeQpqbcw_BF8opiwXD7QqXwgn3v27L5x5V-LqbebSs2cnr55AiHx3h5d_cPuZKXV0-XxHFpH_vdtnwriMVMxyHgcEDUvNvzpbwzcwDDX7vsWqPQkBwEnqKoWjByvStlfBVEOD7RPFDQQ">Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>API MANAGEMENT</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Apigee Edge Installer for Pivotal Cloud Foundry: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This latest BOSH release makes it simple to install, manage, and maintain Apigee Edge for Private Cloud 4.19.01. One of the key new features is the new Apigee Edge experience and OpenAPI Specification v3 support. <a href="https://www.google.com/appserve/mkt/p/AFnwnKVl26wWPEuPaeS6eFe31-HclOGNmR2Cb0sQfw86ZW4tcGYC5WcZXDPeSLORkHilxZ6Zh2WQsGPU73I8s-1J355vxqNihdYrpkljQln8O5BPSrAKRXqt_sw311IdkEx5_TiJTCQCV2HNOPcJe5x3NI3vFS8mUJsisLPRoNjs1324XwOGsJyM7ESAXH4Eaq2ypvoa">Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>MANAGEMENT TOOLS</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Stackdriver Profiler: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This statistical, low-overhead profiler lets you continuously gather CPU usage and memory-allocation information from your production applications. You can identify performance characteristics of the code, such as which parts are consuming the most resources. <a href="https://www.google.com/appserve/mkt/p/AFnwnKXLUnfIHRVMQ1zzXv_L-tzV6yK5bGmXtgsW14zId0MPgighi6cqmhsDSOjd2lY1RagB5Tl_Q10LjDjHOo5CFOuP0yvJGObRLy16EtZfHoZTlVbj1rLGqag9aHB_4rEHqV3ythuDD2Fmytn_bT4g7sJ6FgICPAIHSSQFjUfIMKMLnwdZvtSSGJqxuOFaabX2vlUdM01H8C8TDDWkiwah7wd0gNm8kxKrkoK-qNE8itezxwEvp8i1jqUyz68qKMhJtZqJHfkswwEGf4_-lwELkWEwe0nLWSonXgIywRHP1I8QEauAKV8BT5jY9ESviB3D3C0netlK1Pz8GQ6t-DEJi3qyr6TzIzJPkkKCxmMdsfIJN99lX8PqRhvqOFSH3tQmfo4bHC_LQPU4lAxIETq7qKQYFZ3Of73BEyiI">Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>DEVELOPER TOOLS</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Code</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This new set of plugins for IntelliJ and Visual Studio Code helps accelerate cloud-native Kubernetes application development. Get feedback on your project as you build it – with your own tools – define your deployment targets, and test and debug on your workstation or in the cloud. <a href="https://www.google.com/appserve/mkt/p/AFnwnKWIfYS-4lyXF7agdDkQ4JhDNWck-BYErzTmBVfksDd1dcScFCqYgy8bAZkv1Wl92PrX0zguURj4fEW4ZbyHg9385hxVqThwSLW7TK8CPBTIRNx_XkjLztUhBO7itWFzwHqK-kCxZwGch_uSaYgRCn2ICkEssaGh6ASfzcVx_k7-O-iaYoIZPHRRj3r2270ryKK9pNFhU2yyidfivtPGW2OkR5DlEA5VbkqsgxRqH7aFytOeStMiP0TwYU7TsHTwH1B9V5-mNXK9HEi4bjS0RtSCFqOu094QjoVz1I0UD3c6kfN2--AGVRk6em55dQDxEzwTzevfyE5rf4C4tvgcxfOGvqcEeYIuF56oHIKkfSLpAoLnG1w5">Product page</a> | <a href="https://www.google.com/appserve/mkt/p/AFnwnKUFANdMgHRVlEyFTtd-p9wrtBVcrv-NMa9Bkdq51TEsDyAQWLZngr6FBKZ3geL2jCUwEZ2oHRlg5B1tOWvW3XVFjHDQ5TEbGpNzAoEF_V9GZSGaGaCGvb78pv6dVU3Y0cF3njor_AX9OE-SvVcvHL5ngePkQY4V8XiXrMgk_sFgoQ_uOMu_vTozGhJP2l2Z-a3JFe6RUUX9pBE5rOoipQzMKtscIae5DWkygmBY3nQ8NJG9Nl5Fzw04QItV49_TitboJK1BhH2c3KoFFMjEiT_98QgEQYiseMsOwJOJ7ur23jLc7otSjBeo-Ye9BMKrkJ8WMJCVDSeS0SvFLQyRx4Vy_LVYQfa9rKuXQc-2LwA9awj7nIVkzn5UFyI9XmsPnpgWfKz-Z-4__WUPvMIu_9hFcoGJFV_gXqMRSmJ5l04hKV1dFvGOXhhWSz_6eO7MZfmQGSedJOJxV8EMiyrQeJdWZPbLPcpUwT6RE5lYE0crjVqhZBf5DC9cvmhgreIsZQmDx01irWHMQ8TyipbQ1qGsMM-5veQ1jvNs_Y1Bojog9oVEGYe9QTcXEkAtCHedOpohaF0FN1WFqMyJWpam2Ps9Eg">Blog</a>
+  </td>
+   </tr>
+</table>
+
+
+</td>
+</tr>
+</table>
+ <table> 
+ 
+<tr> 
+ <td> 
+ <a href="https://www.google.com/appserve/mkt/p/AFnwnKUGhE2fAOVMCijGoukC0mTegZ8vXlUeFEfZECUXpsEq9_gEezDN5A28gjUth9-Ku7KYZb7DTPSRXtl03egobQAhkedZXECRQ1vCqt_y3CN4BwG5ku0Atb715F5uAg2q3T55Q-0NsIZzXjROOFaZ25jNlm0jA9wQA2RXeZwwgqwvtbcAkvpVEDw1gmEDhRHeue-5OchQegKqhDP24Hc8o2kYwOJq38yTn2ffR_w4XMpgAGsc4liQ-Fvpk6-nf6dRB6WjHcUXH3zFtbq4AstC47IA90gxp6T0nHJtaG81DzyPNNCJkgrBhtoGtooxEyQNb2SxuQtQT0HRNV3XDXp7xuutRrgAtqcxgcMrdXVeyw">
+ <span>Go to your Console</span> 
+ </a>
+ </td> 
+ </tr> 
+ 
+</table>
+<table>
+    <tr>
+        <td>
+            <table>
+				<tr>
+                    <td>See you in the cloud,</td>
+                </tr>
+                <tr>
+                    <td>The Google Cloud Platform Team</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+
+</table>
+<table>
+  <tr>
+    
+
+<td>
+
+
+<table>
+<tr>
+<td>
+<table>
+				<tr>
+					<td>
+                      <table>
+						 <tr>
+				                    <td>
+                                      GCP Launch Announcements Community
+				                    </td>
+				                 </tr>
+						 <tr>
+						    <td>
+						      Want to be the first to know about GCP updates? <a href="https://www.google.com/appserve/mkt/p/AFnwnKVP3mxyaHKVdCPGafHfx7ho1i86kj_wHaNtpLAkb45QHT-sqKg0OjWoyO4gYDnxJTfmraKUoudFtOTpBrFhtCtFS9aXjiuzLHX_nPVXMocm8QIkXs2fVelC0W5EnhGOT5VxcX2z4fm7hqWfdvSH3kmfAWjyqnWGsQiXHzlo9sLqliSN0Xl7FqPXx2J-pAaU3OtkOzWiZuoswyjypsLGO6wn59k-XIoj6AdNCgYwPIsjYjvxGCc-9t_s0gvBWtg2WFN5">Join the GCP Launch Announcements Community</a> to get the latest info on changes to GCP products and features.
+						     </td>
+						  </tr>
+</table>
+
+</td>
+</tr>
+  </table>
+</td>
+</tr>
+</table>
+  
+
+  
+ </td></tr>
+ </table> 
+ 
+<table>
+  <tr><td><table>
+    <tr><td>&nbsp;</td></tr>
+    </table></td></tr>
+    <tr>
+        <td>
+
+            <table>
+                
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <table>
+
+                                        <tr>
+                              
+                                         
+    
+    
+
+     <td>
+
+                                          
+  
+
+                                          
+                                            
+
+                                                
+
+                                                <table>
+                                                    <tr>
+                                                        <td> 
+
+                                                                        <table>
+                                                                            <tr>
+
+                                                                                <td>
+                                                                                  
+ <table>
+   <tr>
+   
+     
+     
+
+
+    <td>
+
+     
+                                                                                    <a href="https://www.google.com/appserve/mkt/p/AFnwnKXEaOZ-R7xlZq7IzK-e_bohnidDcpN30x_5rOR6bkqdWGYpUOGsXelYLki4OYbcvPDDIdDLZoTLZFUkthLS6CRSSdIQU5obM44Lcw18SHrb91RZ80wxnSmrp0EqozsXFjrHByXM69IiDeUwX29-DVytXkcdtMK6oN8B9Gj3xZpivIOAr8l-94k6nIfyrYkWebVkq-oWhQee_tppj_Qg90sIf6l1AtFOkr6t22ND1rBkzYizp2XpG2crLAcljN5LHnj4jc7SlVMWZugMKjJH_y8l5QlbPGs0ZzoqDCKe3KbevzqfoZFqIX059K6ZR5m5HaDD3A0Xze6b03UX0t4L7xAQTI9xC7MDZChD"><img src="http://services.google.com/fh/files/emails/release_notes_apr_doc_icon.png" width="12" height="16" alt="Documentation">
+                                                                                    </a>
+     </td>
+   </tr>
+                                                                                  </table>
+                                                                                </td>
+
+
+                                                                                <td>
+                                                                                    <a href="https://www.google.com/appserve/mkt/p/AFnwnKXEaOZ-R7xlZq7IzK-e_bohnidDcpN30x_5rOR6bkqdWGYpUOGsXelYLki4OYbcvPDDIdDLZoTLZFUkthLS6CRSSdIQU5obM44Lcw18SHrb91RZ80wxnSmrp0EqozsXFjrHByXM69IiDeUwX29-DVytXkcdtMK6oN8B9Gj3xZpivIOAr8l-94k6nIfyrYkWebVkq-oWhQee_tppj_Qg90sIf6l1AtFOkr6t22ND1rBkzYizp2XpG2crLAcljN5LHnj4jc7SlVMWZugMKjJH_y8l5QlbPGs0ZzoqDCKe3KbevzqfoZFqIX059K6ZR5m5HaDD3A0Xze6b03UX0t4L7xAQTI9xC7MDZChD">Documentation</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        
+
+
+                                                        </td>
+                                                      
+                                                        <td>
+
+
+                                                                        <table>
+                                                                            <tr>
+
+                                                                                <td>
+                                                                                   <a href="https://www.google.com/appserve/mkt/p/AFnwnKVsPvhYsDKwdmVNopy8aUNxOnAzoL9awVrpvcL7ftMUKukREeHCtk44hEIZR1ZMpPTEs3WxrCssLFtdEl1kXQRGreD27ilPLITlNnEEGsBoMgg_2dJnaDTsv0vPDECufktjj7tLTK22ZQCEyCuYq-jwVNxXlyuc8kLvS_BFqWzpOybx1kEwn0ZXyX48_2UsZIix9MCZwWlYTU_OSlC4xlf6pidO-gyHGlGVyTIjHofrPNxwEoAdVVmg-VjoqUwayZigbUvzo0KiGOWDruVEIHvclr5eORdvsUibHJ6Ble0em3MXjHrxta4Ff_rJp_9-9ZdanuZqZ7OVLSSJ4MFkqGQRCc1WCjQ3RC6IulFqw_1Q">
+										    <img src="http://services.google.com/fh/files/emails/release_notes_apr_support_icon.png" width="14" height="14" alt="Support">
+                                                                                   </a>
+                                                                                </td>
+
+
+                                                                                <td>
+                                                                                    <a href="https://www.google.com/appserve/mkt/p/AFnwnKVsPvhYsDKwdmVNopy8aUNxOnAzoL9awVrpvcL7ftMUKukREeHCtk44hEIZR1ZMpPTEs3WxrCssLFtdEl1kXQRGreD27ilPLITlNnEEGsBoMgg_2dJnaDTsv0vPDECufktjj7tLTK22ZQCEyCuYq-jwVNxXlyuc8kLvS_BFqWzpOybx1kEwn0ZXyX48_2UsZIix9MCZwWlYTU_OSlC4xlf6pidO-gyHGlGVyTIjHofrPNxwEoAdVVmg-VjoqUwayZigbUvzo0KiGOWDruVEIHvclr5eORdvsUibHJ6Ble0em3MXjHrxta4Ff_rJp_9-9ZdanuZqZ7OVLSSJ4MFkqGQRCc1WCjQ3RC6IulFqw_1Q">Support</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+
+                                                        </td>
+                                                    </tr>
+                                                </table> 
+
+                                                
+							
+							<table>
+								<tr>
+									<td>
+										
+	                                                                        <table>
+	                                                                            <tr>
+
+	                                                                                <td>
+                                                                                           <a href="https://www.google.com/appserve/mkt/p/AFnwnKWxF8CZHdoV099nIU0JRoc3LNmTFiuZ7bK-NS4uMvKrkCo1hN_2qVKYu4EJPOLSDae4HczVavYONGKYLgbIEAJ4_XiL8tHir5BnjsmIYquIcKiawmjtLTlAwixkGVeLHjCEgWCtcFGH-Fs5iY_LLSb9TgigSGBdXfylCrUR1BLNP2E4_rTEREBcIVRYqUqJlGTRdkzVwKPIIZWeFIlL33S940V77bCt8RcXbmUZXD2seVEJsmWDTmsk4pfJjl93TbCFCg6KUFbo5U2c-MLop_Gcd0-lVTvMT8LkhUoIS5y-2mP1mF_LPvjfBgEOpulhzQ9j8XW3BK1yamG6mve7OqabHkTYuu2xqMRY8AhN3BaUs9iY0dN7u2Q"><img src="http://services.google.com/fh/files/emails/release_notes_apr_mob_icon.png" width="10" height="16" alt="Mobile App">
+                                                                                           </a>
+	                                                                                </td>
+
+
+	                                                                                <td>
+	                                                                                    <a href="https://www.google.com/appserve/mkt/p/AFnwnKWxF8CZHdoV099nIU0JRoc3LNmTFiuZ7bK-NS4uMvKrkCo1hN_2qVKYu4EJPOLSDae4HczVavYONGKYLgbIEAJ4_XiL8tHir5BnjsmIYquIcKiawmjtLTlAwixkGVeLHjCEgWCtcFGH-Fs5iY_LLSb9TgigSGBdXfylCrUR1BLNP2E4_rTEREBcIVRYqUqJlGTRdkzVwKPIIZWeFIlL33S940V77bCt8RcXbmUZXD2seVEJsmWDTmsk4pfJjl93TbCFCg6KUFbo5U2c-MLop_Gcd0-lVTvMT8LkhUoIS5y-2mP1mF_LPvjfBgEOpulhzQ9j8XW3BK1yamG6mve7OqabHkTYuu2xqMRY8AhN3BaUs9iY0dN7u2Q">Mobile app</a>
+	                                                                                </td>
+	                                                                            </tr>
+	                                                                        </table>
+									</td>
+									<td>
+										
+	                                                                        <table>
+	                                                                            <tr>
+
+	                                                                                <td>
+                                                                                           <a href="https://www.google.com/appserve/mkt/p/AFnwnKVnwfxKbqXyN5Z5DQCHnhwTBoEEcVcvNHXWdXMa3IrxRqRNGZQjlodpcVw7PVgpRcVlQCZs8q2d-e5FRv8-gtYCdmzGSyTZtPbIihiKaawJl3iY7QNZIQy4zCHbWTyY-nY_Mp15M38r7eA9-n1cDejjh0kr0FiwJflP2Y0Xw2O13SpKi3JWe-vtAI67DyHfKytFHf1fLQ8LBdCiIee5evfW3Yg1DvYNf5xzZJrBZMGw7rt-pNdaq4zm_q9hralAsz5zo3XDfdVnJRguOZalEg5FQpRNRr2AurUahA8oBZ9g9l_Q_QQ_PALsInDGy8oLEfZyjAGS3Bi0x2Y"><img src="http://services.google.com/fh/files/emails/release_notes_apr_feedback_icon.png" width="14" height="14" alt="Feedback">
+                                                                                           </a>
+	                                                                                </td>
+
+
+	                                                                                <td>
+	                                                                                    <a href="https://www.google.com/appserve/mkt/p/AFnwnKVnwfxKbqXyN5Z5DQCHnhwTBoEEcVcvNHXWdXMa3IrxRqRNGZQjlodpcVw7PVgpRcVlQCZs8q2d-e5FRv8-gtYCdmzGSyTZtPbIihiKaawJl3iY7QNZIQy4zCHbWTyY-nY_Mp15M38r7eA9-n1cDejjh0kr0FiwJflP2Y0Xw2O13SpKi3JWe-vtAI67DyHfKytFHf1fLQ8LBdCiIee5evfW3Yg1DvYNf5xzZJrBZMGw7rt-pNdaq4zm_q9hralAsz5zo3XDfdVnJRguOZalEg5FQpRNRr2AurUahA8oBZ9g9l_Q_QQ_PALsInDGy8oLEfZyjAGS3Bi0x2Y">Feedback</a>
+	                                                                                </td>
+	                                                                            </tr>
+	                                                                        </table>
+									</td>	
+									
+								</tr>	
+						        </table>		
+
+                                               
+
+
+                                            
+
+
+                                        </td></tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                
+            </table>
+
+
+        </td>
+    </tr>
+</table>
+</td>
+    </tr>
+</table>
+ 
+</td></tr>
+           <tr>
+<td>
+                <table>
+                   <tr>
+                     <td> 
+                       <img src="http://services.google.com/fh/files/emails/bottom_footer_logo.png" alt="" width="142">
+                      </td>
+                    </tr>
+                   <tr>
+                     <td> 
+                            <a href="">Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+                       
+                       
+                        This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive feature announcements about Google Cloud Platform. If you don’t want to receive such emails in the future, please unsubscribe here: <div><a href="https://www.google.com/appserve/mkt/optout/AFnwnKWN_oyRTbrc_TsTAOz0RtnsumR7uCch8SbVckxpwrqDDR0uVgncdrzzdVogI-XYsYvl?hl=en">https://www.google.com/appserve/mkt/optout/AFnwnKWN_oyRTbrc_TsTAOz0RtnsumR7uCch8SbVckxpwrqDDR0uVgncdrzzdVogI-XYsYvl?hl=en</a></div> You can also change your preferences on your account’s profile page by logging in at console.cloud.google.com 
+                              
+                              
+                              </td>
+                    </tr>
+                    <tr>
+                      <td> 
+                        <table> 
+                          <tr>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AFnwnKV7bpWe_ns4VL9ETUDO22or1OLM1InIKLWw5EGw5Ikjl82GxGP0Q0SRQl2-OmzbEK7v9sXv643CTr0iki73O3nzqolhrE3yrChZ2AXKc3SZGsdNe4p1oE7fPevqOP6sN61WxZwBWzyz6dFlfwcmmRrUf6wYCxetP6hiqQXo_56biB19azXW4A_nrIx7os3_Ss0g8fvNrvxqoz_Oy06k3vt8Pv428wWMEGuW120kaaQRhea4QidcJpaxE_3dqAY4Lq76SbldUSmRvgr4LX2W7aHaN2IqrZn0qx_-eBcZ__j2iX9-pwWLrDTjo-_42hqvqH79lUNNaCiaM-KYncUL2Bey_0h17tv8s3mA"><img src="http://services.google.com/fh/files/emails/release_notes_new_icon.png" alt="Google Cloud Blog" width="19"></a></td> 
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWdZyAXThXj19EVc9atQLkYcwiTtOxsnrxXLvRb5KWLf0ZHHzZqw4F2zsrjznFyZpYlkAWG6_7aA1sh5sM0JBkV1R5lV_-S_DgxsIFx0pJLkNRy19RMbPRVasrrzRkPgcJfccc5Dhh8elJxC0ZXB-U"><img src="http://services.google.com/fh/files/emails/release_notes_apr_github.png" alt="GitHub" width="15"></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a href="https://www.google.com/appserve/mkt/p/AFnwnKVN3_nRasd_Pc-vByT5wRN3I76LKmUlat3Y8d8BOCYQpeeYpDRh6jbtBUsU8SQVQkZ3UyfP-_ddgbGt6QX45NI5aZLN0lYg6Na9nSLPzyHj2ywQXBIKs4YJbUAWZwvnVfp_hECDX3Dbj5V0mPp-mHwgM7TftSx0Vc0DDupWrQ"><img src="http://services.google.com/fh/files/emails/release_notes_apr_linkedin.png" alt="LinkedIn" width="17"></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                             <td><a href="https://www.google.com/appserve/mkt/p/AFnwnKWDRDapVzSGwLW69ZIBUK8-Q7o33uGW5XOcfEBBqoYAdXeQxxzErrUkzTR2bSg9zlYL_xdHmu7dhOyvx6vHkSJqfSvIZXtjcR2nnwllPGJsIjILRkj2TYzEzN8o2V2kAp6u"><img src="http://services.google.com/fh/files/emails/release_notes_apr_twitter.png" alt="Twitter" width="16"></a></td>
+							 <td>&nbsp; &nbsp;</td>
+							 <td><a href="https://www.google.com/appserve/mkt/p/AFnwnKV3FhVvUdrITHylZiIzxE03Rms3FVrYWHYRgFZ00IZOXCiuBFGHxaxUBCraCBXLM_K0whs_DZD8-qLk0m5XrUf1SdFeVSXJs5MYwhS7XL-KmhaiKF7g8xYWnwdjCn4uQorDT_qVb_hDildDMH4j"><img src="http://services.google.com/fh/files/emails/release_notes_apr_facebook.png" alt="Facebook" width="10"></a></td>
+                             
+                           
+                          </tr>
+                        </table>
+                       </td>
+                    </tr>
+                </table>
+         </td> </tr>
+ 
+         </table>
+       </td></tr>
+      </table>  
+
+     <img height="1" src="https://www.google.com/appserve/mkt/img/AFnwnKW2zi6bzocadrJ-hHEyG_8f6NON4xM5HsvsMQWD-H7P.gif" width="3">
+<div>
+        
+        
+     </div>
+       
+
+   
+
+ 
+
+</td></tr></table>
   </div>
   <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002117.html" itemprop="url">Continue reading</a>
+    <a href="https://weblog.youre.space/imyaman/2019/04/002149.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-2116" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-2148" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002116.html">오감만족 성남 산책 코스 '신해철거리-샛별공원-불곡산'</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002148.html">대전! 토토즐페스티벌 5.4~10.5 매주 토요일!!</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-17T16:03:20+09:00" itemprop="datePublished">April 17, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-29T18:49:50+09:00" itemprop="datePublished">April 29, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieii-3/">성남여행</a></li>
   
 
       </ul>
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    신해철거리를 시작으로아름다운 벚꽃이 만발한 수내근린공원인 샛별공원,그리고 불곡산까지뚜벅뚜벅 걸어다니며 오감만족 성남 산책 해볼까요??1. 신해철거리 마왕 신해철!!그는 떠났지만 성남시 분당구 수내동에는그를 그리워하는 많은 이들이 찾아오고 있습니다.2018년도 2월8일 신해철거리 준공식 하던날마왕 신해철의 노래 '날아라 병아리'를목청껏 부르던 한 남자 팬의 모습이 떠오릅니다."굿바이 얄리~~이젠 아픔없는 곳에서하늘을 날고 있을까??"마왕 신해철을 그리워하는 사람들의마음이 담겨져 있는 글을 읽어봅니다. '당신이 있었기에 희망을 품으며삶을 살아갈 수 있었습니다.당신의 죽.......
+    #토토즐#토토즐페스티벌#페스티벌#축제#대전#대전축제https://www.youtube.com/watch?v=fU3bNP2jJ-Y
 
 
-<p>출처 : <a href="http://seongnamdiary.com/221515888859">http://seongnamdiary.com/221515888859</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+<p>출처 : <a href="http://blog.naver.com/daejeontour/221525514440">http://blog.naver.com/daejeontour/221525514440</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 
   </div>
   <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/04/002116.html" itemprop="url">Continue reading</a>
+    <a href="https://weblog.youre.space/imyaman/2019/04/002148.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-2147" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002147.html">초등학생과 화가 선생님의 콜라보 '에코밸리커튼' 곧 시작합니다!</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-29T15:30:33+09:00" itemprop="datePublished">April 29, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/eiii/">공연전시</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    금빛 초등학교 1학년 교실 복도선생님!!내일은 못 봐요?갑자기 아이가 울음을 터뜨립니다.화가 선생님과 수업한 2시간그새 정들어 아쉬움에 눈물을 쏟는 아이함께 사진을 남기며 아쉬움을 달래봅니다.2019.04.24. 오전 8시 40분경태평동 오픈 스페이스 블록스블록스 김은영 대표와 12명의 작가들이 모였습니다.그 중 밤 작업을 주로 하는 작가는아예 밤을 꼬박 새워 오기도 했는데요.작년 재작년에 이어 올해도 진행되는에코밸리 커튼 프로젝트4월 문화가 있는 날시각 예술 작가와 어린이들의 만남으로 시작합니다.2019 에코밸리 커튼 프로젝트4월 문화가 있는 날'일상의 공간'마을 그리기작가들은 1일 미술선생님.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221525306177">http://seongnamdiary.com/221525306177</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2019/04/002147.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-2146" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/04/002146.html">서현 문화의 집 송주성 작가 문화예술특강 '50대 신인작가 가능한가'</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-29T15:30:32+09:00" itemprop="datePublished">April 29, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieii-2/">성남지식</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    '50대 신인작가 가능한가' 라는 주제로 송주성 작가를 만나봅니다. 정년퇴직 이후 100세까지 활동 가능한 최고의 직업 이루지 못한 꿈을 이루고 싶다면 소설쓰기를 권합니다. 서현 문화의 집 문화예술특강 4월의 강연자는 소설가 송주성 작가입니다. 무라카미 하루키가 매일 20매를 썼다면 송주성 작가는 30매를 썼다고 합니다. A4로 일주일에 10장을 써서 1달에 장편 한 편 .... 이렇게 6년을 쓴 작가 서현 문화의 집 소설강의를 맡은 김동숙소설가의 진행으로 송주성 작가 소개가 있습니다. 2014년 단편소설로 제 1회 금샘문학상 수상 2017년 함안중편소설공모전 가작 수상2018년 장편소설로 직지소설.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221525334537">http://seongnamdiary.com/221525334537</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2019/04/002146.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
