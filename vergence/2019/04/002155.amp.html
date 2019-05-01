@@ -67,6 +67,18 @@ tmpfs                                                                           
 -v /opt/splunk-new-clean/etc:/opt/splunk/etc \
 -v /opt/splunk-new-clean/var:/opt/splunk/var
 </code></pre>
+<p>그러고 나서 다시 파일시스템을 살펴보니 아래와 같이 표시되네요.</p>
+<pre><code>
+ansible@6644e3c0e19d:/$ df -h
+Filesystem                                                                                        Size  Used Avail Use% Mounted on
+/dev/mapper/docker-202:2-260827                                                                    99G  1.1G   93G   2% /
+tmpfs                                                                                             4.0G     0  4.0G   0% /dev
+shm                                                                                                64M     0   64M   0% /dev/shm
+tmpfs                                                                                             4.0G     0  4.0G   0% /sys/fs/cgroup
+tmpfs                                                                                             4.0G     0  4.0G   0% /run/secrets
+/dev/xvdf1                                                                                        100G   25G   76G  25% /opt/data
+/dev/xvda2                                                                                         16G   14G  846M  95% /etc/hosts
+</code></pre>
   
 </div>
 
