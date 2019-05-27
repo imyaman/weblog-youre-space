@@ -1,0 +1,103 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article" lang="ko">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/vergence/2019/05/002281.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" xor.csv num1,num2,result 0,0,0 1,0,1 0,1,1 1,1,0 quiz_xor.csv num1,num2,result 0,0 1,0 0,1 1,1 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/xor.csv&quot; | fit RandomForestClassifier result from num1, num2 into mymlxor2 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/quiz_xor.csv&quot; | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Splunk Machine Learning Toolkit ìì - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="https://weblog.youre.space/vergence/2019/05/002278.amp.html" title="Korea DevOps Meetup &#039;19 보도 자료">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Splunk Machine Learning Toolkit ìì">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2019/05/002281.html">
+    <meta property="og:description" content=" xor.csv num1,num2,result 0,0,0 1,0,1 0,1,1 1,1,0 quiz_xor.csv num1,num2,result 0,0 1,0 0,1 1,1 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/xor.csv&quot; | fit RandomForestClassifier result from num1, num2 into mymlxor2 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/quiz_xor.csv&quot; | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" xor.csv num1,num2,result 0,0,0 1,0,1 0,1,1 1,1,0 quiz_xor.csv num1,num2,result 0,0 1,0 0,1 1,1 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/xor.csv&quot; | fit RandomForestClassifier result from num1, num2 into mymlxor2 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/quiz_xor.csv&quot; | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2019/05/002281.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Splunk Machine Learning Toolkit ìì</h1>
+<time datetime="2019-05-27T14:09:18+09:00" itemprop="datePublished">May 27, 2019</time>
+<time datetime="2019-05-27T14:09:18+09:00" itemprop="dateModified">May 27, 2019</time>
+
+by <span itemprop="author"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  
+<div>
+<div><br />
+</div>
+
+<div>xor.csv<br />
+num1,num2,result<br />
+0,0,0<br />
+1,0,1<br />
+0,1,1<br />
+1,1,0<br />
+<br />
+quiz_xor.csv<br />
+num1,num2,result<br />
+0,0<br />
+1,0<br />
+0,1<br />
+1,1<br />
+<br />
+index="gwak_mlxor" source="/opt/data/xor.csv" | fit RandomForestClassifier result from num1, num2 into mymlxor2<br />
+index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult <br />
+<br />
+</div>
+</div>
+
+
+  
+</div>
+
+  <a href=http://weblog.youre.space//vergence/2019/05/002281.html target="_blank">http://weblog.youre.space//vergence/2019/05/002281.html</a>
+
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+
+  </body>
+</html>

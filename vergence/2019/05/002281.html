@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ko" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <title>May 2019 Archives - vergence의 이상한 세상</title>
+    <meta name="description" content=" xor.csv num1,num2,result 0,0,0 1,0,1 0,1,1 1,1,0 quiz_xor.csv num1,num2,result 0,0 1,0 0,1 1,1 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/xor.csv&quot; | fit RandomForestClassifier result from num1, num2 into mymlxor2 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/quiz_xor.csv&quot; | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>Splunk Machine Learning Toolkit ìì - vergence의 이상한 세상</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
     <!--[if lt IE 9]>
@@ -12,7 +14,7 @@
     
     <link rel="start" href="https://weblog.youre.space/vergence/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/vergence/atom.xml" />
-    <link rel="canonical" href="https://weblog.youre.space/vergence/2019/05/" />
+    <link rel="canonical" href="https://weblog.youre.space/vergence/2019/05/002281.html" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -29,7 +31,21 @@
         var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
         sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
     </script>
-    <link rel="prev" href="https://weblog.youre.space/vergence/2019/04/" title="April 2019">
+    <link rel="prev" href="https://weblog.youre.space/vergence/2019/05/002278.html" title="Korea DevOps Meetup &#039;19 보도 자료">
+    
+    <link rel="amphtml" href="https://weblog.youre.space/vergence/2019/05/002281.amp.html">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Splunk Machine Learning Toolkit ìì">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2019/05/002281.html">
+    <meta property="og:description" content=" xor.csv num1,num2,result 0,0,0 1,0,1 0,1,1 1,1,0 quiz_xor.csv num1,num2,result 0,0 1,0 0,1 1,1 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/xor.csv&quot; | fit RandomForestClassifier result from num1, num2 into mymlxor2 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/quiz_xor.csv&quot; | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content=" xor.csv num1,num2,result 0,0,0 1,0,1 0,1,1 1,1,0 quiz_xor.csv num1,num2,result 0,0 1,0 0,1 1,1 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/xor.csv&quot; | fit RandomForestClassifier result from num1, num2 into mymlxor2 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/quiz_xor.csv&quot; | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2019/05/002281.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     
   </head>
   <body>
@@ -64,67 +80,77 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
-              <li class="breadcrumb-list-item">May 2019 Archives</li>
+              <li class="breadcrumb-list-item">Splunk Machine Learning Toolkit ìì</li>
             </ul>
-            <div id="datebased-main" class="main" role="main">
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-2281" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">Splunk Machine Learning Toolkit ìì</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2019-05-27T14:09:18+09:00" itemprop="datePublished">May 27, 2019</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
-              <section id="posts">
-                <h2>May 2019 Archives</h2>
-                <ol class="posts-list">
-  
-                  <li class="posts-list-item">
-                    <time datetime="2019-05-27T14:09:18+09:00">May 27, 2019</time>
-                    <a href="https://weblog.youre.space/vergence/2019/05/002281.html">Splunk Machine Learning Toolkit 예시</a>
-                  </li>
-  
 
-  
-                  <li class="posts-list-item">
-                    <time datetime="2019-05-26T14:16:32+09:00">May 26, 2019</time>
-                    <a href="https://weblog.youre.space/vergence/2019/05/002278.html">Korea DevOps Meetup '19 보도 자료</a>
-                  </li>
-  
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  
+<div>
+<div><br />
+</div>
 
-  
-                  <li class="posts-list-item">
-                    <time datetime="2019-05-22T12:08:01+09:00">May 22, 2019</time>
-                    <a href="https://weblog.youre.space/vergence/2019/05/002252.html">어느 서브웨이 매장의 원두</a>
-                  </li>
-  
-
-  
-                  <li class="posts-list-item">
-                    <time datetime="2019-05-20T07:31:04+09:00">May 20, 2019</time>
-                    <a href="https://weblog.youre.space/vergence/2019/05/002230.html">복세편살 뜻 의미</a>
-                  </li>
-  
-
-  
-                  <li class="posts-list-item">
-                    <time datetime="2019-05-16T12:28:05+09:00">May 16, 2019</time>
-                    <a href="https://weblog.youre.space/vergence/2019/05/002222.html">������������ ��������������� ������ ��������� ��������� ��������� ��������� ������ ������ ������ | ������������������������</a>
-                  </li>
-  
-
-  
-                  <li class="posts-list-item">
-                    <time datetime="2019-05-14T19:11:09+09:00">May 14, 2019</time>
-                    <a href="https://weblog.youre.space/vergence/2019/05/002211.html">어머니의 집</a>
-                  </li>
-  
-                </ol>
-              </section>
-  
-
-              <nav class="page-navigation entry-navigation pagination content-nav">
-                <ul class="page-navigation-list">
-
-                  <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2019/04/">April 2019</a></li>
+<div>xor.csv<br />
+num1,num2,result<br />
+0,0,0<br />
+1,0,1<br />
+0,1,1<br />
+1,1,0<br />
+<br />
+quiz_xor.csv<br />
+num1,num2,result<br />
+0,0<br />
+1,0<br />
+0,1<br />
+1,1<br />
+<br />
+index="gwak_mlxor" source="/opt/data/xor.csv" | fit RandomForestClassifier result from num1, num2 into mymlxor2<br />
+index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult <br />
+<br />
+</div>
+</div>
 
 
-                </ul>
-              </nav>
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2019/05/002278.html" title="Korea DevOps Meetup &#039;19 보도 자료">Previous entry</a></li>
+
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/360</p>
+  
+  
+</aside>
+
+
+              </article>
             </div>
             <aside class="widgets related" role="complementary">
               <nav class="widget-search widget">
@@ -486,5 +512,31 @@
     </div>
     <script src="https://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
     <script src="https://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
-  </body>
+
+<center>
+<script type="text/javascript"> 
+clicksor_enable_adhere = false; 
+
+clicksor_default_url = '';
+clicksor_banner_border = '#99CC33'; 
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#000000'; 
+clicksor_banner_text_color = '#666666';
+clicksor_layer_border_color = '';
+clicksor_layer_ad_bg = ''; 
+clicksor_layer_ad_link_color = '';
+clicksor_layer_ad_text_color = ''; 
+clicksor_text_link_bg = '';
+clicksor_text_link_color = ''; 
+clicksor_enable_text_link = false;
+		 
+clicksor_banner_text_banner = true;
+clicksor_banner_image_banner = true; 
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+</script>
+<script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=330835&amp;adtype=20&amp;sid=588821"></script>
+</center>
+
+</body>
 </html>
