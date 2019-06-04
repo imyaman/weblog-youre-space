@@ -74,6 +74,24 @@ router
   })
   .resolve();
 
+router
+  .on('/post/:path', function (params) {
+    console.log('this is post handler');
+    console.log(window.location);
+
+    thePathUrl = params.path;
+    console.log(thePathUrl);
+    $.get("https://weblog.youre.space/baas/bodyonly/" + theIdUrl + ".html", function( data ) {
+      $( "#mybody" ).html( data );
+    });
+
+    $(document).attr("title", "New Title"+theIdUrl);
+    $("meta[property='og\\:title']").attr("content", 'title: ' + theIdUrl);
+    $("meta[property='og\\:description']").attr("content", 'description: ' + theIdUrl);
+
+  })
+  .resolve();
+
 </script> <!-- end of js -->
 
 <script type="text/babel">
