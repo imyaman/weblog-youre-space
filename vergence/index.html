@@ -76,6 +76,33 @@
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-2467" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/07/002467.html">NetWare 포트 참고</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-07-20T10:58:49+09:00" itemprop="datePublished">July 20, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>어떤 포트가 열려있는지 참고하기 위한 글입니다.</p>
+<p>80 기본 웹 Welcome 페이지</p>
+<p>8009 Remote Manager</p>
+<p>2200 iManage</p>
+<p>&lt;a href="https://support.microfocus.com/kb/doc.php?id=3666976" target="_blank"&gt;자세한 내용&lt;/a&gt;</p>
+<p>qemu-system-x86_64 -m 2G -hda netware_8gb.img -boot menu=on -device ne2k_isa,irq=5,iobase=0x280,netdev=net0 -netdev user,id=net0,hostfwd=tcp::3080-:80,hostfwd=tcp::32200-:2200,hostfwd=tcp::38009-:8009 -vga cirrus</p>
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2019/07/002467.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-2459" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/07/002459.html">REMOTE MONSTER 1350x715</a></h2>
@@ -366,29 +393,6 @@ tmpfs                                                                           
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/vergence/2019/04/002155.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2125" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/04/002125.html">Splunk 스플렁크 HEC에 데이터 넣는 예시</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-21T16:40:01+09:00" itemprop="datePublished">April 21, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>sourcetype은 _json 또는 json_no_timestamp를 써야겠다.<br />index는 이 데이터가 어느 인덱스에 들어갈지를 정하는데 사용한다. HEC 설정에 기본 인덱스가 미리 정해져있다, 그래서 입력 데이터에 index 필드는 선택사항이다.<br />event는 꼭 있어야한다.</p>
-<pre><code>curl -X POST -H 'Authorization: Splunk 0c04fc3c-a84c-46bf-866c-363907385895' -d '{"sourcetype": "json_no_timestamp", "index":"index_anyweb", "event":{"name":"Guy", "number":"0001"} }' http://splunk-8088.youre.space:55900/services/collector</code></pre>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/04/002125.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
