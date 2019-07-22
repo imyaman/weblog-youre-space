@@ -4,9 +4,839 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-07-22T05:46:36Z</updated>
+    <updated>2019-07-22T14:47:06Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Product updates | July 22, 2019</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/07/002470.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.2470</id>
+
+    <published>2019-07-22T14:47:06Z</published>
+    <updated>2019-07-22T14:47:06Z</updated>
+
+    <summary> .appleLinksWhite a {color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important; } @media screen and (min-width: 812px) and (max-width: 812px), screen and (min-width: 736px) and (max-width: 736px), screen and (min-width: 667px) and (max-width: 667px), screen and...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[ 
+
+ 
+
+ 
+
+
+
+
+
+  
+
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+ 
+
+   
+      
+      
+      
+        
+         .appleLinksWhite a {color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important;  }
+         @media screen and (min-width: 812px) and (max-width: 812px),
+          screen and (min-width: 736px) and (max-width: 736px),
+          screen and (min-width: 667px) and (max-width: 667px),
+          screen and (min-width: 568px) and (max-width: 568px),
+          screen and (min-width: 414px) and (max-width: 414px),
+          screen and (min-width: 375px) and (max-width: 375px),
+          screen and (min-width: 320px) and (max-width: 320px) {
+            .body {
+              min-width: 100vw !important;
+            }
+          }
+         @media screen and (max-width: 737px) {
+           .outer_wrapper_td {
+             padding-left: 20px;
+             padding-right: 20px;
+           }
+            .new_header_width_class
+           {
+             text-align:left !important;
+           }
+           .inner_foot_link {
+             display: inline-block;
+             width: 100% !important;
+             padding: 12px 0 0 !important;
+            }
+           .column1 {
+             max-width: 100% !important;
+             display: table !important;
+             width:100% !important;
+           }
+           .four-column {
+             padding-bottom:22px !important;
+           }
+           .text_icon {
+                width: 20px !important;
+                padding-right: 7px !important;
+            }
+                     #sup_fix{
+    line-height:14px;
+                     }
+         }
+        @media screen and (max-width: 768px)
+        {
+          .word-break-md{display: block !important; height: 1px !important}
+        }
+         @media screen and (min-width: 414px) and (max-width: 768px)
+        {
+          .word-break-sm{display: block !important; height: 1px !important}
+        }
+         @media screen and (max-width: 414px) {
+           .pad-mb{padding: 26px 21px 14px 15px !important;}
+           .inner_wrapper{max-width:600px !important; width:100% !important;}
+           .mob_left_space{padding-left: 20px !important;}
+           .banner_logo{
+             width:225px !important;
+           }
+           .logo_holder_container{padding-top:15px !important;padding-bottom:15px !important;padding-left:15px !important;}
+           .left-right-spacing, .social_icons_container, .footer_wrapper_td, .four-column, .border_bar {
+             padding-left: 25px !important;
+             padding-right: 25px !important;
+           }
+           .outer_wrapper_td {
+             padding-left: 10px;
+             padding-right: 10px;
+           }
+           #columndiv {
+             display: none !important;
+           }
+           .inner {
+             display: inline-block;
+             width: 100% !important;
+             padding: 12px 0 0 !important;
+            }
+            .inner3 {
+              padding-top:17px !important;
+            }
+           .inner4 {
+              padding-top:16px !important;
+            }
+           
+           .contents .text {
+             min-width: 26px;
+             padding-right: 0px !important;
+           }
+           .updated_head_space
+           {
+             padding-top:20px !important;
+           }
+           .gcp_cta_btn_table td
+           {
+             padding-top:17px !important;
+               padding-bottom:12px !important;
+           }
+           .four-column
+           {
+             padding-bottom:15px !important;
+           }
+           .new_header_width_class
+           {
+             text-align:left !important;
+             padding-left:42px !important;
+             padding-right:20px !important;
+       
+           }
+              .left-right-spacing-header {
+             padding-left: 25px !important;
+      
+           }
+           .key_announcement{
+             padding-left: 2px !important
+           }
+           .word-break{display: block !important; height: 1px !important}
+         }
+      
+       
+  #sup_fix{
+    line-height:14px;
+    
+}
+
+  
+   
+   
+      <img>
+      <div>A regular roundup of what’s new across Google Cloud Platform.</div>
+      <table>
+      <tr>
+         <td>
+            <table>
+            
+      <tr>
+         <td>
+ 
+ 
+<table>
+   
+  <tr>
+  	<td>
+      <img alt="Google Cloud Platform">
+    </td>
+    <td>
+      	<table>
+                      <tr>
+                        <td>
+                            <table>  
+                                 <tr> 
+                                    <td>    
+                                      <table>    
+                                        <tr>  
+                                            <td>
+                                            <a>Go to your Console</a>
+                                            </td>
+                                          <td><a><img alt="" /></a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                   </td>
+                                 </tr>
+                               </table>
+                        </td>
+                      </tr>
+                    </table>
+    </td>
+  </tr>
+          
+                
+              
+            
+        </table>
+
+ 
+<table>
+  <tr>
+  <td>
+ <table> 
+ <tr><td>
+<table>
+  <tr>
+    <td>
+    </td>
+  </tr>
+ <tr>
+ <td>
+ <table>
+ <tr>
+
+
+ <td>
+ GCP UPDATES&nbsp;<span>|&nbsp;JULY 22, 2019</span>
+ </td>
+
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+
+ 
+<table>
+  <tr>
+    
+
+<td>
+
+<table>  
+
+<tr><td>
+  
+<table>
+   <tr>
+     <td>MANAGEMENT TOOLS</td>
+   </tr>
+</table>
+<table>
+ 
+   <tr>
+      <td>Cloud Billing – Committed Use Discount Analysis report for Compute Engine: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>With this new report, you can analyze your Compute Engine resources alongside your committed-use discounts from directly within the Cloud Console. Gain greater transparency into your usage and cost savings so that you can maximize your discounts and minimize the time spent managing your commitments. <a>Documentation</a> | <a>Blog</a>
+  </td>
+   </tr>
+</table>
+
+
+<table>
+   <tr>
+     <td>MIGRATION</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Transfer Appliance in the European Union: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Now generally available in the EU in addition to the US and Canada, Transfer Appliance is a secure, high-capacity storage server that helps you rack, capture, and then ship your data to Google Cloud. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>COMPUTE</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Compute Engine – bring your own license: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>You can now bring existing operating-system licenses to Compute Engine using sole-tenant nodes while minimizing physical core usage with the in-place restart feature. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>GKE On-Prem: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Take advantage of Kubernetes and cloud technology in your data center. You get the Kubernetes Engine experience with managed installs and upgrades validated by Google, as well as a single-pane-of-glass view for managing clusters across on-premises and cloud environments. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Functions – security: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>With access control over function invocation, you can now grant developers, other services, and end users permission to invoke a function on a per-function basis. This means that functions no longer have to be fully public. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Compute Engine – updating selected instances: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Normally when you start an opportunistic update, you need to wait for Compute Engine to roll out the update as opportunities arise. Now you can manually initiate that update immediately on specific instances in your managed-instance group. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Compute Engine – mounting a persistent disk as a data volume: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>With this launch, you can now mount persistent disks from a host VM instance into a container. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>DATA ANALYTICS</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Data Catalog: public beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This fully managed and scalable data discovery and metadata management service lets you quickly discover, understand, and manage all your data in Google Cloud. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Dataproc – Hadoop secure mode with Kerberos: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Kerberos and Hadoop secure-mode security configurations are now generally available, giving you access to best-in-class security features and infrastructure and the familiar controls you’ve already developed for your Hadoop and Spark environments. <a>Documentation</a> | <a>Blog</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Pub/Sub – customer-managed encryption keys: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Get an additional layer of control over access to message data stored at rest. At the time topics are created, you can configure them to use a Cloud Key Management Service CryptoKey for message encryption. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>NETWORKING</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud NAT logging: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Log NAT connections and errors, such as when a network connection using NAT is created or when a packet is dropped because no port was available for NAT. Created logs are sent to Stackdriver Logging. Cloud NAT logging follows the standard Network Telemetry charges. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Traffic Director: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>With this fully managed traffic control plane for service mesh, you can easily deploy global load balancing across clusters and VM instances in multiple regions, offload health checking from service proxies, and configure sophisticated traffic control policies. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Load Balancing – user-defined request headers: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Now you can specify additional headers that the load balancer adds to requests. These can include information the load balancer knows about the client connection, including latency, geographic location, and TLS connection parameters. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>STORAGE & DATABASES</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Spanner – importing and exporting data in CSV format: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Now you can use the bulk load functionality – using Cloud Dataflow templates – to import flat CSV files generated from traditional RDBMSs, such as from the MySQL mysqldump tool, the PostgreSQL COPY command, and the Microsoft SQL Server bcp tool. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud SQL – large disk support: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This release increases the maximum data storage for instances of MySQL and PostgreSQL from 10,230 GB to 30,720 GB. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>IDENTITY & SECURITY</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Organization Policy Service – defining resource locations: beta </td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>With this release, you can define the allowed locations for newly created resources using the resource locations constraint in the organization policy. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>API PLATFORM & ECOSYSTEMS</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Apigee Edge – asynchronous query and data exports: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Now you can run a custom report asynchronously from the Apigee Edge UI or by using the Apigee Edge API. In addition, you can now export analytics data from Apigee Edge Analytics to your own data repository. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+  
+<table>
+   <tr>
+     <td>AI & MACHINE LEARNING</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Deep Learning Containers: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Quickly prototype with a portable and consistent environment for developing, testing, and deploying AI applications. These Docker images use popular frameworks and are performance optimized, compatibility tested, and ready to deploy. <a>Product page</a> | <a>Blog</a>
+  </td>
+   </tr>
+</table>
+
+</td>
+</tr>
+</table>
+ <table> 
+ 
+<tr> 
+ <td> 
+ <a>
+ <span>Go to your Console</span> 
+ </a>
+ </td> 
+ </tr> 
+ 
+</table>
+<table>
+    <tr>
+        <td>
+            <table>
+             
+             
+				<tr>
+                    <td>See you in the cloud,</td>
+                </tr>
+				
+                <tr>
+                    <td>The Google Cloud Platform Team</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+
+</table>
+<table>
+  <tr>
+    
+
+<td>
+
+
+<table>
+<tr>
+<td>
+<table>
+				<tr>
+					<td>
+                      <table>
+						 <tr>
+				                    <td>
+                                      GCP Launch Announcements Community
+				                    </td>
+				                 </tr>
+						 <tr>
+						    <td>
+						      Want to be the first to know about GCP updates? <a>Join the GCP Launch Announcements Community</a> to get the latest info on changes to GCP products and features.
+						     </td>
+						  </tr>
+</table>
+
+</td>
+</tr>
+  </table>
+</td>
+</tr>
+</table>
+  
+
+  
+ </td></tr>
+ </table> 
+ 
+<table>
+  <tr><td><table>
+    <tr><td>&nbsp;</td></tr>
+    </table></td></tr>
+    <tr>
+        <td>
+
+            <table>
+                
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <table>
+
+                                        <tr>
+                              
+                                         
+    
+    
+
+     <td>
+
+                                          
+  
+
+                                          
+                                            
+
+                                                
+
+                                                <table>
+                                                    <tr>
+                                                        <td> 
+
+                                                                        <table>
+                                                                            <tr>
+
+                                                                                <td>
+                                                                                  
+ <table>
+   <tr>
+   
+     
+     
+
+
+    <td>
+
+     
+                                                                                    <a><img>
+                                                                                    </a>
+     </td>
+   </tr>
+                                                                                  </table>
+                                                                                </td>
+
+
+                                                                                <td>
+                                                                                    <a>Documentation</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        
+
+
+                                                        </td>
+                                                      
+                                                        <td>
+
+
+                                                                        <table>
+                                                                            <tr>
+
+                                                                                <td>
+                                                                                   <a>
+										    <img>
+                                                                                   </a>
+                                                                                </td>
+
+
+                                                                                <td>
+                                                                                    <a>Support</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+
+                                                        </td>
+                                                    </tr>
+                                                </table> 
+
+                                                
+							
+							<table>
+								<tr>
+									<td>
+										
+	                                                                        <table>
+	                                                                            <tr>
+
+	                                                                                <td>
+                                                                                           <a><img alt="Mobile App">
+                                                                                           </a>
+	                                                                                </td>
+
+
+	                                                                                <td>
+	                                                                                    <a>Mobile app</a>
+	                                                                                </td>
+	                                                                            </tr>
+	                                                                        </table>
+									</td>
+									<td>
+										
+	                                                                        <table>
+	                                                                            <tr>
+
+	                                                                                <td>
+                                                                                           <a><img>
+                                                                                           </a>
+	                                                                                </td>
+
+
+	                                                                                <td>
+	                                                                                    <a>Feedback</a>
+	                                                                                </td>
+	                                                                            </tr>
+	                                                                        </table>
+									</td>	
+									
+								</tr>	
+						        </table>		
+
+                                               
+
+
+                                            
+
+
+                                        </td></tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                
+            </table>
+
+
+        </td>
+    </tr>
+</table>
+</td>
+    </tr>
+</table>
+ 
+</td></tr>
+           <tr>
+<td>
+                <table>
+                  
+                   <tr>
+                     <td> 
+                       <img alt="">
+                      </td>
+                    </tr>
+                   <tr>
+                     <td> 
+                            <a href="">Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+                       <br />
+                       <br />
+                        This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive feature announcements about Google Cloud Platform. If you don’t want to receive such emails in the future, please unsubscribe here: <div><a>https://www.google.com/appserve/mkt/optout/AFnwnKUcE_cQMJtv1RZLCgq0DI4-x06zQ53nf6C1Iv4mqBiE3LS-YJewO-1WASUYjqtNCndSZJg?hl=en</a></div> You can also change your preferences on your account’s profile page by logging in at console.cloud.google.com 
+                              
+                              
+                              </td>
+                    </tr>
+                    <tr>
+                      <td> 
+                        <table> 
+                          <tr>
+                            <td><a><img alt="Google Cloud Blog"></a></td> 
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a><img></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a><img></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                             <td><a><img></a></td>
+							 <td>&nbsp; &nbsp;</td>
+							 <td><a><img></a></td>
+                             
+                           
+                          </tr>
+                        </table>
+                       </td>
+                    </tr>
+                </table>
+         </td> </tr>
+ 
+         </table>
+       </td></tr>
+      </table>  
+
+     <img>
+<div>
+        
+        
+     </div>
+       
+
+   
+
+ 
+
+</td></tr></table>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>&quot;고양시 Oneday Class 소통창구 세미나&quot; - 청년, 소통에서 미래를 찾다</title>
@@ -369,31 +1199,6 @@
 
 
 <p>출처 : <a href="http://seongnamdiary.com/221586735694">http://seongnamdiary.com/221586735694</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>&quot;고양, 온마을이 진로다!&quot; 고양시청소년진로센터 프로그램 안내 (고양시 2020년 수시대학입시박람회)</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/07/002453.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.2453</id>
-
-    <published>2019-07-15T09:41:04Z</published>
-    <updated>2019-07-15T09:41:04Z</updated>
-
-    <summary>“오랫동안 꿈을 그리는 사람은 마침내 그 꿈을 닮아간다.”꿈의 중요성을 느낄 수 있는 프랑스 소설가 겸 전 문화부장관 앙드레 말로의 말입니다.고양시에는 초등학생에서 중·고등학생, 성인에 이르기까지청소년들이 스스로 자신의 꿈을 그리고 찾으며 그 꿈에 한발짝 다가갈 수 있도록 다양한 진로교육 프로그램을 제공하고 있는...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[“오랫동안 꿈을 그리는 사람은 마침내 그 꿈을 닮아간다.”꿈의 중요성을 느낄 수 있는 프랑스 소설가 겸 전 문화부장관 앙드레 말로의 말입니다.고양시에는 초등학생에서 중·고등학생, 성인에 이르기까지청소년들이 스스로 자신의 꿈을 그리고 찾으며 그 꿈에 한발짝 다가갈 수 있도록 다양한 진로교육 프로그램을 제공하고 있는 기관이 있는데요.바로, 고양시청소년진로센터입니다.고양시청소년진로센터는고양시 청소년의 꿈을 찾는 길잡이가 되고자 진로교육법에 의거하여 설립된 진로교육 전문기관입니다.초등학교부터 성인까지 지역사회 안에서 청소년의 꿈과 끼를 찾을 수 있도록 다양한 체험활동 공간을 조성하고, 지역사.......
-
-
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221586324487">http://blog.naver.com/letsgoyang/221586324487</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
