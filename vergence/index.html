@@ -76,6 +76,28 @@
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-2491" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/07/002491.html">리모트몬스터 로고 흑백</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-07-29T15:22:47+09:00" itemprop="datePublished">July 29, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p><a href="https://weblog.youre.space/vergence/uploads/logo.png"><img alt="logo.png" src="https://weblog.youre.space/vergence/assets_c/2019/07/logo-thumb-360xauto-95.png" class="mt-image-none" width="360" height="168" /></a></p>
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2019/07/002491.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-2467" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/07/002467.html">NetWare 포트 참고</a></h2>
@@ -337,62 +359,6 @@ index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredict
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/vergence/2019/05/002211.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-2155" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/04/002155.html">The minimum free disk space reached for /opt/splunk/var/run/splunk/dispatch</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-04-30T14:07:29+09:00" itemprop="datePublished">April 30, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>스플렁크를 도커 위에서 실행할 때 이런 메시지를 보게 되었습니다. guest OS 안에서 파일시스템을 살펴보니 아래와 같네요.</p>
-<pre><code>
-root@d675c62c79b7:/opt/splunk/var/lib/splunk# df -h
-Filesystem                                                                                        Size  Used Avail Use% Mounted on
-/dev/mapper/docker-202:2-260827                                                                    99G  1.1G   93G   2% /
-tmpfs                                                                                             4.0G     0  4.0G   0% /dev
-shm                                                                                                64M     0   64M   0% /dev/shm
-tmpfs                                                                                             4.0G     0  4.0G   0% /sys/fs/cgroup
-tmpfs                                                                                             4.0G     0  4.0G   0% /run/secrets
-/dev/xvdf1                                                                                        100G   24G   77G  24% /opt/data
-/dev/xvda2                                                                                         16G   14G  477M  97% /opt/splunk/var
-</code></pre>
-<p>/opt/splunk/var 를 별도의 디스크로 마운트 하고 있었습니다. docker 실행할 때 마운트 옵션을 이렇게 바꾸었습니다.</p>
-<p>이전</p>
-<pre><code>
--v /opt/splunk-new-clean/etc:/opt/splunk/etc \
--v /opt/splunk-new-clean/var<code>/lib/splunk</code>:/opt/splunk/var/lib/splunk
-</code></pre>
-<p>이후</p>
-<pre><code>
--v /opt/splunk-new-clean/etc:/opt/splunk/etc \
--v /opt/splunk-new-clean/var:/opt/splunk/var
-</code></pre>
-<p>그러고 나서 다시 파일시스템을 살펴보니 아래와 같이 표시되네요.</p>
-<pre><code>
-ansible@6644e3c0e19d:/$ df -h
-Filesystem                                                                                        Size  Used Avail Use% Mounted on
-/dev/mapper/docker-202:2-260827                                                                    99G  1.1G   93G   2% /
-tmpfs                                                                                             4.0G     0  4.0G   0% /dev
-shm                                                                                                64M     0   64M   0% /dev/shm
-tmpfs                                                                                             4.0G     0  4.0G   0% /sys/fs/cgroup
-tmpfs                                                                                             4.0G     0  4.0G   0% /run/secrets
-/dev/xvdf1                                                                                        100G   25G   76G  25% /opt/data
-/dev/xvda2                                                                                         16G   14G  846M  95% /etc/hosts
-</code></pre>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/04/002155.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
