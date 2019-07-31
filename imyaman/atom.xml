@@ -4,9 +4,1604 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-07-31T01:18:11Z</updated>
+    <updated>2019-07-31T02:19:07Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Google Cloud Newsletter, July 2019 | Twitter tests BigQuery.</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/07/002509.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.2509</id>
+
+    <published>2019-07-31T02:19:07Z</published>
+    <updated>2019-07-31T02:19:07Z</updated>
+
+    <summary> @media screen and (min-width: 420px) { .head_gray_pd { padding-left: 20px !important; } } @media screen and (min-width: 731px) and (max-width: 850px) { .banner_text1, .banner_text2 { text-align: center !important; } .left-spacing-mob { padding-bottom: 2px !important; } } @media screen and...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+
+
+
+
+
+
+@media screen and (min-width: 420px) {
+.head_gray_pd {
+padding-left: 20px !important;
+}
+}
+@media screen and (min-width: 731px) and (max-width: 850px) {
+.banner_text1,
+.banner_text2 {
+text-align: center !important;
+}
+.left-spacing-mob {
+padding-bottom: 2px !important;
+}
+}
+@media screen and (max-width: 737px) {
+.mob_cls {
+width: 100% !important;
+max-width: 500px !important;
+}
+.body {
+padding-left: 10px !important;
+padding-right: 10px !important;
+box-sizing: border-box !important;
+background-color: #f8f9fa !important;
+width: auto !important;
+}
+.twitter_icon_box_text2 a,
+.body_heading a,
+.mob_link,
+.sec4_box1 tr td a,
+.sec4_box2 tr td a,
+.subscribe_text a,
+.feedback_text1 a,
+.signup_text a {
+font-weight: 500 !important;
+}
+.foot_wrap {
+padding-left: 50px !important;
+padding-right: 50px !important;
+}
+.banner_text1 {
+color: #ffffff !important;
+font-family: Roboto, arial !important;
+font-size: 24px !important;
+line-height: 32px !important;
+padding-top: 125px !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
+padding-bottom: 20px !important;
+text-align: center !important;
+}
+.banner_text2 {
+color: #ffffff !important;
+font-family: Roboto, arial !important;
+font-size: 14px !important;
+line-height: 24px !important;
+font-weight: 300 !important;
+padding-bottom: 26px !important;
+padding-left: 20px !important;
+padding-right: 20px !important;
+text-align: center !important;
+}
+.sect_plr {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+.flexible {
+width: 100% !important;
+max-width: 600px !important;
+}
+.head_flexible {
+width: 100% !important;
+max-width: 500px !important;
+}
+.tweetbox {
+width: 100% !important;
+}
+.mob_para_head_event {
+padding-bottom: 10px !important;
+}
+.feedback_icon_parent1 {
+width: 100% !important;
+max-width: 110px !important;
+}
+.sec6_lr_pd {
+width: 100% !important;
+max-width: 500px !important;
+}
+.bigger_wrapper_body {
+padding-left: 25px !important;
+padding-right: 25px !important;
+box-sizing: border-box !important;
+}
+.banner_container {
+width: 100% !important;
+}
+.holder_wrap_inner {
+width: 100% !important;
+max-width: 100% !important;
+}
+.body_content_wrapper {
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+.bigger_wrapper_footer_1 {
+padding-left: 0 !important;
+padding-right: 0 !important;
+}
+.webkit {
+width: 100% !important;
+min-width: 100% !important;
+}
+.pre_header_text {
+width: 100% !important;
+}
+.body_heading {
+padding-bottom: 8px !important;
+padding-top: 0px !important;
+}
+.body_heading_zero_bot {
+padding-bottom: 0px !important;
+padding-top: 0px !important;
+}
+.body_subheading {
+font-size: 16px !important;
+line-height: 24px !important;
+padding-top: 10px !important;
+}
+.body_text {
+font-size: 14px !important;
+line-height: 24px !important;
+padding-top: 5px !important;
+padding-bottom: 10px !important;
+}
+.two_col_wrapper {
+width: 100% !important;
+max-width: 500px !important;
+}
+.twitter_icon_box_text2 {
+width: 100% !important;
+text-align: left !important;
+padding-bottom: 8px !important;
+}
+.twitter_icon_box_text4 {
+width: 100% !important;
+text-align: left !important
+}
+.twitter_box1_text2 {
+padding-right: 0px !important;
+padding-bottom: 0px !important;
+}
+.sec4_last_text.twitter_box1_text2 {
+padding-bottom: 16px !important;
+}
+.feedback_icon_parent1 {
+float: left !important;
+text-align: left !important;
+}
+.feedback_icon1 {
+width: 20px;
+padding-top: 20px !important;
+}
+.feedback_text1 {
+padding-top: 16px !important;
+text-align: left !important;
+}
+.subscribe_text1,
+.subscribe_text2,
+.subscribe_text3 {
+padding-left: 0px !important;
+padding-right: 0px !important;
+padding-bottom: 20px !important;
+}
+#firsttab {
+padding-left: 0px !important;
+}
+.subscribe_border {
+display: none !important;
+}
+.sub_head2,
+.sub_head3 {
+display: none !important;
+}
+#heroimgtxt3 {
+text-align: left !important;
+padding-left: 0px !important;
+}
+#head1 {
+padding-top: 42px !important;
+}
+#head2 {
+padding-top: 34px !important;
+}
+#head5 {
+padding-top: 34px !important;
+}
+.bluecta {
+text-align: center !important;
+margin: auto;
+}
+#head_text {
+padding-top: 12px !important;
+}
+.banner_text_2 {
+padding-left: 10px !important;
+padding-right: 10px !important;
+}
+.banner_text_1 {
+padding: 6px 10px 6px 10px !important;
+}
+#firsttab .bigger_wrapper_body {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+#thirdtab {
+padding-bottom: 32px !important;
+}
+#secondtab {
+padding-top: 0px !important;
+}
+}
+@media only screen and (min-width: 415px) and (max-width: 500px) {
+.btn_align {
+padding-bottom: 30px !important;
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1_heading2 {
+padding-bottom: 3px !important;
+padding-top: 16px !important;
+}
+.sec1_lnk_pb_mob {
+padding-bottom: 20px !important;
+}
+.section5_box1,
+.section5_box2 {
+width: 100% !important;
+}
+.section5_txt1,
+.section5_txt2 {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+.section5_txt1 {
+padding-bottom: 20px !important;
+}
+.outer {
+width: 100% !important;
+}
+.left_space {
+padding-left: 14px !important;
+}
+.pb_sec4_txt1 {
+padding-bottom: 8px !important;
+}
+.pb_sec4_txt2 {
+padding-bottom: 21px !important;
+}
+.event_btm tr td {
+padding-top: 1px !important;
+}
+.section2_txt1 {
+padding-bottom: 1px!important;
+}
+.section2_txt2 {
+padding-bottom: 20px!important;
+}
+.logo_holder_container {
+padding-left: 7px !important;
+}
+.flexible {
+width: 100% !important;
+max-width: 600px !important;
+}
+.tweetbox {
+width: 100% !important;
+}
+.section5_heading2 {
+padding-top: 0px !important;
+}
+.mob_gray_line {
+width: 100% !important;
+}
+.twitter_icon_box_main {
+width: 100% !important;
+}
+.mob_line_lrpd {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.mob_para_head,
+.section2_txt1,
+.section2_txt2,
+.sec4_lr_pd,
+.sec6_lr_pd,
+.para_heading1,
+.para_heading2,
+.btn_align {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.padtop {
+padding-top: 0px !important;
+}
+.head_gray_row {
+width: 100% !important;
+}
+.head_gray_pd {
+padding-left: 10px !important;
+}
+.banner_rght {
+width: 100% !important;
+max-width: 269px !important;
+}
+.banner_rght tr td {
+text-align: right !important;
+}
+.banner_rght tr td img {
+width: 100% !important;
+}
+.sec3_gray_box {
+width: 100% !important;
+}
+.foot_plr {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.sec4_box1,
+.sec4_box2 {
+width: 100% !important;
+max-width: 100% !important;
+}
+.pt_sec1_mob_bnr {
+padding-top: 0px !important;
+}
+td.sec4_img img {
+width: 100% !important;
+height: auto !important;
+max-width: 414px !important;
+}
+td.section1_img1 img {
+width: 100% !important;
+height: auto !important;
+max-height: 224px !important;
+max-width: 414px !important;
+}
+td.section1_img1 {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1_box1,
+.section1_box2 {
+width: 100% !important;
+height: auto !important;
+max-width: 414px !important;
+}
+.social_icons_container_inner {
+text-align: left !important;
+display: block !important;
+margin: 0 !important;
+}
+.social_icons_container_inner td {
+text-align: left !important;
+}
+.section2_top_td,
+.section2_bottom_td {
+padding-top: 0px !important;
+}
+#fourthtab .twitter_icon_box_text2 {
+padding-top: 14px !important;
+}
+#fourthtab .twitter_box1_text2 {
+padding-bottom: 8px !important;
+}
+#fourthtab .sec3_tab2body {
+padding-top: 4px !important;
+}
+.section1_img1 img {
+width: 100% !important;
+}
+.section1_img2 {
+background-repeat: no-repeat !important;
+height: auto !important;
+}
+.section1_img2 img {
+width: 100% !important;
+}
+.section4_img1,
+.section4_img2,
+.section4_img3,
+.section4_img4 {
+width: 100% !important;
+height: auto !important;
+}
+.split_box_mob {
+display: block !important;
+width: 100% !important;
+}
+.split_box_mob td {}
+.split_box_mob .left-spacing-mob {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1box {
+width: 100% !important;
+max-width: 412px !important;
+}
+.left-spacing-mob {
+padding-left: 32px !important;
+}
+#firsttab.bigger_wrapper_body {
+padding-right: 0px !important;
+padding-left: 0px !important;
+}
+.section5_link {
+display: block !important;
+padding-bottom: 10px !important;
+}
+}
+@media screen and (max-width: 414px) {
+#banner4 {
+background: none !important;
+height: 0px !important;
+}
+.show_in_mobile {
+display: block !important;
+}
+.social_icons_container_inner {
+text-align: left !important;
+display: block !important;
+margin: 0 !important;
+}
+.social_icons_container_inner td {
+text-align: left !important;
+}
+.section2_top_td,
+.section2_bottom_td {
+padding-top: 0px !important;
+}
+#fourthtab .twitter_icon_box_text2 {
+padding-top: 14px !important;
+}
+#fourthtab .twitter_box1_text2 {
+padding-bottom: 8px !important;
+}
+#fourthtab .sec3_tab2body {
+padding-top: 4px !important;
+}
+.section1_img1 img {
+width: 100% !important;
+}
+.section1_img2 {
+background-repeat: no-repeat !important;
+height: auto !important;
+}
+.section1_img2 img {
+width: 100% !important;
+}
+.section4_img1,
+.section4_img2,
+.section4_img3,
+.section4_img4 {
+width: 100% !important;
+height: auto !important;
+}
+.split_box_mob {
+display: block !important;
+width: 100% !important;
+}
+.split_box_mob td {}
+.split_box_mob .left-spacing-mob {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1box {
+width: 100% !important;
+max-width: 412px;
+}
+.left-spacing-mob {
+padding-left: 32px !important;
+}
+#firsttab.bigger_wrapper_body {
+padding-right: 0px !important;
+padding-left: 0px !important;
+}
+.section5_link {
+display: block !important;
+padding-bottom: 10px;
+}
+.btn_align {
+padding-bottom: 30px !important;
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1_heading2 {
+padding-bottom: 3px !important;
+padding-top: 16px !important;
+}
+.section5_box1,
+.section5_box2 {
+width: 100% !important;
+}
+.section5_txt1,
+.section5_txt2 {
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+.section5_txt1 {
+padding-bottom: 20px !important;
+}
+.padtop {
+padding-top: 0px !important;
+}
+.section5_heading2new {
+padding-top: 0px !important;
+}
+.mainbannertd {
+padding-left: 25px !important;
+}
+.outer {
+width: 100% !important;
+}
+.left_space {
+padding-left: 14px !important;
+}
+.sec3_mob_lr {
+padding-right: 25px !important;
+padding-left: 25px !important;
+}
+.pb_sec4_txt1 {
+padding-bottom: 8px !important;
+}
+.event_btm tr td {
+padding-top: 1px !important;
+}
+.section2_txt1 {
+padding-bottom: 1px !important;
+}
+.section2_txt2 {
+padding-bottom: 20px !important;
+}
+.logo_holder_container {
+padding-left: 7px !important;
+}
+.sec1_tp tr td {
+padding-top: 10px !important;
+}
+.ban_top {
+padding-top: 20px !important;
+}
+.flexible {
+width: 100% !important;
+max-width: 600px !important;
+}
+.flexible_new {
+width: 100% !important;
+max-width: 600px !important;
+padding-left: 0px !important;
+padding-right: 0px !important;
+}
+.tweetbox {
+width: 100% !important;
+}
+.imginnertd {
+width: 169px !important;
+}
+.section5_heading2 {
+padding-top: 16px !important;
+}
+.mob_gray_line {
+width: 100% !important;
+}
+.twitter_icon_box_main {
+width: 100% !important;
+}
+.mob_line_lrpd {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.mob_para_head,
+.section2_txt1,
+.section2_txt2,
+.sec4_lr_pd,
+.sec6_lr_pd,
+.para_heading2,
+.btn_align,
+.bdy_cnt {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.para_heading2 {
+font-size: 18px !important;
+line-height: 32px !important;
+}
+.head_gray_row {
+width: 100% !important;
+}
+.head_gray_pd {
+padding-left: 10px !important;
+}
+.banner_rght {
+width: 100% !important;
+max-width: 269px !important;
+}
+.banner_rght tr td {
+text-align: right !important;
+}
+.banner_rght tr td img {
+width: 100% !important;
+}
+.sec3_gray_box {
+width: 100% !important;
+}
+.banner_img {
+padding-left: 25px !important;
+}
+.foot_plr {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.sec4_box1,
+.sec4_box2 {
+width: 100% !important;
+max-width: 100% !important;
+}
+.pt_sec1_mob_bnr {
+padding-top: 0px !important;
+}
+td.sec4_img img {
+width: 100% !important;
+height: auto !important;
+max-width: 414px !important;
+}
+td.section1_img1 img {
+width: 100% !important;
+height: auto !important;
+max-height: 224px !important;
+max-width: 414px !important;
+}
+td.section1_img1 {
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.section1_box1,
+.section1_box2 {
+width: 100% !important;
+height: auto !important;
+max-width: 414px !important;
+}
+.para_heading1 {
+font-size: 24px !important;
+font-weight: bold !important;
+line-height: 32px !important;
+padding-left: 25px !important;
+padding-right: 25px !important;
+}
+.sec4_img {
+width: 246px !important;
+height: auto !important;
+padding-top: 23px !important;
+text-align: center !important;
+}
+.overhead_img{
+line-height: 5px !important;
+}
+.split_box_dis_none{
+display:none !important;
+}
+}
+@media screen and (min-width: 320px) and (max-width: 320px) {
+.section4_module5_td1 {
+width: 100px !important;
+background-size: 100% 100% !important;
+}
+}
+@media screen and (min-width: 812px) and (max-width: 812px),
+screen and (min-width: 736px) and (max-width: 736px),
+screen and (min-width: 667px) and (max-width: 667px),
+screen and (min-width: 568px) and (max-width: 568px),
+screen and (min-width: 414px) and (max-width: 414px),
+screen and (min-width: 375px) and (max-width: 375px),
+screen and (min-width: 320px) and (max-width: 320px) {
+.body {
+min-width: 100vw !important;
+}
+}
+
+
+@media screen yahoo {
+.show_in_mobile {
+display:none !important;
+font-size:0px !important;
+line-height:0 !important;
+height:0px !important;
+max-height:0px !important;
+overflow:hidden !important;
+}
+}
+
+
+
+<div>
+<div>How BigQuery became “a main resource” for data at Twitter.</div>
+
+<table>
+<tr><td>You can also view this email in your <a>browser</a>.</td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+
+<div>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img alt="Google Cloud">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+
+
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td><span>NEWSLETTER </span> | <span>JULY 2019</span></td>
+</tr>
+</table>
+<table>
+<tr>
+<td><img></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+
+</tr>
+<tr>
+<td>Twitter unlocks the power of BigQuery.
+</td>
+</tr>
+<tr>
+<td>After 8,000 queries and nearly 100 PB processed, our serverless data warehouse became a main resource for data at Twitter.
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a><span>Learn why</span></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+
+
+<td>
+<table>
+<tr>
+<td></td>
+<td>
+<img>
+</td>
+</tr>
+</table>
+</td>
+
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><img alt="Elastifile and Google Cloud"></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>Stretch your storage: Google acquires Elastifile enterprise cloud storage.</td>
+</tr>
+<tr>
+<td><a>Read more   
+
+<img>
+</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><img alt="England&#39;s Football Association and Google Cloud"></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>England’s Football Association uses Google Cloud to find the stars of the future.</td>
+</tr>
+<tr>
+<td><a>Learn how   
+
+<img>
+</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><img alt="Gartner and Google Cloud"></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>Gartner names Google Cloud a leader in the lastest IaaS Magic Quadrant.</td>
+</tr>
+<tr>
+<td><a>Get the report   
+
+<img>
+</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>PLATFORM NEWS
+</td>
+</tr>
+<tr>
+<td><a>
+Break your own AI training records with Cloud TPU Pods.</a>
+</td>
+</tr>
+<tr>
+<td>Train your most demanding models in minutes instead of days on Cloud TPU Pods, the same infrastructure that made Google Cloud Platform the first public cloud provider to outperform <span>on-premises</span> systems in the latest <a>
+MLPerf competition</a>.
+</td>
+</tr>
+<tr>
+<td><a>
+Special delivery: Deploy Spinnaker for GCP with just a couple of clicks.</a>
+</td>
+</tr>
+<tr>
+<td>Quickly extend your pipeline with Spinnaker for GCP, the open-source multi-cloud continuous delivery platform from Google and Netflix. With secure installation, automatic backups, and simplified maintenance, best practices are built in.
+</td>
+</tr>
+<tr>
+<td><a>
+Cloud Spanner: Securely scaling 39 million Blockchain users.</a>
+</td>
+</tr>
+<tr>
+<td>Managing datasets and access to the cryptocurrency ecosystem for 39 million cross-platform users in 140 countries is no easy feat. Blockchain replaced its previous database layer and saved 30% in costs with Cloud Spanner.
+</td>
+</tr>
+<tr>
+<td><a>
+Introducing Equiano, a subsea cable connecting South Africa to Portugal.</a>
+</td>
+</tr>
+<tr>
+<td>Equiano boosts connectivity to the African continent with 20 times more network capacity than the previous cable that served the region. Closer to home, we’re adding a <a>
+new data center and Google Cloud region in Nevada</a>.
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>RESOURCES
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a>Qubit says goodbye to Hadoop: How to build a streaming data processing pipeline on Google Cloud.</a></td>
+</tr>
+<tr>
+<td>
+See how personalization software company Qubit uses tools like Cloud Pub/Sub and BigQuery to deliver real-time recommendations to their customers.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a>Newly integrated BigQuery and Kaggle let you use ML – without moving or downloading your data.</a></td>
+</tr>
+<tr>
+<td>
+Execute superfast SQL queries – and train and analyze machine learning models in SQL – with Kernels, Kaggle’s free hosted Jupyter notebook environment.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a>To run or not to run a database on Kubernetes, that is the question.</a></td>
+</tr>
+<tr>
+<td>
+Explore the pros and cons of Kubernetes for your data layer to see if it can deliver the same benefits as it does for your application layer.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a>New training: Architecting with Kubernetes Engine Specialization.</a></td>
+</tr>
+<tr>
+<td>
+Master the fundamentals of hybrid cloud architectures and Kubernetes Engine with lectures and hands-on labs, and earn your certificate.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a>Migrate to GCP from another cloud provider – or an <span>on-premises</span> or private-hosting environment.</a></td>
+</tr>
+<tr>
+<td>
+Plan, design, and implement the process of migrating your workloads to GCP and find <a>
+patterns for connecting other cloud service providers</a> with this new documentation.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a>Factor friction: What is the “Twelve-Factor App”? And what does it have to do with Cloud Run?</a></td>
+</tr>
+<tr>
+<td>
+Step by step, Cloud Run can make it even easier for you to meet all 12 factors to scale, port, and maintain web-based software as a service.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a>Migrating Teradata to BigQuery: Introduction and overview.</a></td>
+</tr>
+<tr>
+<td>
+Transition from an <span>on-premises</span> Teradata data warehouse – or any data warehouse – to BigQuery with these general concepts.
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>UPCOMING EVENTS
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img alt="Google Cloud Next &#39;19 Tokyo"></td>
+</tr>
+</table>
+</td>
+<td> </td>
+<td>
+<table>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a>Google Cloud Next ’19 Tokyo</a>
+</td>
+</tr>
+<tr>
+<td>
+<a>July 30–August 1</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img src="http://services.google.com/fh/files/emails/cloud-nl-july-06-event2-2x.png
+" alt="VMworld 2019"></td>
+</tr>
+</table>
+</td>
+<td> </td>
+<td>
+<table>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a>VMworld 2019</a>
+</td>
+</tr>
+<tr>
+<td>
+<a>August 25–29</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img src="http://services.google.com/fh/files/emails/cloud-nl-july-07-event3-2x.png
+" alt="Grace Hopper Celebration"></td>
+</tr>
+</table>
+</td>
+<td> </td>
+<td>
+<table>
+<tr>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<a>Grace Hopper Celebration</a>
+</td>
+</tr>
+<tr>
+<td>
+<a>October 1–4</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><a>See all upcoming events   
+
+<img>
+</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>CLOUD ONAIR</td>
+</tr>
+<tr><td>Listen on demand or join live <a>
+Cloud OnAir</a> webinars held weekly by Google Cloud experts.</td>
+</tr>
+</table>
+</td>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>CLOUD ONBOARD</td>
+</tr>
+<tr>
+<td>Want free technical training on GCP fundamentals? <a>
+Cloud OnBoard</a> is coming to a city near you.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>GCP Podcast</td>
+</tr>
+<tr><td>Check out the Cool Things of the Week – and hear a Google expert reveal how to analyze cryptocurrency transactions using GCP on the <a>
+GCP Podcast</a>.</td>
+</tr>
+</table>
+</td>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>Kubernetes Podcast</td>
+</tr>
+<tr>
+<td>Listen in to the <a>
+Kubernetes Podcast</a> as scientists from CERN’s Large Hadron Collider recount using Kubernetes to reanalyze the data behind the discovery of the Higgs boson.</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>VIDEO RESOURCES
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><a><img alt="The Week in Cloud"></a></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>This Week in Cloud</td>
+</tr>
+<tr>
+<td>
+
+<a><img alt="Play Video"></a>
+   <a>See what’s new</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><a><img alt="Data &amp; Storage"></a></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>Google Cloud Platform Essentials: Platform Overview – Data &amp; Storage</td>
+</tr>
+<tr>
+<td>
+
+<a><img alt="Play Video"></a>
+   <a>Watch now</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td><a><img alt="An interview with Maya Kaczorowski"></a></td>
+</tr>
+
+</table>
+</td>
+<td>
+<table>
+
+<tr>
+<td>Vulnerabilities in Kubernetes: An interview with Maya Kaczorowski</td>
+</tr>
+<tr>
+<td>
+
+<a><img alt="Play Video"></a>
+   <a>Watch now</a></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>OVERHEARD (2)
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td><img></td>
+<td><a>@SRobTweets</a></td>
+</tr>
+<tr>
+<td> </td>
+<td><img alt=""><img alt=""> <a>Wish your ML models were less of a black box? You can now use the What-if Tool to evaluate models deployed on @GCPcloud <img alt=""><br /><br /> @bengiswex and I show you how --&gt; cloud.google.com/blog/products/ …</a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><img></td>
+<td><a>@sethvargo</a></td>
+</tr>
+<tr>
+<td> </td>
+<td><a>This is super dope! Run @code in @GCPcloud #CloudShell!
+</a></td>
+</tr>
+<tr>
+<td> </td>
+<td><a>medium.com/@chees/how-to- …</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td> <span>Follow us on social media.</span></td>
+</tr>
+<tr>
+
+<td>
+<span>Add your voice to the conversation and get the latest news, views, and insights.</span>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td><a><img></a></td>
+<td>   </td>
+<td><a><img alt="Google Cloud Blog"></a></td>
+<td>   </td>
+<td><a><img></a></td>
+<td>   </td>
+<td><a><img></a></td>
+<td>   </td>
+<td><a><img></a></td>
+
+
+<td>   </td>
+<td><a><img></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr><td>
+<table>
+<tr><td>Not subscribed to our newsletter yet? <a>Sign up</a></td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a>Go to your Console   <img></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+
+
+<td><a><img></a></td>
+<td><a>Feedback</a>
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td></td></tr>
+</table>
+</td>
+</tr>
+<td>
+<table>
+<tr>
+<td>
+<img alt="Google Cloud">
+</td>
+</tr>
+<tr>
+
+
+<td>
+
+<a>Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+<br /><br />
+This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive offers from Google Cloud Platform. If you don’t want to receive such emails in the future, please <a>unsubscribe here</a>. You can also change your preferences on your account’s profile page by logging in at <a>console.cloud.google.com</a>
+</td>
+</tr>
+</table>
+</td>
+</table></td></tr>
+
+
+
+
+
+</div>
+<img>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>시흥경로당&amp;성남외고 세대공감 어울림 &apos;더건강해짐, 더행복해짐.&apos;</title>
@@ -367,31 +1962,6 @@
 
 
 <p>출처 : <a href="http://seongnamdiary.com/221599696777">http://seongnamdiary.com/221599696777</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>세계희귀선인장 만나는 고양선인장전시관 &amp; 수련 핀 호수공원 여름풍경</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/07/002494.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.2494</id>
-
-    <published>2019-07-29T11:22:00Z</published>
-    <updated>2019-07-29T11:22:00Z</updated>
-
-    <summary>고양시민의 쉼터 호수공원은 계절별 아름다운 풍경과 더불어 즐길거리가 가득합니다. 저전거도로와 메타세콰이어길을 따라 산책과 자전거를 즐기고 아이들이 생생한 자연을 만날 수 있는 생태자연학습장이 있으며 이색 역사를 만나는 화장실 역사문화관 600년 기념전시관등이 포진되어 있지요. 그 중 화훼의 도시 고양을 만날 수 있는곳이...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[고양시민의 쉼터 호수공원은 계절별 아름다운 풍경과 더불어 즐길거리가 가득합니다. 저전거도로와 메타세콰이어길을 따라 산책과 자전거를 즐기고 아이들이 생생한 자연을 만날 수 있는 생태자연학습장이 있으며 이색 역사를 만나는 화장실 역사문화관 600년 기념전시관등이 포진되어 있지요. 그 중 화훼의 도시 고양을 만날 수 있는곳이 있으니 고양 선인장전시관입니다. 호수공원의 여름풍경이 궁금했던 날 호젓한 산책길을 따라 고양선인장전시관을 둘러보았습니다. 마두역에서 정발산 주엽역으로 시작되는 호수공원의 호수 건너편으로 고양 선인장전시관이 자리하고 있습니다.전시관과 육모장으로 구성된 2동의 유리 온실로 전시.......
-
-
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221599241346">http://blog.naver.com/letsgoyang/221599241346</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
