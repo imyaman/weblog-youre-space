@@ -4,9 +4,766 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-09-03T13:32:04Z</updated>
+    <updated>2019-09-03T14:55:16Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Product updates | September 3, 2019</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/09/002672.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.2672</id>
+
+    <published>2019-09-03T14:55:16Z</published>
+    <updated>2019-09-03T14:55:16Z</updated>
+
+    <summary> .appleLinksWhite a {color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important; } @media screen and (min-width: 812px) and (max-width: 812px), screen and (min-width: 736px) and (max-width: 736px), screen and (min-width: 667px) and (max-width: 667px), screen and...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[ 
+
+ 
+
+ 
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+ 
+
+   
+      
+      
+      
+        
+         .appleLinksWhite a {color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important;  }
+         @media screen and (min-width: 812px) and (max-width: 812px),
+          screen and (min-width: 736px) and (max-width: 736px),
+          screen and (min-width: 667px) and (max-width: 667px),
+          screen and (min-width: 568px) and (max-width: 568px),
+          screen and (min-width: 414px) and (max-width: 414px),
+          screen and (min-width: 375px) and (max-width: 375px),
+          screen and (min-width: 320px) and (max-width: 320px) {
+            .body {
+              min-width: 100vw !important;
+            }
+          }
+         @media screen and (max-width: 737px) {
+           .outer_wrapper_td {
+             padding-left: 20px;
+             padding-right: 20px;
+           }
+            .new_header_width_class
+           {
+             text-align:left !important;
+           }
+           .inner_foot_link {
+             display: inline-block;
+             width: 100% !important;
+             padding: 12px 0 0 !important;
+            }
+           .column1 {
+             max-width: 100% !important;
+             display: table !important;
+             width:100% !important;
+           }
+           .four-column {
+             padding-bottom:22px !important;
+           }
+           .text_icon {
+                width: 20px !important;
+                padding-right: 7px !important;
+            }
+                     #sup_fix{
+    line-height:14px;
+                     }
+         }
+        @media screen and (max-width: 768px)
+        {
+          .word-break-md{display: block !important; height: 1px !important}
+        }
+         @media screen and (min-width: 414px) and (max-width: 768px)
+        {
+          .word-break-sm{display: block !important; height: 1px !important}
+        }
+         @media screen and (max-width: 414px) {
+           .pad-mb{padding: 26px 21px 14px 15px !important;}
+           .inner_wrapper{max-width:600px !important; width:100% !important;}
+           .mob_left_space{padding-left: 20px !important;}
+           .banner_logo{
+             width:225px !important;
+           }
+           .logo_holder_container{padding-top:15px !important;padding-bottom:15px !important;padding-left:15px !important;}
+           .left-right-spacing, .social_icons_container, .footer_wrapper_td, .four-column, .border_bar {
+             padding-left: 25px !important;
+             padding-right: 25px !important;
+           }
+           .outer_wrapper_td {
+             padding-left: 10px;
+             padding-right: 10px;
+           }
+           #columndiv {
+             display: none !important;
+           }
+           .inner {
+             display: inline-block;
+             width: 100% !important;
+             padding: 12px 0 0 !important;
+            }
+            .inner3 {
+              padding-top:17px !important;
+            }
+           .inner4 {
+              padding-top:16px !important;
+            }
+           
+           .contents .text {
+             min-width: 26px;
+             padding-right: 0px !important;
+           }
+           .updated_head_space
+           {
+             padding-top:20px !important;
+           }
+           .gcp_cta_btn_table td
+           {
+             padding-top:17px !important;
+               padding-bottom:12px !important;
+           }
+           .four-column
+           {
+             padding-bottom:15px !important;
+           }
+           .new_header_width_class
+           {
+             text-align:left !important;
+             padding-left:42px !important;
+             padding-right:20px !important;
+       
+           }
+              .left-right-spacing-header {
+             padding-left: 25px !important;
+      
+           }
+           .key_announcement{
+             padding-left: 2px !important
+           }
+           .word-break{display: block !important; height: 1px !important}
+         }
+      
+       
+  #sup_fix{
+    line-height:14px;
+    
+}
+
+  
+   
+   
+      <img>
+      <div>A regular roundup of what’s new across Google Cloud Platform.</div>
+      <table>
+      <tr>
+         <td>
+            <table>
+            
+      <tr>
+         <td>
+ 
+ 
+<table>
+   
+  <tr>
+  	<td>
+      <img alt="Google Cloud Platform">
+    </td>
+    <td>
+      	<table>
+                      <tr>
+                        <td>
+                            <table>  
+                                 <tr> 
+                                    <td>    
+                                      <table>    
+                                        <tr>  
+                                            <td>
+                                            <a>Go to your Console</a>
+                                            </td>
+                                          <td><a><img alt="" /></a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                   </td>
+                                 </tr>
+                               </table>
+                        </td>
+                      </tr>
+                    </table>
+    </td>
+  </tr>
+          
+                
+              
+            
+        </table>
+
+ 
+<table>
+  <tr>
+  <td>
+ <table> 
+ <tr><td>
+<table>
+  <tr>
+    <td>
+    </td>
+  </tr>
+ <tr>
+ <td>
+ <table>
+ <tr>
+
+
+ <td>
+ GCP UPDATES&nbsp;<span>|&nbsp;SEPTEMBER 3, 2019</span>
+ </td>
+
+ </tr>
+ </table>
+ </td>
+ </tr>
+ </table>
+
+ 
+<table>
+  <tr>
+    
+
+<td>
+
+<table>  
+
+<tr><td>
+  
+<table>
+   <tr>
+     <td>AI & MACHINE LEARNING</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Dialogflow – auto speech adaptation: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Enable this feature to improve your virtual agent’s speech recognition accuracy based on information included in your Dialogflow agent. Define product or service names for your company, allow agents to more effectively recognize numerical sequences, and more. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>AI Platform Data Labeling Service: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Submit samples of your data to reviewers who annotate and return them in a format suitable for training machine learning models. New features of the service include an <a>updated user interface</a> and the ability to review human-labeled results and <a>monitor model performance</a> on AI Platform. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>NETWORKING</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Traffic Director – new routing rules and traffic policies: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Gain greater control of traffic within your Traffic Director deployment with new route rules and traffic policies. You can now enable features including traffic splitting, traffic steering, fault injection, circuit breaking, and mirroring. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Private Google Access for on-premises hosts: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Enable on-premises hosts to reach all Google APIs and services over a <a>Cloud VPN</a> or <a>Cloud Interconnect</a> connection from your data center to Google Cloud Platform without the need for external IP addresses. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>API PLATFORM & ECOSYSTEMS</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Healthcare API – now available in Tokyo and the Netherlands: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Access the Cloud Healthcare API in two additional regions: the Netherlands (europe-west4) and Tokyo (asia-northeast1). The API offers a managed solution for storing and accessing healthcare data and it acts as a bridge between existing systems and apps hosted on Google Cloud. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Healthcare API – Stackdriver error logging: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>View all of your logs for errors triggered in DICOM import, FHIR import, and FHIR export requests in a unified Stackdriver dashboard. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>COMPUTE</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Kubernetes Engine – containerd: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Use containerd with the Kubernetes Container Runtime Interface to natively execute apps within containers and handle interactions with the underlying host operating system. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>MIGRATION</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Velostrata is now Migrate for Compute Engine: 4.5 GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>This new release comes with a new name and features to help you migrate virtual machines to Compute Engine from on-premises data centers, AWS, and Microsoft Azure, with added support for Windows 2019, Amazon Linux, and cloud-to-cloud migration of AWS instances. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>SECURITY</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Security Scanner: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Easily set up, schedule, manage, and run scans of your App Engine, Compute Engine, and Kubernetes Engine apps. Detect common vulnerabilities, including cross-site scripting (XSS), Flash injection, mixed content (HTTP in HTTPS), and outdated and insecure libraries. <a>Product page</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>MANAGEMENT TOOLS</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Billing – new billing account overview page: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Get an at-a-glance summary of your charges to date, estimated end-of-month charges, and any credit balances from within your Google Cloud Platform Console with the newly redesigned billing account overview page. <a>Documentation</a> | <a>Blog</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>STORAGE & DATABASES</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Spanner – now available in São Paulo: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Now you can access Cloud Spanner in a new region: São Paulo, Brazil, southamerica-east1. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>NetApp – Cloud Volumes Service: beta</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>NetApp Cloud Volumes Service offers a fault-tolerant, scalable platform for creating cloud-native file systems. Migrate existing enterprise and industry-specific apps to GCP, or build new machine learning and Kubernetes-based apps that require persistent storage. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+
+<table>
+   <tr>
+     <td>SECURITY</td>
+   </tr>
+</table>
+<table>
+   <tr>
+      <td>Cloud Identity-Aware Proxy – TCP forwarding: GA</td>
+   </tr>
+</table>
+<table>
+<tr>
+      <td>Control access to GCP-hosted services and adopt an app-level identity control model instead of using network-level firewalls. This launch adds TCP capability to enable administration of cloud resources without requiring public IP addresses. <a>Documentation</a>
+  </td>
+   </tr>
+</table>
+
+</td>
+</tr>
+</table>
+ <table> 
+ 
+<tr> 
+ <td> 
+ <a>
+ <span>Go to your Console</span> 
+ </a>
+ </td> 
+ </tr> 
+ 
+</table>
+<table>
+    <tr>
+        <td>
+            <table>
+             
+             
+				<tr>
+                    <td>See you in the cloud,</td>
+                </tr>
+				
+                <tr>
+                    <td>The Google Cloud Platform Team</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</td>
+</tr>
+
+</table>
+<table>
+  <tr>
+    
+
+<td>
+
+
+<table>
+<tr>
+<td>
+<table>
+				<tr>
+					<td>
+                      <table>
+						 <tr>
+				                    <td>
+                                      GCP Launch Announcements Community
+				                    </td>
+				                 </tr>
+						 <tr>
+						    <td>
+						      Want to be the first to know about GCP updates? <a>Join the GCP Launch Announcements Community</a> to get the latest info on changes to GCP products and features.
+						     </td>
+						  </tr>
+</table>
+
+</td>
+</tr>
+  </table>
+</td>
+</tr>
+</table>
+
+ </td></tr>
+ </table> 
+ 
+<table>
+  <tr><td><table>
+    <tr><td>&nbsp;</td></tr>
+    </table></td></tr>
+    <tr>
+        <td>
+
+            <table>
+                
+                <tr>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <table>
+
+                                        <tr>
+                              
+                                         
+    
+    
+
+     <td>
+
+                                          
+  
+
+                                          
+                                            
+
+                                                
+
+                                                <table>
+                                                    <tr>
+                                                        <td> 
+
+                                                                        <table>
+                                                                            <tr>
+
+                                                                                <td>
+                                                                                  
+ <table>
+   <tr>
+   
+     
+     
+
+
+    <td>
+
+     
+                                                                                    <a><img>
+                                                                                    </a>
+     </td>
+   </tr>
+                                                                                  </table>
+                                                                                </td>
+
+
+                                                                                <td>
+                                                                                    <a>Documentation</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                        
+
+
+                                                        </td>
+                                                      
+                                                        <td>
+
+
+                                                                        <table>
+                                                                            <tr>
+
+                                                                                <td>
+                                                                                   <a>
+										    <img>
+                                                                                   </a>
+                                                                                </td>
+
+
+                                                                                <td>
+                                                                                    <a>Support</a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+
+                                                        </td>
+                                                    </tr>
+                                                </table> 
+
+                                                
+							
+							<table>
+								<tr>
+									<td>
+										
+	                                                                        <table>
+	                                                                            <tr>
+
+	                                                                                <td>
+                                                                                           <a><img alt="Mobile App">
+                                                                                           </a>
+	                                                                                </td>
+
+
+	                                                                                <td>
+	                                                                                    <a>Mobile app</a>
+	                                                                                </td>
+	                                                                            </tr>
+	                                                                        </table>
+									</td>
+									<td>
+										
+	                                                                        <table>
+	                                                                            <tr>
+
+	                                                                                <td>
+                                                                                           <a><img>
+                                                                                           </a>
+	                                                                                </td>
+
+
+	                                                                                <td>
+	                                                                                    <a>Feedback</a>
+	                                                                                </td>
+	                                                                            </tr>
+	                                                                        </table>
+									</td>	
+									
+								</tr>	
+						        </table>		
+
+                                               
+
+
+                                            
+
+
+                                        </td></tr>
+
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+                
+            </table>
+
+
+        </td>
+    </tr>
+</table>
+</td>
+    </tr>
+</table>
+ 
+</td></tr>
+           <tr>
+<td>
+                <table>
+                  
+                   <tr>
+                     <td> 
+                       <img alt="">
+                      </td>
+                    </tr>
+                   <tr>
+                     <td> 
+                            <a href="">Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+                       <br />
+                       <br />
+                        This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive feature announcements about Google Cloud Platform. If you don’t want to receive such emails in the future, please unsubscribe here: <div><a>https://www.google.com/appserve/mkt/optout/AFnwnKXehr_Vash2HnzHKz957NEPpl45FST2ZrQJFSgdU6S58Pfr7ba-_PB-632mrmMwmpSQ43E?hl=en</a></div> You can also change your preferences on your account’s profile page by logging in at console.cloud.google.com 
+                              
+                              
+                              </td>
+                    </tr>
+                    <tr>
+                      <td> 
+                        <table> 
+                          <tr>
+                            <td><a><img alt="Google Cloud Blog"></a></td> 
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a><img></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a><img></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                             <td><a><img></a></td>
+							 <td>&nbsp; &nbsp;</td>
+							 <td><a><img></a></td>
+                             
+                           
+                          </tr>
+                        </table>
+                       </td>
+                    </tr>
+                </table>
+         </td> </tr>
+ 
+         </table>
+       </td></tr>
+      </table>  
+
+     <img>
+<div>
+        
+        
+     </div>
+       
+
+   
+
+ 
+
+</td></tr></table>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>성남시 장례식장, 하늘누리 추모원 안내해드립니다.</title>
@@ -374,31 +1131,6 @@
 
 
 <p>출처 : <a href="http://seongnamdiary.com/221636651144">http://seongnamdiary.com/221636651144</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>시원한 맥주를 단돈 1000원에!? 제2회 라페스타 비어 페스티벌에 다녀왔습니다.</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/09/002657.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.2657</id>
-
-    <published>2019-09-02T09:24:33Z</published>
-    <updated>2019-09-02T09:24:33Z</updated>
-
-    <summary>시원한 맥주를 단돈 1,000원에 즐길 수 있는 축제가 고양시에서 열렸다고 합니다!바로 &apos;제2회 라페스타 비어 페스티벌&apos;인데요. 지난 8월 30일 금요일부터 9월 1일 일요일 3일 간 늦은 5시부터 10시까지고양시 일산동구 장항동 라페스타 문화의거리 일대에서 개최됐습니다.요즘 날씨가 꽤 서늘해졌지요?여름이 가고 가을이 오고 있음을...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[시원한 맥주를 단돈 1,000원에 즐길 수 있는 축제가 고양시에서 열렸다고 합니다!바로 '제2회 라페스타 비어 페스티벌'인데요. 지난 8월 30일 금요일부터 9월 1일 일요일 3일 간 늦은 5시부터 10시까지고양시 일산동구 장항동 라페스타 문화의거리 일대에서 개최됐습니다.요즘 날씨가 꽤 서늘해졌지요?여름이 가고 가을이 오고 있음을 피부로도 느끼는 것 같습니다.이런 날이야말로 야외에서 축제를 즐기기 딱 좋은 날이 아닌가 싶습니다.그러니 가까운 곳에서 저렴하게 축제를 즐길 수 있는 '제2회 라페스타 비어 페스티벌'를 절대 놓치지 않으시길 바랍니다!하루빨리 여러분에게 축제의 생기와 생생함을 전.......
-
-
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221636273898">http://blog.naver.com/letsgoyang/221636273898</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
