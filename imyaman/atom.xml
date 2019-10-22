@@ -4,9 +4,414 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-10-22T06:45:46Z</updated>
+    <updated>2019-10-22T07:52:15Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Changed pricing and functionality for AutoML Vision GA release later this year</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/10/002854.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.2854</id>
+
+    <published>2019-10-22T07:52:15Z</published>
+    <updated>2019-10-22T07:52:15Z</updated>
+
+    <summary> .appleLinksWhite a { color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important; } a { color:#2979ff; font-family:Roboto, arial; font-size:14px; text-decoration:none; } @media only screen and (min-width : 0px) and (max-width : 480px) { .flexible{ width: 100%...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Action Required" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+
+
+
+
+
+
+.appleLinksWhite a {
+  color: #898989 !important;
+  text-decoration: none !important;
+  cursor: default !important;
+  pointer-events: none !important;
+}
+
+a {
+  color:#2979ff;
+  font-family:Roboto, arial;
+  font-size:14px;
+  text-decoration:none;
+}
+
+@media only screen and (min-width : 0px) and (max-width : 480px) {
+  .flexible{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;  }
+  .logo_holder, .logo_holder_td, .logo_right_holder, .logo_right_holder_td{width: 100% !important;}
+  .logo_right_holder_inner_td  {text-align:right !important;}
+  .logo_holder_td{padding-left: 16px;}
+  .logo_right_holder_td{padding-left: 16px !important; padding-top: 5px !important; padding-bottom: 15px !important;}
+  .tbl_banner{padding-left : 10px !important; padding-right: 10px !important; }
+  .banner_text_1{padding: 0 20px 15px 20px !important;}
+  .banner_container {background-position:top !important; background-color: #227cdf !important; height:auto !important;}
+  .banner_btn{padding-bottom:20px !important;}
+  .banner_text_2{128px 20px 13px 20px !important; font-size:26px !important;line-height:30px !important;}
+  .bottom_link_container_td{padding:10px 40px !important;}
+  .bottom_link_container_inner{padding:10px 0 !important;}
+  .bottom_link_text_mbl{padding:10px 0 !important;}
+  .outer_wrapper_td{padding:0 5px !important;}
+}
+
+@media only screen and (min-width : 0px) and (max-width : 320px) {
+  .flexible{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;  }
+  .logo_holder, .logo_holder_td, .logo_right_holder, .logo_right_holder_td{width: 100% !important;}
+  .banner_text_2{128px 20px 13px 20px !important; font-size:26px !important;line-height:30px !important;}
+  .logo_right_holder_td{padding-left: 16px !important; padding-top: 5px !important; padding-bottom: 15px !important;}
+  .logo_right_holder_inner_td  {text-align:right !important;}
+  .logo_holder_td{padding-left: 0 !important;}
+  .banner_text_1{padding: 0 20px 15px 20px !important;}
+  .banner_container {background-position:top !important; background-color: #227cdf !important; height:auto !important;}
+  .banner_btn{padding-bottom:20px !important;}
+  .bottom_link_container_td{padding:10px 40px !important;}
+  .bottom_link_text_mbl{padding:10px 0 !important;}
+  .outer_wrapper_td{padding:0 5px !important;}
+  .bottom_link_container_inner{padding:10px 0 !important;}
+  .social_icons_container_inner{width:210px !important;}
+  .tbl_banner{padding-left : 10px !important; padding-right: 10px !important; }
+}
+
+
+
+
+
+  
+  
+  
+    <div>Redeploy your active Classification models in preparation for new pricing and SLA at GA.</div>
+  
+  
+
+
+<table>
+<tr>
+<td><table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img alt="Google Cloud Platform">
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+
+
+  
+    <a>MY CONSOLE</a>
+  
+
+
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+
+
+  
+  
+    
+  
+
+
+<tr>
+<td>
+
+
+  
+<p>Hello Google Cloud AutoML Vision &amp; AutoML Vision Edge Customer,</p>
+
+<p>We are writing to remind you that Cloud AutoML Vision and AutoML Vision Edge will be Generally Available (GA) later this year. <strong>Effective the GA release date, we are introducing a new version (v1) of the Cloud AutoML API and new pricing structure for online predictions with Image Classification models.</strong></p>
+<p><strong>If you are an ML Kit customer that uses AutoML Vision Edge <a>
+exclusively via ML Kit</a></strong>, please note that the ML Kit console and client libraries will remain in beta. If you have not used the Cloud AutoML Vision APIs directly via the Google Cloud Console, the following changes won&#39;t impact your usage or pricing and you may stop reading now.</p>
+
+What do I need to know?
+
+<p>Your Image Classification datasets are being migrated from the legacy Beta UI to the GA (Integrated) UI, which unifies the experience with Object Detection. Once the migration is complete, you will be redirected from the legacy UI to the Integrated UI. If you were using the integrated <a>
+Human labeling</a> service from the legacy UI, you can start using the <a>
+AI Platform Data Labeling Service</a>.</p>
+
+<p>
+As part of the GA release:
+</p>
+<ul>
+ <li>
+The v1beta1 version of the <a>
+Cloud AutoML API</a> will be deprecated in favor of the new v1 version, and you will need to migrate your applications from the v1beta1 version to the v1 version after GA.
+</li>
+<li>
+The v1beta1 endpoint is scheduled for deletion within <strong>six months after GA</strong> release.
+</li>
+<li>
+Due to the fundamental change in Image Classification pricing for GA, discounts applied to Beta pricing will not be applied to GA. You may reach out to your sales representative for more information.
+</li>
+<li>
+The maximum supported lifespan for custom models created in Cloud AutoML Vision and AutoML Vision Edge will change from two years to 18 months at GA.
+</li>
+</ul>
+
+ 
+What is the new pricing for Image Classification effective the GA release?
+
+
+<p>
+The new pricing is summarized in the table below:
+</p>
+<ul>
+<li>
+Pricing for Cloud models will be charged using <strong>node hour</strong> as the unit. 
+</li>
+<li>
+Corresponding free trials will receive a one-time free credit of 40 node hours <strong>per billing account lifetime</strong> rather than every month. 
+</li>
+<li>
+The node hours represent an hour of processing on different GPU or TPU node types. 
+</li>
+<li> 
+To train Cloud models, we use 8 nodes in parallel.
+</li>
+<li>
+For deployment, select the number of nodes on which the model is to be deployed. You can adjust the number of nodes when you deploy your model.
+</li>
+</ul>
+
+<table>
+  <tr>
+   <td><strong>Image Classification</strong></td>
+   <td><strong>Free</strong></td>
+   <td><strong>Paid (USD)</strong></td>
+  </tr>
+  <tr>
+   <td>Training for Cloud Models</td>
+   <td>First 40 node hours are free (one time)</td>
+   <td>$3.15 per node hour</td>
+  </tr>
+  <tr>
+   <td>Deployment and Online Prediction</td>
+   <td>First 40 node hours are free (one time)</td>
+   <td>$1.25 per node hour</td>
+  </tr>
+</table>
+
+What do I need to do?
+<p>
+When your projects are migrated to the GA (Integrated) UI, your Classification models are shown as deployed with ‘0 nodes’. Any model deployed with ‘0 nodes’ will continue to serve online predictions from the old service, but will be excluded from our Service Level Agreement offered at GA. If no action is taken, these deployments will incur charges of $1.25 per hour at GA. 
+</p>
+
+<p>
+<strong>
+Please review your Classification models in the Integrated UI and ensure none are left in their initial state of deployed with ‘0 nodes’:</strong>
+<ol>
+  <li><a>Undeploy</a> any models that are not required, to avoid being charged at GA.</li>
+  <li>Manage Classification models by <a>redeploying</a> or <a>updating model’s node number</a> to meet the traffic each model needs to serve.</li>
+</ol>
+<p><strong>Please refer to our <a>release notes</a> for detailed instructions.</strong></p>
+</p>
+
+<p>
+We have identified that your projects listed below have active Cloud models which need to be reviewed. Each billing account (listed after the project ID in parentheses) will receive the one-time free credit of 40 node hours to be shared between its respective projects:
+</p>
+
+
+<ul>
+<li><a>sys5 (sys5-f9f83)</a></li>
+</ul>
+
+Need more information or assistance?
+
+<p>If you have any questions or require assistance managing your models, please join the  <a>cloud-vision-discuss</a> Google group.</p>
+
+<p>If you have any billing questions, please <a>contact Google Cloud Billing Support</a>.</p>
+
+<p>Thank you for being a valued AutoML Vision customer.</p>
+
+
+  
+
+<br />
+Was this information helpful?
+<br />
+
+  
+  
+  <a>YES</a>
+     
+    <a>NO</a>
+  
+  
+
+
+</td>
+</tr>
+<tr>
+<td>
+<div>
+
+
+  
+    <div>
+    <a>
+        <span>CONTACT GOOGLE CLOUD BILLING SUPPORT</span>
+      </a>
+    </div>
+  
+
+
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+
+  
+    <tr>
+      <td>
+        
+          Sincerely,
+        
+      </td>
+    </tr>
+    <tr>
+      <td>
+        
+          The Google Cloud AutoML Vision and AutoML Vision Edge Team
+        
+      </td>
+    </tr>
+  
+
+
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr><td>
+<table>
+<tr>
+<td>
+<img alt="">
+</td>
+<td>
+
+
+  
+  
+  <a>DOCUMENTATION</a>
+  
+  
+
+
+</td></tr>
+</table>
+<table>
+<tr>
+<td>
+<img alt="">
+</td>
+<td>
+
+
+  
+    
+    <a>SUPPORT</a>
+    
+  
+
+
+</td>
+</tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+</table></td></tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img alt="">
+</td>
+</tr>
+<tr>
+<td>
+© 2019 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043
+<br /><br />
+You have received this service announcement to update you about important changes to Google Cloud Platform or your account.
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+
+<td><a><img></a></td>
+<td>   </td>
+<td><a><img></a></td>
+<td>   </td>
+<td><a><img></a></td>
+<td>   </td>
+<td><a><img></a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div>
+                                                                                      
+</div>
+<img>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>&quot;작은 실천으로 우리 마을 하천을 지켜요!&quot; 운영</title>
@@ -385,40 +790,6 @@
       }
     }
     <div><div><table><tr><td><img src="http://www.gstatic.com/mobilesdk/170329_assistant/assistant_color_96dp.png" height="24"><span>Actions on Google</span></td><td><div><a href="https://console.actions.google.com/project/assistant-sys5co/overview">OPEN CONSOLE</a></div></td></tr></table></div><div><div><div>assistant-sys5co is being deployed</div><div><p>Version 2 of assistant-sys5co is currently being deployed to Alpha. Please allow up to a few hours for this change to take effect.<p>Next Steps:<ol><li>Track the status of your deployment in the <a href="https://console.actions.google.com/project/assistant-sys5co/overview">Actions Console</a>.</li><li>Once your app is deployed, see what your <a href="https://assistant.google.com/explore/">Directory listing</a> looks like. Remember that you can change your registration information in the Actions Console at any time. </li></ol><p>If you have any additional questions, <a href="https://developers.google.com/actions/support-form?requesttype=support&prio=low&projectid=assistant-sys5co">let us know</a>.<p>Thanks, <br /><div>The Actions on Google Team</div><br /><p>Want to help us improve the Actions on Google platform? Please <a href="https://goo.gl/forms/U2lKEezRtlbfb6803">sign up</a> for our developer experience research. If you are selected to participate, we will send you a thank you gift card usually for localized equivalents of $125-150.</p></p></p></p></p></div></div></div><div>If you no longer wish to receive these email alerts, you can update your preferences <a href="https://console.actions.google.com/subscriptions/project/assistant-sys5co">here</a>.</div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png" height="24" width="70"></td><td><div>Google LLC<br />1600 Amphitheatre Parkway<br />Mountain View, CA, 94043 USA<br /></div></td></tr></table></div></div>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>assistant-sys5co is being deployed</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/10/002839.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.2839</id>
-
-    <published>2019-10-20T03:43:48Z</published>
-    <updated>2019-10-20T03:43:48Z</updated>
-
-    <summary> @media screen and (max-width: 800px) { .stack {display: block;} .hide {display: none;} } @media screen and (max-width: 500px) { .wrap {display: block;} .float-left { margin-top: 20px; float: left !important; } } Actions on GoogleOPEN CONSOLEassistant-sys5co is being deployedVersion 1...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-    @media screen and (max-width: 800px) {
-      .stack {display: block;}
-      .hide {display: none;}
-    }
-    @media screen and (max-width: 500px) {
-      .wrap {display: block;}
-      .float-left {
-        margin-top: 20px;
-        float: left !important;
-      }
-    }
-    <div><div><table><tr><td><img src="http://www.gstatic.com/mobilesdk/170329_assistant/assistant_color_96dp.png" height="24"><span>Actions on Google</span></td><td><div><a href="https://console.actions.google.com/project/assistant-sys5co/overview">OPEN CONSOLE</a></div></td></tr></table></div><div><div><div>assistant-sys5co is being deployed</div><div><p>Version 1 of assistant-sys5co is currently being deployed to Alpha. Please allow up to a few hours for this change to take effect.<p>Next Steps:<ol><li>Track the status of your deployment in the <a href="https://console.actions.google.com/project/assistant-sys5co/overview">Actions Console</a>.</li><li>Once your app is deployed, see what your <a href="https://assistant.google.com/explore/">Directory listing</a> looks like. Remember that you can change your registration information in the Actions Console at any time. </li></ol><p>If you have any additional questions, <a href="https://developers.google.com/actions/support-form?requesttype=support&prio=low&projectid=assistant-sys5co">let us know</a>.<p>Thanks, <br /><div>The Actions on Google Team</div><br /><p>Want to help us improve the Actions on Google platform? Please <a href="https://goo.gl/forms/U2lKEezRtlbfb6803">sign up</a> for our developer experience research. If you are selected to participate, we will send you a thank you gift card usually for localized equivalents of $125-150.</p></p></p></p></p></div></div></div><div>If you no longer wish to receive these email alerts, you can update your preferences <a href="https://console.actions.google.com/subscriptions/project/assistant-sys5co">here</a>.</div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png" height="24" width="70"></td><td><div>Google LLC<br />1600 Amphitheatre Parkway<br />Mountain View, CA, 94043 USA<br /></div></td></tr></table></div></div>
 ]]>
         
     </content>
