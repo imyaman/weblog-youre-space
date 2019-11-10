@@ -761,20 +761,34 @@ index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredict
 </div>
 </center>
   
-<center>
-<div id="admixer_display"></div>
-</center>
-<script type="text/javascript" src="//scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript" src="//scr.nsmartad.com/admixer/admixer_2.0.js"></script>
 <script type="text/javascript">
-    new admixer_ad({
-    admixer_key:"zp1v4th5",
-    display_id:"admixer_display",
-    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
-    ad_change:true,  //default : true
-    test : false,//default : false
-    test_display_id : "log"
-});
-</script>  
-  
+new admixer_ad({
+  media_key: "zp1v4th5",
+  adunit: [{
+    adunit_id: "20405221",
+    display_id: "display_admixer_1"
+  }, {
+    adunit_id: "20405222",
+    display_id: "display_admixer_2"
+  }, {
+    adunit_id: "20405223",
+    display_id: "display_admixer_3"
+  }],
+  coppa: 0, //아동 대상 서비스 취급용 태그 (0:아동대상 미지정, 1:아동대상 지정)
+  test_log: false, //테스트모드설정 (default : false[미설정]) 
+  test_log_display_id: "display_test_log" //테스트의 로그가 표시될 영역 Div ID 
+}); <
+</script>
+
+<!-- 광고를 노출하고자 하는 영역에 해당 div태그를 삽입합니다. -->
+<center>
+<div id="display_admixer_1"></div>
+<div id="display_admixer_2"></div>
+<div id="display_admixer_3"></div>
+</center>
+<!-- 테스트의 로그가 표시될 영역에 해당 div태그를 삽입합니다 -->
+<div id="display_test_log"></div>
+
   </body>
 </html>
