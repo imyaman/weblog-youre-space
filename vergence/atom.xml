@@ -4,9 +4,30 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2019-11-05T02:40:18Z</updated>
+    <updated>2019-11-21T23:36:16Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>블로그 홍보</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/11/002979.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.2979</id>
+
+    <published>2019-11-21T23:36:16Z</published>
+    <updated>2019-11-21T23:36:16Z</updated>
+
+    <summary><![CDATA[좀 뜸했습니다. 블로그 홍보 다시 해보려고요. 블로그 글 쓰는 분들도 더 섭외하고요.#블로그홍보&nbsp;...]]></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[좀 뜸했습니다. 블로그 홍보 다시 해보려고요. 블로그 글 쓰는 분들도 더 섭외하고요.<div><br /></div><div>#블로그홍보&nbsp;</div>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>타짜 정 마담의 일기</title>
@@ -415,28 +436,6 @@ tmpfs                                                                           
 /dev/xvdf1                                                                                        100G   25G   76G  25% /opt/data
 /dev/xvda2                                                                                         16G   14G  846M  95% /etc/hosts
 </code></pre>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Splunk 스플렁크 HEC에 데이터 넣는 예시</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/04/002125.html" />
-    <id>tag:weblog.youre.space,2019:/vergence//11.2125</id>
-
-    <published>2019-04-21T07:40:01Z</published>
-    <updated>2019-04-21T07:45:10Z</updated>
-
-    <summary>sourcetype은 _json 또는 json_no_timestamp를 써야겠다.index는 이 데이터가 어느 인덱스에 들어갈지를 정하는데 사용한다. HEC 설정에 기본 인덱스가 미리 정해져있다, 그래서 입력 데이터에 index 필드는 선택사항이다.event는 꼭 있어야한다. curl -X POST -H &apos;Authorization: Splunk 0c04fc3c-a84c-46bf-866c-363907385895&apos; -d &apos;{&quot;sourcetype&quot;: &quot;json_no_timestamp&quot;, &quot;index&quot;:&quot;index_anyweb&quot;, &quot;event&quot;:{&quot;name&quot;:&quot;Guy&quot;, &quot;number&quot;:&quot;0001&quot;} }&apos;...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<p>sourcetype은 _json 또는 json_no_timestamp를 써야겠다.<br />index는 이 데이터가 어느 인덱스에 들어갈지를 정하는데 사용한다. HEC 설정에 기본 인덱스가 미리 정해져있다, 그래서 입력 데이터에 index 필드는 선택사항이다.<br />event는 꼭 있어야한다.</p>
-<pre><code>curl -X POST -H 'Authorization: Splunk 0c04fc3c-a84c-46bf-866c-363907385895' -d '{"sourcetype": "json_no_timestamp", "index":"index_anyweb", "event":{"name":"Guy", "number":"0001"} }' http://splunk-8088.youre.space:55900/services/collector</code></pre>]]>
         
     </content>
 </entry>
