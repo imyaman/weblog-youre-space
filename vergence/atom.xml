@@ -4,31 +4,9 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2019-11-23T07:43:55Z</updated>
+    <updated>2019-11-21T23:36:16Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
-
-<entry>
-    <title>김포공항 혼잡 원인 </title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/11/002984.html" />
-    <id>tag:weblog.youre.space,2019:/vergence//11.2984</id>
-
-    <published>2019-11-23T07:42:04Z</published>
-    <updated>2019-11-23T07:43:55Z</updated>
-
-    <summary>김포골드라인이 김포공항과 롯데몰 김포공항점 혼잡의 원인이라는 생각이 들었습니다....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<p>김포골드라인이 김포공항과 롯데몰 김포공항점 혼잡의 원인이라는 생각이 들었습니다.</p>
-]]>
-        
-    </content>
-</entry>
 
 <entry>
     <title>블로그 홍보</title>
@@ -403,6 +381,61 @@ index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredict
 <div>&#44536; &#44536;&#47495;&#50640;&#45716; &#50504;&#50640; &#47932;&#44256;&#44592;&#44032; &#44536;&#47140;&#51256; &#51080;&#50632;&#45796;. &#47932;&#51012; &#45812;&#51004;&#47732; &#47932;&#44256;&#44592;&#44032; &#51339;&#50500;&#54624; &#44163; &#44057;&#51008; &#49373;&#44033;&#51060; &#46308;&#50632;&#45796;.</div>
 
 ]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>The minimum free disk space reached for /opt/splunk/var/run/splunk/dispatch</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/04/002155.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.2155</id>
+
+    <published>2019-04-30T05:07:29Z</published>
+    <updated>2019-05-01T07:03:46Z</updated>
+
+    <summary>스플렁크를 도커 위에서 실행할 때 이런 메시지를 보게 되었습니다. guest OS 안에서 파일시스템을 살펴보니 아래와 같네요. root@d675c62c79b7:/opt/splunk/var/lib/splunk# df -h Filesystem Size Used Avail Use% Mounted on /dev/mapper/docker-202:2-260827 99G 1.1G 93G 2% / tmpfs 4.0G 0 4.0G 0% /dev shm 64M...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<p>스플렁크를 도커 위에서 실행할 때 이런 메시지를 보게 되었습니다. guest OS 안에서 파일시스템을 살펴보니 아래와 같네요.</p>
+<pre><code>
+root@d675c62c79b7:/opt/splunk/var/lib/splunk# df -h
+Filesystem                                                                                        Size  Used Avail Use% Mounted on
+/dev/mapper/docker-202:2-260827                                                                    99G  1.1G   93G   2% /
+tmpfs                                                                                             4.0G     0  4.0G   0% /dev
+shm                                                                                                64M     0   64M   0% /dev/shm
+tmpfs                                                                                             4.0G     0  4.0G   0% /sys/fs/cgroup
+tmpfs                                                                                             4.0G     0  4.0G   0% /run/secrets
+/dev/xvdf1                                                                                        100G   24G   77G  24% /opt/data
+/dev/xvda2                                                                                         16G   14G  477M  97% /opt/splunk/var
+</code></pre>
+<p>/opt/splunk/var 를 별도의 디스크로 마운트 하고 있었습니다. docker 실행할 때 마운트 옵션을 이렇게 바꾸었습니다.</p>
+<p>이전</p>
+<pre><code>
+-v /opt/splunk-new-clean/etc:/opt/splunk/etc \
+-v /opt/splunk-new-clean/var<code>/lib/splunk</code>:/opt/splunk/var/lib/splunk
+</code></pre>
+<p>이후</p>
+<pre><code>
+-v /opt/splunk-new-clean/etc:/opt/splunk/etc \
+-v /opt/splunk-new-clean/var:/opt/splunk/var
+</code></pre>
+<p>그러고 나서 다시 파일시스템을 살펴보니 아래와 같이 표시되네요.</p>
+<pre><code>
+ansible@6644e3c0e19d:/$ df -h
+Filesystem                                                                                        Size  Used Avail Use% Mounted on
+/dev/mapper/docker-202:2-260827                                                                    99G  1.1G   93G   2% /
+tmpfs                                                                                             4.0G     0  4.0G   0% /dev
+shm                                                                                                64M     0   64M   0% /dev/shm
+tmpfs                                                                                             4.0G     0  4.0G   0% /sys/fs/cgroup
+tmpfs                                                                                             4.0G     0  4.0G   0% /run/secrets
+/dev/xvdf1                                                                                        100G   25G   76G  25% /opt/data
+/dev/xvda2                                                                                         16G   14G  846M  95% /etc/hosts
+</code></pre>]]>
         
     </content>
 </entry>
