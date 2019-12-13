@@ -88,6 +88,280 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-3091" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/12/003091.html">Firebase CLI lower than 7.7.0 will need to explicitly grant access through Cloud IAM</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-12-13T12:45:28+09:00" itemprop="datePublished">December 13, 2019</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/action-required/">Action Required</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    
+  
+ 
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+      body{
+        font-family:Google Sans, Roboto,  sans-serif;
+        font-size:14px;
+        -webkit-text-size-adjust: none !important;
+        -webkit-font-smoothing: antialiased
+        !important;
+        -ms-text-size-adjust: none !important;
+      }
+      table, tr, td {
+        border-collapse:collapse;
+ 
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+      }
+      a{
+        color:#0288d1;
+        text-decoration: none;">
+      }
+      a:link, a:visited, a:hover, a:active {
+        color: #4285f4;
+        text-decoration: none;
+      }
+      .appleLinks a {
+        color:#000000   !important;
+ 
+        text-decoration:none !important;
+      }
+      strong {
+        font-weight: bold !important;
+      }
+      em {
+        font-style: italic !important;
+      }
+      .yshortcuts a span {
+        color: inherit !important;
+        border-bottom: none !important;
+      }
+      html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: 100%;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width:
+        100%;
+      }
+      .ExternalClass * {
+        line-height: 100%
+      }
+      td {
+        -webkit-text-size-adjust: none;
+      }
+      a[href^=tel] {
+        color:     inherit;
+        text-decoration:   none;
+      }
+      .mob-hide {
+        display:none !important;
+      }
+      div, p, a, li, td {
+        -webkit-text-size-adjust:none;
+      }
+      td {
+        text-decoration:none !important;
+      }
+      a[x-apple-data-detectors] {
+        color: inherit
+        !important;
+        text-decoration:   none !important;
+        font-size: inherit !important;
+ 
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height:   inherit
+        !important;
+      }
+      @media all and (max-width: 600px) {
+        .table-main-gmail {
+          /*   Forces
+          Gmail to display Desktop   view */
+          width: 100% !important;
+          min-width:100% !important;
+        }
+      }
+    
+  
+  
+    <div>
+        
+        
+        
+        <table>
+        
+        
+          
+
+            
+            <tr>
+              <td>
+                <table>
+                  
+                    <tr>
+                      <td>
+                        <a>
+                        <img>
+                        </a>
+                      </td>
+                    </tr>
+                  
+                </table>
+              </td>
+            </tr>
+              
+  
+    <div>Update your Firebase CLI to keep deploying public HTTP functions</div>
+            
+            
+
+            
+            <tr>
+              <td>
+<div>Hi Sangyong,</div>
+
+<div>We are writing because one of your Firebase projects has HTTP Cloud Functions that were deployed using the Firebase <a>CLI</a>.</div>
+
+<div>After January 15, 2020, <strong>if you use any version of the Firebase CLI lower than <a>7.7.0</a></strong> to deploy a new <a>HTTP</a> or <a>Callable</a> Cloud Function, <strong>that function will require you to explicitly <a>grant public access</a> through Cloud IAM permissions.</strong> Existing HTTP Cloud Functions will not be affected by this change.</div>
+
+
+<div>What&#39;s changing?</div>
+
+<div>Due to a Google Cloud Platform change to provide more security and predictability for server-to-server communication, all newly created HTTP Cloud Functions will be private-by-default and require manual configuration using Cloud IAM. </div>
+
+<div>However, since most Cloud Functions created by Firebase users are client application-facing, we have updated the Firebase CLI to maintain the existing behavior and set the permissions for new functions as public.</div>
+
+<div><strong>This change does not affect the functions that have already been deployed.</strong> Only new functions deployed after January 15, 2020, using old versions of the CLI, will be affected.</div>
+
+<div><strong>What is the behavior of a private function?</strong></div>
+
+<div>Clients that try to connect will be returned a &quot;403 Forbidden&quot; error.</div>
+
+<div>What’s next?</div>
+
+<div>Before you attempt to deploy any functions, <strong>update your Firebase CLI to the latest version</strong> (at least <a><strong>7.7.0</strong></a>, released November 7, 2019), by running:
+
+  <ol>
+    <li>npm install --global firebase-tools, and then</li>
+    <li>firebase --version to confirm that you&#39;re on a version of 7.7.0 or higher.</li>
+  </ol>
+</div>
+
+<div>Once you have done this, functions deployed with the Firebase CLI will continue to be <a>public</a> by default.</div>
+
+<div><strong>How do I convert my existing functions to private?</strong></div>
+
+<div>If you would like to take advantage of the new functionality to restrict access to your existing HTTP functions, you can do so after deploying it by <a>configuring its permissions</a>.</div>
+
+<div><strong>What if I accidentally deploy functions that are private and want to make them public?</strong></div>
+
+<div>You can <a>manually set a function to public</a> using Cloud Console or gcloud CLI.</div>
+
+<div>Your project(s) that have recently deployed functions are:
+  <ul>
+    <li><a href="">sys5 (sys5-f9f83)</a></li>
+
+    <li><a href="">pacificmedia (pacificmedia-38170)</a></li>
+
+    <li><a href="">alexa001-sys5co (alexa001-sys5co-4b52e)</a></li>
+  </ul>
+</div>
+
+<div>We’re here to help
+</div>
+
+ <div> As always, if you have any questions or need any assistance, feel free to reach out to our <a>support team</a>.</div>
+
+
+<div>Thanks,</div>
+
+<div>Raj on behalf of the Firebase team</div>
+
+
+
+</td>
+          </tr>
+        
+
+         
+            
+
+
+          
+          <tr>
+            <td>
+              You have received this mandatory service announcement to update you
+              about important changes to Firebase or your account.
+            </td>
+          </tr>
+ 
+          <tr>
+            <td>
+              <table>
+                
+                  <tr>
+                    <td>
+                      <img>
+                    </td>
+ 
+                    <td>
+                      <a>
+                        © 2019 Google LLC
+                        <br />
+                        1600 Amphitheatre Parkway
+                        <br />
+                        Mountain View, CA 94043 USA
+                      </a>
+                    </td>
+                  </tr>
+                
+              </table>
+            </td>
+          </tr>
+
+          
+ 
+        
+      </table>
+    
+    </div>
+  <img>
+
+
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2019/12/003091.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-3090" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/12/003090.html">물고기를 잡을 수 있는 자리, 고양시의 청년공간</a></h2>
@@ -903,32 +1177,6 @@ You can also change your preferences on your account’s profile page by logging
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/imyaman/2019/12/003082.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3081" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2019/12/003081.html">대전 청년 공간 쉼터 둔산동 청춘 놀이터는 어떠세요?</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-12-11T16:13:54+09:00" itemprop="datePublished">December 11, 2019</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    대전 청년 공간 쉼터둔산동 청춘 놀이터는 어떠세요?안녕하세요 여러분!대전 공식 관광블로그 먼저보슈 기자단김지윤 기자입니다.대전에 살고 있는 청년 여러분 !사회 초년생이거나 학생이신 여러분들의넉넉하지 않은 주머니 사정으로 어딜가든 눈치보고 있는 현실 속에 속상하시지 않았나요?그런 분들을 위해 대전광역시 서구청에서 준비한 공간이 있습니다.바로 청춘정거장인데요,둔산동 갤러리아 근처의 프뢰벨빌딩 7층에 위치하고 있고, “누구나 자유롭게” 이용할 수 있습니다.주중에는 아침 11시부터 밤 9시까지, 토요일은 아침 11시부터 밤 7시까지 운영되고,일요일 및 공휴일은 휴관입니다.참고하여 방문해주세요!!차를 이용.......
-
-
-<p>출처 : <a href="http://blog.naver.com/daejeontour/221733939897">http://blog.naver.com/daejeontour/221733939897</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2019/12/003081.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 

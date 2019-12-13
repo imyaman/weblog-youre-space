@@ -1,0 +1,304 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2019/12/003091.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" body{ font-family:Google Sans, Roboto, sans-serif; font-size:14px; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a{ color:#0288d1; text-decoration: none;&quot;&gt; } a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration: none; }...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>Firebase CLI lower than 7.7.0 will need to explicitly grant access through Cloud IAM - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2019/12/003090.amp.html" title="물고기를 잡을 수 있는 자리, 고양시의 청년공간">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Firebase CLI lower than 7.7.0 will need to explicitly grant access through Cloud IAM">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2019/12/003091.html">
+    <meta property="og:description" content=" body{ font-family:Google Sans, Roboto, sans-serif; font-size:14px; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a{ color:#0288d1; text-decoration: none;&quot;&gt; } a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration: none; }...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" body{ font-family:Google Sans, Roboto, sans-serif; font-size:14px; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a{ color:#0288d1; text-decoration: none;&quot;&gt; } a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration: none; }...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2019/12/003091.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">Firebase CLI lower than 7.7.0 will need to explicitly grant access through Cloud IAM</h1>
+<time datetime="2019-12-13T12:45:28+09:00" itemprop="datePublished">December 13, 2019</time>
+<time datetime="2019-12-13T12:45:28+09:00" itemprop="dateModified">December 13, 2019</time>
+
+by <span itemprop="author"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  
+  
+ 
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+      body{
+        font-family:Google Sans, Roboto,  sans-serif;
+        font-size:14px;
+        -webkit-text-size-adjust: none !important;
+        -webkit-font-smoothing: antialiased
+        !important;
+        -ms-text-size-adjust: none !important;
+      }
+      table, tr, td {
+        border-collapse:collapse;
+ 
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+      }
+      a{
+        color:#0288d1;
+        text-decoration: none;">
+      }
+      a:link, a:visited, a:hover, a:active {
+        color: #4285f4;
+        text-decoration: none;
+      }
+      .appleLinks a {
+        color:#000000   !important;
+ 
+        text-decoration:none !important;
+      }
+      strong {
+        font-weight: bold !important;
+      }
+      em {
+        font-style: italic !important;
+      }
+      .yshortcuts a span {
+        color: inherit !important;
+        border-bottom: none !important;
+      }
+      html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: 100%;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width:
+        100%;
+      }
+      .ExternalClass * {
+        line-height: 100%
+      }
+      td {
+        -webkit-text-size-adjust: none;
+      }
+      a[href^=tel] {
+        color:     inherit;
+        text-decoration:   none;
+      }
+      .mob-hide {
+        display:none !important;
+      }
+      div, p, a, li, td {
+        -webkit-text-size-adjust:none;
+      }
+      td {
+        text-decoration:none !important;
+      }
+      a[x-apple-data-detectors] {
+        color: inherit
+        !important;
+        text-decoration:   none !important;
+        font-size: inherit !important;
+ 
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height:   inherit
+        !important;
+      }
+      @media all and (max-width: 600px) {
+        .table-main-gmail {
+          /*   Forces
+          Gmail to display Desktop   view */
+          width: 100% !important;
+          min-width:100% !important;
+        }
+      }
+    
+  
+  
+    <div>
+        
+        
+        
+        <table>
+        
+        
+          
+
+            
+            <tr>
+              <td>
+                <table>
+                  
+                    <tr>
+                      <td>
+                        <a>
+                        <img>
+                        </a>
+                      </td>
+                    </tr>
+                  
+                </table>
+              </td>
+            </tr>
+              
+  
+    <div>Update your Firebase CLI to keep deploying public HTTP functions</div>
+            
+            
+
+            
+            <tr>
+              <td>
+<div>Hi Sangyong,</div>
+
+<div>We are writing because one of your Firebase projects has HTTP Cloud Functions that were deployed using the Firebase <a>CLI</a>.</div>
+
+<div>After January 15, 2020, <strong>if you use any version of the Firebase CLI lower than <a>7.7.0</a></strong> to deploy a new <a>HTTP</a> or <a>Callable</a> Cloud Function, <strong>that function will require you to explicitly <a>grant public access</a> through Cloud IAM permissions.</strong> Existing HTTP Cloud Functions will not be affected by this change.</div>
+
+
+<div>What&#39;s changing?</div>
+
+<div>Due to a Google Cloud Platform change to provide more security and predictability for server-to-server communication, all newly created HTTP Cloud Functions will be private-by-default and require manual configuration using Cloud IAM. </div>
+
+<div>However, since most Cloud Functions created by Firebase users are client application-facing, we have updated the Firebase CLI to maintain the existing behavior and set the permissions for new functions as public.</div>
+
+<div><strong>This change does not affect the functions that have already been deployed.</strong> Only new functions deployed after January 15, 2020, using old versions of the CLI, will be affected.</div>
+
+<div><strong>What is the behavior of a private function?</strong></div>
+
+<div>Clients that try to connect will be returned a &quot;403 Forbidden&quot; error.</div>
+
+<div>What’s next?</div>
+
+<div>Before you attempt to deploy any functions, <strong>update your Firebase CLI to the latest version</strong> (at least <a><strong>7.7.0</strong></a>, released November 7, 2019), by running:
+
+  <ol>
+    <li>npm install --global firebase-tools, and then</li>
+    <li>firebase --version to confirm that you&#39;re on a version of 7.7.0 or higher.</li>
+  </ol>
+</div>
+
+<div>Once you have done this, functions deployed with the Firebase CLI will continue to be <a>public</a> by default.</div>
+
+<div><strong>How do I convert my existing functions to private?</strong></div>
+
+<div>If you would like to take advantage of the new functionality to restrict access to your existing HTTP functions, you can do so after deploying it by <a>configuring its permissions</a>.</div>
+
+<div><strong>What if I accidentally deploy functions that are private and want to make them public?</strong></div>
+
+<div>You can <a>manually set a function to public</a> using Cloud Console or gcloud CLI.</div>
+
+<div>Your project(s) that have recently deployed functions are:
+  <ul>
+    <li><a href="">sys5 (sys5-f9f83)</a></li>
+
+    <li><a href="">pacificmedia (pacificmedia-38170)</a></li>
+
+    <li><a href="">alexa001-sys5co (alexa001-sys5co-4b52e)</a></li>
+  </ul>
+</div>
+
+<div>We’re here to help
+</div>
+
+ <div> As always, if you have any questions or need any assistance, feel free to reach out to our <a>support team</a>.</div>
+
+
+<div>Thanks,</div>
+
+<div>Raj on behalf of the Firebase team</div>
+
+
+
+</td>
+          </tr>
+        
+
+         
+            
+
+
+          
+          <tr>
+            <td>
+              You have received this mandatory service announcement to update you
+              about important changes to Firebase or your account.
+            </td>
+          </tr>
+ 
+          <tr>
+            <td>
+              <table>
+                
+                  <tr>
+                    <td>
+                      <img>
+                    </td>
+ 
+                    <td>
+                      <a>
+                        © 2019 Google LLC
+                        <br />
+                        1600 Amphitheatre Parkway
+                        <br />
+                        Mountain View, CA 94043 USA
+                      </a>
+                    </td>
+                  </tr>
+                
+              </table>
+            </td>
+          </tr>
+
+          
+ 
+        
+      </table>
+    
+    </div>
+  <img>
+
+
+
+  
+</div>
+
+/imyaman/2019/12/003091.html
+
+  </body>
+</html>

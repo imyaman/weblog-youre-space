@@ -4,9 +4,282 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-12-13T03:23:51Z</updated>
+    <updated>2019-12-13T03:45:28Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Firebase CLI lower than 7.7.0 will need to explicitly grant access through Cloud IAM</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/12/003091.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.3091</id>
+
+    <published>2019-12-13T03:45:28Z</published>
+    <updated>2019-12-13T03:45:28Z</updated>
+
+    <summary> body{ font-family:Google Sans, Roboto, sans-serif; font-size:14px; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a{ color:#0288d1; text-decoration: none;&quot;&gt; } a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration: none; }...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Action Required" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+  
+ 
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+      body{
+        font-family:Google Sans, Roboto,  sans-serif;
+        font-size:14px;
+        -webkit-text-size-adjust: none !important;
+        -webkit-font-smoothing: antialiased
+        !important;
+        -ms-text-size-adjust: none !important;
+      }
+      table, tr, td {
+        border-collapse:collapse;
+ 
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+      }
+      a{
+        color:#0288d1;
+        text-decoration: none;">
+      }
+      a:link, a:visited, a:hover, a:active {
+        color: #4285f4;
+        text-decoration: none;
+      }
+      .appleLinks a {
+        color:#000000   !important;
+ 
+        text-decoration:none !important;
+      }
+      strong {
+        font-weight: bold !important;
+      }
+      em {
+        font-style: italic !important;
+      }
+      .yshortcuts a span {
+        color: inherit !important;
+        border-bottom: none !important;
+      }
+      html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: 100%;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width:
+        100%;
+      }
+      .ExternalClass * {
+        line-height: 100%
+      }
+      td {
+        -webkit-text-size-adjust: none;
+      }
+      a[href^=tel] {
+        color:     inherit;
+        text-decoration:   none;
+      }
+      .mob-hide {
+        display:none !important;
+      }
+      div, p, a, li, td {
+        -webkit-text-size-adjust:none;
+      }
+      td {
+        text-decoration:none !important;
+      }
+      a[x-apple-data-detectors] {
+        color: inherit
+        !important;
+        text-decoration:   none !important;
+        font-size: inherit !important;
+ 
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height:   inherit
+        !important;
+      }
+      @media all and (max-width: 600px) {
+        .table-main-gmail {
+          /*   Forces
+          Gmail to display Desktop   view */
+          width: 100% !important;
+          min-width:100% !important;
+        }
+      }
+    
+  
+  
+    <div>
+        
+        
+        
+        <table>
+        
+        
+          
+
+            
+            <tr>
+              <td>
+                <table>
+                  
+                    <tr>
+                      <td>
+                        <a>
+                        <img>
+                        </a>
+                      </td>
+                    </tr>
+                  
+                </table>
+              </td>
+            </tr>
+              
+  
+    <div>Update your Firebase CLI to keep deploying public HTTP functions</div>
+            
+            
+
+            
+            <tr>
+              <td>
+<div>Hi Sangyong,</div>
+
+<div>We are writing because one of your Firebase projects has HTTP Cloud Functions that were deployed using the Firebase <a>CLI</a>.</div>
+
+<div>After January 15, 2020, <strong>if you use any version of the Firebase CLI lower than <a>7.7.0</a></strong> to deploy a new <a>HTTP</a> or <a>Callable</a> Cloud Function, <strong>that function will require you to explicitly <a>grant public access</a> through Cloud IAM permissions.</strong> Existing HTTP Cloud Functions will not be affected by this change.</div>
+
+
+<div>What&#39;s changing?</div>
+
+<div>Due to a Google Cloud Platform change to provide more security and predictability for server-to-server communication, all newly created HTTP Cloud Functions will be private-by-default and require manual configuration using Cloud IAM. </div>
+
+<div>However, since most Cloud Functions created by Firebase users are client application-facing, we have updated the Firebase CLI to maintain the existing behavior and set the permissions for new functions as public.</div>
+
+<div><strong>This change does not affect the functions that have already been deployed.</strong> Only new functions deployed after January 15, 2020, using old versions of the CLI, will be affected.</div>
+
+<div><strong>What is the behavior of a private function?</strong></div>
+
+<div>Clients that try to connect will be returned a &quot;403 Forbidden&quot; error.</div>
+
+<div>What’s next?</div>
+
+<div>Before you attempt to deploy any functions, <strong>update your Firebase CLI to the latest version</strong> (at least <a><strong>7.7.0</strong></a>, released November 7, 2019), by running:
+
+  <ol>
+    <li>npm install --global firebase-tools, and then</li>
+    <li>firebase --version to confirm that you&#39;re on a version of 7.7.0 or higher.</li>
+  </ol>
+</div>
+
+<div>Once you have done this, functions deployed with the Firebase CLI will continue to be <a>public</a> by default.</div>
+
+<div><strong>How do I convert my existing functions to private?</strong></div>
+
+<div>If you would like to take advantage of the new functionality to restrict access to your existing HTTP functions, you can do so after deploying it by <a>configuring its permissions</a>.</div>
+
+<div><strong>What if I accidentally deploy functions that are private and want to make them public?</strong></div>
+
+<div>You can <a>manually set a function to public</a> using Cloud Console or gcloud CLI.</div>
+
+<div>Your project(s) that have recently deployed functions are:
+  <ul>
+    <li><a href="">sys5 (sys5-f9f83)</a></li>
+
+    <li><a href="">pacificmedia (pacificmedia-38170)</a></li>
+
+    <li><a href="">alexa001-sys5co (alexa001-sys5co-4b52e)</a></li>
+  </ul>
+</div>
+
+<div>We’re here to help
+</div>
+
+ <div> As always, if you have any questions or need any assistance, feel free to reach out to our <a>support team</a>.</div>
+
+
+<div>Thanks,</div>
+
+<div>Raj on behalf of the Firebase team</div>
+
+
+
+</td>
+          </tr>
+        
+
+         
+            
+
+
+          
+          <tr>
+            <td>
+              You have received this mandatory service announcement to update you
+              about important changes to Firebase or your account.
+            </td>
+          </tr>
+ 
+          <tr>
+            <td>
+              <table>
+                
+                  <tr>
+                    <td>
+                      <img>
+                    </td>
+ 
+                    <td>
+                      <a>
+                        © 2019 Google LLC
+                        <br />
+                        1600 Amphitheatre Parkway
+                        <br />
+                        Mountain View, CA 94043 USA
+                      </a>
+                    </td>
+                  </tr>
+                
+              </table>
+            </td>
+          </tr>
+
+          
+ 
+        
+      </table>
+    
+    </div>
+  <img>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>물고기를 잡을 수 있는 자리, 고양시의 청년공간</title>
@@ -944,31 +1217,6 @@ You can also change your preferences on your account’s profile page by logging
 
 
 <p>출처 : <a href="http://blog.naver.com/letsgoyang/221733564689">http://blog.naver.com/letsgoyang/221733564689</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>고양시비정규직센터 소통 창구 두 번째 이야기, “고양, 청년 특별시를 꿈꾸다”</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/12/003076.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.3076</id>
-
-    <published>2019-12-11T00:20:47Z</published>
-    <updated>2019-12-11T00:20:47Z</updated>
-
-    <summary>지난 12월 7일(토) 고양시비정규직센터에서는 를 덕양구청 대회의실에서 개최했습니다. 지난 7월에 이어 소통창구 두 번째 이야기로 이재준 고양시장이 청년들과 함께 소통하는 토크콘서트 형식으로 진행되었습니다.행사는 &apos;고양, 청년 특별시를 꿈꾸다’라는 주제로, 불확실한 미래에 지치고 위축된 청년들에게 허심탄회하게 자기 의견을 표출할 기회를 제공하고자 마련되었는데요.취업의...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[지난 12월 7일(토) 고양시비정규직센터에서는 를 덕양구청 대회의실에서 개최했습니다. 지난 7월에 이어 소통창구 두 번째 이야기로 이재준 고양시장이 청년들과 함께 소통하는 토크콘서트 형식으로 진행되었습니다.행사는 '고양, 청년 특별시를 꿈꾸다’라는 주제로, 불확실한 미래에 지치고 위축된 청년들에게 허심탄회하게 자기 의견을 표출할 기회를 제공하고자 마련되었는데요.취업의 전장(戰場)으로 나가야 하는 청년들이 자신의 가치에 대한 자존감을 높이고 따뜻하게 서로 안아주고 격려하는 자리로서 청년문제에 대한 혜안을 직접 찾아 나서는 공론의 장이었습니다........
-
-
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221733180784">http://blog.naver.com/letsgoyang/221733180784</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
