@@ -4,9 +4,737 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-12-16T02:11:47Z</updated>
+    <updated>2019-12-16T04:52:00Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Build your skills, try something new, or upgrade now</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/12/003102.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.3102</id>
+
+    <published>2019-12-16T04:52:00Z</published>
+    <updated>2019-12-16T04:52:00Z</updated>
+
+    <summary> @media screen and (max-width:737px) { .flexible {max-width: 600px !important;} .webkit { width: 100% !important;min-width: 100% !important;} .wrapper_new{width:100% !important;} .contents { width: 100% !important; } .bullet_td {} .contents { display: inline-block !important; width: 100% !important; height: 39px !important; } #footer_tr1...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+ 
+ 
+
+ 
+ 
+  
+  
+
+
+
+ 
+
+ 
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+ 
+  
+
+ 
+     
+ 
+ 
+
+
+
+
+    
+    
+    
+  
+@media screen and (max-width:737px) {
+.flexible {max-width: 600px !important;}
+.webkit { width: 100% !important;min-width: 100% !important;}
+.wrapper_new{width:100% !important;}
+  .contents {
+    width: 100% !important;
+  }
+  .bullet_td {}
+  .contents {
+    display: inline-block !important;
+    width: 100% !important;
+    height: 39px !important;
+  }
+  #footer_tr1 {
+    padding-bottom: 0px !important;
+  }
+  #footer_tr2 {
+    padding-top: 0px !important;
+  }
+  
+}
+@media screen and (max-width:414px) {
+  .desk_grey_section {
+    display: none !important;
+  }
+  .mob_grey_section {
+    display: table-cell !important;
+  }
+  .flexible { 
+    width: 100% !important;
+    max-width: 600px !important;
+  }
+  .lrpd1 .flexible {
+    width: auto !important;
+  }
+  .body {
+    padding-left: 10px !important;
+    padding-right: 10px !important
+  }
+  .banner_logo {
+    width: 240px !important;
+  }
+  #columndiv .inner {
+    padding-top: 4px !important;
+  }
+  .logo_holder_container {
+    padding: 24px 13px 13px 10px !important;
+  }
+  .bigger_wrapper_body {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+   .bigger_wrapper_body_3msg {
+    padding-left: 25px !important;
+    padding-right: 0px !important;
+  }
+  .bigger_wrapper_body_3msg .bottom_link_footer_td {
+    padding-right:25px !important;
+  }
+  .space_3msg{
+    padding-left:0px !important;
+  }
+  .pad_right25{
+    padding-right:25px !important;
+  }
+  .bullet_td {
+    padding-left: 0px !important;
+  }
+  .btm_pad {
+    padding-bottom: 17px !important;
+  }
+  .body_img {
+    width: 100% !important;
+    display: none !important;
+  }
+  .mobile_img {
+    width: 100% !important;
+    display: block !important;
+  }
+  .bottom_icons {
+    padding-top: 2px !important;
+  }
+  .bottom_icons .text_wrapper_inner_td {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .contents {
+    display: block !important;
+    width: 100% !important;
+   
+  }
+  .macro_wrapper .para1 {
+    padding-right: 0px !important;
+  }
+  .footer_pad {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .contents .text {
+    min-width: 18px;
+    padding-right: 8px !important;
+  }
+  .contents td {
+    height: auto;
+  }
+  .headline {}
+  .outer_cover2 {
+    padding-top: 6px !important;
+  }
+  .footer_wrapper_td, .social_icons_container {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .two_col_td {
+    display: block;
+    width: 100% !important;
+  }
+  .split_mobile {
+    display: block;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 8px !important;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+  .split_mobile2 {
+    display: block;
+    width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 20px !important;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+  .grey_section {
+    padding-top: 20px !important;
+    padding-bottom: 23px !important;
+  }
+  .grey_td_head {
+    padding-bottom: 12px !important;
+  }
+  .grey_section .split_mobile td {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+  .grey_section .split_mobile td img {
+    text-align: left !important;
+  }
+  .two_link_td, .two_link_td2 {
+    width: 100% !important;
+    display: block !important;
+  }
+  .two_link_td2 .body_link_tbl_td {
+    padding-left: 0 !important;
+    padding-top: 12px !important;
+  }
+  .bullet_table {
+    width: 100%  !important;
+    display: block  !important;
+  }
+  .headline_3msg{
+       padding-top:20px !important;
+  }
+  .em3_cta_sec .docs_link {
+      display: inline-block;
+      margin-top: 18px;
+      clear: both;
+  }
+  .sales_card_wrapper .img1 {
+    width: 100%  !important;
+    display: block  !important;
+  }
+  .sales_card_wrapper .para1 {
+    width: 100%  !important;
+    display: block  !important;
+    padding-top: 25px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .sales_card_em3 {
+    padding-right: 25px !important;
+  }
+}
+@media screen and (min-width: 812px) and (max-width: 812px),
+screen and (min-width: 736px) and (max-width: 736px),
+screen and (min-width: 667px) and (max-width: 667px),
+screen and (min-width: 568px) and (max-width: 568px),
+screen and (min-width: 414px) and (max-width: 414px),
+screen and (min-width: 375px) and (max-width: 375px),
+screen and (min-width: 320px) and (max-width: 320px) {
+  .body {
+    min-width: 100vw !important;
+  }
+}
+
+@media screen yahoo {
+  .yahooHide {
+    display:none !important;
+    font-size:0px !important;
+    line-height:0 !important;
+    height:0px !important;
+    max-height:0px !important;
+    overflow:hidden !important;
+  }
+}
+
+
+    
+
+
+
+
+  <img>
+         <div>
+           <div>Find resources, learn about the free tier, or upgrade to access more of GCP.</div>
+      
+	<table>
+ 
+  <tr>
+            <td>
+
+                <table>
+            <tr>
+              <td>
+                
+                <div>
+                      <table>
+                              <tr>
+                                  <td>
+                                      <table>
+                                          <tr> 
+                                            <td>
+                                               <img alt="Google Cloud Platform">
+                                            </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr>
+                      </table>
+               </div>
+                
+               <div>
+              <table>
+                  <tr>
+                      <td>
+                         <table>
+                             <tr>
+                                <td>
+                                   <table>
+                                        <tr>
+                                            <td>
+                                            <a>Go to your Console</a>
+                                            </td>
+                                          <td>
+                                            <table>
+                                                  <tr>
+                                                    
+                                                    
+                                                    <td>
+													
+                                                        <a><img alt=""></a>
+                                                    </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                   </td>
+                                 </tr>
+                               </table>
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+                
+            </td>
+         </tr>
+       </table>
+    </td>
+  </tr>
+ 
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <table>
+                  <tr>
+                     <td>
+                        <table>
+                           <tr>
+                              <td><span>Build your skills:</span> Take GCP projects to the next level.
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Find resources for your current workloads, learn about the free tier, or upgrade your account.
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td>
+                        <table>
+                           <tr>
+                              <td>RECOMMENDED FOR YOU
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <table>
+<tr>
+          <td>Upgrade to unlock the power of GCP.
+          </td>
+</tr>
+<tr>
+          <td>Keep all the projects, resources - and GCP Free Trial credits - when you upgrade. Plus, gain the power of Google-grade infrastructure, security, and speed. Upgrade now for full access to GCP.
+          </td>
+</tr>
+                                    <tr>
+                                       <td>
+                                          <table>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+              
+               <table>
+                  <tr>
+                     <td>
+ 
+          									              <table>  
+<tr>
+	                                                
+              <td>
+                                                          <a>
+                                                               <span>Upgrade now</span>
+                                                          </a>
+														
+                                                        </td>
+                                                      </tr>
+</table>
+ 
+                     </td>
+                  </tr>
+              </table>
+              
+              
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                              <td>
+                                 <table>
+                                    <tr>
+                                       <td><img></td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+               
+                     <td>
+                        <table>
+                           <tr>
+                              <td>RECOMMENDED FOR YOU
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <table>
+                                   <tr>
+                                     <td>
+                                       <table>
+                                         <tr>
+                                   <td>Upgrade to unlock the power of GCP.</td>
+                                   <td><img></td>
+                                     </tr>
+                                       </table>
+                                     </td>
+                                   </tr>
+                                   <tr>
+                                   <td>Keep all the projects, resources - and GCP Free Trial credits - when you upgrade. Plus, gain the power of Google-grade infrastructure, security, and speed. Upgrade now for full access to GCP.</td>
+                                   </tr>
+                                    <tr>
+                                       <td>
+                                          <table>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+              
+               <table>
+                  <tr>
+                     <td>
+ 
+          									              <table>  
+<tr>
+	                                                
+              <td>
+                                                          <a>
+                                                               <span>Upgrade now</span>
+                                                          </a>
+														
+                                                        </td>
+                                                      </tr>
+</table>
+ 
+                     </td>
+                  </tr>
+              </table>
+              
+              
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                        </table>
+                     </td>
+                    
+                  </tr>
+<tr>
+          <td>Check out these additional resources:
+          </td>
+</tr>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <img height="">
+            </td>
+            <td>
+               <table>
+<tr>
+          <td>Get help when you need it
+          </td>
+</tr>
+<tr>
+          <td>Having trouble? Need tech support? Want to migrate to GCP? Try this <a>troubleshooter</a> to find the help you need in a couple of clicks.
+          </td>
+</tr>
+
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <img height="">
+            </td>
+            <td>
+               <table>
+<tr>
+          <td>Watch a video
+          </td>
+</tr>
+<tr>
+          <td>Learn all that Google Cloud Platform can do with the <a>GCP Education Series</a>. These videos cover everything from building scalable VM environments to adding machine learning to your apps.
+          </td>
+</tr>
+
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <img height="">
+            </td>
+            <td>
+               <table>
+<tr>
+          <td>GCP free tier: Go beyond free trial
+          </td>
+</tr>
+<tr>
+          <td>Go beyond your free trial to explore all of the products and services in the <a>always-free tier</a>.
+          </td>
+</tr>
+
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr>
+          <td>With GCP, there’s always more to learn – and new ways to give your projects Google-grade security, scalability, and speed.
+          </td>
+</tr>
+                  <tr>
+                     <td>
+<tr>
+          <td>See you in the cloud,
+          </td>
+</tr>
+<tr>
+          <td>The Google Cloud Platform Team
+          </td>
+</tr>
+                     </td>
+                  </tr>
+<tr>
+   <td>
+
+ 
+<table>
+ 
+  <tr>
+     <td>
+        <table>
+      
+    <tr>
+       <td>
+         <table>
+            <tr>
+              <td>
+     
+     <table>
+       <tr>
+           <td>
+             <a><img></a>
+            </td>
+            <td>
+ <a>Forums</a>
+           </td>
+     </tr>
+   </table>
+    
+     <table>
+       <tr>
+           <td>
+ <a><img></a>
+           </td>
+           <td>
+ <a>Support</a>
+           </td>
+       </tr>
+   </table>
+     
+     <table>
+      <tr>
+        <td>
+ <a><img></a>
+        </td>
+        <td>
+ <a>FAQ</a>
+        </td>
+     </tr>
+   </table>
+     
+     <table>
+       <tr>
+          <td>
+ <a><img></a>
+          </td>
+          <td>
+ <a>Documentation</a>
+          </td>
+      </tr>
+    </table>
+     
+     <table>
+       <tr>
+           <td>
+ <a><img></a>
+            </td>
+            <td>
+ <a>Tutorials</a>
+             </td>
+       </tr>
+     </table>
+     
+     </td>
+     </tr>
+     </table>
+         </td>
+         </tr>
+      
+     </table>
+     </td>
+     </tr>
+</table>
+</td>
+</tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+ 
+<tr>
+  <td>
+     <table>
+        <tr>
+            <td> 
+               <img alt="Google Cloud">
+             </td>
+       </tr>
+       <tr>
+                     <td> 
+                            <a>Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+                       <br />
+                       <br />
+                       This email was sent to imyamanhitelnet@gmail.com because you indicated that you’d like to receive updates and tips about your Google Cloud Platform account. If you don’t want to receive such emails in the future, please unsubscribe here: <div><a>https://www.google.com/appserve/mkt/optout/AFnwnKXx3M1HujxVl0SAWSeJgcFLOQwH3tgYgY2pb4aL-u6XUvJKsgQ8TvuUK6DjnCZi0zxG1rU?hl=en</a></div> 
+You can also change your preferences on your account’s profile page by logging in at <a>console.cloud.google.com</a> 
+                              </td>
+                    </tr>
+   </table>
+ </td>
+</tr>
+<tr>
+                      <td> 
+                        <table> 
+                          <tr>
+                            
+                             
+                            <td><a><img alt="Google Cloud Blog"></a></td> 
+                             <td>   </td>
+                            <td><a><img></a></td>
+                             <td>   </td>
+                            <td><a><img></a></td>
+                             <td>   </td>
+                             <td><a><img></a></td>
+							 <td>   </td>
+							 <td><a><img></a></td>
+                          </tr>
+                        </table>
+                       </td>
+                    </tr>
+
+ 
+</table>
+
+</div>
+
+
+ 
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>청년들을 위한 공간, 화정에서 묻고~더블로 가! - 고양시 취·창업 거점 28청춘창업소, 청취다방 집중 조명</title>
@@ -612,33 +1340,6 @@
 
 
 <p>출처 : <a href="http://seongnamdiary.com/221735821286">http://seongnamdiary.com/221735821286</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>제1회 드바세 꿈나무작품전-창생공간 재미</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/12/003087.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.3087</id>
-
-    <published>2019-12-13T00:17:27Z</published>
-    <updated>2019-12-13T00:17:27Z</updated>
-
-    <summary>제1회 드로잉으로 바라본 세상 꿈나무작품전 전시기간 : 2019.12.04 ~ 12.14 장소 : 창생공간 재미창생공간 재미는 창의적 문화공간으로 주민의 자발적 동기를 이끌고 지역문화를 연결하는 공간입니다.이곳에서 드로잉수업을 받고 경기도 평생 교육진흥원 강사로 활동하는 6명의 강사진들이 모여&apos;드로잉으로 바라본 세상(드바세)&apos;라는 타이틀로 활동하고 있습니다.전시관 재미에...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="공연전시" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[제1회 드로잉으로 바라본 세상 꿈나무작품전 전시기간 : 2019.12.04 ~ 12.14 장소 : 창생공간 재미창생공간 재미는 창의적 문화공간으로 주민의 자발적 동기를 이끌고 지역문화를 연결하는 공간입니다.이곳에서 드로잉수업을 받고 경기도 평생 교육진흥원 강사로 활동하는 6명의 강사진들이 모여'드로잉으로 바라본 세상(드바세)'라는 타이틀로 활동하고 있습니다.전시관 재미에 들어서서 처음 마주한 화려한 꽃이 꽂힌 화병이 화사하게 맞아줍니다.전시관 안쪽으로 11개기관 85명의 어린이들과 함께한 작품들이 빼곡히 전시되어 있네요.사실 드로잉이라는 장르가 많은 분들에게 쉽게 와닿는 미술분야.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221735766297">http://seongnamdiary.com/221735766297</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
 ]]>
         
     </content>
