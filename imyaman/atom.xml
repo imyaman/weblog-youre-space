@@ -4,9 +4,430 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2019-12-21T06:12:44Z</updated>
+    <updated>2019-12-21T09:09:37Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>You’ve upgraded</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/12/003114.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.3114</id>
+
+    <published>2019-12-21T09:09:37Z</published>
+    <updated>2019-12-21T09:09:37Z</updated>
+
+    <summary> @media screen and (max-width:737px) { .flexible { max-width: 600px !important; } .webkit { width: 100% !important; min-width: 100% !important; } .wrapper_new { width:100% !important; } .body_img { max-width: 100% !important; } .contents { display: inline-block; width: 100% !important; height:...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[ 
+ 
+ 
+
+
+ 
+ 
+
+
+
+
+
+    
+    
+    
+  
+@media screen and (max-width:737px) {
+  .flexible {
+    max-width: 600px !important;
+  }
+  .webkit {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+  .wrapper_new {
+    width:100% !important;
+  }
+  .body_img {
+    max-width: 100% !important;
+  }
+  .contents {
+    display: inline-block;
+    width: 100% !important;
+    height: 39px !important;
+  }
+}
+@media (max-width:414px) {
+  .body {
+    padding-left: 10px !important;
+    padding-right: 10px !important
+  }
+  .banner_logo {
+    width: 234px !important;
+  }
+  .flexible {
+    width: 100% !important;
+  }
+  #columndiv .inner {
+    padding-top: 4px !important;
+  }
+  .logo_holder_container {
+    padding: 24px 13px 13px 10px !important;
+  }
+  .bigger_wrapper_body {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .body_img {
+    width: 100% !important;
+    display: none !important;
+  }
+  .mobile_img {
+    width: 100% !important;
+    display: block !important;
+  }
+  .bottom_icons {
+    padding-top: 2px !important;
+  }
+  .bottom_icons .text_wrapper_inner_td {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .contents {
+    display: inline-block;
+    width: 100% !important;
+    height: 39px !important;
+  }
+  .five-column {
+    padding-left: 0px !important;
+    padding-right: 25px !important;
+    padding-bottom: 8px !important;
+  }
+  .footer_pad {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .contents .text {
+    min-width: 18px;
+    padding-right: 8px !important;
+  }
+  .contents td {
+    height: auto;
+  }
+  .headline {
+    font-size: 24px !important;
+    line-height: 32px !important;
+    padding-top: 24px !important;
+  }
+  .outer_cover2 {
+    padding-top: 6px !important;
+  }
+  .outer_cover3 {
+    font-size: 16px !important;
+  }
+  .footer_wrapper_td, .social_icons_container {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .two_col_td {
+    display: block;
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 812px) and (max-width: 812px),
+screen and (min-width: 736px) and (max-width: 736px),
+screen and (min-width: 667px) and (max-width: 667px),
+screen and (min-width: 568px) and (max-width: 568px),
+screen and (min-width: 414px) and (max-width: 414px),
+screen and (min-width: 375px) and (max-width: 375px),
+screen and (min-width: 320px) and (max-width: 320px) {
+  .body {
+    min-width: 100vw !important;
+  }
+}
+
+@media screen yahoo {
+	.yahooHide {
+      display:none !important;
+      font-size:0px !important;
+      line-height:0 !important;
+      height:0px !important;
+      max-height:0px !important;
+      overflow:hidden !important;
+    }
+}
+    
+  
+
+
+
+         <div>
+           <div>Now that you’ve upgraded, keep building.</div>
+      
+	<table>
+ 
+  <tr>
+            <td>
+
+                <table>
+            <tr>
+              <td>
+                
+                <div>
+                      <table>
+                              <tr>
+                                  <td>
+                                      <table>
+                                          <tr> 
+                                            <td>
+                                               <img alt="Google Cloud Platform">
+                                            </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr>
+                      </table>
+               </div>
+                
+               <div>
+              <table>
+                  <tr>
+                      <td>
+                         <table>
+                             <tr>
+                                <td>
+                                   <table>
+                                        <tr>
+                                            <td>
+                                            <a>Go to your Console</a>
+                                            </td>
+                                          <td><img alt="" />
+                                          </td>
+                                        </tr>
+                                      </table>
+                                   </td>
+                                 </tr>
+                               </table>
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+                
+            </td>
+         </tr>
+       </table>
+    </td>
+  </tr>
+ 
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <table>
+                  <tr>
+                    <td>
+                     <table>
+                        <tr>
+                           <td>Thanks for upgrading.
+                           </td>
+                        </tr>
+                     </table>
+                      </td>
+                  </tr>
+<tr>
+          <td>We created Google Cloud Platform to bring applications like YouTube, Gmail, and Maps to life. Now it’s your turn to build what’s next.
+          </td>
+</tr>
+                  <tr>
+                     <td>
+<table>  
+  <tr>
+    <td>
+      <a><span>Go to your Console</span></a>
+     </td>
+  </tr>
+</table>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+           <td>
+             <img>
+             
+             <img>
+             
+           </td>
+         </tr>
+         <tr>
+            <td>
+               <table>
+<tr>
+   <td>
+
+ 
+<table>
+ 
+  <tr>
+     <td>
+        <table>
+      
+    <tr>
+       <td>
+         <table>
+            <tr>
+              <td>
+     
+     <table>
+      <tr>
+        <td>
+ <a><img></a>
+        </td>
+        <td>
+ <a>FAQ</a>
+        </td>
+     </tr>
+   </table>
+     
+     <table>
+       <tr>
+          <td>
+ <a><img></a>
+          </td>
+          <td>
+ <a>Documentation</a>
+          </td>
+      </tr>
+    </table>
+     
+     <table>
+       <tr>
+           <td>
+             <a><img></a>
+            </td>
+            <td>
+ <a>Forums</a>
+           </td>
+     </tr>
+   </table>
+    
+     <table>
+       <tr>
+           <td>
+ <a><img alt="Ask a question"></a>
+           </td>
+           <td>
+ <a>Ask a question</a>
+           </td>
+       </tr>
+   </table>
+     
+     
+     
+     </td>
+     </tr>
+     </table>
+         </td>
+         </tr>
+      
+     </table>
+     </td>
+     </tr>
+</table>
+</td>
+</tr>
+               </table>
+             </td>
+          </tr>
+      </table>
+   </td>
+</tr>
+ 
+   
+<tr>
+  <td>
+     <table>
+        <tr>
+            <td> 
+               <img alt="Google Cloud">
+             </td>
+       </tr>
+
+       <tr>
+           <td> 
+     Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043
+           </td>
+       </tr>
+
+        <tr>
+           <td> 
+     You are receiving this Mandatory Service Announcement to update you about important information regarding your Google Cloud Platform account.
+           </td>
+       </tr>
+
+          <tr>
+                      <td> 
+                        <table> 
+                          <tr>
+                          
+                            <td><a><img alt="Google Cloud Blog"></a></td> 
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a><img></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                            <td><a><img></a></td>
+                             <td>&nbsp; &nbsp;</td>
+                             <td><a><img></a></td>
+							 <td>&nbsp; &nbsp;</td>
+							 <td><a><img></a></td>
+                          </tr>
+                        </table>
+                       </td>
+                    </tr>
+ <div>
+        
+        
+     </div>
+       
+</table></td></tr></table></div>
+	
+
+
+<img>
+
+
+ 
+
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Security alert</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/12/003113.html" />
+    <id>tag:weblog.youre.space,2019:/imyaman//12.3113</id>
+
+    <published>2019-12-21T09:09:36Z</published>
+    <updated>2019-12-21T09:09:36Z</updated>
+
+    <summary>.awl a {color: #FFFFFF; text-decoration: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; text-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: 6px 30px...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; text-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 600px) {.mdv2rw {padding: 40px 40px;}} <img><table><tr><td></td></tr><tr><td><div><div></div></div><table><tr><td></td><td><div><img><div><div>New device signed in&nbsp;to</div><table><tr><td><img alt=""></td><td><a>imyamanhitelnet@gmail.com</a></td></tr></table></div><div>Your Google Account was just signed in to from a new Linux device. You're getting this email to make sure it was you.<div><a>Check activity</a></div></div></div><div><div><div>You received this email to let you know about important changes to your Google Account and services.</div><div>&copy; 2019 Google LLC, <a>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div></div></td><td></td></tr></table></td></tr><tr><td></td></tr></table>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Aldous Huxley</title>
@@ -1036,57 +1457,6 @@ You can also change your preferences on your account’s profile page by logging
         <![CDATA[<p>"The whole point of getting things done is knowing what to leave undone."</p>
 
 <p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/RFuwHuk1a2Q/oswald-chambers-quotes</p>
-
-<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>자전거 타기 좋은 고양! 찾아가는 자전거 안전교육!</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/12/003099.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.3099</id>
-
-    <published>2019-12-15T02:03:33Z</published>
-    <updated>2019-12-15T02:03:33Z</updated>
-
-    <summary>서울에서 살다가 일산신도시 주엽동에 입주해서 산지 벌써 25년이 넘었어요. 그동안 105만이 넘는 고양시에는 많은 변화들이 있었고 자동차와 자전거가 많이 늘어나면서 안전사고도 많이 늘어나고 있습니다. 오늘은 고양시민을 비롯한 누구나 편안하고 쉽게 회원이든 비회원이든 천원으로 1회 이용이 가능한 ‘피프틴’자전거를 대여해서 호수공원을 한...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[서울에서 살다가 일산신도시 주엽동에 입주해서 산지 벌써 25년이 넘었어요. 그동안 105만이 넘는 고양시에는 많은 변화들이 있었고 자동차와 자전거가 많이 늘어나면서 안전사고도 많이 늘어나고 있습니다. 오늘은 고양시민을 비롯한 누구나 편안하고 쉽게 회원이든 비회원이든 천원으로 1회 이용이 가능한 ‘피프틴’자전거를 대여해서 호수공원을 한 바퀴 돌면서 ‘안전하게 자전거를 타는 방법’과 고양시의 ’찾아가는 자전거 안전교육‘정책에 대해 알아보겠습니다.고양시는 지난 3월부터 관내 유치원 ,초등 중학생, 성인을 대상으로 ‘2019년 찾아가는 자전거 안전교육’을 실시 중인데요.본 사업은 체계적인 자전거 교육 기회.......
-
-
-<p>출처 : <a href="http://blog.naver.com/letsgoyang/221735356133">http://blog.naver.com/letsgoyang/221735356133</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Maya Angelou</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2019/12/003098.html" />
-    <id>tag:weblog.youre.space,2019:/imyaman//12.3098</id>
-
-    <published>2019-12-14T06:10:16Z</published>
-    <updated>2019-12-14T06:10:16Z</updated>
-
-    <summary>&quot;There&apos;s a world of difference between truth and facts. Facts can obscure the truth.&quot; source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/-4YDhH96LWA/maya-angelou-quotes ---------------------------------------------------------------------------Visit this link to stop these emails: http://zpr.io/ntubP...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[<p>"There's a world of difference between truth and facts. Facts can obscure the truth."</p>
-
-<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/-4YDhH96LWA/maya-angelou-quotes</p>
 
 <p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
 ]]>
