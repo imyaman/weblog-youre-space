@@ -4,9 +4,35 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2020-01-11T06:52:19Z</updated>
+    <updated>2020-01-12T06:16:25Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Bernard Baruch</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2020/01/003197.html" />
+    <id>tag:weblog.youre.space,2020:/imyaman//12.3197</id>
+
+    <published>2020-01-12T06:16:25Z</published>
+    <updated>2020-01-12T06:16:25Z</updated>
+
+    <summary>&quot;Millions saw the apple fall, but Newton was the one who asked why.&quot; source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/3jUQpHltugk/bernard-baruch-quotes ---------------------------------------------------------------------------Visit this link to stop these emails: http://zpr.io/ntubP...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[<p>"Millions saw the apple fall, but Newton was the one who asked why."</p>
+
+<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/3jUQpHltugk/bernard-baruch-quotes</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>1월이 가기 전에 소원을 이뤄주는 마당바위에서 새해 소원을 말해봐!</title>
@@ -1107,298 +1133,6 @@ a {
 
     
 
-<tr>
-<td>
-<table>
-<tr>
-
-<td><a><img></a></td>
-<td>   </td>
-<td><a><img></a></td>
-<td>   </td>
-<td><a><img></a></td>
-<td>   </td>
-<td><a><img></a></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<div>
-                                                                                      
-</div>
-<img>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Changes to the Google Cloud Platform Third-Party Subprocessor list</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2020/01/003182.html" />
-    <id>tag:weblog.youre.space,2020:/imyaman//12.3182</id>
-
-    <published>2020-01-06T19:33:12Z</published>
-    <updated>2020-01-06T19:33:12Z</updated>
-
-    <summary> .appleLinksWhite a { color: #898989 !important; text-decoration: none !important; cursor: default !important; pointer-events: none !important; } a { color:#2979ff; font-family:Roboto, arial; font-size:14px; text-decoration:none; } @media only screen and (min-width : 0px) and (max-width : 480px) { .flexible{ width: 100%...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="Update" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-
-
-
-
-
-.appleLinksWhite a {
-  color: #898989 !important;
-  text-decoration: none !important;
-  cursor: default !important;
-  pointer-events: none !important;
-}
-
-a {
-  color:#2979ff;
-  font-family:Roboto, arial;
-  font-size:14px;
-  text-decoration:none;
-}
-
-@media only screen and (min-width : 0px) and (max-width : 480px) {
-  .flexible{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;  }
-  .logo_holder, .logo_holder_td, .logo_right_holder, .logo_right_holder_td{width: 100% !important;}
-  .logo_right_holder_inner_td  {text-align:right !important;}
-  .logo_holder_td{padding-left: 16px;}
-  .logo_right_holder_td{padding-left: 16px !important; padding-top: 5px !important; padding-bottom: 15px !important;}
-  .tbl_banner{padding-left : 10px !important; padding-right: 10px !important; }
-  .banner_text_1{padding: 0 20px 15px 20px !important;}
-  .banner_container {background-position:top !important; background-color: #227cdf !important; height:auto !important;}
-  .banner_btn{padding-bottom:20px !important;}
-  .banner_text_2{128px 20px 13px 20px !important; font-size:26px !important;line-height:30px !important;}
-  .bottom_link_container_td{padding:10px 40px !important;}
-  .bottom_link_container_inner{padding:10px 0 !important;}
-  .bottom_link_text_mbl{padding:10px 0 !important;}
-  .outer_wrapper_td{padding:0 5px !important;}
-}
-
-@media only screen and (min-width : 0px) and (max-width : 320px) {
-  .flexible{ width: 100% !important; min-width: 100% !important; max-width: 100% !important;  }
-  .logo_holder, .logo_holder_td, .logo_right_holder, .logo_right_holder_td{width: 100% !important;}
-  .banner_text_2{128px 20px 13px 20px !important; font-size:26px !important;line-height:30px !important;}
-  .logo_right_holder_td{padding-left: 16px !important; padding-top: 5px !important; padding-bottom: 15px !important;}
-  .logo_right_holder_inner_td  {text-align:right !important;}
-  .logo_holder_td{padding-left: 0 !important;}
-  .banner_text_1{padding: 0 20px 15px 20px !important;}
-  .banner_container {background-position:top !important; background-color: #227cdf !important; height:auto !important;}
-  .banner_btn{padding-bottom:20px !important;}
-  .bottom_link_container_td{padding:10px 40px !important;}
-  .bottom_link_text_mbl{padding:10px 0 !important;}
-  .outer_wrapper_td{padding:0 5px !important;}
-  .bottom_link_container_inner{padding:10px 0 !important;}
-  .social_icons_container_inner{width:210px !important;}
-  .tbl_banner{padding-left : 10px !important; padding-right: 10px !important; }
-}
-
-
-
-
-
-  
-  
-   
-  
-
-
-<table>
-<tr>
-<td><table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<img alt="Google Cloud Platform">
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-
-
-  
-    <a>MY CONSOLE</a>
-  
-
-
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td></tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-
-
-  
-  
-    
-  
-
-
-<tr>
-<td>
-
-
-  
-<p>Hello Google Cloud Platform Customer,</p>
-
-<p>We’re sending this message to let you know about further updates that have been made to <a>our listing of Google Cloud Platform (GCP) Subprocessors</a>. We are adding:</p>
-
-<ul>
-  <li>Fujitsu Communication Services Limited (relisting)</li>
-  <li>PVP Inc</li>
-</ul>
-
-<p>These subprocessors are third-party companies to Google that are authorized to provide services which include, but are not limited to, phone and email support, response, diagnosis and resolution services. We verify that our service providers have the required technical expertise, and that they maintain our security and privacy standards. We work only with trusted support service providers.</p>
-
-<p><strong>No action is required on your part.</strong></p>
-
-<p>Thank you for being a valued GCP customer.</p>
-
-  
-
-<br />
-Was this information helpful?
-<br />
-
-  
-  
-  <a>YES</a>
-     
-    <a>NO</a>
-  
-  
-
-
-</td>
-</tr>
-<tr>
-<td>
-<div>
-
-
-  
-    
-
-
-</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-
-  
-    <tr>
-      <td>
-        
-          Sincerely,
-        
-      </td>
-    </tr>
-    <tr>
-      <td>
-        
-          The Google Cloud Platform Team
-        
-      </td>
-    </tr>
-  
-
-
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr><td>
-<table>
-<tr>
-<td>
-
-  
-  
-
-
-</td></tr>
-</table>
-<table>
-<tr>
-<td>
-
-    
-    
-
-
-</td>
-</tr>
-</table>
-</td></tr>
-</table>
-</td>
-</tr>
-</table></td></tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<img alt="">
-</td>
-</tr>
-<tr>
-<td>
-© 2020 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043
-<br /><br />
-You have received this mandatory service announcement to update you about important changes to Google Cloud Platform or your account.
-</td>
-</tr>
 <tr>
 <td>
 <table>
