@@ -4,9 +4,31 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2020-01-12T11:36:06Z</updated>
+    <updated>2020-01-16T12:27:32Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>perl 빠르다</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/01/003207.html" />
+    <id>tag:weblog.youre.space,2020:/vergence//11.3207</id>
+
+    <published>2020-01-16T12:26:18Z</published>
+    <updated>2020-01-16T12:27:32Z</updated>
+
+    <summary>로그 요약해서 각 단계별 주요 로그만 거르고, 이걸 한 행에 세션아이디와 각 단계별 완료 시각으로만 요약하는 스크립트를 만드는데.요즘 JavaScript 학습 하시는 내무부장관님께서지나가는 말로 &quot;nested 로 작성하지 말라던데...&quot; _흠칫_perl 코드이니 알아보지는 못 하시겠지만, 혹시라도 내 코드를 보여드리진 말아야겠다는 생각이 들었습니다.ㄷㄷㄷㄷ그리고 스킬이...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<p>로그 요약해서 각 단계별 주요 로그만 거르고, 이걸 한 행에 세션아이디와 각 단계별 완료 시각으로만 요약하는 스크립트를 만드는데.<br />요즘 JavaScript 학습 하시는 내무부장관님께서<br />지나가는 말로 "nested 로 작성하지 말라던데..." _흠칫_<br /><br />perl 코드이니 알아보지는 못 하시겠지만, 혹시라도 내 코드를 보여드리진 말아야겠다는 생각이 들었습니다.<br />ㄷㄷㄷㄷ<br /><br />그리고 스킬이 부족한 탓에, 150MB짜리 텍스트 파일 한 줄씩 읽어다가 통째로 메모리에, 그것도 해시에 넣고 정리하는데, 30분 걸릴 줄 생각했는데 몇 분도 안 걸려서 깜짝 놀랐습니다.<br />시간이 흘러도 컴퓨팅 파워에 대한 제 기준은 CPU AMD K6 300 &amp; MEM 128MB, 20년 전 제 첫 컴퓨터.<br />지금 내 노트북 CPU는 Celeron N4100.</p>
+<p><br />아무튼... perl이 빠르다는 이야기입니다.</p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>DevOps 관련 무료 책 모음</title>
@@ -416,32 +438,6 @@ index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredict
     
     <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
         <![CDATA[<div>Article: https://www.huffingtonpost.kr/entry/story_kr_5c207f14e4b0407e907caca4?ncid=other_email_o63gt2jcad4&amp;utm_campaign=share_email</div>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>어머니의 집</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/05/002211.html" />
-    <id>tag:weblog.youre.space,2019:/vergence//11.2211</id>
-
-    <published>2019-05-14T10:11:09Z</published>
-    <updated>2019-05-14T10:11:09Z</updated>
-
-    <summary>&#50612;&#47672;&#45768; &#51665;&#50640;&#45716; &#45236;&#44032; &#45824;&#54617;&#49884;&#51208; &#52264;&#47484; &#47560;&#49892; &#46412; &#50044;&#45912; &#44536;&#47495;&#51060; &#45224;&#50500;&#51080;&#51012; &#44163; &#44057;&#50500;. &#44032;&#49436; &#52286;&#50500;&#48372;&#44256; &#49910;&#45796;. &#44536; &#44536;&#47495;&#50640;&#45716; &#50504;&#50640; &#47932;&#44256;&#44592;&#44032; &#44536;&#47140;&#51256; &#51080;&#50632;&#45796;. &#47932;&#51012; &#45812;&#51004;&#47732; &#47932;&#44256;&#44592;&#44032; &#51339;&#50500;&#54624; &#44163; &#44057;&#51008; &#49373;&#44033;&#51060; &#46308;&#50632;&#45796;....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<div>&#50612;&#47672;&#45768; &#51665;&#50640;&#45716; &#45236;&#44032; &#45824;&#54617;&#49884;&#51208; &#52264;&#47484; &#47560;&#49892; &#46412; &#50044;&#45912; &#44536;&#47495;&#51060; &#45224;&#50500;&#51080;&#51012; &#44163; &#44057;&#50500;. &#44032;&#49436; &#52286;&#50500;&#48372;&#44256; &#49910;&#45796;.<br />
-<br />
-</div>
-<div>&#44536; &#44536;&#47495;&#50640;&#45716; &#50504;&#50640; &#47932;&#44256;&#44592;&#44032; &#44536;&#47140;&#51256; &#51080;&#50632;&#45796;. &#47932;&#51012; &#45812;&#51004;&#47732; &#47932;&#44256;&#44592;&#44032; &#51339;&#50500;&#54624; &#44163; &#44057;&#51008; &#49373;&#44033;&#51060; &#46308;&#50632;&#45796;.</div>
 
 ]]>
         
