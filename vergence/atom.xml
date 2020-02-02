@@ -262,41 +262,6 @@
 </entry>
 
 <entry>
-    <title>tokbox alternative : Remote Monster</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/07/002408.html" />
-    <id>tag:weblog.youre.space,2019:/vergence//11.2408</id>
-
-    <published>2019-07-02T01:24:34Z</published>
-    <updated>2019-07-20T01:57:48Z</updated>
-
-    <summary><![CDATA[톡박스 대체재 : 리모트 몬스터 https://remotemonster.com/ 아래는 tokbox 예시입니다. 소스코드를 봐주세요. &lt;div id="otEmbedContainer" style="width:640px; height:480px"&gt;&lt;/div&gt; &lt;script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=aecb5597-7cd7-4513-858a-8eb30b5ed988&amp;room=DEFAULT_ROOM" type="text/javascript"&gt;&lt;/script&gt; 또는 &lt;iframe width="640" height="480" src="https://tokbox.com/embed/embed/ot-embed.js?embedId=aecb5597-7cd7-4513-858a-8eb30b5ed988&amp;room=DEFAULT_ROOM&amp;iframe=true" scrolling="auto" allow="microphone; camera"&gt;&lt;/iframe&gt; 견주어서 아래 웹 페이지의 소스코드도 봐주세요. https://video.saramara.ai/broadcast.html 방송자 페이지 https://video.saramara.ai/ 시청자 페이지...]]></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<p>톡박스 대체재 : 리모트 몬스터</p>
-<p><a href="https://remotemonster.com/" title="리모트 몬스터" target="_blank">https://remotemonster.com/</a></p>
-<p>아래는 tokbox 예시입니다. 소스코드를 봐주세요.</p>
-<pre><code>&lt;div id="otEmbedContainer" style="width:640px; height:480px"&gt;&lt;/div&gt;
-&lt;script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=aecb5597-7cd7-4513-858a-8eb30b5ed988&amp;room=DEFAULT_ROOM" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
-<p>또는</p>
-<pre><code>&lt;iframe width="640" height="480" src="https://tokbox.com/embed/embed/ot-embed.js?embedId=aecb5597-7cd7-4513-858a-8eb30b5ed988&amp;room=DEFAULT_ROOM&amp;iframe=true" scrolling="auto" allow="microphone; camera"&gt;&lt;/iframe&gt;</code></pre>
-<div id="otEmbedContainer" style="width: 640px; height: 480px;"></div>
-<script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=aecb5597-7cd7-4513-858a-8eb30b5ed988&amp;room=DEFAULT_ROOM" type="text/javascript"></script>
-
-<p>견주어서 아래 웹 페이지의 소스코드도 봐주세요.<br>
-<a href="https://video.saramara.ai/broadcast.html" target="_blank">https://video.saramara.ai/broadcast.html</a>  방송자 페이지<br><br>
-<a href="https://video.saramara.ai/" target="_blank">https://video.saramara.ai/</a>  시청자 페이지
-</p>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>Splunk Machine Learning Toolkit 예시</title>
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/05/002281.html" />
     <id>tag:weblog.youre.space,2019:/vergence//11.2281</id>
@@ -438,6 +403,32 @@ index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredict
     
     <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
         <![CDATA[<div>Article: https://www.huffingtonpost.kr/entry/story_kr_5c207f14e4b0407e907caca4?ncid=other_email_o63gt2jcad4&amp;utm_campaign=share_email</div>
+
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>어머니의 집</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/05/002211.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.2211</id>
+
+    <published>2019-05-14T10:11:09Z</published>
+    <updated>2019-05-14T10:11:09Z</updated>
+
+    <summary>&#50612;&#47672;&#45768; &#51665;&#50640;&#45716; &#45236;&#44032; &#45824;&#54617;&#49884;&#51208; &#52264;&#47484; &#47560;&#49892; &#46412; &#50044;&#45912; &#44536;&#47495;&#51060; &#45224;&#50500;&#51080;&#51012; &#44163; &#44057;&#50500;. &#44032;&#49436; &#52286;&#50500;&#48372;&#44256; &#49910;&#45796;. &#44536; &#44536;&#47495;&#50640;&#45716; &#50504;&#50640; &#47932;&#44256;&#44592;&#44032; &#44536;&#47140;&#51256; &#51080;&#50632;&#45796;. &#47932;&#51012; &#45812;&#51004;&#47732; &#47932;&#44256;&#44592;&#44032; &#51339;&#50500;&#54624; &#44163; &#44057;&#51008; &#49373;&#44033;&#51060; &#46308;&#50632;&#45796;....</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<div>&#50612;&#47672;&#45768; &#51665;&#50640;&#45716; &#45236;&#44032; &#45824;&#54617;&#49884;&#51208; &#52264;&#47484; &#47560;&#49892; &#46412; &#50044;&#45912; &#44536;&#47495;&#51060; &#45224;&#50500;&#51080;&#51012; &#44163; &#44057;&#50500;. &#44032;&#49436; &#52286;&#50500;&#48372;&#44256; &#49910;&#45796;.<br />
+<br />
+</div>
+<div>&#44536; &#44536;&#47495;&#50640;&#45716; &#50504;&#50640; &#47932;&#44256;&#44592;&#44032; &#44536;&#47140;&#51256; &#51080;&#50632;&#45796;. &#47932;&#51012; &#45812;&#51004;&#47732; &#47932;&#44256;&#44592;&#44032; &#51339;&#50500;&#54624; &#44163; &#44057;&#51008; &#49373;&#44033;&#51060; &#46308;&#50632;&#45796;.</div>
 
 ]]>
         

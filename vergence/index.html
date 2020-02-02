@@ -338,12 +338,12 @@
 </article>
 
 
-              <article id="entry-2408" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-2281" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/07/002408.html">tokbox alternative : Remote Monster</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2019/05/002281.html">Splunk Machine Learning Toolkit 예시</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2019-07-02T10:24:34+09:00" itemprop="datePublished">July  2, 2019</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2019-05-27T14:09:18+09:00" itemprop="datePublished">May 27, 2019</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -352,24 +352,35 @@
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>톡박스 대체재 : 리모트 몬스터</p>
-<p><a href="https://remotemonster.com/" title="리모트 몬스터" target="_blank">https://remotemonster.com/</a></p>
-<p>아래는 tokbox 예시입니다. 소스코드를 봐주세요.</p>
-<pre><code>&lt;div id="otEmbedContainer" style="width:640px; height:480px"&gt;&lt;/div&gt;
-&lt;script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=aecb5597-7cd7-4513-858a-8eb30b5ed988&amp;room=DEFAULT_ROOM" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
-<p>또는</p>
-<pre><code>&lt;iframe width="640" height="480" src="https://tokbox.com/embed/embed/ot-embed.js?embedId=aecb5597-7cd7-4513-858a-8eb30b5ed988&amp;room=DEFAULT_ROOM&amp;iframe=true" scrolling="auto" allow="microphone; camera"&gt;&lt;/iframe&gt;</code></pre>
-<div id="otEmbedContainer" style="width: 640px; height: 480px;"></div>
-<script src="https://tokbox.com/embed/embed/ot-embed.js?embedId=aecb5597-7cd7-4513-858a-8eb30b5ed988&amp;room=DEFAULT_ROOM" type="text/javascript"></script>
+    
+<div>
+<div><br />
+</div>
 
-<p>견주어서 아래 웹 페이지의 소스코드도 봐주세요.<br>
-<a href="https://video.saramara.ai/broadcast.html" target="_blank">https://video.saramara.ai/broadcast.html</a>  방송자 페이지<br><br>
-<a href="https://video.saramara.ai/" target="_blank">https://video.saramara.ai/</a>  시청자 페이지
-</p>
+<div>xor.csv<br />
+num1,num2,result<br />
+0,0,0<br />
+1,0,1<br />
+0,1,1<br />
+1,1,0<br />
+<br />
+quiz_xor.csv<br />
+num1,num2,result<br />
+0,0<br />
+1,0<br />
+0,1<br />
+1,1<br />
+<br />
+index="gwak_mlxor" source="/opt/data/xor.csv" | fit RandomForestClassifier result from num1, num2 into mymlxor2<br />
+index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult <br />
+<br />
+</div>
+</div>
+
 
   </div>
   <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2019/07/002408.html" itemprop="url">Continue reading</a>
+    <a href="https://weblog.youre.space/vergence/2019/05/002281.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
