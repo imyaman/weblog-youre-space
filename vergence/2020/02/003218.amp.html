@@ -1,0 +1,101 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article" lang="ko">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/vergence/2020/02/003218.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="If you see these words &quot;getaddrinfo&quot;, &quot;EAI_AGAIN&quot; npm ERR! code EAI_AGAIN npm ERR! errno EAI_AGAIN npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443 You have to check /etc/hosts. &quot;127.0.0.1 localhost&quot; must be last, other &quot;127.0.0.1&quot; must be...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>getaddrinfo EAI_AGAIN - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="https://weblog.youre.space/vergence/2020/01/003207.amp.html" title="perl 빠르다">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="getaddrinfo EAI_AGAIN">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2020/02/003218.html">
+    <meta property="og:description" content="If you see these words &quot;getaddrinfo&quot;, &quot;EAI_AGAIN&quot; npm ERR! code EAI_AGAIN npm ERR! errno EAI_AGAIN npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443 You have to check /etc/hosts. &quot;127.0.0.1 localhost&quot; must be last, other &quot;127.0.0.1&quot; must be...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="If you see these words &quot;getaddrinfo&quot;, &quot;EAI_AGAIN&quot; npm ERR! code EAI_AGAIN npm ERR! errno EAI_AGAIN npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443 You have to check /etc/hosts. &quot;127.0.0.1 localhost&quot; must be last, other &quot;127.0.0.1&quot; must be...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2020/02/003218.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">getaddrinfo EAI_AGAIN</h1>
+<time datetime="2020-02-16T18:05:17+09:00" itemprop="datePublished">February 16, 2020</time>
+<time datetime="2020-02-16T18:05:17+09:00" itemprop="dateModified">February 16, 2020</time>
+
+by <span itemprop="author"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>If you see these words "getaddrinfo", "EAI_AGAIN" </p>
+
+<p><code>
+npm ERR! code EAI_AGAIN
+npm ERR! errno EAI_AGAIN
+npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+</code></p>
+
+<p>You have to check /etc/hosts. "127.0.0.1 localhost" must be last, other "127.0.0.1" must be first.</p>
+
+<p>Not good,</p>
+
+<p><code>
+127.0.0.1  localhost
+127.0.1.1  imyaman.youre.space  imyaman
+</code></p>
+
+<p>Good,</p>
+
+<p><code>
+127.0.1.1  imyaman.youre.space  imyaman
+127.0.0.1  localhost
+</code></p>
+
+  
+</div>
+
+  <a href=http://weblog.youre.space//vergence/2020/02/003218.html target="_blank">http://weblog.youre.space//vergence/2020/02/003218.html</a>
+
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+
+  </body>
+</html>

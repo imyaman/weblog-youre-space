@@ -88,6 +88,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-3218" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/02/003218.html">getaddrinfo EAI_AGAIN</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-02-16T18:05:17+09:00" itemprop="datePublished">February 16, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>If you see these words "getaddrinfo", "EAI_AGAIN" </p>
+
+<p><code>
+npm ERR! code EAI_AGAIN
+npm ERR! errno EAI_AGAIN
+npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+</code></p>
+
+<p>You have to check /etc/hosts. "127.0.0.1 localhost" must be last, other "127.0.0.1" must be first.</p>
+
+<p>Not good,</p>
+
+<p><code>
+127.0.0.1  localhost
+127.0.1.1  imyaman.youre.space  imyaman
+</code></p>
+
+<p>Good,</p>
+
+<p><code>
+127.0.1.1  imyaman.youre.space  imyaman
+127.0.0.1  localhost
+</code></p>
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2020/02/003218.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-3217" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/01/003217.html">Your Project: sys5 is at risk of suspension</a></h2>
@@ -1095,34 +1140,6 @@ line-height: inherit !important;
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/imyaman/2020/01/003209.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3208" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/01/003208.html">설명절 선물은 고소한 모란시장 기름거리에서 준비하세요!</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-01-16T21:49:48+09:00" itemprop="datePublished">January 16, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieii-3/">성남여행</a></li>
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    까치 까치 설날은 어저께고요 우리 우리 설날은 오늘이래요~벌써 설날이 기다려집니다.올해 설날은 좀 빠릅니다.(1월 25일이 설날)주부들은 설날 선물과 제수용품준비로 마음이 참 바쁠 때죠.설날 선물 어디서 준비하나요?고소한 참기름 냄새가 풍기는모란시장 기름골목을 아시나요?제가 설날을 앞두고 다녀왔는데요,지금부터 소개해드리겠습니다.매달 4와 9자가 들어간 날이면어김없이 열리는 모란오일장!겨울이라 날씨가 꽤 추웠는데요,수도권 최대 민속시장답게 인파로시장을 가득 메웠습니다.그 열기로 추운 줄도 모릅니다.모란시장 기름골목은 오일장이열리는 맞은편 골목에 있는데요,기름골목 입구부터 어디서.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221774456219">http://seongnamdiary.com/221774456219</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2020/01/003208.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
