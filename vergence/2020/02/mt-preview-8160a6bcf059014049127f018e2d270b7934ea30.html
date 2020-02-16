@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="If you see these words &quot;getaddrinfo&quot;, &quot;EAI_AGAIN&quot; npm ERR! code EAI_AGAIN npm ERR! errno EAI_AGAIN npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443 You have to check /etc/hosts. &quot;127.0.0.1 localhost&quot; must be last, other &quot;127.0.0.1&quot; must be...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title> - vergence의 이상한 세상</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles_ie.css">
+    <script src="https://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="https://weblog.youre.space/vergence/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/vergence/atom.xml" />
+    
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <script type="text/javascript">
+        var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+        sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
+    </script>
+    <link rel="prev" href="https://weblog.youre.space/vergence/2020/01/003207.html" title="perl 빠르다">
+    
+    <link rel="amphtml" href="https://weblog.youre.space/vergence/2020/02/-00001.amp.html">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2020/02/-00001.html">
+    <meta property="og:description" content="If you see these words &quot;getaddrinfo&quot;, &quot;EAI_AGAIN&quot; npm ERR! code EAI_AGAIN npm ERR! errno EAI_AGAIN npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443 You have to check /etc/hosts. &quot;127.0.0.1 localhost&quot; must be last, other &quot;127.0.0.1&quot; must be...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="If you see these words &quot;getaddrinfo&quot;, &quot;EAI_AGAIN&quot; npm ERR! code EAI_AGAIN npm ERR! errno EAI_AGAIN npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443 You have to check /etc/hosts. &quot;127.0.0.1 localhost&quot; must be last, other &quot;127.0.0.1&quot; must be...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2020/02/-00001.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="https://weblog.youre.space/vergence/">
+
+                  <img alt="vergence의 이상한 세상" src="https://weblog.youre.space/vergence/assets_c/2017/08/Coffee-and-Books-1024x512-thumb-1024x512-3.jpg">
+
+                </a>
+              </h1>
+              <p id="header-description">#취미생활 취미생호라 취미생하로</p>
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="https://weblog.youre.space/vergence/">Home</a></li>
+
+            <li><a href="https://weblog.youre.space/vergence/about/about-page.html">About</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
+              <li class="breadcrumb-list-item"></li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry--1" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title"></h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2020-02-16T18:05:17+09:00" itemprop="datePublished">February 16, 2020</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <p>If you see these words "getaddrinfo", "EAI_AGAIN" </p>
+
+<p><code>
+npm ERR! code EAI_AGAIN
+npm ERR! errno EAI_AGAIN
+npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
+</code></p>
+
+<p>You have to check /etc/hosts. "127.0.0.1 localhost" must be last, other "127.0.0.1" must be first.</p>
+
+<p>Not good,</p>
+
+<p><code>
+127.0.0.1  localhost
+127.0.1.1  imyaman.youre.space  imyaman
+</code></p>
+
+<p>Good,</p>
+
+<p><code>
+127.0.1.1  imyaman.youre.space  imyaman
+127.0.0.1  localhost
+</code></p>
+
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2020/01/003207.html" title="perl 빠르다">Previous entry</a></li>
+
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: </p>
+  
+  
+</aside>
+
+
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="https://connexus.youre.space/mt6/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="11">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-category widget">
+  <h3 class="widget-header">Categories</h3>
+  <div class="widget-content">
+    
+      
+    <ul class="widget-list">
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/vergence/2002-2003/">2002-2003 (18)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/vergence/cal/">cal (29)</a>
+      
+      
+      </li>
+      
+    </ul>
+      
+    
+  </div>
+</nav>
+  
+
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="https://weblog.youre.space/vergence/2020/01/">January 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/11/">November 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/09/">September 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/08/">August 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/07/">July 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/05/">May 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/04/">April 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/03/">March 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/01/">January 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/12/">December 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/08/">August 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/07/">July 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/05/">May 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/04/">April 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/03/">March 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/02/">February 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/12/">December 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/11/">November 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/10/">October 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/09/">September 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/08/">August 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/07/">July 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/06/">June 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/05/">May 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/04/">April 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/03/">March 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/02/">February 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/11/">November 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/10/">October 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/09/">September 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/07/">July 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/06/">June 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/05/">May 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/04/">April 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/03/">March 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/02/">February 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/01/">January 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/12/">December 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/11/">November 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/10/">October 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/09/">September 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/08/">August 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/07/">July 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/11/">November 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/10/">October 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/08/">August 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/06/">June 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/05/">May 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/04/">April 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/03/">March 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2013/11/">November 2013</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2013/08/">August 2013</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2013/05/">May 2013</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2011/09/">September 2011</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/09/">September 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/08/">August 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/07/">July 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/06/">June 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/05/">May 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/04/">April 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2002/02/">February 2002</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-tag-cloud widget">
+  <h3 class="widget-header">Tag Cloud</h3>
+  <div class="widget-content">
+    <ul class="widget-list">
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=finalfantasy&amp;limit=20">finalfantasy</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=firebase&amp;limit=20">firebase</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=leadership&amp;limit=20">leadership</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=neuralnetwork&amp;limit=20">neuralnetwork</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20">리더십</a></li>
+  
+    </ul>
+  </div>
+</div>
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="https://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="https://weblog.youre.space/vergence/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="https://weblog.youre.space/vergence/">Home</a></li>
+
+            <li><a href="https://weblog.youre.space/vergence/about/about-page.html">About</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2020.</p>
+  <p class="poweredby">Powered by <a href="//www.movabletype.org/">Movable Type</a> and <a href="http://youre.space/">youre.space</a></p>
+</div>
+
+<!-- ad starts -->
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="//nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="//adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<!-- ad ends -->
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="https://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
+
+<center>
+<script type="text/javascript"> 
+clicksor_enable_adhere = false; 
+
+clicksor_default_url = '';
+clicksor_banner_border = '#99CC33'; 
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#000000'; 
+clicksor_banner_text_color = '#666666';
+clicksor_layer_border_color = '';
+clicksor_layer_ad_bg = ''; 
+clicksor_layer_ad_link_color = '';
+clicksor_layer_ad_text_color = ''; 
+clicksor_text_link_bg = '';
+clicksor_text_link_color = ''; 
+clicksor_enable_text_link = false;
+		 
+clicksor_banner_text_banner = true;
+clicksor_banner_image_banner = true; 
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+</script>
+<script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=330835&amp;adtype=20&amp;sid=588821"></script>
+</center>
+
+</body>
+</html>
