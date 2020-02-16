@@ -92,29 +92,24 @@
   <div class="asset-content entry-content" itemprop="articleBody">
     <p>If you see these words "getaddrinfo", "EAI_AGAIN" </p>
 
-<p><code>
-npm ERR! code EAI_AGAIN
+<pre><code>npm ERR! code EAI_AGAIN
 npm ERR! errno EAI_AGAIN
 npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
-</code></p>
+</code></pre>
 
 <p>You have to check /etc/hosts. "127.0.0.1 localhost" must be last, other "127.0.0.1" must be first.</p>
 
 <p>Not good,</p>
 
-<p>```
-127.0.0.1  localhost</p>
-
-<p>127.0.1.1  imyaman.youre.space  imyaman
-```</p>
+<pre><code>127.0.0.1  localhost
+127.0.1.1  imyaman.youre.space  imyaman
+</code></pre>
 
 <p>Good,</p>
 
-<p>```
-127.0.1.1  imyaman.youre.space  imyaman</p>
-
-<p>127.0.0.1  localhost
-```</p>
+<pre><code>127.0.1.1  imyaman.youre.space  imyaman
+127.0.0.1  localhost
+</code></pre>
 
   </div>
   <div class="entry-more-link">

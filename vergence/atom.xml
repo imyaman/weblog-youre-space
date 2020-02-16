@@ -4,7 +4,7 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2020-02-16T09:12:28Z</updated>
+    <updated>2020-02-16T09:14:45Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
 
@@ -14,7 +14,7 @@
     <id>tag:weblog.youre.space,2020:/vergence//11.3218</id>
 
     <published>2020-02-16T09:05:17Z</published>
-    <updated>2020-02-16T09:12:28Z</updated>
+    <updated>2020-02-16T09:14:45Z</updated>
 
     <summary>If you see these words &quot;getaddrinfo&quot;, &quot;EAI_AGAIN&quot; npm ERR! code EAI_AGAIN npm ERR! errno EAI_AGAIN npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443 You have to check /etc/hosts. &quot;127.0.0.1 localhost&quot; must be last, other &quot;127.0.0.1&quot; must be...</summary>
     <author>
@@ -26,29 +26,24 @@
     <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
         <![CDATA[<p>If you see these words "getaddrinfo", "EAI_AGAIN" </p>
 
-<p><code>
-npm ERR! code EAI_AGAIN
+<pre><code>npm ERR! code EAI_AGAIN
 npm ERR! errno EAI_AGAIN
 npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
-</code></p>
+</code></pre>
 
 <p>You have to check /etc/hosts. "127.0.0.1 localhost" must be last, other "127.0.0.1" must be first.</p>
 
 <p>Not good,</p>
 
-<p>```
-127.0.0.1  localhost</p>
-
-<p>127.0.1.1  imyaman.youre.space  imyaman
-```</p>
+<pre><code>127.0.0.1  localhost
+127.0.1.1  imyaman.youre.space  imyaman
+</code></pre>
 
 <p>Good,</p>
 
-<p>```
-127.0.1.1  imyaman.youre.space  imyaman</p>
-
-<p>127.0.0.1  localhost
-```</p>
+<pre><code>127.0.1.1  imyaman.youre.space  imyaman
+127.0.0.1  localhost
+</code></pre>
 ]]>
         
     </content>
