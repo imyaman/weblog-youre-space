@@ -4,9 +4,32 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2020-02-18T00:53:09Z</updated>
+    <updated>2020-02-20T23:55:50Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>zoom</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/02/003220.html" />
+    <id>tag:weblog.youre.space,2020:/vergence//11.3220</id>
+
+    <published>2020-02-20T23:54:44Z</published>
+    <updated>2020-02-20T23:55:50Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<iframe src="https://zoom.us/wc/{{ meetindID }}/join?prefer=1&un=TWluZGF1Z2Fz" sandbox="allow-forms allow-scripts" allow="microphone; camera"></iframe>
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>A 5-Step VoIP Implementation Guide (+How to Do it Yourself)</title>
@@ -422,29 +445,6 @@ index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredict
 <br />
 </div>
 <div><a href="https://www.lavazza.com/en/business/offices/beans/gusto-pieno.html">https://www.lavazza.com/en/business/offices/beans/gusto-pieno.html</a></div>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>복세편살 뜻 의미</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/05/002230.html" />
-    <id>tag:weblog.youre.space,2019:/vergence//11.2230</id>
-
-    <published>2019-05-19T22:31:04Z</published>
-    <updated>2019-05-19T22:31:04Z</updated>
-
-    <summary>&#48373;&#49464;&#54200;&#49332;&#51008; &#48373;&#51105;&#54620; &#49464;&#49345; &#54200;&#54616;&#44172; &#49332;&#51088;&#47484; &#51460;&#51064; &#47568;&#51060;&#45796;. &#48373;&#51105;&#51032; &#48152;&#45824;&#47568;&#51012; &#52286;&#51088;&#47732; &#54200;&#54616;&#44172;&#48372;&#45796; &#45800;&#49692;&#54616;&#44172;&#44032; &#45227;&#45796;. &#44536;&#47084;&#45768; &#48373;&#49464;&#45800;&#49332;&#47196; &#48148;&#44984;&#45716;&#44172; &#51339;&#44192;&#45796;....</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<div>&#48373;&#49464;&#54200;&#49332;&#51008; &#48373;&#51105;&#54620; &#49464;&#49345; &#54200;&#54616;&#44172; &#49332;&#51088;&#47484; &#51460;&#51064; &#47568;&#51060;&#45796;. &#48373;&#51105;&#51032; &#48152;&#45824;&#47568;&#51012; &#52286;&#51088;&#47732; &#54200;&#54616;&#44172;&#48372;&#45796; &#45800;&#49692;&#54616;&#44172;&#44032; &#45227;&#45796;. &#44536;&#47084;&#45768; &#48373;&#49464;&#45800;&#49332;&#47196; &#48148;&#44984;&#45716;&#44172; &#51339;&#44192;&#45796;.</div>
 
 ]]>
         
