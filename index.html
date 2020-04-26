@@ -88,6 +88,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-3224" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/04/003224.html">Docker for Windows 10 Home (Minimal)</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-04-26T23:33:15+09:00" itemprop="datePublished">April 26, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <h2>Docker for Windows</h2>
+<p>https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip</p>
+<p>https://master.dockerproject.org/ (current master)</p>
+<p></p>
+<h2>LCOW, kernel, initrd.img</h2>
+<p>in "C:\Program Files\Linux Container",</p>
+<p>https://github.com/linuxkit/lcow/releases</p>
+<p></p>
+<p></p>
+<h2>InstallHyperV.bat</h2>
+<p>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br />for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del hyper-v.txt<br />dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br />pause</p>
+<p></p>
+<h2>InstallContainers.bat</h2>
+<p>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt<br />for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del containers.txt<br />dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL<br />pause</p>
+<p></p>
+<h2>run_me.txt</h2>
+<p>set LCOW_SUPPORTED=1<br />dockerd.exe -D --data-root C:\lcow --experimental</p>
+<p></p>
+<h2>set_perms.ps1</h2>
+<p>param(<br />[string] $Root<br />)<br /># Give the virtual machines group full control<br />$acl = Get-Acl -Path $Root<br />$vmGroupRule = new-object System.Security.AccessControl.FileSystemAccessRule("NT VIRTUAL MACHINE\Virtual Machines", "FullControl","ContainerInherit,ObjectInherit", "None", "Allow")<br />$acl.SetAccessRule($vmGroupRule)<br />Set-Acl -AclObject $acl -Path $Root</p>
+<p></p>
+<h2>examples</h2>
+<p>docker run -d --restart=always --mount type=npipe,source=\\.\pipe\docker_engine,destination=\\.\pipe\docker_engine --mount type=bind,source=E:\Portainer,destination=C:\data -p 9000:9000 --name portainer portainer/portainer:windows1809-amd64<br /><br /><br />docker run -d --restart always -v \\.\pipe\docker_engine:\\.\pipe\docker_engine -v E:\Portainer:C:\data -p 9000:9000 --name portainer portainer/portainer:windows1809-amd64</p>
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2020/04/003224.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-3223" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/04/003223.html">Job to Be Done, Hire, Fire</a></h2>
@@ -513,34 +557,6 @@ You are receiving this email because you are a Google Cloud Platform, Firebase, 
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/imyaman/2020/01/003215.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3214" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/01/003214.html">시민이 시장입니다! 성남시 일일 명예시장 20명 공모!</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-01-17T21:39:56+09:00" itemprop="datePublished">January 17, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieii-1/">성남정책</a></li>
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    성남시는 오는 1월 29일까지 ‘일일 명예시장’ 20명을 공개 모집한다. 시민의 시정 참여 확대와 열린 행정 실천 방안의 하나로 일일 명예시장 제도를 운용하려는 절차다. 명예시장은 오는 2월 13일부터 11월 26일까지 목요일에 활동한다. 시청 2층 명예시장실에서 주요 시책과 관심 분야 업무 청취 뒤 시 산하기관, 사업장을 방문해 시민의 눈으로 성남시정을 바라보고 정책제언을 한다.25세 이상 성남시민이 참여할 수 있고, 정치인이나 통·반장, 주민자치위원, 기관단체장, 시 산하기관 직원은 공모 대상에서 제외로 한다. 성남시는 다문화, 여성, 청년, 노동자, 노인 등 각계각층의 참여를 끌어내기 위해 시 블로그, 홈페이지, 단체.......
-
-
-<p>출처 : <a href="http://seongnamdiary.com/221775782649">http://seongnamdiary.com/221775782649</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2020/01/003214.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 

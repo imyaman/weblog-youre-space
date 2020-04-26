@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ko" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <title>April 2020 Archives - vergence의 이상한 세상</title>
+    <meta name="description" content="Docker for Windows https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip https://master.dockerproject.org/ (current master) LCOW, kernel, initrd.img in &quot;C:\Program Files\Linux Container&quot;, https://github.com/linuxkit/lcow/releases InstallHyperV.bat pushd &quot;%~dp0&quot;dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txtfor /f %%i in (&#039;findstr /i . hyper-v.txt 2^&amp;gt;nul&#039;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;del hyper-v.txtdism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>Docker for Windows 10 Home (Minimal) - vergence의 이상한 세상</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
     <!--[if lt IE 9]>
@@ -12,7 +14,7 @@
     
     <link rel="start" href="https://weblog.youre.space/vergence/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/vergence/atom.xml" />
-    <link rel="canonical" href="https://weblog.youre.space/vergence/2020/04/" />
+    <link rel="canonical" href="https://weblog.youre.space/vergence/2020/04/003224.html" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -29,7 +31,21 @@
         var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
         sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
     </script>
-    <link rel="prev" href="https://weblog.youre.space/vergence/2020/03/" title="March 2020">
+    <link rel="prev" href="https://weblog.youre.space/vergence/2020/04/003223.html" title="Job to Be Done, Hire, Fire">
+    
+    <link rel="amphtml" href="https://weblog.youre.space/vergence/2020/04/003224.amp.html">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="Docker for Windows 10 Home (Minimal)">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2020/04/003224.html">
+    <meta property="og:description" content="Docker for Windows https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip https://master.dockerproject.org/ (current master) LCOW, kernel, initrd.img in &quot;C:\Program Files\Linux Container&quot;, https://github.com/linuxkit/lcow/releases InstallHyperV.bat pushd &quot;%~dp0&quot;dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txtfor /f %%i in (&#039;findstr /i . hyper-v.txt 2^&amp;gt;nul&#039;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;del hyper-v.txtdism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="Docker for Windows https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip https://master.dockerproject.org/ (current master) LCOW, kernel, initrd.img in &quot;C:\Program Files\Linux Container&quot;, https://github.com/linuxkit/lcow/releases InstallHyperV.bat pushd &quot;%~dp0&quot;dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txtfor /f %%i in (&#039;findstr /i . hyper-v.txt 2^&amp;gt;nul&#039;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;del hyper-v.txtdism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2020/04/003224.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     
   </head>
   <body>
@@ -64,39 +80,74 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
-              <li class="breadcrumb-list-item">April 2020 Archives</li>
+              <li class="breadcrumb-list-item">Docker for Windows 10 Home (Minimal)</li>
             </ul>
-            <div id="datebased-main" class="main" role="main">
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-3224" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">Docker for Windows 10 Home (Minimal)</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2020-04-26T23:33:15+09:00" itemprop="datePublished">April 26, 2020</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
-              <section id="posts">
-                <h2>April 2020 Archives</h2>
-                <ol class="posts-list">
-  
-                  <li class="posts-list-item">
-                    <time datetime="2020-04-26T23:33:15+09:00">April 26, 2020</time>
-                    <a href="https://weblog.youre.space/vergence/2020/04/003224.html">Docker for Windows 10 Home (Minimal)</a>
-                  </li>
-  
 
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <h2>Docker for Windows</h2>
+<p>https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip</p>
+<p>https://master.dockerproject.org/ (current master)</p>
+<p></p>
+<h2>LCOW, kernel, initrd.img</h2>
+<p>in "C:\Program Files\Linux Container",</p>
+<p>https://github.com/linuxkit/lcow/releases</p>
+<p></p>
+<p></p>
+<h2>InstallHyperV.bat</h2>
+<p>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br />for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del hyper-v.txt<br />dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br />pause</p>
+<p></p>
+<h2>InstallContainers.bat</h2>
+<p>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt<br />for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del containers.txt<br />dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL<br />pause</p>
+<p></p>
+<h2>run_me.txt</h2>
+<p>set LCOW_SUPPORTED=1<br />dockerd.exe -D --data-root C:\lcow --experimental</p>
+<p></p>
+<h2>set_perms.ps1</h2>
+<p>param(<br />[string] $Root<br />)<br /># Give the virtual machines group full control<br />$acl = Get-Acl -Path $Root<br />$vmGroupRule = new-object System.Security.AccessControl.FileSystemAccessRule("NT VIRTUAL MACHINE\Virtual Machines", "FullControl","ContainerInherit,ObjectInherit", "None", "Allow")<br />$acl.SetAccessRule($vmGroupRule)<br />Set-Acl -AclObject $acl -Path $Root</p>
+<p></p>
+<h2>examples</h2>
+<p>docker run -d --restart=always --mount type=npipe,source=\\.\pipe\docker_engine,destination=\\.\pipe\docker_engine --mount type=bind,source=E:\Portainer,destination=C:\data -p 9000:9000 --name portainer portainer/portainer:windows1809-amd64<br /><br /><br />docker run -d --restart always -v \\.\pipe\docker_engine:\\.\pipe\docker_engine -v E:\Portainer:C:\data -p 9000:9000 --name portainer portainer/portainer:windows1809-amd64</p>
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2020/04/003223.html" title="Job to Be Done, Hire, Fire">Previous entry</a></li>
+
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
   
-                  <li class="posts-list-item">
-                    <time datetime="2020-04-12T15:40:18+09:00">April 12, 2020</time>
-                    <a href="https://weblog.youre.space/vergence/2020/04/003223.html">Job to Be Done, Hire, Fire</a>
-                  </li>
+    Please paste Zenback script code here.
   
-                </ol>
-              </section>
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
   
+  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/377</p>
+  
+  
+</aside>
 
-              <nav class="page-navigation entry-navigation pagination content-nav">
-                <ul class="page-navigation-list">
 
-                  <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2020/03/">March 2020</a></li>
-
-
-                </ul>
-              </nav>
+              </article>
             </div>
             <aside class="widgets related" role="complementary">
               <nav class="widget-search widget">
@@ -490,5 +541,31 @@
     </div>
     <script src="https://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
     <script src="https://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
-  </body>
+
+<center>
+<script type="text/javascript"> 
+clicksor_enable_adhere = false; 
+
+clicksor_default_url = '';
+clicksor_banner_border = '#99CC33'; 
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#000000'; 
+clicksor_banner_text_color = '#666666';
+clicksor_layer_border_color = '';
+clicksor_layer_ad_bg = ''; 
+clicksor_layer_ad_link_color = '';
+clicksor_layer_ad_text_color = ''; 
+clicksor_text_link_bg = '';
+clicksor_text_link_color = ''; 
+clicksor_enable_text_link = false;
+		 
+clicksor_banner_text_banner = true;
+clicksor_banner_image_banner = true; 
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+</script>
+<script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=330835&amp;adtype=20&amp;sid=588821"></script>
+</center>
+
+</body>
 </html>
