@@ -4,7 +4,7 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2020-05-03T13:33:28Z</updated>
+    <updated>2020-05-03T13:38:31Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
 
@@ -14,7 +14,7 @@
     <id>tag:weblog.youre.space,2020:/vergence//11.3224</id>
 
     <published>2020-04-26T14:33:15Z</published>
-    <updated>2020-05-03T13:33:28Z</updated>
+    <updated>2020-05-03T13:38:31Z</updated>
 
     <summary>Windows 10에 Docker를 설치하는 잘 알려진 방법은 &quot;Docker Desktop&quot;을 설치하는 것입니다. 이 방법이 현재 가장 권장하는 방법입니다.이 방법의 제약은 Windows 10 Professional 이상에 설치 가능하고 Windows 10 Home에는 설치가 안 된다는 점입니다. 레지스트리를 수정하면 할 수는 있는데, 굳이 그렇게까지. 개인적으로...</summary>
     <author>
@@ -62,7 +62,7 @@
 <p>이제 원하는 Docker image를 받아 이용합니다. 예를 들면,</p>
 <pre>C:\&gt; docker pull fedora:32<br />C:\&gt; docker run -i -t --name fedora32 -p 22:22 -p 80:80 -p 443:443 -p 3000-3009:3000-3009 -p 5900:5900 -p 5901:5901 -v C:\data:/data fedora:32</pre>
 <p>저는 Fedora를 권장합니다. 위 명령은 22, 80, 443, 3000~3009번 포트를 도커 컨테이너에게 열어줍니다. 저는 Perl 과 Dancer2 를 이용해 웹 사이트를 만들 거라 80, 443, 3000~30009번 포트를 열었습니다. ssh 접속도 할거라 22번 포트를, X Window System과 VNC를 이용할 거라 5900, 5901번 포트를 열었습니다. 윈도우즈와 파일도 주고 받을 거라 C:\data 를 /data 로 마운트 하였습니다.</p>
-<p><a href="https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-103.html" onclick="window.open('https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-103.html','popup','width=1920,height=1081,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-thumb-360xauto-103.png" alt="docker_windows10_20200503.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" width="360" height="203" /></a>이 스크린샷은, 컨테이너 안의 GNU/Linux에서 Perl로 그래프를 만들고 /data 디렉토리에 넣은 것을, 윈도우즈에서 C:\data 디렉토리에서 확인하고, 열어본 화면입니다.</p>
+<p><a href="https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-103.html" onclick="window.open('https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-103.html','popup','width=1920,height=1081,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-thumb-360xauto-103.png" alt="docker_windows10_20200503.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" width="360" height="203" /></a>이 스크린샷은, 컨테이너 안의 GNU/Linux에서 Perl로 그래프를 만들어 /data 디렉토리에 넣은 것을, 호스트인 윈도우즈의 C:\data 디렉토리에서 확인하고 열어본 화면입니다.</p>
 <h2>sudo 오류 메시지</h2>
 <p>컨테이너 안에 게스트 운영체제로 GNU/Linux를 쓰다가 sudo 실행 시 오류를 본다면 아래와 같이 설정을 합니다. 무시해도 됩니다.</p>
 <pre><code>echo "Set disable_coredump false" &gt;&gt; /etc/sudo.conf<br /></code></pre>
