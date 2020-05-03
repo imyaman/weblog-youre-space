@@ -2,9 +2,9 @@
 <html lang="ko" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Docker for Windows https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip https://master.dockerproject.org/ (current master) LCOW, kernel, initrd.img in &quot;C:\Program Files\Linux Container&quot;, https://github.com/linuxkit/lcow/releases InstallHyperV.bat pushd &quot;%~dp0&quot;dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txtfor /f %%i in (&#039;findstr /i . hyper-v.txt 2^&amp;gt;nul&#039;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;del hyper-v.txtdism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess...">
+    <meta name="description" content="Windows 10에 Docker를 설치하는 잘 알려진 방법은 &quot;Docker Desktop&quot;을 설치하는 것입니다. 이 방법이 현재 가장 권장하는 방법입니다.이 방법의 제약은 Windows 10 Professional 이상에 설치 가능하고 Windows 10 Home에는 설치가 안 된다는 점입니다. 레지스트리를 수정하면 할 수는 있는데, 굳이 그렇게까지. 개인적으로...">
     <meta name="generator" content="Movable Type 6.3.6">
-    <title>Docker for Windows 10 Home (Minimal) - vergence의 이상한 세상</title>
+    <title>Windows 10 Home에 Docker 설치하기 - vergence의 이상한 세상</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
     <!--[if lt IE 9]>
@@ -37,13 +37,13 @@
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="ko_KR">
-    <meta property="og:title" content="Docker for Windows 10 Home (Minimal)">
+    <meta property="og:title" content="Windows 10 Home에 Docker 설치하기">
     <meta property="og:url" content="https://weblog.youre.space/vergence/2020/04/003224.html">
-    <meta property="og:description" content="Docker for Windows https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip https://master.dockerproject.org/ (current master) LCOW, kernel, initrd.img in &quot;C:\Program Files\Linux Container&quot;, https://github.com/linuxkit/lcow/releases InstallHyperV.bat pushd &quot;%~dp0&quot;dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txtfor /f %%i in (&#039;findstr /i . hyper-v.txt 2^&amp;gt;nul&#039;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;del hyper-v.txtdism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess...">
+    <meta property="og:description" content="Windows 10에 Docker를 설치하는 잘 알려진 방법은 &quot;Docker Desktop&quot;을 설치하는 것입니다. 이 방법이 현재 가장 권장하는 방법입니다.이 방법의 제약은 Windows 10 Professional 이상에 설치 가능하고 Windows 10 Home에는 설치가 안 된다는 점입니다. 레지스트리를 수정하면 할 수는 있는데, 굳이 그렇게까지. 개인적으로...">
     <meta property="og:site_name" content="vergence의 이상한 세상">
     <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     <!-- Metadata -->
-    <meta itemprop="description" content="Docker for Windows https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip https://master.dockerproject.org/ (current master) LCOW, kernel, initrd.img in &quot;C:\Program Files\Linux Container&quot;, https://github.com/linuxkit/lcow/releases InstallHyperV.bat pushd &quot;%~dp0&quot;dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &amp;gt;hyper-v.txtfor /f %%i in (&#039;findstr /i . hyper-v.txt 2^&amp;gt;nul&#039;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;del hyper-v.txtdism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess...">
+    <meta itemprop="description" content="Windows 10에 Docker를 설치하는 잘 알려진 방법은 &quot;Docker Desktop&quot;을 설치하는 것입니다. 이 방법이 현재 가장 권장하는 방법입니다.이 방법의 제약은 Windows 10 Professional 이상에 설치 가능하고 Windows 10 Home에는 설치가 안 된다는 점입니다. 레지스트리를 수정하면 할 수는 있는데, 굳이 그렇게까지. 개인적으로...">
     <link itemprop="url" href="https://weblog.youre.space/vergence/2020/04/003224.html">
     <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     
@@ -80,12 +80,12 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
-              <li class="breadcrumb-list-item">Docker for Windows 10 Home (Minimal)</li>
+              <li class="breadcrumb-list-item">Windows 10 Home에 Docker 설치하기</li>
             </ul>
             <div id="individual-main" class="main" role="main">
               <article id="entry-3224" class="entry entry-asset asset hentry">
                 <div class="asset-header">
-                  <h2 itemprop="name" class="asset-name entry-title">Docker for Windows 10 Home (Minimal)</h2>
+                  <h2 itemprop="name" class="asset-name entry-title">Windows 10 Home에 Docker 설치하기</h2>
                   <footer class="asset-meta">
                     <ul class="asset-meta-list">
                       <li class="asset-meta-list-item">Posted on <time datetime="2020-04-26T23:33:15+09:00" itemprop="datePublished">April 26, 2020</time></li>
@@ -97,7 +97,15 @@
                 </footer>
                 </div>
                 <div class="entry-content asset-content" itemprop="articleBody">
-                  <h2>Docker for Windows</h2>
+                  <p>Windows 10에 Docker를 설치하는 잘 알려진 방법은 "Docker Desktop"을 설치하는 것입니다. 이 방법이 현재 가장 권장하는 방법입니다.<br />이 방법의 제약은 Windows 10 Professional 이상에 설치 가능하고 Windows 10 Home에는 설치가 안 된다는 점입니다. 레지스트리를 수정하면 할 수는 있는데, 굳이 그렇게까지. 개인적으로 이 방법을 꺼리는데, 설치 패키지 파일 크기가 약 900MB이고 뭔지 모를 파일이 참 많이 생기기 때문입니다.<br /><br />그래서, Docker를 수동으로 설치하는 방법을 소개합니다. 가장 큰 장점은 Windows 10 Home에도 설치할 수 있다는 점이고, 약간의 장점은 약 100MB 저장공간만 사용한다는 점입니다. 단점은, 이 방식은 Hyper-V와 LCOW(Linux Container on Windows 10)를 이용하여 실행되는데, 이 실행 방식은 컨테이너를 종료할 때(만) 약간 불안정한 느낌이 있다는 겁니다. 하지만 다른 실행 방식도 불안정하긴 마찬가지인 것 같습니다. 아직 Docker for Windows 10은 어느 실행 방식이든, 개발용으로 이용하는게 맞고 안정적인 서비스를 위해 이용하기엔 이릅니다. Hyper-V와 LCOW를 이용하는 실행 방식은 장점도 있습니다. 그건 맨 아래에.<br /><br />순서는 아래와 같습니다.<br />1. Windows 10 Home에 Hyper-V와 Containers feature 활성화<br />2. Docker, lcow 파일 다운로드 및 복사<br />3. config 파일 준비 및 실행<br /><br /><br />아래 2가지 설치 명령을 이용합니다. 이 때 CMD를 관리자 권한으로 실행합니다. 설치 후 윈도우즈 설정에서 아래 그림과 같이 Hyper-V와 Containers를 활성화된 상태로 둡니다.</p>
+<p></p>
+<h2>Windows 10에 Hyper-V feature 설치 (InstallHyperV.bat)</h2>
+<pre><code>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br />for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del hyper-v.txt<br />dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br />pause</code></pre>
+<h2>Windows 10에 Containers feature 설치 (InstallContainers.bat)</h2>
+<pre><code>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt<br />for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del containers.txt<br />dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL<br />pause</code></pre>
+<h2></h2>
+<h2></h2>
+<h2>Docker for Windows</h2>
 <p>https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip</p>
 <p>https://master.dockerproject.org/ (current master)</p>
 <p></p>
@@ -106,11 +114,9 @@
 <p>https://github.com/linuxkit/lcow/releases</p>
 <p></p>
 <p></p>
-<h2>InstallHyperV.bat</h2>
-<p>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br />for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del hyper-v.txt<br />dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br />pause</p>
 <p></p>
-<h2>InstallContainers.bat</h2>
-<p>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt<br />for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del containers.txt<br />dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL<br />pause</p>
+<p></p>
+<p></p>
 <p></p>
 <h2>run_me.txt</h2>
 <p>set LCOW_SUPPORTED=1<br />dockerd.exe -D --data-root C:\lcow --experimental</p>
@@ -123,6 +129,10 @@
 <p></p>
 <h2>Windows</h2>
 <p>https://github.com/StefanScherer/docker-windows-box/tree/master/lcow</p>
+<p></p>
+<p></p>
+<p>sudo 실행 시 오류를 본다면</p>
+<pre><code>echo "Set disable_coredump false" &gt;&gt; /etc/sudo.conf</code></pre>
                   
                 </div>
                 <nav class="page-navigation entry-navigation pagination content-nav">

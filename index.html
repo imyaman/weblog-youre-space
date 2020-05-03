@@ -90,7 +90,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
               <article id="entry-3224" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/04/003224.html">Docker for Windows 10 Home (Minimal)</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/04/003224.html">Windows 10 Home에 Docker 설치하기</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2020-04-26T23:33:15+09:00" itemprop="datePublished">April 26, 2020</time></li>
@@ -102,7 +102,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <h2>Docker for Windows</h2>
+    <p>Windows 10에 Docker를 설치하는 잘 알려진 방법은 "Docker Desktop"을 설치하는 것입니다. 이 방법이 현재 가장 권장하는 방법입니다.<br />이 방법의 제약은 Windows 10 Professional 이상에 설치 가능하고 Windows 10 Home에는 설치가 안 된다는 점입니다. 레지스트리를 수정하면 할 수는 있는데, 굳이 그렇게까지. 개인적으로 이 방법을 꺼리는데, 설치 패키지 파일 크기가 약 900MB이고 뭔지 모를 파일이 참 많이 생기기 때문입니다.<br /><br />그래서, Docker를 수동으로 설치하는 방법을 소개합니다. 가장 큰 장점은 Windows 10 Home에도 설치할 수 있다는 점이고, 약간의 장점은 약 100MB 저장공간만 사용한다는 점입니다. 단점은, 이 방식은 Hyper-V와 LCOW(Linux Container on Windows 10)를 이용하여 실행되는데, 이 실행 방식은 컨테이너를 종료할 때(만) 약간 불안정한 느낌이 있다는 겁니다. 하지만 다른 실행 방식도 불안정하긴 마찬가지인 것 같습니다. 아직 Docker for Windows 10은 어느 실행 방식이든, 개발용으로 이용하는게 맞고 안정적인 서비스를 위해 이용하기엔 이릅니다. Hyper-V와 LCOW를 이용하는 실행 방식은 장점도 있습니다. 그건 맨 아래에.<br /><br />순서는 아래와 같습니다.<br />1. Windows 10 Home에 Hyper-V와 Containers feature 활성화<br />2. Docker, lcow 파일 다운로드 및 복사<br />3. config 파일 준비 및 실행<br /><br /><br />아래 2가지 설치 명령을 이용합니다. 이 때 CMD를 관리자 권한으로 실행합니다. 설치 후 윈도우즈 설정에서 아래 그림과 같이 Hyper-V와 Containers를 활성화된 상태로 둡니다.</p>
+<p></p>
+<h2>Windows 10에 Hyper-V feature 설치 (InstallHyperV.bat)</h2>
+<pre><code>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br />for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del hyper-v.txt<br />dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br />pause</code></pre>
+<h2>Windows 10에 Containers feature 설치 (InstallContainers.bat)</h2>
+<pre><code>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt<br />for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del containers.txt<br />dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL<br />pause</code></pre>
+<h2></h2>
+<h2></h2>
+<h2>Docker for Windows</h2>
 <p>https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip</p>
 <p>https://master.dockerproject.org/ (current master)</p>
 <p></p>
@@ -111,11 +119,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p>https://github.com/linuxkit/lcow/releases</p>
 <p></p>
 <p></p>
-<h2>InstallHyperV.bat</h2>
-<p>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br />for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del hyper-v.txt<br />dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br />pause</p>
 <p></p>
-<h2>InstallContainers.bat</h2>
-<p>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt<br />for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del containers.txt<br />dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL<br />pause</p>
+<p></p>
+<p></p>
 <p></p>
 <h2>run_me.txt</h2>
 <p>set LCOW_SUPPORTED=1<br />dockerd.exe -D --data-root C:\lcow --experimental</p>
@@ -128,6 +134,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <p></p>
 <h2>Windows</h2>
 <p>https://github.com/StefanScherer/docker-windows-box/tree/master/lcow</p>
+<p></p>
+<p></p>
+<p>sudo 실행 시 오류를 본다면</p>
+<pre><code>echo "Set disable_coredump false" &gt;&gt; /etc/sudo.conf</code></pre>
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/vergence/2020/04/003224.html" itemprop="url">Continue reading</a>
