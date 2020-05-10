@@ -88,12 +88,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
-              <article id="entry-3224" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-3255" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/04/003224.html">Windows 10 Home에 Docker 설치하기</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003255.html">Jules Renard</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-04-26T23:33:15+09:00" itemprop="datePublished">April 26, 2020</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:59+09:00" itemprop="datePublished">May 10, 2020</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -102,436 +102,106 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Windows 10에 Docker를 설치하는 잘 알려진 방법은 "Docker Desktop"을 설치하는 것입니다. 이 방법이 현재 가장 권장하는 방법입니다.<br />이 방법의 제약은 Windows 10 Professional 이상에 설치 가능하고 Windows 10 Home에는 설치가 안 된다는 점입니다. 레지스트리를 수정하면 할 수는 있는데, 굳이 그렇게까지. 개인적으로 이 방법을 꺼리는데, 설치 패키지 파일 크기가 약 900MB이고 뭔지 모를 파일이 참 많이 생기기 때문입니다.<br /><br />그래서, Docker를 수동으로 설치하는 방법을 소개합니다. 가장 큰 장점은 Windows 10 Home에도 설치할 수 있다는 점이고, 약간의 장점은 약 100MB 저장공간만 사용한다는 점입니다. 단점은, 이 방식은 Hyper-V와 LCOW(Linux Container on Windows 10)를 이용하여 실행되는데, 이 실행 방식은 컨테이너를 종료할 때(만) 약간 불안정한 느낌이 있다는 겁니다. 하지만 다른 실행 방식도 불안정하긴 마찬가지인 것 같습니다. 아직 Docker for Windows 10은 어느 실행 방식이든, 개발용으로 이용하는게 맞고 안정적인 서비스를 위해 이용하기엔 이릅니다. Hyper-V와 LCOW를 이용하는 실행 방식은 장점도 있습니다. 그건 맨 아래에.<br /><br />순서는 아래와 같습니다.<br />1. Windows 10 Home에 Hyper-V와 Containers feature 활성화<br />2. Docker, lcow 파일 다운로드 및 복사<br />3. config 파일 준비 및 실행<br /><br />아래 2가지 설치 명령을 이용합니다. CMD를 관리자 권한으로 실행한 후에 설치 명령을 이용해야합니다.</p>
-<h2>Windows 10에 Hyper-V feature 설치 (InstallHyperV.bat)</h2>
-<pre><code>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br />for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del hyper-v.txt<br />dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br />pause</code></pre>
-<h2>Windows 10에 Containers feature 설치 (InstallContainers.bat)</h2>
-<pre><code>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt<br />for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del containers.txt<br />dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL<br />pause</code></pre>
-<p>설치 후 윈도우즈 설정에서 아래 그림과 같이 Hyper-V와 Containers를 활성화된 상태로 둡니다.</p>
-<p><a href="https://weblog.youre.space/vergence/assets_c/2020/05/windows10_features_containers-100.html" onclick="window.open('https://weblog.youre.space/vergence/assets_c/2020/05/windows10_features_containers-100.html','popup','width=670,height=364,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://weblog.youre.space/vergence/assets_c/2020/05/windows10_features_containers-thumb-360xauto-100.png" alt="windows10_features_containers.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" width="360" height="195" /></a>Docker 최신 개발 버전을 이용합니다. 안정 버전도 좋습니다만, 안정 버전이 별 의미는 없는 것 같습니다.</p>
-<p></p>
-<h2>Docker for Windows 다운로드</h2>
-<p>아래 파일을 다운로드 받습니다. 묶음을 풀면 안에 docker 디렉토리가 있습니다. 이 디렉토리를 C:\Program files 디렉토리 아래에 둡니다. C:\Program files\docker\dockerd.exe 가 있는지 확인합니다.</p>
-<p><a href="https://master.dockerproject.org/windows/x86_64/docker.zip" target="_blank">https://master.dockerproject.org/windows/x86_64/docker.zip</a></p>
-<p>위 파일 대신 다른 버전의 파일을 이용해도 됩니다.</p>
-<p>https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip</p>
-<p>https://download.docker.com/win/static/stable/x86_64/docker-17.09.0-ce.zip</p>
-<p></p>
-<h2>LCOW (kernel, initrd.img) 다운로드</h2>
-<p>아래 웹 페이지에 방문하여 release.zip 파일을 다운로드 받습니다. 묶음을 풀면 안에 kernel, initrd.img 파일이 있습니다. C:\Program Files\Linux Containers 디렉토리를 만들고 두 파일을 디렉토리 아래에 둡니다. C:\Program Files\Linux Containers\initrd.img 가 있는지 확인합니다.</p>
-<p><a href="https://github.com/linuxkit/lcow/releases" target="_blank">https://github.com/linuxkit/lcow/releases</a></p>
-<p></p>
-<h2>dockerd.exe 실행</h2>
-<p>CMD를 관리자 권한으로 실행한 후에 아래 명령을 이용합니다. UNIX 환경에서 Docker를 실행할 때 /var/lib/docker 에 다양한 파일을 생성하게 됩니다. --data-root는 이 디렉토리를 설정할 때 씁니다. 저는 C:\Program Files\Docker\var-lib-docker 디렉토리로 설정했습니다. 기본값은 C:\ProgramData\Docker 입니다. Docker를 이용하다보면 이 디렉토리에 크고 많은 파일을 두기 때문에 저장공간을 많이 차지 하게 됩니다. --experimental 옵션이 꼭 필요합니다.</p>
-<pre><code>set LCOW_SUPPORTED=1<br /><code>"C:\Program Files\docker\</code>dockerd.exe" -D --data-root "C:\Program Files\docker\var-lib-docker" --experimental</code></pre>
-<p></p>
-<h2>docker.exe 실행</h2>
-<p>CMD를 관리자 권한으로 실행한 후에 아래 명령을 이용합니다. 출력 내용 중에 Default Isolation: hyperv 가 있는지 확인합니다.</p>
-<pre><code><code>C:\Program Files\docker\</code>docker.exe info</code></pre>
-<p>잘 실행되는 것을 확인했으면 dockerd를 종료합니다.</p>
-<p></p>
-<h2>Config file 생성</h2>
-<p>매번 command line 옵션을 지정하는 건 번거로우니 config 파일을 만듭니다. dockerd를 이렇게 실행하게 됩니다.</p>
-<pre>"C:\Program Files\Docker\dockerd.exe" --config-file "C:\Program Files\docker\daemon.json"</pre>
-<p>daemon.json 파일의 내용은 아래와 같습니다.</p>
-<pre>{<br />    "data-root": "C:\\Program Files\\docker\\var-lib-docker",<br />    "experimental": true,<br />    "debug": false,<br />    "log-level": "fatal"<br />}</pre>
-<p></p>
-<h2>docker pull</h2>
-<p>이제 원하는 Docker image를 받아 이용합니다. 예를 들면,</p>
-<pre>C:\&gt; docker pull fedora:32<br />C:\&gt; docker run -i -t --name fedora32 -p 22:22 -p 80:80 -p 443:443 -p 3000-3009:3000-3009 -p 5900:5900 -p 5901:5901 -v C:\data:/data fedora:32</pre>
-<p>저는 Fedora를 권장합니다. 위 명령은 22, 80, 443, 3000~3009번 포트를 도커 컨테이너에게 열어줍니다. 저는 Perl 과 Dancer2 를 이용해 웹 사이트를 만들 거라 80, 443, 3000~30009번 포트를 열었습니다. ssh 접속도 할거라 22번 포트를, X Window System과 VNC를 이용할 거라 5900, 5901번 포트를 열었습니다. 윈도우즈와 파일도 주고 받을 거라 C:\data 를 /data 로 마운트 하였습니다.</p>
-<p><a href="https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-103.html" onclick="window.open('https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-103.html','popup','width=1920,height=1081,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-thumb-360xauto-103.png" alt="docker_windows10_20200503.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" width="360" height="203" /></a>이 스크린샷은, 컨테이너 안의 GNU/Linux에서 Perl로 그래프를 만들어 /data 디렉토리에 넣은 것을, 호스트인 윈도우즈의 C:\data 디렉토리에서 확인하고 열어본 화면입니다.</p>
-<h2>sudo 오류 메시지</h2>
-<p>컨테이너 안에 게스트 운영체제로 GNU/Linux를 쓰다가 sudo 실행 시 오류를 본다면 아래와 같이 설정을 합니다. 무시해도 됩니다.</p>
-<pre><code>echo "Set disable_coredump false" &gt;&gt; /etc/sudo.conf<br /></code></pre>
-<p></p>
-<h2>Hyper-V(그리고 LCOW)를 이용하는 실행 방식의 장점</h2>
-<p>게스트 운영체제로 Windows 10을 사용하는 컨테이너와 Linux를 사용하는 컨테이너를 동시에 만들고 실행할 수 있습니다.</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2020/04/003224.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
+    <p>"It is not how old you are, but how you are old."</p>
 
-
-              <article id="entry-3223" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/04/003223.html">Job to Be Done, Hire, Fire</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-04-12T15:40:18+09:00" itemprop="datePublished">April 12, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>1950년대, 병원에 전기가 끊기고 심장박동기를 사용 중이던 신생아 환자가 사망.<br />이에 배터리를 이용하는 심장박동기 상품을 내놓은 메드트로닉.<br /><br />인도는 심장 질환으로 인한 사망율이 높은 편. 인도에서 메드트로닉의 활동을 보면.<br /><br />사람들이 제품을 왜 채용하지 않는가? "환자의 의식 부족, 적절한 처방 부족, 금전 부족 등"<br />대부분의 환자는 일반의를 만나는데 일반의는 하루에 많은 환자를 짧은 시간만 만나기 때문에 심장박동기를 권할 수 없음. 환자는 심장에 대해 잘 알지 못하며 의사의 짧은 평가를 바탕으로 심장박동기 수술을 선택하기는 부담. 그래서 메드트로닉은 심장검진클리닉을 인도 전역에 설치.<br />환자는 수술 비용 뿐 아니라 관리 비용도 부담. 인도인들은 이런 비용을 가족과 친지들로부터 돈을 모아 해결. 그래서 메드트로닉은 브릿지론(bridge loan, 필요한 자금이 모이는데 시간이 걸릴 것을 보완하기 위한 단기 대출 상품)을 제공. 이 대출을 상담하는 사람들이 셰르파(Sherpa). 메드트로닉은 셰르파가 대출 상담만 하는 것이 아니라 상품에 대한 고객(환자)의 의견을 밀접하게 수렴하도록 함. 이는 생산과 판매에 피드백.<br /><br />인도의 "만인을 위한 건강한 심장"이라는 메드트로닉의 설계.<br /><br /><br />리모트몬스터의 실시간동영상전송기술, 방송플랫폼, 통화플랫폼 상품을 잠재적인 고객에게 잘 전달하려면.<br />더 많은 고객이 상품에 대해 알아야하고. 사람들이 쉽게 체험하게 되는. 예를 들면, 인터넷속도측정 페이지에 영상통화, 실시간방송 항목을 넣는다.<br />우리의 상품을 고객에게 전달하는 파트너들(메드트로닉에게 의사가 있듯) SI업체들이 고객을 설득하는 것을 짧게 하고. 우리가 반 이상 영업을 해서 넘겨주거나, 반 이상 제품을 만들어서 넘겨주거나. 몇 가지 케이스에 대해 프로토타입을 만들고 UI만 바꿔서 사용할 수 있게.<br /><br />비용은 현재는 저렴하지만 또는 이용 초기엔 저렴하지만, 지속적으로 이용할 수 있도록 제도를 제공.<br />메드트로닉에게 심장검진클리닉 운영 비용은 큰 마케팅 비용을 필요로 하고, 더불어 제품의 가격도 올리겠지만. 더 많은 고객을 구하고, 잠재적인 고객과의 접촉을 만들어 낼 것. 물론 제품의 품질이 충분하다는 전제.<br />공동 사업의 개념으로 수익이 나면 배분하거나, 우리가 원하는 광고를 넣어주면 가격을 낮추어주거나.</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2020/04/003223.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3222" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/03/003222.html">인공지능과 WebRTC</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-03-05T17:54:06+09:00" itemprop="datePublished">March  5, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>이런 주제에 대해 글을 써봐야겠다.</p>
-<p>AI in WebRTC<br /> - speech analytics<br />  - Call center agent monitoring<br />  - Transcription<br />  - Translation<br />  - Agent coaching<br />  - Customer engagement<br />  ㄴ Traditional speach analytics<br />    - CallMiner : pretty expensive, available to very large call<br />    - New speach Analytics : most cloud service providers<br /> <br /> - voice bots / assistant<br />  - IVR replacement<br />  - Starting meetings<br />  - In-call assistance<br />  ㄴ RTC-Bot Gateway, Wake Word Detector<br /> - computer vision<br />  - Funny hats<br />  - Face detection<br />  - Gestures<br />  - Object detection<br />  - Emotion analysis<br />  ㄴ Object detection over WebRTC with TensorFlow<br />    https://webrtchacks.com/webrtc-cv-tensorflow<br />  ㄴ ML processing moving to the edge, with faster, local processing<br />    https://webrtchacks.com/aiy-vision-kit-uv4l-web-server/<br /> - WebRTC optimization<br />  - Noise suppression<br />  ㄴ Mozilla RNNoise<br />    https://people.xiph.org/~jm/demo/rnnoise<br />  - Echo cancellation<br />  - Error correction<br />  - Route optimization</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2020/03/003222.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3221" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/02/003221.html">zoom again</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-02-21T09:40:14+09:00" itemprop="datePublished">February 21, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
-<iframe width="320" height="240" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" allow="microphone; camera" src="https://zoom.us/wc/join/2928169657" frameborder="0"></iframe>
-</div>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2020/02/003221.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3220" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/02/003220.html">zoom</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-02-21T08:54:44+09:00" itemprop="datePublished">February 21, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
-<iframe width="320" height="240" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" allow="microphone; camera" src="https://zoom.us/wc/join/2928169657" frameborder="0"></iframe>
-</div>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2020/02/003220.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3219" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/02/003219.html">A 5-Step VoIP Implementation Guide (+How to Do it Yourself)</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-02-18T09:51:43+09:00" itemprop="datePublished">February 18, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>VoIP Implementation Requirements<br />VoIP Implementation Planning<br />Selecting a VoIP Provider<br />Choosing VoIP Equipment<br />Go Live!</p>
-<p>https://www.nextiva.com/blog/requirements-of-voip-implementation.html</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2020/02/003219.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3218" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/02/003218.html">getaddrinfo EAI_AGAIN</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-02-16T18:05:17+09:00" itemprop="datePublished">February 16, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>If you see these words "getaddrinfo", "EAI_AGAIN" </p>
-
-<pre><code>npm ERR! code EAI_AGAIN
-npm ERR! errno EAI_AGAIN
-npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: getaddrinfo EAI_AGAIN registry.npmjs.org registry.npmjs.org:443
-</code></pre>
-
-<p>You have to check /etc/hosts. "127.0.0.1 localhost" must be last, other "127.0.0.1" must be first.</p>
-
-<p>Not good,</p>
-
-<pre><code>127.0.0.1  localhost
-127.0.1.1  imyaman.youre.space  imyaman
-</code></pre>
-
-<p>Good,</p>
-
-<pre><code>127.0.1.1  imyaman.youre.space  imyaman
-127.0.0.1  localhost
-</code></pre>
-
-<p>oracle cloud, apache fn, node</p>
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2020/02/003218.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3217" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/01/003217.html">Your Project: sys5 is at risk of suspension</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-01-20T10:24:45+09:00" itemprop="datePublished">January 20, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    
-
-
-
-
-
-.ExternalClass {
-  width: 100%;
-}
-
-.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-  line-height: 100%;
-}
-
-body {
-  -webkit-text-size-adjust: none;
-  -ms-text-size-adjust: none;
-  margin: 0;
-  padding: 0;
-}
-
-table {
-  border-collapse: collapse;
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
-}
-
-table td {
-  border-collapse: collapse;
-}
-
-img {
-  outline: none;
-  text-decoration: none;
-  -ms-interpolation-mode: bicubic;
-}
-
-a img {
-  border: none;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.forApple a {
-  color: #666666 !important;
-  text-decoration: none !important;
-}
-
-@media only screen and (max-device-width: 400px) {
-   .width100{
-    width:100% !important;
-    display:block;
-    text-align: left !important;
-   }          
-}
-
-
-
-
-
-
-
-<table>
-  
-  <tr>
-    <td>
-
-
-
-
-      <div>
-        <table>
-          
-          <tr>
-            <td>
-              <table>
-                <tr><td><img alt="Google Cloud Platform"></td>
-                  <td><a>Go to my console »</a></td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          
-          <tr>
-            <td>
-              <table>
-                <tr><td>Action required</td></tr>
-                <tr><td>
-<p>
-Dear Google customer,
-</p>
-<br />
-<p>
-You are receiving this email because you are a Google Cloud Platform, Firebase, or API customer.
-</p>
-<br />
-<p>The billing account that project &quot;sys5&quot; (sys5-f9f83) is billed to (00AB6D-CFB113-B0F432) is past due or does not have valid payment information associated with it. This may happen if your credit card has expired or was cancelled.</p>
- 
-
-<p>To ensure that your services are not interrupted, please ask your billing administrator to update your billing account with valid payment information by following this link: <a>https://console.cloud.google.com/billing/00AB6D-CFB113-B0F432/settings</a></p>
- 
-
-
-<p>If you have already updated your payment information, please disregard this message.</p>
- 
-
-<p>If you have any questions please contact us using this form: <a>https://support.google.com/code/contact/cloud_platform_billing</a></p>
-</td></tr>
-              </table>
-            </td>
-          </tr>
-          
-          <tr>
-            <td>
-              <table>
-                <tr>
-                  <td>
-                    <br />The Google team
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-          
-          <tr>
-            <td>
-              <table>
-                <tr>
-                  <td>
-                    <table>
-                      <tr>
-                        <td><a><img alt="Google Plus"></a></td>
-                        <td><a><img></a></td>
-                        <td><a><img></a></td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    © 2020 Google Inc. 1600 Amphitheatre Parkway, Mountain View, CA 94043<br /><br />
-                    You have received this mandatory service announcement to update you about important changes to Google Cloud Platform, Firebase, APIs, or to your account.
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </div>
-
-
-    </td>
-  </tr>
-</table>
-
-<img>
-
-
-
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2020/01/003217.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3216" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/01/003216.html">Lewis Mumford</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-01-19T15:07:05+09:00" itemprop="datePublished">January 19, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>"A certain amount of opposition is a great help to a man. Kites rise against, not with, the wind."</p>
-
-<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/B1W8HjI8a2A/lewis-mumford-quotes</p>
+<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/FaFnKxRO2xQ/jules-renard-quotes</p>
 
 <p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
 
   </div>
   <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2020/01/003216.html" itemprop="url">Continue reading</a>
+    <a href="https://weblog.youre.space/imyaman/2020/05/003255.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
 
-              <article id="entry-3215" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+              <article id="entry-3254" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/01/003215.html">PENAWARAN SERAGAM</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003254.html">설맞이 1·3대가 함께하는 예쁜 손만두 빚기 대회</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-01-18T00:25:17+09:00" itemprop="datePublished">January 18, 2020</time></li>
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:58+09:00" itemprop="datePublished">May 10, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/eeie/">감동성남</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    까치 까치 설날이 바로 코 앞에 왔습니다.1월 25일 토요일 설날을 맞이하여 재미있는 이색 대회가 열린 이곳은 위례종합사회복지관초등학교 1학년부터 6학년까지태어나서 처음 빚어보는 손만두에 직접 내가 빚은 만두를 그 자리에서 쪄낸 찐만두 시식까지...참으로 알찼던 1월 22일 수요일 오후어르신들과 지역아동, 주민들의 사랑방으로 불리는 성남위례종합사회복지관게시판에는 "설맞이 예쁜 손만두 빚기 대회"가 부착되었습니다.설을 맞이하여 1, 3세대 어르신들과 지역 내 아동들과 함께참여하는 예쁜 손만두 빚기 대회물론 선착순으로 사전 신청이 있었습니다.친할머니, 외할머니가 아니어도...친손자, .......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221784019863">http://seongnamdiary.com/221784019863</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003254.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-3253" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003253.html">GCP Billing Account Migration [KR]    [ ref:_00D00VNwG._5005w1WeUci:ref ]</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:57+09:00" itemprop="datePublished">May 10, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/21931698/">#21931698</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>Hello Sangyong Gwak,</p>
+
+<p>My name is Mae from Google Cloud Platform Billing. </p>
+
+<p>I am reaching out to inform you that your GCP billing account (ID:01CDB7-731D1D-74DC29) needs to be migrated to Google Cloud Korea LLC and KRW payments before November 2020 to avoid future impact to your account and if you plan to utilize the new Seoul GCP region. Non-migrated accounts will not be able to access the new GCP Seoul region when it launches</p>
+
+<p>To migrate your billing account, you can follow the steps below:</p>
+
+<p>1. Click on the link to be redirected to the Migration page [1].<br />
+2. Click ‘Migrate’ option beside your billing account ID.<br />
+3. On the next page, you can update your payments profile and Tax ID (if needed).<br />
+4. Save.</p>
+
+<p>For more information about this change, you can read the GCP Korea Account Migration FAQ through the link below [2].</p>
+
+<p>Regards,</p>
+
+<p>Mae R. <br />
+Google Cloud Platform Billing</p>
+
+<p>[1] https://console.cloud.google.com/billing/migrate <br />
+[2] https://support.google.com/cloud/answer/9334954</p>
+
+<p>____________________________________________________ <br />
+Case:  #21931698 <br />
+Subject:  GCP Billing Account Migration [KR] </p>
+
+<p>This case is created for migration (KR)<br />
+ref:_00D00VNwG._5005w1WeUci:ref<br />
+</p>
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003253.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-3252" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003252.html">Horace</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:55+09:00" itemprop="datePublished">May 10, 2020</time></li>
         <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -540,45 +210,181 @@ You are receiving this email because you are a Google Cloud Platform, Firebase, 
     </footer>
   </div>
   <div class="asset-content entry-content" itemprop="articleBody">
-    <div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><div><p><span>YTH : PIMPINAN PERUSAHAAN</span><span></span></p></div><div><b><br /></b></div><div>Kami menawarkan pengadaan SERAGAM , baik berupa bahan maupun pakaian seragam jadi, spesifikasi penawaran kami sbb  :</div><div><br /></div><div><b>KEMEJA, CELANA, KAOS, JAKET, TOPI, TAS, WEARPACK, JEANS.</b></div><div>serta perlengkapann lainnya.</div><div><br /></div><div>demikian penawaran ini semoga bermanfaat, sebagai alternatif model.</div><div>KAMI JUGA MELAYANI DESAIN KONSEP SERAGAM DENGAN FREE.</div><div>SESUAI INSFIRASI KONSEP ANDA.</div><div><br /></div><div>HORMAT KAMI,</div><div><br /></div><div><div><b></b></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div><b>Y U L I A N A</b></div><div><b>082 230 257 360</b></div><div><b><b><span>WA  :  085 854 814 868</span></b> <br /></b></div><div><div> <a href="mailto:sun.seragam@gmail.com">sun.seragam@gmail.com</a></div></div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
-</div></div>
+    <p>"Don't think, just do."</p>
 
+<p>source : http://feedproxy.google.com/~r/brainyquote/QUOTEBR/~3/ED4u0KAJXvI/horace-quotes</p>
+
+<p>---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntubP</p>
 
   </div>
   <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2020/01/003215.html" itemprop="url">Continue reading</a>
+    <a href="https://weblog.youre.space/imyaman/2020/05/003252.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-3251" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003251.html">2020 시민과의 새해인사회 - 신흥2동, 신흥3동, 단대동</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:54+09:00" itemprop="datePublished">May 10, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieii-1/">성남정책</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    2020 시민과의 새해인사회 신흥2동,신흥3동,단대동 2020년1월20일(월)10:00 수정구청 대회의실2020년 새해가 밝고 어느덧 한달여의 시간이훌쩍 지나가고 있습니다.매년 성남시장은 새해를 맞아시민들과의 새해인사자리를 마련하는데요.신흥2,3동과 단대동 주민들과의인사회 시간을 가졌습니다. 시민과의 소통의 자리인 새해인사회는 관내 50개동의 지역주민과만남의 자리로 지역 내 거점장소를 선정해 진행하게 됩니다. 인사회에 들어서기 전 성남시에 바라는 글을작성해 보드판에 붙이도록 했습니다.교육, 경제, 환경, 복지, 일자리 등의 다양한내용으로 건의사항이나 성남시에 응원이 되는 메시지를 담아보도록 했네요........
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221783992876">http://seongnamdiary.com/221783992876</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003251.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-3250" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003250.html">2020 학생이 만들어가는 성남 꿈의학교 공모 설명회</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:53+09:00" itemprop="datePublished">May 10, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieii-2/">성남지식</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    2020 성남 꿈의학교 공모 설명회지난 1월 15일 성남교육지원청대회의실에서는2020년 성남 꿈의학교 공모 설명회가 있었습니다. 경기꿈의학교는경기도 내 학교 안팎의 학생들이 자유로운 상상력을 바탕으로 무한히 꿈꾸고 질문하며스스로 기획하고 도전해 삶의 역량을 기르고,꿈을 실현해 나가도록 학교와 마을교육공동체주체들이 지원하고 촉진하는 학교 밖교육 활동을 말합니다. 2020년 경기꿈의학교 공모사업 설명회는지난 1월 초 성남 시내에서 한차례의 설명회가 진행되었으나 추가로 설명회를 더 갖게 되었네요.꿈의학교는 학생 스스로 꿈을 이루기 위해마을과 연대, 협력이 함께 이루어져폭넓은 교육형태를 마련하기 위.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221783965744">http://seongnamdiary.com/221783965744</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003250.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-3249" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003249.html">겨울은 프로농구의 계절! 고양체육관 농구경기 관람기</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:40+09:00" itemprop="datePublished">May 10, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    흔히 프로농구를 '겨울스포츠의 꽃'이라고 부릅니다. 프로농구하면 또 '고양시'를 빼놓을 수 없는데요. 매년 겨울시즌이 되면 고양체육관에서 박진감 넘치는 프로농구 경기가 펼쳐집니다. 이번 시즌은 '2019~2020 현대모비스 프로농구'로 예전에 비해 많은 제도 개선과 팬서비스가 확충되면서 관객수가 많이 늘고 있는데요. '고양체육관'하면 농구도 농구지만 '수영장'도 있기 때문에 자유수영과 강습을 즐기러 오시는 분들도 많답니다. 고양체육관은 현재 '고양 오리온 오리온스'의 홈경기장으로, 프로농구 한 시즌 구단별 총 54경기 중 27경기의 홈경기가 열리는 곳입니다. 기.......
+
+
+<p>출처 : <a href="http://blog.naver.com/letsgoyang/221781617521">http://blog.naver.com/letsgoyang/221781617521</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003249.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-3248" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003248.html">성남미술은행 소장품展 보러 오세요! - 성남아트센터 반달 갤러리</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:37+09:00" itemprop="datePublished">May 10, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/eiii/">공연전시</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    밖에서 활동하기 추운 겨울날가까운 반달 갤러리에서시간을 보내는 것은 어떠세요?성남 아트센터 1층 아름다운 가게 앞에는 반달 갤러리가 있습니다. 이곳에서 성남 미술은행 소장품전이 열리고 있어서 가보았습니다.성남미술은행이란?성남미술은행은 저렴한 가격에 미술작품을 대여, 감상할 수 있는 아트 쉐어링 프로그램입니다.성남지역 작가의 창작활동을 응원하고 시민들에게 작품 대여를 통해 일상에서 작품 감상 기회를 높이고 대여 수입은 성남시 관내 복지 기관 등에 무상 대여하는 '찾아가는 미술은행'으로 소중히 쓰이고 있습니다. 성남미술은행 소장품전개관 기간 : 2020.01.17 ~ 03.01매주 월요일 휴관무료 관.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221783256079">http://seongnamdiary.com/221783256079</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003248.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-3247" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003247.html">중앙지하상가 문화예술체험프로그램, 캘리그라피를 배워요.</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:35+09:00" itemprop="datePublished">May 10, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieii-1/">성남정책</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    지난 2019년9월30일,성남문화재단은 중앙지하상가에 를 개소했습니다.이는 신흥공공예술창작소와 태평공공예술창작소에 이은3번째 '예술창작소'인데요,'공공예술프로젝트팀'운영으로지역청년예술가들의 창작활동을 활성화하기 위한 이곳은예술가뿐 아니라,지역주민과 지역상인도 함께 만들어가는 공간이기도 합니다. 1월 현재도 매주 월요일과 토요일,으로'나만의 개성있는 글자체 만들기-캘리그라피'를 진행하고 있는데요,15명 정원의토요일 수업 풍경은바라만 봐도미소가 저절로 지어졌습니다. ^^바로 가족단위 수강생들 덕.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221783165286">http://seongnamdiary.com/221783165286</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003247.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
+              <article id="entry-3246" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003246.html">장애인 가족 구성원의 건강하고 안정된 생활을 지원하는 '성남시장애인가족지원센터'</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-10T16:07:34+09:00" itemprop="datePublished">May 10, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/eeie/">감동성남</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    성남시장애인가족지원센터▶운영시간:09:00 ~ 18:00▶연락처: 031-753-7926성인 발달장애인에게 평생교육 프로그램을 제공하고가족 구성원에게 전문적인 지지 체계의 서비스를 제공하는 시설이성남시에 있다는 것을 알고계신가요? 바로 "성남시장애인가족지원센터"입니다2019년 08월에 개소를 한 아주 따끈따끈한 곳입니다.성남시에서 평가 과정을 거쳐 할렐루야사회복지 법인에서 위탁을 맡고 있습니다. 위치는 가천대역 2번 출구와 매우 인접해 있어요(태평동 경원프라자, 3층)엘레베이터를 내리자 마자 보이는 센터입구입니다.과연 내부가 어떨지 기대가됩니다.(두근두근)센터를 들어가면.......
+
+
+<p>출처 : <a href="http://seongnamdiary.com/221783113608">http://seongnamdiary.com/221783113608</a></p><br />---------------------------------------------------------------------------<br />Visit this link to stop these emails: http://zpr.io/ntuyE
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003246.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
