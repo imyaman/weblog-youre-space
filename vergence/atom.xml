@@ -117,52 +117,6 @@
 </entry>
 
 <entry>
-    <title>zoom again</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/02/003221.html" />
-    <id>tag:weblog.youre.space,2020:/vergence//11.3221</id>
-
-    <published>2020-02-21T00:40:14Z</published>
-    <updated>2020-02-21T00:40:35Z</updated>
-
-    <summary></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
-<iframe width="320" height="240" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" allow="microphone; camera" src="https://zoom.us/wc/join/2928169657" frameborder="0"></iframe>
-</div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>zoom</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/02/003220.html" />
-    <id>tag:weblog.youre.space,2020:/vergence//11.3220</id>
-
-    <published>2020-02-20T23:54:44Z</published>
-    <updated>2020-02-21T00:38:15Z</updated>
-
-    <summary></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<div class="iframe-container" style="overflow: hidden; padding-top: 56.25%; position: relative;">
-<iframe width="320" height="240" style="border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%;" allow="microphone; camera" src="https://zoom.us/wc/join/2928169657" frameborder="0"></iframe>
-</div>]]>
-        
-    </content>
-</entry>
-
-<entry>
     <title>A 5-Step VoIP Implementation Guide (+How to Do it Yourself)</title>
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/02/003219.html" />
     <id>tag:weblog.youre.space,2020:/vergence//11.3219</id>
@@ -455,6 +409,73 @@ npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: 
 <p>2200 iManage</p>
 <p>&lt;a href="https://support.microfocus.com/kb/doc.php?id=3666976" target="_blank"&gt;자세한 내용&lt;/a&gt;</p>
 <p>qemu-system-x86_64 -m 2G -hda netware_8gb.img -boot menu=on -device ne2k_isa,irq=5,iobase=0x280,netdev=net0 -netdev user,id=net0,hostfwd=tcp::3080-:80,hostfwd=tcp::32200-:2200,hostfwd=tcp::38009-:8009 -vga cirrus</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>REMOTE MONSTER 1350x715</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/07/002459.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.2459</id>
+
+    <published>2019-07-17T05:31:16Z</published>
+    <updated>2019-07-17T05:32:13Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<p><a href="https://weblog.youre.space/vergence/uploads/REMOTEMONSTER_1350x715.jpg"><img alt="REMOTEMONSTER_1350x715.jpg" src="https://weblog.youre.space/vergence/assets_c/2019/07/REMOTEMONSTER_1350x715-thumb-360xauto-93.jpg" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" width="360" height="191" /></a></p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Splunk Machine Learning Toolkit 예시</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/05/002281.html" />
+    <id>tag:weblog.youre.space,2019:/vergence//11.2281</id>
+
+    <published>2019-05-27T05:09:18Z</published>
+    <updated>2019-05-27T05:09:18Z</updated>
+
+    <summary> xor.csv num1,num2,result 0,0,0 1,0,1 0,1,1 1,1,0 quiz_xor.csv num1,num2,result 0,0 1,0 0,1 1,1 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/xor.csv&quot; | fit RandomForestClassifier result from num1, num2 into mymlxor2 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/quiz_xor.csv&quot; | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[
+<div>
+<div><br />
+</div>
+
+<div>xor.csv<br />
+num1,num2,result<br />
+0,0,0<br />
+1,0,1<br />
+0,1,1<br />
+1,1,0<br />
+<br />
+quiz_xor.csv<br />
+num1,num2,result<br />
+0,0<br />
+1,0<br />
+0,1<br />
+1,1<br />
+<br />
+index="gwak_mlxor" source="/opt/data/xor.csv" | fit RandomForestClassifier result from num1, num2 into mymlxor2<br />
+index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult <br />
+<br />
+</div>
+</div>
+
+]]>
         
     </content>
 </entry>
