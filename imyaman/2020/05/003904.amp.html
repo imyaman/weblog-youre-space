@@ -1,0 +1,304 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003904.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 애그리게잇을 생성하는 책임을 가지는 메소드나 객체를 말한다. 애그리게잇 생성을 캡슐화 도메인 모델 내의 팩토리 복잡한 객체와 애그리게잇 인스턴스를 생성하는 책임을 별도의 객체로 이동시키자. 여기서의 책임은 도메인 모델과 관련이 있지 않지만, 여전히 도메인 설계를 구성하는 한 요소다. 모든 복잡한 조립...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 11ì¥. í©í ë¦¬ - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003903.amp.html" title="IDDD 10장. 애그리게잇">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 11ì¥. í©í ë¦¬">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003904.html">
+    <meta property="og:description" content=" 애그리게잇을 생성하는 책임을 가지는 메소드나 객체를 말한다. 애그리게잇 생성을 캡슐화 도메인 모델 내의 팩토리 복잡한 객체와 애그리게잇 인스턴스를 생성하는 책임을 별도의 객체로 이동시키자. 여기서의 책임은 도메인 모델과 관련이 있지 않지만, 여전히 도메인 설계를 구성하는 한 요소다. 모든 복잡한 조립...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 애그리게잇을 생성하는 책임을 가지는 메소드나 객체를 말한다. 애그리게잇 생성을 캡슐화 도메인 모델 내의 팩토리 복잡한 객체와 애그리게잇 인스턴스를 생성하는 책임을 별도의 객체로 이동시키자. 여기서의 책임은 도메인 모델과 관련이 있지 않지만, 여전히 도메인 설계를 구성하는 한 요소다. 모든 복잡한 조립...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003904.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 11ì¥. í©í ë¦¬</h1>
+<time datetime="2020-05-11T01:25:23+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:23+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <p>애그리게잇을 생성하는 책임을 가지는 메소드나 객체를 말한다.</p>
+
+<ul>
+  <li>애그리게잇 생성을 캡슐화</li>
+</ul>
+
+도메인 모델 내의 팩토리
+
+<blockquote>
+  <p>복잡한 객체와 애그리게잇 인스턴스를 생성하는 책임을 별도의 객체로 이동시키자. 여기서의 책임은 도메인 모델과 관련이 있지 않지만, 여전히 <em>도메인 설계를 구성하는 한 요소</em>다. 모든 복잡한 조립 과정을 캡슐화하고, 클라이언트가 인스턴스화된 객체의 구체적 클래스를 참조할 필요가 없도록 인터페이스를 제공하자. 전체 애그리게잇을 하나의 조각(원자성)으로 생성하고 고정자(Invariant)를 지정하자 [Evans]</p>
+</blockquote>
+
+<ul>
+  <li>팩토리 메소드 : 이 책은 주로 여기만 나옴</li>
+  <li>팩토리 객체(클래스)
+    <ul>
+      <li>애그리게잇 생성이 매우 복잡하고 다른 객체의 도움이 필요하면 클래스 분리를 하는 것이 좋은 것 같다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><em>가능한 팩토리 위치</em></p>
+
+<ul>
+  <li>애그리게잇 루트
+    <ul>
+      <li>정정 생성자를 통해서 도메인 의도가 나오면 더 좋다. static Task#forDraft()
+</li>
+      <li>아니면 상위 루트에서 하위 엔터리 생성도 가능 Project#createTask()
+</li>
+    </ul>
+  </li>
+  <li>도메인 서비스 : 서비스 기반 팩토리
+    <ul>
+      <li>ProjectService#createProject()</li>
+    </ul>
+  </li>
+  <li>팩토리 : 이 책은 다루지 않음
+    <ul>
+      <li>ProjectFactory#create()</li>
+    </ul>
+  </li>
+</ul>
+
+애그리게잇 루트상의 팩토리 메소드
+
+<table>
+  
+    <tr>
+      <th>바운디드 컨텍스트</th>
+      <th>애그리게잇</th>
+      <th>팩토리 메소드</th>
+    </tr>
+  
+  
+    <tr>
+      <td>식별자와 액세스 컨텍스트</td>
+      <td>Tenant</td>
+      <td>offerRegisterationInvitation()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>provisionGroup()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>provisionRole()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>registerUser()</td>
+    </tr>
+    <tr>
+      <td>협업 컨텍스트</td>
+      <td>Calendar</td>
+      <td>scheduleCalendarEntry()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Forun</td>
+      <td>startDiscussion()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>Discussion</td>
+      <td>post()</td>
+    </tr>
+    <tr>
+      <td>애자일 PM 컨텍스트</td>
+      <td>Product</td>
+      <td>planBacklogItem()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>scheduleRelease()</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td>scheduleSprint()</td>
+    </tr>
+  
+</table>
+
+
+CalendarEntry 인스턴스 생성하기
+
+<div><div><pre><span>@Entity</span>
+<span>class</span> <span>Calendar</span> <span>extends</span> <span>AbstractAggregateRoot</span> <span>{</span>
+    <span>CalendarEntry</span> <span>scheduleCalendarEntry</span><span>(...)</span> <span>{</span>
+        <span>CalendarEntry</span> <span>calendarEntry</span> <span>=</span> <span>new</span> <span>CalendarEntry</span><span>(...);</span>
+        <span>this</span><span>.</span><span>registerEvent</span><span>(</span><span>new</span> <span>CalendarEntryScheduled</span><span>(...));</span>
+        <span>return</span> <span>calendarEntry</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>유비쿼터스 언어에 부합되는 도메인이 표현됨 : scheduleCalendarEntry
+</li>
+  <li>보호절이 없다 : 어짜피 new CalendarEntry(...)가 책임짐</li>
+  <li>
+Setter를 사용하지 않는다. &gt; <strong>원자성</strong> + <strong>부수효과 줄어듬</strong> + <strong>불변식 강제</strong>가 쉬움</li>
+  <li>이벤트 발행 : CalendarEntryScheduled
+</li>
+  <li>인자의 갯수가 줄어든다.
+    <ul>
+      <li>
+scheduleCalendarEntry(...)에서는 11개가 요구되지만, new CalendarEntryScheduled(...)에서는 9개로 줄어든다.</li>
+      <li>개인적으로는 이것도 인자를 캡슐화 시켜서 객체로 말아버리는 것이 좋은 것 같다. 9개의 인자라도 너무 많은 것 같음.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>하지만</strong></p>
+
+<ul>
+  <li>
+CalendarEntry를 생성하기 위해서는 꼭 <strong>Calendar 인스턴스</strong>가 요구됨
+    <ul>
+      <li>이는 DB 조회라는 부하가 추가됨</li>
+    </ul>
+  </li>
+</ul>
+
+
+Discussion 인스턴스 생성하기
+
+<div><div><pre><span>@Entity</span>
+<span>class</span> <span>Forum</span> <span>extends</span> <span>AbstractAggregateRoot</span> <span>{</span>
+    <span>Discussion</span> <span>startDiscussion</span><span>(</span>
+        <span>DiscussionId</span> <span>discussionId</span><span>,</span>
+        <span>Author</span> <span>author</span><span>,</span>
+        <span>String</span> <span>subject</span><span>)</span> <span>{</span>
+
+        <span>if</span> <span>(</span><span>this</span><span>.</span><span>isClosed</span><span>())</span> <span>{</span>
+            <span>throw</span> <span>new</span> <span>IllegalStateException</span><span>(</span><span>"Forum is closed"</span><span>);</span>
+        <span>}</span>
+        <span>Discussion</span> <span>discussion</span> <span>=</span> <span>new</span> <span>Discussion</span><span>(</span>
+            <span>this</span><span>.</span><span>tenant</span><span>(),</span>
+            <span>this</span><span>.</span><span>forumId</span><span>(),</span>
+            <span>discussionId</span><span>,</span>
+            <span>author</span><span>,</span>
+            <span>subject</span><span>);</span>
+        <span>registerEvent</span><span>(</span><span>new</span> <span>DiscussionStarted</span><span>(...));</span>
+        <span>return</span> <span>discussion</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>포럼이 열린 경우에만 토론을 시작할 수 있다. : this.isClosed()
+</li>
+  <li>인자 5개 중 3개만 있으면 된다. : 나머지 2개는 포럼에서 제공</li>
+  <li>역시나 유비쿼터스 언어가 표현된다. : startDiscussion
+</li>
+</ul>
+
+서비스의 팩토리
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>collaboration</span><span>.</span><span>domain</span><span>.</span><span>model</span><span>.</span><span>collaborator</span><span>;</span>
+
+<span>interface</span> <span>CollaboratorSerice</span> <span>{</span>
+    <span>Author</span> <span>authorFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+
+    <span>Creator</span> <span>creatorFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+
+    <span>Moderator</span> <span>moderatorFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+
+    <span>Owner</span> <span>ownerFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+
+    <span>Participant</span> <span>participantFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>// infrastructure.services !!!</span>
+<span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>collaboration</span><span>.</span><span>infrastructure</span><span>.</span><span>services</span><span>;</span>
+
+<span>class</span> <span>UserRoleToCollaborationService</span> <span>implements</span> <span>CollaboratorSerice</span> <span>{</span>
+    <span>@Override</span>
+    <span>public</span> <span>Author</span> <span>authorFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>)</span> <span>{</span>
+        <span>return</span> <span>(</span><span>Author</span><span>)</span> <span>userInRoleAdapter</span><span>.</span><span>toCollaborator</span><span>(</span>
+            <span>tenant</span><span>,</span> <span>identity</span><span>,</span> <span>"Author"</span><span>,</span> <span>Author</span><span>.</span><span>class</span><span>);</span>
+        <span>)</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>collaboration</span><span>.</span><span>domain</span><span>.</span><span>model</span><span>.</span><span>collaborator</span><span>;</span>
+
+<span>class</span> <span>Author</span> <span>extends</span> <span>Collaborator</span> <span>{</span>
+    <span>...</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>기술적 구현이므로 <em>인프라 계층</em>의 모듈에 위치한다.</li>
+  <li>어댑터에 의존한다.
+    <ul>
+      <li>
+UserInRoleAdapter는 외래 컨텍스트와 의사소통 책임만 갖는다.</li>
+      <li>
+CollaboratorTranslator는 바운디드 컨텍스트 내 도메인 객체로 변환 책임만 갖는다.</li>
+    </ul>
+  </li>
+  <li>협업에서는 identity 식별자와 액세스에서는 username
+</li>
+</ul>
+
+마무리
+
+<ul>
+  <li>유비쿼터스 언어로 애그리게잇을 생성</li>
+  <li>애그리게잇의 팩토리 메서드 VS 서비스의 팩토리 메서드</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvsVt-2B5Dea2ggRewqKW79z9vnuot2YEHShIKrraUDTSMOQ-3D-3Dvcqf_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXt-2BLgwZBVEvK18z-2BrcP4Hyzs-2FPLyY9B4293SCh8N2T9SB6-2FxsIBo-2BUchD90gsh4G41DtVjyRD80OiC-2F6GnPlWSKNhkyo2F8FCwqz3-2FW7xZhlY47GRFN3ImnuS2JBNT2ykiO9KUyXUzQVmEsyTpkvoUu-2FRQVB9QZbyLQ5R-2FycKGMzhGGilf-2BZ-2F-2BYzbk6koba8duP-2BpLQNzJY9ckntGxdOTTzZOajQd5HNF-2FRJoQIi8wf-2BA-3D-3D">IDDD 11장. 팩토리</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUoG8H_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXt-2BLgwZBVEvK18z-2BrcP4Hyzs-2FPLyY9B4293SCh8N2T9SEMjLDM2JWNxS5fggA5aPnk7PdvOMBdVomspJ6vkGmsdqCHZHF6DFhE8k3LC37Es4H1CVnIyVwaIcAQU-2FquWF9weSMeh1Dbx5ZHa3sHjRS-2BbqMft-2FGo-2BGv4njSCa7r4PecUMaUUzcXAJ2YOQ5NiYsW4N0sN-2FN7l3RPwtH6DRJnal8rAipt3fZeDPh5ZzoQISOA-3D-3D">DevOOOOOOOOP</a> on June 07, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMMenKSVTuFvS50phTwwSPPYuXnVRIe9nTgDbRWrb2XmHm6XUKKY7dY19Ru5t49mpKJzmlyZUnfXeUq9s5caWVBkHDXBd5gLnT4bvFONyQCZa-2Fzjb5oVYWN0Hg0aQLpaK3X5y1dAV-2Fk95E83WPH-2FqcZXnLQ5ebj87INav2Xd9yXD1FR83Y5FHwSrd5CpRkKE4pSNJyRtXR2d85V8z-2FEbl33ACJAUPwsIX2JnQ8yWPMKy6w-3D-3D" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003904.html
+
+  </body>
+</html>

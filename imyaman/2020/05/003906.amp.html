@@ -1,0 +1,613 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003906.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 통합의 기본 API &amp;amp; RPC (RPC, SOAP, WEB/API) : 탄력성이 떨어짐(Legacy) 메시지 RESTful API 1.과 유사하지 않은가? 하지만 필자는 HTTP Verbs 로 차이를 이야기하고 있다. 그 외 분산 시스템은 근본적으로 다르다 분산 컴퓨팅의 원칙 네트워크는 신뢰할 수 없다. 언제나...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 13ì¥. ë°ì´ëë ì»¨íì¤í¸ íµí© - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003905.amp.html" title="IDDD 12장. 리파지토리">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 13ì¥. ë°ì´ëë ì»¨íì¤í¸ íµí©">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003906.html">
+    <meta property="og:description" content=" 통합의 기본 API &amp;amp; RPC (RPC, SOAP, WEB/API) : 탄력성이 떨어짐(Legacy) 메시지 RESTful API 1.과 유사하지 않은가? 하지만 필자는 HTTP Verbs 로 차이를 이야기하고 있다. 그 외 분산 시스템은 근본적으로 다르다 분산 컴퓨팅의 원칙 네트워크는 신뢰할 수 없다. 언제나...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 통합의 기본 API &amp;amp; RPC (RPC, SOAP, WEB/API) : 탄력성이 떨어짐(Legacy) 메시지 RESTful API 1.과 유사하지 않은가? 하지만 필자는 HTTP Verbs 로 차이를 이야기하고 있다. 그 외 분산 시스템은 근본적으로 다르다 분산 컴퓨팅의 원칙 네트워크는 신뢰할 수 없다. 언제나...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003906.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 13ì¥. ë°ì´ëë ì»¨íì¤í¸ íµí©</h1>
+<time datetime="2020-05-11T01:25:25+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:25+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    통합의 기본
+
+<ol>
+  <li>API &amp; RPC (RPC, SOAP, WEB/API) : 탄력성이 떨어짐(<em>Legacy</em>)</li>
+  <li><strong>메시지</strong></li>
+  <li>
+<strong>RESTful API</strong>
+    <ul>
+      <li>1.과 유사하지 않은가? 하지만 필자는 HTTP Verbs 로 차이를 이야기하고 있다.</li>
+    </ul>
+  </li>
+  <li>그 외</li>
+</ol>
+
+분산 시스템은 근본적으로 다르다
+
+<p><em>분산 컴퓨팅의 원칙</em></p>
+
+<ul>
+  <li>네트워크는 신뢰할 수 없다.</li>
+  <li>언제나 지연은 있다.</li>
+  <li>대역폭은 무한하지 않다.</li>
+  <li>정보와 정책은 다수의 관리자에 걸쳐 퍼져 있다.</li>
+  <li>네트워크 전송은 비용이 든다.</li>
+  <li>네트워크는 다양성을 갖고 있다.</li>
+</ul>
+
+<blockquote>
+  <p><strong>왜 원칙인가?</strong></p>
+  <ul>
+    <li>반드시 해결해야하는 문제점</li>
+    <li>계획해야하는 복잡성</li>
+    <li>일반적으로 저지르는 <strong>실수가 아님</strong>
+</li>
+  </ul>
+</blockquote>
+
+시스템 경계에 걸친 정보의 교환
+
+<p>결국은 발행된 언어Published Language에 의존해야한다.</p>
+
+<ul>
+  <li>정보에서는 인터페이스/클래스가 중요한 것이 아니라 말 그대로 데이터의 특성이 중요</li>
+</ul>
+
+<p><strong>예를 들어서</strong></p>
+
+<p>BacklogItemCommitted 알림 이벤트를 발행한다고 하면 아래와 같은 <em>계약</em>을 의미할 것이다.</p>
+
+<table>
+  
+    <tr>
+      <th>정의/속성</th>
+      <th>설명</th>
+    </tr>
+  
+  
+    <tr>
+      <td>타입</td>
+      <td>Notification</td>
+    </tr>
+    <tr>
+      <td>포멧</td>
+      <td>JSON</td>
+    </tr>
+    <tr>
+      <td>notificationId</td>
+      <td>식별자</td>
+    </tr>
+    <tr>
+      <td>typeName</td>
+      <td>알림의 타입(BacklogItemCommitted)</td>
+    </tr>
+    <tr>
+      <td>version</td>
+      <td>알림 버전</td>
+    </tr>
+    <tr>
+      <td>occurredOn</td>
+      <td>발생일시</td>
+    </tr>
+    <tr>
+      <td>event</td>
+      <td>본문(Payload)</td>
+    </tr>
+  
+</table>
+
+<p>직렬화 &amp; 역직렬화 자바 소스는 <strong>SKIP</strong></p>
+
+<p><em>중요한 것</em></p>
+
+<ul>
+  <li>위와 같은 <em>계약</em>을 통해 컨슈머와 프로슈머가 서로 통신(정보의 교환)을 할 수 있다</li>
+  <li>시스템 상호간 의존성이 줄어든다. <em>공유 커널</em>과 비교해보아라
+    <ul>
+      <li>버전을 통해서 호환성 이슈가 더 없어진다.</li>
+    </ul>
+  </li>
+  <li>위 내용을 <strong>사용자 지정 미디어 타입 계약</strong> 이라 한다.</li>
+</ul>
+
+레스트풀 리소스를 사용한 통합
+
+<p><strong>오픈 호스트</strong></p>
+
+<blockquote>
+  <p>서비스의 집합으로서 여러분의 서브시스템으로의 액세스를 허용하는 프로토콜을 정의하자.
+여러분과 통합해야 하는 모든 사람들이 사용할 수 있도록 프로토콜을 공개하자.
+프로토콜을 강화하고 확장해서 새 통합 요구사항을 처리하도록 하자. [Evans]</p>
+</blockquote>
+
+<ul>
+  <li>결합도를 느슨하게 하기 위해서(자율성) retry와 같은 기법이 요구된다.</li>
+</ul>
+
+<p><em>RESTful API 예를 들면</em></p>
+
+<p>특정 사용자의 권한을 조회 /tenants/{tenantId}/users/{username}/inRole/{role}</p>
+
+<ul>
+  <li>200 : 권한 있음</li>
+  <li>204 : 권한 없음 (404도 괜찮지 않을까?)</li>
+</ul>
+
+레스트풀 리소스의 구현
+
+<p>현업에서 우리는 <em>오픈 호스트</em>라고 생각했지만 실상은 <em>공유된 커널</em> 이거나 <em>순응주의자</em>인 경우가 많다.</p>
+
+<p><em>오픈 호스트</em>라면 바운디드 컨텍스트가 의존성이 매우 낮지만 <em>공유된 커널</em>이나 <em>순응주의자</em>는 상당한 결합도를 가지게 되므로 자율성을 위해서 <strong>오픈 호스트</strong> 지향하는 것이 좋다고 본다.</p>
+
+<p><em>UserResource.java</em></p>
+<div><div><pre>    <span>@GET</span>
+    <span>@Path</span><span>(</span><span>"{username}/inRole/{role}"</span><span>)</span>
+    <span>@Produces</span><span>({</span> <span>OvationsMediaType</span><span>.</span><span>ID_OVATION_TYPE</span> <span>})</span>
+    <span>public</span> <span>Response</span> <span>getUserInRole</span><span>(</span>
+            <span>@PathParam</span><span>(</span><span>"tenantId"</span><span>)</span> <span>String</span> <span>aTenantId</span><span>,</span>
+            <span>@PathParam</span><span>(</span><span>"username"</span><span>)</span> <span>String</span> <span>aUsername</span><span>,</span>
+            <span>@PathParam</span><span>(</span><span>"role"</span><span>)</span> <span>String</span> <span>aRoleName</span><span>)</span> <span>{</span>
+
+        <span>User</span> <span>user</span> <span>=</span> <span>this</span><span>.</span><span>accessApplicationService</span><span>()</span>
+                       <span>.</span><span>userInRole</span><span>(</span>
+                               <span>aTenantId</span><span>,</span>
+                               <span>aUsername</span><span>,</span>
+                               <span>aRoleName</span><span>);</span>
+
+        <span>Response</span> <span>response</span> <span>=</span> <span>this</span><span>.</span><span>userInRoleResponse</span><span>(</span><span>user</span><span>,</span> <span>aRoleName</span><span>);</span>
+        <span>return</span> <span>response</span><span>;</span>
+    <span>}</span>
+</pre></div></div>
+
+<p><em>사용자의 권한을 조회하는 API 응답</em></p>
+
+<div><div><pre>HTTP1.1 200 OK
+Content-Type: application/vnd.saasovation.idovation+json
+...
+{
+    "role": "Author",
+    "username": "zoe",
+    "tenantId": "A94A-...",
+    "firstName": "Zoe",
+    "lastName": "Doe",
+    "emailAddress": "zoe@saasovation.com"
+}
+</pre></div></div>
+
+부패 방지 게층을 통한 REST 클라이언트 구현
+
+<p><img src="/images/2018/06/IDDD-figure-13-1.png" alt="ID와 액세스 컨텍스트와 협업 컨텍스트의 부패 방지 계층 사이의 통합을 위해 사용된 오픈 호스트 서비스"></p>
+
+<p>그림 13-1 <em>ID와 액세스 컨텍스트와 협업 컨텍스트의 부패 방지 계층 사이의 통합을 위해 사용된 오픈 호스트 서비스</em></p>
+
+<div><div><pre><span>interface</span> <span>CollaboratorService</span> <span>{</span>
+    <span>Author</span> <span>authorFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+    <span>Creator</span> <span>creatorFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+    <span>Moderator</span> <span>moderatorFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+    <span>Owner</span> <span>ownerFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+    <span>Participant</span> <span>participantFrom</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>String</span> <span>identity</span><span>);</span>
+<span>}</span>
+</pre></div></div>
+
+<p><strong>Java Code</strong></p>
+<ul>
+  <li><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3rNIBQn-2BUMNFIoH1bXWmoo33-2FMUBGC5xDjgevP-2FyijSg-2BWFUjwH2kuZWhmWva9dgDBlGca81HEM2l0wcNOpI73abUqBPCZmzT8H-2FMMrHbEEnOnTu9dP5DiErBT3Cr2xEAuK80jHKLy3RARrYO3sgcbIIm412-2Bv6Fs1Ov9dq-2FN0F2Vo04C6nxhBo2EtVBz71OI9v7l3HS-2FFIGwMuIoFN6S9s-2BkLOmDx7-2BfGK1083Fp3Pb3ShF_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXuNwQPuy17A47h4566AyxWXOwHFnGuK5DxeJvABBoRqvs9Ev6zua5wi96V0YzbB-2FHepY8AfUYRWIBcONuYmZNWHreTeF6DmwiWrciA4HtpALRFJc1uGqiLyicW68-2F2-2Bg4UlSENogDEgE6p8RvS4rGWHDnr6QEYJG8txM0tcGbj0e87GcRiAgJ3h-2Bra6-2BGby-2FcJiuQad1oQBns5iRvoAtOAt">TranslatingCollaboratorService</a></li>
+  <li><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3rNIBQn-2BUMNFIoH1bXWmoo33-2FMUBGC5xDjgevP-2FyijSg-2BWFUjwH2kuZWhmWva9dgDBlGca81HEM2l0wcNOpI73abUqBPCZmzT8H-2FMMrHbEEnOnTu9dP5DiErBT3Cr2xEAuK80jHKLy3RARrYO3sgcbIIm412-2Bv6Fs1Ov9dq-2FN0F2kpiHvWVHiqKsxG7f8OFH-2BBWS6iEiBhtalK5hK7hlULY-3D2yQ-_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXuNwQPuy17A47h4566AyxWXOwHFnGuK5DxeJvABBoRqvrc9bBra2u9J3wuqs4Ngi9GGTXvvFbfH-2BfSISBJT0b-2FJ-2BLuWBsJtw2czeqF-2BZnA3F49-2F5D1WgRBNRnTaz3mAwXaXQefWogejlfZ68lBvwnGRa0QRSRtTXhEnFJLIXpIOBf9nGK-2FeyNtYvhei6dG6-2FcZJuKgLzZ91hSsZjLWTlEUm">UserInRoleAdapter</a></li>
+  <li><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3rNIBQn-2BUMNFIoH1bXWmoo33-2FMUBGC5xDjgevP-2FyijSg-2BWFUjwH2kuZWhmWva9dgDBlGca81HEM2l0wcNOpI73abUqBPCZmzT8H-2FMMrHbEEnOnTu9dP5DiErBT3Cr2xEAuK80jHKLy3RARrYO3sgcbIIm412-2Bv6Fs1Ov9dq-2FN0F2H4Ho8-2FOjMkDwW0QJNU1eQyZ1uJjzaNi-2FI8gDC3uSrofrVdc2A6I-2FWOGi3X6Y4eIXEauR_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXuNwQPuy17A47h4566AyxWXOwHFnGuK5DxeJvABBoRqvhmuVwuByWO31wjAg2n8XL4YlqndGJgwBmQEE5tRrwnpmB2XgS-2BOkAQo-2Bv4l9QSTXtQELKK6pH4x-2FlT6Pe5JGqBV8qH4nlbW2uTkPg6HQWItIPQ44p-2B2-2FvJ6Uls-2BeyOUal21bKdhfyDhJKIvzNIEDv-2BzHVegGpyGOPJlCI8HI1jK">CollaboratorTranslator</a></li>
+  <li><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3rNIBQn-2BUMNFIoH1bXWmoo33-2FMUBGC5xDjgevP-2FyijSg-2BWFUjwH2kuZWhmWva9dgDBlGca81HEM2l0wcNOpI73abUqBPCZmzT8H-2FMMrHbEEnOnTu9dP5DiErBT3Cr2xEAuK80jHKLy3RARrYO3sgcbJXydgPI3oCd3QMs5suRkGiE3hN22GZM-2B3EnTejOTOKA0XLWxgATmvg03blZ3q9d1c-3DxDJe_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXuNwQPuy17A47h4566AyxWXOwHFnGuK5DxeJvABBoRqvvsE0LNhxedodHb8jZKsC7FCJSGOhqzYhDKE6z481k47nSGpg5SAR3pEMlEbhR1E3ai-2FZ6b9MXtXzYIIidfXzy5CF3mYBZtYjGSPUKBdSDh9XJNnJ-2BpLBkqr625LA67TScsYRk9van3Bu0YWVnw46SiWFta50ZtIPRIKVXnF34Gl">Author</a></li>
+</ul>
+
+<p>리파지토리를 사용할 수도 있었지만 Author는 엔터티가 아닌 값 객체이므로 부패 방지 계층이 더 어울리다.
+반대로 부패 방지 계층에서 애그리게잇(가변성)을 생성한다면 리파지토리가 더 어울린다.</p>
+
+메시징을 사용한 통합
+
+<p>레스트풀 리소스를 이용한 방식보다 <strong>더 높은 수준의 자율성</strong>을 가짐.</p>
+
+<p><strong>도메인 이벤트</strong>를 외부로 발행할 때 좋다.</p>
+
+제품 소유자와 팀 맴버의 정보를 계속해서 제공받는 것
+
+<p>사용자에게 권한을 할당</p>
+
+<ol>
+  <li>권한에 사용자를 추가
+    <ul>
+      <li>AccessService#asignUserToRole(AssignUserToRoleCommand)</li>
+      <li>Role#assignUser(User)</li>
+    </ul>
+  </li>
+  <li>사용자에게 권한 할당됨 이벤트 발행 : new UserAssignedToRole()
+</li>
+  <li>컨텍스트 외부로 이벤트 발행</li>
+  <li>AgilePM 컨택스트에서 이벤트를 구독
+    <ul>
+      <li>TeamMemberEnablerListener#filteredDispatch</li>
+      <li>TeamService#enabledProductOwner(EnableProductOwnerCommand)</li>
+    </ul>
+  </li>
+</ol>
+
+당신은 책임을 감당할 수 있는가
+
+<p>외부 바운디드 컨텍스트에서 정보를 (이벤트를 통해서) 복제한 후 그것을 지속적으로 동기화한다. 즉, <strong>데이트를 복사하는 복잡한 책임이 생긴다.</strong></p>
+
+<p>이벤트가 항상 순차적으로 구독자에게 온다는 보장이 없다. 고로 이벤트 처리 시 항상 <em>발생시각</em>을 확인해서 처리해야한다.</p>
+
+<div><div><pre><span>class</span> <span>TeamService</span> <span>{</span>
+    <span>@Transactional</span>  <span>// 구독 처리</span>
+    <span>public</span> <span>void</span> <span>disableTeamMember</span><span>(</span><span>DisableTeamMemberCommand</span> <span>command</span><span>)</span> <span>{</span>
+        <span>TenantId</span> <span>tenantId</span> <span>=</span> <span>new</span> <span>TenantId</span><span>(</span><span>command</span><span>.</span><span>getTenantId</span><span>);</span>
+        <span>TeamMember</span> <span>teamMember</span> <span>=</span> 
+                <span>teamMemberRepository</span><span>.</span><span>teamMemberOfIdentity</span><span>(</span>
+                        <span>tenantId</span><span>,</span> <span>command</span><span>.</span><span>getUsername</span><span>());</span>
+        <span>if</span> <span>(</span><span>teamMember</span> <span>!=</span> <span>null</span><span>)</span> <span>{</span>
+            <span>// 여기가 중요하다!!!</span>
+            <span>teamMember</span><span>.</span><span>disable</span><span>(</span><span>command</span><span>.</span><span>getOccurredOn</span><span>());</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span>
+
+<span>class</span> <span>Member</span> <span>{</span>
+    <span>// 위에 이어서 disable 메서드를 보면</span>
+    <span>public</span> <span>void</span> <span>disable</span><span>(</span><span>Date</span> <span>asOfDate</span><span>)</span> <span>{</span>
+        <span>if</span> <span>(</span><span>this</span><span>.</span><span>changeTracker</span><span>().</span><span>canToggleEnabling</span><span>(</span><span>oaOfDate</span><span>))</span> <span>{</span>
+            <span>this</span><span>.</span><span>setEnabled</span><span>(</span><span>false</span><span>);</span> <span>// enable() 라고 하지..</span>
+            <span>this</span><span>.</span><span>setChangeTracker</span><span>(</span>
+                <span>this</span><span>.</span><span>changeTracker</span><span>().</span><span>enablingOn</span><span>(</span><span>asOfDate</span><span>));</span>
+        <span>}</span>
+    <span>}</span>
+    <span>public</span> <span>void</span> <span>enable</span><span>(</span><span>Date</span> <span>asOfDate</span><span>)</span> <span>{</span>
+        <span>if</span> <span>(</span><span>this</span><span>.</span><span>changeTracker</span><span>().</span><span>canToggleEnablig</span><span>(</span><span>asOfDate</span><span>))</span> <span>{</span>
+            <span>this</span><span>.</span><span>setEnabled</span><span>(</span><span>true</span><span>));</span> <span>// disable() 라고 하지..</span>
+            <span>this</span><span>.</span><span>setChangeTracker</span><span>(</span>
+                <span>this</span><span>.</span><span>changeTracker</span><span>().</span><span>enablingOn</span><span>(</span><span>asOfDate</span><span>));</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>위 처리를 통해서 이벤트 순서가 뒤바껴도 처리에 문제가 없다.</li>
+  <li>또한 멱등하게 만드는 역할도 한다.</li>
+</ul>
+
+<p>새로운 책임을 알아보자 : <strong>정보 복제는 사소한 책임이 아니다</strong></p>
+
+<p>사용자 정보 복제 시 영향을 미치는 이벤트들</p>
+
+<ul>
+  <li>PersonContactInformationChanged</li>
+  <li>PersonNameChanged</li>
+  <li>UserAssignedToRole</li>
+  <li>UserUnassignedFromRole</li>
+</ul>
+
+<p>하지만 이외에도</p>
+
+<ul>
+  <li>UserEnablementChanged</li>
+  <li>TenantActivated</li>
+  <li>TenantDeactivated</li>
+</ul>
+
+<p>위와 같은 이벤트들이 존재한다.</p>
+
+<p>= <em>가능하면 바운디드 컨텍스트 전반에서 정보의 중복을 최소화하거나 완전히 제거하는 것이 최선이다</em></p>
+
+<p>= 필요할 때 마다 오픈 호스트 서비스와 같은 것을 이용해서 정보를 조회하는 것이 나을수도 있다</p>
+
+<blockquote>
+  <p>어쩌란 건지 명확히 이해가 안된다.???
+필요한 이벤트 발행을 막을 필요는 없지만 굳이 데이터 중복을 통해서 관리하지 말고 이벤트는 이벤트대로 사용하고, 데이터는 필요할 때 마다 조회하는 것이 낫다는 것인가?</p>
+</blockquote>
+
+장기 실행 프로세스와 책임의 회피
+
+<p>다른 바운디드 컨텍스트에게 데이터 생성 책임을 지게 하고, 단순하게 레코드 시스템이 그 고유한 정보를 처리하게 할 것이다. 
+즉, <strong>책임을 네트워크 건너로 차버린다.</strong></p>
+
+<p><em>제품을 생성하는 유스케이스를</em> 살펴본다</p>
+
+<ol>
+  <li>사용자는 제품 설명 정보를 제공한다.</li>
+  <li>사용자는 팀토론에 대한 의사를 표시한다.</li>
+  <li>사용자는 정의된 제품을 만들도록 요청한다.</li>
+  <li>시스템은 포럼과 <strong>토론</strong>이 들어간 제품을 만든다.</li>
+</ol>
+
+<p><strong>애자일 프로젝트 관리 컨텍스트에서</strong></p>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/ZP7DIaGn38NtUOg-m7q15yF0k5JmP-4wqnwzWTfUcrJnxGrSos0HTDdpdPEVzAZ6pVfh9evMMpXbGJ7QN9Ge6nSBTwsc7kqHxLqYVaFa4R7FyJmri25HhCLQpKE-5erTLMfvm5k7kkL6r53GVXIzXIg_O4yvIsnyPiK0znqTj0yQbiCqNxWA1H_VsfFOUcbBa_EItKE3EvXMSRxrSnPTQGABU__Up_FFaWqDoLqRMrpf7wdbC1_32obAebbUXdMSv-Wk_zKl" alt="애자일 프로젝트 관리 컨텍스트에서 흐름도"></p>
+
+<p>ProjectService#newProductWithDiscussion(NewProductCommand)</p>
+
+<ul>
+  <li>
+Product와 ProductDiscussion을 생성</li>
+  <li>
+ProductCreated 이벤트 발행
+    <ul>
+      <li>
+Discussion#availablity#isRequested(토론 가능 상태)가 참이면 <strong>장기 프로세스를 시작</strong> 한다.</li>
+      <li>장기 실행 프로세스 == 상품 토론을 생성</li>
+    </ul>
+  </li>
+  <li>추후에 구매를 통해서 토론을 생성할 수도 있다. Product#requestDiscussion(DiscussionAvailablity)
+    <ul>
+      <li>
+ProductDiscussionRequested 이벤트 발행</li>
+    </ul>
+  </li>
+</ul>
+
+<p>그렇다면 사용 가능 상태가 REQUESTED가 아니라면 이 이벤트의 발행의 의미가 있는가?</p>
+
+<p>&gt; 이것에 대한 책임은 이벤트 구독자가 갖는다.</p>
+
+<p>ProductDiscussionRequestedListener#listensToEvents</p>
+
+<ul>
+  <li>
+ProductCreated, ProductDiscussionRequested 이벤트를 수신한다.</li>
+</ul>
+
+<p>ProductDiscussionRequestedListener</p>
+
+<div><div><pre>    <span>protected</span> <span>void</span> <span>filteredDispatch</span> <span>(</span><span>String</span> <span>type</span><span>,</span> <span>String</span> <span>textMessage</span><span>)</span> <span>{</span>
+        <span>// 토론 사용 가능상태가 아니면 이벤트 처리 없음</span>
+        <span>if</span> <span>(!</span><span>reater</span><span>.</span><span>eventBooleanValue</span><span>(</span><span>"requestingDiscussion"</span><span>))</span> <span>{</span>
+            <span>return</span><span>;</span>
+        <span>}</span>
+        <span>...</span>
+        <span>// CreateExclusiveDicussion 커맨드를 만들어 협업 컨텍스트에 메시징 인프라를 통해서 이벤트 발행</span>
+        <span>this</span><span>.</span><span>messageProducer</span><span>().</span><span>send</span><span>(...);</span>
+    <span>}</span>
+</pre></div></div>
+
+<p>여기서 잠깐</p>
+
+<ul>
+  <li>애자일 프로젝트 관리 컨텍스트에서 Product 애그리게잇에서 발행된 이벤트(ProductCreated)를 구독할 리스터를 만들 필요가 있을까?
+    <ul>
+      <li>차라리 협업 컨텍스트에서 ProductCreated 이벤트를 바로 구독하는 것이 낫지 않을까?</li>
+      <li>그런데 ProductCreated는 협업 컨텍스트의 유비쿼터스 언어와 어울리지 않고, 이 이벤트가 Forum과 Discussion을 생성하게 한다는 것을 연결시키는 것이 힘들다.</li>
+      <li>고로 협업 컨텍스트 입장에서 CreateExclusiveDicussion 명령을 이벤트로 받는 것이 어색하지 않다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>협업 컨텍스트에서</strong></p>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/ZP5DJaCn38JtFaKkq7S05gWIFojOe9uWBsy4bjBaAROBt1u72JNbWTHLf9dFav6z5urDxPXfYHhdA0ZF48clU34OADMYhURmy96o2Pzmpv9CX6kvQuZgxnEBeg3HwacSU8r5msDjTZoWdJXXQrmevqH2KTRFGJdqTbY8nb9Xjxkzfb2u2MApfCOpw1hUOyVUVRx_FqtJq74a_flurlucVv3VYHquQquLlDCWkBrPYrEhpPdbZRQUB-dob7kKnG_z1G00" alt="협업 컨텍스트에서 흐름도"></p>
+
+<p>ExclusiveDiscussionCreationListener#filteredDispatch(String, String)</p>
+
+<ul>
+  <li>위에서 이어 애자일 프로젝트 관리 컨텍스트에서 발행한 CreateExclusiveDicussion를 구독</li>
+  <li>
+ForumService#startExclusiveForumWithDiscussion를 호출해서 Forum과 Discussion을 생성
+    <ul>
+      <li>생성과 동시에 DiscussionStarted 이벤트를 발행한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>다시 애자일 프로젝트 관리 컨텍스트로 돌아와서</strong></p>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/VP1D2i8m48NtSufSe1TmKRfm8oWeFK5-7ZfGavAP2DxU24gaj2uV-RwybmoYDckvJnIiMcS5vWGHUyMbe81yYfhJPFOileXmYkDRG3YoA28opJMovzb6DUUSGl4w8Z_OO-s849Nr-OtjsaDaPQi8HBy3JDVrs-LcPwGuyPaTQ9lg-iMowl6dhrcqO9hr5s_SsckgEXStiTneG0prery0" alt="다시 애자일 프로젝트 관리 컨텍스트에서 흐름도"></p>
+
+<p>DiscussionStartedListener#filteredDispatch(String, String)</p>
+
+<ul>
+  <li>협업 컨텍스트에서 발행한 DiscussionStarted 이벤트를 구독한다.</li>
+</ul>
+
+<p>이어서 ProductService#initiateDiscussion(InitiateDiscussionCommand)</p>
+
+<ul>
+  <li>
+Product#initiateDiscussion 를 실행해서 아까 생성한 Product에서 Discussion 생성 상태 변경
+    <ul>
+      <li>당연히 멱등하다. 이미 Discussion을 생성해서 READY 상태라면 아무일도 일어나지 않는다. 즉 REQUESTED 상태에서만 이하 작업이 실행된다.</li>
+      <li>그리고 ProductDiscussionInitiated 이벤트를 발행한다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>여기서 잠깐</p>
+
+<ul>
+  <li>이 장기 실행 프로세스는 네트워크를 건너서 통신하고 메시징 인프라에 의존하는데 여기에 문제가 생기면 어떻게 될까?</li>
+  <li>즉 프로세스가 끝까지 실행한다고 확신할 수 있을까?</li>
+</ul>
+
+프로세스 상태 머신과 타임아웃 트래커
+
+<p>위 문제점 해결을 위해서 타임아웃 트래커가 필요하게 된다.</p>
+
+<p><em>타입아웃 트래커</em></p>
+
+<p>트래커는 완료까지 부여된 시간이 만료된 프로세스를 감시하는데. 이런 프로세스는 만료되기 전까지 몇번이고 재시도될 수 있다. 
+트래커는 원하는 경우 고정된 시간 간격을 재시도하도록 설계할 수 있고, 재시도를 전혀 하지 않거나 정해진 횟수만큰을 재시도한 후에 타임아웃을 발생시키도록 할 수도 있다.
+<em>기술적 서브도메인의 일부다</em></p>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/XP5HIiSm38VVUufUm0liGGRwCX2KkGkK9W_1BTa_IGLlRmiAhbHzAQ7zVUdNT3PFwkNOGnPsbJs-g439_aYMYna9htWhQ8xmH7Lbr71MX3ATYVqx_ehwJXdxeunccwRyXhhYAKOk-d49RNJWWx2v9cA4AnD7LuNmlsAyk-_CuXJRKtz02vDJybg5BbhXlxMcVaeiNmgDW-VYWvQ_ZQDsIm1ZeEqqSnnwBn1cPAY_zma0" alt="상품의 토론 생성 흐름도 with 타임아웃 트래커"></p>
+
+<p>ProductService#startDiscussionInitiation</p>
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>agilepm</span><span>.</span><span>application</span><span>;</span>
+
+<span>class</span> <span>ProductService</span> <span>{</span>
+    <span>@Transactional</span>
+    <span>public</span> <span>void</span> <span>startDiscussionInitiation</span><span>(</span>
+            <span>StartDiscussionInitiationComman</span> <span>command</span><span>)</span> <span>{</span>
+        <span>Product</span> <span>product</span> <span>=</span> <span>productRepository</span><span>.</span><span>findById</span><span>(...)</span>
+        
+        <span>TimeConstrainedProcessTracker</span> <span>tracker</span> <span>=</span> <span>new</span> <span>TimeConstrainedProcessTracker</span><span>(</span>
+                <span>product</span><span>.</span><span>tenantId</span><span>().</span><span>id</span><span>,</span>
+                <span>ProcessId</span><span>.</span><span>newProcessId</span><span>(),</span>
+                <span>"Create discussion for product : "</span> <span>+</span> <span>product</span><span>.</span><span>name</span><span>(),</span>
+                <span>new</span> <span>Date</span><span>(),</span>
+                <span>5L</span> <span>*</span> <span>60L</span> <span>*</span> <span>1000L</span><span>,</span> <span>// 5분 마다 재시도</span>
+                <span>3</span><span>,</span>                <span>// 총 3회 재시도한다.</span>
+                <span>ProductDiscussionRequestTimedOut</span><span>.</span><span>class</span><span>);</span>
+
+        <span>processTrackerRepository</span><span>.</span><span>add</span><span>(</span><span>tracker</span><span>);</span>  <span>// 타임아웃 트래커 등록</span>
+        
+        <span>product</span><span>.</span><span>setDiscussionInitiationId</span><span>(</span>
+                <span>tracker</span><span>.</span><span>processId</span><span>().</span><span>id</span><span>());</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<p><strong>상품의 토론 타임아웃 or 재시도 흐름도</strong></p>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/dOzTgi8m44RViufiuDu5-20jj8L2GL4t49EvC90Vd9aKkdldHG8g2lSb9EISR-RhM1n9JT6uA5OmGQbYh3rI2TNBWEmhCvPy0g5jGHR8GFPd_o3EG2jwiBidkNszXHbo69F3E1Mwg1WELHJomFmfGCq_bTfQSqP19tfhMkEbWMgsHxzgYBjYHDb-ftvUni50PB04sl9VzPlwlJp1hGBBon03EPXEZvhY7G00" alt="상품의 토론 타임아웃 or 재시도 흐름도 with 타임아웃 트래커"></p>
+
+<p><strong>마지막에 상품과 토론이 정상적으로 생성되면 흐름도</strong></p>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/ZOun3i8m34Ntd28Nu08Cg1AC34Zj1IBd3nQ94zaEvwTC5HKWHlk_x-V9FAcFMW8rSMqbNjXec76J-HKXNzaS0Wrz7Pcu9_5uqvO7-GnzCE5JzBPRkEBSn5mJ2_AA4CmMJNI7Xl3L6G-ddIeU8mix9yVM2ZjcQ_sB_tnmFKAjzW973XCaZrgU" alt="상품과 토론이 정상적으로 생성 시 흐름도"></p>
+
+<ul>
+  <li>애자일 프로젝트 관리 컨텍스트에서 마지막으로 상품의 토론이 정상적으로 생성되면 <strong>타임아웃 트래커를 완료</strong> 시켜야 한다.</li>
+  <li>이것으로 프로세스는 끝난다.</li>
+</ul>
+
+<p><em>위 장기 실행 프로세스의 문제점과 해결책</em></p>
+
+<ul>
+  <li>동일한 CreateExclusiveDiscussion 커맨드가 여러 번 발송된다.
+    <ul>
+      <li>멱등성을 지켰기 때문에 문제가 없을 것 같다.</li>
+      <li>하지만 애자일 프로젝트 관리 컨텍스트가 실패한다면 문제가 발생할 수 있다.</li>
+      <li>결국 협업 컨텍스트의 ExclusiveDiscussionCreationListener가 멱등한 애플리케이션 서비스 메서드로 작업을 위임할 수 있다면 많은 문제점을 해결할 수 있다.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/ZP5DJaCn38JtFaKkq7S05gWIFojOe9uWBsy4bjBaAROBt1u72JNbWTHLf9dFav6z5urDxPXfYHhdA0ZF48clU34OADMYhURmy96o2Pzmpv9CX6kvQuZgxnEBeg3HwacSU8r5msDjTZoWdJXXQrmevqH2KTRFGJdqTbY8nb9Xjxkzfb2u2MApfCOpw1hUOyVUVRx_FqtJq74a_flurlucVv3VYHquQquLlDCWkBrPYrEhpPdbZRQUB-dob7kKnG_z1G00" alt="협업 컨텍스트에서 흐름도"></p>
+
+<ul>
+  <li>위 흐름도 기준에서 startForum, startDiscusssion 행위가 멱등하면 해결된다.</li>
+</ul>
+
+좀 더 복잡한 프로세스 설계하기
+
+<p>복잡한 상황에서 다수의 완료 단계가 필요하게 된다면 <strong>상태 머신</strong>이 좋은 선택</p>
+
+<div><div><pre><span>Proces</span> <span>process</span> <span>=</span> <span>new</span> <span>TestableTimeConstrainedProcess</span><span>(</span>
+        <span>TENANT_ID</span><span>,</span>
+        <span>ProcessId</span><span>.</span><span>newProcessId</span><span>(),</span>
+        <span>"Testable Time Constrained Process"</span><span>,</span>
+        <span>5000L</span><span>);</span> <span>// 재시도 없이 5초 내로 완료되야 한다.</span>
+
+<span>TimeConstrainedProcessTracker</span> <span>tracker</span> <span>=</span> 
+        <span>process</span><span>.</span><span>timeConstrainedProcessTracker</span><span>();</span>
+    
+<span>process</span><span>.</span><span>confirm1</span><span>();</span>
+
+<span>assertFalse</span><span>(</span><span>process</span><span>.</span><span>isCompleted</span><span>());</span>
+<span>assertFalse</span><span>(</span><span>process</span><span>.</span><span>didProcessingComplete</span><span>());</span>
+<span>assertEquals</span><span>(</span><span>process</span><span>.</span><span>processCompletionType</span><span>(),</span> <span>ProcessCompletionType</span><span>.</span><span>NotCompleted</span><span>);</span>
+
+<span>process</span><span>.</span><span>confirm2</span><span>();</span>
+
+<span>assertTrue</span><span>(</span><span>process</span><span>.</span><span>isCompleted</span><span>());</span>
+<span>assertTrue</span><span>(</span><span>process</span><span>.</span><span>didProcessingComplete</span><span>());</span>
+<span>assertEquals</span><span>(</span><span>process</span><span>.</span><span>processCompletionType</span><span>(),</span> <span>ProcessCompletionType</span><span>.</span><span>CompletedNormally</span><span>);</span>
+<span>assertNull</span><span>(</span><span>process</span><span>.</span><span>timedOutDate</span><span>());</span>
+
+<span>tracker</span><span>.</span><span>informProcessTimedOut</span><span>();</span>    <span>// 어짜피 이미 완료되어 있으므로 아무처리가 없을 것</span>
+<span>assertFalse</span><span>(</span><span>process</span><span>.</span><span>isTimedOut</span><span>());</span>  <span>// 즉 타임아웃 되지 않았으므로 언제나 false</span>
+</pre></div></div>
+
+<ul>
+  <li>
+TestableTimeConstrainedProcess는 재시도 없이 5초 내로 완료되야 한다.</li>
+  <li>
+confirm1(), confirm2()만 호출된다면 완전히 완료 상태로 표시된다.
+    <ul>
+      <li>내부적으로 2가지 상태를 속성으로 지니고 있다.</li>
+      <li>즉, confirm1, confirm2 둘 다 true 여야지 완료 상태</li>
+    </ul>
+  </li>
+</ul>
+
+메시징이나 시스템을 활용할 수 없을 때
+
+<ul>
+  <li>
+<strong>고가용성 확보</strong>가 최선이다.</li>
+  <li>메시징인프라가 죽었다가 다시 살아났을때 <em>자동으로 리스너가 재활성화</em> 될 수록 해야한다.</li>
+</ul>
+
+마무리
+
+<ul>
+  <li>분산 컴퓨팅에서의 통합</li>
+  <li>RESTful VS 메시징인프라</li>
+  <li>장기 수행 프로세스
+    <ul>
+      <li>Retry와 타임아웃</li>
+      <li><strong>멱등성</strong></li>
+      <li>복잡한 상태를 해결해주는 <em>상태 머신</em>
+</li>
+    </ul>
+  </li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvuY5o8sPLUqcwUlwpl5XNl7Ye1WW5seiWfrTpztkwbflw-3D-3DaTnf_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXuNwQPuy17A47h4566AyxWXOwHFnGuK5DxeJvABBoRqvs1IPwSYly7DOdls8ZwW-2BNwqQNDKH4Ofckm8f3ETffEP82SE0GZE9oploxbK7PPgW5UcKPpfj5lv3LdC-2BTt0NOr2ivQOInJC3L2ZVPAB8Zbp6BeFCkzYWXwrwOQizYMSJ0Jqd5cz3Zwd30BeMOZtNxCvStkUlTcpReN9lSUOXzik">IDDD 13장. 바운디드 컨텍스트 통합</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUwXEq_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXuNwQPuy17A47h4566AyxWXOwHFnGuK5DxeJvABBoRqvmreKUgdKoC1UUUBUQ9uKcKpEIDWHU6pjCwigWsxMzgiAvZeM-2FISnwnU6bRNblMdREm4Ocohi8KIcxNZsInF2jcJbbZxWk7IBkxwvYSPC02TaJjQONC9iqI-2FL0uALXqHQJ57zK-2FkxHHi4Sj3gX1auUpo8KAeTDbYBVQ-2BX5s4NIsM">DevOOOOOOOOP</a> on June 16, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMMPHUrvqy27s2W1GPFoCCYCenxBUWgk5LhrGB1Q9ISF0rb72mc-2BCHAj2CX9WHXObUhlt278zi0PAiaGDnhABd7LxbH8oG3D3pJ00agVFBacz9lYIPJXSrXxNHHMCh4yCq5scS2rZSpePBJnX7BZ0HPBvdY8mJZDvQ8ejWWIIilf-2FnNl-2FypA2Es08INq1m0QSOuu4fGeAaFRvGouMQojSrdJ" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003906.html
+
+  </body>
+</html>

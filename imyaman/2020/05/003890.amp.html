@@ -1,0 +1,273 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003890.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 사례 연구: 기상관측기 저가형 소프트웨어 님버스 1.0 : 경쟁사를 대응하고자 하는 저가형 솔루션 만들수록 적자가 나는 구조 (비싼 하드웨어) 현재 시간이 없어서 고급하드웨어를 사용 2.0 : 이후 경쟁사를 따돌리는 완성형 저가형 솔루션 1.0은 비싼 하드웨어 이므로 2.0으로 빨리 변환해야함...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>í´ë¦°ìíí¸ì¨ì´ Part 5. ê¸°ì ê´ì¸¡ê¸° ì¬ë¡ ì°êµ¬(2) - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003889.amp.html" title="서울우먼업 공식블로그 이전 안내">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="í´ë¦°ìíí¸ì¨ì´ Part 5. ê¸°ì ê´ì¸¡ê¸° ì¬ë¡ ì°êµ¬(2)">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003890.html">
+    <meta property="og:description" content=" 사례 연구: 기상관측기 저가형 소프트웨어 님버스 1.0 : 경쟁사를 대응하고자 하는 저가형 솔루션 만들수록 적자가 나는 구조 (비싼 하드웨어) 현재 시간이 없어서 고급하드웨어를 사용 2.0 : 이후 경쟁사를 따돌리는 완성형 저가형 솔루션 1.0은 비싼 하드웨어 이므로 2.0으로 빨리 변환해야함...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 사례 연구: 기상관측기 저가형 소프트웨어 님버스 1.0 : 경쟁사를 대응하고자 하는 저가형 솔루션 만들수록 적자가 나는 구조 (비싼 하드웨어) 현재 시간이 없어서 고급하드웨어를 사용 2.0 : 이후 경쟁사를 따돌리는 완성형 저가형 솔루션 1.0은 비싼 하드웨어 이므로 2.0으로 빨리 변환해야함...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003890.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">í´ë¦°ìíí¸ì¨ì´ Part 5. ê¸°ì ê´ì¸¡ê¸° ì¬ë¡ ì°êµ¬(2)</h1>
+<time datetime="2020-05-11T01:25:13+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:13+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    사례 연구: 기상관측기
+
+<p>저가형 소프트웨어 님버스</p>
+
+<ul>
+  <li>1.0 : 경쟁사를 대응하고자 하는 저가형 솔루션
+    <ul>
+      <li>만들수록 적자가 나는 구조 (비싼 하드웨어)</li>
+      <li>현재 시간이 없어서 고급하드웨어를 사용</li>
+    </ul>
+  </li>
+  <li>2.0 : 이후 경쟁사를 따돌리는 완성형 저가형 솔루션
+    <ul>
+      <li>1.0은 비싼 하드웨어 이므로 2.0으로 빨리 변환해야함</li>
+    </ul>
+  </li>
+</ul>
+
+님버스-LC 소프트웨어 설계
+
+<ul>
+  <li>하드웨어 독립적 아키텍처</li>
+  <li>테스트
+    <ul>
+      <li>mocking을 통한 단위테스트</li>
+    </ul>
+  </li>
+  <li>스케줄러
+    <ul>
+      <li>정기적으로 기상관측 정보를 계측</li>
+    </ul>
+  </li>
+  <li>기압동향</li>
+  <li>UI 독립적</li>
+</ul>
+
+스케줄러 생각해 보기
+
+<ol>
+  <li>정기적으로 계측하기 위해서 스케줄러가 필요하다.</li>
+  <li>스케줄러가 <em>UI</em>와 모든 <em>감지기</em>와 연결되어 있다
+    <ol>
+      <li>이것은 감시기가 추가되거나 UI에 의해서 변경이 닫혀있지 않게 된다 - OCP 위반</li>
+    </ol>
+  </li>
+  <li>UI와의 결합은 <em>옵저버 패턴</em>으로 해결 - p.461 ~ 462</li>
+  <li>감지기와의 결합은 <em>Listener</em>로 해결(일종의 콜백 개념) - p.463
+    <ol>
+      <li>감지기 자신이 풀링 주기를 알아야 한다!</li>
+    </ol>
+  </li>
+</ol>
+
+감지기(Sensor)
+
+<p><img src="/images/2017/10/sensor-class-diagram.png" alt="감지기 클래스 다이어그램"></p>
+
+<p><strong>1 Cycle</strong></p>
+
+<ol>
+  <li>알람시계(스케줄러)가 감지기를 깨운다.</li>
+  <li>감지기는 check() 메소드를 통해서 시작한다.
+    <ol>
+      <li>먼저 계측값을 읽어온다.</li>
+      <li>읽어온 계측값을 옵저버를 통해서 UI에 발행</li>
+    </ol>
+  </li>
+</ol>
+
+<p><strong>하드웨어 다형성</strong></p>
+
+<ul>
+  <li>
+TemperatureSensor#check() : 템플릿 메소드</li>
+  <li>
+Nimbus1TemperatureSensor#read() : 템플릿의 다형성 메소드
+    <ul>
+      <li>즉 다른 감지기들도 read() 만 재정의 하면 된다.</li>
+    </ul>
+  </li>
+</ul>
+
+감지기 개선
+
+<p><img src="/images/2017/10/sensor-apply-bridge.png" alt="감지기 브릿지 패턴 적용"></p>
+
+<p><em>브릿지 패턴 적용</em></p>
+
+<p><img src="/images/2017/10/sensor-apply-factory.png" alt="감지기 팩토리 패턴 적용"></p>
+
+<p><em>팩토리 패턴 적용</em></p>
+
+스케줄러 개선
+
+<ul>
+  <li>
+AlarmClock도 감지기 개선과 유사하게 브릿지와 팩토리를 바탕으로 리팩토링 한다.</li>
+  <li>
+ISSUE 자바에서는 객체의 이름(String)으로 객체를 생성할 수 있다.
+    <ul>
+      <li>타입안정성이 없다. - 아래코드 참조</li>
+    </ul>
+  </li>
+</ul>
+
+<pre><span>public</span> <span>static</span> <span>void</span> <span>main</span><span>(</span><span>String</span><span>[]</span> <span>args</span><span>)</span> <span>{</span>
+    <span>Class</span> <span>tkClass</span> <span>=</span> <span>Class</span><span>.</span><span>forName</span><span>(</span><span>args</span><span>[</span><span>0</span><span>]);</span>
+    <span>StationToolKit</span> <span>st</span> <span>=</span> <span>(</span><span>StationToolKit</span><span>)</span> <span>tkClass</span><span>.</span><span>newInstance</span><span>();</span>
+<span>}</span></pre>
+
+패키징
+
+<ul>
+  <li>이미 전에 배웠다시피 클래스를 설계하고 나서 패키지를 설계한다 : 상향식</li>
+</ul>
+
+<ol>
+  <li>UI가 다른 클래스들과 같은 패키지라서 분리하는 것이 좋을 것 같다. - p.470</li>
+  <li>
+ISSUE 그랬더니 순환참조(?)가 생겨버렸다. - p.472</li>
+  <li>순환참조를 DIP를 이용해서 해결했다.
+    <ol>
+      <li>
+WeatherStationComponent를 만들어서 해결 - p.473</li>
+    </ol>
+  </li>
+</ol>
+
+영속화
+
+API
+
+<pre><span>interface</span> <span>PersistentImpl</span> <span>{</span>
+    <span>void</span> <span>store</span><span>(</span><span>String</span> <span>name</span><span>,</span> <span>Serializable</span> <span>obj</span><span>);</span>
+    <span>Object</span> <span>retrieve</span><span>(</span><span>String</span> <span>name</span><span>);</span>
+    <span>List</span> <span>directory</span><span>(</span><span>String</span> <span>regExp</span><span>);</span>
+<span>}</span></pre>
+
+24시간 기록
+
+일일(0 ~ 24시까지의) 최솟값과 최댓값
+
+<ol>
+  <li>감지기를 통해 온도의 변화가 있으면 최솟값, 최댓값을 다시 저장한다. : currentReading()
+</li>
+  <li>00시가 되면 현재 온도를 조회한 수 새로운 일일 최솟값, 최댓값을 생성한다. : newDay()
+</li>
+</ol>
+
+<p><em>p. 477 ~ 478</em></p>
+
+하지만
+
+<p>정책 (최솟값과 최댓값을 구하기)과 영속성 <strong>관심사가 섞여 있다.</strong></p>
+
+<ul>
+  <li>이럴 때 해결방안은 역시나 <em>프록시 패턴</em>을 이용함</li>
+</ul>
+
+<p><img src="/images/2017/10/segration-with-proxy.png" alt="프록시 패턴을 이용한 정책과 영속성 분리"></p>
+
+<p><em>프록시 패턴을 이용한 정책과 영속성 분리</em></p>
+
+<ul>
+  <li>
+HiLoDataDbProxy : 영속성 담당</li>
+  <li>
+HiLoDataImpl : 정책 담당</li>
+</ul>
+
+팩토리와 초기화
+
+<ul>
+  <li>
+TemperatureHiLo 입장에서는 HiLoData에만 의존하고 싶다.</li>
+  <li>하지만 누군가는 HiLoDataImpl, HiLoDataDbProxy를 생성해야한다.</li>
+  <li>이러한 것을 팩토리를 통해서 캡슐화한다.</li>
+  <li>팩토리를 사용하는 것은 다형성을 포함해서 복잡한 생성이나 구상체를 캡슐화 할 때도 유용하다.</li>
+  <li>여기에서는 DataToolKit라는 추상팩토리를 통해서 해결한다. - p.483</li>
+</ul>
+
+영속성으로 인한 패키지 구조 변경
+
+<ul>
+  <li>영속성 레이어가 추가됨에 따라 패키지 구조를 다시 변경해야 한다.</li>
+  <li>패키지는 어플리케이션이 확장될 수록 계속 바뀔 수 있다.</li>
+</ul>
+
+그럼 영속성 팩토리는 누가 생성?
+
+<ul>
+  <li>
+new persistence.DataToolKitImpl() -&gt; persistence.Scope.init() -&gt; main()
+</li>
+  <li>하지만 위 케이스에서 일부 의존성 때문에 또 다른 팩토리를 생성하고 패키지를 분리하는 것은 <em>오버엔지니어링</em>인 것 같다. - p.486 <em>이것이 정말로 필요한가?</em>
+    <ul>
+      <li>
+ISSUE 현실적으로 요구사항에 맞게 일부 강결합은 인정해야할 것 같다.</li>
+    </ul>
+  </li>
+  <li>애초에 이런 고민은 IoC컨테이너(ex: Spring 프레임워크)를 이용하면 쉽게 해결할 수 있다.</li>
+</ul>
+
+결론
+
+<ul>
+  <li>해당 장을 보고 실제 설계 &amp; 구현을 이루는 예시를 통해서 practice를 얻기를 바란다.</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvtpyRKMfRWrnRWGP7dLrJxRzrRYkU4-2BIG5do5uUih2aq93r9np1kVu-2FgZCg6JWPhXc-3DvwOX_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXuMqr1bBoJf9ufC-2FmAefoRd1BB91F-2FZGWm-2F-2BOfSwOd2LJLLf6IyRaR70-2F3iuhvinofm3asPVaSg9nwsn2CBIkN5Jk41QiaPVCEH-2FpJzxUjutKXzHkZbpWIjLsEJGamGa7MlTWxFRv6TX0Los34b2VhzvdYJ-2BIMcLHQVoaIfpyNnNnVPfxJblua9ow1oQFTnWMWpYGE1CUp5T2eyHij6-2BvVCRCuG9duLfHgj-2F-2FuPVj30ig-3D-3D">클린소프트웨어 Part 5. 기상 관측기 사례 연구(2)</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUu3mU_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXuMqr1bBoJf9ufC-2FmAefoRd1BB91F-2FZGWm-2F-2BOfSwOd2LL39-2B4fe4QC-2BWYhh5Sasp0xWLQLFGPd6upC41oFpeLPhyS2M-2BpyAFmLCL1zuePJI22KKnMjOqpjcOaYJ9NGu6wVele-2Fk4DoKJMaIzzPa9PvEcPi81SkaXOES8j7meI0CZuIvWmBCril-2FFG5XtVCnj4tstyH6-2BUw3iwK5FYGcLABT9HKFA-2FdW1Xg4KuR1xc7l6Q-3D-3D">DevOOOOOOOOP</a> on October 08, 2017.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMPQPY5Y7lIrxUXjT2KAYPY5V11OkFzh-2BMMxJTo89pYyJJafIIfGfY8vq478kZYCa6pacErhip6OFdfw0n2yfyBRaEBhewSW96gZz7QqcTMlPrU6OBGBSNfs2t9vpeV9ApRNk0eFWeIF2JCiOavqiZJPAZ9qulY3BsDCVd2aEfAEylx3-2FQHQIuK5waBZjLh72eLrvE1dwUrsc-2FUWq09CTBYOEQr-2FrEEhzFG8FxExMoviDw-3D-3D" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003890.html
+
+  </body>
+</html>

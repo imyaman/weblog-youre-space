@@ -1,0 +1,203 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003901.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" Java: 패키지 C#: 네임스페이스 Ruby: 모듈 모듈로 설계하기 모듈 : 도메인 객체의 컨테이너 규칙 모델링의 개념에 맞춰 모듈을 설계하자 유비쿼터스 언어에 맞춰 모듈을 명명하자 모델에서 사용하는 일반적인 컴포넌트 타입이나 패턴에 따라서 기계적으로 모듈을 생성하지 말자 느슨하게 결합된 모듈을 설계하자....">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 9ì¥. ëª¨ë - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003900.amp.html" title="IDDD 8장. 도메인 이벤트">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 9ì¥. ëª¨ë">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003901.html">
+    <meta property="og:description" content=" Java: 패키지 C#: 네임스페이스 Ruby: 모듈 모듈로 설계하기 모듈 : 도메인 객체의 컨테이너 규칙 모델링의 개념에 맞춰 모듈을 설계하자 유비쿼터스 언어에 맞춰 모듈을 명명하자 모델에서 사용하는 일반적인 컴포넌트 타입이나 패턴에 따라서 기계적으로 모듈을 생성하지 말자 느슨하게 결합된 모듈을 설계하자....">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" Java: 패키지 C#: 네임스페이스 Ruby: 모듈 모듈로 설계하기 모듈 : 도메인 객체의 컨테이너 규칙 모델링의 개념에 맞춰 모듈을 설계하자 유비쿼터스 언어에 맞춰 모듈을 명명하자 모델에서 사용하는 일반적인 컴포넌트 타입이나 패턴에 따라서 기계적으로 모듈을 생성하지 말자 느슨하게 결합된 모듈을 설계하자....">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003901.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 9ì¥. ëª¨ë</h1>
+<time datetime="2020-05-11T01:25:21+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:21+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <ul>
+  <li>Java: 패키지</li>
+  <li>C#: 네임스페이스</li>
+  <li>Ruby: 모듈</li>
+</ul>
+
+모듈로 설계하기
+
+<ul>
+  <li>모듈 : 도메인 객체의 컨테이너</li>
+</ul>
+
+<p><strong>규칙</strong></p>
+
+<ul>
+  <li>모델링의 개념에 맞춰 모듈을 설계하자</li>
+  <li>유비쿼터스 언어에 맞춰 모듈을 명명하자</li>
+  <li>모델에서 사용하는 일반적인 컴포넌트 타입이나 패턴에 따라서 기계적으로 모듈을 생성하지 말자</li>
+  <li>느슨하게 결합된 모듈을 설계하자.</li>
+  <li>결합이 필요하다면 짝이 되는 모듈 사이에서 비순환적 의존성이 형성되도록 노력하자</li>
+  <li>자식 모듈과 부모 모듈 사이에 규칙은 느슨하게 하자</li>
+  <li>모듈을 모델의 정적인 개념에 따라 만들지 말고, 모듈이 담고 있는 객체에 맞추도록 하자</li>
+</ul>
+
+<blockquote>
+  <p>주방의 서랍에 식기류가 포크와 나이프와 스푼별로 잘 정리돼 있음</p>
+</blockquote>
+
+기본 모듈 명명 규칙
+
+<p>Java: com.saasovation
+C#: SaaSOvation</p>
+
+모델을 위한 모듈 명명 규칙
+
+<p><strong>바운디드 컨텍스트</strong></p>
+
+<ul>
+  <li>com.saasovation.identityaccess</li>
+  <li>com.saasovation.collovoration</li>
+  <li>com.saasovation.agilepm</li>
+</ul>
+
+<p><strong>모듈 구성 예시</strong></p>
+
+<ul>
+  <li>
+com.saasovation.identityaccess
+    <ul>
+      <li>domain.model</li>
+    </ul>
+  </li>
+</ul>
+
+<p>결론은 여러분 팀의 몫이다.</p>
+
+애자일 프로젝트 관리 컨텍스트의 모듈
+
+<ul>
+  <li>
+com.saasovation.agilepm
+    <ul>
+      <li>
+domain
+        <ul>
+          <li>
+model
+            <ul>
+              <li>
+product
+                <ul>
+                  <li>backlogitem</li>
+                  <li>release</li>
+                  <li>sprint</li>
+                </ul>
+              </li>
+              <li>tenant</li>
+              <li>team</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>이 팀은 모듈 사이의 결합도 문제보다 <em>정리</em>에 중점을 뒀다.</p>
+
+다른 계층 속의 모듈
+
+<table>
+  
+    <tr>
+      <th>계층</th>
+      <th>모듈</th>
+      <th>비고</th>
+    </tr>
+  
+  
+    <tr>
+      <td>사용자 인터페이스</td>
+      <td>com.saasovation.agilepm.resources</td>
+      <td>ui</td>
+    </tr>
+    <tr>
+      <td>애플리케이션</td>
+      <td>com.saasovation.agilepm.application</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>도메인</td>
+      <td>com.saasovation.agilepm.domain</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>인프라</td>
+      <td>com.saasovation.agilepm.infrastructure</td>
+      <td>adapter</td>
+    </tr>
+  
+</table>
+
+바운디드 컨텍스트보다 모듈
+
+<p>모듈은 응집력이 낮은 경우 분리하기 위한 컨테이너이고, 바운디드 컨텍스트는 그저 경계일 뿐이다.</p>
+
+<p>어짜피 모듈은 상향식(bottom-up)으로 설계하게된다. 
+모듈 내의 컴포넌트들에 따라서 나눠질 수도 합쳐질 수도 있다. 중요한 것은 도메인 로직과 유비쿼터스 언어에 따르는 것이다.</p>
+
+마무리
+
+<ul>
+  <li>유비쿼터스 언어를 표현한다.</li>
+  <li>모듈 설계의 예시!!</li>
+  <li>기계적인 모듈 설계는 창의성을 방해한다.</li>
+  <li>바운디드 컨텍스트 분리보다 모듈 사용이 먼저다.</li>
+</ul>
+
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvtm3NqOtydeFnrb09xQSvsPe3wC21MUOwAvDuMNN2LpgA-3D-3D9OUl_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXtrLDOEzZ2Daawpe1aAsqcvdCvJ-2FG9jaz-2FSTSCF1VVOSZJgOnY7lAhZ8bu-2FSGmMTlRPTKV-2Fhfdo82CUuAldFPUTlICL-2FPdqPdxZjr1xe9TVn1xmsO0Mr6zBVKJ2zy6ctTN1w5YWqe7Tt1TjWMSj-2BjnFIjvCPOl6ujyLEzDwSWz8tgwAs54rg-2FqwiM4pdjOyQPVROP9nLGs8OXdOTt5c954DgakbZgTFrsNwVGvrZ-2BBbKA-3D-3D">IDDD 9장. 모듈</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUxwJK_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXtrLDOEzZ2Daawpe1aAsqcvdCvJ-2FG9jaz-2FSTSCF1VVOSbpTbloS1M9Iag8myDqaxug1gcW5kwzSLgcAdsJt9VOEZ4MRotRFkuPMdz8AJfOMSghQNR4AlPp52rg4dMzQKgtJKYu19VtbDf6FgsIhRUA1nmhg7SzSNzR2zHvppHZyDWK9ZPF9RT2E-2BPapl5C8cXAFXE3hcAedYdHMyfTWsvmc3B-2FKNVMd3uc0MrFZv1U4Tg-3D-3D">DevOOOOOOOOP</a> on May 28, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMPME9M3NrSWTl3I4WW4WGEIyIydBv5I7-2FArd-2BtYqh7D5-2B0OTCKIfRiosIRcuAWfGMLpW2fe45-2BtL-2Fbq6Ho7uKIv-2F4HjcCks6KZ0hlJtiNR3YaRoe4HAy62mYuUz7HEB-2BQf7CAkw9pqFEXzGhEYDoezpGtz9pL9I0t6XtJSC9xWLi8sIPt4Nl8pZuQzLn57McCyaMFw0mUVQp-2BjyjOn4Y9MOhirsjjnWiUcwQ3do96hshQ-3D-3D" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003901.html
+
+  </body>
+</html>

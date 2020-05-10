@@ -1,0 +1,384 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003903.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 일관성 경계 내에서 엔터티와 값 객체의 묶음 일관성 경계의 기준은 같은 트랜잭션인가로 검증된다. 애그리게잇 내의 불변식(invariant)? 스크럼 핵심 도메인에서 애그리게잇 사용하기 기능 목록 제품은 백로그 아이템과 릴리스, 스프린트를 포함한다. 새로운 제품 백로그 아이템을 계획했다. 새로운 제품 릴리스를 계획했다. 새로운...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 10ì¥. ì ê·¸ë¦¬ê²ì - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003902.amp.html" title="JPA에서 Value Object Collection 3가지 구현">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 10ì¥. ì ê·¸ë¦¬ê²ì">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003903.html">
+    <meta property="og:description" content=" 일관성 경계 내에서 엔터티와 값 객체의 묶음 일관성 경계의 기준은 같은 트랜잭션인가로 검증된다. 애그리게잇 내의 불변식(invariant)? 스크럼 핵심 도메인에서 애그리게잇 사용하기 기능 목록 제품은 백로그 아이템과 릴리스, 스프린트를 포함한다. 새로운 제품 백로그 아이템을 계획했다. 새로운 제품 릴리스를 계획했다. 새로운...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 일관성 경계 내에서 엔터티와 값 객체의 묶음 일관성 경계의 기준은 같은 트랜잭션인가로 검증된다. 애그리게잇 내의 불변식(invariant)? 스크럼 핵심 도메인에서 애그리게잇 사용하기 기능 목록 제품은 백로그 아이템과 릴리스, 스프린트를 포함한다. 새로운 제품 백로그 아이템을 계획했다. 새로운 제품 릴리스를 계획했다. 새로운...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003903.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 10ì¥. ì ê·¸ë¦¬ê²ì</h1>
+<time datetime="2020-05-11T01:25:23+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:23+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <p><strong>일관성 경계</strong> 내에서 엔터티와 값 객체의 묶음</p>
+
+<ul>
+  <li>
+<strong>일관성 경계</strong>의 기준은 같은 트랜잭션인가로 검증된다.</li>
+  <li>애그리게잇 내의 불변식(invariant)?</li>
+</ul>
+
+스크럼 핵심 도메인에서 애그리게잇 사용하기
+
+<p><em>기능 목록</em></p>
+
+<ul>
+  <li>제품은 백로그 아이템과 릴리스, 스프린트를 포함한다.</li>
+  <li>새로운 제품 백로그 아이템을 계획했다.</li>
+  <li>새로운 제품 릴리스를 계획했다.</li>
+  <li>새로운 제품 스프린트 일정을 수립했다.</li>
+  <li>계획된 백로그 아이템에 관한 릴리스 일정을 수립할 수 있다.</li>
+  <li>일정이 잡힌 백로그 아이템은 스프린트로 커밋할 수 있다.</li>
+</ul>
+
+첫 번째 시도: 큰 클러스터의 애그리게잇
+
+<blockquote>
+  <p>제품이 ~를 포함한다.</p>
+</blockquote>
+
+<p>컴포지션 VS 객체 그래프
+포함 VS (상호) 연결</p>
+
+<p><em>도메인 로직</em></p>
+
+<ul>
+  <li>백로그 항목을 스프린트로 커밋하면, 이를 시스템에서 제거하도록 허용해선 안 된다.</li>
+  <li>스프린트가 백로그 항목을 커밋하면, 이를 시스템에서 제거하도록 허용해선 안 된다.</li>
+  <li>릴리스가 백로그 항목의 일정을 수립하면, 이를 시스템에서 제거하도록 허용해선 안 된다.</li>
+  <li>백로그 항목의 릴리스 일정을 수립하면, 이를 시스템에서 제거하도록 허용해선 안 된다.</li>
+</ul>
+
+<div><div><pre><span>class</span> <span>Product</span> <span>{</span>
+    <span>private</span> <span>Set</span><span>&lt;</span><span>BacklogItem</span><span>&gt;</span> <span>backlogItems</span><span>;</span>
+    <span>private</span> <span>String</span> <span>description</span><span>;</span>
+    <span>private</span> <span>String</span> <span>name</span><span>;</span>
+    <span>private</span> <span>ProductId</span> <span>productId</span><span>;</span>
+    <span>private</span> <span>Set</span><span>&lt;</span><span>Release</span><span>&gt;</span> <span>releases</span><span>;</span>
+    <span>private</span> <span>Set</span><span>&lt;</span><span>Spring</span><span>&gt;</span> <span>sprints</span><span>;</span>
+    <span>private</span> <span>TenantId</span> <span>tenantId</span><span>;</span>
+<span>}</span>
+</pre></div></div>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhEIImkLWWeoayfJIvHiB5nJ4ylIarCBqbL2ChFBx6pWofmIapEpibFzon9pGKgSiqhoIofX4i6fUQa9XQdOae45nHbvfKWYyCiKZ9KKj3IrRLJK3BGqzDIGZOVbngODRZaeRPnEQJcfG1z1W00" alt="아주 큰 애그리게잇으로 모델링된 Product"></p>
+
+<p><em>아주 큰 애그리게잇으로 모델링된 Product</em></p>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/TOv12i8m54JtFKKka1kKKDrrfLHm_qs6Z_hJIF9pVmKjhK6tCu-PDnIbh3LAvuLACSUSGlLg-dx7d46iC5DAwjmtC8ONSYQfC8VB3Nu5zkJladXKn6M5gLsP8A22_y3faQ-p_keNG-jMbsvZPUrMeMa-lqtwFki6pA56UG80" alt="Product와는 별도의 애그리게잇 타입으로 모델린된 연관된 개념들"></p>
+
+<p><em>Product와는 별도의 애그리게잇 타입으로 모델린된 연관된 개념들</em></p>
+
+<p>큰 애그리게잇으로 모델링하다보면 변경에 취약해져서 업데이트 상황에서 버전 충돌이 발생할 가능성이 커진다. 위를 예시로 두면 한 명이 backlogItem을 변경하고 다른 한 명이 Spring를 변경할 시 직적접 연관이 없음에도 불구하고 버전 충돌이 발생해서 업데이트가 실패할 확률이 커진다. (애그리게잇의 크기가 커짐에 따라서 충돌 확률도 더 커짐)</p>
+
+두 번째 시도: 다수의 애그리게잇
+
+<p><em>하나의 큰 애그리게잇 상 Product.java</em></p>
+
+<div><div><pre><span>class</span> <span>Product</span> <span>{</span>
+    <span>public</span> <span>void</span> <span>planBacklogItem</span><span>(</span>
+        <span>String</span> <span>summary</span><span>,</span> <span>String</span> <span>category</span><span>,</span> <span>BacklogItemType</span> <span>type</span><span>,</span> <span>StoryPorints</span> <span>storyPoints</span><span>)</span> <span>{</span>
+        <span>...</span>
+    <span>}</span>
+    <span>...</span>
+    <span>public</span> <span>void</span> <span>scheduleRelease</span><span>(</span>
+        <span>String</span> <span>name</span><span>,</span> <span>String</span> <span>description</span><span>,</span> <span>Date</span> <span>begins</span><span>,</span> <span>Date</span> <span>ends</span><span>)</span> <span>{</span>
+        <span>...</span>
+    <span>}</span>
+    <span>...</span>
+    <span>public</span> <span>void</span> <span>scheduleSprint</span><span>(</span>
+        <span>String</span> <span>name</span><span>,</span> <span>String</span> <span>goals</span><span>,</span> <span>Date</span> <span>begins</span><span>,</span> <span>Date</span> <span>ends</span><span>)</span> <span>{</span>
+        <span>...</span>
+    <span>}</span>
+    <span>...</span>
+<span>}</span>
+</pre></div></div>
+
+<p><em>여러 개로 분리된 애그리게잇 상 Product.java</em></p>
+
+<div><div><pre><span>class</span> <span>Product</span> <span>{</span>
+    <span>public</span> <span>BacklogItem</span> <span>planBacklogItem</span><span>(</span>
+        <span>String</span> <span>summary</span><span>,</span> <span>String</span> <span>category</span><span>,</span> <span>BacklogItemType</span> <span>type</span><span>,</span> <span>StoryPorints</span> <span>storyPoints</span><span>)</span> <span>{</span>
+        <span>...</span>
+    <span>}</span>
+    <span>...</span>
+    <span>public</span> <span>Release</span> <span>scheduleRelease</span><span>(</span>
+        <span>String</span> <span>name</span><span>,</span> <span>String</span> <span>description</span><span>,</span> <span>Date</span> <span>begins</span><span>,</span> <span>Date</span> <span>ends</span><span>)</span> <span>{</span>
+        <span>...</span>
+    <span>}</span>
+    <span>...</span>
+    <span>public</span> <span>Sprint</span> <span>scheduleSprint</span><span>(</span>
+        <span>String</span> <span>name</span><span>,</span> <span>String</span> <span>goals</span><span>,</span> <span>Date</span> <span>begins</span><span>,</span> <span>Date</span> <span>ends</span><span>)</span> <span>{</span>
+        <span>...</span>
+    <span>}</span>
+    <span>...</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>일종의 factory 메서드로써 동작한다.</li>
+</ul>
+
+<p><em>Product</em><em>*Srvice 예시</em></p>
+
+<div><div><pre><span>@Service</span>
+<span>class</span> <span>ProductBacklogItemService</span> <span>{</span>
+    <span>@Transactional</span>
+    <span>public</span> <span>void</span> <span>planProductBacklogItem</span><span>(</span>
+        <span>String</span> <span>tenantId</span><span>,</span> <span>String</span> <span>productId</span>
+        <span>String</span> <span>summary</span><span>,</span> <span>String</span> <span>category</span>
+        <span>String</span> <span>backlogItemType</span><span>,</span> <span>String</span> <span>storyPoints</span><span>)</span> <span>{</span>
+
+        <span>Product</span> <span>product</span> <span>=</span> 
+            <span>productRepository</span><span>.</span><span>producetOfId</span><span>(</span>
+                <span>new</span> <span>TenantId</span><span>(</span><span>tenantId</span><span>),</span>
+                <span>new</span> <span>ProductId</span><span>(</span><span>productId</span><span>));</span>
+        <span>BacklogItem</span> <span>plannedBacklogItem</span> <span>=</span> 
+            <span>product</span><span>.</span><span>planBacklogItem</span><span>(</span>
+                <span>summary</span><span>,</span> <span>category</span><span>,</span>
+                <span>BacklogItemType</span><span>.</span><span>valueOf</span><span>(</span><span>aBacklogItemType</span><span>),</span>
+                <span>StoryPoints</span><span>.</span><span>valueOf</span><span>(</span><span>stroyPoints</span><span>));</span>
+        <span>backlogItemRepository</span><span>.</span><span>add</span><span>(</span><span>plannedBacklogItem</span><span>);</span>
+    <span>}</span>
+    <span>...</span>
+<span>}</span>
+</pre></div></div>
+
+<p>이와 같이 우린 밖으로 빼서 모델링함으로써(Modeling it away) 트랜잭션 실패 문제를 해결했다. 이제 BacklogItem, Release, Sprint등의 인스턴스가 사용자의 요청에 따라 얼마든지 동시적으로 안전하게 생성될 수 있다.</p>
+
+<p>그러나 큰 애그리게잇을 조금 다듬어서 동시성 문제를 해결할 수도 있을지도 모른다. 하이버네이트 매핑에서 optmistic-lock 옵셥을 false로 설정해 트랜잭션 실패가 도미노 처럼 전달되는 상황을 피할 수 있다.</p>
+
+규칙: 진짜 고장자(invariant)를 일관성 경계 안에 모델링하라
+
+<p><em>*중요한 것은 진짜 고정자를 이해하는 것이다.</em></p>
+
+<p>고장자(invariant) : <strong>일관성(트랜잭션 일관성)을 유지해야만 한다는 비즈니스 규칙</strong></p>
+
+<ul>
+  <li>트랜잭션 일관성 : 동기적, 원자적</li>
+  <li>결과적 일관성 : 비동기적</li>
+</ul>
+
+<p><strong>한 트랜잭션에 한 애그리게잇만 인스턴스만 포함</strong> : 이는 너무 가혹한 것 같다.</p>
+
+규칙: 작은 애그리게잇으로 설계하라
+
+<p><img src="http://www.plantuml.com/plantuml/svg/VP1DIiOm443tEKNeij3Y0KgfIXU2eFGJzsConDZyI39PzFQs4YNGq4qNynwTl9aYGQ1a3HC6OkIlmSiaY0_3lL81GH7onNiQnomyW5YDLq-4TfTcHvgsVxYWGOXu1hVle1sTvsyGruejFb4cWvUx7hsrcWZbfJL7qXP8U_VirSx2jZllO1Bobuyl54VONtFRTIDlxlg-RShCAi-bDPPZMV6B4lysi-DJJYiFPNb7gTLEm_9nIwrs73QXaycQ7m00" alt="큰 클러스터 `Product` 애그리게잇"></p>
+
+<p><em>이 Product 모델에선 다양한 기본 오퍼레이션이 수행될 동안 큰 컬랙션을 여럿 가져오게 된다.</em></p>
+
+<ul>
+  <li>이 큰 클러스터 애그리게잇은 성능이나 확장성이 절대로 좋을 수 없다. 이는 실패로 이어지는 악몽이 될 뿐이다. 거짓 고정자와 컴포지션적 편의성이 설계를 주도했기 때문에 시작부터 문제가 있었으며, 트랜잭션의 종료, 성능, 확장성의 측면에서 안 좋은 영향을 미쳤다.</li>
+</ul>
+
+<p>작은 애그리게잇은? 다른 대상과 일관성을 유지</p>
+
+<ul>
+  <li>변경이 되면 엔터티</li>
+  <li>대치가 되면 값 객체 : 생각보다 상당히 많은 개념이 값 객체로 대치된다.</li>
+</ul>
+
+<blockquote>
+  <p>파생 금융상품 부문에서 약 70% 애그리게잇이 단 하나의 루트 엔터티로 구성된다.</p>
+</blockquote>
+
+<p><strong>작은 애그리게잇은</strong></p>
+
+<ul>
+  <li>성능이 좋음</li>
+  <li>확장성이 좋음</li>
+  <li>트랜잭션이 성공할 가능성이 크다</li>
+</ul>
+
+유스케이스를 전부 믿지는 말라
+
+<ul>
+  <li>하나의 유스케이스가 여러 트랜잭션을 발생 시킨다면 의심해 보자
+    <ul>
+      <li>
+<strong>이런 경우에서 결과적 일관성을 통해서 문제를 해결할 수 있다.</strong> + 지연 업데이트</li>
+    </ul>
+  </li>
+  <li>물론 하나의 유스케이스가 하나의 트랜잭션일 필요는 없다.</li>
+</ul>
+
+규칙: ID로 다른 애그리게잇을 참조하라
+
+<p>객체 그래프가 연결되어 있다고 해서 같은 애그리게잇은 아니다. 그저 다른 애그리게잇을 연결했을 뿐이다.</p>
+
+<p>여기도 결국 <strong>결과적 일관성</strong>으로 이어진다.</p>
+
+애그리게잇 ID 참조를 통해 서로 함께 동작하도록 해보자
+
+<p><img src="http://www.plantuml.com/plantuml/svg/dP11ImCn48Nl-HMXHw757r125VPG42ohU1ztXnYRp9JCH5Z4_su8MwijUl0qoNkF3zxRY4BMag8P8eZOMnZsaVrMCTdr-iRxZ1uKRS-ipjbtOwqeQ97su3mTxuu3QLDBIj1qdGveFcRm8yY-4ZlIeDDC6b6670uQcEhlXKkM7XC42kIhG92mdZUEXHGnVx5scSSow7Qim2U81UtzyoiEwjmSw34Y2FuUU3ZaG7y0Ej6GG0FJ7VkED4zdoNyt-3xmSkdiudgrkbgqUNvwxbJpt9ZhNHh7MgQjVQ9VrZ4RfB6a-0a0" alt="ID참조모델"></p>
+
+<p><em>ID를 통해 경계 밖과 연결을 추론할 수 있는 BacklogItem 애그리게잇</em></p>
+
+<div><div><pre><span>class</span> <span>BacklogItem</span> <span>{</span>
+    <span>private</span> <span>ProductId</span> <span>productId</span><span>;</span>
+<span>}</span>
+</pre></div></div>
+
+모델 탐색
+
+<p>객체 그래프 탐색과는 다르지만 <em>리파지토르</em>와 <em>ID</em>가 있으면 연관 모델을 탐색할 수 있다. : <em>단전될 도메인 모델(Disconnected Domain Model)</em></p>
+
+<div><div><pre><span>@Service</span>
+<span>class</span> <span>ProductBacklogItemService</span> <span>{</span>
+    <span>@Transactional</span>
+    <span>public</span> <span>void</span> <span>assignTeaMemberToTask</span><span>(</span>
+        <span>String</span> <span>aTenantId</span><span>,</span>
+        <span>String</span> <span>aBacklogItemId</span><span>,</span>
+        <span>String</span> <span>aTaskId</span><span>,</span>
+        <span>String</span> <span>aTeamMemberId</span><span>)</span> <span>{</span>
+
+        <span>BacklogItem</span> <span>backlogItem</span> <span>=</span> 
+            <span>backlogItemRepository</span><span>.</span><span>findById</span><span>(</span>
+                <span>new</span> <span>TenantId</span><span>(</span><span>aTenantId</span><span>),</span> <span>new</span> <span>BacklogItemId</span><span>(</span><span>aBacklogItemId</span><span>));</span>
+        <span>Team</span> <span>ofTeam</span> <span>=</span> 
+            <span>teamRepository</span><span>.</span><span>findById</span><span>(</span>
+                <span>backlogItem</span><span>.</span><span>tenantId</span><span>(),</span> <span>backlogItem</span><span>.</span><span>teamId</span><span>());</span>
+        <span>backlogItem</span><span>.</span><span>assignTeamMemberToTask</span><span>(</span>
+            <span>new</span> <span>TeamMemberId</span><span>(</span><span>aTeamMemberId</span><span>),</span> <span>ofTeam</span><span>,</span> <span>new</span> <span>TaskId</span><span>(</span><span>aTaskId</span><span>));</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+확장성과 분산
+
+<p>ID 참조를 이용하게 되면 같은 영속화 플랫폼을 사용하지 않고 샤딩과 같은 확장을 통해서 일부 애그리게잇을 손쉽게 확장할 수 있다.
+<em>예를 들면 어떤 애그리게잇은 DB를 사용하고 연관되는 다른 애그리게잇은 NoSql을 사용할 수 있다.</em></p>
+
+<p>도메인 이벤트를 통해서 외부 바운디드 컨텍스트로 분산처리를 더 가속화할 수 있다.</p>
+
+<p>역시나 중요한 것은 <strong>결과적 일관성</strong>이다.</p>
+
+규칙: 경계의 밖에서 결과적 일관성을 사용하라
+
+<p>결과적 일관성과 지연 시간 = 도메인 이벤트 발행</p>
+
+<ul>
+  <li>동시성 이슈로 인해서 발행된 이벤트 구독이 실패하면? 메시징 매커니즘을 통해서 Retry! &gt; 이것은 쉽지가 않은 것 같다.</li>
+</ul>
+
+누가 해야 하는 일인지 확인하자
+
+<blockquote>
+  <p>데이터의 일관성을 보장하는 주체가 유스케이스를 수행하는 사용자의 일인지를 질문해보자.
+만약 그렇다면, 다른 애그리게잇의 규칙들은 고수하는 가운데 트랜잭션을 통해 일관성을 보장하도록 하자.
+만약, 다른 사용자나 시스템이 해야 할 일이라면 결과적 일관성을 선택하자.</p>
+</blockquote>
+
+규칙을 어겨야하는 이유
+
+첫 번째 이유: 사용자 인터페이스의 편의
+
+두 번째 이유: 기술적 매커니즘의 부족
+
+세 번째 이유: 글로벌 트랜잭션
+
+<p>개인적으로 안티패턴. 결과적 일관성을 사용하자</p>
+
+네 번째 이유: 쿼리 성능
+
+<p>캐싱을 통해서 어느정도 해결할 수 있다.</p>
+
+발견을 통해 통찰 얻기
+
+<p>Skip</p>
+
+구현
+
+고유 ID와 루트 엔터티를 생성하라
+
+값 객체 파트를 선호하라
+
+‘데메테르 법칙’과 ‘묻지 말고 시켜라’를 사용하기
+
+<ul>
+  <li>데메테르 법칙 : 정보은닉</li>
+  <li>묻지 말고 시켜라 : 정보은닉 + 응집력</li>
+</ul>
+
+낙관적 동시성
+
+<p>애그리게잇 루트에 버전을 통한 낙관적 락 기법</p>
+
+<p>@Version : JPA를 이용하면 이 선언만으로도 낙관적 락 기법을 사용할 수 있다.</p>
+
+<div><div><pre><span>@Entity</span>
+<span>@Table</span><span>(</span><span>name</span> <span>=</span> <span>"orders"</span><span>)</span>
+<span>public</span> <span>class</span> <span>Order</span> <span>{</span>
+    <span>@Id</span>
+    <span>private</span> <span>Long</span> <span>id</span><span>;</span>
+    <span>@Version</span>
+    <span>private</span> <span>int</span> <span>version</span><span>;</span>
+    <span>private</span> <span>String</span> <span>description</span><span>;</span>
+<span>}</span>
+</pre></div></div>
+
+의존성 주입을 피하라
+
+<p>애그리게잇에 서비스나 리파지토리를 주입하지 마라</p>
+
+마무리
+
+<ul>
+  <li>가능하면 작은 애그리게잇으로 설계하자</li>
+  <li>일관성 경계, 트랜잭션, 고정자가 중요</li>
+  <li>객체 그래프 참조 VS ID 참조</li>
+  <li>경계 외부에서는 <strong>결과적 일관성</strong>
+</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvsb4HeB1ASg5Emah-2FfhAnWebReYF7rvPYokqNmMMGvp7w-3D-3DVTJe_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXv-2B8usZdy7b6JU99MWsge-2Bd6JBIuekD-2F-2BqfDwIiyKDz4pgqYnksTIaKY0CC6JmCAcWl1r4jCZp8m0cCFgbzvQQsrqEMmetmotRu1KUqUFaEpLe-2BVPY-2BtLp1J-2BeTBuNA2PQdc5Npxn8kRX3dKpoQhLupNcyp4Icpo6T1Vma5wORlN37nnn1VdICmTRUo-2BSamUSUCVR6FGzE-2FT477xYlpekHb">IDDD 10장. 애그리게잇</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUeum5_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXv-2B8usZdy7b6JU99MWsge-2Bd6JBIuekD-2F-2BqfDwIiyKDz4rR2OobYnukDVQBBhSO1JwRhz1VbJfmFWOIfb3-2B88J6FIprVoUsaoJNrNL5FNSTJeCnkJvlbpBi2Y6-2BGlqwqd3LmhDkSMcJYOYtA434wBkPqvZj8g5-2FJJOaodCHLbWRpXoYULW7ehKRdNnhCIbQ2jzSUFr4U9Q7fNQCqlbgO-2B4MS">DevOOOOOOOOP</a> on June 05, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMNhIhX-2FjGX4SaM5LcunUoqGvD-2B9Sjrp3LjbKA1Kvc6Yzz36oe2b-2BeUR-2F4Vm1wlRr-2FY4ya7HXJh5knZDp-2B2lqgNgBydQjR-2BNJO9mxH-2FbZjmof17jOGVfPoZpHDAgH-2BPR9mYG2q9HwQFzwNMGTYm6mBPFvDEmv4hjtVkJDPJDGuLjo3fFOAMSprIuFMN0w-2BgoU6u9oNnrfenmj8FwDR7eYBB0" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003903.html
+
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003907.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 사용자 인퍼페이스와 도메인 모델 사이에 위치 유스케이스 태스크를 조정 트랜잭션, 보안 권한 부여 담당 애플리케이션을 핵심 도메인 모델과 상호 교류하며 이를 지원하기 위해 잘 조합된 컴포넌트의 집합을 의미하기 위해 사용하고 있다. 이는 일반적으로 도메인 모델 그 자체와 사용자 인터페이스,...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 14ì¥. ì íë¦¬ì¼ì´ì - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003906.amp.html" title="IDDD 13장. 바운디드 컨텍스트 통합">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 14ì¥. ì íë¦¬ì¼ì´ì">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003907.html">
+    <meta property="og:description" content=" 사용자 인퍼페이스와 도메인 모델 사이에 위치 유스케이스 태스크를 조정 트랜잭션, 보안 권한 부여 담당 애플리케이션을 핵심 도메인 모델과 상호 교류하며 이를 지원하기 위해 잘 조합된 컴포넌트의 집합을 의미하기 위해 사용하고 있다. 이는 일반적으로 도메인 모델 그 자체와 사용자 인터페이스,...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 사용자 인퍼페이스와 도메인 모델 사이에 위치 유스케이스 태스크를 조정 트랜잭션, 보안 권한 부여 담당 애플리케이션을 핵심 도메인 모델과 상호 교류하며 이를 지원하기 위해 잘 조합된 컴포넌트의 집합을 의미하기 위해 사용하고 있다. 이는 일반적으로 도메인 모델 그 자체와 사용자 인터페이스,...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003907.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 14ì¥. ì íë¦¬ì¼ì´ì</h1>
+<time datetime="2020-05-11T01:25:26+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:26+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <ul>
+  <li>사용자 인퍼페이스와 도메인 모델 사이에 위치
+    <ul>
+      <li>유스케이스 태스크를 조정</li>
+    </ul>
+  </li>
+  <li>트랜잭션, 보안 권한 부여 담당</li>
+</ul>
+
+<blockquote>
+  <p>애플리케이션을 핵심 도메인 모델과 상호 교류하며 이를 지원하기 위해 잘 조합된 컴포넌트의 집합을 의미하기 위해 사용하고 있다.
+이는 일반적으로 도메인 모델 그 자체와 사용자 인터페이스, 내부적으로 사용되는 애플리케이션 서비스, 인프라적 컴포넌트를 뜻한다.
+이 각각의 영역에 어떤 것들이 들어가는지는 애플리케이션마다 다르며, 사용하는 아키텍처가 무엇인지에 따라서도 달라진다.</p>
+</blockquote>
+
+<p><img src="/images/2018/06/IDDD-figure-14-1.png" alt="특정한 한 가지 아키텍처에 국한되지 않은 주요 애플리케이션 영역. 여전히 각기 다른 영역의 추상화에 의존적인 인프라의 DIP를 강조한다."></p>
+
+<p>그림 14.1 <em>특정한 한 가지 아키텍처에 국한되지 않은 주요 애플리케이션 영역. 여전히 각기 다른 영역의 추상화에 의존적인 인프라의 DIP를 강조한다.</em></p>
+
+<p>ui.Controller -구현-&gt; infra.TomcatController -위임-&gt; application.Service -구현-&gt; infra.TransactionalService -위임-&gt; domain.Repository -구현-&gt; infra.JpaRepository -의존-&gt; infra.Mysql</p>
+
+<ul>
+  <li>필자는 UI -&gt; Appcliation -&gt; Infra 순서로 설명해 나간다. (Top-Down 방식)</li>
+</ul>
+
+사용자 인터페이스
+
+<p>UI 종류</p>
+
+<ol>
+  <li>Web 1.0 렌더링 되는 HTML</li>
+  <li>Web 2.0 DHTML + Ajax</li>
+  <li>데스크톱 애플리케이션 + HTTP 통신</li>
+</ol>
+
+도메인 객체의 렌더링
+
+<p><img src="/images/2018/06/IDDD-figure-14-2.png" alt="사용자 인터페이스는 다수의 애그리게잇 인스턴스의 속성을 렌더링할 필요가 있지만 한 번에 하나의 인스턴스를 수정하도록 요청한다"></p>
+
+<p>그림 14.2 조회 시에는 복수 의 애그리게잇. 명령 시에는 한 개의 애그리게잇</p>
+
+애그리게잇 인스턴스로부터 데이터 전송 객체를 렌더링하기
+
+<p>DTO + Assembler</p>
+
+<blockquote>
+  <p>개인적으로 가장 선호하는 방식</p>
+</blockquote>
+
+애그리게잇 내부 상태를 발행하기 위해 중재자를 사용하자
+
+<p>중재자 패턴</p>
+
+<blockquote>
+  <p>개인적으로 비추 도메인 모델이 (약하긴 하지만) UI에 의존하게 됨</p>
+</blockquote>
+
+도메인 페이로드 객체로부터 애그리게잇 인스턴스를 렌더링하라
+
+<p>도메인 객체를 내부에 담고 있는 DPO(Domain Payload Object)로 렌더링 하는 방식</p>
+
+<ul>
+  <li>지연로딩 이슈가 있기 때문에 OSIV와 같은 기술과 함께 쓰길 권장한다.</li>
+</ul>
+
+애그리게잇 인스턴스의 상태 표현
+
+<p>View Model? Presentation Model?</p>
+
+<blockquote>
+  <p>DTO와 차이점을 모르겠다. 상태를 표현한다는 것으로 보아 불변이 가능한 정도 차이인 것인가?</p>
+</blockquote>
+
+유스케이스 최적 리파지토리 쿼리
+
+<p>특정 유스케이스에 특화된 쿼리 메소드 제공.</p>
+
+<p>CQRS와 구분하자.</p>
+
+다수의 개별 클라이언트 처리하기
+
+<p>이건 SKIP 하자. 최근의 MVC 프레임워크에서 지원하므로 Application의 책임이 아니라고 본다.</p>
+
+변환 어댑터와 사용자 편집의 처리
+
+<p>Adapter + Command (Or Presentation Model)</p>
+
+<p>주로 명령(편집, 수정) 시에 사용하는 방식</p>
+
+애플리케이션 서비스
+
+<ul>
+  <li><strong>애플리케이션 서비스를 얇게 유지(파사드)</strong></li>
+  <li><strong>도메인 모델로 위임</strong></li>
+</ul>
+
+애플리케이션 서비스 예제
+
+<p>원시타입의 나열 VS <strong>인자 (커맨드) 객체</strong></p>
+
+<ul>
+  <li><em>원시타입이 너무 많이 나열되면 그것은 안티패턴이라고 보고 가능하면 인자(Or 커맨드)로 캡슐화 하는 것이 좋아 보인다.</em></li>
+</ul>
+
+<blockquote>
+  <p>단순 인자이며 명령을 캡슐화 하지 못하는데 커맨드 패턴이라고 부르는 것이 어색해 보인다.</p>
+</blockquote>
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>identityaccess</span><span>.</span><span>application</span><span>;</span>
+
+<span>class</span> <span>TenantIdentityService</span> <span>{</span>
+    <span>@Transactional</span>  <span>// 트랜잭션과 보안 처리</span>
+    <span>@PreAuthorize</span><span>(</span><span>"hasRole('SubscriberRepresentative')"</span><span>)</span>
+    <span>public</span> <span>void</span> <span>activeTenant</span><span>(</span><span>TenantId</span> <span>tenantId</span><span>)</span> <span>{</span>
+        <span>// 도메인 모델로 위임</span>
+        <span>this</span><span>.</span><span>nonNullTenant</span><span>(</span><span>tenant</span><span>).</span><span>activate</span><span>();</span>
+    <span>}</span>
+
+    <span>@Transactional</span><span>(</span><span>readOnly</span> <span>=</span> <span>true</span><span>)</span>
+    <span>public</span> <span>Tenant</span> <span>nonNullTenant</span><span>(</span><span>TenantId</span> <span>tenantId</span><span>)</span> <span>{</span>
+        <span>Tenant</span> <span>tenant</span> <span>=</span> <span>this</span><span>.</span><span>tenant</span><span>(</span><span>tenantId</span><span>);</span>
+        <span>if</span> <span>(</span><span>tenant</span> <span>==</span> <span>null</span><span>)</span> <span>{</span>
+            <span>throw</span> <span>new</span> <span>IllegalArgumentException</span><span>(</span><span>"Tenant does not exists"</span><span>);</span>
+        <span>}</span>
+        <span>return</span> <span>tenant</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+결합이 분리된 서비스 출력
+
+<div><div><pre>    <span>@Override</span>
+    <span>@Transactional</span><span>(</span><span>readOnly</span> <span>=</span> <span>true</span><span>)</span>
+    <span>public</span> <span>void</span> <span>findTenant</span><span>(</span><span>TenantId</span> <span>tenantId</span><span>)</span> <span>{</span>
+        <span>Tenant</span> <span>teannt</span> <span>=</span> 
+                <span>this</span><span>.</span><span>tenantRepository</span><span>.</span><span>tenantOfId</span><span>(</span><span>tenantId</span><span>)</span>
+        <span>this</span><span>.</span><span>tenantIdentityOutputPort</span><span>().</span><span>write</span><span>(</span><span>tenant</span><span>);</span>
+    <span>}</span>
+</pre></div></div>
+
+<p>최근 추세는 어쨋든 사용자에게 출력에 대한 책임은 가능한 UI가 하는 것이 좋다고 본다.
+이는 애플리케이션의 책임이 아닌 것 같다.</p>
+
+<blockquote>
+  <p>그러한 것은 컴포넌트로 추상화 해서 UI 모듈에 있는 것이 더 어울리는 것 같다. 개인적으로 출력은 반환 값이 있는 것이 더 직관적으로 보인다.</p>
+</blockquote>
+
+여러 바운디드 컨텍스트 묶기
+
+<p><img src="/images/2018/06/IDDD-figure-14-3.png" alt="UI에서 다수의 모델을 구성해야만 할 때가 있다. 이 그림에서는 하나의 애플리케이션 계층을 사용해서 세 개의 모델을 구성한다."></p>
+
+<p>그림 14.3 UI에서 다수의 모델을 구성해야만 할 때가 있다. 이 그림에서는 하나의 애플리케이션 계층을 사용해서 세 개의 모델을 구성한다.</p>
+
+<ul>
+  <li>애플리케이션 계층이 <strong>유스케이스</strong>를 관리 - UI 계층이 아니다!!</li>
+  <li>제품, 토론, 리뷰 컨텍스트가 분리 VS 하나의 컨텍스트로 통합 &gt; <strong>결론은 모델 정제!!</strong>
+</li>
+</ul>
+
+<p>개인적으로 이러한 상황에서는 UI에서 각각 쿼리 해서 조합하던가, API-GW에서 조합하는 것이 좋다고 본다.</p>
+
+<p>물론 특정 컨텍스트 내에서 조합해야 한다면 <em>애플리케이션 서비스</em>가 가장 어울리는 장소인 것 같다.</p>
+
+인프라
+
+<p><img src="http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuIf8JCvEJ4zLU3DrmTifFQ-NhNcpf-7Dt2rlMcSeL7CfA2Jd91ONAuIavYNcbNYcfEQLP9PK1gSMbMKcfuBaWK0xCRaaioon91MYI4CJ8bg2uDLorSAjUTtVydhbb3TpTxnUjU9rxmwm6Pbv9Qb5QOd9gL1xWb8ByeipI_ABAa7I2CFyqpnJC0m46lLsIilhkNkGdEkHcPHQb0Tq4ePvcRa5EQcvG6yKOzW5D1ExDtNjCDJYKAcdPuVRRYw7rBmKO8W30000" alt="애플리케이션 서비스는 도메인 모델의 리파지토리 인터페이스에 의존적이지만, 인프라의 구현 클래스를 사용한다. 패키지는 넓은 범위의 책임을 캡슐화 한다"></p>
+
+<p>그림 14.4 애플리케이션 서비스는 도메인 모델의 리파지토리 인터페이스에 의존적이지만, 인프라의 구현 클래스를 사용한다. 패키지는 넓은 범위의 책임을 캡슐화 한다</p>
+
+엔터프라이즈 컴포넌트 컨테이너
+
+<p>EJB VS Spring</p>
+
+마무리
+
+<ul>
+  <li>도메인 모델 -&gt; UI 모델</li>
+  <li>사용자 입력 -&gt; 도메인 모델</li>
+  <li>애플리케이션 서비스의 책임</li>
+  <li>DIP로 도메인 모델과 기술(인프라) 분리 및 유연성 확보</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvsZ7YT7GlZSwFaLOZNMYEVMZULJXO0Qdy0OuWnEUod7Hw-3D-3DtHtI_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXsP96XINBjrQgAxMcqimG-2Buu11EN5QAePJ4Rw8zWxFNnjMzDQiE1u9BlnfThclUa1nw0Z4YFZ7UiF-2BYGQkTh8B-2ByGBWSudlHCIPVAwL8HBQxFR-2BRMSbE4wg-2Bwdf-2FRlJkfU0KWsCs1VIc083ObmcaRcrHLVHC7oh0r487gHn5QDiYHJRRoy2zgQ-2FUL16e9uXxzZwYalcBbEhaqpRjK85-2BegP">IDDD 14장. 애플리케이션</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcU7ulV_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXsP96XINBjrQgAxMcqimG-2Buu11EN5QAePJ4Rw8zWxFNnhhXSqSJMc1lY4ZGEc4HBsydiFjpfLD443LkE3JNgdvx7qI-2FoNrmHXw9Cgh3D6fJOUdE8RaNFJKGuz67URUdY3-2BTra5sFIKpEAALx6n82de-2BwDKIeRphjG8QWwpKlxAYG424kN-2FdIjSiPbdED1-2BYnDmzz7l31bt1x-2BcHxKE8so8-2F">DevOOOOOOOOP</a> on June 19, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMNeNVd6tSaTu0o841AtvDOt1DnGuCderuS4ffBd35tylB29xyw-2FcygEygtOMUjbTtQdeE-2BWgM-2FZnSqlTUAdtmpTDllpRpWMIHS3rFRLSqsHJigLdCcSsqDrIpTVOTsjwq7Z7amtIQlmBhl7CYNIaxdACsLIJyuHTR3dcxx0xE5bVE9Rads-2BmiM7LdxS1pGnWV-2BB8RQrQa4sCz6ODDxJKkby" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003907.html
+
+  </body>
+</html>

@@ -1,0 +1,300 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003900.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" Publish-Subscribe 언제 그리고 왜 도메인 이벤트를 사용할까? 도메인 내 어떤 사건이 발생했을 때 한 트랜잭션에는 한 애그리게잇만 커밋 이벤트의 모델링 어떤 명령에서 어떤 사건이 발생했었음 Command : BacklogItem#commitTo(Spring) Event : BacklogItemCommitted 백로그 항목이 커밋됐다.(과거형) package com.saasovation.agilepm.domain.model.product; @Value class BacklogItemCommitted...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 8ì¥. ëë©ì¸ ì´ë²¤í¸ - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003899.amp.html" title="IDDD 7장. 서비스">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 8ì¥. ëë©ì¸ ì´ë²¤í¸">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003900.html">
+    <meta property="og:description" content=" Publish-Subscribe 언제 그리고 왜 도메인 이벤트를 사용할까? 도메인 내 어떤 사건이 발생했을 때 한 트랜잭션에는 한 애그리게잇만 커밋 이벤트의 모델링 어떤 명령에서 어떤 사건이 발생했었음 Command : BacklogItem#commitTo(Spring) Event : BacklogItemCommitted 백로그 항목이 커밋됐다.(과거형) package com.saasovation.agilepm.domain.model.product; @Value class BacklogItemCommitted...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" Publish-Subscribe 언제 그리고 왜 도메인 이벤트를 사용할까? 도메인 내 어떤 사건이 발생했을 때 한 트랜잭션에는 한 애그리게잇만 커밋 이벤트의 모델링 어떤 명령에서 어떤 사건이 발생했었음 Command : BacklogItem#commitTo(Spring) Event : BacklogItemCommitted 백로그 항목이 커밋됐다.(과거형) package com.saasovation.agilepm.domain.model.product; @Value class BacklogItemCommitted...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003900.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 8ì¥. ëë©ì¸ ì´ë²¤í¸</h1>
+<time datetime="2020-05-11T01:25:20+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:20+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <p>Publish-Subscribe</p>
+
+언제 그리고 왜 도메인 이벤트를 사용할까?
+
+<ul>
+  <li>도메인 내 어떤 사건이 발생했을 때</li>
+  <li>한 트랜잭션에는 한 애그리게잇만 커밋</li>
+</ul>
+
+이벤트의 모델링
+
+<p>어떤 명령에서 어떤 사건이 발생했었음</p>
+
+<ul>
+  <li>Command : BacklogItem#commitTo(Spring)
+</li>
+  <li>Event : BacklogItemCommitted
+</li>
+  <li>백로그 항목이 커밋됐다.(과거형)</li>
+</ul>
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>agilepm</span><span>.</span><span>domain</span><span>.</span><span>model</span><span>.</span><span>product</span><span>;</span>
+
+<span>@Value</span>
+<span>class</span> <span>BacklogItemCommitted</span> <span>implements</span> <span>DomainEvent</span> <span>{</span>
+    <span>Date</span> <span>occurredOn</span><span>;</span>
+    <span>BacklogItemId</span> <span>backlogItemId</span><span>;</span>
+    <span>SpringId</span> <span>committedToSprintId</span><span>;</span>
+    <span>TenantId</span> <span>tenantId</span><span>;</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>agilepm</span><span>.</span><span>domain</span><span>.</span><span>model</span><span>;</span>
+
+<span>interface</span> <span>DomainEvent</span> <span>{</span>
+    <span>Date</span> <span>occurredOn</span><span>();</span>
+<span>}</span>
+</pre></div></div>
+
+<p><em>추가사항</em></p>
+
+<ul>
+  <li>멱등성</li>
+  <li>더 풍부한 상태 전달 (이벤트 소싱!)</li>
+</ul>
+
+애그리게잇의 특성과 함께하기
+
+<p>이벤트를 애그리게잇을 통해서 영속화</p>
+
+식별자
+
+<ul>
+  <li>이벤트를 애그리게잇으로 모델링하면 식별자가 필요하다.</li>
+  <li>도메인 이벤트를 바운디드 컨텍스트 외부로 발행 시 식별자가 필요(With rabbitmq)
+    <ul>
+      <li>외부 구독자 입장에서는 멱등성 관리를 위해서 식별자를 할당할 수 있음</li>
+      <li>
+equals로 일정 부분 해결할 수도 있다 (in 로컬 바운디드 컨텍스트)</li>
+    </ul>
+  </li>
+</ul>
+
+도메인 모델에서 이벤트 발행하기
+
+<p>Light-Weight Publish-Subscribe</p>
+
+<p><img src="https://camo.githubusercontent.com/afd4f6f7085bc7bdc1db8595fd4e3e62fccb12d6/687474703a2f2f7777772e706c616e74756d6c2e636f6d2f706c616e74756d6c2f7376672f5a4c31393369386d33427074354a643238482d654b307a4b74393575475039514f3937344c50654b7a56556141774b42756331506358644673315231616d723657616b34796b484f685836694a734158527a584c4536795a4c79514532616a5846486c31696f5272584539496a746635725a6c49387a55316a6f30687652337278627276446a3266523653466e704f4a512d35583258687748726347344d5950665a6b67354a6a5638524e6d4d6c627a784a585739787635356c334642392d59356e556350503051676d55334a6878714d6c765a362d50504a59522d6b38644432356a344d7143727a323132444e5f4f4b68625a55553868755570494e7a704576636c35366d3030" alt="발행자"></p>
+
+<ul>
+  <li>Reference : <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3mfvpQ-2BNT7XkGSm-2FPKUVgRRCPtej3pJV8krULol3SCes4OcLyMrunwpkXV-2Fwd61OBu0qxlSEstR-2FpTZ1cq1-2FBhOUHK-2B7Pb9lUV8sQWbfgp0rlKZi_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXtHZnd86CIFBbPCbYvmoXq37ZP4J9PmGZsrKXk6EiilwT5fYInER6d9GE-2BmPH6p9dUYhU3HqvPRTrHRY25wjOaJYluiZsdTyUoX9Pc2-2BkU98kioXVMIudJoYSL8JAQjIPoNmhkIZ2GYrY1DBlz7znk81t2pJv-2BQNjPi0Z7dIdbJ7NgxI-2BceGd0-2F4vf5yGqS-2BQcsVmNJDRpxOa-2FU2owJiOXXNaBBoAyAmVYzK4nzC7ANbg-3D-3D">https://github.com/redutan/redutan.github.io/wiki/Domain-Event-on-Springframework</a>
+</li>
+</ul>
+
+발행자
+
+<div><div><pre><span>class</span> <span>BacklogItem</span> <span>extends</span> <span>AbstractAggregateRoot</span><span>&lt;</span><span>BacklogItem</span><span>&gt;</span> <span>{</span>
+    <span>void</span> <span>commitTo</span><span>(</span><span>Sprint</span> <span>spint</span><span>)</span> <span>{</span>
+        <span>// Some domain logic</span>
+        <span>super</span><span>.</span><span>registerEvent</span><span>(</span><span>new</span> <span>BacklogItemCommitted</span><span>(</span>
+                <span>this</span><span>.</span><span>tenantId</span><span>(),</span>
+                <span>this</span><span>.</span><span>backlogItemId</span><span>(),</span>
+                <span>this</span><span>.</span><span>sprintId</span><span>()</span>
+        <span>));</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>class</span> <span>BacklogItemService</span> <span>{</span>  <span>// Application Service</span>
+     <span>@TransactionalEventListener</span>
+    <span>void</span> <span>commitBacklogItem</span><span>(...)</span> <span>{</span>
+        <span>backlogItem</span><span>.</span><span>commitTo</span><span>(</span><span>sprint</span><span>);</span>   <span>// Publish BacklogItemCommitted event</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+구독자
+
+<div><div><pre><span>class</span> <span>BacklogItemService</span> <span>{</span>  <span>// Application Service</span>
+     <span>@TransactionalEventListener</span>
+    <span>void</span> <span>handleBacklogItemCommitted</span><span>(</span><span>BacklogItemCommitted</span> <span>event</span><span>)</span> <span>{</span>
+        <span>// BacklogItemCommitted 구독 후 처리</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<p>중요한 것은 <strong>결과적 일관성</strong></p>
+
+뉴스를 원격 바운디드 컨텍스트로 전파하기
+
+<p><em>시스템 간</em> 결과적 일관성 확보</p>
+
+메시징 인프라의 일관성
+
+<p><em>구현방법</em></p>
+
+<ol>
+  <li>도메인 모델과 메시지 인프라 저장소 공유</li>
+  <li>원격 DB with XA</li>
+  <li>이벤트 저장소</li>
+</ol>
+
+자치 서비스와 시스템
+
+<p>자치 서비스 : 이벤트를 통해서 시스템 간 결합도(독립성!)를 줄이는 기법 (No-RPC)</p>
+
+<p>자치 서비스의 단위는 바운디드 컨텍스트가 되면 좋은 것 같다.</p>
+
+지연 시간 허용
+
+<p><em>결과적 일관성</em>을 위해서</p>
+
+<p>도메인 별로 그 때 그 때 달라요.</p>
+
+<p>시스템의 허용치를 만족시키면서도 잘 수행되도록 아키텍처 품질을 높여야 한다.</p>
+
+이벤트 저장소
+
+<p>이벤트의 상태를 유지하기 위해서 저장하는 것이 요구되는 경우가 많다.</p>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/bP7FIWGn3CRlVOeUzT0Na4LMq8Cd1_O9-YSmaKuxDEcAFhsrmx0Pg8Atv4k-xqVQCx4jN9UeNWCaHlvyyXw8Ngwjcqh-gNFHvb4_vyLYwlgbEl857HJze1Dy_CSxLHUHvcwbFUVkNbdFUBKCmrqrXf_CRycpJI52brjsWB_J1rE16SBxMPl4kK13sdM558OqwHGuuLSYgWM_kNVmV862DkBNzbPxqmZ7vLw4hctVSGE8aJITZ3cC0WmTDn68CASZTrU5MqYZ6y-GGbtYDm00" alt="IdentityAccessEventProcessor"></p>
+
+<div><div><pre><span>@Aspect</span>
+<span>class</span> <span>IdentityAccessEventProcessor</span> <span>{</span>
+    <span>@Before</span><span>(</span><span>"execution(* com.saasovation.identityaccess.application.*.**..))"</span><span>)</span>
+    <span>public</span> <span>void</span> <span>listen</span><span>()</span> <span>{</span>
+        <span>DomainEventPublisher</span><span>.</span><span>instance</span><span>()</span>
+            <span>.</span><span>subscribe</span><span>(</span><span>new</span> <span>DomainEventSubscriber</span><span>&lt;</span><span>DomainEvent</span><span>&gt;()</span> <span>{</span>
+                <span>public</span> <span>void</span> <span>handleEvent</span><span>(</span><span>DomainEvent</span> <span>aDomainEvent</span><span>)</span> <span>{</span>
+                    <span>store</span><span>(</span><span>aDomainEvent</span><span>);</span>
+                <span>}</span>
+
+                <span>public</span> <span>Class</span><span>&lt;</span><span>DomainEvent</span><span>&gt;</span> <span>subscribedToEventType</span><span>()</span> <span>{</span>
+                    <span>return</span> <span>DomainEvent</span><span>.</span><span>class</span><span>;</span>   <span>// 모든 도메인 이벤트</span>
+                <span>}</span>
+            <span>});</span>
+    <span>}</span>
+    <span>private</span> <span>void</span> <span>store</span><span>(</span><span>DomainEvent</span> <span>aDomainEvent</span><span>)</span> <span>{</span>
+        <span>EventStore</span><span>.</span><span>instance</span><span>().</span><span>append</span><span>(</span><span>aDomainEvent</span><span>);</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>class</span> <span>StoreEvent</span> <span>{</span>
+    <span>void</span> <span>append</span><span>(</span><span>DomainEvent</span> <span>aDomainEvent</span><span>)</span> <span>{</span>
+        <span>String</span> <span>eventSerializatoin</span> <span>=</span> 
+            <span>EventStore</span><span>.</span><span>objectSerializer</span><span>().</span><span>serialize</span><span>(</span><span>aDomainEvent</span><span>);</span>
+        <span>StoredEvent</span> <span>storedEvent</span> <span>=</span> 
+            <span>new</span> <span>StoredEvent</span><span>(</span>
+                <span>aDomainEvent</span><span>.</span><span>getClass</span><span>().</span><span>getName</span><span>(),</span>
+                <span>aDomainEvent</span><span>.</span><span>occuredOn</span><span>(),</span>
+                <span>eventSerialization</span><span>);</span>
+        <span>this</span><span>.</span><span>session</span><span>().</span><span>save</span><span>(</span><span>storedEvent</span><span>);</span>
+        <span>this</span><span>.</span><span>setStoredEvent</span><span>(</span><span>storedEvent</span><span>);</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>CREATE</span> <span>TABLE</span> <span>tbl_stored_event</span> <span>(</span>
+    <span>event_id</span> <span>int</span><span>(</span><span>11</span><span>)</span> <span>NOT</span> <span>NULL</span> <span>auto_increment</span><span>,</span>
+    <span>event_body</span> <span>varchar</span><span>(</span><span>65000</span><span>)</span> <span>NOT</span> <span>NULL</span><span>,</span>
+    <span>occurred_on</span> <span>datetime</span> <span>NOT</span> <span>NULL</span><span>,</span>
+    <span>type_name</span> <span>varchar</span><span>(</span><span>100</span><span>)</span> <span>NOT</span> <span>NULL</span><span>,</span>
+    <span>PRIMARY</span> <span>KEY</span> <span>(</span><span>event_id</span><span>)</span>
+<span>)</span>
+</pre></div></div>
+
+저장된 이벤트의 전달을 위한 아키텍처 스타일
+
+레스트품 리소스로서 알림 발행하기
+
+<ol>
+  <li>이벤트를 REST/WEB API로 발행한다. (이벤트 아이디나 애그리게잇 아이디를 전달)
+    <ul>
+      <li>이벤트 저장소를 통해서 조회하거나, 애그리게잇을 직접 조회한다.</li>
+    </ul>
+  </li>
+  <li>구독 측에서 발행측에 다시 상세 이벤트 정보를 조회한 후 처리한다.</li>
+</ol>
+
+메시징 미들웨어를 통한 알림 발행
+
+<ol>
+  <li>메시징 미들웨어를 통해서 이벤트를 발행한다.</li>
+  <li>메시징 미들웨어를 구독한 구독 측에서 발행 측의 상세 이벤트 정보를 조회한 후 처리 한다.</li>
+</ol>
+
+<p>발행과 구독은 exchange나 queue 개념으로 연결된다.</p>
+
+구현
+
+<p>Skip</p>
+
+<ul>
+  <li>멱등 수신자 처리가 중요하다 : At least once</li>
+</ul>
+
+<blockquote>
+  <p>멱등성 : 오퍼레이션이 두 번 이상 수행되어도, 한 번만 수행했을 때와 같은 결과에 이르는 동작을 의미</p>
+</blockquote>
+
+<p>궁극적으로 이벤트를 추적해야하는 경우가 생기기 때문에 이벤트 저장 기능이 거의 필수적으로 요구된다.
+그리고 추적 일관성을 위해서 이벤트 저장은 도메인 로직과 트랜잭션으로 묶이는 것이 중요하다.</p>
+
+마무리
+
+<ul>
+  <li>이벤트 만의 고유 식별자가 요구된다.
+    <ul>
+      <li>이벤트 저장소도 필요</li>
+    </ul>
+  </li>
+  <li>어짜피 발행-구독!</li>
+  <li>멱등성 또는 중복 발행 or 수신 제거 확보</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvte7IJ83T9i7ctQC-2FR9Jhkiiganli0CE93CcAILpEzlCw-3D-3Dh2q0_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXtHZnd86CIFBbPCbYvmoXq37ZP4J9PmGZsrKXk6EiilwVeCIxi-2FocaJix02HAB3yQ0k3Dch-2BIQthOH3hKsUBS6HFHS4EFucpuRvDfOLcdNHwHDe0fW7pQh-2B4-2B-2BUEsiB0hrAob-2FOvb8F353Oub-2B0jIzaP5k7Kax15cieddJOtuAb9WWFlQ9DcOPfH8XlAhTj8rLjlhjKsZu-2F4PXlpHu3D4gYpgCPHhHvE0dcYoE6Nc6Bhg-3D-3D">IDDD 8장. 도메인 이벤트</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUj7HV_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXtHZnd86CIFBbPCbYvmoXq37ZP4J9PmGZsrKXk6EiilwZI1459FqrtpLG7hCO0mC5aES3JMcqjvRhOnTh3eenGzk-2FjaPq9Xr6tJppEJzjSX-2FTLCdZh30y8XAf1meaTPA7FtdrnX8H-2BZwkIKBJBGnnwnQsWdPxgKs8EhDkVuABrrdGtxegY0zy-2FYwUtP2tzaR-2FwcUV7j51Z-2FCOHFjYhwkaIeG1jeXutcRK1et-2FTNQLQGow-3D-3D">DevOOOOOOOOP</a> on May 24, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMOOBDmtyh57YUkp9-2Fv7xyFkkAcl-2BRClFC2uQcNfj9Ofa76FTzflGZJxRjb7Ge-2F-2FVbYZv6HIl3FbYWabaJsUVkDblv1DbErTDxxLNpHz3Hfcpvlv12AY5n-2B4MFKipUSul12EIt0iDHDL5-2B0nYPesbQTabkgeoHPFKAdYw-2FNBL9bDgJst8nXTN0nwB3NVK7vQCAp0X12F0BpEZZFuk4-2FEe-2FMDOqr3PiZBE9qurThZ9AtUmg-3D-3D" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003900.html
+
+  </body>
+</html>

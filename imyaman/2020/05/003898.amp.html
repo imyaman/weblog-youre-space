@@ -1,0 +1,233 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003898.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 가능한 엔터티 대신 값 객체를 사용해 모델링하도록 노력해야 한다. 특성만 신경 쓴다면 이를 값 객체로 분리하라. 특성의 의미를 표현하고 기능도 부여하자. 불변성. 식별자는 필요 없고, 설계의 복잡성을 줄여준다. 값의 특징 개념을 값으로 측정, 수량화, 설명 불변성(no side-effect) 개념적 전체...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 6ì¥. ê° ê°ì²´ - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003897.amp.html" title="IDDD 5장. 엔터티">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 6ì¥. ê° ê°ì²´">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003898.html">
+    <meta property="og:description" content=" 가능한 엔터티 대신 값 객체를 사용해 모델링하도록 노력해야 한다. 특성만 신경 쓴다면 이를 값 객체로 분리하라. 특성의 의미를 표현하고 기능도 부여하자. 불변성. 식별자는 필요 없고, 설계의 복잡성을 줄여준다. 값의 특징 개념을 값으로 측정, 수량화, 설명 불변성(no side-effect) 개념적 전체...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 가능한 엔터티 대신 값 객체를 사용해 모델링하도록 노력해야 한다. 특성만 신경 쓴다면 이를 값 객체로 분리하라. 특성의 의미를 표현하고 기능도 부여하자. 불변성. 식별자는 필요 없고, 설계의 복잡성을 줄여준다. 값의 특징 개념을 값으로 측정, 수량화, 설명 불변성(no side-effect) 개념적 전체...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003898.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 6ì¥. ê° ê°ì²´</h1>
+<time datetime="2020-05-11T01:25:19+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:19+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <p>가능한 엔터티 대신 값 객체를 사용해 모델링하도록 노력해야 한다.</p>
+
+<blockquote>
+  <p>특성만 신경 쓴다면 이를 값 객체로 분리하라. 특성의 의미를 표현하고 기능도 부여하자. 불변성. 식별자는 필요 없고, 설계의 복잡성을 줄여준다.</p>
+</blockquote>
+
+값의 특징
+
+<p><strong>개념을 값으로</strong></p>
+
+<ul>
+  <li>측정, 수량화, 설명</li>
+  <li>불변성(no side-effect)</li>
+  <li>개념적 전체</li>
+  <li>변경 대신 대치</li>
+  <li>등가성(value equality:동등성)</li>
+</ul>
+
+<p><strong>유비쿼터스 언어로써 표현하는 값이어야함</strong></p>
+
+측정, 수량화, 설명
+
+<p>날짜와 시간, 나이, 통화, 주소, 도형, …</p>
+
+불변성
+
+<ul>
+  <li>No Setter
+    <ul>
+      <li>하지만 완벽하진 않다. 방어 복사가 필요할 수 있음 (final일지라도 불변은 깨질 수 있다.)</li>
+    </ul>
+  </li>
+</ul>
+
+개념적 전체
+
+<ul>
+  <li>주소 = 우편번호 + 기본주소 + 상세주소</li>
+  <li>돈 = 500(수량) + 달러(통화)</li>
+</ul>
+
+<p><em>Bad Case</em></p>
+
+<div><div><pre><span>class</span> <span>ThingOfWorth</span> <span>{</span>    <span>// 가치 있는 것</span>
+    <span>private</span> <span>String</span> <span>name</span><span>;</span>
+    <span>private</span> <span>BigDecimal</span> <span>amount</span><span>;</span>
+    <span>private</span> <span>String</span> <span>currency</span><span>;</span>
+<span>}</span>
+</pre></div></div>
+
+<p><em>Good Case</em></p>
+
+<div><div><pre><span>class</span> <span>ThingOfWorth</span> <span>{</span>    <span>// 가치 있는 것</span>
+    <span>private</span> <span>ThingName</span> <span>name</span><span>;</span>         <span>// !!</span>
+    <span>private</span> <span>MonetaryValue</span> <span>worth</span><span>;</span>    <span>// 가치</span>
+<span>}</span>
+<span>@Value</span>
+<span>class</span> <span>MonetraryValue</span> <span>{</span>
+    <span>private</span> <span>BigDecimal</span> <span>amount</span><span>;</span>
+    <span>private</span> <span>Currency</span> <span>currency</span><span>;</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>
+ThingName으로 값 객체로 만들어서 name의 기능을 중앙화 시킬 수 있다. (도메인 로직을 안으로 품을 수 있음)</li>
+</ul>
+
+대체성
+
+<p>값은 변경이 불가능하므로 값 참조를 다른 값으로 바꾸는 것을 말함</p>
+
+<div><div><pre><span>FullName</span> <span>name</span> <span>=</span> <span>new</span> <span>FullName</span><span>(</span><span>"Myeongju"</span><span>,</span> <span>"Jung"</span><span>);</span>
+<span>// ...</span>
+<span>name</span> <span>=</span> <span>new</span> <span>FullName</span><span>(</span><span>"Jiwon"</span><span>,</span> <span>"M"</span><span>,</span> <span>"Jung"</span><span>);</span>
+</pre></div></div>
+
+값 등가성
+
+<p>equals(), hasoCode()</p>
+
+<p>엔터티로 설계된 개념이 식별자가 필요하지 않다면 <em>값 객체</em>로 모델링하자.</p>
+
+부작용이 없는 행동
+
+<blockquote>
+  <p>만약 값객체에 행위가 없다면, 좋은 설계인지 의심하라</p>
+</blockquote>
+
+<ul>
+  <li>Getter : No side-effect</li>
+  <li>Setter : With side-effect</li>
+</ul>
+
+<div><div><pre><span>FullName</span> <span>name</span> <span>=</span> <span>new</span> <span>FullName</span><span>(</span><span>"Myeongju"</span><span>,</span> <span>"Jung"</span><span>);</span>
+<span>// ...</span>
+<span>name</span> <span>=</span> <span>name</span><span>.</span><span>withMiddleInitial</span><span>(</span><span>"M"</span><span>);</span>
+</pre></div></div>
+
+<div><div><pre><span>FullName</span> <span>withMiddleInitial</span><span>(</span><span>String</span> <span>middleName</span><span>)</span> <span>{</span>
+    <span>return</span> <span>new</span> <span>FullName</span><span>(</span><span>this</span><span>.</span><span>firstName</span><span>,</span> <span>middleName</span><span>,</span> <span>this</span><span>.</span><span>lastName</span><span>);</span>
+<span>}</span>
+</pre></div></div>
+
+<p><strong>값 객체의 매개변수로 값만 전달하자.</strong></p>
+
+<ul>
+  <li>만약 엔터티와 같은 가변성을 가지는 인자를 받는다면 <em>부작용이 발생할 가능성</em>이 생긴다.</li>
+  <li>아니면 Getter만 제공하는 추상화된 인자를 받는 것도 좋은 방법이다. &gt; Entity에 Getter만 있는 인터페이스를 Mixin</li>
+</ul>
+
+<p><em>기본 언어 값 타입에는 도메인에 맞춘 부작용이 없는 함수를 할당할 수 없다</em></p>
+
+<ul>
+  <li>도메인적인 표현이 기본 언어 함수에서 제공할 수 있을리가 없다.</li>
+</ul>
+
+미니멀리즘으로 통합하기
+
+<p><img src="http://www.plantuml.com/plantuml/svg/ROv12i8m44NtEKN8FZSeeQ482eeBqVsO35fC4qac2z7UNSqYjjBTCEy__cyJGQGyE7O7SuCByer5JpqzjBVQ64o9Fnddni7dEYQCl6bM9Q0K6wjbWdDm3X6e3tvYTFKVlkO9N4QbIc2i8PtfEiK_EoBG8ja5Y_6FZQpi4_lrGV16IYvqjnMp2Mo-voLbALy4fNoHr7BMehTvS6y0" alt="미니멀리즘으로 통합하기"></p>
+
+<ul>
+  <li>ACL 내에서는 조회용으로써 일부 특성과 행위가 요구된다.</li>
+  <li>즉 Entity 전체가 필요한(순응자나 공유모델) 것이 아니라, 해당 컨택스트 내에서 어울리는 타입으로써 값 객체가 좋은 선택</li>
+</ul>
+
+값으로 표현되는 표준 타입
+
+<p>표준 타입에는 Enum을 쓰는 것이 좋다</p>
+
+<blockquote>
+  <p>잘 이해가 안된다 ㅠㅠ</p>
+</blockquote>
+
+값 객체의 테스트
+
+<ul>
+  <li>클라이언트 관점에서 값 객체를 보는 것은 중요하다.</li>
+  <li>불변성을 테스트 해야 한다.</li>
+  <li>테스트를 통해서 도메인적 표현을 확인할 수 있어야 한다.</li>
+</ul>
+
+구현
+
+<ul>
+  <li>불변, 불변, 불변 (No Setter)</li>
+  <li>
+equals(), hashCode(), toString()
+</li>
+  <li>JPA를 위해서 빈 생성자는 필수 (PACKAGE 접근제어로 생성)</li>
+  <li>보호절을 통한 불변식 강제</li>
+</ul>
+
+값 객체의 저장
+
+데이터 모델 누수의 부정적 영향을 거부하라
+
+<p>도메인 모델을 위해서 데이터 모델을 설계해야한다.</p>
+
+ORM 구현
+
+<p>오래된 내용이라서 SKIP. 이젠 <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3gfEAJrVvyA4EU8l4rY-2BcWYZ-2Bhx7sVw2u9iXRyDLXlRNLUGM1MO9MI34oh6a1bdt1g-3D-3DC8-6_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXsH1esry6YbRxoL4GdbMRmul1M5OnsyuhhipEDdvG7vqFZg-2B38V7OzTYsM62FdA9SdrxIlw-2Bx-2B9wpS3eU-2F8SrooU8bDKiC5tP3PaVZPbqHzsVGkygErmM3pvia0YpRKMb3zYndd1cjpoR1wLLee176B9TQFPvUG9BlEfF-2FkUnyrbmvvnl3kISRNjKjZfp4SoKZoPU38wpliAoVbvawP1M0b">Spring Data Jpa</a>를 사용하자.</p>
+
+마무리
+
+<ul>
+  <li>값 객체 특징, 사용, 구현</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvtwi9S9agaFQ6nZo9-2FOUI2IPJESJuybbAi7MQr7h5nz8w-3D-3DHYYT_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXsH1esry6YbRxoL4GdbMRmul1M5OnsyuhhipEDdvG7vqA8y58Bm8SFGyCLojTzjg5CPSvc7zDgC8p7M-2FGnMz4ocmhIO2MNWTs3uFMEuG35QbJfAHfuD3QCgCBQWfeOKZ0vR-2BPUWZaLjjcMhG-2BmsmMaUsdyo41c06m0Esjzyv1YDWafaQMBl541sTV6DxPpl6xXVkgbhmrm9jiZfZ42TixpA">IDDD 6장. 값 객체</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUWS0r_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXsH1esry6YbRxoL4GdbMRmul1M5OnsyuhhipEDdvG7vqAKsLqz6eyKYcRQty6M5l032vFge6iLFYxkKKpd-2FOFCNdhznujFmqddFHfBElM5Zc5Ors4TCd7jG9MJJSLFTaE9kWbT6286DYLUaUKmU9fu8PvlwF-2FGI-2BiEyawWWzfHEkVV9XebfoT6lHrxtn2pQ1vp-2B-2FIsFp-2BouQ8BQBtt-2Fn-2BJb">DevOOOOOOOOP</a> on May 15, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMNuuRo8n5xSnCbndQ3Vtvazz-2B558F-2FKqA4l6AzY6eTC-2FtA7uk2zs-2BB4s2FhabAkcJsY34Mx0TUCm4a6wjxxlqbsVOiossAASUE7y-2FonNEyndZ3-2BNF5Skwm-2BPGGCSvfe0CPozaDHycliaGGywn7rXdO696Y5c5Ii4m1sESVV0Drzf08X85Dmn-2F-2B77BDYzXXkW7nIAwmXwi82YJ-2FPI2erIoU4" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003898.html
+
+  </body>
+</html>

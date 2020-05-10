@@ -1,0 +1,435 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003896.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 실제 요구(도메인)가 아키텍처 스타일과 패턴의 사용을 유도해야 한다. 도메인이 기술 보다 먼저다. 성공한 CIO와의 인터뷰 Server-Client Architecture 계층형 아키텍처 DIP, QP, PSA, DDD-Lite 헥사고날 아키텍처 To Mobile, Cloud CQRS Materialized Views Event-Driven Architecture Pipeline + Filter Saga 패턴 Long-lived...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 4ì¥. ìí¤íì² - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003895.amp.html" title="IDDD 2장. 도메인, 서브도메인, 바운디드 컨텍스트">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 4ì¥. ìí¤íì²">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003896.html">
+    <meta property="og:description" content=" 실제 요구(도메인)가 아키텍처 스타일과 패턴의 사용을 유도해야 한다. 도메인이 기술 보다 먼저다. 성공한 CIO와의 인터뷰 Server-Client Architecture 계층형 아키텍처 DIP, QP, PSA, DDD-Lite 헥사고날 아키텍처 To Mobile, Cloud CQRS Materialized Views Event-Driven Architecture Pipeline + Filter Saga 패턴 Long-lived...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 실제 요구(도메인)가 아키텍처 스타일과 패턴의 사용을 유도해야 한다. 도메인이 기술 보다 먼저다. 성공한 CIO와의 인터뷰 Server-Client Architecture 계층형 아키텍처 DIP, QP, PSA, DDD-Lite 헥사고날 아키텍처 To Mobile, Cloud CQRS Materialized Views Event-Driven Architecture Pipeline + Filter Saga 패턴 Long-lived...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003896.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 4ì¥. ìí¤íì²</h1>
+<time datetime="2020-05-11T01:25:17+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:17+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <blockquote>
+  <p>실제 요구(도메인)가 아키텍처 스타일과 패턴의 사용을 유도해야 한다.</p>
+</blockquote>
+
+<ul>
+  <li>도메인이 기술 보다 먼저다.</li>
+</ul>
+
+성공한 CIO와의 인터뷰
+
+<ol>
+  <li>Server-Client Architecture</li>
+  <li>
+<strong>계층형 아키텍처</strong>
+    <ul>
+      <li>DIP, QP, PSA, DDD-Lite</li>
+    </ul>
+  </li>
+  <li>
+<strong>헥사고날 아키텍처</strong>
+    <ul>
+      <li>To Mobile, Cloud</li>
+    </ul>
+  </li>
+  <li>
+<strong>CQRS</strong>
+    <ul>
+      <li>Materialized Views</li>
+    </ul>
+  </li>
+  <li>Event-Driven Architecture
+    <ul>
+      <li>Pipeline + Filter</li>
+    </ul>
+  </li>
+  <li>Saga 패턴
+    <ul>
+      <li>Long-lived transaction as a sequence of subtransactions.</li>
+      <li>In a distributed system</li>
+    </ul>
+  </li>
+  <li>이벤트 소싱
+    <ul>
+      <li>모든 변경을 추적 (ex: 보안 감사 등)</li>
+    </ul>
+  </li>
+</ol>
+
+<p><strong>이러한 아키텍처 덕분에 결국 회사에 돈이 된다</strong></p>
+
+계층
+
+<p><img src="https://i0.wp.com/www.ajlopez.com/images/articles/dddlayered.png" alt="DDD Layred Architecture"></p>
+
+<p>그림 4.1 DDD가 적용된 전통적인 계층 아키텍처</p>
+
+<p>[출처] https://ajlopez.wordpress.com/2008/09/12/layered-architecture-in-domain-driven-design/</p>
+
+<ul>
+  <li>도메인 모델과 비즈니스 로직을 도메인 계층에 격리</li>
+  <li>하위 계층에만 의존 - <strong>아래에서 위쪽으로 직접 참조 불가</strong> (하지만 Observer 사용 가능)
+    <ul>
+      <li>느슨한 연결 : UI가 애플리케이션(바로 하위) 뿐만 아니라 도메인이나 인프라에도 의존 가능</li>
+    </ul>
+  </li>
+</ul>
+
+UI 계층
+
+<ul>
+  <li>View나 API 제공</li>
+  <li>도메인 모델이 아닌 표현 모델(DTO)를 사용 추천</li>
+</ul>
+
+애플리케이션 계층
+
+<p>UI로 부터 매개변수를 받아 리파지토리를 사용해 애그리게잇을 획득하고, 커맨드를 위임</p>
+
+<ul>
+  <li>보안과 트랜젝션 담당 (일반적으로 보안을 UI로 올리는 것 같음)</li>
+  <li>도메인 로직 없으며 도메인 모델(애그리게잇, 도메인 서비스 등)에 위임</li>
+  <li>도메인 모델에서 발행한 도메인 이벤트를 구독(subscribe)</li>
+</ul>
+
+<div><div><pre><span>@Transactionl</span>
+<span>void</span> <span>commitBackLogItemToSpring</span><span>(</span>
+        <span>String</span> <span>aTanantId</span><span>,</span> <span>String</span> <span>aBackLogItemId</span><span>,</span> <span>String</span> <span>aSprintId</span><span>)</span> <span>{</span>
+    <span>// 재료(Aggregate) 준비</span>
+    <span>BacklogItem</span> <span>backlogItem</span> <span>=</span> 
+        <span>backlogItemRepository</span><span>.</span><span>backlogItemOfId</span><span>(</span><span>aTanantId</span><span>,</span> <span>aBacklogItemId</span><span>);</span>
+    <span>Sprint</span> <span>sprint</span> <span>sprintRepository</span><span>.</span><span>sprintOfId</span><span>(</span><span>aSprintId</span><span>);</span>
+    <span>// 커맨드 위임</span>
+    <span>backlogItem</span><span>.</span><span>commitTo</span><span>(</span><span>sprint</span><span>);</span>
+<span>}</span>
+</pre></div></div>
+
+DIP
+
+<blockquote>
+  <ul>
+    <li>상위 수준의 모듈은 하위 수준 모듈에 의존해선 안된다. 둘 모두는 반드시 추상화에 의존해야 한다.</li>
+    <li>추상화는 세부사항에 의존해선 안 된다. 세부사항은 추상화에 의존해야 한다.</li>
+  </ul>
+</blockquote>
+
+<p><strong>하위 구현 컴포넌트가 상위 콤포넌트가 정의한 인터페이스에 의존해야한다.</strong></p>
+
+<p>어라 그러다 보니 계층이 없어진다. <strong>여기에 대칭성을 더하면 어떻게 될까?</strong></p>
+
+헥사고날 또는 포트와 어댑터
+
+<p><img src="http://alistair.cockburn.us/get/2304" alt="Hexagonal Architecture"></p>
+
+<p><em>헥사고날 아키텍처</em></p>
+
+<p>[출처] http://alistair.cockburn.us/Hexagonal+architecture</p>
+
+<p><img src="https://camo.githubusercontent.com/440658bfd34094b4b705c40ae0517e0b00a0becb/68747470733a2f2f7777772e6e67696e782e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031352f30352f47726170682d30312d65313433313937383039303733372e706e67" alt="Texi handling Hexagonal Architecture"></p>
+
+<p><em>Texi handling Hexagonal Architecture</em></p>
+
+<p>[출처] https://github.com/seongminwoo/study/blob/master/7-part_series_about_microservices.md</p>
+
+헥사고날의 장점
+
+<ul>
+  <li>기능적 요구사항에 따라 애플리케이션 내부를 설계
+    <ul>
+      <li>UI, Infra는 그 다음이다.</li>
+      <li>애플리케이션 내부가 캡슐화 된다.</li>
+    </ul>
+  </li>
+  <li>Adapter를 통해 기술과 분리</li>
+</ul>
+
+서비스 지향(SOA)
+
+<p><strong>중요한 것은</strong> 기술 보다 비즈니스(도메인) 가치가 우선해야 한다</p>
+
+REST: 표현 상태 전송
+
+<p><img src="https://martinfowler.com/articles/images/richardsonMaturityModel/overview.png" alt="The glory of REST"></p>
+
+<p>[출처] https://martinfowler.com/articles/richardsonMaturityModel.html</p>
+
+RESTful HTTP 서버의 주요 특징
+
+<ol>
+  <li>Resource : URI</li>
+  <li>Verbs : GET, POST, PUT, DELETE, …</li>
+  <li>Hypermedia : 연결된 리소스를 제공. 상호작용, 클라이언트 무상태</li>
+</ol>
+
+RESTful HTTP 클라이언트의 주요 특징
+
+<p>Hypermedia를 바탕으로 상호 작용한다.</p>
+
+REST와 DDD
+
+<p><strong>도메인 모델을 RESTful로 바로 노출하는 것은 좋지 않다.</strong></p>
+
+<ul>
+  <li>도메인 모델의 변경이 API와 연결되기 때문에 변경에 취약해지며, 클라이언트와 호환성이 깨진다.</li>
+</ul>
+
+<p><strong>해결책</strong></p>
+
+<ol>
+  <li>도메인 모델 -&gt; 표현 모델을 조립 (추천)
+    <ul>
+      <li>Assembler + DTO (PoEAA)</li>
+    </ul>
+  </li>
+  <li>각 상황 별 공유 도메인 모델 사용
+    <ul>
+      <li>공유커널</li>
+    </ul>
+  </li>
+</ol>
+
+왜 REST인가
+
+<p>느슨함</p>
+
+CQRS
+
+<p>사용자가 필요로하는 데이터 뷰를 리파지토리로 쿼리하기란 어려울 수 있다.</p>
+
+<p>CQRS = 객체 설계 원칙 + CQS</p>
+
+<ol>
+  <li>Command : 객체의 상태를 수정, Void 형</li>
+  <li>Query : 값을 반환, 수정 X</li>
+</ol>
+
+<p><strong>구현</strong></p>
+
+<ul>
+  <li>애그리게잇은 오직 커맨드 메소드만 가지고 있음.(커맨드 모델)</li>
+  <li>쿼리를 위한 뷰 전용 모델(쿼리 모델)을 생성</li>
+</ul>
+
+CQRS의 영역 살펴보기
+
+<p><img src="https://docs.microsoft.com/ko-kr/azure/architecture/guide/architecture-styles/images/cqrs-logical.svg" alt="CQRS Architecture"></p>
+
+<p>출처 : <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3kTPkIwU0diAv9PlDMizOhBCLxsE9SUiYU0lLl4k5nSi6BijYl2pffq8ThcQq0liTFJfoOYnLDHBCwWbtj99xIgOrAS2gLL2t02U-2FRz-2Fdy7PGP63_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXstBJjAqqFQdhyr5f9w23c1JEj2OGLORkGXnxxQor9pQbH4tTVloFuL4r5DBaIIRhUkk9fOeQecQ9D1ApLFB40tDhfpmaNVQFhSF-2Fu5xR9gW8o-2FMe8Wy2FWu5qfrNgkOoxrfYryJE0NGNvdgvHV-2FmRixLJJvhx29caPBfzE5a9kOOYyo-2FIMHafLJ82HcnHPRmSKJstu92aJQP5tzXfHYsrHE8zqBbVh5V4VoRunZ9lJnA-3D-3D">https://docs.microsoft.com/ko-kr/azure/architecture/guide/architecture-styles/cqrs</a>
+참고 : <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3kTPkIwU0diAv9PlDMizOhBCLxsE9SUiYU0lLl4k5nSi6BijYl2pffq8ThcQq0liTFJfoOYnLDHBCwWbtj99xIgOrAS2gLL2t02U-2FRz-2Fdy7PNQqT_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXstBJjAqqFQdhyr5f9w23c1JEj2OGLORkGXnxxQor9pQdQMMYU4NvSPzg8Gh9CqCKKZc8y18y4rZNnLcu33oKsmCHF45ilAgrwmBKKNYrIaCpKoEm9QTrGPVrkrXsHCMv5RQwMLcwZghnLXa1EoM2TMG9X400u3j-2BnjL7V2USFxlXJKFv8VZvSBLhnJDULWk9bd0bSkoERpzFd297naFplnAJ0Bwu1zDTI9pebfDrt-2BYQ-3D-3D">https://docs.microsoft.com/ko-kr/azure/architecture/patterns/cqrs</a></p>
+
+클라이언트와 쿼리 처리기
+
+쿼리 모델(읽기 모델)
+
+<ul>
+  <li>필요한 수 만큼 뷰를 지원하기</li>
+  <li>실용적으로 하라</li>
+  <li>데이터베이스 테이블 뷰가 오버헤드의 원인이 되지 않을까?</li>
+</ul>
+
+클라이언트가 커맨트 처리를 주도한다.
+
+<p>UI to Argument</p>
+
+커맨드 처리기
+
+<ul>
+  <li>카테고리 스타일 : 1 class n methods</li>
+  <li>전용 스타일 : 1 class 1 method</li>
+</ul>
+
+커맨드 모델(쓰기 모델)은 행동을 수행한다.
+
+<div><div><pre><span>public</span> <span>void</span> <span>commitTo</span><span>(</span><span>Sprint</span> <span>aSprint</span><span>)</span> <span>{</span>
+    <span>...</span>
+    <span>DomainEventPublisher</span>
+        <span>.</span><span>instance</span><span>()</span>
+        <span>.</span><span>publish</span><span>(</span><span>new</span> <span>BacklogItemCommitted</span><span>(</span>
+            <span>this</span><span>.</span><span>tenant</span><span>(),</span>
+            <span>this</span><span>.</span><span>backlogItemId</span><span>(),</span>
+            <span>this</span><span>.</span><span>sprintId</span><span>()</span>
+        <span>));</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>어떤 경우든 쿼리 모델을 업데이트시키기 위해선 도메인 이벤트를 게시해야 한다.</li>
+</ul>
+
+이벤트 구독자가 쿼리 모델을 업데이트 한다.
+
+<ul>
+  <li>동기도 가능하고 <strong>비동기</strong>도 가능하다.</li>
+</ul>
+
+결국은 일관성이 유지되는 쿼리 모델 다루기
+
+<blockquote>
+  <p>Eventually consistent</p>
+</blockquote>
+
+<p>지연되는 뷰 데이터 동기화를 해결해야한다.</p>
+
+<ul>
+  <li>낙관적 업데이트 기법!</li>
+  <li>클라이언트에서 publish/subscribe 기법</li>
+</ul>
+
+<p><strong>결국은 동기화되는 지연시간이 문제</strong></p>
+
+이벤트 주도 아키텍처(EDA)
+
+<blockquote>
+  <p>이벤트의 생산, 감지, 소비와 이벤트에 따른 응답 등을 촉진하는 소프트웨어 아키텍처</p>
+</blockquote>
+
+<p>From <strong>도메인 이벤트</strong></p>
+
+파이프와 필터
+
+<p>$ cat phone_number.txt | grep 303 | wc -1</p>
+
+<ul>
+  <li><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3rZaL67kNbh8lgTFZ9SV4lMOmgFwwhqRl7oq9njuG12sYoAwH5NqJZSlD-2B7MprlzLg-3D-3DHHSb_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXstBJjAqqFQdhyr5f9w23c1JEj2OGLORkGXnxxQor9pQYlw3iZCMwTcQvvNzVoWAVmA7AWIuhDkoPye5Ir0qWA4Qth6XzfQIoUtiAd5I71AqX02Myp0Y51Qg2qMw-2BcnanI0u1gagxKlPyhbvG35Fk3A6ZRSxc0iECRlikYp6ag5oXmqNnAu3P3YBagUsmJWEtc0gxt-2FUoUwHFYL0G0f61cYkDIp3dASCjU9m0OWwoPIlQ-3D-3D">Spring Cloud Data Flow</a></li>
+</ul>
+
+<p><img src="http://7u2mak.com1.z0.glb.clouddn.com/pipe-filter.jpg" alt="필터를 처리하는 이벤트를 보냄으로써 파이프라인이 만들어진다."></p>
+
+<p>그림 4.8 필터를 처리하는 이벤트를 보냄으로써 파이프라인이 만들어진다.</p>
+
+<p>[출처] http://zhangyi.farbox.com/post/coding/understand-scala-stack</p>
+
+<p>이는 가상의 예제이자 개념적 부분을 강조했을 뿐이다. 실제 엔터프라이즈에선 큰 문제를 좀 더 작은 단계로 나누기 위해 이 패턴을 사용하며, 좀 더 쉽게 분산 처리를 이해하고 관리하도록 해준다.
+또한 여러 시스템이 오직 자신이 할 일(도메인)만을 걱정하게 되게 해주기도 한다.</p>
+
+장기 실행 프로세스
+
+<ol>
+  <li>컴포지트</li>
+  <li>애그리게잇 집합</li>
+  <li>이벤트</li>
+</ol>
+
+<p>역시나 중요한 것은 <strong>결과적 일관성</strong>(Eventual Consistency)</p>
+
+Saga Pattern
+
+<p><strong>Events/Choreography</strong></p>
+
+<p><img src="https://blog.couchbase.com/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-6.13.39-PM.png" alt="Saga Sequence"></p>
+
+<p><strong>Rollback</strong></p>
+
+<p><img src="https://blog.couchbase.com/wp-content/uploads/2018/01/Screen-Shot-2018-01-09-at-6.36.17-PM.png" alt="Saga Rollback"></p>
+
+<ul>
+  <li>referecne : <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3o1-2FM-2BMFyWH-2BkgDGKfhnruOLBkREXg3c3C3JkDd0GqnvENHe5V-2FrL11Z13NGVFEELGQZGc81k45qtXFRj0b5QQ0ObSqTFHG6O0jdXrC7Sg453w6edmmpikAxyRYHt9YFtg-3D-3D9Ttt_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXstBJjAqqFQdhyr5f9w23c1JEj2OGLORkGXnxxQor9pQShs3DL7o9mQV2Gs0oC5Xk14hrRW4vHNnakrSlFEq01O-2BkGxZGUJV-2FXDsR1foMKsgdav76DeSMjZPwlzW0Qv5q-2BeTEU9yedbcSCLEZhlUJSDzEAJF0RmqaF9yhkujTIqnRtfhAjwewaR-2FUTdjfx676RSvaBuqYNx4RKt7FyWK4QIMxXfuhwW-2BUj1qYpiUbXb2w-3D-3D">https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/</a>
+</li>
+</ul>
+
+이벤트 소싱
+
+<p>거의 완벽한 수준의 변경 추적</p>
+
+<p><img src="https://docs.microsoft.com/ko-kr/azure/architecture/patterns/_images/event-sourcing-overview.png" alt="이벤트 소싱"></p>
+
+<p>[출처] <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3kTPkIwU0diAv9PlDMizOhBCLxsE9SUiYU0lLl4k5nSi5ypBz9-2ByHMYQP5aanVAyys9WlMHGA1BUXJeR3-2BqlpNP67ASgMlOqoFObPE0XHiD2bH27_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXstBJjAqqFQdhyr5f9w23c1JEj2OGLORkGXnxxQor9pQXMeWkSpB6TMsoGMJGTsLslR7QVe-2BCscfaUIhuqtHwDpRIQ-2FyPFPox2rFtwQ-2Br9ZUoYCoqsq5-2FmVPTQE6tlOziiD4e3f-2FDXQ84SeQk-2FHy5LLP7elSSLI6oHz7mQ6FNWWrEJ0KeJpK7caVkwpEW4pZkI1bcd6sCE5Ap75MsIQoMMzGq1L2ovXRv8ddYFaMMtSoQ-3D-3D">https://docs.microsoft.com/ko-kr/azure/architecture/patterns/event-sourcing</a></p>
+
+<p>Replay : 이벤트소싱에서 이벤트를 되감아서 특정 버전 상태로 되돌리는 것</p>
+<ul>
+  <li>하지만 최신 버전 Replay는 병목의 원인</li>
+  <li>이를 해결하기 위해서 최신 버전의 상태를 <em>Snapshot</em>으로 지정해서 최적화</li>
+</ul>
+
+데이터 패브릭과 그리드 기반 분산 컴퓨팅
+
+<p>분산 캐시</p>
+
+<p>ex) <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3lV3XwYW3WBrpiWjViA0ejg-3DSWjH_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXstBJjAqqFQdhyr5f9w23c1JEj2OGLORkGXnxxQor9pQV-2B8Op3Cvd56WhXBkgrzNRihzUD1qoZz72pOEiKBDJJCg1lMIzP9mmoYvhmxB97irP4kd9w-2F-2BewVx1Y-2BH2d7XU1rUbdqoCThWYq3ZHXbqziwnJTQHvv4Z8iR5GWt4bgZdO5QzjbSqBir3SOwmym08bDCyP-2FFb4LMxZlAeCXcmQc6bSl8aAzHsS-2Fvw6hCb5RfVA-3D-3D">hazelcast</a></p>
+
+데이터 복제
+
+<ul>
+  <li>캐시 master/slave</li>
+  <li>복제를 통한 장애 극복
+    <ul>
+      <li>이벤트 유실 제거 (이벤트 publish/subscribe도 가능)</li>
+    </ul>
+  </li>
+</ul>
+
+이벤트 주도 패브릭과 도메인 이벤트
+
+<p>For Domain Event</p>
+
+지속적 쿼리
+
+<p>For CQRS</p>
+
+분산 처리
+
+<p>For Saga 또는 배치 병렬 처리</p>
+
+마무리
+
+<ul>
+  <li>Layerd Architecture &gt; DIP &gt; Hexagonal Architecture</li>
+  <li>SOA, REST, 분산 컴퓨팅</li>
+  <li>CQRS, Event Sourcing, pipe/filter, Saga</li>
+</ul>
+
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvfJw8VFlLT-2FdXhHCuHSQPlqFm2EpbGPkdMrH9HTvnEtQ-3D-3DJUsz_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXstBJjAqqFQdhyr5f9w23c1JEj2OGLORkGXnxxQor9pQd0vvrCUSQJV6G-2FwY5yv4O1lRgv2DJe-2FtXF8XRUZqOR47PLJXUSWJCqCCP-2ByKZKGRUHpN07cJz1vspZW92bBlJPdrSZ6pxPwfim7NaGnY4MKjho-2FTgDBq168iL-2FW6BAHWpAZ8J31yeMGCsHV57S0nNNG1Mfz5pQL49Y6Qsb8XteFuMxptC5PgxY2lUpsH8uP8Q-3D-3D">IDDD 4장. 아키텍처</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcU52iz_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXstBJjAqqFQdhyr5f9w23c1JEj2OGLORkGXnxxQor9pQfAk9RDOCuazHBzaeMEs2cJ7bhnDauHs4XdENgx0YpPLyOwuhIzp-2BbeRsLM0x9ylJdMvdmt0dIxhX-2B7dFpSTXixey-2BBBsvZOb1EvZ4x6Qyl5Ddv22WwiKXPoK3NYT1sB4NZA4nwgPG1XvZiYVPF0BuWAFQG7DtGhSo1xN6B-2FQgKZW0500u6GeCP0dx-2F6bKgfDQ-3D-3D">DevOOOOOOOOP</a> on May 08, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMMXyeGTnm8w1sDb0VtjjGPgyOf30nf1-2BeIjBSw-2FbMS1enC50LbeL7zTnMvZI4UODDXs2ZX-2FYyjntrQeifgkQJ7QiiqIacLahz8r3Rd-2FvIddOjFTIpyxiUeeYhUCOSBOEccEb-2Bq-2BD3GswoNdg46oK0F3XrNooukBBiv0bma-2F-2FP9bWgyF8mgtj2Zw4QgQv-2Fcy0g6P09VxasCtwzFcCA3SQAPaPbAsfmxShppuY7a7oNPjNg-3D-3D" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003896.html
+
+  </body>
+</html>

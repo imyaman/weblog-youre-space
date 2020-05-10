@@ -1,0 +1,358 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003897.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 개발자는 도메인보다 데이터에 초점을 맞추려는 경향이 있다. 속성만 있고 행위는 없는 데이터홀더 엔터티를 사용하는 이유 Object + Identity = Entity + Life Cycle(Mutable:가변성) 비즈니스 관계자는 보통 근사한 데이터베이스 테이블 편집기를 개발하는 데만 너무 많은 노력을 들인다. 올바른 도구를 선택하지...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 5ì¥. ìí°í° - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003896.amp.html" title="IDDD 4장. 아키텍처">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 5ì¥. ìí°í°">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003897.html">
+    <meta property="og:description" content=" 개발자는 도메인보다 데이터에 초점을 맞추려는 경향이 있다. 속성만 있고 행위는 없는 데이터홀더 엔터티를 사용하는 이유 Object + Identity = Entity + Life Cycle(Mutable:가변성) 비즈니스 관계자는 보통 근사한 데이터베이스 테이블 편집기를 개발하는 데만 너무 많은 노력을 들인다. 올바른 도구를 선택하지...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 개발자는 도메인보다 데이터에 초점을 맞추려는 경향이 있다. 속성만 있고 행위는 없는 데이터홀더 엔터티를 사용하는 이유 Object + Identity = Entity + Life Cycle(Mutable:가변성) 비즈니스 관계자는 보통 근사한 데이터베이스 테이블 편집기를 개발하는 데만 너무 많은 노력을 들인다. 올바른 도구를 선택하지...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003897.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 5ì¥. ìí°í°</h1>
+<time datetime="2020-05-11T01:25:18+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:18+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <blockquote>
+  <p>개발자는 도메인보다 <strong>데이터</strong>에 초점을 맞추려는 경향이 있다.</p>
+</blockquote>
+
+<p>속성만 있고 행위는 없는 데이터홀더</p>
+
+엔터티를 사용하는 이유
+
+<p>Object + Identity = Entity + Life Cycle(Mutable:가변성)</p>
+
+<p>비즈니스 관계자는 보통 근사한 데이터베이스 테이블 편집기를 개발하는 데만 너무 많은 노력을 들인다.
+올바른 도구를 선택하지 않았다면 공들여 다룬 CRUD 기반 솔루션의 비용은 너무 커진다.
+CRUD가 타당한 선택일 때가 Django, RoR등과 같은 언어 및 프레임워크가 비로소 합리적일 수 있는 순간이다.</p>
+
+<p><strong>하지만 대부분의 엔터프라이즈 애플리케이션에서는 Entity가 좋은 선택이다.</strong></p>
+
+고유 식별자
+
+사용자가 식별자를 제공한다.
+
+<p>자연키</p>
+
+<ul>
+  <li>변경될 가능성이 크고, 사용자를 신뢰하기 힘들다.</li>
+</ul>
+
+애플리케이션이 식별자를 생성한다.
+
+<p>UUID, Random, Timestamp NanoSeconds, …</p>
+
+<p><strong>읽을 수 있는 식별자</strong></p>
+
+<p>APM-P-08-14-2012-F36AB21C : 2012년 08월 14일에 생성된 애자일프로젝트관리(APM)의 Product(P)</p>
+
+<div><div><pre><span>@Entity</span>
+<span>class</span> <span>Product</span> <span>{</span>
+    <span>private</span> <span>ProductId</span> <span>productId</span><span>;</span>
+
+    <span>public</span> <span>Date</span> <span>creationDate</span><span>()</span> <span>{</span>
+        <span>return</span> <span>productId</span><span>.</span><span>creationDate</span><span>();</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>개인적으로 위 패턴을 선호하지 않는다.</li>
+  <li>대리키를 사용하고 표현이 필요한 코드는 따로 Unique 값으로 하는 것이 좋은 것 같다.</li>
+</ul>
+
+영속성 메커니즘이 식별자를 생성한다.
+
+<p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3queSeKG5Hy0VdOGIxyiEWOAWL10pbjxohLnfkDae35D-2FqAm7bv8VV4j0J65lF-2FTjK8qrXkzuEY3A-2FMxafofgStAeQDxC5QqAh6pjOoiCaXtHnhw_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXux7mY3kcEdufXCFVoES8roufYm-2FjP3JVZ4rqHGSSylkMcO5S7zXMgFnPVSWeocJvNTv7aXQR8rHl1tV974d73vBpDFTEKjbpoAIZsT3z6LYAAAWfbty-2BIpnos8BamDq9wquBAYl-2BEFN89eLinJVDKK0PhqMTLwPSqcjGMJI7zkct6WBL1GJ-2Fd88vCcrdTX8ZSaBK3gHGInooumbvzM2UetyxsEz4EHuhaW1R0-2Fbufq-2BA-3D-3D">JPA @GenerationType</a></p>
+<ul>
+  <li>AUTO, IDENTITY, SEQUENCE, TABLE</li>
+</ul>
+
+또 하나의 바운디드 컨텍스트가 식별자를 할당한다.
+
+<p>SKIP : 비추천</p>
+
+식별자 생성의 시점이 문제가 될 때
+
+<p><strong>식별자 생성 시점</strong></p>
+<ol>
+  <li>
+Repository에 <strong>저장 후</strong> 식별자가 생성</li>
+  <li>
+Repository에 <strong>저장 전</strong> 식별자가 생성</li>
+</ol>
+
+<p><strong>저장 후 식별자 생성 시 부작용</strong></p>
+<ol>
+  <li>
+<strong>도메인 이벤트</strong>를 발행하는 경우 식별자가 있어야지 정확히 발행 가능 : <em>문제 없음 - 아래 코드 참조</em>
+</li>
+  <li>
+Set에 추가할 시 다른 식별자와 같아질 수 있음 : <em>문제 없음 - 충돌가능성 없음</em>
+</li>
+</ol>
+
+<div><div><pre><span>@Entity</span>
+<span>class</span> <span>Product</span> <span>{</span>
+    <span>@Id</span> <span>@GeneratedValue</span>
+    <span>Long</span> <span>id</span><span>;</span>
+    <span>String</span> <span>name</span><span>;</span>
+
+    <span>Product</span><span>(</span><span>String</span> <span>name</span><span>)</span> <span>{</span>
+        <span>...</span>
+        <span>this</span><span>.</span><span>registerEvent</span><span>(</span><span>new</span> <span>ProductCreatedEvent</span><span>(</span><span>this</span><span>))</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>위 코드 처럼 이벤트를 발행해도 구독 시점에는 id속성이 할당되어 있어서 문제없이 이벤트 처리됨</li>
+</ul>
+
+<blockquote>
+  <p>저자는 빠른 식별자 할당을 선호한다고 했지만, 현재 기술 상으로 <strong>지연 할당도 전혀 문제 없다.</strong></p>
+</blockquote>
+
+대리 식별자
+
+<p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3queSeKG5Hy0VdOGIxyiEWOAWL10pbjxohLnfkDae35D-2FqAm7bv8VV4j0J65lF-2FTjK8qrXkzuEY3A-2FMxafofgStAeQDxC5QqAh6pjOoiCaXtEQVR_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXux7mY3kcEdufXCFVoES8roufYm-2FjP3JVZ4rqHGSSylkD1IAsGzN3o5dhkfIGFC57EcN3glT-2F27xrpo8NRH8m3WF9zIkcVPIvZHnnQ-2BXbGylNKiROfXVTQaEXvYMwHjMILin6BZ5NTXVX2jYqWMWwMk8TVaFKWyWcFakqg27PS-2FoZLwPm8Wo9IkoWevzr4TRbLthEykSDOudfu9bs-2FZB7L9wLL6xnEPnFSYklHo57bT4g-3D-3D">JPA @GenerationType</a></p>
+<ul>
+  <li>AUTO, IDENTITY, SEQUENCE, TABLE</li>
+</ul>
+
+<p>== 영속성 메커니즘이 식별자</p>
+
+식별자 안정성
+
+<p>수정 불가(값 객체), 엔터티 수명주기 동안 안정적으로 유지</p>
+
+<ul>
+  <li>식별자 Setter를 제거한다.</li>
+  <li>식별자 Setter가 존재하면 유효성 체크를 강화한다. &gt; 하지만 대리키를 사용해서 Setter가 존재하지 않는 것이 나은 것 같음
+</li>
+</ul>
+
+<p><strong>나는???</strong></p>
+<ul>
+  <li>왠만하면 단일 대리키를 사용한다. = 식별자 생성 지연</li>
+  <li>식별자는 Getter만 사용한다.</li>
+  <li>다른 접근이 요구되면 Unique 키로 보조한다.</li>
+</ul>
+
+엔터티 발견과 그들의 내부적인 특성
+
+<p>데이터 중심 모델 &gt; Getter + Setter &gt; 무기력한 도메인 모델</p>
+
+<p><strong>엔터티 발견</strong></p>
+
+<p>유비쿼터스 언어로 도메인 전문가와 대화하면서 나오는 개념들</p>
+
+<p>하지만</p>
+<ul>
+  <li>명사(이름) : 엔터티</li>
+  <li>동사(행위) : 메서드</li>
+</ul>
+
+<p>위처럼 단순하게 뽑아낸다고 생각하면 <strong>실수하는 것이다.</strong></p>
+
+<p>결국에는 도메인에 대한 토론을 통해 <strong>지식 탐구</strong>와 <strong>정제</strong>를 거쳐야지 깊은 도메인 모델을 얻을 수 있다.</p>
+
+엔터티와 속성을 알아내기
+
+<p><em>Example : User</em></p>
+
+<ul>
+  <li>사용자는 테넌시와 관련이 있고 테넌시의 제어를 받는다.</li>
+  <li>시스템의 사용자는 반드시 인증돼야 한다. : Need 검색</li>
+  <li>사용자는 이름과 연락처를 비롯한 개인정보를 갖고 있다.</li>
+  <li>사용자의 개인정보는 사용자나 관라자에 의해 변경될 수 있다. : 값 객체?</li>
+  <li>사용자의 보안 인증(비밀번호)은 변경될 수 있다.</li>
+</ul>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhEIImkLWX9pKlCAr6miN7DAyaigRIpWug75gSM8OiwfEQb07K10000" alt="앞선 발견에 따른 Tenant와 User라는 두 개의 엔터티"></p>
+
+<p>그림 5.5 앞선 발견에 따른 Tenant와 User라는 두 개의 엔터티</p>
+
+<p><em>추가 스팩</em></p>
+
+<ul>
+  <li>테넌트는 초대를 통한 많은 사용자의 등록을 허용한다.</li>
+  <li>테넌트는 활성화될 수 있고, 비활성화될 수도 있다.</li>
+  <li>시스템의 사용자는 반드시 인증돼야 하지만, 테넌트가 활성화되니 경우에만 인증이 가능하다.</li>
+</ul>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhEIImkLWX9pKlCA_5CKR2n2KlCAKsriqEH00gxvfLabbJQsIbKSoaev2Ncfbef19SKPUQbSzL2bOOMfnQXAom5YY4h1WeL0DMMvnUb8EdFooz9LKZABod9pxLIUBspvVM6XjUREjxEsF6wQuh2cwbJWAotCwUydZ3dTVSIBeHJTNMXpaCH0xk3oo4rBmNeFG00" alt="엔터티가 발견해서 이름 지은 후에는 이를 고유하게 식별하고 찾을 수 있도록 해주는 속성을 알아내자"></p>
+
+<p>그림 5.6 엔터티가 발견해서 이름 지은 후에는 이를 고유하게 식별하고 찾을 수 있도록 해주는 속성을 알아내자</p>
+
+<p><em>확인 스팩</em></p>
+
+<ul>
+  <li>테넌트 : 식별자와 엑세스 서비스와 그 밖에 다른 온라인 서비스의 명명된 조직적 구독자, 초대를 통해 사용자를 등록</li>
+  <li>사용자 : 테넌티 내에 보안 주체. 고유 사용자명과 암호화된 비밀번호를 가진다.
+    <ul>
+      <li>
+SecurityPricipal : 인증 주체 값 객체 - 추후에 알아보자</li>
+    </ul>
+  </li>
+  <li>암호화 서비스 : 암호화, 복호화</li>
+</ul>
+
+필수 행동 파헤치기
+
+<p><em>Tenant의 스팩</em></p>
+
+<ul>
+  <li>테넌트는 활성화되거나 비활성화될 수 있다.</li>
+</ul>
+
+<div><div><pre><span>@Entity</span>
+<span>class</span> <span>Tenant</span> <span>{</span>
+    <span>void</span> <span>activate</span><span>()</span> <span>{</span>
+        <span>// TODO 구현</span>
+    <span>}</span>
+    <span>void</span> <span>deactivate</span><span>()</span> <span>{</span>
+        <span>// TODO 구현</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/LSw_2i903CVn_PuYemvz0Ib77HoS_RE7NgY1QuRaLq74T_T4GJf-VXc-6GBiMEQQnieHT1PZmx5Gtr-vBfBpwj3cWq7no9cUYSXubXsTu6fJ8u_GEqCssuOYAshiF_p2PTA0-2N4s_1A_sxdEjtG_O9f42ljlJS0" alt="테넌트에 필수적인 행동 추가"></p>
+
+<p>그림 5.7 테넌트에 필수적인 행동 추가</p>
+
+<ul>
+  <li>
+activate() : 테넌트 활성화</li>
+  <li>
+deactivate() : 테넌트 비활성화</li>
+  <li>
+isActive() : 사용자는 <em>테넌트가 활성화된 경우</em>에만 인증이 가능하다.
+    <ul>
+      <li>인증을 위해 AuthenticationService가 필요</li>
+    </ul>
+  </li>
+  <li>
+registerUser() : 테넌트는 초대를 통해서 <em>사용자 등록</em>을 허용한다.</li>
+</ul>
+
+<p><em>User의 스팩</em></p>
+
+<ul>
+  <li>사용자는 이름과 연락처를 비롯한 개인정보를 갖고 있다. : Person Entity 분리</li>
+  <li>사용자의 개인정보는 사용자나 관리자에 의해 변경될 수 있다. : change?()
+</li>
+  <li>사용자의 보안 인증(비밀번호)은 변경될 수 있다. : changePassword()
+</li>
+</ul>
+
+<p><img src="http://www.plantuml.com/plantuml/svg/RP2zIWH148JpUOeEDTWNE8xXG0mk4S6VlDrjpuNTRfdfHKGE30n44uCL50nz037IPnhl7Umx1svXpOQlcggQcaN5e5tRkBB16E6O65dd5KodfzXqv7qMJY85W_kijLvx3pSEe3F6sD84ZZJKl31qQRTN4ge1AY-G5tIOXPtTBQ8GXR4vC8j_y9wmOgbpFfVGejR2ThHqB4fm9ghIJY1ztwMFs_HvlthvIWyz_3ptzbgzzkdfBJs-v-v_ZeFscOyJHjzUTnl0xJn5iPd4RNOfVCvmEQemCdOVgcjZDoEkRFjV" alt="User 상세 모델링"></p>
+
+<p>그림 5.8 User 상세 모델링</p>
+
+역할과 책임
+
+<p><strong>어떤 설계를 하더라도, 유비쿼터스 언어가 기술적 선호보다 항상 우위에 서도록 하자. DDD에서는 비즈니스 도메인 모델이 가장 중요하다.</strong></p>
+
+생성
+
+<p>고정자(Invariant:불변식)을 지킨다. &gt; 엔터티의 전체 수명주기에 걸쳐 트랜잭션적 일관성이 유지돼야 하는 상태</p>
+
+<p>복잡한 엔터티 생성을 위해서 Factory를 사용한다.</p>
+
+유효성 검사
+
+<ul>
+  <li>특성 : 불변?</li>
+  <li>속성 : 가변?</li>
+</ul>
+
+<p>DBC(Design By Contract) : 계약의 의한 설계</p>
+
+<ul>
+  <li>Pre condition, Post condition, Invariant로 설명</li>
+  <li>하지만 Java 등의 언어에서는 보호절로써 처리함 : 방어적 프로그램</li>
+</ul>
+
+<p><strong>유효성 체크의 책임 DB가 아니라 도메인이 져야한다.</strong></p>
+
+<ul>
+  <li>유효성 검사의 책임이 너무 커지면 도메인 모듈(패키지)내 Validator 클래스 분리한다.</li>
+  <li>with 명세 패턴, 전략 패턴</li>
+</ul>
+
+<p><em>유효성 체크 책임 위치</em></p>
+
+<ul>
+  <li>엔터티</li>
+  <li>엔터티에서 분리된 Validator로 위임</li>
+  <li>도메인 서비스</li>
+</ul>
+
+변화 추적
+
+<p>가장 실용적인 변경 추적 : 도메인 이벤트 + 이벤트 저장소 = 이벤트 소싱!</p>
+
+<ul>
+  <li>
+<a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3jzp-2Bz4YkH-2FoIkuD5cRktoAxRvxKiRuhPDTWZ8UBUQVdb-2BkTcxwcuqqoekKXAipZyT-2FUoZU1dhtJ7vgJnxia9vKM5XvXmOpSN33w4YdRkx5CDzHD_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXux7mY3kcEdufXCFVoES8roufYm-2FjP3JVZ4rqHGSSylkF9PB8ZoIGHryfAvSGCjrAVw9IWxgQM9enDYFFbXR-2FKTMK51J4yzg0IUCEpM61-2FEVmTeLELrqp7uTGp0RoxQPDq4ggy5gOpKPqhicxnom7yyo9-2Ft6YpVqvWgGWo35RV-2BZLR6699Jg-2BIJbHzBHWsW-2BBOR2OwT-2BQpp0j9mROmZquqB1K1MkY4uYxUt1qFErghizA-3D-3D">Spring Data(Hibernate) envers</a>도 꽤 쓸만하다.</li>
+</ul>
+
+마무리
+
+<ul>
+  <li>식별자</li>
+  <li>유비쿼터스 언어를 바탕으로 엔터티 모델링</li>
+  <li>엔터티 구성, 유효성 검사, 변경 추적 등 구현</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvuLaWHh-2FE-2BcJIputXz5LzMhD4AHZ-2B3DTqrOrwHmDm47ag-3D-3D_lg5_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXux7mY3kcEdufXCFVoES8roufYm-2FjP3JVZ4rqHGSSylkIh-2Brk3-2BhtvnKGjycdIRUJ-2Beexhz8olonClPMBruoQAeny5R1AEqGQYQfItbcwvjk5J8FsU8dXSAj3TSypIaJyY-2FGxi6cqCHYK3ThmHr1xLKH5xUX0HCVKxoi6-2B8U481Nek7VC8vHkBWWzIUVow7v8fuhEifhV8qnF-2FFqOiRJixz04PIcdBKZNIHf60BPKnkJA-3D-3D">IDDD 5장. 엔터티</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUTCGC_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXux7mY3kcEdufXCFVoES8roufYm-2FjP3JVZ4rqHGSSylkKDVLHCjCV-2BZoALjL87TgfvvYQMzW3b0CzMTskAyByWmGYuTIDaZbeWaeE3GR5ytrKgoDz1bfHXxOqMwOJ4BhqzxYO-2FjseCcbsZB17gPZVhMbk4gN3mdZEVFKWrM-2BZIu3kcMnRTaKiqcSwhJ4j8SyRp3wWz-2BWZThw4RSaSFNaFO052ZiL1G2QmciUQ9mPdvhfg-3D-3D">DevOOOOOOOOP</a> on May 10, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMP1QpIxIopd7ehxyjCK4MkIYdKnx2mi1ID88tZnORQI-2FRDLgPR2is1TD6-2FZ-2Bni-2BntsItkgcwiN8iD4JaaVAyDH9Vyk7w7ncsGR7Qr-2BWVRZaQ3Fsx-2Fl-2FgVB5zXBKkJmAYAbqWW7sW3-2FHcugOa6JesU5hd-2F8bVfISVQnb7H2MMhs1vZkV30RDiMdfZOl7jxBHoJeQ7LBcqtB25D-2FnZiM5I-2BgL-2Fn8Vx74-2BxyUoQ-2F6fD9ijBw-3D-3D" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003897.html
+
+  </body>
+</html>

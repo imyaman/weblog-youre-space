@@ -1,0 +1,199 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003892.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 동기 시작은 popit 아티클 어느날 popit에 sonarqube를 이용한 코드 자동리뷰 아티클이 올라왔습니다. http://www.popit.kr/내코드를-자동으로-리뷰해준다면-by-sonarqube/ 조직장(요다)이 이것을 팀 내에 적용해보자고 해서 (이미 저희 팀은 sonarqube로 정적분석을 하고 있습니다.) 적용을 시작합니다. 생각보다 적용이 쉽지 않으며, 설정 포인트도 많습니다. 물론 한 번 힘들게...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IntelliJ SonarLint Plugin - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003891.amp.html" title="클린소프트웨어 Part 6. ETS 사례 연구">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IntelliJ SonarLint Plugin">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003892.html">
+    <meta property="og:description" content=" 동기 시작은 popit 아티클 어느날 popit에 sonarqube를 이용한 코드 자동리뷰 아티클이 올라왔습니다. http://www.popit.kr/내코드를-자동으로-리뷰해준다면-by-sonarqube/ 조직장(요다)이 이것을 팀 내에 적용해보자고 해서 (이미 저희 팀은 sonarqube로 정적분석을 하고 있습니다.) 적용을 시작합니다. 생각보다 적용이 쉽지 않으며, 설정 포인트도 많습니다. 물론 한 번 힘들게...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 동기 시작은 popit 아티클 어느날 popit에 sonarqube를 이용한 코드 자동리뷰 아티클이 올라왔습니다. http://www.popit.kr/내코드를-자동으로-리뷰해준다면-by-sonarqube/ 조직장(요다)이 이것을 팀 내에 적용해보자고 해서 (이미 저희 팀은 sonarqube로 정적분석을 하고 있습니다.) 적용을 시작합니다. 생각보다 적용이 쉽지 않으며, 설정 포인트도 많습니다. 물론 한 번 힘들게...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003892.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IntelliJ SonarLint Plugin</h1>
+<time datetime="2020-05-11T01:25:14+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:14+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    동기
+
+시작은 popit 아티클
+
+<p>어느날 popit에 sonarqube를 이용한 코드 자동리뷰 아티클이 올라왔습니다.</p>
+
+<ul>
+  <li><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=wC3KXI14r-2BhtUZYhlxRDF35A7Tbzl-2FXflV1EoZ4PuwLZ79tPFLXvkMbyY4aYKaptwvHIfEOrndJQrnu0ohv1-2F6dED9K0ntgvRsN2PuC-2FGOQo4O649w7xXqvF2HgwWBjUZKMfRcqlajROrjCFkMypI8OjiRMarbf8vPZEg1SDhGHvSGM-2FUSHxRq-2FRGvDEl-2Fuz8yxVBNdn7tkqczyL6wxFy5GNXpcwXhBh-2Fz-2Bg-2B3pcUm0-3DwG2z_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXta1xyACqjC18frvLXBvjlySrv40GWLavm-2BWdyyP3ZCxBgihWJwnROuXAeRvWRMBr0gTV3G3raoVlwmVKyzC7GJHW5C3SZok8uyAiHYpPoqkQS0Z5fi4-2FLkAFT-2B82SjeqTEUl78kq1eob4P0E-2BRPZ-2BsnAVpMTaUznf6-2B-2FGdV4aREwfHn2zb22DE7gWnxLIK1VaQRPhqZkndc12FIpg97pd43coMYOMHN5A4lrIPjM6zmg-3D-3D">http://www.popit.kr/내코드를-자동으로-리뷰해준다면-by-sonarqube/</a></li>
+</ul>
+
+<p>조직장(요다)이 이것을 팀 내에 적용해보자고 해서 (이미 저희 팀은 sonarqube로 정적분석을 하고 있습니다.) 적용을 시작합니다.</p>
+
+<p>생각보다 적용이 쉽지 않으며, 설정 포인트도 많습니다. 물론 한 번 힘들게 설정하면 그 이후에는 자동화되기 때문에 tradeoff 할 만 하지요. 적용할 프로젝트 수 자체가 많으면 초기 설정이 조금 힘들 순 있습니다. - 하지만 단순 반복 작업이기 때문에 <em>복사하기-붙여넣기</em>를 잘하면 되긴 합니다. -</p>
+
+<p><strong>하지만</strong> 코드를 작성하고, 커밋하고, 푸시하고, PullRequest를 올려야지 정적분석 피드백을 받을 수 있습니다. <strong>즉, 코드 작성 시와 정적분석 피드백 시 사이의 시간 차가 너무 큽니다.</strong></p>
+
+<p>그래서 <strong>코드를 작성과 가능한 가까운 시간에 바로 피드백</strong>을 받는 것이 더 좋지 않을까 하는 생각이 들었습니다.</p>
+
+대안 : SonarLint
+
+<blockquote>
+  <p>그러던 중 팀원 콤틴이 IDEA plugin인 SonarLint를 사용하는 것을 추천하였습니다.</p>
+</blockquote>
+
+<p>팀 내에서 IntelliJ IDEA를 사용하고 있었고, 확실히 합리적인 선택이 될 것 같았습니다.</p>
+
+SonarLint 적용
+
+Install
+
+<ul>
+  <li><em>preference &gt; plugins</em></li>
+  <li>
+SonarLint 검색</li>
+  <li>결과창 내 Search in repositories 링크 선택 or 하딘 Browse repositories... 버튼 선택</li>
+</ul>
+
+<p><img src="/images/2018/04/sonarlint-search.png" alt="SonarLint 검색"></p>
+
+<ul>
+  <li>
+Install and Restart IntelliJ IDEA
+</li>
+</ul>
+
+<blockquote>
+  <p>Staring과 다운로드 갯수가 많고, 최근 업데이트도 지속되고 있는 것 같아서 믿을만한 플러그인 같습니다</p>
+</blockquote>
+
+Install 확인
+
+<p><img src="/images/2018/04/sonarlint-after-install.png" alt="SonarLint after install"></p>
+
+Configuration
+
+<p>기본적인 설정만으로도 충분히 사용할 수 있으며 <strong>sonarqube 서버가 없어도</strong> 사용에 문제가 없습니다.</p>
+
+SonarQube 서버 연동
+
+<p>서버 연동을 하게 되면 더 다양한 분석룰을 팀 내 전반적으로 일관성 있게 관리할 수 있습니다.</p>
+
+<p><em>preference &gt; Other Settings &gt; SoanrLint General Settings</em></p>
+
+<p><img src="/images/2018/04/sonarlint-general-setting.png" alt="SoanrLint General Settings"></p>
+
+<ul>
+  <li>
+Automatically trigger analysis 체크하는 것을 추천
+    <ul>
+      <li>또는 해제하고 commit 시에만 분석하는것도 좋음</li>
+    </ul>
+  </li>
+</ul>
+
+<p>위 화면을 통해서 <em>적절하게</em> 설정하면 됨</p>
+
+<blockquote>
+  <p>SoanrLint Project Settings 를 통한 설정도 가능</p>
+</blockquote>
+
+<p><img src="/images/2018/04/sonarlint-project-setting.png" alt="SoanrLint Project Settings"></p>
+
+Commit 시 분석 추가
+
+<p>커밋(Cmd + K) 창에서</p>
+
+<p><img src="/images/2018/04/sonarlint-pref-commit.png" alt="SoanrLint Commit Setting"></p>
+
+<ul>
+  <li>
+Perform SonarLint analysis 를 선택 (기본으로 체크되어 있음)</li>
+  <li>
+<strong>개인적으로 추천</strong> commit 할 때마다 분석이 됨</li>
+</ul>
+
+Usage
+
+<p><strong>현재 파일 분석</strong></p>
+
+<p>mac : Cmd + Shift + S
+or</p>
+
+<p><img src="/images/2018/04/sonarlint-currentfile.png" alt="SoanrLint Analyze Current"></p>
+
+<p><strong>그 외 가능한 사용법</strong></p>
+
+<ul>
+  <li>전체 파일 분석 : Analyze All Files with SonarLint
+</li>
+  <li>VCS(ex: git)상 변경된 분석 검사 : Analyze VCS Changed Files with SonarLint
+</li>
+</ul>
+
+<p><img src="/images/2018/04/sonarlint-action.png" alt="SoanrLint IDEA Actio"></p>
+
+<p>*Cmd + Shift + A, SonarLint로 검색한 액션들</p>
+
+Analyze Example
+
+<pre><span>public</span> <span>class</span> <span>AccountRestController</span> <span>{</span>
+<span>...</span>
+    <span>@PostMapping</span>
+    <span>public</span> <span>ResponseEntity</span><span>&lt;?&gt;</span> <span>create</span><span>(</span><span>@RequestBody</span> <span>AccountDto</span><span>.</span><span>Create</span> <span>create</span><span>)</span> <span>{</span>
+        <span>Account</span> <span>created</span> <span>=</span> <span>accountService</span><span>.</span><span>create</span><span>(</span><span>create</span><span>);</span>
+        <span>return</span> <span>ResponseEntity</span><span>.</span><span>created</span><span>(</span><span>toLocationUri</span><span>(</span><span>created</span><span>.</span><span>getId</span><span>())).</span><span>build</span><span>();</span>
+    <span>}</span>
+<span>...</span></pre>
+
+<ul>
+  <li>detection point : ResponseEntity&lt;?&gt;
+</li>
+</ul>
+
+<p><img src="/images/2018/04/sonarlint-analysis-current.png" alt="SoanrLint analysis Current"></p>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvY8ImQHpjKKMx3JxjYhLsEtzUzP7eze8b0RWJYVCmlwAgUjP5I6sy6bihpcqH-2BbnU-3DOYDO_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXta1xyACqjC18frvLXBvjlySrv40GWLavm-2BWdyyP3ZCxK2cB63W91RVdhBtRHf1SGbctzyOGVpS4wlcTBqXTcY8Cf-2FMiLVC-2B5Nmm5op01iHEVHsQ4XCH36v6f17pcQgMRc4clmuOBva4-2BFXPaAG8HyliWJZZ7aYIDuvbce-2BVnUo1AMfQhtbIMW6FXMGB5xfprOqorv-2B4AWOWCR2DuX5CAZtJy9VUzbYFDZu5K44Ikix3Q-3D-3D">IntelliJ SonarLint Plugin</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUKj6T_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXta1xyACqjC18frvLXBvjlySrv40GWLavm-2BWdyyP3ZCxA2oB-2Bwtym6UDn-2FdFvET81CkK3zLDbf3jTxKePEFsUkQNhmFSF-2Bpf8QJDe12CFpdG-2BC07DPyZXSh2jHKr-2BB8miCeWZfn3Eep8bI7qvJ50SwxpaXec5CvcEQ924n0CHZT5NkN9pGuH7TC8lord8rbW0xGILJ2itvFyMt8enIeGly3oXMCzs-2FZfSwt1Ic9bl2yLA-3D-3D">DevOOOOOOOOP</a> on April 11, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMPVgy9fTKscmBfHhy191pcuupLZ3-2FU5evwyCoDO3bhNKPOM5znSZmNW7-2Fysvg4eANh8IF6csnMqylGrBRY33agzDCIzkT-2FIGk5hfnVQLTIp1hoH1jOi98cq1pGCp16T9gMjCUQfoeB9BPcpMiNiP2wuJUBrW2BGwqHD7B8PR2RFiTrE1mrbfbhlVKoDnwWGYfqciQaL9Tx-2FbT3BKSwyP76cxC-2F-2Be-2BQxGlZSDa8CQmVsMQ-3D-3D" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003892.html
+
+  </body>
+</html>

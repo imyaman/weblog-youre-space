@@ -1,0 +1,592 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003905.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 전역(global) 액세스가 필요한 각 객체의 타입이다, 해당 타입의 모든 객체가 담긴 인메모리 컬렉션이란 허상을 제공하는 객체를 생성하자. 잘 알려진 전역의 인터페이스를 통한 액세스를 설정하자. 객체를 추가하거나 제거하는 메소드를 제공하자… 일정 조건에 부합되는 특성을 갖는 객체를 선택해 완전히 인스턴스화된 객체나...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>IDDD 12ì¥. ë¦¬íì§í ë¦¬ - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003904.amp.html" title="IDDD 11장. 팩토리">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="IDDD 12ì¥. ë¦¬íì§í ë¦¬">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003905.html">
+    <meta property="og:description" content=" 전역(global) 액세스가 필요한 각 객체의 타입이다, 해당 타입의 모든 객체가 담긴 인메모리 컬렉션이란 허상을 제공하는 객체를 생성하자. 잘 알려진 전역의 인터페이스를 통한 액세스를 설정하자. 객체를 추가하거나 제거하는 메소드를 제공하자… 일정 조건에 부합되는 특성을 갖는 객체를 선택해 완전히 인스턴스화된 객체나...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 전역(global) 액세스가 필요한 각 객체의 타입이다, 해당 타입의 모든 객체가 담긴 인메모리 컬렉션이란 허상을 제공하는 객체를 생성하자. 잘 알려진 전역의 인터페이스를 통한 액세스를 설정하자. 객체를 추가하거나 제거하는 메소드를 제공하자… 일정 조건에 부합되는 특성을 갖는 객체를 선택해 완전히 인스턴스화된 객체나...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003905.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">IDDD 12ì¥. ë¦¬íì§í ë¦¬</h1>
+<time datetime="2020-05-11T01:25:24+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:24+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    <blockquote>
+  <p>전역(global) 액세스가 필요한 각 객체의 타입이다, 해당 타입의 모든 객체가 담긴 인메모리 컬렉션이란 허상을 제공하는 객체를 생성하자.
+잘 알려진 전역의 인터페이스를 통한 액세스를 설정하자.
+객체를 추가하거나 제거하는 메소드를 제공하자…
+일정 조건에 부합되는 특성을 갖는 객체를 선택해 완전히 인스턴스화된 객체나 여러 객체의 컬렉션으로 반환하는 메소드를 제공하자…
+애그리게잇에 대해서만 리파지토리를 제공하자.. [Evans]</p>
+</blockquote>
+
+<p>애그리게잇 : 리파지토리 = 1(..N):1</p>
+
+컬렉션 지향 리파지토리
+
+<div><div><pre><span>package</span> <span>java</span><span>.</span><span>util</span><span>;</span>
+
+<span>public</span> <span>interface</span> <span>Collection</span> <span>{</span>
+    <span>public</span> <span>boolean</span> <span>add</span><span>(</span><span>Object</span> <span>o</span><span>);</span>
+    <span>public</span> <span>boolean</span> <span>addAll</span><span>(</span><span>Collection</span> <span>c</span><span>);</span>
+    <span>public</span> <span>boolean</span> <span>remove</span><span>(</span><span>Object</span> <span>o</span><span>);</span>
+    <span>public</span> <span>boolean</span> <span>removeAll</span><span>(</span><span>Collection</span> <span>c</span><span>);</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>같은 인스턴스를 두번 추가되도록 허용해서는 안된다.</li>
+  <li>
+<em>재저장</em>을 할 필요가 없다.
+    <ul>
+      <li>그저 객체의 상태를 변경시키면 자동으로 저장될 뿐이다.</li>
+    </ul>
+  </li>
+  <li>결국 Set처럼 행동해야 한다.</li>
+</ul>
+
+<p><em>재저장</em>할 필요가 없다면 객체의 상태를 추적해야한다.</p>
+
+<p><em>영속성 매커니즘의 암시적 변경 추적 기법</em></p>
+
+<ul>
+  <li>암시적 읽기 시 복사(Copy-on-Read) : 읽을 때 복사본을 만들어 두고 복사본과 비교해서 변경된 것이 있으면 Commit 시킨다.</li>
+  <li>암시적 쓰기 시 복사(Copy-on-Write) : 프록시로 감싸두고 Dirty(상태 변경이 되면)인 경우 Commit 시킨다.</li>
+</ul>
+
+하이버네이트 구현
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>collaboration</span><span>.</span><span>domain</span><span>.</span><span>model</span><span>.</span><span>calendar</span><span>;</span>    <span>//!!</span>
+
+<span>interface</span> <span>CalendarEntryRepository</span> <span>{</span>
+    <span>void</span> <span>add</span><span>(</span><span>CalendarEntry</span> <span>calendarEntry</span><span>);</span>
+    <span>void</span> <span>addAll</span><span>(</span><span>Collection</span><span>&lt;</span><span>CalendarEntry</span><span>&gt;</span> <span>calendarEntries</span><span>);</span>
+    <span>void</span> <span>remove</span><span>(</span><span>CalendarEntry</span> <span>calendarEntry</span><span>);</span>
+    <span>void</span> <span>removeAll</span><span>(</span><span>Collection</span><span>&lt;</span><span>CalendarEntry</span><span>&gt;</span> <span>calendarEntries</span><span>);</span>
+
+    <span>CalendarEntry</span> <span>calendarEntryOfId</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>CalendarEntriyId</span> <span>id</span><span>);</span>
+    <span>Collection</span><span>&lt;</span><span>CalendarEntry</span><span>&gt;</span> <span>calendarEntriesOfCalendar</span><span>(</span>
+        <span>Tenant</span> <span>tenant</span><span>,</span> <span>CalendarId</span> <span>calendarId</span><span>);</span>
+    <span>Collection</span><span>&lt;</span><span>CalendarEntry</span><span>&gt;</span> <span>overlappingCalendarEntries</span><span>(</span>
+        <span>Tenant</span> <span>tenant</span><span>,</span> <span>CalendarId</span> <span>calendarId</span><span>,</span> <span>TimeSpan</span> <span>timeSpan</span><span>);</span>
+
+    <span>CalendarEntryId</span> <span>nextIdentity</span><span>();</span>
+<span>}</span>
+</pre></div></div>
+<ul>
+  <li>
+package는 도메인 모델과 함께한다.</li>
+  <li>물리적 삭제 VS <strong>논리적 삭제</strong>
+</li>
+</ul>
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>collaboration</span><span>.</span><span>infrastructure</span><span>.</span><span>persistence</span><span>;</span>
+
+<span>public</span> <span>class</span> <span>HibernateCalendarEntryRepository</span> 
+        <span>implements</span> <span>CalendarEntryRepository</span> <span>{</span>
+    
+    <span>private</span> <span>final</span> <span>SpringHibernateSessionProvider</span> <span>sessionProvider</span><span>;</span>
+
+    <span>public</span> <span>HibernateCalendarEntryRepository</span><span>(</span>
+            <span>SpringHibernateSessionProvider</span> <span>sessionProvider</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>sessionProvider</span> <span>=</span> <span>sessionProvider</span><span>;</span>
+    <span>}</span>
+
+    <span>private</span> <span>org</span><span>.</span><span>hibernate</span><span>.</span><span>Session</span> <span>session</span><span>()</span> <span>{</span>
+        <span>return</span> <span>this</span><span>.</span><span>sessionProvider</span><span>.</span><span>session</span><span>();</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>add</span><span>(</span><span>CalendarEntry</span> <span>calendarEntry</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>session</span><span>().</span><span>saveOrUpdate</span><span>(</span><span>calendarEntry</span><span>);</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>addAll</span><span>(</span><span>Collection</span><span>&lt;</span><span>CalendarEntry</span><span>&gt;</span> <span>calendarEntries</span><span>)</span> <span>{</span>
+        <span>for</span> <span>(</span><span>CalendarEntry</span> <span>each</span> <span>:</span> <span>calendarEntries</span><span>)</span> <span>{</span>
+            <span>this</span><span>.</span><span>session</span><span>().</span><span>saveOrUpdate</span><span>(</span><span>each</span><span>);</span>
+        <span>}</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>remove</span><span>(</span><span>CalendarEntry</span> <span>calendarEntry</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>session</span><span>().</span><span>delete</span><span>(</span><span>calendarEntry</span><span>);</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>removeAll</span><span>(</span><span>Collection</span><span>&lt;</span><span>CalendarEntry</span><span>&gt;</span> <span>calendarEntries</span><span>)</span> <span>{</span>
+        <span>for</span> <span>(</span><span>CalendarEntry</span> <span>each</span> <span>:</span> <span>calendarEntries</span><span>)</span> <span>{</span>
+            <span>this</span><span>.</span><span>session</span><span>().</span><span>delete</span><span>(</span><span>each</span><span>);</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>package : infrastructure.persistence
+</li>
+  <li>
+Set과 유사한 행위 제공</li>
+  <li>
+Cascade를 통한 연관된 엔터티를 같이 변경하는 기능도 있음</li>
+  <li>복잡한 조회의 경우 HQL을 이용
+    <ul>
+      <li>하지만 JPA를 사용한다면 JPQL을 사용하나, 현재까지는 querydsl 과 같은 기술이 좋은 것 같다.</li>
+    </ul>
+  </li>
+</ul>
+
+탑링크 구현에 대한 고려
+
+<p>탑링크는 명시적으로 <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ocOamlfi77b-2F8VFS2XYE3jvomhKARsqEFt5OzuMEla3OxFq7N8A2S9XgKdEV6E3vgwYgi4nZFLPZR0EX6t7X2A-3D-3DwMW5_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvwW4pdWHXONtD5tHoCXDUmj1qJCikhDwd8NNdKKxbaMrFCtRE0iiXICK85SGiKLO3e-2BizR1hG7yPdCCPJxvqRzA9LXigtOhL5iC0INcvtl0I-2BwhFkZLPx93KoArmnh0ycfUhuN-2FCTmHx9tvIXRZGj73o1Owu0kNsAw49pu8pt0-2FSJ-2FGDym59Qb7s9gAO19hAp8gaHn2eEHJu-2F44M1GCEqv">작업단위(Unit of work)</a>를 지정할 수 있다.</p>
+
+<ul>
+  <li>일종의 트랜잭션의 범위를 추상화 시킨 것</li>
+</ul>
+
+<div><div><pre><span>Calendar</span> <span>calendar</span> <span>=</span> <span>session</span><span>.</span><span>readObject</span><span>(...);</span>
+<span>UnitOfWork</span> <span>work</span> <span>=</span> <span>session</span><span>.</span><span>acquireUnitOfWork</span><span>();</span>
+<span>Calendar</span> <span>calendarToRename</span> <span>=</span> <span>work</span><span>.</span><span>registerObject</span><span>(</span><span>calendar</span><span>);</span>
+<span>calendarToRename</span><span>.</span><span>rename</span><span>(</span><span>"CollabOvation Project Calendar"</span><span>);</span>
+<span>work</span><span>.</span><span>commit</span><span>();</span>
+</pre></div></div>
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>collaboration</span><span>.</span><span>infrastructure</span><span>.</span><span>persistence</span><span>;</span>
+
+<span>public</span> <span>class</span> <span>ToplinkCalendarEntryRepository</span> 
+        <span>implements</span> <span>CalendarEntryRepository</span> <span>{</span>
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>add</span><span>(</span><span>Calendar</span> <span>calendar</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>unitOfWork</span><span>().</span><span>registerNewObject</span><span>(</span><span>calendar</span><span>);</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>editingCopy</span><span>(</span><span>Calendar</span> <span>calendar</span><span>)</span> <span>{</span>
+        <span>return</span> <span>(</span><span>Calendar</span><span>)</span> <span>this</span><span>.</span><span>unitOfWork</span><span>().</span><span>registerObject</span><span>(</span><span>calendar</span><span>);</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+영속성 지향의 리파지토리
+
+<ul>
+  <li>컬렉션 지향 리파지토리 : Set
+</li>
+  <li>영속성 지향 리파지토리 : HashMap
+    <ul>
+      <li>하지만 꼭 put를 해야한다. - 원자적 쓰기를 통제할 수 없음(트랜잭션 없음)</li>
+    </ul>
+  </li>
+</ul>
+
+<p>No-Sql 종류가 많다.</p>
+
+<ul>
+  <li>잼파이어</li>
+  <li>코히어런스</li>
+  <li>몽고DB</li>
+  <li>리악</li>
+</ul>
+
+코히어런스 구현
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>agilepm</span><span>.</span><span>domain</span><span>.</span><span>model</span><span>.</span><span>product</span><span>;</span>
+
+<span>interface</span> <span>ProductRepository</span> <span>{</span>
+    <span>ProductId</span> <span>nextIdentity</span><span>();</span>
+    <span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>allProductsOfTenant</span><span>(</span><span>Tenant</span> <span>tenant</span><span>);</span>
+    <span>Product</span> <span>productOfId</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>ProductId</span> <span>productId</span><span>);</span>
+    <span>void</span> <span>remove</span><span>(</span><span>Product</span> <span>product</span><span>);</span>
+    <span>void</span> <span>removeAll</span><span>(</span><span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>products</span><span>);</span>
+    <span>void</span> <span>save</span><span>(</span><span>Product</span> <span>product</span><span>);</span>
+    <span>void</span> <span>saveAll</span><span>(</span><span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>products</span><span>);</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>package</span> <span>com</span><span>.</span><span>saasovation</span><span>.</span><span>agilepm</span><span>.</span><span>infrastructure</span><span>.</span><span>persistence</span><span>;</span>
+
+<span>class</span> <span>CoherenceProductRepository</span> 
+        <span>implements</span> <span>ProductRepository</span> <span>{</span>
+    <span>private</span> <span>Map</span><span>&lt;</span><span>Tenant</span><span>,</span> <span>NamedCache</span><span>&gt;</span> <span>caches</span><span>;</span>
+
+    <span>public</span> <span>CoherenceProductRepository</span><span>()</span> <span>{</span>
+        <span>this</span><span>.</span><span>caches</span> <span>=</span> <span>new</span> <span>HashMap</span><span>&lt;&gt;();</span>
+    <span>}</span>
+
+    <span>private</span> <span>synchronized</span> <span>NamedCache</span><span>(</span><span>TenantId</span> <span>tenantId</span><span>)</span> <span>{</span>
+        <span>NamedCache</span> <span>cache</span> <span>=</span> <span>this</span><span>.</span><span>caches</span><span>.</span><span>get</span><span>(</span><span>tenantId</span><span>);</span>
+        <span>if</span> <span>(</span><span>cache</span> <span>==</span> <span>null</span><span>)</span> <span>{</span>
+            <span>// ageilepm:Product:TenantId</span>
+            <span>// 1단계 : 2단계 : 3단계</span>
+            <span>cache</span> <span>=</span> <span>CacheFactory</span><span>.</span><span>getCache</span><span>(</span>
+                <span>"agilepm.Product."</span> <span>+</span> <span>tenantId</span><span>.</span><span>id</span><span>(),</span>
+                <span>Product</span><span>.</span><span>class</span><span>.</span><span>getClassLoader</span><span>());</span>
+            <span>this</span><span>.</span><span>caches</span><span>.</span><span>put</span><span>(</span><span>tenantId</span><span>,</span> <span>cache</span><span>);</span>
+        <span>}</span>
+        <span>return</span> <span>cache</span><span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>save</span><span>(</span><span>Product</span> <span>product</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>cache</span><span>(</span><span>product</span><span>.</span><span>tenantId</span><span>())</span>
+            <span>.</span><span>put</span><span>(</span><span>this</span><span>.</span><span>idOf</span><span>(</span><span>product</span><span>),</span> <span>product</span><span>);</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>saveAll</span><span>(</span><span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>products</span><span>)</span> <span>{</span>
+        <span>Map</span><span>&lt;</span><span>String</span><span>,</span> <span>Product</span><span>&gt;</span> <span>productsMap</span> <span>=</span> 
+            <span>new</span> <span>HashMap</span><span>&lt;&gt;(</span><span>products</span><span>.</span><span>size</span><span>());</span>
+        <span>for</span> <span>(</span><span>Product</span> <span>each</span> <span>:</span> <span>products</span><span>)</span> <span>{</span>
+            <span>if</span> <span>(</span><span>tenantId</span> <span>==</span> <span>null</span><span>)</span> <span>{</span>
+                <span>tenantId</span> <span>=</span> <span>product</span><span>.</span><span>tenantId</span><span>();</span>
+            <span>}</span>
+            <span>productsMap</span><span>.</span><span>put</span><span>(</span><span>this</span><span>.</span><span>idOf</span><span>(</span><span>product</span><span>),</span> <span>each</span><span>);</span>
+        <span>}</span>
+        <span>this</span><span>.</span><span>cache</span><span>(</span><span>tenantId</span><span>).</span><span>putAll</span><span>(</span><span>productsMap</span><span>);</span>
+    <span>}</span>
+
+    <span>private</span> <span>String</span> <span>idOf</span><span>(</span><span>Product</span> <span>product</span><span>)</span> <span>{</span>
+        <span>return</span> <span>this</span><span>.</span><span>idOf</span><span>(</span><span>product</span><span>.</span><span>productId</span><span>());</span>
+    <span>}</span>
+    <span>private</span> <span>String</span> <span>idOf</span><span>(</span><span>ProductId</span> <span>productId</span><span>)</span> <span>{</span>
+        <span>return</span> <span>productId</span><span>.</span><span>id</span><span>();</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>remove</span><span>(</span><span>Product</span> <span>product</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>cache</span><span>(</span><span>product</span><span>.</span><span>tenantId</span><span>()).</span><span>remove</span><span>(</span><span>this</span><span>.</span><span>idOf</span><span>(</span><span>product</span><span>));</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>removeAll</span><span>(</span><span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>products</span><span>)</span> <span>{</span>
+        <span>for</span> <span>(</span><span>Product</span> <span>each</span> <span>:</span> <span>products</span><span>)</span> <span>{</span>
+            <span>this</span><span>.</span><span>remove</span><span>(</span><span>product</span><span>);</span>
+        <span>}</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>allProductsOfTenant</span><span>(</span><span>Tenant</span> <span>tenant</span><span>)</span> <span>{</span>
+        <span>Set</span><span>&lt;</span><span>Map</span><span>.</span><span>Entry</span><span>&lt;</span><span>String</span><span>,</span> <span>Product</span><span>&gt;&gt;</span> <span>entries</span> <span>=</span> 
+            <span>this</span><span>.</span><span>cache</span><span>(</span><span>tenant</span><span>).</span><span>entrySet</span><span>();</span>
+        <span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>products</span> <span>=</span> 
+            <span>new</span> <span>HashSet</span><span>&lt;</span><span>Product</span><span>&gt;(</span><span>entries</span><span>.</span><span>size</span><span>());</span>
+        <span>for</span> <span>(</span><span>Map</span><span>.</span><span>Entry</span><span>&lt;</span><span>String</span><span>,</span> <span>Product</span><span>&gt;</span> <span>entry</span> <span>:</span> <span>entries</span><span>)</span> <span>{</span>
+            <span>products</span><span>.</span><span>add</span><span>(</span><span>entry</span><span>.</span><span>getValue</span><span>());</span>
+        <span>}</span>
+        <span>return</span> <span>products</span><span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>Product</span> <span>productOfId</span><span>(</span><span>Tenant</span> <span>tenant</span><span>,</span> <span>ProductId</span> <span>productId</span><span>)</span> <span>{</span>
+        <span>return</span> <span>(</span><span>Product</span><span>)</span> <span>this</span><span>.</span><span>cache</span><span>(</span><span>tenant</span><span>).</span><span>get</span><span>(</span><span>this</span><span>.</span><span>idOf</span><span>(</span><span>productId</span><span>));</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+몽고DB 구현
+
+<ol>
+  <li>애그리게잇을 -&gt; 몽고DB포맷(직렬화), 몽고DB포맷 -&gt; 애그리게잇(역직렬화)</li>
+  <li>몽고DB 문서의 고유 식별자(_id)</li>
+  <li>몽고DB 노드/클러스터 참조</li>
+</ol>
+
+<div><div><pre><span>class</span> <span>MongoProductRepository</span> 
+        <span>extends</span> <span>MongoRepository</span><span>&lt;</span><span>Product</span><span>&gt;</span>
+        <span>implements</span> <span>ProductRepository</span> <span>{</span>
+    
+    <span>public</span> <span>MongoProductRepository</span><span>()</span> <span>{</span>
+        <span>super</span><span>();</span>
+        <span>this</span><span>.</span><span>serializer</span><span>(</span><span>new</span> <span>BSONSerializer</span><span>&lt;</span><span>Product</span><span>&gt;(</span><span>Product</span><span>.</span><span>class</span><span>));</span>
+    <span>}</span>
+
+    <span>public</span> <span>ProductId</span> <span>nextIdentity</span><span>()</span> <span>{</span>
+        <span>// 몽고DB에서 제공하는 식별자. _id 필드에 매핑시킬수 있음</span>
+        <span>return</span> <span>new</span> <span>ProductId</span><span>(</span><span>new</span> <span>ObjectId</span><span>().</span><span>toString</span><span>());</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>void</span> <span>save</span><span>(</span><span>Product</span> <span>product</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>databaseCollection</span><span>(</span>
+                <span>this</span><span>.</span><span>collectionName</span><span>(</span><span>product</span><span>.</span><span>tenantId</span><span>()))</span>
+            <span>.</span><span>save</span><span>(</span><span>this</span><span>.</span><span>serialize</span><span>(</span><span>product</span><span>));</span>
+    <span>}</span>
+
+    <span>protected</span> <span>String</span> <span>collectionName</span><span>(</span><span>TenantId</span> <span>tenantId</span><span>)</span> <span>{</span>
+        <span>return</span> <span>"product"</span> <span>+</span> <span>tenantId</span><span>.</span><span>id</span><span>();</span>
+    <span>}</span>
+
+    <span>protected</span> <span>String</span> <span>databaseName</span><span>()</span> <span>{</span>
+        <span>return</span> <span>"agilepm"</span><span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>allProductsOfTenant</span><span>(</span>
+            <span>TenantId</span> <span>tenantId</span><span>)</span> <span>{</span>
+        <span>Collection</span><span>&lt;</span><span>Product</span><span>&gt;</span> <span>products</span> <span>=</span> <span>new</span> <span>ArrayList</span><span>&lt;&gt;();</span>
+        <span>DBCursor</span> <span>cursor</span> <span>=</span> 
+            <span>this</span><span>.</span><span>databaseCollection</span><span>(</span>
+                <span>this</span><span>.</span><span>databaseName</span><span>(),</span>
+                <span>this</span><span>.</span><span>collectionName</span><span>(</span><span>tenantId</span><span>)).</span><span>find</span><span>();</span>
+        <span>while</span> <span>(</span><span>curosr</span><span>.</span><span>hasNext</span><span>())</span> <span>{</span>
+            <span>DBObject</span> <span>dbObject</span> <span>=</span> <span>cursor</span><span>.</span><span>next</span><span>();</span>
+            <span>Product</span> <span>product</span> <span>=</span> <span>this</span><span>.</span><span>deserialize</span><span>(</span><span>dbObject</span><span>);</span>
+            <span>products</span><span>.</span><span>add</span><span>(</span><span>product</span><span>);</span>
+        <span>}</span>
+        <span>return</span> <span>products</span><span>;</span>
+    <span>}</span>
+
+    <span>@Override</span>
+    <span>public</span> <span>Product</span> <span>productOfId</span><span>(</span>
+            <span>TenantId</span> <span>tenantId</span><span>,</span> <span>ProductId</span> <span>productId</span><span>)</span> <span>{</span>
+        <span>Product</span> <span>product</span> <span>=</span> <span>null</span><span>;</span>
+        <span>BasicDBObject</span> <span>query</span> <span>=</span> <span>new</span> <span>BasicDBObject</span><span>();</span>
+        <span>query</span><span>.</span><span>put</span><span>(</span><span>"producetId"</span><span>,</span> 
+            <span>new</span> <span>BasicDBObject</span><span>(</span><span>"id"</span><span>,</span> <span>productId</span><span>.</span><span>id</span><span>()));</span>
+        <span>DBCursor</span> <span>cursor</span> <span>=</span> 
+            <span>this</span><span>.</span><span>databaseCollection</span><span>(</span>
+                <span>this</span><span>.</span><span>databaseName</span><span>(),</span>
+                <span>this</span><span>.</span><span>collectionName</span><span>(</span><span>tenantId</span><span>)).</span><span>find</span><span>(</span><span>query</span><span>);</span>
+        <span>if</span> <span>(</span><span>cursor</span><span>.</span><span>hasNext</span><span>())</span> <span>{</span>
+            <span>product</span> <span>=</span> <span>this</span><span>.</span><span>deserialize</span><span>(</span><span>cursor</span><span>.</span><span>next</span><span>());</span>
+        <span>}</span>
+        <span>return</span> <span>product</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>class</span> <span>BSONSerializer</span><span>&lt;</span><span>T</span><span>&gt;</span> <span>{</span>
+    <span>DBObject</span> <span>serialize</span><span>(</span><span>String</span> <span>key</span><span>,</span> <span>T</span> <span>object</span><span>)</span> <span>{</span>
+        <span>DBObject</span> <span>serialization</span> <span>=</span> <span>this</span><span>.</span><span>serialize</span><span>(</span><span>object</span><span>);</span>
+        <span>serialization</span><span>.</span><span>put</span><span>(</span><span>"_id"</span><span>,</span> <span>new</span> <span>ObjectId</span><span>(</span><span>key</span><span>));</span>
+        <span>return</span> <span>serialization</span><span>;</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<div><div><pre><span>abstract</span> <span>class</span> <span>MongoRepository</span><span>&lt;</span><span>T</span><span>&gt;</span> <span>{</span>
+
+    <span>protected</span> <span>DBCollection</span> <span>databaseCollection</span><span>(</span>
+            <span>String</span> <span>databaseName</span><span>,</span> <span>String</span> <span>collectionName</span><span>)</span> <span>{</span>
+        <span>return</span> <span>MongoDatabaseProvider</span>
+                <span>.</span><span>database</span><span>(</span><span>databaseName</span><span>)</span>
+                <span>.</span><span>getCollection</span><span>(</span><span>collectionName</span><span>);</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>
+BSONSerializer 때문에 Setter를 제공할 필요가 없음</li>
+</ul>
+
+추가적인 행동
+
+<ul>
+  <li>예를 들면 count() or size()
+</li>
+  <li>또는 리파지토리에서 애그리게잇 파트를 쿼리하는 것 (성능상 잇점)
+    <ul>
+      <li>하지만 이건 안티패턴이기 때문에 가능한 사용하지 않는 것이 좋다 (애그리게잇 법칙 위배)</li>
+      <li>만약 그게 당연시 하다고 느껴지면 애그리게잇을 분리하는 것도 한 방법</li>
+    </ul>
+  </li>
+  <li>일반적으로 도메인 서비스 제어하가 어울린다.</li>
+</ul>
+
+<p>하지만 너무 유스케이스에 최적화된 조회 메서드를 많이 제공한다면 악취일 수도 있다</p>
+
+<ul>
+  <li>그런 경우 <strong>CQRS</strong>를 고려해보자</li>
+</ul>
+
+트랜잭션의 관리
+
+<p>트랜잭션 관리는 애플리케이션 계층의 책임이다. = 애플리케이션 서비스</p>
+
+<p><em>트랜잭션 관리 방법</em></p>
+
+<div><div><pre><span>class</span> <span>ApplicationServiceFacade</span> <span>{</span>
+    <span>// 명식적인 트랜잭션</span>
+    <span>public</span> <span>void</span> <span>doSomeUseCaseTask1</span><span>()</span> <span>{</span>
+        <span>Transaction</span> <span>transaction</span> <span>=</span> <span>null</span><span>;</span>
+        <span>try</span> <span>{</span>
+            <span>transaction</span> <span>=</span> <span>this</span><span>.</span><span>session</span><span>().</span><span>beginTransaction</span><span>();</span>
+            <span>// 도메인 모델을 사용한다.</span>
+            <span>transaction</span><span>.</span><span>commit</span><span>();</span>
+        <span>}</span> <span>catch</span> <span>(</span><span>Exception</span> <span>e</span><span>)</span> <span>{</span>
+            <span>if</span> <span>(</span><span>transaction</span> <span>!</span> <span>null</span><span>)</span> <span>{</span>
+                <span>transaction</span><span>.</span><span>rollback</span><span>();</span>
+            <span>}</span>
+        <span>}</span>
+    <span>}</span>
+
+    <span>// 선언적인 트랜잭션</span>
+    <span>@Transactional</span>
+    <span>public</span> <span>void</span> <span>doSomeUseCaseTask2</span><span>()</span> <span>{</span>
+        <span>// 도메인 모델을 사용한다.</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>선언적인 방식이 더 낫다. 순수하게 도메인 로직에 위임하는 것에 집중할 수 있다.
+    <ul>
+      <li>관심사 분리!!</li>
+    </ul>
+  </li>
+</ul>
+
+경고
+
+<p>단일 트랜잭션에서 여러 애그리게잇을 수정을 커밋하는 기능을 과도하게 사용하지 않도록 주의하라.</p>
+
+타입 계층구조
+
+<p><img src="http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuKhEIImkLWXEBIhBJ4uDACeloqn9BLAevb9GAAaiIEMgXIe8JonAoab5LvPQKPAQbuAX7QOdFo-RU3qEG56WWm00" alt="Type Hierarchy"></p>
+
+<div><div><pre><span>// 도메인 모델의 클라이언트</span>
+<span>serviceProviderRepository</span><span>.</span><span>providerOf</span><span>(</span><span>id</span><span>)</span>
+        <span>.</span><span>scheduleService</span><span>(</span><span>date</span><span>,</span> <span>description</span><span>);</span>
+</pre></div></div>
+
+<ul>
+  <li>상위 타입(ServiceProvider)으로 처리</li>
+</ul>
+
+<div><div><pre><span>// 도메인 모델의 클라이언트</span>
+<span>if</span> <span>(</span><span>id</span><span>.</span><span>identifiesWarble</span><span>())</span> <span>{</span>
+    <span>serviceProviderRepository</span><span>.</span><span>warbleOf</span><span>(</span><span>id</span><span>)</span>
+            <span>.</span><span>scheduleWarbleService</span><span>(</span><span>date</span><span>,</span> <span>warbleDescription</span><span>);</span>
+<span>}</span> <span>else</span> <span>if</span> <span>(</span><span>id</span><span>.</span><span>identifiesWonkle</span><span>())</span> <span>{</span>
+    <span>serviceProviderRepository</span><span>.</span><span>wonkleOf</span><span>(</span><span>id</span><span>)</span>
+            <span>.</span><span>scheduleWonkleService</span><span>(</span><span>date</span><span>,</span> <span>wonkleDescription</span><span>);</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>하위 타입을 클라이언트에서 알고 분기 처리 해야하는 책임이 늘어난다.</li>
+  <li>위 코드는 전형적인 악취이다.</li>
+</ul>
+
+<p><strong>그러므로 상위타입은 하위타입에 대한 구분정보(type 속성)를 알고 있어야 한다.</strong></p>
+
+<ul>
+  <li>그렇게 된다면 Repository 계층에서 캡슐화 시켜서 하위 타입 별 분기 처리를 할 수 있을 것이다.</li>
+</ul>
+
+<div><div><pre><span>@Entity</span>
+<span>class</span> <span>ServiceProvider</span> <span>{</span>
+    <span>...</span>
+    <span>private</span> <span>ServiceType</span> <span>type</span><span>;</span>
+
+    <span>public</span> <span>void</span> <span>scheduleService</span><span>(</span><span>Date</span> <span>date</span><span>,</span> <span>ServiceDescription</span> <span>description</span><span>)</span> <span>{</span>
+        <span>if</span> <span>(</span><span>type</span><span>.</span><span>isWarble</span><span>())</span> <span>{</span>
+            <span>this</span><span>.</span><span>scheduleWarbleSevice</span><span>(</span><span>date</span><span>,</span> <span>description</span><span>);</span>
+        <span>}</span> <span>else</span> <span>if</span> <span>(</span><span>type</span><span>.</span><span>isWonkle</span><span>())</span> <span>{</span>
+            <span>this</span><span>.</span><span>scheduleWonkleService</span><span>(</span><span>date</span><span>,</span> <span>description</span><span>);</span>
+        <span>}</span> <span>else</span> <span>{</span>
+            <span>this</span><span>.</span><span>scheduleCommonService</span><span>(</span><span>date</span><span>,</span> <span>description</span><span>);</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span>
+</pre></div></div>
+
+<ul>
+  <li>나라면 위의 경우에서도 ServiceType으로 위임해서 if문을 제거했을 것 같다.</li>
+</ul>
+
+리파지토리 대 데이터 액세스 객체
+
+<p>Repository != DAO</p>
+
+<ul>
+  <li>리파지토리 : 객체 지향 &gt; with 도메인 모델 패턴</li>
+  <li>DAO : 데이터 지향 &gt; with 트랜잭션 스크립트 패턴</li>
+</ul>
+
+<p>SMART DAO는 DDD 입장에서는 안티패턴</p>
+
+<ul>
+  <li>SMART DAO는 도메인 로직이 DB 쿼리나 DB의 프로시저에 존재하는 경우를 말함</li>
+</ul>
+
+<p><strong>중요한 것은 데이터 액세스 지향보다는 컬렉션 지향으로 설계하려고 노력해야하는 점</strong></p>
+
+리파지토리의 테스트
+
+<ul>
+  <li>실제 인프라와 연동하는 테스트 (실제 DB와 통신)</li>
+  <li>인메모리로 연동하는 테스트</li>
+</ul>
+
+<blockquote>
+  <p>개인적으로 실제 인프라와 연동하는 것이 중요하다고 봄.</p>
+</blockquote>
+
+인메모리 구현으로 테스트하기
+
+<p>Skip</p>
+
+마무리
+
+<ul>
+  <li>컬랙션 지향 VS 영속성 지향</li>
+  <li>리파지토리의 추가적인 행동 (count())</li>
+  <li>트랜잭션 처리</li>
+  <li>타입 계층과 리파지토리</li>
+  <li>Repository vs DAO</li>
+  <li>테스트</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvtzOkwB8cVmXGClSUdbrej3V-2F8tyT8YzlsGR48HkVBDGQ-3D-3DUStA_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvwW4pdWHXONtD5tHoCXDUmj1qJCikhDwd8NNdKKxbaMiHjV-2Bfh4Ii1zv3np3sSiJzi8zN3GKN3pg-2FT4p01-2F3WSZeNHq8xjKgLqCtmZkV795eKX0Pem6ISKZ0UIQa4cBl6GzoQAoK8hue3qgtJLzpOPklGiFMo3a-2BXLbKcQPxAQWwH66a0PS0IQULKMADJaOP4nEt7I3Z6cy42OlUFS2AMt">IDDD 12장. 리파지토리</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUmGGG_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvwW4pdWHXONtD5tHoCXDUmj1qJCikhDwd8NNdKKxbaMiKlCIsncf6KjasP2SJrGbmVrSv2C-2B3pShsA98Cm-2Bo-2FpZxF3iCA0fCJfD-2Fa-2B-2BADKlcfKqPn3ehIwi6kfm8UYQgyLyJFwo-2BFXBG-2FnuJ6ERbElONGT-2BnDBDMXXTzccFnlk11V0JKuwjDYpyzFjL-2BGgq-2F5FYJDTWRWvWDPy9bOoWcCs">DevOOOOOOOOP</a> on June 10, 2018.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMPh1EwBFJtaMpKlkf5Qk9n1hTYSIrEZy321pHofeJ-2F9wq0-2BxstCKFfJqwwiWyKAcSIr9KzqcKwn-2F0RwshFaorWVNHJ4PnJrATMFJ-2BTpxGxSFqo6PFqWmoMjgqg59RWGVrGhRN81G-2FzKQlVmSILJn3atshNAEOwrb3TmOf3h7B3xt71tD2Pb3lAgCH7DvBBjgZ8R1ircHmyxMuD7JU-2F51lF8" alt="" width="1" height="1" />
+
+
+  
+</div>
+
+/imyaman/2020/05/003905.html
+
+  </body>
+</html>

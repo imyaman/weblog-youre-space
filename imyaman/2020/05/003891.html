@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="ko_KR" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content=" 비지터 패턴 클래스 계층 구조에 새로운 메소드를 추가할 필요가 있지만, 그렇게 하는 작업은 고통스럽거나 설계를 해치게 된다. 디자인 패턴의 비지터 집합 타입 계층 구조를 변경하지 않고도 새로운 메소드를 계층 구조에 추가할 수 있음 비지터(Visitor) 비순환 비지터(Acyclic Visitor) 데코레이터(Decorator) 비지터...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>í´ë¦°ìíí¸ì¨ì´ Part 6. ETS ì¬ë¡ ì°êµ¬ - imyaman</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://weblog.youre.space/imyaman/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://weblog.youre.space/imyaman/styles_ie.css">
+    <script src="https://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="https://weblog.youre.space/imyaman/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/imyaman/atom.xml" />
+    <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003891.html" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003890.html" title="클린소프트웨어 Part 5. 기상 관측기 사례 연구(2)">
+    
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="í´ë¦°ìíí¸ì¨ì´ Part 6. ETS ì¬ë¡ ì°êµ¬">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003891.html">
+    <meta property="og:description" content=" 비지터 패턴 클래스 계층 구조에 새로운 메소드를 추가할 필요가 있지만, 그렇게 하는 작업은 고통스럽거나 설계를 해치게 된다. 디자인 패턴의 비지터 집합 타입 계층 구조를 변경하지 않고도 새로운 메소드를 계층 구조에 추가할 수 있음 비지터(Visitor) 비순환 비지터(Acyclic Visitor) 데코레이터(Decorator) 비지터...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 비지터 패턴 클래스 계층 구조에 새로운 메소드를 추가할 필요가 있지만, 그렇게 하는 작업은 고통스럽거나 설계를 해치게 된다. 디자인 패턴의 비지터 집합 타입 계층 구조를 변경하지 않고도 새로운 메소드를 계층 구조에 추가할 수 있음 비지터(Visitor) 비순환 비지터(Acyclic Visitor) 데코레이터(Decorator) 비지터...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003891.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="https://weblog.youre.space/imyaman/">
+
+                  imyaman
+
+                </a>
+              </h1>
+              
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="https://weblog.youre.space/imyaman/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/imyaman/">Home</a></li>
+              <li class="breadcrumb-list-item">í´ë¦°ìíí¸ì¨ì´ Part 6. ETS ì¬ë¡ ì°êµ¬</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-3891" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">í´ë¦°ìíí¸ì¨ì´ Part 6. ETS ì¬ë¡ ì°êµ¬</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2020-05-11T01:25:14+09:00" itemprop="datePublished">May 11, 2020</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard">hal9000</span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  
+
+  
+    
+  
+  
+      
+    비지터 패턴
+
+<blockquote>
+  <p>클래스 계층 구조에 새로운 메소드를 추가할 필요가 있지만, 그렇게 하는 작업은 고통스럽거나 설계를 해치게 된다.</p>
+</blockquote>
+
+디자인 패턴의 비지터 집합
+
+<p>타입 계층 구조를 변경하지 않고도 새로운 메소드를 계층 구조에 추가할 수 있음</p>
+
+<ul>
+  <li>비지터(Visitor)</li>
+  <li>비순환 비지터(Acyclic Visitor)</li>
+  <li>데코레이터(Decorator)</li>
+</ul>
+
+비지터 패턴 상세
+
+<p><strong>이중 디스패치(dual dispatch)</strong> : 실행되는 연산이 요청의 종류와 두 수신자의 타입에 따라 달라진다는 뜻</p>
+
+<p><img src="/images/2017/10/visitor-pattern-class-diagram.png" alt="비지터 패턴 클래스 다이어그램"></p>
+
+<p><em>비지터 패턴 클래스 다이어그램</em></p>
+
+<p><img src="/images/2017/10/visitor-pattern-sequence-diagram.png" alt="비지터 패턴 시퀀스 다이어그램"></p>
+
+<p><em>비지터 패턴 시퀀스 다이어그램</em></p>
+
+연산의 변화 vs 구조의 변화
+
+<ul>
+  <li>새로운 구상체가 계속 추가된다면 Visitor은 독이 된다.</li>
+  <li>새로운 연산이 계속 추가된다면 Vistor은 좋은 선택이다.</li>
+</ul>
+
+비순환 비지터 패턴
+
+<ul>
+  <li>down-casting가 있어서 쓰기가 꺼려진다.
+    <ul>
+      <li>타입안정성이 약해짐</li>
+    </ul>
+  </li>
+  <li>만약 <strong>generic</strong>을 이용할 수 있다면 더 낫지 않을까?</li>
+</ul>
+
+<pre><span>public</span> <span>void</span> <span>accept</span><span>(</span><span>ModemVisitor</span> <span>v</span><span>)</span> <span>{</span>
+    <span>try</span> <span>{</span>
+        <span>ErniedModemVisitor</span> <span>ev</span> <span>=</span> <span>(</span><span>ErnieModemVisitor</span><span>)</span> <span>v</span><span>;</span>  <span>// !!!</span>
+        <span>ev</span><span>.</span><span>visit</span><span>(</span><span>this</span><span>);</span>
+    <span>}</span> <span>catch</span> <span>(</span><span>ClassCastException</span> <span>e</span><span>)</span> <span>{</span>
+    <span>}</span>
+<span>}</span></pre>
+
+<p><em>p.505 ErnieModem.java 일부</em></p>
+
+데코레이터 패턴
+
+<p><em>소리나는 다이얼 모뎀을 만들고 싶다</em></p>
+
+<ul>
+  <li>OCP, SRP 원칙을 지킬려면 어떻게 해야할까?</li>
+  <li>
+<strong>데코레이터</strong>!!!</li>
+</ul>
+
+<pre><span>public</span> <span>class</span> <span>LoudDialModem</span> <span>implements</span> <span>Modem</span> <span>{</span>
+    <span>private</span> <span>Model</span> <span>modem</span><span>;</span>
+
+    <span>public</span> <span>LoudDialModem</span><span>(</span><span>Modem</span> <span>m</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>modem</span> <span>=</span> <span>m</span>
+    <span>}</span>
+    <span>public</span> <span>void</span> <span>dial</span><span>(</span><span>String</span> <span>pno</span><span>)</span> <span>{</span>
+        <span>modem</span><span>.</span><span>setSpeakerVolume</span><span>(</span><span>10</span><span>);</span> <span>// 데코레이팅!!!</span>
+        <span>modem</span><span>.</span><span>dial</span><span>(</span><span>pno</span><span>)</span>
+    <span>}</span>
+    <span>...</span>
+<span>}</span></pre>
+
+확장 객체 패턴
+
+<ul>
+  <li>아답터 패턴과 유사하다.</li>
+  <li>단점은 역시나 많은 subclass를 동반하는 것이다.</li>
+  <li>장점은 OCP와 SRP를 지킬 수 있다</li>
+</ul>
+
+<p><img src="/images/2017/10/extend-object-pattern-class-diagram.png" alt="확장 객체 패턴 클래스 다이어그램"></p>
+
+<p><em>확장 객체 패턴 클래스 다이어그램</em></p>
+
+<p>참고 : <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=wC3KXI14r-2BhtUZYhlxRDFx8HOKYWonmMxKvJDMMDNx7h94iz-2F8tfVGh-2F-2BDUxdo5jtxgOINRSPggNd6DxLrk4FfPRYC-2F-2Bd09DZdMLDg8UjUYR1MDAh-2BWeM8BpGGpbJuZt0TOlm3IBy9NrwwpIxygjS3wKG5Aff-2BRDf8y-2F9UkIdbY-3DvqgG_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvPcFtLhYW05jHlNqn-2Fp7TiE-2F8N6MCAXMhDBQrLaLvNO-2FUYtBUcRNOOvMAmgXyu31ksjnvLHQyn5jYkyFMMzBpTO9VB9-2Bdj-2FHLD5dhjMgYJL52BZRdkpmeWcz3vv7FXr4UHyBHsFAm9yeLdoyMqI1uomK13WZnjb9RzuO-2BgfcfCF8ltcLcb6RDZ-2FeDFU2PJneufzj8wnmfTC2hbRjS7r7HB">The Extension Objects Pattern.pdf</a></p>
+
+스테이트 패턴
+
+유한 상태 오토마타의 개괄
+
+<p>유한 상태 기계 : Finite State Machine</p>
+<ul>
+  <li>ex) 개찰구</li>
+</ul>
+
+<p><img src="/images/2017/10/turnstile-state-diagram.png" alt="개찰구 상태 다이어그램"></p>
+
+<p><em>개찰구 상태 다이어그램</em></p>
+
+구현기법 : 중첩된 switch/case
+
+<pre><span>switch</span> <span>(</span><span>state</span><span>)</span> <span>{</span>
+    <span>case</span> <span>LOCKED</span> <span>:</span>
+        <span>switch</span> <span>(</span><span>event</span><span>)</span> <span>{</span>
+            <span>case</span> <span>COIN</span> <span>:</span>
+                <span>state</span> <span>=</span> <span>UNLOCKED</span><span>;</span>
+                <span>turnstileController</span><span>.</span><span>unlock</span><span>();</span>
+                <span>break</span><span>;</span>
+            <span>case</span> <span>PASS</span> <span>:</span>
+                <span>turnstileController</span><span>.</span><span>alarm</span><span>();</span>
+                <span>break</span><span>;</span>
+        <span>}</span>
+        <span>break</span><span>;</span>
+    <span>case</span> <span>UNLOCKED</span> <span>:</span>
+        <span>switch</span> <span>(</span><span>event</span><span>)</span> <span>{</span>
+            <span>case</span> <span>COIN</span> <span>:</span>
+                <span>turnstileController</span><span>.</span><span>thankyou</span><span>();</span>
+                <span>break</span><span>;</span>
+            <span>case</span> <span>PASS</span> <span>:</span>
+                <span>state</span> <span>=</span> <span>LOCKED</span><span>;</span>
+                <span>turnstileController</span><span>.</span><span>lock</span><span>();</span>
+                <span>break</span><span>;</span>
+        <span>}</span>
+        <span>break</span><span>;</span>
+<span>}</span></pre>
+
+<ul>
+  <li>turnstile : 개찰구</li>
+</ul>
+
+접근제어가 패키지인 상태변수
+
+<p>ISSUE 테스트를 진행할려면 테스트에서 상태를 변경할 수 있어야 한다.</p>
+
+<ul>
+  <li>이를 위해서 같은 패키지에서 만들어지는 테스트를 위해서 상태 변수를 패키지 접근제어로 변경하였다.</li>
+  <li>effective-java에 의하면 패키지 접근제어도 캡슐화가 깨지지 않는 것으로 보이므로 큰 문제가 없다고 판단되며, 본인도 종종 이것을 애용하는 편이다.
+    <ul>
+      <li>하지만 가능했다면, 패키지 생성자나 패키지 setter 메소드로 조금 더 제한하면 좋을 것 같다.</li>
+    </ul>
+  </li>
+  <li>만약 C++이었다면 friend로 해결가능했을 것이다.</li>
+</ul>
+
+중첩된 switch/case의 장단점
+
+<ul>
+  <li>간단한 상황에서는 가독성이 높고 효율적</li>
+  <li>복잡한 상황에서는 가독성이 떨어지고 유지보수도 어려워지며, 실수에 취약하다.
+    <ul>
+      <li>중복코드도 많이 생긴다.</li>
+    </ul>
+  </li>
+</ul>
+
+구현기법 : 전이 테이블 해석
+
+<pre><span>// 테이블 구축</span>
+<span>public</span> <span>Trunstile</span><span>(</span><span>TurnstileController</span> <span>action</span><span>)</span> <span>{</span>
+    <span>turnstileController</span> <span>=</span> <span>action</span><span>;</span>
+    <span>addTransition</span><span>(</span><span>LOCKED</span><span>,</span> <span>COIN</span><span>,</span> <span>UNLOCKED</span><span>,</span> <span>unlock</span><span>());</span>    <span>// 마지막 메서드는 람다식으로 하면 더 나을 것 같다.</span>
+    <span>addTransition</span><span>(</span><span>LOCKED</span><span>,</span> <span>PASS</span><span>,</span> <span>LOCKED</span><span>,</span> <span>alarm</span><span>());</span>
+    <span>addTransition</span><span>(</span><span>UNLOCKED</span><span>,</span> <span>COIN</span><span>,</span> <span>UNLOCKED</span><span>,</span> <span>thankyou</span><span>());</span>
+    <span>addTransition</span><span>(</span><span>UNLOCKED</span><span>,</span> <span>PASS</span><span>,</span> <span>LoCKED</span><span>,</span> <span>lock</span><span>());</span>
+<span>}</span>
+<span>...</span>
+<span>// 전이 엔진</span>
+<span>public</span> <span>void</span> <span>event</span><span>(</span><span>int</span> <span>event</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>Transition</span> <span>transition</span> <span>:</span> <span>transitions</span><span>)</span> <span>{</span>
+        <span>// 아래 분기문은 transition의 메서드로 분기하면 좋을 것 같다.  : transition.isTransferable(state, event)</span>
+        <span>if</span> <span>(</span><span>state</span> <span>==</span> <span>transition</span><span>.</span><span>currentState</span> <span>&amp;&amp;</span> <span>event</span> <span>==</span> <span>transition</span><span>.</span><span>event</span><span>)</span> <span>{</span>
+            <span>state</span> <span>=</span> <span>transition</span><span>.</span><span>newState</span><span>;</span>
+            <span>transition</span><span>.</span><span>action</span><span>.</span><span>execute</span><span>();</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span></pre>
+
+전이 테이블 해석의 장단점
+
+<ul>
+  <li>정규적이며, 가독성이 좋다.</li>
+  <li>runtime 시 테이블 교체 가능(동적 제어)</li>
+  <li>
+ISSUE 테이블의 양이 커지면 검색 시간이 오래 걸린다??</li>
+  <li>
+ISSUE 테이블을 지원하기 위한 코드의 양도 많아 진다??</li>
+</ul>
+
+구현기법 : 스테이트 패턴
+
+<p><img src="/images/2017/10/state-pattern-class-diagram.png" alt="스테이트 패턴 클래스 다이어그램"></p>
+
+<ul>
+  <li>
+ISSUE 하지만 예제에서는 Turnstile가 구상상태(TunstileLockedState 등)에 의존하고 있어서 DIP 원칙이 깨지고 있다. - p.544</li>
+</ul>
+
+Gof : 스테이트 패턴
+
+<p><img src="/images/2017/10/state-pattern-by-gof.png" alt="스테이트 패턴 by Gof"></p>
+
+<p><em>Tcp를 예제로 한 스테이트 패턴 클래스 다이어그램</em></p>
+
+<ul>
+  <li>TCP Established : 연결상태</li>
+  <li>TCP Listen : 연결대기</li>
+  <li>TCP Closed : 종료</li>
+</ul>
+
+<p>참고 : <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=4GEcirLvv8FnDItewEEISqKrQSfZ6JQsIqxN1p4TX1-2BFkyuLBdRhmP8q3EwL9qZWI-2FotCtiw3-2FoxWlLWA98zHU4Qi6O5RnWy-2BsXpPgbjK9pvbxyrEQDuEnKMkvbbLWx07Aydgiqk6XxTDViY2nxB-2F0HkNrasSXjW9e-2FFNGfkZiE-3DDPoa_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvPcFtLhYW05jHlNqn-2Fp7TiE-2F8N6MCAXMhDBQrLaLvNO1xMP95UblVniQcpPB7-2F1D5-2Fv9bEusq8d9bNlgGhKJq7fhPA4jIhMyT3EENudJr0Ov7xPqut0BNH-2Fw402ZdageS9XCs568jGBg8WOlorGd9ROonifMK8kXNMmRhJqYhKjEbt6fMx1UvTqopHbdrmzPBG-2BOvRZNOHSH8vd-2BjvWjO-2B">TCP 연결 상태 의미</a></p>
+
+스테이트와 스트래터지
+
+<p><img src="/images/2017/10/strategy-vs-state.png" alt="strategy vs state"></p>
+
+<ul>
+  <li>스테이트 : 상태의 다형성 확보</li>
+  <li>스트래터지 : 알고리즘(행위)의 다형성 확보</li>
+  <li>context의 상태 변경이 일어나는가?</li>
+</ul>
+
+스테이트 패턴의 장단점
+
+<ul>
+  <li>OCP, SRP를 만족할 수 있다.</li>
+  <li>상태 마다 각각 subclass가 필요해서 비용이 많이 든다.</li>
+  <li>상태 기계의 모든 논리를 한 번에 파악할 수 없다 (vs 전이 테이블)</li>
+</ul>
+
+상태 기계 컴파일러(SMC)
+
+<p><strong>전이 테이블 + 스테이트 패턴</strong> = 3차원 유한 상태 기계(THREE-LEVEL FINITE STATE MACHINE)</p>
+
+<p><img src="/images/2017/10/smc-class-diagram.png" alt="SMC"></p>
+
+상태 기계 컴파일러 장단점
+
+<ul>
+  <li>그냥 좋다. = Best practice</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvtpyRKMfRWrnRWGP7dLrJxRzrRYkU4-2BIG5do5uUih2aq5B4W0gI4f6x4POTzqto96U-3Dh9jc_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvPcFtLhYW05jHlNqn-2Fp7TiE-2F8N6MCAXMhDBQrLaLvNO40AT-2BSr0NM8lPMMPkUQ0NTKC6d7yvS-2Bm-2FXHNNXd3-2FdYYqhmuWkbOpihATfHND7sOX7NIjmYyFCq-2F2ctaYsknSS8UY1AJZmIkwPIr338LdbwzV9uwkZBYOKXVbzKo5JqNPA6-2B1kJiFjHQMGAFz26fTxse-2FbciesmcZ1JNaelp0zJ">클린소프트웨어 Part 6. ETS 사례 연구</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUHA9G_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvPcFtLhYW05jHlNqn-2Fp7TiE-2F8N6MCAXMhDBQrLaLvNO5AkeOj77gqUZ8TKSNbBqIVK-2Fday9Pjlc7-2ByjnEIwp2tnbCguktHuEpN7PxDF7gieA-2B6mRcYxymTvZoPSAbf2VxPPjEntDXUD5VF6e-2BeBNBfkyT-2B4W-2FNw095lfJWtDyyAkR84O-2Ft6glr2f5wPguWOP0rNiDyyLJLa-2FBL-2B-2F-2BDDGYP">DevOOOOOOOOP</a> on October 08, 2017.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMMjd-2BFSH1gafvoyEP5CH5rnrzhlxqDLm8WpzSwx2cL7NSSM29TJi-2F34mFpj-2BXYMyDiSbw-2F0vAJvaVZ9mqxKuY0d12jO2Q7h-2FPEUj22WoyKeUfe6u-2FEosneIplirw7qIIxYTVZRI-2F5oTTh-2BwkOvBnxkvGbP5iXPncDyVqoFqAWSPGG3jj-2FVIAFfwOQ7vJDuXdhsdVp0y-2BjxLMtHKmfUhWNAY" alt="" width="1" height="1" />
+
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003890.html" title="클린소프트웨어 Part 5. 기상 관측기 사례 연구(2)">Previous entry</a></li>
+
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+    Please paste Zenback script code here.
+  
+</aside>
+-->
+                
+                
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="https://connexus.youre.space/mt6/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="12">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-category widget">
+  <h3 class="widget-header">Categories</h3>
+  <div class="widget-content">
+    
+      
+    <ul class="widget-list">
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/21931698/">#21931698 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/213-eii-ii-eii-e/">2/13 고양시 일제 방역의 날 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2018-eiiieeii/">2018 대학수학능력시험 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2018-iei-ieeei/">2018 성남시 진로박람회 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2019-ei-eie-iii/">2019 고양 돗자리 영화제 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2019-ei-ie-eii/">2019 고양 인권 문화제 (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2019-ei-ie-iii/">2019 고양 인권 영화제 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2019-eiiiii-ei/">2019 고지식콘서트 고양 (4)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2019eieiie/">2019고양도시포럼 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2020e-3i-1ii/">2020년 3월 1일(일) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2020e-iiii-iei/">2020년 행주산성 해맞이 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-10i-iii/">2월 10일 월요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-11i-iii/">2월 11일 화요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-12i-iii/">2월 12일 수요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-20i-eii/">2월 20일 목요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-21i-eii/">2월 21일 금요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-22i-iii/">2월 22일 토요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-23i-iii/">2월 23일 일요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-24i-iii/">2월 24일 월요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-25i-iii/">2월 25일 화요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-26i-iii/">2월 26일 수요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-27i-eii/">2월 27일 목요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-28i-eii/">2월 28일 금요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-29i-iii/">2월 29일 토요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-3i-iii/">2월 3일 월요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-4i-iii/">2월 4일 화요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-7i-eii/">2월 7일 금요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/2i-8i-iii/">2월 8일 토요일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/31i-101ie/">3.1절 101주년 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-20ie/">3월 20일(금) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-21ii/">3월 21일(토) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-22ii/">3월 22일(일) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-23ii/">3월 23일(월) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-23ii-1800/">3월 23일(월) 18:00 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-24ii/">3월 24일(화) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-25ii/">3월 25일(수) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-26ie/">3월 26일(목) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-27ie/">3월 27일(금) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-28ii/">3월 28일(토) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-2ii/">3월 2일(월) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-30i/">3월 30일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-3ii/">3월 3일(화) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-4ii/">3월 4일(수) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-5ie/">3월 5일(목) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-6ie/">3월 6일(금) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/3i-7ii/">3월 7일(토) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-20ii/">4월 20일(월) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-21ii/">4월 21일(화) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-22ii/">4월 22일(수) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-23ie/">4월 23일(목) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-24ie/">4월 24일(금) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-25ii/">4월 25일(토) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-27ii/">4월 27일(월) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-28ii/">4월 28일(화) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/4i-29ii/">4월 29일(수) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/518-eiiie-eeii-iii-eea/">5.18 민주화운동 기념행사 현장을 가다① (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/5i-1ie/">5월 1일(금) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/5i-2ii/">5월 2일(토) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/5i-4ii/">5월 4일(월) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/5i-7ie/">5월 7일(목) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/5i-8i/">5월 8일 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/5i-8ie/">5월 8일(금) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/5i-9ii/">5월 9일(토) (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/610ii-eeii-iii-eea/">6.10항쟁 기념행사 현장을 가다② (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/63-iie/">63 씨월드 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/9i-eii-e/">9월 독서의 달 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/action-required/">Action Required (8)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/billing-notice/">Billing notice (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/covid-19-update/">COVID-19 Update (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/google-payments/">Google payments (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/u-18-ei-eiiiie-eei-ei715720/">U-18 고양 국제여자축구 교류전 개최(7/15~7/20) (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/update/">Update (4)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eeie/">감동성남 (122)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eeie-eii/">감동성남 레시피 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eeiiieeeii/">강북여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiiiieeeii-1/">강서여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ei-eeii/">고양 도보여행 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eieeieeei-iii-iei/">고양독립운동기념탑, 평화의 소녀상 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eieiiei-eiiiei/">고양문화재단의 문화예술교육 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiiii/">고양소식지 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eii/">고양시 (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eii-iiee-ie/">고양시 '월산대군 사당' (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eii-eeii/">고양시 도보여행 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eii-eiii/">고양시 문화유적 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiiiiiiiiii/">고양시여성창업지원센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiiieeeiie/">고양시위기극복지원금 (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiiie-eeeii/">고양어울림 빛누리축제 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiie-eieii-iee-sos/">고양외고 마을문화재 연구부 S.O.S (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiie-ii-iie-iei-ii/">고양청년 좋은 일자리 플러스 사업 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiii-iiie-10-ie-ieiei/">고양페이 인센티브 10% 지급 특별이벤트 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ei-ii/">공연 전시 (4)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiii/">공연전시 (152)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eeiiieeeii-1/">구로여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiiiieiii/">국제장애어린이축제 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiie/">꿀팁창고 (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eiiiieeeii/">노원여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eei-ie-ei/">더불어 사는 고양 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eeeiiieeeii/">동대문여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eeei/">부모교육 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eieieiei/">부여/백제문화단지 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/eeiieiii/">북부여성발전센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieeiiieeeii/">서대문여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieiieiii/">서부여성발전센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ii-adex-2017/">서울 ADEX 2017 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iii-iiieeeee/">서울시 여성인력개발기관 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiiiieeeei/">서울시여성능력개발원 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiiiieeeii/">서초여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiiei/">선착순모집 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ie-eeeie/">성남 가볼만한곳 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ie-eiei-iie/">성남 광역버스 여행기 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ie-ii/">성남 정책 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ie-ee-eeei-e/">성남, 분당 가볼만한 곳 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieee/">성남감동 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieie-1/">성남속보 (43)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iei-iiieie/">성남시 양성평등주간 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iei-ieei-iee/">성남시 행복마을 한마당 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iei-2017-ieei-iiieie/">성남시, 2017 재난대응 안전한국훈련 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieiei-ii-iii-i/">성남시민을 위한 생활의 팁 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieiiiiiieie/">성남시장애인종합복지관 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieii-3/">성남여행 (143)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieii-1/">성남정책 (242)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieii-2/">성남지식 (227)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieieeei-eii-iei/">성남캘리그라피 동호회 캘리애 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieii-4/">성남학생 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iieiei-eiii/">소셜기자단의 고양수필 (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ie/">속보 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiiiieeeii-1/">송파여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieeei/">시민공모전 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieie/">시민생각 (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iei-iii-iii-eee/">시민의 상상이 세상을 바꾼다! (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ii-iee/">신종 코로나 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ii-iee-eiei-eii/">신종 코로나 바이러스 감염증 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiei/">심층기획 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieei-eia/">아름다운 고양人 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieie-iiei-1/">알뜰살뜰 생활꿀팁 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieei/">여름명소 (5)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iieeeei/">여성능력개발원 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieiiiieeeii/">영등포여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ii-1/">영화 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieii/">오늘축제! (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieee-1/">이동경로 (3)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieei-2/">이동동선 (44)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iei/">이벤트 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ii-eii-ii/">일산 데이트 추천 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ii/">정정 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ii-ii/">조치 필요 (2)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieiiieeeii/">종로여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieiiieeeii-1/">중랑여성인력개발센터 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiee-eiieei-e-ii-eei-ei-ii/">찾아가는 민주시민교육 및 지역 공론화 방안 제시 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iie-ii/">청산도 여행 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieei-1/">카드뉴스 (4)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iee19/">코로나19 (3)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iee19-eeii-ei/">코로나19 긴급상황 공지 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieiei-iiei-eei/">클래식기타 연주방송 로망스 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiiiiiiii/">탄천태평습지생태원 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iee-iei/">퇴근길 인문학 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/ieie-iiei/">파란하늘 하얀마음 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiii/">팟캐스트 (6)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iei-iie---i-e/">행복이 이야기 - 새 봄 (1)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/imyaman/iiiiiiiii-iiiiiiiiiiiiiiiiiiiiiiii/">��������� ������������������������ (1)</a>
+      
+      
+      </li>
+      
+    </ul>
+      
+    
+  </div>
+</nav>
+  
+
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="https://weblog.youre.space/imyaman/2020/05/">May 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2020/01/">January 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/12/">December 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/11/">November 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/10/">October 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/09/">September 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/08/">August 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/07/">July 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/06/">June 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/05/">May 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/04/">April 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/03/">March 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/02/">February 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2019/01/">January 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2018/09/">September 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2018/08/">August 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2018/07/">July 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2018/06/">June 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2018/05/">May 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2018/04/">April 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2018/03/">March 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2018/02/">February 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2017/11/">November 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2017/10/">October 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2017/09/">September 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2017/07/">July 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2017/05/">May 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2017/03/">March 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2017/01/">January 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/imyaman/2015/10/">October 2015</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-tag-cloud widget">
+  <h3 class="widget-header">Tag Cloud</h3>
+  <div class="widget-content">
+    <ul class="widget-list">
+  
+      <li class="widget-list-item tag rank-7"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=12&amp;tag=GDF2018&amp;limit=20">GDF2018</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-7"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=12&amp;tag=%EC%98%A4%EB%8A%98_%ED%95%98%EB%A3%A8%2C&amp;limit=20">오늘_하루,</a></li>
+  
+    </ul>
+  </div>
+</div>
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="https://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="https://weblog.youre.space/imyaman/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="https://weblog.youre.space/imyaman/">Home</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2020.</p>
+  <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
+</div>
+
+<!-- ad starts -->
+<center>
+<script type="text/javascript">
+clicksor_enable_adhere = false;
+clicksor_enable_inter = false;
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+clicksor_enable_text_link = false;
+clicksor_banner_image_banner = true;
+clicksor_banner_text_banner = true;
+clicksor_layer_banner = false;
+clicksor_mobile_redirect = false;
+clicksor_default_url = '';
+clicksor_banner_border = '#000808';
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#080800';
+clicksor_banner_text_color = '#666666';
+</script>
+<script type="text/javascript" src="http://b.yu0123456.com/show.php?nid=1&amp;pid=330835&amp;adtype=20&amp;sid=588821"></script>
+</center>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<a href="//go.ad2up.com/afu.php?id=464574"><div style="width: 100%; height: 50px; background-color: green; text-align: center;">
+<h2>세상에서 제일 좋은 집은?</h2>
+</div></a>
+<!-- ad ends -->
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="https://weblog.youre.space/imyaman/mt-theme-scale2.js"></script>
+  </body>
+</html>

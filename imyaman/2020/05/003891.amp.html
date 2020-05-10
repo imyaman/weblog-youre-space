@@ -1,0 +1,312 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/imyaman/2020/05/003891.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content=" 비지터 패턴 클래스 계층 구조에 새로운 메소드를 추가할 필요가 있지만, 그렇게 하는 작업은 고통스럽거나 설계를 해치게 된다. 디자인 패턴의 비지터 집합 타입 계층 구조를 변경하지 않고도 새로운 메소드를 계층 구조에 추가할 수 있음 비지터(Visitor) 비순환 비지터(Acyclic Visitor) 데코레이터(Decorator) 비지터...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>í´ë¦°ìíí¸ì¨ì´ Part 6. ETS ì¬ë¡ ì°êµ¬ - imyaman</title>
+
+  <link rel="prev" href="https://weblog.youre.space/imyaman/2020/05/003890.amp.html" title="클린소프트웨어 Part 5. 기상 관측기 사례 연구(2)">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="í´ë¦°ìíí¸ì¨ì´ Part 6. ETS ì¬ë¡ ì°êµ¬">
+    <meta property="og:url" content="https://weblog.youre.space/imyaman/2020/05/003891.html">
+    <meta property="og:description" content=" 비지터 패턴 클래스 계층 구조에 새로운 메소드를 추가할 필요가 있지만, 그렇게 하는 작업은 고통스럽거나 설계를 해치게 된다. 디자인 패턴의 비지터 집합 타입 계층 구조를 변경하지 않고도 새로운 메소드를 계층 구조에 추가할 수 있음 비지터(Visitor) 비순환 비지터(Acyclic Visitor) 데코레이터(Decorator) 비지터...">
+    <meta property="og:site_name" content="imyaman">
+    <meta property="og:image" content="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content=" 비지터 패턴 클래스 계층 구조에 새로운 메소드를 추가할 필요가 있지만, 그렇게 하는 작업은 고통스럽거나 설계를 해치게 된다. 디자인 패턴의 비지터 집합 타입 계층 구조를 변경하지 않고도 새로운 메소드를 계층 구조에 추가할 수 있음 비지터(Visitor) 비순환 비지터(Acyclic Visitor) 데코레이터(Decorator) 비지터...">
+    <link itemprop="url" href="https://weblog.youre.space/imyaman/2020/05/003891.html">
+    <link itemprop="image" href="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/siteicon-sample.png">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">í´ë¦°ìíí¸ì¨ì´ Part 6. ETS ì¬ë¡ ì°êµ¬</h1>
+<time datetime="2020-05-11T01:25:14+09:00" itemprop="datePublished">May 11, 2020</time>
+<time datetime="2020-05-11T01:25:14+09:00" itemprop="dateModified">May 11, 2020</time>
+
+by <span itemprop="author">hal9000</span>
+
+<div itemprop="articleBody">
+  
+
+  
+    
+  
+  
+      
+    비지터 패턴
+
+<blockquote>
+  <p>클래스 계층 구조에 새로운 메소드를 추가할 필요가 있지만, 그렇게 하는 작업은 고통스럽거나 설계를 해치게 된다.</p>
+</blockquote>
+
+디자인 패턴의 비지터 집합
+
+<p>타입 계층 구조를 변경하지 않고도 새로운 메소드를 계층 구조에 추가할 수 있음</p>
+
+<ul>
+  <li>비지터(Visitor)</li>
+  <li>비순환 비지터(Acyclic Visitor)</li>
+  <li>데코레이터(Decorator)</li>
+</ul>
+
+비지터 패턴 상세
+
+<p><strong>이중 디스패치(dual dispatch)</strong> : 실행되는 연산이 요청의 종류와 두 수신자의 타입에 따라 달라진다는 뜻</p>
+
+<p><img src="/images/2017/10/visitor-pattern-class-diagram.png" alt="비지터 패턴 클래스 다이어그램"></p>
+
+<p><em>비지터 패턴 클래스 다이어그램</em></p>
+
+<p><img src="/images/2017/10/visitor-pattern-sequence-diagram.png" alt="비지터 패턴 시퀀스 다이어그램"></p>
+
+<p><em>비지터 패턴 시퀀스 다이어그램</em></p>
+
+연산의 변화 vs 구조의 변화
+
+<ul>
+  <li>새로운 구상체가 계속 추가된다면 Visitor은 독이 된다.</li>
+  <li>새로운 연산이 계속 추가된다면 Vistor은 좋은 선택이다.</li>
+</ul>
+
+비순환 비지터 패턴
+
+<ul>
+  <li>down-casting가 있어서 쓰기가 꺼려진다.
+    <ul>
+      <li>타입안정성이 약해짐</li>
+    </ul>
+  </li>
+  <li>만약 <strong>generic</strong>을 이용할 수 있다면 더 낫지 않을까?</li>
+</ul>
+
+<pre><span>public</span> <span>void</span> <span>accept</span><span>(</span><span>ModemVisitor</span> <span>v</span><span>)</span> <span>{</span>
+    <span>try</span> <span>{</span>
+        <span>ErniedModemVisitor</span> <span>ev</span> <span>=</span> <span>(</span><span>ErnieModemVisitor</span><span>)</span> <span>v</span><span>;</span>  <span>// !!!</span>
+        <span>ev</span><span>.</span><span>visit</span><span>(</span><span>this</span><span>);</span>
+    <span>}</span> <span>catch</span> <span>(</span><span>ClassCastException</span> <span>e</span><span>)</span> <span>{</span>
+    <span>}</span>
+<span>}</span></pre>
+
+<p><em>p.505 ErnieModem.java 일부</em></p>
+
+데코레이터 패턴
+
+<p><em>소리나는 다이얼 모뎀을 만들고 싶다</em></p>
+
+<ul>
+  <li>OCP, SRP 원칙을 지킬려면 어떻게 해야할까?</li>
+  <li>
+<strong>데코레이터</strong>!!!</li>
+</ul>
+
+<pre><span>public</span> <span>class</span> <span>LoudDialModem</span> <span>implements</span> <span>Modem</span> <span>{</span>
+    <span>private</span> <span>Model</span> <span>modem</span><span>;</span>
+
+    <span>public</span> <span>LoudDialModem</span><span>(</span><span>Modem</span> <span>m</span><span>)</span> <span>{</span>
+        <span>this</span><span>.</span><span>modem</span> <span>=</span> <span>m</span>
+    <span>}</span>
+    <span>public</span> <span>void</span> <span>dial</span><span>(</span><span>String</span> <span>pno</span><span>)</span> <span>{</span>
+        <span>modem</span><span>.</span><span>setSpeakerVolume</span><span>(</span><span>10</span><span>);</span> <span>// 데코레이팅!!!</span>
+        <span>modem</span><span>.</span><span>dial</span><span>(</span><span>pno</span><span>)</span>
+    <span>}</span>
+    <span>...</span>
+<span>}</span></pre>
+
+확장 객체 패턴
+
+<ul>
+  <li>아답터 패턴과 유사하다.</li>
+  <li>단점은 역시나 많은 subclass를 동반하는 것이다.</li>
+  <li>장점은 OCP와 SRP를 지킬 수 있다</li>
+</ul>
+
+<p><img src="/images/2017/10/extend-object-pattern-class-diagram.png" alt="확장 객체 패턴 클래스 다이어그램"></p>
+
+<p><em>확장 객체 패턴 클래스 다이어그램</em></p>
+
+<p>참고 : <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=wC3KXI14r-2BhtUZYhlxRDFx8HOKYWonmMxKvJDMMDNx7h94iz-2F8tfVGh-2F-2BDUxdo5jtxgOINRSPggNd6DxLrk4FfPRYC-2F-2Bd09DZdMLDg8UjUYR1MDAh-2BWeM8BpGGpbJuZt0TOlm3IBy9NrwwpIxygjS3wKG5Aff-2BRDf8y-2F9UkIdbY-3DvqgG_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvPcFtLhYW05jHlNqn-2Fp7TiE-2F8N6MCAXMhDBQrLaLvNO-2FUYtBUcRNOOvMAmgXyu31ksjnvLHQyn5jYkyFMMzBpTO9VB9-2Bdj-2FHLD5dhjMgYJL52BZRdkpmeWcz3vv7FXr4UHyBHsFAm9yeLdoyMqI1uomK13WZnjb9RzuO-2BgfcfCF8ltcLcb6RDZ-2FeDFU2PJneufzj8wnmfTC2hbRjS7r7HB">The Extension Objects Pattern.pdf</a></p>
+
+스테이트 패턴
+
+유한 상태 오토마타의 개괄
+
+<p>유한 상태 기계 : Finite State Machine</p>
+<ul>
+  <li>ex) 개찰구</li>
+</ul>
+
+<p><img src="/images/2017/10/turnstile-state-diagram.png" alt="개찰구 상태 다이어그램"></p>
+
+<p><em>개찰구 상태 다이어그램</em></p>
+
+구현기법 : 중첩된 switch/case
+
+<pre><span>switch</span> <span>(</span><span>state</span><span>)</span> <span>{</span>
+    <span>case</span> <span>LOCKED</span> <span>:</span>
+        <span>switch</span> <span>(</span><span>event</span><span>)</span> <span>{</span>
+            <span>case</span> <span>COIN</span> <span>:</span>
+                <span>state</span> <span>=</span> <span>UNLOCKED</span><span>;</span>
+                <span>turnstileController</span><span>.</span><span>unlock</span><span>();</span>
+                <span>break</span><span>;</span>
+            <span>case</span> <span>PASS</span> <span>:</span>
+                <span>turnstileController</span><span>.</span><span>alarm</span><span>();</span>
+                <span>break</span><span>;</span>
+        <span>}</span>
+        <span>break</span><span>;</span>
+    <span>case</span> <span>UNLOCKED</span> <span>:</span>
+        <span>switch</span> <span>(</span><span>event</span><span>)</span> <span>{</span>
+            <span>case</span> <span>COIN</span> <span>:</span>
+                <span>turnstileController</span><span>.</span><span>thankyou</span><span>();</span>
+                <span>break</span><span>;</span>
+            <span>case</span> <span>PASS</span> <span>:</span>
+                <span>state</span> <span>=</span> <span>LOCKED</span><span>;</span>
+                <span>turnstileController</span><span>.</span><span>lock</span><span>();</span>
+                <span>break</span><span>;</span>
+        <span>}</span>
+        <span>break</span><span>;</span>
+<span>}</span></pre>
+
+<ul>
+  <li>turnstile : 개찰구</li>
+</ul>
+
+접근제어가 패키지인 상태변수
+
+<p>ISSUE 테스트를 진행할려면 테스트에서 상태를 변경할 수 있어야 한다.</p>
+
+<ul>
+  <li>이를 위해서 같은 패키지에서 만들어지는 테스트를 위해서 상태 변수를 패키지 접근제어로 변경하였다.</li>
+  <li>effective-java에 의하면 패키지 접근제어도 캡슐화가 깨지지 않는 것으로 보이므로 큰 문제가 없다고 판단되며, 본인도 종종 이것을 애용하는 편이다.
+    <ul>
+      <li>하지만 가능했다면, 패키지 생성자나 패키지 setter 메소드로 조금 더 제한하면 좋을 것 같다.</li>
+    </ul>
+  </li>
+  <li>만약 C++이었다면 friend로 해결가능했을 것이다.</li>
+</ul>
+
+중첩된 switch/case의 장단점
+
+<ul>
+  <li>간단한 상황에서는 가독성이 높고 효율적</li>
+  <li>복잡한 상황에서는 가독성이 떨어지고 유지보수도 어려워지며, 실수에 취약하다.
+    <ul>
+      <li>중복코드도 많이 생긴다.</li>
+    </ul>
+  </li>
+</ul>
+
+구현기법 : 전이 테이블 해석
+
+<pre><span>// 테이블 구축</span>
+<span>public</span> <span>Trunstile</span><span>(</span><span>TurnstileController</span> <span>action</span><span>)</span> <span>{</span>
+    <span>turnstileController</span> <span>=</span> <span>action</span><span>;</span>
+    <span>addTransition</span><span>(</span><span>LOCKED</span><span>,</span> <span>COIN</span><span>,</span> <span>UNLOCKED</span><span>,</span> <span>unlock</span><span>());</span>    <span>// 마지막 메서드는 람다식으로 하면 더 나을 것 같다.</span>
+    <span>addTransition</span><span>(</span><span>LOCKED</span><span>,</span> <span>PASS</span><span>,</span> <span>LOCKED</span><span>,</span> <span>alarm</span><span>());</span>
+    <span>addTransition</span><span>(</span><span>UNLOCKED</span><span>,</span> <span>COIN</span><span>,</span> <span>UNLOCKED</span><span>,</span> <span>thankyou</span><span>());</span>
+    <span>addTransition</span><span>(</span><span>UNLOCKED</span><span>,</span> <span>PASS</span><span>,</span> <span>LoCKED</span><span>,</span> <span>lock</span><span>());</span>
+<span>}</span>
+<span>...</span>
+<span>// 전이 엔진</span>
+<span>public</span> <span>void</span> <span>event</span><span>(</span><span>int</span> <span>event</span><span>)</span> <span>{</span>
+    <span>for</span> <span>(</span><span>Transition</span> <span>transition</span> <span>:</span> <span>transitions</span><span>)</span> <span>{</span>
+        <span>// 아래 분기문은 transition의 메서드로 분기하면 좋을 것 같다.  : transition.isTransferable(state, event)</span>
+        <span>if</span> <span>(</span><span>state</span> <span>==</span> <span>transition</span><span>.</span><span>currentState</span> <span>&amp;&amp;</span> <span>event</span> <span>==</span> <span>transition</span><span>.</span><span>event</span><span>)</span> <span>{</span>
+            <span>state</span> <span>=</span> <span>transition</span><span>.</span><span>newState</span><span>;</span>
+            <span>transition</span><span>.</span><span>action</span><span>.</span><span>execute</span><span>();</span>
+        <span>}</span>
+    <span>}</span>
+<span>}</span></pre>
+
+전이 테이블 해석의 장단점
+
+<ul>
+  <li>정규적이며, 가독성이 좋다.</li>
+  <li>runtime 시 테이블 교체 가능(동적 제어)</li>
+  <li>
+ISSUE 테이블의 양이 커지면 검색 시간이 오래 걸린다??</li>
+  <li>
+ISSUE 테이블을 지원하기 위한 코드의 양도 많아 진다??</li>
+</ul>
+
+구현기법 : 스테이트 패턴
+
+<p><img src="/images/2017/10/state-pattern-class-diagram.png" alt="스테이트 패턴 클래스 다이어그램"></p>
+
+<ul>
+  <li>
+ISSUE 하지만 예제에서는 Turnstile가 구상상태(TunstileLockedState 등)에 의존하고 있어서 DIP 원칙이 깨지고 있다. - p.544</li>
+</ul>
+
+Gof : 스테이트 패턴
+
+<p><img src="/images/2017/10/state-pattern-by-gof.png" alt="스테이트 패턴 by Gof"></p>
+
+<p><em>Tcp를 예제로 한 스테이트 패턴 클래스 다이어그램</em></p>
+
+<ul>
+  <li>TCP Established : 연결상태</li>
+  <li>TCP Listen : 연결대기</li>
+  <li>TCP Closed : 종료</li>
+</ul>
+
+<p>참고 : <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=4GEcirLvv8FnDItewEEISqKrQSfZ6JQsIqxN1p4TX1-2BFkyuLBdRhmP8q3EwL9qZWI-2FotCtiw3-2FoxWlLWA98zHU4Qi6O5RnWy-2BsXpPgbjK9pvbxyrEQDuEnKMkvbbLWx07Aydgiqk6XxTDViY2nxB-2F0HkNrasSXjW9e-2FFNGfkZiE-3DDPoa_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvPcFtLhYW05jHlNqn-2Fp7TiE-2F8N6MCAXMhDBQrLaLvNO1xMP95UblVniQcpPB7-2F1D5-2Fv9bEusq8d9bNlgGhKJq7fhPA4jIhMyT3EENudJr0Ov7xPqut0BNH-2Fw402ZdageS9XCs568jGBg8WOlorGd9ROonifMK8kXNMmRhJqYhKjEbt6fMx1UvTqopHbdrmzPBG-2BOvRZNOHSH8vd-2BjvWjO-2B">TCP 연결 상태 의미</a></p>
+
+스테이트와 스트래터지
+
+<p><img src="/images/2017/10/strategy-vs-state.png" alt="strategy vs state"></p>
+
+<ul>
+  <li>스테이트 : 상태의 다형성 확보</li>
+  <li>스트래터지 : 알고리즘(행위)의 다형성 확보</li>
+  <li>context의 상태 변경이 일어나는가?</li>
+</ul>
+
+스테이트 패턴의 장단점
+
+<ul>
+  <li>OCP, SRP를 만족할 수 있다.</li>
+  <li>상태 마다 각각 subclass가 필요해서 비용이 많이 든다.</li>
+  <li>상태 기계의 모든 논리를 한 번에 파악할 수 없다 (vs 전이 테이블)</li>
+</ul>
+
+상태 기계 컴파일러(SMC)
+
+<p><strong>전이 테이블 + 스테이트 패턴</strong> = 3차원 유한 상태 기계(THREE-LEVEL FINITE STATE MACHINE)</p>
+
+<p><img src="/images/2017/10/smc-class-diagram.png" alt="SMC"></p>
+
+상태 기계 컴파일러 장단점
+
+<ul>
+  <li>그냥 좋다. = Best practice</li>
+</ul>
+
+    <p><a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvtpyRKMfRWrnRWGP7dLrJxRzrRYkU4-2BIG5do5uUih2aq5B4W0gI4f6x4POTzqto96U-3Dh9jc_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvPcFtLhYW05jHlNqn-2Fp7TiE-2F8N6MCAXMhDBQrLaLvNO40AT-2BSr0NM8lPMMPkUQ0NTKC6d7yvS-2Bm-2FXHNNXd3-2FdYYqhmuWkbOpihATfHND7sOX7NIjmYyFCq-2F2ctaYsknSS8UY1AJZmIkwPIr338LdbwzV9uwkZBYOKXVbzKo5JqNPA6-2B1kJiFjHQMGAFz26fTxse-2FbciesmcZ1JNaelp0zJ">클린소프트웨어 Part 6. ETS 사례 연구</a> was originally published by MJ at <a href="https://u2109659.ct.sendgrid.net/ls/click?upn=ZAq1pAP0VzkeAz11YnKryt4BYFVDBFhXcTsI2IcTQvvsNBNYnRXmInA7E20V1hcUHA9G_36V6FUE0kTxFnhSWw7o3GQWEe8aLnTkfbNhUO297vXvPcFtLhYW05jHlNqn-2Fp7TiE-2F8N6MCAXMhDBQrLaLvNO5AkeOj77gqUZ8TKSNbBqIVK-2Fday9Pjlc7-2ByjnEIwp2tnbCguktHuEpN7PxDF7gieA-2B6mRcYxymTvZoPSAbf2VxPPjEntDXUD5VF6e-2BeBNBfkyT-2B4W-2FNw095lfJWtDyyAkR84O-2Ft6glr2f5wPguWOP0rNiDyyLJLa-2FBL-2B-2F-2BDDGYP">DevOOOOOOOOP</a> on October 08, 2017.</p>
+  
+  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMMjd-2BFSH1gafvoyEP5CH5rnrzhlxqDLm8WpzSwx2cL7NSSM29TJi-2F34mFpj-2BXYMyDiSbw-2F0vAJvaVZ9mqxKuY0d12jO2Q7h-2FPEUj22WoyKeUfe6u-2FEosneIplirw7qIIxYTVZRI-2F5oTTh-2BwkOvBnxkvGbP5iXPncDyVqoFqAWSPGG3jj-2FVIAFfwOQ7vJDuXdhsdVp0y-2BjxLMtHKmfUhWNAY" alt="" width="1" height="1" />
+
+  
+</div>
+
+/imyaman/2020/05/003891.html
+
+  </body>
+</html>
