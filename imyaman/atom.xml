@@ -4,9 +4,295 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2020-05-21T15:07:36Z</updated>
+    <updated>2020-05-21T21:47:03Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Upcoming changes to Cloud Functions for Firebase</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2020/05/003996.html" />
+    <id>tag:weblog.youre.space,2020:/imyaman//12.3996</id>
+
+    <published>2020-05-21T21:47:03Z</published>
+    <updated>2020-05-21T21:47:03Z</updated>
+
+    <summary> body{ font-family:Google Sans, Roboto, sans-serif; font-size:14px; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a{ color:#0288d1; text-decoration: none;&quot;&gt; } a:link, a:visited, a:hover, a:active { color: #4285f4; text-decoration: none; }...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Action Required" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+  
+ 
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+      body{
+        font-family:Google Sans, Roboto,  sans-serif;
+        font-size:14px;
+        -webkit-text-size-adjust: none !important;
+        -webkit-font-smoothing: antialiased
+        !important;
+        -ms-text-size-adjust: none !important;
+      }
+      table, tr, td {
+        border-collapse:collapse;
+ 
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+      }
+      a{
+        color:#0288d1;
+        text-decoration: none;">
+      }
+      a:link, a:visited, a:hover, a:active {
+        color: #4285f4;
+        text-decoration: none;
+      }
+      .appleLinks a {
+        color:#000000   !important;
+ 
+        text-decoration:none !important;
+      }
+      strong {
+        font-weight: bold !important;
+      }
+      em {
+        font-style: italic !important;
+      }
+      .yshortcuts a span {
+        color: inherit !important;
+        border-bottom: none !important;
+      }
+      html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: 100%;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width:
+        100%;
+      }
+      .ExternalClass * {
+        line-height: 100%
+      }
+      td {
+        -webkit-text-size-adjust: none;
+      }
+      a[href^=tel] {
+        color:     inherit;
+        text-decoration:   none;
+      }
+      .mob-hide {
+        display:none !important;
+      }
+      div, p, a, li, td {
+        -webkit-text-size-adjust:none;
+      }
+      td {
+        text-decoration:none !important;
+      }
+      a[x-apple-data-detectors] {
+        color: inherit
+        !important;
+        text-decoration:   none !important;
+        font-size: inherit !important;
+ 
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height:   inherit
+        !important;
+      }
+      @media all and (max-width: 600px) {
+        .table-main-gmail {
+          /*   Forces
+          Gmail to display Desktop   view */
+          width: 100% !important;
+          min-width:100% !important;
+        }
+      }
+    
+  
+  
+    <div>
+        
+        
+        
+        <table>
+        
+        
+          
+
+            
+            <tr>
+              <td>
+                <table>
+                  
+                    <tr>
+                      <td>
+                        <a>
+                        <img>
+                        </a>
+                      </td>
+                    </tr>
+                  
+                </table>
+              </td>
+            </tr>
+                
+  
+    <div>Update to the Node.js 10 runtime and update to the “Blaze” pay-as-you-go billing plan.</div>
+            
+            
+
+            
+            <tr>
+              <td>
+              <div>
+                Hi Sangyong,
+              </div>
+
+
+<p>We are writing to let you know about two upcoming changes to Cloud Functions for Firebase:</p> 
+
+<ol>
+<li>All Firebase developers who use the Cloud Functions Node.js 10 runtime will need to use the “Blaze” pay-as-you-go billing plan.</li>
+<br />
+<li>The Node.js 10 runtime on Cloud Function has now reached General Availability and the Node.js 8 runtime on Cloud Functions will be deprecated. To avoid potential disruptions or security risks, you should update your functions to Node.js 10.</li>
+</ol>
+
+<div>What Happened?</div>
+
+<p>Starting June 22, 2020, Cloud Functions for Firebase is rolling out a change in our Node.js 10 runtime that will allow you to see the output of the functions build process using Cloud Build and Container Registry. Although Cloud Build and Container Registry have a generous free quota, both products require you to be on the &quot;Blaze&quot; pay-as-you-go plan.</p>
+
+<p>This change will give you better transparency and control over your Cloud Functions deployments. For more details on the benefits of Cloud Build and Container Registry, please see our <a>online FAQ</a>.</p>
+
+<p>On Dec 31, 2019, Node.js 8 was <a>marked end-of-life by the Node.js Foundation</a>. The Node.js Foundation stopped issuing security releases for Node.js 8. To ensure that your functions are on a supported version of Node.js, you must update them to the Node.js 10 runtime.</p>
+
+<p><strong>These changes for Cloud Functions for Firebase will follow this timeline:</strong></p>
+
+<ul>
+<li>By June 22, 2020, all developers using the <strong>Node.js 10 runtime will need to update to the “Blaze” pay-as-you-go billing plan</strong> and enable the Cloud Build API in order to continue deploying functions.</li>
+<br />
+<li>By February 15, 2021, all developers using the Node.js 8 runtime should update to the Node.js 10 runtime and update to the “Blaze” pay-as-you-go billing plan. <strong>Developers will no longer be able to create new functions or update existing functions that use Node.js 8</strong>.</li>
+<br />
+<li>By March 15, 2021, <strong>Node.js 8 runtime will be shut down for Cloud Functions for Firebase</strong>. Functions using Node.js 8 will be disabled after this date.</li>
+</ul>
+
+<div>What do I need to do?</div>
+
+<ul>
+<li><strong>By June 22, 2020,</strong> all developers using the Node.js 10 runtime will need to <strong><a>update to the “Blaze” pay-as-you-go</a></strong> billing plan.</li>
+<br />
+<li><strong>By February 15, 2021</strong>, all developers using the Node.js 8 runtime should <strong><a>update to the Node.js 10 runtime</a></strong> and <strong>update to the “Blaze” pay-as-you-go</strong> billing plan, referred to in the point above.</li>
+</ul>
+
+<p><strong>After you update to the “Blaze” pay-as-you-go billing plan,</strong></p>
+
+<p>You must <strong>enable the Cloud Build API. Either <a>upgrade your Firebase CLI</a> to v8.1.0 or higher, or follow the manual instructions to enable the Cloud Build API below:</strong></p>
+
+<ol>
+<li><strong>Access</strong> the <a>Cloud Build API link</a> in the Cloud Console.</li>
+<li><strong>Select</strong> your project from the drop-down menu.</li>
+<li><strong>Click Continue</strong> to enable the Cloud Build API for the project. A box will appear in the lower-left corner to confirm the API is enabled.</li>
+</ol>
+
+<p>Once you enable the Cloud Build API, your project may incur charges if its Cloud Build or Container Registry usage exceeds the free tier limits for these products, in addition to Cloud Functions usage charges. For more information, visit the <a>Cloud Build</a> and <a>Container Registry</a> pricing pages.</p>
+
+<p>The &quot;Blaze&quot; pay-as-you-go plan <strong>includes free tier limits just like the &quot;Spark&quot; free plan</strong>. For more info, see the <a>online FAQ</a>. To avoid unexpected bills, it&#39;s always good practice to <a>set budget alerts</a>.</p>
+
+<p>You can find a list of your projects that are using Cloud Functions for Firebase and may be affected by this change below:</p>
+
+<ul>
+<li><a>alexa001-sys5co (alexa001-sys5co-4b52e)</a></li>
+<li><a>pacificmedia (pacificmedia-38170)</a></li>
+</ul>
+
+If you have any questions or need any assistance, please read our <a>online FAQ</a>. As always, feel free to <a>reach out to us</a> for more assistance. 
+             
+
+              
+          
+
+<div>
+                Thanks,
+              </div>
+              <div>
+                Raj on behalf of the Firebase team
+              </div>
+            
+          
+
+
+</td>
+          </tr>
+         
+            
+
+
+          
+          <tr>
+            <td>
+              You have received this mandatory service announcement to update you
+              about important changes to Firebase or your account.
+            </td>
+          </tr>
+ 
+          <tr>
+            <td>
+              <table>
+                
+                  <tr>
+                    <td>
+                      <img>
+                    </td>
+ 
+                    <td>
+                      <a>
+                        © 2020 Google LLC
+                        <br />
+                        1600 Amphitheatre Parkway
+                        <br />
+                        Mountain View, CA 94043 USA
+                      </a>
+                    </td>
+                  </tr>
+                
+              </table>
+            </td>
+          </tr>
+
+          
+ 
+        
+      </table>
+    
+    </div>
+  <img>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>대학생의 고양시 위기극복지원금 사용기!</title>
@@ -421,30 +707,6 @@
       "Fear is the mother of foresight."
   <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMOtKGnN5VRUvVCEn-2Bf857Z0fzYKV-2BGd4y8EA1nt-2FUoFZJe9wxXlg5803-2BIChGASNf1BS-2FixDr53U8A2N1e8Bj2nZxfIYVEzUpTdPq5ZT-2FO-2BaH8TFyZCdCSF85nCmhCwSTFJrBpFrLONgtXXWwv1KJx2USemhIhR7s-2Bg7sllvv7Ln3cX3PCaLhqCGW6I8tlchZRiRSHcZJh9QyeoUMyqfrFQ" alt="" width="1" height="1" />
 
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Your Realtime Database &apos;weblog-683a9&apos; has insecure rules</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2020/05/003981.html" />
-    <id>tag:weblog.youre.space,2020:/imyaman//12.3981</id>
-
-    <published>2020-05-19T18:58:44Z</published>
-    <updated>2020-05-19T18:58:44Z</updated>
-
-    <summary>weblog[Firebase] Your Realtime Database &apos;weblog-683a9&apos; has insecure rulesWe&apos;ve detected the following issue(s) with your security rules:any user can read your entire databaseany user can write to your entire databaseWithout strong security rules, anyone who has the address of your database...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="Firebase" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[<div><div><img src="https://www.gstatic.com/mobilesdk/190425_mobilesdk/firebase_lockup.png"></div><table><tr><td><div>weblog</div><div>[Firebase] Your Realtime Database 'weblog-683a9' has insecure rules</div></td><td><img src="https://www.gstatic.com/mobilesdk/180621_mobilesdk/firebase_database_white_24@2x.png"></td><tr></tr></tr></table><div><div><div><table><tr><td><img src="https://www.gstatic.com/mobilesdk/171101_mobilesdk/images/caution_orange_24dp_@2x.png"></td><td><span>We've detected the following issue(s) with your security rules:<ul><li>any user can read your entire database</li><li>any user can write to your entire database</li></ul></span></td></tr></table></div></div><div>Without strong security rules, anyone who has the address of your database can read / write to it, leaving your data vulnerable to attackers stealing, modifying, or deleting data as well as creating costly operations.</div></div><div></div><div><div><div>Insecure Rules</div></div><div>weblog</div><div><div><div>Database</div><div>weblog-683a9</div></div></div><div><div><span><a href="https://firebase.google.com/docs/database/security/resolve-insecurities">Learn more</a></span><span><a href="https://console.firebase.google.com/project/weblog-683a9/database/weblog-683a9/rules">Edit rules</a></span></div></div></div><div></div><div><div><div>If you have questions or feel you've received this message in error, please contact <a href="https://firebase.google.com/support/">Firebase support</a></div><div>Thanks for using Firebase!</div></div></div><div><div>This email is notifying you about important service information regarding your Firebase project</div><div><div>Manage your <a href="https://console.firebase.google.com/subscriptions/project/weblog-683a9">Alert settings</a></div></div></div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png"></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
 ]]>
         
     </content>

@@ -88,6 +88,293 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-3996" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003996.html">Upcoming changes to Cloud Functions for Firebase</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-22T06:47:03+09:00" itemprop="datePublished">May 22, 2020</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/action-required/">Action Required</a></li>
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    
+  
+ 
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+      body{
+        font-family:Google Sans, Roboto,  sans-serif;
+        font-size:14px;
+        -webkit-text-size-adjust: none !important;
+        -webkit-font-smoothing: antialiased
+        !important;
+        -ms-text-size-adjust: none !important;
+      }
+      table, tr, td {
+        border-collapse:collapse;
+ 
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+      }
+      a{
+        color:#0288d1;
+        text-decoration: none;">
+      }
+      a:link, a:visited, a:hover, a:active {
+        color: #4285f4;
+        text-decoration: none;
+      }
+      .appleLinks a {
+        color:#000000   !important;
+ 
+        text-decoration:none !important;
+      }
+      strong {
+        font-weight: bold !important;
+      }
+      em {
+        font-style: italic !important;
+      }
+      .yshortcuts a span {
+        color: inherit !important;
+        border-bottom: none !important;
+      }
+      html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: 100%;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width:
+        100%;
+      }
+      .ExternalClass * {
+        line-height: 100%
+      }
+      td {
+        -webkit-text-size-adjust: none;
+      }
+      a[href^=tel] {
+        color:     inherit;
+        text-decoration:   none;
+      }
+      .mob-hide {
+        display:none !important;
+      }
+      div, p, a, li, td {
+        -webkit-text-size-adjust:none;
+      }
+      td {
+        text-decoration:none !important;
+      }
+      a[x-apple-data-detectors] {
+        color: inherit
+        !important;
+        text-decoration:   none !important;
+        font-size: inherit !important;
+ 
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height:   inherit
+        !important;
+      }
+      @media all and (max-width: 600px) {
+        .table-main-gmail {
+          /*   Forces
+          Gmail to display Desktop   view */
+          width: 100% !important;
+          min-width:100% !important;
+        }
+      }
+    
+  
+  
+    <div>
+        
+        
+        
+        <table>
+        
+        
+          
+
+            
+            <tr>
+              <td>
+                <table>
+                  
+                    <tr>
+                      <td>
+                        <a>
+                        <img>
+                        </a>
+                      </td>
+                    </tr>
+                  
+                </table>
+              </td>
+            </tr>
+                
+  
+    <div>Update to the Node.js 10 runtime and update to the “Blaze” pay-as-you-go billing plan.</div>
+            
+            
+
+            
+            <tr>
+              <td>
+              <div>
+                Hi Sangyong,
+              </div>
+
+
+<p>We are writing to let you know about two upcoming changes to Cloud Functions for Firebase:</p> 
+
+<ol>
+<li>All Firebase developers who use the Cloud Functions Node.js 10 runtime will need to use the “Blaze” pay-as-you-go billing plan.</li>
+<br />
+<li>The Node.js 10 runtime on Cloud Function has now reached General Availability and the Node.js 8 runtime on Cloud Functions will be deprecated. To avoid potential disruptions or security risks, you should update your functions to Node.js 10.</li>
+</ol>
+
+<div>What Happened?</div>
+
+<p>Starting June 22, 2020, Cloud Functions for Firebase is rolling out a change in our Node.js 10 runtime that will allow you to see the output of the functions build process using Cloud Build and Container Registry. Although Cloud Build and Container Registry have a generous free quota, both products require you to be on the &quot;Blaze&quot; pay-as-you-go plan.</p>
+
+<p>This change will give you better transparency and control over your Cloud Functions deployments. For more details on the benefits of Cloud Build and Container Registry, please see our <a>online FAQ</a>.</p>
+
+<p>On Dec 31, 2019, Node.js 8 was <a>marked end-of-life by the Node.js Foundation</a>. The Node.js Foundation stopped issuing security releases for Node.js 8. To ensure that your functions are on a supported version of Node.js, you must update them to the Node.js 10 runtime.</p>
+
+<p><strong>These changes for Cloud Functions for Firebase will follow this timeline:</strong></p>
+
+<ul>
+<li>By June 22, 2020, all developers using the <strong>Node.js 10 runtime will need to update to the “Blaze” pay-as-you-go billing plan</strong> and enable the Cloud Build API in order to continue deploying functions.</li>
+<br />
+<li>By February 15, 2021, all developers using the Node.js 8 runtime should update to the Node.js 10 runtime and update to the “Blaze” pay-as-you-go billing plan. <strong>Developers will no longer be able to create new functions or update existing functions that use Node.js 8</strong>.</li>
+<br />
+<li>By March 15, 2021, <strong>Node.js 8 runtime will be shut down for Cloud Functions for Firebase</strong>. Functions using Node.js 8 will be disabled after this date.</li>
+</ul>
+
+<div>What do I need to do?</div>
+
+<ul>
+<li><strong>By June 22, 2020,</strong> all developers using the Node.js 10 runtime will need to <strong><a>update to the “Blaze” pay-as-you-go</a></strong> billing plan.</li>
+<br />
+<li><strong>By February 15, 2021</strong>, all developers using the Node.js 8 runtime should <strong><a>update to the Node.js 10 runtime</a></strong> and <strong>update to the “Blaze” pay-as-you-go</strong> billing plan, referred to in the point above.</li>
+</ul>
+
+<p><strong>After you update to the “Blaze” pay-as-you-go billing plan,</strong></p>
+
+<p>You must <strong>enable the Cloud Build API. Either <a>upgrade your Firebase CLI</a> to v8.1.0 or higher, or follow the manual instructions to enable the Cloud Build API below:</strong></p>
+
+<ol>
+<li><strong>Access</strong> the <a>Cloud Build API link</a> in the Cloud Console.</li>
+<li><strong>Select</strong> your project from the drop-down menu.</li>
+<li><strong>Click Continue</strong> to enable the Cloud Build API for the project. A box will appear in the lower-left corner to confirm the API is enabled.</li>
+</ol>
+
+<p>Once you enable the Cloud Build API, your project may incur charges if its Cloud Build or Container Registry usage exceeds the free tier limits for these products, in addition to Cloud Functions usage charges. For more information, visit the <a>Cloud Build</a> and <a>Container Registry</a> pricing pages.</p>
+
+<p>The &quot;Blaze&quot; pay-as-you-go plan <strong>includes free tier limits just like the &quot;Spark&quot; free plan</strong>. For more info, see the <a>online FAQ</a>. To avoid unexpected bills, it&#39;s always good practice to <a>set budget alerts</a>.</p>
+
+<p>You can find a list of your projects that are using Cloud Functions for Firebase and may be affected by this change below:</p>
+
+<ul>
+<li><a>alexa001-sys5co (alexa001-sys5co-4b52e)</a></li>
+<li><a>pacificmedia (pacificmedia-38170)</a></li>
+</ul>
+
+If you have any questions or need any assistance, please read our <a>online FAQ</a>. As always, feel free to <a>reach out to us</a> for more assistance. 
+             
+
+              
+          
+
+<div>
+                Thanks,
+              </div>
+              <div>
+                Raj on behalf of the Firebase team
+              </div>
+            
+          
+
+
+</td>
+          </tr>
+         
+            
+
+
+          
+          <tr>
+            <td>
+              You have received this mandatory service announcement to update you
+              about important changes to Firebase or your account.
+            </td>
+          </tr>
+ 
+          <tr>
+            <td>
+              <table>
+                
+                  <tr>
+                    <td>
+                      <img>
+                    </td>
+ 
+                    <td>
+                      <a>
+                        © 2020 Google LLC
+                        <br />
+                        1600 Amphitheatre Parkway
+                        <br />
+                        Mountain View, CA 94043 USA
+                      </a>
+                    </td>
+                  </tr>
+                
+              </table>
+            </td>
+          </tr>
+
+          
+ 
+        
+      </table>
+    
+    </div>
+  <img>
+
+
+
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/imyaman/2020/05/003996.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-3995" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003995.html">대학생의 고양시 위기극복지원금 사용기!</a></h2>
@@ -363,36 +650,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/imyaman/2020/05/003987.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-3986" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2020/05/003986.html">고양시민이라면 누구나 받을 수 있는 세가지 지원금, 야무지게 사용한 후기!</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-05-21T00:10:21+09:00" itemprop="datePublished">May 21, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard">hal9000</span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    
-
-  
-    
-  
-  
-      고양 시민이라면 누구나 100% 받을 수 있는 세 가지 지원금!!!바로정부 긴급재난지원금경기도 재난기본소득고양시 위기극복지원금문제없이 잘 쓰여지는지 알아보기위해,또 지원금 취지에 맞게 지역경제를 살리기위해 지난 2주 동안 마스크 열심히쓰며 지원금 사용을 해보았습니다.위 지원금을 받는 방법을 간단히 알아볼까요.먼저 고양시위기극복지원금은 거주지 동 행정복지센터에서 선불카드로만 지급됩니다.금액이 이미 충전되어있는 카드이기 때문에 지급받은 직후 바로 쓰실 수 있는게 큰 장점이에요!https://blog.naver.com/letsgoyang/221901227092경기도 재난기본소득은 경기도청 재난기본소득 홈페이지에서 온라인 신청,거주.......
-  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMM2Peh1Ezz8YoOQuxkYN2AeASASY9Dp0NFfINMGSmosfry-2FeXaL-2B3JwRFbGbv4e1MlLECVmvagQdG15wKZQGbBPaMO9UbVPpKU5Xcid57o3Fryki2jTLd-2BAdgngI0LiyaEKv9XJa5YYP7KseMcObja00oGNFSOHx3wVKp14eXRFbG2jvn5AmIhR43GPZJp-2Fs1py2LDkCaNaKbwtFBwPmvGC" alt="" width="1" height="1" />
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2020/05/003986.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
