@@ -4,9 +4,60 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2020-05-03T13:38:31Z</updated>
+    <updated>2020-07-10T13:19:51Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title></title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/07/004461.html" />
+    <id>tag:weblog.youre.space,2020:/vergence//11.4461</id>
+
+    <published>2020-07-10T13:18:05Z</published>
+    <updated>2020-07-10T13:19:51Z</updated>
+
+    <summary>1. Environmental preparation 1. Use Linux Deploy to install Debian phones 2. Use SSH to connect to debian remotely 2. Operation steps 1. Log in the user with sudo or root authority. 2. Clear the old warehouse: $ sudo apt-get...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<h3><span>1. Environmental preparation</span></h3>
+<p><span>1. Use Linux Deploy to install Debian phones</span></p>
+<p><span>2. Use SSH to connect to debian remotely</span></p>
+<h3><span>2. Operation steps</span></h3>
+<p><span>1. Log in the user with sudo or root authority.</span></p>
+<p><span>2. Clear the old warehouse:</span></p>
+<p><code>$ sudo apt-get purge lxc-docker*</code></p>
+<p><code>$ sudo apt-get purge docker.io*</code></p>
+<p><span>3. Update the package information to ensure that APT works in HTTPS mode and CA certificates are installed:</span></p>
+<p><code>$ sudo apt-get install apt-transport-https ca-certificates</code></p>
+<p><span>4. Add a new GPG key</span><br /><code>$ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609</code></p>
+<p><span>5. Use a file editor to open /etc/apt/sources.list.d/docker.list, and create it if the file does not exist.</span></p>
+<p><span>Delete all existing entries and add the following:</span></p>
+<p><code>deb https://apt.dockerproject.org/repo debian-jessie main</code></p>
+<p><span>6. Update APT software package index</span></p>
+<p><code>$ sudo apt-get update</code></p>
+<p><span>7. Install docker</span><br /><code>$ sudo apt-get install docker-engine</code> </p>
+<h3><span>3. Installation verification</span></h3>
+<p><span>We started the docker engine through service docker start, and felt that the start was abnormal, and there was no small flashing animation.</span></p>
+<p><span>We check the docker status through service docker status</span></p>
+<p><img height="220" src="https://static.oschina.net/uploads/space/2018/0409/130404_NnbU_2846946.png" width="790" alt="130404_NnbU_2846946.png" /></p>
+<p><span><span>The startup failed. We checked the logs. The Docker engine logs were generally handed over to Upstart (Ubuntu 14.04) or systemd (CentOS 7, Ubuntu 16.04). </span><span>The former is generally located under /var/log/upstart/docker.log, and the latter is generally read by jounarlctl -u docker. </span><span>Different systems have different locations. Some people listed on the Internet can refer to:</span></span></p>
+<p><img height="277" src="https://oscimg.oschina.net/oscnet/30142a7fa6ba561882151f350a4be8ac0bf.jpg" width="445" alt="30142a7fa6ba561882151f350a4be8ac0bf.jpg" /></p>
+<p><span>We view the docker running log through the terminal:</span></p>
+<p><img height="377" src="https://static.oschina.net/uploads/space/2018/0409/125821_CBP3_2846946.png" width="858" alt="125821_CBP3_2846946.png" /></p>
+<p><span>The detailed log is as follows:    </span></p>
+<p><img height="741" src="https://static.oschina.net/uploads/space/2018/0409/130201_bzo9_2846946.png" width="1200" alt="130201_bzo9_2846946.png" /></p>
+<p><span>You can see from the above log:</span></p>
+<p><span>level=fatal msg="Your Linux kernel version 3.4.0-gf4b741d-00692-gd785c3d is not supported for running docker. Please upgrade your kernel to 3.10.0 or newer."</span></p>
+<p><span>The log indicates that the kernel of the system is too low. At least the kernel version needs to be 3.10.0 or later. Then we upgrade the kernel version of the system and start docker.</span></p>
+<p><span>The use of docker tutorial refers to the following docker operation article</span></p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Windows 10 Home에 Docker 설치하기</title>
@@ -430,52 +481,6 @@ npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: 
     
     <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
         <![CDATA[<p><a href="https://weblog.youre.space/vergence/uploads/REMOTEMONSTER_1350x715.jpg"><img alt="REMOTEMONSTER_1350x715.jpg" src="https://weblog.youre.space/vergence/assets_c/2019/07/REMOTEMONSTER_1350x715-thumb-360xauto-93.jpg" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" width="360" height="191" /></a></p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Splunk Machine Learning Toolkit 예시</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/05/002281.html" />
-    <id>tag:weblog.youre.space,2019:/vergence//11.2281</id>
-
-    <published>2019-05-27T05:09:18Z</published>
-    <updated>2019-05-27T05:09:18Z</updated>
-
-    <summary> xor.csv num1,num2,result 0,0,0 1,0,1 0,1,1 1,1,0 quiz_xor.csv num1,num2,result 0,0 1,0 0,1 1,1 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/xor.csv&quot; | fit RandomForestClassifier result from num1, num2 into mymlxor2 index=&quot;gwak_mlxor&quot; source=&quot;/opt/data/quiz_xor.csv&quot; | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[
-<div>
-<div><br />
-</div>
-
-<div>xor.csv<br />
-num1,num2,result<br />
-0,0,0<br />
-1,0,1<br />
-0,1,1<br />
-1,1,0<br />
-<br />
-quiz_xor.csv<br />
-num1,num2,result<br />
-0,0<br />
-1,0<br />
-0,1<br />
-1,1<br />
-<br />
-index="gwak_mlxor" source="/opt/data/xor.csv" | fit RandomForestClassifier result from num1, num2 into mymlxor2<br />
-index="gwak_mlxor" source="/opt/data/quiz_xor.csv" | apply mymlxor2 as myPredictedResult | table num1, num2, myPredictedResult <br />
-<br />
-</div>
-</div>
-
-]]>
         
     </content>
 </entry>
