@@ -1,0 +1,108 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article" lang="ko">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/vergence/2020/07/004461.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="1. Environmental preparation 1. Use Linux Deploy to install Debian phones 2. Use SSH to connect to debian remotely 2. Operation steps 1. Log in the user with sudo or root authority. 2. Clear the old warehouse: $ sudo apt-get...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title> - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="https://weblog.youre.space/vergence/2020/04/003224.amp.html" title="Windows 10 Home에 Docker 설치하기">
+  <link rel="next" href="https://weblog.youre.space/vergence/2020/08/004622.amp.html" title="UnixWare 7.1.4 MP4, Perl Modules">
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2020/07/004461.html">
+    <meta property="og:description" content="1. Environmental preparation 1. Use Linux Deploy to install Debian phones 2. Use SSH to connect to debian remotely 2. Operation steps 1. Log in the user with sudo or root authority. 2. Clear the old warehouse: $ sudo apt-get...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="1. Environmental preparation 1. Use Linux Deploy to install Debian phones 2. Use SSH to connect to debian remotely 2. Operation steps 1. Log in the user with sudo or root authority. 2. Clear the old warehouse: $ sudo apt-get...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2020/07/004461.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline"></h1>
+<time datetime="2020-07-10T22:18:05+09:00" itemprop="datePublished">July 10, 2020</time>
+<time datetime="2020-07-10T22:18:05+09:00" itemprop="dateModified">July 10, 2020</time>
+
+by <span itemprop="author"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <h3><span>1. Environmental preparation</span></h3>
+<p><span>1. Use Linux Deploy to install Debian phones</span></p>
+<p><span>2. Use SSH to connect to debian remotely</span></p>
+<h3><span>2. Operation steps</span></h3>
+<p><span>1. Log in the user with sudo or root authority.</span></p>
+<p><span>2. Clear the old warehouse:</span></p>
+<p><code>$ sudo apt-get purge lxc-docker*</code></p>
+<p><code>$ sudo apt-get purge docker.io*</code></p>
+<p><span>3. Update the package information to ensure that APT works in HTTPS mode and CA certificates are installed:</span></p>
+<p><code>$ sudo apt-get install apt-transport-https ca-certificates</code></p>
+<p><span>4. Add a new GPG key</span><br /><code>$ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609</code></p>
+<p><span>5. Use a file editor to open /etc/apt/sources.list.d/docker.list, and create it if the file does not exist.</span></p>
+<p><span>Delete all existing entries and add the following:</span></p>
+<p><code>deb https://apt.dockerproject.org/repo debian-jessie main</code></p>
+<p><span>6. Update APT software package index</span></p>
+<p><code>$ sudo apt-get update</code></p>
+<p><span>7. Install docker</span><br /><code>$ sudo apt-get install docker-engine</code> </p>
+<h3><span>3. Installation verification</span></h3>
+<p><span>We started the docker engine through service docker start, and felt that the start was abnormal, and there was no small flashing animation.</span></p>
+<p><span>We check the docker status through service docker status</span></p>
+<p><img height="220" src="https://static.oschina.net/uploads/space/2018/0409/130404_NnbU_2846946.png" width="790" alt="130404_NnbU_2846946.png" /></p>
+<p><span><span>The startup failed. We checked the logs. The Docker engine logs were generally handed over to Upstart (Ubuntu 14.04) or systemd (CentOS 7, Ubuntu 16.04). </span><span>The former is generally located under /var/log/upstart/docker.log, and the latter is generally read by jounarlctl -u docker. </span><span>Different systems have different locations. Some people listed on the Internet can refer to:</span></span></p>
+<p><img height="277" src="https://oscimg.oschina.net/oscnet/30142a7fa6ba561882151f350a4be8ac0bf.jpg" width="445" alt="30142a7fa6ba561882151f350a4be8ac0bf.jpg" /></p>
+<p><span>We view the docker running log through the terminal:</span></p>
+<p><img height="377" src="https://static.oschina.net/uploads/space/2018/0409/125821_CBP3_2846946.png" width="858" alt="125821_CBP3_2846946.png" /></p>
+<p><span>The detailed log is as follows:    </span></p>
+<p><img height="741" src="https://static.oschina.net/uploads/space/2018/0409/130201_bzo9_2846946.png" width="1200" alt="130201_bzo9_2846946.png" /></p>
+<p><span>You can see from the above log:</span></p>
+<p><span>level=fatal msg="Your Linux kernel version 3.4.0-gf4b741d-00692-gd785c3d is not supported for running docker. Please upgrade your kernel to 3.10.0 or newer."</span></p>
+<p><span>The log indicates that the kernel of the system is too low. At least the kernel version needs to be 3.10.0 or later. Then we upgrade the kernel version of the system and start docker.</span></p>
+<p><span>The use of docker tutorial refers to the following docker operation article</span></p>
+  
+</div>
+
+  <a href=http://weblog.youre.space//vergence/2020/07/004461.html target="_blank">http://weblog.youre.space//vergence/2020/07/004461.html</a>
+
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+
+  </body>
+</html>
