@@ -1,0 +1,214 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article" lang="ko">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/vergence/2020/08/004623.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="from http://www.armory.com/~filbo/lubkin.com/SCO/boot-media.html FAQ: where can I find boot media for SCO operating systems? [ 2010-04-04 edition ] This is a survey of downloadable boot media for SCO operating systems including Xenix, Unix, Open Desktop, OpenServer, OpenUNIX and UnixWare. Boot media...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title> - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="https://weblog.youre.space/vergence/2020/08/004622.amp.html" title="UnixWare 7.1.4 MP4, Perl Modules">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2020/08/004623.html">
+    <meta property="og:description" content="from http://www.armory.com/~filbo/lubkin.com/SCO/boot-media.html FAQ: where can I find boot media for SCO operating systems? [ 2010-04-04 edition ] This is a survey of downloadable boot media for SCO operating systems including Xenix, Unix, Open Desktop, OpenServer, OpenUNIX and UnixWare. Boot media...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="from http://www.armory.com/~filbo/lubkin.com/SCO/boot-media.html FAQ: where can I find boot media for SCO operating systems? [ 2010-04-04 edition ] This is a survey of downloadable boot media for SCO operating systems including Xenix, Unix, Open Desktop, OpenServer, OpenUNIX and UnixWare. Boot media...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2020/08/004623.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline"></h1>
+<time datetime="2020-08-23T18:28:28+09:00" itemprop="datePublished">August 23, 2020</time>
+<time datetime="2020-08-23T18:28:28+09:00" itemprop="dateModified">August 23, 2020</time>
+
+by <span itemprop="author"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>from http://www.armory.com/~filbo/lubkin.com/SCO/boot-media.html</p>
+<pre>FAQ: where can I find boot media for SCO operating systems?
+
+[ 2010-04-04 edition ]
+
+This is a survey of downloadable boot media for SCO operating systems
+including Xenix, Unix, Open Desktop, OpenServer, OpenUNIX and UnixWare.
+
+Boot media are useful for various system tasks such as updates,
+troubleshooting, rescue / repair, migration.
+
+All pathnames are relative to ftp://ftp.sco.com/pub/; e.g. find a SCO
+OpenServer 5.0.7 bootable ISO in the directory:
+
+   ftp://ftp.sco.com/pub/ + openserver5/507/iso/
+   == ftp://ftp.sco.com/pub/openserver5/507/iso/
+
+A number of partial and in some cases complete mirrors of the SCO FTP
+repository exist, in case ftp.sco.com itself is unavailable.  Search the
+web for the filename you're interested in.
+
+If the path ends in a '/', it is a directory.  Read the text files in it
+to determine which file(s) to download and how to handle them.  If the
+path contains a '*' it is a wildcard; look at the various matches and
+their text files, determine which is the one you need.  In any case,
+always read the text file for any special notes regarding the selected
+boot image.
+
+ISO images in this list are bootable.  Many of them also have bootable
+floppy images saved in a subdirectory.
+
+Some of these are generic boot images from the named product, others are
+special purpose fixes for particular machines.  The special purpose
+images _may_ work on other systems.  There are releases of SCO operating
+systems which have only special-purpose boot images available, so you
+have little choice but to try them.
+
+ALWAYS DOWNLOAD IN BINARY MODE.  Many Windows web browsers will get this
+wrong.  Download with a real FTP client (Windows ftp.exe is adequate).
+Use the "bin" command to force binary mode.
+
+*.Z files are compressed with either standard Unix `compress` or SCO's
+extended `compress -H`.  These are uncompressible with `gzip` on all
+modern *ix systems.
+
+Floppy images generally must be written to a physical floppy; ISO images
+to a physical writable CD.  Virtual equivalents (remote KVM media,
+virtualization environments) should also work in many cases.
+
+Abbreviations:
+
+   AS  -- Application Server (UnixWare Server)
+   CMW -- Compartmented Mode Workstation
+   ISA -- Industry Standard Architecture: IBM PC/AT-compatible slots
+   ISO -- ISO 9660 filesystem: a CD-ROM image
+   MCA -- MicroChannel Architecture: IBM PS/2-compatible slots
+   N/A -- Not available
+   NSC -- NonStop Clusters, UnixWare clustering add-onle slots
+   ODT -- Open Desktop: Unix + TCP + NFS + X11 etc., workstation/server OS
+   OSR -- OpenServer: later name of ODT
+   OU  -- OpenUNIX 8.0.0, brief rename of UW in place of "7.1.2"
+   PE  -- Personal Edition (UnixWare Desktop)
+   POS -- Point Of Sale: embedded application platform
+   UW  -- UnixWare
+
+Note: early releases required different boot disks for ISA vs. MCA
+architecture, different floppy drive types, and tape vs. floppy install
+media (only matters if you are going to be trying to read full-pruduct
+install media using the boot disk).  386 Xenix 2.3.2 had a different
+kernel and install media for SCSI (Adaptec 154x only) vs. ST506/ESDI.
+UnixWare 2.0 had separate boot media for PE vs. AS.
+
+   Path on ftp://ftp.sco.com/pub/    Operating system(s)
+   ================================  ======================================
+   N/A                               Xenix 8086, LISA, etc.
+   N/A                               Xenix &lt; 2.3.2 [try 2.3.2]
+   N/A                               Xenix 286 MCA
+   <a href="ftp://ftp.sco.com/pub/SLS/xnx264.n1.Z">SLS/xnx264.n1.Z</a>                   Xenix 2.3.2 286 ISA
+   N/A                               Xenix 2.3.2 386 ISA [try 2.3.4]
+   N/A                               Xenix 2.3.2 386 ISA + SCSI [try 2.3.4]
+   <a href="ftp://ftp.sco.com/pub/EFS/efs100.n1.Z">EFS/efs100.n1.Z</a>                   Xenix 2.3.2 386 MCA 3.5" (SCSI)
+   <a href="ftp://ftp.sco.com/pub/SLS/xnx232b.n1.Z">SLS/xnx232b.n1.Z</a>                  Xenix 2.3.2 386 MCA 3.5" (ESDI)
+   <a href="ftp://ftp.sco.com/pub/EFS/efs132.n1.Z">EFS/efs132.n1.Z</a>                   Xenix 2.3.4 386 ISA 3.5"
+   <a href="ftp://ftp.sco.com/pub/EFS/efs124.n1.Z">EFS/efs124.n1.Z</a>                   Xenix 2.3.4 386 MCA 3.5"
+   N/A                               Unix 3.2.0 [try 3.2v2.0]
+   N/A                               Unix 3.2.1/ODT 1.0 [try 3.2v2.0]
+   <a href="ftp://ftp.sco.com/pub/EFS/efs1.135.n1d.Z">EFS/efs1.135.n1d.Z</a>                Unix 3.2v2.0/ODT 1.1 ISA 3.5"
+   <a href="ftp://ftp.sco.com/pub/EFS/efs1.135.n1t.Z">EFS/efs1.135.n1t.Z</a>                Unix 3.2v2.0/ODT 1.1 ISA 3.5"+tape
+   <a href="ftp://ftp.sco.com/pub/EFS/efs114.n1">EFS/efs114.n1</a>                     Unix 3.2v2.0/ODT 1.1 ISA 3.5"
+   <a href="ftp://ftp.sco.com/pub/EFS/efs1.96.n1d.Z">EFS/efs1.96.n1d.Z</a>                 Unix 3.2v2.0/ODT 1.1 ISA 5.25"
+   <a href="ftp://ftp.sco.com/pub/EFS/efs1.96.n1t.Z">EFS/efs1.96.n1t.Z</a>                 Unix 3.2v2.0/ODT 1.1 ISA 5.25"+tape
+   <a href="ftp://ftp.sco.com/pub/EFS/efs1.mc.n1d.Z">EFS/efs1.mc.n1d.Z</a>                 Unix 3.2v2.0/ODT 1.1 MCA 3.5"
+   <a href="ftp://ftp.sco.com/pub/EFS/efs1.mc.n1t.Z">EFS/efs1.mc.n1t.Z</a>                 Unix 3.2v2.0/ODT 1.1 MCA 3.5"+tape
+   <a href="ftp://ftp.sco.com/pub/EFS/efs117.n1d.Z">EFS/efs117.n1d.Z</a>                  Unix 3.2v2.0/ODT 1.1 MCA 3.5"
+   <a href="ftp://ftp.sco.com/pub/EFS/efs117.n1t.Z">EFS/efs117.n1t.Z</a>                  Unix 3.2v2.0/ODT 1.1 MCA 3.5"+tape
+   <a href="ftp://ftp.sco.com/pub/SLS/unx365b.n135.Z">SLS/unx365b.n135.Z</a>                Unix 3.2v4.0/4.1 3.5"
+   <a href="ftp://ftp.sco.com/pub/SLS/unx365b.n196.Z">SLS/unx365b.n196.Z</a>                Unix 3.2v4.0/4.1 5.25"
+   <a href="ftp://ftp.sco.com/pub/SLS/oda366b.n135.Z">SLS/oda366b.n135.Z</a>                ODT 2.0 (3.2v4.1-based) 3.5"
+   <a href="ftp://ftp.sco.com/pub/SLS/oda366b.n196.Z">SLS/oda366b.n196.Z</a>                ODT 2.0 (3.2v4.1-based) 5.25"
+   <a href="ftp://ftp.sco.com/pub/Supplements/ms101.35.n1.Z">Supplements/ms101.35.n1.Z</a>         Unix 3.2v4.1 3.5"
+   <a href="ftp://ftp.sco.com/pub/Supplements/ms101.96.n1.Z">Supplements/ms101.96.n1.Z</a>         Unix 3.2v4.1 5.25"
+   <a href="ftp://ftp.sco.com/pub/SLS/uod383bun1.Z">SLS/uod383bun1.Z</a>                  Unix 3.2v4.2
+   <a href="ftp://ftp.sco.com/pub/SLS/uod383bon1.Z">SLS/uod383bon1.Z</a>                  ODT 3.0 (3.2v4.2-based)
+   <a href="ftp://ftp.sco.com/pub/SLS/uod429a.Z">SLS/uod429a.Z</a>                     ODT 3.0, Unix 3.2v4.2 3.5"
+   <a href="ftp://ftp.sco.com/pub/SLS/cmw490a.Z">SLS/cmw490a.Z</a>                     CMW+ 3.0 (ODT 3.0-based)
+   <a href="ftp://ftp.sco.com/pub/openserver5/oss431a.boot.Z">openserver5/oss431a.boot.Z</a>        OSR 5.0.0
+   <a href="ftp://ftp.sco.com/pub/pos/demo/demofloppy/">pos/demo/demofloppy/</a>              POS demo (OSR5.0.[02]-based)
+   <a href="ftp://ftp.sco.com/pub/openserver5/oss444a.Z">openserver5/oss444a.Z</a>             OSR 5.0.[02]
+   <a href="ftp://ftp.sco.com/pub/openserver5/oss463b.n0">openserver5/oss463b.n0</a>            OSR 5.0.4
+   <a href="ftp://ftp.sco.com/pub/openserver5/oss604a.boot">openserver5/oss604a.boot</a>          OSR 5.0.5
+   N/A                               OSR 5.0.6 [try 5.0.7]
+   <a href="ftp://ftp.sco.com/pub/openserver5/507/iso/">openserver5/507/iso/</a>              OSR 5.0.7
+   <a href="ftp://ftp.sco.com/pub/openserver5/507/patches/oss670a/">openserver5/507/patches/oss670a/</a>  OSR 5.0.7
+   <a href="ftp://ftp.sco.com/pub/openserver6/600/iso/">openserver6/600/iso/</a>              OSR 6.0.0
+   N/A                               UW 1.0 [try 1.1]
+   <a href="ftp://ftp.sco.com/pub/UW11/boot1.tar">UW11/boot1.tar</a>                    UW 1.1
+   <a href="ftp://ftp.sco.com/pub/UW11/ptf202.dd.Z">UW11/ptf202.dd.Z</a>                  UW 1.1
+   UW20/2069*.dd                     UW 2.0.1 <a href="ftp://ftp.sco.com/pub/UW20/2069as.dd">AS</a>/<a href="ftp://ftp.sco.com/pub/UW20/2069pe.dd">PE</a>
+   UW20/tf2183.boot.*                UW 2.0.1 <a href="ftp://ftp.sco.com/pub/UW20/tf2183.boot.as">AS</a>/<a href="ftp://ftp.sco.com/pub/UW20/tf2183.boot.pe">PE</a>
+   UW20/tf2219.boot.*                UW 2.0.[123] <a href="ftp://ftp.sco.com/pub/UW20/tf2219.boot.as">AS</a>/<a href="ftp://ftp.sco.com/pub/UW20/tf2219.boot.pe">PE</a>
+   <a href="ftp://ftp.sco.com/pub/UW21/ptf3035.boot.dd">UW21/ptf3035.boot.dd</a>              UW 2.1.[01]
+   <a href="ftp://ftp.sco.com/pub/UW21/ptf3256.boot.dd">UW21/ptf3256.boot.dd</a>              UW 2.1.[012]
+   <a href="ftp://ftp.sco.com/pub/UW21/upd213/">UW21/upd213/</a>                      UW 2.1.3
+   <a href="ftp://ftp.sco.com/pub/unixware7/ptf7055b.bt1.dd">unixware7/ptf7055b.bt1.dd</a>         UW 7.0.0
+   N/A                               UW 7.0.1 [try 7.0.0, 7.1.0]
+   <a href="ftp://ftp.sco.com/pub/unixware7/ptf7425b.bt1.dd">unixware7/ptf7425b.bt1.dd</a>         UW 7.1.0
+   <a href="ftp://ftp.sco.com/pub/unixware7/ptf7619d/">unixware7/ptf7619d/</a>               UW 7.1.1
+   <a href="ftp://ftp.sco.com/pub/download/492-000-102DL/">download/492-000-102DL/</a>           UW 7.1.1 (NSC-specific?)
+   N/A                               OU 8.0.0 [try 7.1.3]
+   <a href="ftp://ftp.sco.com/pub/unixware7/713/ptf9000d/">unixware7/713/ptf9000d/</a>           UW 7.1.3
+   <a href="ftp://ftp.sco.com/pub/unixware7/714/iso/">unixware7/714/iso/</a>                UW 7.1.4
+
+&gt;Bela&lt;</pre>
+<p>and</p>
+<p>megasas Driver version 2013.11.05 (osr600)<br /><a href="http://www.sco.com/support/update/download/release.php?rid=442">http://www.sco.com/support/update/download/release.php?rid=442</a></p>
+<p>$ qemu-system-i386 -device megasas,id=scsi -drive if=none,id=hd1,file=openserver6_4GB.vmdk -device scsi-hd,drive=hd1 -fda hba.megasas.2013.11.05.image</p>
+<p></p>
+  
+</div>
+
+  <a href=http://weblog.youre.space//vergence/2020/08/004623.html target="_blank">http://weblog.youre.space//vergence/2020/08/004623.html</a>
+
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+
+  </body>
+</html>
