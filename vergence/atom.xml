@@ -194,12 +194,12 @@ UnixWare 2.0 had separate boot media for PE vs. AS.
 </entry>
 
 <entry>
-    <title></title>
+    <title>linux deploy</title>
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/07/004461.html" />
     <id>tag:weblog.youre.space,2020:/vergence//11.4461</id>
 
     <published>2020-07-10T13:18:05Z</published>
-    <updated>2020-07-10T13:19:51Z</updated>
+    <updated>2020-08-23T11:06:18Z</updated>
 
     <summary>1. Environmental preparation 1. Use Linux Deploy to install Debian phones 2. Use SSH to connect to debian remotely 2. Operation steps 1. Log in the user with sudo or root authority. 2. Clear the old warehouse: $ sudo apt-get...</summary>
     <author>
@@ -225,7 +225,7 @@ UnixWare 2.0 had separate boot media for PE vs. AS.
 <p><code>deb https://apt.dockerproject.org/repo debian-jessie main</code></p>
 <p><span>6. Update APT software package index</span></p>
 <p><code>$ sudo apt-get update</code></p>
-<p><span>7. Install docker</span><br /><code>$ sudo apt-get install docker-engine</code> </p>
+<p><span>7. Install docker</span><br /><code>$ sudo apt-get install docker-engine</code></p>
 <h3><span>3. Installation verification</span></h3>
 <p><span>We started the docker engine through service docker start, and felt that the start was abnormal, and there was no small flashing animation.</span></p>
 <p><span>We check the docker status through service docker status</span></p>
@@ -234,7 +234,7 @@ UnixWare 2.0 had separate boot media for PE vs. AS.
 <p><img height="277" src="https://oscimg.oschina.net/oscnet/30142a7fa6ba561882151f350a4be8ac0bf.jpg" width="445" alt="30142a7fa6ba561882151f350a4be8ac0bf.jpg" /></p>
 <p><span>We view the docker running log through the terminal:</span></p>
 <p><img height="377" src="https://static.oschina.net/uploads/space/2018/0409/125821_CBP3_2846946.png" width="858" alt="125821_CBP3_2846946.png" /></p>
-<p><span>The detailed log is as follows:    </span></p>
+<p><span>The detailed log is as follows: </span></p>
 <p><img height="741" src="https://static.oschina.net/uploads/space/2018/0409/130201_bzo9_2846946.png" width="1200" alt="130201_bzo9_2846946.png" /></p>
 <p><span>You can see from the above log:</span></p>
 <p><span>level=fatal msg="Your Linux kernel version 3.4.0-gf4b741d-00692-gd785c3d is not supported for running docker. Please upgrade your kernel to 3.10.0 or newer."</span></p>
