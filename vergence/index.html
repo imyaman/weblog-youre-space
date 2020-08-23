@@ -78,7 +78,7 @@
 
               <article id="entry-4623" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/08/004623.html"></a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/08/004623.html">qemu openserver unixware</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2020-08-23T18:28:28+09:00" itemprop="datePublished">August 23, 2020</time></li>
@@ -224,9 +224,11 @@ UnixWare 2.0 had separate boot media for PE vs. AS.
 
 &gt;Bela&lt;</pre>
 <p>and</p>
-<p>megasas Driver version 2013.11.05 (osr600)<br /><a href="http://www.sco.com/support/update/download/release.php?rid=442">http://www.sco.com/support/update/download/release.php?rid=442</a></p>
-<p>$ qemu-system-i386 -device megasas,id=scsi -drive if=none,id=hd1,file=openserver6_4GB.vmdk -device scsi-hd,drive=hd1 -fda hba.megasas.2013.11.05.image</p>
-<p></p>
+<h2>megasas Driver version 2013.11.05 (osr600)</h2>
+<p><a href="http://www.sco.com/support/update/download/release.php?rid=442">http://www.sco.com/support/update/download/release.php?rid=442</a></p>
+<p>$ qemu-system-i386 -device megasas,id=scsi -drive if=none,id=hd1,file=openserver6_4GB.vmdk -device scsi-hd,drive=hd1 -fda hba.megasas.2013.11.05.image -cdrom OpenServer-6.0.0Ni-2006-02-08-1513.iso</p>
+<h2 align="left">OpenServer 6.0.0 Supplements</h2>
+<p><a href="http://www.sco.com/support/update/download/product.php?pfid=12&amp;prid=20">http://www.sco.com/support/update/download/product.php?pfid=12&amp;prid=20</a></p>
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/vergence/2020/08/004623.html" itemprop="url">Continue reading</a>
