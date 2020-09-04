@@ -2,9 +2,9 @@
 <html lang="ko" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="from http://www.armory.com/~filbo/lubkin.com/SCO/boot-media.html FAQ: where can I find boot media for SCO operating systems? [ 2010-04-04 edition ] This is a survey of downloadable boot media for SCO operating systems including Xenix, Unix, Open Desktop, OpenServer, OpenUNIX and UnixWare. Boot media...">
+    <meta name="description" content="insert ACPI enabled=&quot;false&quot; into vbox file. &amp;lt;VirtualBox &amp;lt;Machine &amp;lt;Hardware&amp;gt; &amp;lt;BIOS&amp;gt; &amp;lt;ACPI enabled=&quot;false&quot;/&amp;gt; &amp;lt;/BIOS&amp;gt;...">
     <meta name="generator" content="Movable Type 6.3.6">
-    <title>my openserver and unixware on qemu - vergence의 이상한 세상</title>
+    <title>VirtualBox acpi off xml - vergence의 이상한 세상</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
     <!--[if lt IE 9]>
@@ -14,7 +14,7 @@
     
     <link rel="start" href="https://weblog.youre.space/vergence/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/vergence/atom.xml" />
-    <link rel="canonical" href="https://weblog.youre.space/vergence/2020/08/004623.html" />
+    <link rel="canonical" href="https://weblog.youre.space/vergence/2020/09/004624.html" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -31,20 +31,20 @@
         var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
         sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
     </script>
-    <link rel="prev" href="https://weblog.youre.space/vergence/2020/08/004622.html" title="UnixWare 7.1.4 MP4, Perl Modules">
-    <link rel="next" href="https://weblog.youre.space/vergence/2020/09/004624.html" title="VirtualBox acpi off xml">
-    <link rel="amphtml" href="https://weblog.youre.space/vergence/2020/08/004623.amp.html">
+    <link rel="prev" href="https://weblog.youre.space/vergence/2020/08/004623.html" title="my openserver and unixware on qemu">
+    
+    <link rel="amphtml" href="https://weblog.youre.space/vergence/2020/09/004624.amp.html">
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="ko_KR">
-    <meta property="og:title" content="my openserver and unixware on qemu">
-    <meta property="og:url" content="https://weblog.youre.space/vergence/2020/08/004623.html">
-    <meta property="og:description" content="from http://www.armory.com/~filbo/lubkin.com/SCO/boot-media.html FAQ: where can I find boot media for SCO operating systems? [ 2010-04-04 edition ] This is a survey of downloadable boot media for SCO operating systems including Xenix, Unix, Open Desktop, OpenServer, OpenUNIX and UnixWare. Boot media...">
+    <meta property="og:title" content="VirtualBox acpi off xml">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2020/09/004624.html">
+    <meta property="og:description" content="insert ACPI enabled=&quot;false&quot; into vbox file. &amp;lt;VirtualBox &amp;lt;Machine &amp;lt;Hardware&amp;gt; &amp;lt;BIOS&amp;gt; &amp;lt;ACPI enabled=&quot;false&quot;/&amp;gt; &amp;lt;/BIOS&amp;gt;...">
     <meta property="og:site_name" content="vergence의 이상한 세상">
     <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     <!-- Metadata -->
-    <meta itemprop="description" content="from http://www.armory.com/~filbo/lubkin.com/SCO/boot-media.html FAQ: where can I find boot media for SCO operating systems? [ 2010-04-04 edition ] This is a survey of downloadable boot media for SCO operating systems including Xenix, Unix, Open Desktop, OpenServer, OpenUNIX and UnixWare. Boot media...">
-    <link itemprop="url" href="https://weblog.youre.space/vergence/2020/08/004623.html">
+    <meta itemprop="description" content="insert ACPI enabled=&quot;false&quot; into vbox file. &amp;lt;VirtualBox &amp;lt;Machine &amp;lt;Hardware&amp;gt; &amp;lt;BIOS&amp;gt; &amp;lt;ACPI enabled=&quot;false&quot;/&amp;gt; &amp;lt;/BIOS&amp;gt;...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2020/09/004624.html">
     <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     
   </head>
@@ -80,15 +80,15 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
-              <li class="breadcrumb-list-item">my openserver and unixware on qemu</li>
+              <li class="breadcrumb-list-item">VirtualBox acpi off xml</li>
             </ul>
             <div id="individual-main" class="main" role="main">
-              <article id="entry-4623" class="entry entry-asset asset hentry">
+              <article id="entry-4624" class="entry entry-asset asset hentry">
                 <div class="asset-header">
-                  <h2 itemprop="name" class="asset-name entry-title">my openserver and unixware on qemu</h2>
+                  <h2 itemprop="name" class="asset-name entry-title">VirtualBox acpi off xml</h2>
                   <footer class="asset-meta">
                     <ul class="asset-meta-list">
-                      <li class="asset-meta-list-item">Posted on <time datetime="2020-08-23T18:28:28+09:00" itemprop="datePublished">August 23, 2020</time></li>
+                      <li class="asset-meta-list-item">Posted on <time datetime="2020-09-04T23:05:34+09:00" itemprop="datePublished">September  4, 2020</time></li>
                       <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -97,154 +97,15 @@
                 </footer>
                 </div>
                 <div class="entry-content asset-content" itemprop="articleBody">
-                  <p>from http://www.armory.com/~filbo/lubkin.com/SCO/boot-media.html</p>
-<pre>FAQ: where can I find boot media for SCO operating systems?
-
-[ 2010-04-04 edition ]
-
-This is a survey of downloadable boot media for SCO operating systems
-including Xenix, Unix, Open Desktop, OpenServer, OpenUNIX and UnixWare.
-
-Boot media are useful for various system tasks such as updates,
-troubleshooting, rescue / repair, migration.
-
-All pathnames are relative to ftp://ftp.sco.com/pub/; e.g. find a SCO
-OpenServer 5.0.7 bootable ISO in the directory:
-
-   ftp://ftp.sco.com/pub/ + openserver5/507/iso/
-   == ftp://ftp.sco.com/pub/openserver5/507/iso/
-
-A number of partial and in some cases complete mirrors of the SCO FTP
-repository exist, in case ftp.sco.com itself is unavailable.  Search the
-web for the filename you're interested in.
-
-If the path ends in a '/', it is a directory.  Read the text files in it
-to determine which file(s) to download and how to handle them.  If the
-path contains a '*' it is a wildcard; look at the various matches and
-their text files, determine which is the one you need.  In any case,
-always read the text file for any special notes regarding the selected
-boot image.
-
-ISO images in this list are bootable.  Many of them also have bootable
-floppy images saved in a subdirectory.
-
-Some of these are generic boot images from the named product, others are
-special purpose fixes for particular machines.  The special purpose
-images _may_ work on other systems.  There are releases of SCO operating
-systems which have only special-purpose boot images available, so you
-have little choice but to try them.
-
-ALWAYS DOWNLOAD IN BINARY MODE.  Many Windows web browsers will get this
-wrong.  Download with a real FTP client (Windows ftp.exe is adequate).
-Use the "bin" command to force binary mode.
-
-*.Z files are compressed with either standard Unix `compress` or SCO's
-extended `compress -H`.  These are uncompressible with `gzip` on all
-modern *ix systems.
-
-Floppy images generally must be written to a physical floppy; ISO images
-to a physical writable CD.  Virtual equivalents (remote KVM media,
-virtualization environments) should also work in many cases.
-
-Abbreviations:
-
-   AS  -- Application Server (UnixWare Server)
-   CMW -- Compartmented Mode Workstation
-   ISA -- Industry Standard Architecture: IBM PC/AT-compatible slots
-   ISO -- ISO 9660 filesystem: a CD-ROM image
-   MCA -- MicroChannel Architecture: IBM PS/2-compatible slots
-   N/A -- Not available
-   NSC -- NonStop Clusters, UnixWare clustering add-onle slots
-   ODT -- Open Desktop: Unix + TCP + NFS + X11 etc., workstation/server OS
-   OSR -- OpenServer: later name of ODT
-   OU  -- OpenUNIX 8.0.0, brief rename of UW in place of "7.1.2"
-   PE  -- Personal Edition (UnixWare Desktop)
-   POS -- Point Of Sale: embedded application platform
-   UW  -- UnixWare
-
-Note: early releases required different boot disks for ISA vs. MCA
-architecture, different floppy drive types, and tape vs. floppy install
-media (only matters if you are going to be trying to read full-pruduct
-install media using the boot disk).  386 Xenix 2.3.2 had a different
-kernel and install media for SCSI (Adaptec 154x only) vs. ST506/ESDI.
-UnixWare 2.0 had separate boot media for PE vs. AS.
-
-   Path on ftp://ftp.sco.com/pub/    Operating system(s)
-   ================================  ======================================
-   N/A                               Xenix 8086, LISA, etc.
-   N/A                               Xenix &lt; 2.3.2 [try 2.3.2]
-   N/A                               Xenix 286 MCA
-   <a href="ftp://ftp.sco.com/pub/SLS/xnx264.n1.Z">SLS/xnx264.n1.Z</a>                   Xenix 2.3.2 286 ISA
-   N/A                               Xenix 2.3.2 386 ISA [try 2.3.4]
-   N/A                               Xenix 2.3.2 386 ISA + SCSI [try 2.3.4]
-   <a href="ftp://ftp.sco.com/pub/EFS/efs100.n1.Z">EFS/efs100.n1.Z</a>                   Xenix 2.3.2 386 MCA 3.5" (SCSI)
-   <a href="ftp://ftp.sco.com/pub/SLS/xnx232b.n1.Z">SLS/xnx232b.n1.Z</a>                  Xenix 2.3.2 386 MCA 3.5" (ESDI)
-   <a href="ftp://ftp.sco.com/pub/EFS/efs132.n1.Z">EFS/efs132.n1.Z</a>                   Xenix 2.3.4 386 ISA 3.5"
-   <a href="ftp://ftp.sco.com/pub/EFS/efs124.n1.Z">EFS/efs124.n1.Z</a>                   Xenix 2.3.4 386 MCA 3.5"
-   N/A                               Unix 3.2.0 [try 3.2v2.0]
-   N/A                               Unix 3.2.1/ODT 1.0 [try 3.2v2.0]
-   <a href="ftp://ftp.sco.com/pub/EFS/efs1.135.n1d.Z">EFS/efs1.135.n1d.Z</a>                Unix 3.2v2.0/ODT 1.1 ISA 3.5"
-   <a href="ftp://ftp.sco.com/pub/EFS/efs1.135.n1t.Z">EFS/efs1.135.n1t.Z</a>                Unix 3.2v2.0/ODT 1.1 ISA 3.5"+tape
-   <a href="ftp://ftp.sco.com/pub/EFS/efs114.n1">EFS/efs114.n1</a>                     Unix 3.2v2.0/ODT 1.1 ISA 3.5"
-   <a href="ftp://ftp.sco.com/pub/EFS/efs1.96.n1d.Z">EFS/efs1.96.n1d.Z</a>                 Unix 3.2v2.0/ODT 1.1 ISA 5.25"
-   <a href="ftp://ftp.sco.com/pub/EFS/efs1.96.n1t.Z">EFS/efs1.96.n1t.Z</a>                 Unix 3.2v2.0/ODT 1.1 ISA 5.25"+tape
-   <a href="ftp://ftp.sco.com/pub/EFS/efs1.mc.n1d.Z">EFS/efs1.mc.n1d.Z</a>                 Unix 3.2v2.0/ODT 1.1 MCA 3.5"
-   <a href="ftp://ftp.sco.com/pub/EFS/efs1.mc.n1t.Z">EFS/efs1.mc.n1t.Z</a>                 Unix 3.2v2.0/ODT 1.1 MCA 3.5"+tape
-   <a href="ftp://ftp.sco.com/pub/EFS/efs117.n1d.Z">EFS/efs117.n1d.Z</a>                  Unix 3.2v2.0/ODT 1.1 MCA 3.5"
-   <a href="ftp://ftp.sco.com/pub/EFS/efs117.n1t.Z">EFS/efs117.n1t.Z</a>                  Unix 3.2v2.0/ODT 1.1 MCA 3.5"+tape
-   <a href="ftp://ftp.sco.com/pub/SLS/unx365b.n135.Z">SLS/unx365b.n135.Z</a>                Unix 3.2v4.0/4.1 3.5"
-   <a href="ftp://ftp.sco.com/pub/SLS/unx365b.n196.Z">SLS/unx365b.n196.Z</a>                Unix 3.2v4.0/4.1 5.25"
-   <a href="ftp://ftp.sco.com/pub/SLS/oda366b.n135.Z">SLS/oda366b.n135.Z</a>                ODT 2.0 (3.2v4.1-based) 3.5"
-   <a href="ftp://ftp.sco.com/pub/SLS/oda366b.n196.Z">SLS/oda366b.n196.Z</a>                ODT 2.0 (3.2v4.1-based) 5.25"
-   <a href="ftp://ftp.sco.com/pub/Supplements/ms101.35.n1.Z">Supplements/ms101.35.n1.Z</a>         Unix 3.2v4.1 3.5"
-   <a href="ftp://ftp.sco.com/pub/Supplements/ms101.96.n1.Z">Supplements/ms101.96.n1.Z</a>         Unix 3.2v4.1 5.25"
-   <a href="ftp://ftp.sco.com/pub/SLS/uod383bun1.Z">SLS/uod383bun1.Z</a>                  Unix 3.2v4.2
-   <a href="ftp://ftp.sco.com/pub/SLS/uod383bon1.Z">SLS/uod383bon1.Z</a>                  ODT 3.0 (3.2v4.2-based)
-   <a href="ftp://ftp.sco.com/pub/SLS/uod429a.Z">SLS/uod429a.Z</a>                     ODT 3.0, Unix 3.2v4.2 3.5"
-   <a href="ftp://ftp.sco.com/pub/SLS/cmw490a.Z">SLS/cmw490a.Z</a>                     CMW+ 3.0 (ODT 3.0-based)
-   <a href="ftp://ftp.sco.com/pub/openserver5/oss431a.boot.Z">openserver5/oss431a.boot.Z</a>        OSR 5.0.0
-   <a href="ftp://ftp.sco.com/pub/pos/demo/demofloppy/">pos/demo/demofloppy/</a>              POS demo (OSR5.0.[02]-based)
-   <a href="ftp://ftp.sco.com/pub/openserver5/oss444a.Z">openserver5/oss444a.Z</a>             OSR 5.0.[02]
-   <a href="ftp://ftp.sco.com/pub/openserver5/oss463b.n0">openserver5/oss463b.n0</a>            OSR 5.0.4
-   <a href="ftp://ftp.sco.com/pub/openserver5/oss604a.boot">openserver5/oss604a.boot</a>          OSR 5.0.5
-   N/A                               OSR 5.0.6 [try 5.0.7]
-   <a href="ftp://ftp.sco.com/pub/openserver5/507/iso/">openserver5/507/iso/</a>              OSR 5.0.7
-   <a href="ftp://ftp.sco.com/pub/openserver5/507/patches/oss670a/">openserver5/507/patches/oss670a/</a>  OSR 5.0.7
-   <a href="ftp://ftp.sco.com/pub/openserver6/600/iso/">openserver6/600/iso/</a>              OSR 6.0.0
-   N/A                               UW 1.0 [try 1.1]
-   <a href="ftp://ftp.sco.com/pub/UW11/boot1.tar">UW11/boot1.tar</a>                    UW 1.1
-   <a href="ftp://ftp.sco.com/pub/UW11/ptf202.dd.Z">UW11/ptf202.dd.Z</a>                  UW 1.1
-   UW20/2069*.dd                     UW 2.0.1 <a href="ftp://ftp.sco.com/pub/UW20/2069as.dd">AS</a>/<a href="ftp://ftp.sco.com/pub/UW20/2069pe.dd">PE</a>
-   UW20/tf2183.boot.*                UW 2.0.1 <a href="ftp://ftp.sco.com/pub/UW20/tf2183.boot.as">AS</a>/<a href="ftp://ftp.sco.com/pub/UW20/tf2183.boot.pe">PE</a>
-   UW20/tf2219.boot.*                UW 2.0.[123] <a href="ftp://ftp.sco.com/pub/UW20/tf2219.boot.as">AS</a>/<a href="ftp://ftp.sco.com/pub/UW20/tf2219.boot.pe">PE</a>
-   <a href="ftp://ftp.sco.com/pub/UW21/ptf3035.boot.dd">UW21/ptf3035.boot.dd</a>              UW 2.1.[01]
-   <a href="ftp://ftp.sco.com/pub/UW21/ptf3256.boot.dd">UW21/ptf3256.boot.dd</a>              UW 2.1.[012]
-   <a href="ftp://ftp.sco.com/pub/UW21/upd213/">UW21/upd213/</a>                      UW 2.1.3
-   <a href="ftp://ftp.sco.com/pub/unixware7/ptf7055b.bt1.dd">unixware7/ptf7055b.bt1.dd</a>         UW 7.0.0
-   N/A                               UW 7.0.1 [try 7.0.0, 7.1.0]
-   <a href="ftp://ftp.sco.com/pub/unixware7/ptf7425b.bt1.dd">unixware7/ptf7425b.bt1.dd</a>         UW 7.1.0
-   <a href="ftp://ftp.sco.com/pub/unixware7/ptf7619d/">unixware7/ptf7619d/</a>               UW 7.1.1
-   <a href="ftp://ftp.sco.com/pub/download/492-000-102DL/">download/492-000-102DL/</a>           UW 7.1.1 (NSC-specific?)
-   N/A                               OU 8.0.0 [try 7.1.3]
-   <a href="ftp://ftp.sco.com/pub/unixware7/713/ptf9000d/">unixware7/713/ptf9000d/</a>           UW 7.1.3
-   <a href="ftp://ftp.sco.com/pub/unixware7/714/iso/">unixware7/714/iso/</a>                UW 7.1.4
-
-&gt;Bela&lt;</pre>
-<p>and</p>
-<h2>megasas Driver version 2013.11.05 (osr600)</h2>
-<p><a href="http://www.sco.com/support/update/download/release.php?rid=442">http://www.sco.com/support/update/download/release.php?rid=442</a></p>
-<p>$ qemu-system-i386 -device megasas,id=scsi -drive if=none,id=hd1,file=openserver6_4GB.vmdk -device scsi-hd,drive=hd1 -fda hba.megasas.2013.11.05.image -cdrom OpenServer-6.0.0Ni-2006-02-08-1513.iso</p>
-<h2 align="left">OpenServer 6.0.0 Supplements</h2>
-<p><a href="http://www.sco.com/support/update/download/product.php?pfid=12&amp;prid=20">http://www.sco.com/support/update/download/product.php?pfid=12&amp;prid=20</a></p>
+                  <p>insert ACPI enabled="false" into vbox file.</p>
+<pre>&lt;VirtualBox<br />  &lt;Machine <br />    &lt;Hardware&gt;<br />      &lt;BIOS&gt;<br />        &lt;ACPI enabled="false"/&gt;<br />      &lt;/BIOS&gt;<br /><br /></pre>
                   
                 </div>
                 <nav class="page-navigation entry-navigation pagination content-nav">
                   <ul class="page-navigation-list">
 
-                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2020/08/004622.html" title="UnixWare 7.1.4 MP4, Perl Modules">Previous entry</a></li>
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2020/08/004623.html" title="my openserver and unixware on qemu">Previous entry</a></li>
 
-
-                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="https://weblog.youre.space/vergence/2020/09/004624.html" title="VirtualBox acpi off xml">Next entry</a></li>
 
                   </ul>
                 </nav>
@@ -259,7 +120,7 @@ UnixWare 2.0 had separate boot media for PE vs. AS.
                 <aside id="trackbacks" class="trackbacks feedback">
   <h2>TrackBacks</h2>
   
-  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/380</p>
+  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/381</p>
   
   
 </aside>
