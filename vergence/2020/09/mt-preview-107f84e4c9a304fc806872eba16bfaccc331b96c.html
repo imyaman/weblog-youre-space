@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="http://schema.org/Article">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="1. Maintenance Pack 4 (uw714) http://www.sco.com/support/update/download/release.php?rid=337 libc 8.0.2e 가 설치됨 2. libc version 8.0.2f http://www.sco.com/support/update/download/release.php?rid=412 3. ptf9055h, the UnixWare 7.1.4 Maintenance Pack 4 Supplement http://www.sco.com/support/update/download/release.php?rid=446 이 패치가 libc 8.0.2f를 필요로 함 단, 이 패치를 설치하려면 ACPI=N 옵션을 주고 부팅해야함 이...">
+    <meta name="generator" content="Movable Type 6.3.6">
+    <title>2015년 이후의 UnixWare 7.1.4 업데이트 - vergence의 이상한 세상</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles_ie.css">
+    <script src="https://connexus.youre.space/mt-static/support/theme_static/rainier/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <link rel="start" href="https://weblog.youre.space/vergence/">
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/vergence/atom.xml" />
+    
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-102177098-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+    <script type="text/javascript">
+        var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
+        sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
+    </script>
+    <link rel="prev" href="https://weblog.youre.space/vergence/2020/09/004624.html" title="VirtualBox acpi off xml">
+    <link rel="next" href="https://weblog.youre.space/vergence/2020/09/004626.html" title="Dress Uniform and Necktie ">
+    <link rel="amphtml" href="https://weblog.youre.space/vergence/2020/09/004625.amp.html">
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="2015년 이후의 UnixWare 7.1.4 업데이트">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2020/09/004625.html">
+    <meta property="og:description" content="1. Maintenance Pack 4 (uw714) http://www.sco.com/support/update/download/release.php?rid=337 libc 8.0.2e 가 설치됨 2. libc version 8.0.2f http://www.sco.com/support/update/download/release.php?rid=412 3. ptf9055h, the UnixWare 7.1.4 Maintenance Pack 4 Supplement http://www.sco.com/support/update/download/release.php?rid=446 이 패치가 libc 8.0.2f를 필요로 함 단, 이 패치를 설치하려면 ACPI=N 옵션을 주고 부팅해야함 이...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    <!-- Metadata -->
+    <meta itemprop="description" content="1. Maintenance Pack 4 (uw714) http://www.sco.com/support/update/download/release.php?rid=337 libc 8.0.2e 가 설치됨 2. libc version 8.0.2f http://www.sco.com/support/update/download/release.php?rid=412 3. ptf9055h, the UnixWare 7.1.4 Maintenance Pack 4 Supplement http://www.sco.com/support/update/download/release.php?rid=446 이 패치가 libc 8.0.2f를 필요로 함 단, 이 패치를 설치하려면 ACPI=N 옵션을 주고 부팅해야함 이...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2020/09/004625.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body>
+    <div id="container">
+      <div id="container-inner">
+        <header id="header" role="banner">
+          <div id="header-inner">
+            <div id="header-content">
+              <h1>
+                <a href="https://weblog.youre.space/vergence/">
+
+                  <img alt="vergence의 이상한 세상" src="https://weblog.youre.space/vergence/assets_c/2017/08/Coffee-and-Books-1024x512-thumb-1024x512-3.jpg">
+
+                </a>
+              </h1>
+              <p id="header-description">#취미생활 취미생호라 취미생하로</p>
+            </div>
+
+            <nav role="navigation">
+          <ul>
+            <li><a href="https://weblog.youre.space/vergence/">Home</a></li>
+
+            <li><a href="https://weblog.youre.space/vergence/about/about-page.html">About</a></li>
+
+
+          </ul>
+        </nav>
+
+          </div>
+        </header>
+        <div id="content">
+          <div id="content-inner">
+            <ul class="breadcrumb breadcrumb-list">
+              <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
+              <li class="breadcrumb-list-item">2015년 이후의 UnixWare 7.1.4 업데이트</li>
+            </ul>
+            <div id="individual-main" class="main" role="main">
+              <article id="entry-4625" class="entry entry-asset asset hentry">
+                <div class="asset-header">
+                  <h2 itemprop="name" class="asset-name entry-title">2015년 이후의 UnixWare 7.1.4 업데이트</h2>
+                  <footer class="asset-meta">
+                    <ul class="asset-meta-list">
+                      <li class="asset-meta-list-item">Posted on <time datetime="2020-09-06T16:27:24+09:00" itemprop="datePublished">September  6, 2020</time></li>
+                      <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+                   </ul>
+                </footer>
+                </div>
+                <div class="entry-content asset-content" itemprop="articleBody">
+                  <h2>1. Maintenance Pack 4 (uw714)</h2>
+
+<p>http://www.sco.com/support/update/download/release.php?rid=337 <br />
+libc 8.0.2e 가 설치됨</p>
+
+<h2>2. libc version 8.0.2f</h2>
+
+<p>http://www.sco.com/support/update/download/release.php?rid=412</p>
+
+<h2>3. ptf9055h, the UnixWare 7.1.4 Maintenance Pack 4 Supplement</h2>
+
+<p>http://www.sco.com/support/update/download/release.php?rid=446
+이 패치가 libc 8.0.2f를 필요로 함 <br />
+단, 이 패치를 설치하려면 ACPI=N 옵션을 주고 부팅해야함</p>
+
+<p>이 1, 2, 3은 필수. 아래 4, 5, 6, 7은 준필수.</p>
+
+<h2>4. ide, ahci 버스 드라이버</h2>
+
+<p>http://www.sco.com/support/update/download/release.php?rid=383
+여러가지 드라이버가 포함되어 있는데 많이 필요한 건 ide, ahci 임  </p>
+
+<h2>5. Network Drivers (nd) Package Version 8.0.6n</h2>
+
+<p>http://www.sco.com/support/update/download/release.php?rid=487
+설치된 디바이스의 드라이버만 업데이트 하지 말고 모든 드라이버를 업데이트</p>
+
+<h2>6. USB 2.0 Drivers version 8.0.2e</h2>
+
+<p>http://www.sco.com/support/update/download/release.php?rid=365</p>
+
+<h2>7. UDI 1.0.1 Runtime Environment Supplement version 8.0.2e</h2>
+
+<p>위 설치를 귀찮아할 미래의 나에게 VM 디스크 이미지를 선물한다.
+<a href="https://drive.google.com/file/d/1D8zh7vBK6YM3-MvcB2NQUs0lLaJ_GdvW/view?usp=sharing">UnixWare 7.1.4 MP4 + etc</a>
+이 이미지는 MP4, osmp, ahci 등을 포함한다. 라이선스는 포함하지 않는다.</p>
+
+<p>실행은 아래와 같이 한다.</p>
+
+<blockquote>
+  <p>qemu-system-i386 -name unixware -m 1G -rtc clock=host,base=localtime -smp 4 -mem-prealloc -device lsi53c895a,id=scsi0 -drive if=none,id=hd1,file=unixware<em>4gb</em>nolicense.vmdk -device scsi-hd,drive=hd1 -device scsi-cd,drive=cd0 -drive if=none,id=cd0,media=cdrom -boot menu=on -net nic -net user -device cirrus-vga -monitor stdio -nodefaults</p>
+</blockquote>
+
+<p>오류가 발생하면 qemu의 reset을 이용한다. 부팅 중 오류가 발생하지 않으면, 부팅 완료 후에도 오류가 발생하지 않는다. qemu의 reset을 반복하다보면 정상적으로 부팅이 될 때가 있다. SMP를 위해 osmp 패키지를 설치하고 나서 발생하는 오류이다. UnixWare의 boot 옵션 ACPI=N 과 ENABLE_JT=N 이 도움이 될 수 있다. qemu의 -no-acpi 옵션이 도움될 수 있다.
+부팅 후 dcu를 이용해 smp 관련된 드라이버를 끄는 것도 도움이 될 수 있다.
+psrinfo 로 CPU 활성화 상태를 보면 관련 드라이버를 켜도 SMP가 잘 동작하는 것 같지는 않다.</p>
+
+<p>root의 비밀번호는 <a href="https://saramara.ai">saramara.ai</a>이다.</p>
+
+                  
+                </div>
+                <nav class="page-navigation entry-navigation pagination content-nav">
+                  <ul class="page-navigation-list">
+
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2020/09/004624.html" title="VirtualBox acpi off xml">Previous entry</a></li>
+
+
+                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="https://weblog.youre.space/vergence/2020/09/004626.html" title="Dress Uniform and Necktie ">Next entry</a></li>
+
+                  </ul>
+                </nav>
+                <!--
+<aside id="zenback" class="zenback feedback">
+  
+</aside>
+-->
+                
+                <aside id="trackbacks" class="trackbacks feedback">
+  <h2>TrackBacks</h2>
+  
+  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/382</p>
+  
+  
+</aside>
+
+
+              </article>
+            </div>
+            <aside class="widgets related" role="complementary">
+              <nav class="widget-search widget">
+  <div class="widget-content">
+    <form method="get" id="search" action="https://connexus.youre.space/mt6/mt-search.cgi">
+      <div>
+        <input type="text" name="search" value="" placeholder="Search...">
+
+        <input type="hidden" name="IncludeBlogs" value="11">
+
+        <input type="hidden" name="limit" value="20">
+        <button type="submit" name="button">
+          <img alt="Search" src="https://connexus.youre.space/mt-static/support/theme_static/rainier/img/search-icon.png">
+        </button>
+      </div>
+    </form>
+  </div>
+</nav>
+<nav class="widget-archive-category widget">
+  <h3 class="widget-header">Categories</h3>
+  <div class="widget-content">
+    
+      
+    <ul class="widget-list">
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/vergence/2002-2003/">2002-2003 (18)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/vergence/bc0/">BC0 (63)</a>
+      
+      
+      </li>
+      
+    
+      
+      
+      <li class="widget-list-item"><a href="https://weblog.youre.space/vergence/cal/">cal (29)</a>
+      
+      
+      </li>
+      
+    </ul>
+      
+    
+  </div>
+</nav>
+  
+
+<nav class="widget-archive-dropdown widget">
+  <h3 class="widget-header">Archives</h3>
+  <div class="widget-content">
+    <select>
+      <option>Select a Month...</option>
+    
+      <option value="https://weblog.youre.space/vergence/2020/09/">September 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2020/08/">August 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2020/07/">July 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2020/04/">April 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2020/03/">March 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2020/02/">February 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2020/01/">January 2020</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/11/">November 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/09/">September 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/08/">August 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/07/">July 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/05/">May 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/04/">April 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/03/">March 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2019/01/">January 2019</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/12/">December 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/08/">August 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/07/">July 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/05/">May 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/04/">April 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/03/">March 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2018/02/">February 2018</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/12/">December 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/11/">November 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/10/">October 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/09/">September 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/08/">August 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/07/">July 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/06/">June 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/05/">May 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/04/">April 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/03/">March 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2017/02/">February 2017</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/11/">November 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/10/">October 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/09/">September 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/07/">July 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/06/">June 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/05/">May 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/04/">April 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/03/">March 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/02/">February 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2016/01/">January 2016</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/12/">December 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/11/">November 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/10/">October 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/09/">September 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/08/">August 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2015/07/">July 2015</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/11/">November 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/10/">October 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/08/">August 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/06/">June 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/05/">May 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/04/">April 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2014/03/">March 2014</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2013/11/">November 2013</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2013/08/">August 2013</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2013/05/">May 2013</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2011/09/">September 2011</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/09/">September 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/08/">August 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/07/">July 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/06/">June 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/05/">May 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2004/04/">April 2004</option>
+    
+  
+    
+      <option value="https://weblog.youre.space/vergence/2002/02/">February 2002</option>
+    
+    </select>
+  </div>
+</nav>
+    
+  
+
+<div class="widget-tag-cloud widget">
+  <h3 class="widget-header">Tag Cloud</h3>
+  <div class="widget-content">
+    <ul class="widget-list">
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=finalfantasy&amp;limit=20">finalfantasy</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=firebase&amp;limit=20">firebase</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=leadership&amp;limit=20">leadership</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=neuralnetwork&amp;limit=20">neuralnetwork</a></li>
+  
+
+  
+      <li class="widget-list-item tag rank-6"><a href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;tag=%EB%A6%AC%EB%8D%94%EC%8B%AD&amp;limit=20">리더십</a></li>
+  
+    </ul>
+  </div>
+</div>
+  
+
+<div class="widget-syndication widget section">
+  <div class="widget-content">
+    <p><img src="https://connexus.youre.space/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="https://weblog.youre.space/vergence/atom.xml">Subscribe to this blog's feed</a></p>
+
+  </div>
+</div>
+
+            </aside>
+          </div>
+        </div>
+        <footer id="footer" role="contentinfo">
+          <div id="footer-inner">
+            <div id="footer-content">
+  <nav role="navigation">
+          <ul>
+            <li><a href="https://weblog.youre.space/vergence/">Home</a></li>
+
+            <li><a href="https://weblog.youre.space/vergence/about/about-page.html">About</a></li>
+
+
+          </ul>
+        </nav>
+
+  <p class="license">&copy; Copyright 2020.</p>
+  <p class="poweredby">Powered by <a href="//www.movabletype.org/">Movable Type</a> and <a href="http://youre.space/">youre.space</a></p>
+</div>
+
+<!-- ad starts -->
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="//nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="//adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<!-- ad ends -->
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://connexus.youre.space/mt-static/jquery/jquery.min.js"></script>
+    <script src="https://weblog.youre.space/vergence/mt-theme-scale2.js"></script>
+
+<center>
+<script type="text/javascript"> 
+clicksor_enable_adhere = false; 
+
+clicksor_default_url = '';
+clicksor_banner_border = '#99CC33'; 
+clicksor_banner_ad_bg = '#FFFFFF';
+clicksor_banner_link_color = '#000000'; 
+clicksor_banner_text_color = '#666666';
+clicksor_layer_border_color = '';
+clicksor_layer_ad_bg = ''; 
+clicksor_layer_ad_link_color = '';
+clicksor_layer_ad_text_color = ''; 
+clicksor_text_link_bg = '';
+clicksor_text_link_color = ''; 
+clicksor_enable_text_link = false;
+		 
+clicksor_banner_text_banner = true;
+clicksor_banner_image_banner = true; 
+clicksor_enable_layer_pop = false;
+clicksor_enable_pop = false;
+</script>
+<script type="text/javascript" src="http://b.clicksor.net/show.php?nid=1&amp;pid=330835&amp;adtype=20&amp;sid=588821"></script>
+</center>
+
+</body>
+</html>
