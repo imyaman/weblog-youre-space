@@ -41,7 +41,7 @@
     <id>tag:weblog.youre.space,2020:/vergence//11.4625</id>
 
     <published>2020-09-06T07:27:24Z</published>
-    <updated>2020-10-04T14:23:50Z</updated>
+    <updated>2020-10-04T14:35:32Z</updated>
 
     <summary>1. Maintenance Pack 4 (uw714) http://www.sco.com/support/update/download/release.php?rid=337 libc 8.0.2e 가 설치됨 2. libc version 8.0.2f http://www.sco.com/support/update/download/release.php?rid=412 3. ptf9055h, the UnixWare 7.1.4 Maintenance Pack 4 Supplement http://www.sco.com/support/update/download/release.php?rid=446 이 패치가 libc 8.0.2f를 필요로 함 단, 이 패치를 설치하려면 ACPI=N 옵션을 주고 부팅해야함 이...</summary>
     <author>
@@ -93,6 +93,10 @@ libc 8.0.2e 가 설치됨</p>
 <blockquote>
   <p>qemu-system-i386 -name unixware -m 1G -rtc clock=host,base=localtime -smp 4 -mem-prealloc -device lsi53c895a,id=scsi0 -drive if=none,id=hd1,file=unixware<em>4gb</em>nolicense.vmdk -device scsi-hd,drive=hd1 -device scsi-cd,drive=cd0 -drive if=none,id=cd0,media=cdrom -boot menu=on -net nic -net user -device cirrus-vga -monitor stdio -nodefaults</p>
 </blockquote>
+
+<p>오류가 발생하면 qemu의 reset을 이용한다. 부팅 중 오류가 발생하지 않으면, 부팅 완료 후에도 오류가 발생하지 않는다. qemu의 reset을 반복하다보면 정상적으로 부팅이 될 때가 있다. SMP를 위해 osmp 패키지를 설치하고 나서 발생하는 오류이다. UnixWare의 boot 옵션 ACPI=N 과 ENABLE_JT=N 이 도움이 될 수 있다. qemu의 -no-acpi 옵션이 도움될 수 있다.
+부팅 후 dcu를 이용해 smp 관련된 드라이버를 끄는 것도 도움이 될 수 있다.
+psrinfo 로 CPU 활성화 상태를 보면 관련 드라이버를 켜도 SMP가 잘 동작하는 것 같지는 않다.</p>
 ]]>
         
     </content>

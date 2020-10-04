@@ -173,6 +173,10 @@ libc 8.0.2e 가 설치됨</p>
   <p>qemu-system-i386 -name unixware -m 1G -rtc clock=host,base=localtime -smp 4 -mem-prealloc -device lsi53c895a,id=scsi0 -drive if=none,id=hd1,file=unixware<em>4gb</em>nolicense.vmdk -device scsi-hd,drive=hd1 -device scsi-cd,drive=cd0 -drive if=none,id=cd0,media=cdrom -boot menu=on -net nic -net user -device cirrus-vga -monitor stdio -nodefaults</p>
 </blockquote>
 
+<p>오류가 발생하면 qemu의 reset을 이용한다. 부팅 중 오류가 발생하지 않으면, 부팅 완료 후에도 오류가 발생하지 않는다. qemu의 reset을 반복하다보면 정상적으로 부팅이 될 때가 있다. SMP를 위해 osmp 패키지를 설치하고 나서 발생하는 오류이다. UnixWare의 boot 옵션 ACPI=N 과 ENABLE_JT=N 이 도움이 될 수 있다. qemu의 -no-acpi 옵션이 도움될 수 있다.
+부팅 후 dcu를 이용해 smp 관련된 드라이버를 끄는 것도 도움이 될 수 있다.
+psrinfo 로 CPU 활성화 상태를 보면 관련 드라이버를 켜도 SMP가 잘 동작하는 것 같지는 않다.</p>
+
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/vergence/2020/09/004625.html" itemprop="url">Continue reading</a>
