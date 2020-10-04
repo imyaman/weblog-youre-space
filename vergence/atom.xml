@@ -41,7 +41,7 @@
     <id>tag:weblog.youre.space,2020:/vergence//11.4625</id>
 
     <published>2020-09-06T07:27:24Z</published>
-    <updated>2020-09-06T12:59:10Z</updated>
+    <updated>2020-10-04T14:23:50Z</updated>
 
     <summary>1. Maintenance Pack 4 (uw714) http://www.sco.com/support/update/download/release.php?rid=337 libc 8.0.2e 가 설치됨 2. libc version 8.0.2f http://www.sco.com/support/update/download/release.php?rid=412 3. ptf9055h, the UnixWare 7.1.4 Maintenance Pack 4 Supplement http://www.sco.com/support/update/download/release.php?rid=446 이 패치가 libc 8.0.2f를 필요로 함 단, 이 패치를 설치하려면 ACPI=N 옵션을 주고 부팅해야함 이...</summary>
     <author>
@@ -83,6 +83,16 @@ libc 8.0.2e 가 설치됨</p>
 <p>http://www.sco.com/support/update/download/release.php?rid=365</p>
 
 <h2>7. UDI 1.0.1 Runtime Environment Supplement version 8.0.2e</h2>
+
+<p>위 설치를 귀찮아할 미래의 나에게 VM 디스크 이미지를 선물한다.
+<a href="https://drive.google.com/file/d/1D8zh7vBK6YM3-MvcB2NQUs0lLaJ_GdvW/view?usp=sharing">UnixWare 7.1.4 MP4 + etc</a>
+이 이미지는 MP4, osmp, ahci 등을 포함한다. 라이선스는 포함하지 않는다.</p>
+
+<p>실행은 아래와 같이 한다.</p>
+
+<blockquote>
+  <p>qemu-system-i386 -name unixware -m 1G -rtc clock=host,base=localtime -smp 4 -mem-prealloc -device lsi53c895a,id=scsi0 -drive if=none,id=hd1,file=unixware<em>4gb</em>nolicense.vmdk -device scsi-hd,drive=hd1 -device scsi-cd,drive=cd0 -drive if=none,id=cd0,media=cdrom -boot menu=on -net nic -net user -device cirrus-vga -monitor stdio -nodefaults</p>
+</blockquote>
 ]]>
         
     </content>

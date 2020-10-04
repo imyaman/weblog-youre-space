@@ -163,6 +163,16 @@ libc 8.0.2e 가 설치됨</p>
 
 <h2>7. UDI 1.0.1 Runtime Environment Supplement version 8.0.2e</h2>
 
+<p>위 설치를 귀찮아할 미래의 나에게 VM 디스크 이미지를 선물한다.
+<a href="https://drive.google.com/file/d/1D8zh7vBK6YM3-MvcB2NQUs0lLaJ_GdvW/view?usp=sharing">UnixWare 7.1.4 MP4 + etc</a>
+이 이미지는 MP4, osmp, ahci 등을 포함한다. 라이선스는 포함하지 않는다.</p>
+
+<p>실행은 아래와 같이 한다.</p>
+
+<blockquote>
+  <p>qemu-system-i386 -name unixware -m 1G -rtc clock=host,base=localtime -smp 4 -mem-prealloc -device lsi53c895a,id=scsi0 -drive if=none,id=hd1,file=unixware<em>4gb</em>nolicense.vmdk -device scsi-hd,drive=hd1 -device scsi-cd,drive=cd0 -drive if=none,id=cd0,media=cdrom -boot menu=on -net nic -net user -device cirrus-vga -monitor stdio -nodefaults</p>
+</blockquote>
+
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/vergence/2020/09/004625.html" itemprop="url">Continue reading</a>
