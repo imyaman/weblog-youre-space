@@ -378,9 +378,34 @@ s.setAttribute('data-timestamp', +new Date());
           </ul>
         </nav>
 
-  <p class="license">&copy; Copyright 2019.</p>
+  <p class="license">&copy; Copyright 2021.</p>
   <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
+
+<script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+<div class="main_banner" id="main_banner">
+  <script type="text/javascript">
+
+var tad_slot2_conf = {
+  slotNo: 2,
+  targetId: 'main_banner',
+  clientId: 'MX000603F',
+  newWindow: false,
+  test: false,
+  errorCallback: function(errorCode) {
+    if (errorCode == 0) {
+      // No Ad
+    } else if(errorCode == 1) {
+      // Frequency Over
+    }
+  }
+};
+TadSdk.AdView.init(tad_slot2_conf);    
+
+  </script>
 </div>
+
+</div>
+
           </div>
         </footer>
       </div>
