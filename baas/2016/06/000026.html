@@ -310,6 +310,28 @@ clicksor_banner_text_color = '#666666';
   <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
   <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
 </div>
+
+<div class="main_banner" id="main_banner2">
+  <script type="text/javascript">
+
+var tad_slot2_conf = {
+  slotNo: 2,
+  targetId: 'main_banner2',
+  clientId: 'MX000603F',
+  newWindow: false,
+  test: false,
+  errorCallback: function(errorCode) {
+    if (errorCode == 0) {
+      // No Ad
+    } else if(errorCode == 1) {
+      // Frequency Over
+    }
+  }
+};
+TadSdk.AdView.init(tad_slot2_conf);    
+
+  </script>
+
 </center>
 <!-- ad ends -->
           </div>
