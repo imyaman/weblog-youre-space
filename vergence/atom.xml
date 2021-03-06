@@ -4,9 +4,31 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2020-11-28T07:07:23Z</updated>
+    <updated>2021-03-06T14:20:32Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>두레이 좋습니다</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2021/03/004628.html" />
+    <id>tag:weblog.youre.space,2021:/vergence//11.4628</id>
+
+    <published>2021-03-06T14:17:12Z</published>
+    <updated>2021-03-06T14:20:32Z</updated>
+
+    <summary>#Dooray! 쓰고나서 협업 프로젝트 관리가 정말 편해졌어요! 최고최고!...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<p>#Dooray! 쓰고나서 협업 프로젝트 관리가 정말 편해졌어요! 최고최고!</p>
+<p><img src="https://pbs.twimg.com/media/EvzWzkKUcAMOoMG?format=png&amp;name=large" /></p>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>IBM Jazz Team Concert, SAFe Essential Template</title>
@@ -667,27 +689,6 @@ npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: 
 <div data-offset-key="cgpoh-0-0" class="_1mf _1mj"><span data-offset-key="cgpoh-0-0"><span data-text="true">Treat Ops as first-class citizens from the point of view requirements. ... In particular, the Ops requirements are likely to be in the area of logging, monitoring, and information to support incident handling.</span></span></div>
 </div>
 </div>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>블로그 홍보</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2019/11/002979.html" />
-    <id>tag:weblog.youre.space,2019:/vergence//11.2979</id>
-
-    <published>2019-11-21T23:36:16Z</published>
-    <updated>2019-11-21T23:36:16Z</updated>
-
-    <summary><![CDATA[좀 뜸했습니다. 블로그 홍보 다시 해보려고요. 블로그 글 쓰는 분들도 더 섭외하고요.#블로그홍보&nbsp;...]]></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[좀 뜸했습니다. 블로그 홍보 다시 해보려고요. 블로그 글 쓰는 분들도 더 섭외하고요.<div><br /></div><div>#블로그홍보&nbsp;</div>]]>
         
     </content>
 </entry>
