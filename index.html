@@ -88,6 +88,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-5214" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2021/03/005214.html">Fedora 33, Korea Mirror, Kaist Mirror </a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2021-03-13T21:44:22+09:00" itemprop="datePublished">March 13, 2021</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p></p>
+<h2>/etc/yum.repos.d/fedora.repo</h2>
+<pre>[fedora]<br />name=Fedora $releasever - $basearch<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/os/</span><br />enabled=1<br />countme=1<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[fedora-debuginfo]<br />name=Fedora $releasever - $basearch - Debug<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/debug/</span><br />enabled=0<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[fedora-source]<br />name=Fedora $releasever - Source<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/source/tree/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/source/SRPMS/</span><br />enabled=0<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False</pre>
+<p></p>
+<h2>/etc/yum.repos.d/fedora-updates.repo</h2>
+<pre>[updates]<br />name=Fedora $releasever - $basearch - Updates<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/Everything/$basearch/</span><br />enabled=1<br />countme=1<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[updates-debuginfo]<br />name=Fedora $releasever - $basearch - Updates - Debug<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/debug/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/$basearch/debug/</span><br />enabled=0<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[updates-source]<br />name=Fedora $releasever - Updates Source<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/SRPMS/</span><br />enabled=0<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False</pre>
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2021/03/005214.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-5213" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2021/03/005213.html">Updates to Actions on Google Policies: Smart Home and Alcohol,Tobacco & Drugs</a></h2>
@@ -648,38 +675,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/imyaman/2021/03/005205.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-5204" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2021/03/005204.html">성남#398, #399,#400 발생보고</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2021-03-07T21:07:07+09:00" itemprop="datePublished">March  7, 2021</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard">hal9000</span></li>
-
-  
-        <li class="asset-meta-list-item">in <a itemprop="articleSection" rel="tag" href="https://weblog.youre.space/imyaman/ieie-1/">성남속보</a></li>
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    
-
-  
-    
-  
-  
-      ※심층역학조사 및 접촉자 분류가 완료 되는 대로신속하게 정보를 안내해 드리겠습니다.
-  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMOZun3JybwtZ5a3AJIA0ga6vuNtRwueSnWSexEh1Vl8EpeQOMxz5egLr-2FT7jJwP3Z2eKcaQzePWB62EWR-2BV5szyD1Y51TLjY3zoqwUVkT2rl4gEgnp2aVMp6MAU4KF5iOKO-2F4UEXHkVrOe1Fbinq7aosTW9ljvNvI-2BcBkiusYJoDxG29uWP3t2xHgw8Icx8qweZHecGT09AyCZB3vkStTkh" alt="" width="1" height="1" />
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2021/03/005204.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 

@@ -4,9 +4,35 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2021-03-06T14:20:32Z</updated>
+    <updated>2021-03-13T13:02:14Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Fedora 33, Korea Mirror, Kaist Mirror </title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2021/03/005214.html" />
+    <id>tag:weblog.youre.space,2021:/vergence//11.5214</id>
+
+    <published>2021-03-13T12:44:22Z</published>
+    <updated>2021-03-13T13:02:14Z</updated>
+
+    <summary><![CDATA[ /etc/yum.repos.d/fedora.repo [fedora]name=Fedora $releasever - $basearch#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/os/enabled=1countme=1metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[fedora-debuginfo]name=Fedora $releasever - $basearch - Debug#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/debug/enabled=0metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[fedora-source]name=Fedora $releasever - Source#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/source/tree/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/source/SRPMS/enabled=0metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False /etc/yum.repos.d/fedora-updates.repo [updates]name=Fedora $releasever - $basearch - Updates#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/Everything/$basearch/enabled=1countme=1repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[updates-debuginfo]name=Fedora $releasever - $basearch - Updates - Debug#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/debug/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/$basearch/debug/enabled=0repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[updates-source]name=Fedora $releasever - Updates Source#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/SRPMS/enabled=0repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False...]]></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<p></p>
+<h2>/etc/yum.repos.d/fedora.repo</h2>
+<pre>[fedora]<br />name=Fedora $releasever - $basearch<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/os/</span><br />enabled=1<br />countme=1<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[fedora-debuginfo]<br />name=Fedora $releasever - $basearch - Debug<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/debug/</span><br />enabled=0<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[fedora-source]<br />name=Fedora $releasever - Source<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/source/tree/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/source/SRPMS/</span><br />enabled=0<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False</pre>
+<p></p>
+<h2>/etc/yum.repos.d/fedora-updates.repo</h2>
+<pre>[updates]<br />name=Fedora $releasever - $basearch - Updates<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/Everything/$basearch/</span><br />enabled=1<br />countme=1<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[updates-debuginfo]<br />name=Fedora $releasever - $basearch - Updates - Debug<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/debug/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/$basearch/debug/</span><br />enabled=0<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[updates-source]<br />name=Fedora $releasever - Updates Source<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/SRPMS/</span><br />enabled=0<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False</pre>]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>두레이 좋습니다</title>
@@ -626,69 +652,6 @@ npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: 
     <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
         <![CDATA[<p>로그 요약해서 각 단계별 주요 로그만 거르고, 이걸 한 행에 세션아이디와 각 단계별 완료 시각으로만 요약하는 스크립트를 만드는데.<br />요즘 JavaScript 학습 하시는 내무부장관님께서<br />지나가는 말로 "nested 로 작성하지 말라던데..." _흠칫_<br /><br />perl 코드이니 알아보지는 못 하시겠지만, 혹시라도 내 코드를 보여드리진 말아야겠다는 생각이 들었습니다.<br />ㄷㄷㄷㄷ<br /><br />그리고 스킬이 부족한 탓에, 150MB짜리 텍스트 파일 한 줄씩 읽어다가 통째로 메모리에, 그것도 해시에 넣고 정리하는데, 30분 걸릴 줄 생각했는데 몇 분도 안 걸려서 깜짝 놀랐습니다.<br />시간이 흘러도 컴퓨팅 파워에 대한 제 기준은 CPU AMD K6 300 &amp; MEM 128MB, 20년 전 제 첫 컴퓨터.<br />지금 내 노트북 CPU는 Celeron N4100.</p>
 <p><br />아무튼... perl이 빠르다는 이야기입니다.</p>]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>DevOps 관련 무료 책 모음</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/01/003198.html" />
-    <id>tag:weblog.youre.space,2020:/vergence//11.3198</id>
-
-    <published>2020-01-12T11:33:08Z</published>
-    <updated>2020-01-12T11:36:06Z</updated>
-
-    <summary>https://github.com/jidibinlin/Free-DevOps-Books-1 DevOps 관련 무료 책 모음입니다. 여기 있는 책 중에, DevOps: A Software Architect&apos;s Perspective 보고 있습니다. 아래 두 가지 눈에 띄네요. 4.2 Overall Archtecture Structure 에서... 컴포넌트를 프로덕션에 넣는 시간을 단축하기 위해 아래와 같은 요구사항이 있음. * Deploy에 다른...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<p><a href="https://github.com/jidibinlin/Free-DevOps-Books-1" title="DevOps 관련 무료 책  모음" target="_blank">https://github.com/jidibinlin/Free-DevOps-Books-1</a></p>
-<p>DevOps 관련 무료 책 모음입니다.</p>
-<div data-contents="true">
-<div data-block="true" data-editor="6ifmv" data-offset-key="5tuuk-0-0">
-<div data-offset-key="5tuuk-0-0" class="_1mf _1mj"><span data-offset-key="5tuuk-0-0"><span data-text="true">여기 있는 책 중에, DevOps: A Software Architect's Perspective 보고 있습니다. 아래 두 가지 눈에 띄네요.</span></span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="a7pi0-0-0">
-<div data-offset-key="a7pi0-0-0" class="_1mf _1mj"><span data-offset-key="a7pi0-0-0"> </span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="7fh62-0-0">
-<div data-offset-key="7fh62-0-0" class="_1mf _1mj"><span data-offset-key="7fh62-0-0"><span data-text="true">4.2 Overall Archtecture Structure 에서...</span></span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="9paks-0-0">
-<div data-offset-key="9paks-0-0" class="_1mf _1mj"><span data-offset-key="9paks-0-0"><span data-text="true">컴포넌트를 프로덕션에 넣는 시간을 단축하기 위해 아래와 같은 요구사항이 있음.</span></span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="2jm70-0-0">
-<div data-offset-key="2jm70-0-0" class="_1mf _1mj"><span data-offset-key="2jm70-0-0"> </span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="5efte-0-0">
-<div data-offset-key="5efte-0-0" class="_1mf _1mj"><span data-offset-key="5efte-0-0"><span data-text="true">* Deploy에 다른 팀과의 명시적인 coordination이 필요하지 않음</span></span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="53hed-0-0">
-<div data-offset-key="53hed-0-0" class="_1mf _1mj"><span data-offset-key="53hed-0-0"><span data-text="true">* 한 서비스의 다른 버전이 프로덕션에 함께 존재 가능</span></span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="5od6g-0-0">
-<div data-offset-key="5od6g-0-0" class="_1mf _1mj"><span data-offset-key="5od6g-0-0"><span data-text="true">* 에러 발생 시 롤백할 수 있음</span></span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="d416u-0-0">
-<div data-offset-key="d416u-0-0" class="_1mf _1mj"><span data-offset-key="d416u-0-0"> </span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="9u23i-0-0">
-<div data-offset-key="9u23i-0-0" class="_1mf _1mj"><span data-offset-key="9u23i-0-0"><span data-text="true">마이크로서비스 아키텍처가 이런 요구사항을 만족시킴</span></span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="eauqi-0-0">
-<div data-offset-key="eauqi-0-0" class="_1mf _1mj"><span data-offset-key="eauqi-0-0"> </span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="6406u-0-0">
-<div data-offset-key="6406u-0-0" class="_1mf _1mj"><span data-offset-key="6406u-0-0"><span data-text="true">4.1 Do DevOps Practices Require Archtectural Change? 에서...</span></span></div>
-</div>
-<div data-block="true" data-editor="6ifmv" data-offset-key="cgpoh-0-0">
-<div data-offset-key="cgpoh-0-0" class="_1mf _1mj"><span data-offset-key="cgpoh-0-0"><span data-text="true">Treat Ops as first-class citizens from the point of view requirements. ... In particular, the Ops requirements are likely to be in the area of logging, monitoring, and information to support incident handling.</span></span></div>
-</div>
-</div>]]>
         
     </content>
 </entry>
