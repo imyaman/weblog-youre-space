@@ -4,9 +4,33 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-03-16T20:47:19Z</updated>
+    <updated>2021-04-05T18:11:55Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Your project &apos;assistant-health&apos; was downgraded due to activity in Google Cloud</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/04/005217.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5217</id>
+
+    <published>2021-04-05T18:11:55Z</published>
+    <updated>2021-04-05T18:11:55Z</updated>
+
+    <summary> assistant-healthYour project was downgraded due to activity in Google CloudOpen ConsoleFirebase is deeply integrated with Google Cloud. Many of your settings, including billing information and collaborators, are shared by Firebase and Google Cloud. Learn moreOne of the following actions...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Firebase" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[<div><div><img src="https://www.gstatic.com/mobilesdk/190425_mobilesdk/firebase_lockup.png" alt=""></div> <table><tr><td><div>assistant-health</div><div>Your project was downgraded due to activity in Google Cloud</div></td><tr></tr></tr></table><div><a href="https://console.firebase.google.com/project/assistant-health/overview">Open Console</a></div><div><div><table><tr><td><img src="https://www.gstatic.com/mobilesdk/170616_mobilesdk/info_bluegrey400_24dp@2x.png" alt=""></td><td><span>Firebase is deeply integrated with <a href="https://cloud.google.com/">Google Cloud</a>. Many of your settings, including billing information and collaborators, are shared by Firebase and Google Cloud. <a href="https://firebase.google.com/support/faq/#pricing-cloud">Learn more</a></span></td></tr></table></div><div><div>One of the following actions was performed by a user in the Google Cloud Console:<ul><li>Billing was disabled for your project, or</li><li>The billing account attached to your project was closed</li></ul>This action ended billing for your project, resulting in a downgrade to your project's Firebase plan.</div></div></div><div></div><div><div><div>Project Downgraded to</div></div><div>assistant-health</div><div><div>Plan</div><div>Spark - $0/month</div></div></div><div></div><div><div>If you have questions or feel you've received this message in error, please contact <a href="https://firebase.google.com/support/">Firebase support</a> or visit the <a href="https://www.google.com/url?q=https://firebase.google.com/support/faq/?hl=en#effects-billing-cloud-console">Firebase Pricing FAQs</a>.</div></div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png" alt=""></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>New Mobile Usability issues detected for site pacificmedia.sys5.co</title>
@@ -1126,36 +1150,6 @@ Need more information or help?
   
       코로나 19 바이러스의 확산이 계속되면서 바깥 외출은 삼가고 집에서 보내는 시간이 많은 요즘, 집콕생활이 낯설었던 분들 혹은 너무 지루한 분들을 위해 슬기로운 집콕생활을 즐기며 관람할 수 있는 영화들을 소개해볼게요.작은 아씨들영화 작은 아씨들은 1868년 출간되어 현재까지 전 세계적인 사랑을 받고 있는 명작 소설 ‘작은 아씨들’을 원작으로 제작되었는데요.루이자 메이 올커트의 손에서 탄생한 마치가 네 자매의 이야기와 따뜻한 위로를 선사하는 메시지를 전달합니다.시대를 뛰어넘어 많은 이들에게 강렬한 인상과 예술적 영감을 남겨주었고, 평단의 호평과 흥행을 모두 사로잡은 베스트셀러로 자리매김 했습니.......
   <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMPYuaOd6MRRDfEgUw8CshIfliYFmonzCKnHdBiTZnuB1MMwx9SI3ZLKGcfyS6ks8HKJ3OZHtl1rrcGV5wKYnunstUVfvXowsSd-2Fq2sIYKbDdROu8AsChTLKNuqZhsfYBNFe4jOo9BQtV8w1gHZY4nf3vmnGMqDTxdq0hRPYm3ZY0sp9-2FKmklxLcdPS1FvjwZEjijpR7Cyr3Xvs34Z98NPgP" alt="" width="1" height="1" />
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Theodore Roosevelt</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/03/005201.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5201</id>
-
-    <published>2021-03-07T12:07:03Z</published>
-    <updated>2021-03-07T12:07:03Z</updated>
-
-    <summary> &quot;I am a part of everything that I have read.&quot;...</summary>
-    <author>
-        <name>hal9000</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-  
-  
-      "I am a part of everything that I have read."
-  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMMGfZZTPcGyqF9-2F8jLKSuKMIaMPFc27xO-2BfpZBet1AAMS2rd-2FlBKPHsnoxcSHR5M0yqXe0CnjS5blaF5-2BUjiOsSStdWUL53Zd8NQHrX3-2FSGNqYmNWBTKR7EsR067m5PBdNZWsj6Og3B2MEOOxYVQXBiuhnvB-2FI26suhgdmhXTOvt6iwAyF4361ic3CQmWJGdXrW5smSMyrE6uSpzMIv4tBz" alt="" width="1" height="1" />
-
 ]]>
         
     </content>
