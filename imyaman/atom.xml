@@ -4,9 +4,329 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-05-06T05:06:10Z</updated>
+    <updated>2021-05-20T08:34:35Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title> Changes to YouTube’s Terms of Service</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/05/005220.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5220</id>
+
+    <published>2021-05-20T08:34:35Z</published>
+    <updated>2021-05-20T08:34:35Z</updated>
+
+    <summary> Important update #outlook a { padding: 0; } * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } body { font-family: Roboto, Arial, Helvetica, sans-serif; margin: 0; padding: 0; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, th,...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+
+
+
+Important update
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#outlook a {
+padding: 0;
+}
+* {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+body {
+font-family: Roboto, Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+-webkit-text-size-adjust: none !important;
+-webkit-font-smoothing: antialiased !important;
+-ms-text-size-adjust: none !important;
+}
+table,
+tr,
+th,
+td {
+border-spacing: 0;
+border-collapse: collapse;
+mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;
+}
+img {
+border: 0;
+height: auto;
+line-height: 100%;
+outline: none;
+text-decoration: none;
+-ms-interpolation-mode: bicubic;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+color: #065fd4;
+text-decoration: none;
+}
+a[x-apple-data-detectors] {
+border-bottom: 0 !important;
+cursor: default !important;
+color: inherit !important;
+text-decoration: none !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+}
+.im {
+color: inherit !important;
+}
+img.g-img + div {
+display: none !important;
+}
+sup {
+line-height: 0;
+font-size: 75%;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+.hide-on-mobile {
+display: none !important;
+}
+.hide-on-desktop {
+display: block !important;
+max-height: none !important;
+}
+.hide-on-desktop td {
+display: table-cell !important;
+max-height: none !important;
+}
+}
+.hide-on-desktop,
+.hide-on-desktop td {
+mso-hide: all;
+display: none;
+max-height: 0;
+overflow: hidden;
+}
+
+
+@media only screen and (max-width:480px) {
+table.mj-full-width-mobile {
+width: 100% !important;
+}
+td.mj-full-width-mobile {
+width: auto !important;
+}
+}
+
+
+@media only screen and (min-width:620px) {
+.mj-column-per-100 {
+width: 100% !important;
+max-width: 100%;
+}
+.mj-column-per-50 {
+width: 50% !important;
+max-width: 50%;
+}
+}
+
+
+
+<div>
+<div>
+<table>
+
+<tr>
+<td>
+
+<div>
+<table>
+
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a>
+<img alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+You’re receiving this email because we’re updating the YouTube <a>Terms of Service</a> (“Terms”) to clarify our terms and provide transparency to our users. The Terms were similarly updated in the United States in November 2020. These changes shouldn't significantly alter your access or use of the YouTube&nbsp;service.
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+A summary of the changes:
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li>
+<strong>Facial recognition restrictions</strong>: The Terms of Service already state that you cannot collect any information that might identify a person without their permission. While this has always included facial recognition information, the new Terms make that explicitly&nbsp;clear.
+</li>
+<li>
+<strong>YouTube’s right to monetize</strong>: YouTube has the right to monetize all content on the platform and ads may appear on videos from channels not in the YouTube&nbsp;Partner&nbsp;Program.
+</li>
+<li>
+<strong>Royalty payments and tax withholding</strong>: For creators entitled to revenue payments, such payments will be treated as royalties from a U.S. tax perspective and Google will withhold taxes where required by&nbsp;law.
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<strong>Please make sure you read the updates to the Terms carefully. The new <a>Terms</a> will take effect on June 1, 2021 for users outside the U.S.</strong> By continuing to use YouTube after this date, you are agreeing to the new Terms. Please note, if you allow your child to use YouTube Kids, then you are agreeing to the new Terms on behalf of your child as well.
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+If you would like more information, visit our <a>Help Center</a>.
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr><tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+You received this mandatory email service announcement to update you about important changes to the YouTube&nbsp;Terms.
+</td>
+</tr> <tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<a><img alt="" /></a>
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+&copy; 2021 <a> Google LLC d/b/a YouTube, 901 Cherry Ave, San Bruno, CA 94066 </a> </td>
+</tr>
+</table>
+</td>
+</tr>
+
+</table>
+</div>
+
+</td>
+</tr>
+
+</table>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td><img alt="" /></td>
+<td><img alt="" /></td>
+<td><img alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Security alert</title>
@@ -1407,37 +1727,6 @@ Need more information or help?
       자세한 내용 보기https://blog.naver.com/letsgoyang/222090082874
   <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMO6Y8pcxI-2FoYPQzTIQPieG4SfcqSvpw-2FJyyDWIcOJG2GBuosEC-2FxpXWlGIAFuJcZ46XtpzgHeoRPP2Ie3wY-2BMQFlnHOK9hU5pPoE4V7oFP5GC17GWlorvPD2bu7GgAv36c-2BuazB-2Fp8lKAkFjLrbapbpZjs8eIygG5kSl2y4q79kG502n1MPnD8s2bxadgSRGNr2psq0rbPkGDh3vjaaEdFU" alt="" width="1" height="1" />
 
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>성남#398, #399,#400 발생보고</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/03/005204.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5204</id>
-
-    <published>2021-03-07T12:07:07Z</published>
-    <updated>2021-03-07T12:07:07Z</updated>
-
-    <summary> ※심층역학조사 및 접촉자 분류가 완료 되는 대로신속하게 정보를 안내해 드리겠습니다....</summary>
-    <author>
-        <name>hal9000</name>
-        
-    </author>
-    
-        <category term="성남속보" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-  
-  
-      ※심층역학조사 및 접촉자 분류가 완료 되는 대로신속하게 정보를 안내해 드리겠습니다.
-  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMOZun3JybwtZ5a3AJIA0ga6vuNtRwueSnWSexEh1Vl8EpeQOMxz5egLr-2FT7jJwP3Z2eKcaQzePWB62EWR-2BV5szyD1Y51TLjY3zoqwUVkT2rl4gEgnp2aVMp6MAU4KF5iOKO-2F4UEXHkVrOe1Fbinq7aosTW9ljvNvI-2BcBkiusYJoDxG29uWP3t2xHgw8Icx8qweZHecGT09AyCZB3vkStTkh" alt="" width="1" height="1" />
 ]]>
         
     </content>
