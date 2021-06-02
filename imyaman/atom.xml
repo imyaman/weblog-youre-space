@@ -4,9 +4,85 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-05-20T08:34:35Z</updated>
+    <updated>2021-06-02T19:03:53Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Inactive registered OAuth URIs for your project(s) will be removed from Google Developer Console by July 12, 2021, for non-compliance with URI validation rules</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/06/005221.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5221</id>
+
+    <published>2021-06-02T19:03:53Z</published>
+    <updated>2021-06-02T19:03:53Z</updated>
+
+    <summary> Review your impacted URIs in your listed project(s). Hello Google Developer, We are writing to let you know that you have inactive OAuth redirect URIs and JavaScript origins in your Google Cloud project that are not in compliance with...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Action Advised" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+<span> </span>
+<div><span><img alt="Google logo"> </span></div>
+<span>  </span>
+
+<div>Review your impacted URIs in your listed project(s).</div>
+
+
+<p>Hello Google Developer,</p>
+
+<p>We are writing to let you know that you have inactive OAuth redirect URIs and JavaScript origins in your Google Cloud project that are not in compliance with Google’s OAuth URI validation rules.</p>
+
+<ul>
+  <li><strong>On July 12, 2021</strong>, we will remove all inactive URIs that are invalid.</li>
+  <li><strong>On September 13, 2021,</strong> we will remove all URIs that are not in compliance with <a>redirect URIs</a> and <a>Javascript origins</a> rules (including formerly inactive URIs trying to become active).</li>
+</ul>
+
+What do I need to do to be compliant?
+
+<ul>
+  <li>If these inactive OAuth redirect URIs and JavaScript origins are no longer needed, you can remove them from your Google Cloud project. If they remain inactive, they will be automatically deleted after <strong>July 12, 2021.</strong></li>
+  <li>If your app still needs to use these URIs, please update your app and OAuth configuration from the Google Developer Console to use redirect URIs or JavaScript origins that are compliant with the <a>OAuth URI validation rules</a> <strong>by</strong> <strong>September 13, 2021</strong>.</li>
+</ul>
+
+<p>The following Google Cloud project(s), which has/have registered OAuth redirect URIs and JavaScript origins without usage for over 90 days, and which will be removed<strong> by July 12, 2021</strong>:</p>
+
+<ul>
+  <li>Project ID: <a>blog-c227a</a>
+
+    <ul>
+      <li>Client: <a>1014338909363-4fagm99u4dgbo4a4tpsahttnte6gd1gi.apps.googleusercontent.com</a>
+
+        <ul>          <li>URI: <a>http://cal.youre.space/625/mt.cgi?__mode=ga_oauth2callback</a></li>
+       	</ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+<p>If you have any questions or concerns regarding these changes, please review the documentation provided above in this email.</p>
+
+<p>Sincerely,</p>
+
+<p>The Google Developer Team</p>
+
+
+<div>
+  <p>© 2021 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
+
+  <p>You have received this mandatory service announcement to update you about important changes to Google services you use.</p>
+</div>
+<img alt="">
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title> Changes to YouTube’s Terms of Service</title>
@@ -1694,38 +1770,6 @@ Need more information or help?
   
       "To begin, begin."
   <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMMa5TZ7Qx1AJabOYmzNv32Kwromht086G-2BvAOCz6lucyA3mQEiXq4Pf1l38jgKS4fWlhk0zSpPdLvCCoo4iVCDg1H2WAn9zJ582V73UKqBYrx7bdx5pkjoWpDcNayKSuobwgxFhfaw616de6wi2cXmSwtEnXOKzcrwhPJnO-2FOeR1NE7QyBwgGHxfY1347NMT9LR6AMNrPsvDq4MiwxxjPLD" alt="" width="1" height="1" />
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>고양시 청년드림JOB콘스터 온라인 개최! (9/21~9/25)</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/03/005205.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5205</id>
-
-    <published>2021-03-07T12:07:07Z</published>
-    <updated>2021-03-07T12:07:07Z</updated>
-
-    <summary> 자세한 내용 보기https://blog.naver.com/letsgoyang/222090082874...</summary>
-    <author>
-        <name>hal9000</name>
-        
-    </author>
-    
-        <category term="카드뉴스" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-  
-  
-      자세한 내용 보기https://blog.naver.com/letsgoyang/222090082874
-  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMO6Y8pcxI-2FoYPQzTIQPieG4SfcqSvpw-2FJyyDWIcOJG2GBuosEC-2FxpXWlGIAFuJcZ46XtpzgHeoRPP2Ie3wY-2BMQFlnHOK9hU5pPoE4V7oFP5GC17GWlorvPD2bu7GgAv36c-2BuazB-2Fp8lKAkFjLrbapbpZjs8eIygG5kSl2y4q79kG502n1MPnD8s2bxadgSRGNr2psq0rbPkGDh3vjaaEdFU" alt="" width="1" height="1" />
 
 ]]>
         
