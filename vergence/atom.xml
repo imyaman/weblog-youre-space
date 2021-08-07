@@ -4,9 +4,34 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/vergence/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/vergence/11</id>
-    <updated>2021-03-13T13:02:14Z</updated>
+    <updated>2021-08-07T14:29:40Z</updated>
     <subtitle>#취미생활 취미생호라 취미생하로</subtitle>
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2021/08/005226.html" />
+    <id>tag:weblog.youre.space,2021:/vergence//11.5226</id>
+
+    <published>2021-08-07T14:12:08Z</published>
+    <updated>2021-08-07T14:29:40Z</updated>
+
+    <summary>JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
+        <![CDATA[<p>JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까?</p>
+<p>짧은 답: gradlew 를 수정하자.<br />gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이 있다.<br />어느 예에는, collect all arguments... 이런 행에 이어서 eval set... 이런 행이 있다. <br />어느 예에는, "$@" 이런 구문이 있다.</p>
+<p>수정의 예는 아래와 같다.</p>
+<pre><code>APPARGS="connectlive:publishToMavenLocal"<br />eval set -- $DEFAULT_JVM_OPTS 중간생략 org.gradle.wrapper.GradleWrapplerMain "$APP_ARGS"</code></pre>
+JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Fedora 33, Korea Mirror, Kaist Mirror </title>
@@ -630,28 +655,6 @@ npm ERR! request to https://registry.npmjs.org/@fnproject%2ffdk failed, reason: 
 
 <p>oracle cloud, apache fn, node</p>
 ]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>perl 빠르다</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/vergence/2020/01/003207.html" />
-    <id>tag:weblog.youre.space,2020:/vergence//11.3207</id>
-
-    <published>2020-01-16T12:26:18Z</published>
-    <updated>2020-01-16T12:27:32Z</updated>
-
-    <summary>로그 요약해서 각 단계별 주요 로그만 거르고, 이걸 한 행에 세션아이디와 각 단계별 완료 시각으로만 요약하는 스크립트를 만드는데.요즘 JavaScript 학습 하시는 내무부장관님께서지나가는 말로 &quot;nested 로 작성하지 말라던데...&quot; _흠칫_perl 코드이니 알아보지는 못 하시겠지만, 혹시라도 내 코드를 보여드리진 말아야겠다는 생각이 들었습니다.ㄷㄷㄷㄷ그리고 스킬이...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/vergence/">
-        <![CDATA[<p>로그 요약해서 각 단계별 주요 로그만 거르고, 이걸 한 행에 세션아이디와 각 단계별 완료 시각으로만 요약하는 스크립트를 만드는데.<br />요즘 JavaScript 학습 하시는 내무부장관님께서<br />지나가는 말로 "nested 로 작성하지 말라던데..." _흠칫_<br /><br />perl 코드이니 알아보지는 못 하시겠지만, 혹시라도 내 코드를 보여드리진 말아야겠다는 생각이 들었습니다.<br />ㄷㄷㄷㄷ<br /><br />그리고 스킬이 부족한 탓에, 150MB짜리 텍스트 파일 한 줄씩 읽어다가 통째로 메모리에, 그것도 해시에 넣고 정리하는데, 30분 걸릴 줄 생각했는데 몇 분도 안 걸려서 깜짝 놀랐습니다.<br />시간이 흘러도 컴퓨팅 파워에 대한 제 기준은 CPU AMD K6 300 &amp; MEM 128MB, 20년 전 제 첫 컴퓨터.<br />지금 내 노트북 CPU는 Celeron N4100.</p>
-<p><br />아무튼... perl이 빠르다는 이야기입니다.</p>]]>
         
     </content>
 </entry>

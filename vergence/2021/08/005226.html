@@ -2,9 +2,9 @@
 <html lang="ko" itemscope itemtype="http://schema.org/Article">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content=" /etc/yum.repos.d/fedora.repo [fedora]name=Fedora $releasever - $basearch#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/os/enabled=1countme=1metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[fedora-debuginfo]name=Fedora $releasever - $basearch - Debug#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/debug/enabled=0metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[fedora-source]name=Fedora $releasever - Source#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/source/tree/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/source/SRPMS/enabled=0metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False /etc/yum.repos.d/fedora-updates.repo [updates]name=Fedora $releasever - $basearch - Updates#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/Everything/$basearch/enabled=1countme=1repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[updates-debuginfo]name=Fedora $releasever - $basearch - Updates - Debug#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/debug/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/$basearch/debug/enabled=0repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[updates-source]name=Fedora $releasever - Updates Source#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/SRPMS/enabled=0repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False...">
+    <meta name="description" content="JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...">
     <meta name="generator" content="Movable Type 6.3.6">
-    <title>Fedora 33, Korea Mirror, Kaist Mirror  - vergence의 이상한 세상</title>
+    <title>프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기 - vergence의 이상한 세상</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
     <!--[if lt IE 9]>
@@ -14,7 +14,7 @@
     
     <link rel="start" href="https://weblog.youre.space/vergence/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/vergence/atom.xml" />
-    <link rel="canonical" href="https://weblog.youre.space/vergence/2021/03/005214.html" />
+    <link rel="canonical" href="https://weblog.youre.space/vergence/2021/08/005226.html" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -31,20 +31,20 @@
         var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
         sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
     </script>
-    <link rel="prev" href="https://weblog.youre.space/vergence/2021/03/004628.html" title="두레이 좋습니다">
-    <link rel="next" href="https://weblog.youre.space/vergence/2021/08/005226.html" title="프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기">
-    <link rel="amphtml" href="https://weblog.youre.space/vergence/2021/03/005214.amp.html">
+    <link rel="prev" href="https://weblog.youre.space/vergence/2021/03/005214.html" title="Fedora 33, Korea Mirror, Kaist Mirror ">
+    
+    <link rel="amphtml" href="https://weblog.youre.space/vergence/2021/08/005226.amp.html">
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="ko_KR">
-    <meta property="og:title" content="Fedora 33, Korea Mirror, Kaist Mirror ">
-    <meta property="og:url" content="https://weblog.youre.space/vergence/2021/03/005214.html">
-    <meta property="og:description" content=" /etc/yum.repos.d/fedora.repo [fedora]name=Fedora $releasever - $basearch#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/os/enabled=1countme=1metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[fedora-debuginfo]name=Fedora $releasever - $basearch - Debug#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/debug/enabled=0metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[fedora-source]name=Fedora $releasever - Source#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/source/tree/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/source/SRPMS/enabled=0metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False /etc/yum.repos.d/fedora-updates.repo [updates]name=Fedora $releasever - $basearch - Updates#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/Everything/$basearch/enabled=1countme=1repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[updates-debuginfo]name=Fedora $releasever - $basearch - Updates - Debug#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/debug/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/$basearch/debug/enabled=0repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[updates-source]name=Fedora $releasever - Updates Source#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/SRPMS/enabled=0repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False...">
+    <meta property="og:title" content="프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2021/08/005226.html">
+    <meta property="og:description" content="JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...">
     <meta property="og:site_name" content="vergence의 이상한 세상">
     <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     <!-- Metadata -->
-    <meta itemprop="description" content=" /etc/yum.repos.d/fedora.repo [fedora]name=Fedora $releasever - $basearch#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/os/enabled=1countme=1metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[fedora-debuginfo]name=Fedora $releasever - $basearch - Debug#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/debug/enabled=0metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[fedora-source]name=Fedora $releasever - Source#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/source/tree/#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/source/SRPMS/enabled=0metadata_expire=7drepo_gpgcheck=0type=rpmgpgcheck=1gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False /etc/yum.repos.d/fedora-updates.repo [updates]name=Fedora $releasever - $basearch - Updates#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/Everything/$basearch/enabled=1countme=1repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[updates-debuginfo]name=Fedora $releasever - $basearch - Updates - Debug#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/debug/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/$basearch/debug/enabled=0repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False[updates-source]name=Fedora $releasever - Updates Source#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&amp;amp;arch=$basearchbaseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/SRPMS/enabled=0repo_gpgcheck=0type=rpmgpgcheck=1metadata_expire=6hgpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearchskip_if_unavailable=False...">
-    <link itemprop="url" href="https://weblog.youre.space/vergence/2021/03/005214.html">
+    <meta itemprop="description" content="JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2021/08/005226.html">
     <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     
   </head>
@@ -80,15 +80,15 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
-              <li class="breadcrumb-list-item">Fedora 33, Korea Mirror, Kaist Mirror </li>
+              <li class="breadcrumb-list-item">프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기</li>
             </ul>
             <div id="individual-main" class="main" role="main">
-              <article id="entry-5214" class="entry entry-asset asset hentry">
+              <article id="entry-5226" class="entry entry-asset asset hentry">
                 <div class="asset-header">
-                  <h2 itemprop="name" class="asset-name entry-title">Fedora 33, Korea Mirror, Kaist Mirror </h2>
+                  <h2 itemprop="name" class="asset-name entry-title">프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기</h2>
                   <footer class="asset-meta">
                     <ul class="asset-meta-list">
-                      <li class="asset-meta-list-item">Posted on <time datetime="2021-03-13T21:44:22+09:00" itemprop="datePublished">March 13, 2021</time></li>
+                      <li class="asset-meta-list-item">Posted on <time datetime="2021-08-07T23:12:08+09:00" itemprop="datePublished">August  7, 2021</time></li>
                       <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -97,21 +97,18 @@
                 </footer>
                 </div>
                 <div class="entry-content asset-content" itemprop="articleBody">
-                  <p></p>
-<h2>/etc/yum.repos.d/fedora.repo</h2>
-<pre>[fedora]<br />name=Fedora $releasever - $basearch<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/os/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/os/</span><br />enabled=1<br />countme=1<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[fedora-debuginfo]<br />name=Fedora $releasever - $basearch - Debug<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/$basearch/debug/tree/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-debug-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/$basearch/debug/</span><br />enabled=0<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[fedora-source]<br />name=Fedora $releasever - Source<br />#baseurl=http://download.example/pub/fedora/linux/releases/$releasever/Everything/source/tree/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=fedora-source-$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/releases/$releasever/Everything/source/SRPMS/</span><br />enabled=0<br />metadata_expire=7d<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False</pre>
-<p></p>
-<h2>/etc/yum.repos.d/fedora-updates.repo</h2>
-<pre>[updates]<br />name=Fedora $releasever - $basearch - Updates<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/Everything/$basearch/</span><br />enabled=1<br />countme=1<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[updates-debuginfo]<br />name=Fedora $releasever - $basearch - Updates - Debug<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/$basearch/debug/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-debug-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/$basearch/debug/</span><br />enabled=0<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False<br /><br />[updates-source]<br />name=Fedora $releasever - Updates Source<br />#baseurl=http://download.example/pub/fedora/linux/updates/$releasever/Everything/SRPMS/<br />#metalink=https://mirrors.fedoraproject.org/metalink?repo=updates-released-source-f$releasever&amp;arch=$basearch<br /><span style="color: #ff0000;">baseurl=http://ftp.kaist.ac.kr/fedora/updates/$releasever/SRPMS/</span><br />enabled=0<br />repo_gpgcheck=0<br />type=rpm<br />gpgcheck=1<br />metadata_expire=6h<br />gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch<br />skip_if_unavailable=False</pre>
+                  <p>JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까?</p>
+<p>짧은 답: gradlew 를 수정하자.<br />gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이 있다.<br />어느 예에는, collect all arguments... 이런 행에 이어서 eval set... 이런 행이 있다. <br />어느 예에는, "$@" 이런 구문이 있다.</p>
+<p>수정의 예는 아래와 같다.</p>
+<pre><code>APPARGS="connectlive:publishToMavenLocal"<br />eval set -- $DEFAULT_JVM_OPTS 중간생략 org.gradle.wrapper.GradleWrapplerMain "$APP_ARGS"</code></pre>
+JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.
                   
                 </div>
                 <nav class="page-navigation entry-navigation pagination content-nav">
                   <ul class="page-navigation-list">
 
-                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2021/03/004628.html" title="두레이 좋습니다">Previous entry</a></li>
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2021/03/005214.html" title="Fedora 33, Korea Mirror, Kaist Mirror ">Previous entry</a></li>
 
-
-                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="https://weblog.youre.space/vergence/2021/08/005226.html" title="프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기">Next entry</a></li>
 
                   </ul>
                 </nav>
@@ -126,7 +123,7 @@
                 <aside id="trackbacks" class="trackbacks feedback">
   <h2>TrackBacks</h2>
   
-  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/386</p>
+  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/387</p>
   
   
 </aside>

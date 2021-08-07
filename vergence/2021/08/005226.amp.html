@@ -1,0 +1,82 @@
+<!doctype html>
+<html ⚡ itemscope itemtype="http://schema.org/Article" lang="ko">
+<head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <link rel="canonical" href="https://weblog.youre.space/vergence/2021/08/005226.html">
+  <style amp-boilerplate>
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript>
+<style amp-boilerplate>
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style>
+</noscript>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
+  <meta name="description" content="JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...">
+  <meta name="generator" content="Movable Type 6.3.6">
+  <title>프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기 - vergence의 이상한 세상</title>
+
+  <link rel="prev" href="https://weblog.youre.space/vergence/2021/03/005214.amp.html" title="Fedora 33, Korea Mirror, Kaist Mirror ">
+  
+
+    <!-- Open Graph Protocol -->
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="ko_KR">
+    <meta property="og:title" content="프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2021/08/005226.html">
+    <meta property="og:description" content="JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...">
+    <meta property="og:site_name" content="vergence의 이상한 세상">
+    <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+
+    <!-- Metadata -->
+    <meta itemprop="description" content="JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2021/08/005226.html">
+    <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
+    
+  </head>
+  <body itemscope itemtype="http://schema.org/Article">
+
+<h1 itemprop="headline">프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기</h1>
+<time datetime="2021-08-07T23:12:08+09:00" itemprop="datePublished">August  7, 2021</time>
+<time datetime="2021-08-07T23:12:08+09:00" itemprop="dateModified">August  7, 2021</time>
+
+by <span itemprop="author"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span>
+
+<div itemprop="articleBody">
+  <p>JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까?</p>
+<p>짧은 답: gradlew 를 수정하자.<br />gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이 있다.<br />어느 예에는, collect all arguments... 이런 행에 이어서 eval set... 이런 행이 있다. <br />어느 예에는, "$@" 이런 구문이 있다.</p>
+<p>수정의 예는 아래와 같다.</p>
+<pre><code>APPARGS="connectlive:publishToMavenLocal"<br />eval set -- $DEFAULT_JVM_OPTS 중간생략 org.gradle.wrapper.GradleWrapplerMain "$APP_ARGS"</code></pre>
+JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.
+  
+</div>
+
+  <a href=http://weblog.youre.space//vergence/2021/08/005226.html target="_blank">http://weblog.youre.space//vergence/2021/08/005226.html</a>
+
+<center>
+<div id="admixer_display"></div>
+</center>
+<script type="text/javascript" src="http://scr.nsmartad.com/admixer/admixer.js"></script>
+<script type="text/javascript">
+    new admixer_ad({
+    admixer_key:"8ch8bwvi",
+    display_id:"admixer_display",
+    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
+    ad_change:true,  //default : true
+    test : false,//default : false
+    test_display_id : "log"
+});
+</script>
+<center>
+<div class="main_banner" id="main_banner1">
+  <script type="text/javascript"> var tad_conf = { targetId : 'main_banner1', clientId : 'MX00048A1', slotNo : 2 }; </script>
+  <script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
+</div>
+</center>
+<center>
+<div id="realssp_imyaman00001_8388" class="realssp_dv" data-mcode="aW15YW1hbjAwMDAxXzgzODg="></div><script src="http://nw.realssp.co.kr/realclickssp.js?v=1.0&m=imyaman00001_8388&t=j" async></script>
+</center>
+
+  </body>
+</html>

@@ -76,6 +76,32 @@
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-5226" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2021/08/005226.html">프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2021-08-07T23:12:08+09:00" itemprop="datePublished">August  7, 2021</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까?</p>
+<p>짧은 답: gradlew 를 수정하자.<br />gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이 있다.<br />어느 예에는, collect all arguments... 이런 행에 이어서 eval set... 이런 행이 있다. <br />어느 예에는, "$@" 이런 구문이 있다.</p>
+<p>수정의 예는 아래와 같다.</p>
+<pre><code>APPARGS="connectlive:publishToMavenLocal"<br />eval set -- $DEFAULT_JVM_OPTS 중간생략 org.gradle.wrapper.GradleWrapplerMain "$APP_ARGS"</code></pre>
+JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2021/08/005226.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-5214" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2021/03/005214.html">Fedora 33, Korea Mirror, Kaist Mirror </a></h2>
@@ -538,72 +564,6 @@ UnixWare 2.0 had separate boot media for PE vs. AS.
 </article>
 
 
-              <article id="entry-3224" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2020/04/003224.html">Windows 10 Home에 Docker 설치하기</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2020-04-26T23:33:15+09:00" itemprop="datePublished">April 26, 2020</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    <p>Windows 10에 Docker를 설치하는 잘 알려진 방법은 "Docker Desktop"을 설치하는 것입니다. 이 방법이 현재 가장 권장하는 방법입니다.<br />이 방법의 제약은 Windows 10 Professional 이상에 설치 가능하고 Windows 10 Home에는 설치가 안 된다는 점입니다. 레지스트리를 수정하면 할 수는 있는데, 굳이 그렇게까지. 개인적으로 이 방법을 꺼리는데, 설치 패키지 파일 크기가 약 900MB이고 뭔지 모를 파일이 참 많이 생기기 때문입니다.<br /><br />그래서, Docker를 수동으로 설치하는 방법을 소개합니다. 가장 큰 장점은 Windows 10 Home에도 설치할 수 있다는 점이고, 약간의 장점은 약 100MB 저장공간만 사용한다는 점입니다. 단점은, 이 방식은 Hyper-V와 LCOW(Linux Container on Windows 10)를 이용하여 실행되는데, 이 실행 방식은 컨테이너를 종료할 때(만) 약간 불안정한 느낌이 있다는 겁니다. 하지만 다른 실행 방식도 불안정하긴 마찬가지인 것 같습니다. 아직 Docker for Windows 10은 어느 실행 방식이든, 개발용으로 이용하는게 맞고 안정적인 서비스를 위해 이용하기엔 이릅니다. Hyper-V와 LCOW를 이용하는 실행 방식은 장점도 있습니다. 그건 맨 아래에.<br /><br />순서는 아래와 같습니다.<br />1. Windows 10 Home에 Hyper-V와 Containers feature 활성화<br />2. Docker, lcow 파일 다운로드 및 복사<br />3. config 파일 준비 및 실행<br /><br />아래 2가지 설치 명령을 이용합니다. CMD를 관리자 권한으로 실행한 후에 설치 명령을 이용해야합니다.</p>
-<h2>Windows 10에 Hyper-V feature 설치 (InstallHyperV.bat)</h2>
-<pre><code>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt<br />for /f %%i in ('findstr /i . hyper-v.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del hyper-v.txt<br />dism /online /enable-feature /featurename:Microsoft-Hyper-V -All /LimitAccess /ALL<br />pause</code></pre>
-<h2>Windows 10에 Containers feature 설치 (InstallContainers.bat)</h2>
-<pre><code>pushd "%~dp0"<br />dir /b %SystemRoot%\servicing\Packages\*containers*.mum &gt;containers.txt<br />for /f %%i in ('findstr /i . containers.txt 2^&gt;nul') do dism /online /norestart /add-package:"%SystemRoot%\servicing\Packages\%%i"<br />del containers.txt<br />dism /online /enable-feature /featurename:Containers -All /LimitAccess /ALL<br />pause</code></pre>
-<p>설치 후 윈도우즈 설정에서 아래 그림과 같이 Hyper-V와 Containers를 활성화된 상태로 둡니다.</p>
-<p><a href="https://weblog.youre.space/vergence/assets_c/2020/05/windows10_features_containers-100.html" onclick="window.open('https://weblog.youre.space/vergence/assets_c/2020/05/windows10_features_containers-100.html','popup','width=670,height=364,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://weblog.youre.space/vergence/assets_c/2020/05/windows10_features_containers-thumb-360xauto-100.png" alt="windows10_features_containers.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" width="360" height="195" /></a>Docker 최신 개발 버전을 이용합니다. 안정 버전도 좋습니다만, 안정 버전이 별 의미는 없는 것 같습니다.</p>
-<p></p>
-<h2>Docker for Windows 다운로드</h2>
-<p>아래 파일을 다운로드 받습니다. 묶음을 풀면 안에 docker 디렉토리가 있습니다. 이 디렉토리를 C:\Program files 디렉토리 아래에 둡니다. C:\Program files\docker\dockerd.exe 가 있는지 확인합니다.</p>
-<p><a href="https://master.dockerproject.org/windows/x86_64/docker.zip" target="_blank">https://master.dockerproject.org/windows/x86_64/docker.zip</a></p>
-<p>위 파일 대신 다른 버전의 파일을 이용해도 됩니다.</p>
-<p>https://download.docker.com/components/engine/windows-server/19.03/docker-19.03.5.zip</p>
-<p>https://download.docker.com/win/static/stable/x86_64/docker-17.09.0-ce.zip</p>
-<p></p>
-<h2>LCOW (kernel, initrd.img) 다운로드</h2>
-<p>아래 웹 페이지에 방문하여 release.zip 파일을 다운로드 받습니다. 묶음을 풀면 안에 kernel, initrd.img 파일이 있습니다. C:\Program Files\Linux Containers 디렉토리를 만들고 두 파일을 디렉토리 아래에 둡니다. C:\Program Files\Linux Containers\initrd.img 가 있는지 확인합니다.</p>
-<p><a href="https://github.com/linuxkit/lcow/releases" target="_blank">https://github.com/linuxkit/lcow/releases</a></p>
-<p></p>
-<h2>dockerd.exe 실행</h2>
-<p>CMD를 관리자 권한으로 실행한 후에 아래 명령을 이용합니다. UNIX 환경에서 Docker를 실행할 때 /var/lib/docker 에 다양한 파일을 생성하게 됩니다. --data-root는 이 디렉토리를 설정할 때 씁니다. 저는 C:\Program Files\Docker\var-lib-docker 디렉토리로 설정했습니다. 기본값은 C:\ProgramData\Docker 입니다. Docker를 이용하다보면 이 디렉토리에 크고 많은 파일을 두기 때문에 저장공간을 많이 차지 하게 됩니다. --experimental 옵션이 꼭 필요합니다.</p>
-<pre><code>set LCOW_SUPPORTED=1<br /><code>"C:\Program Files\docker\</code>dockerd.exe" -D --data-root "C:\Program Files\docker\var-lib-docker" --experimental</code></pre>
-<p></p>
-<h2>docker.exe 실행</h2>
-<p>CMD를 관리자 권한으로 실행한 후에 아래 명령을 이용합니다. 출력 내용 중에 Default Isolation: hyperv 가 있는지 확인합니다.</p>
-<pre><code><code>C:\Program Files\docker\</code>docker.exe info</code></pre>
-<p>잘 실행되는 것을 확인했으면 dockerd를 종료합니다.</p>
-<p></p>
-<h2>Config file 생성</h2>
-<p>매번 command line 옵션을 지정하는 건 번거로우니 config 파일을 만듭니다. dockerd를 이렇게 실행하게 됩니다.</p>
-<pre>"C:\Program Files\Docker\dockerd.exe" --config-file "C:\Program Files\docker\daemon.json"</pre>
-<p>daemon.json 파일의 내용은 아래와 같습니다.</p>
-<pre>{<br />    "data-root": "C:\\Program Files\\docker\\var-lib-docker",<br />    "experimental": true,<br />    "debug": false,<br />    "log-level": "fatal"<br />}</pre>
-<p></p>
-<h2>docker pull</h2>
-<p>이제 원하는 Docker image를 받아 이용합니다. 예를 들면,</p>
-<pre>C:\&gt; docker pull fedora:32<br />C:\&gt; docker run -i -t --name fedora32 -p 22:22 -p 80:80 -p 443:443 -p 3000-3009:3000-3009 -p 5900:5900 -p 5901:5901 -v C:\data:/data fedora:32</pre>
-<p>저는 Fedora를 권장합니다. 위 명령은 22, 80, 443, 3000~3009번 포트를 도커 컨테이너에게 열어줍니다. 저는 Perl 과 Dancer2 를 이용해 웹 사이트를 만들 거라 80, 443, 3000~30009번 포트를 열었습니다. ssh 접속도 할거라 22번 포트를, X Window System과 VNC를 이용할 거라 5900, 5901번 포트를 열었습니다. 윈도우즈와 파일도 주고 받을 거라 C:\data 를 /data 로 마운트 하였습니다.</p>
-<p><a href="https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-103.html" onclick="window.open('https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-103.html','popup','width=1920,height=1081,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://weblog.youre.space/vergence/assets_c/2020/05/docker_windows10_20200503-thumb-360xauto-103.png" alt="docker_windows10_20200503.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" width="360" height="203" /></a>이 스크린샷은, 컨테이너 안의 GNU/Linux에서 Perl로 그래프를 만들어 /data 디렉토리에 넣은 것을, 호스트인 윈도우즈의 C:\data 디렉토리에서 확인하고 열어본 화면입니다.</p>
-<h2>sudo 오류 메시지</h2>
-<p>컨테이너 안에 게스트 운영체제로 GNU/Linux를 쓰다가 sudo 실행 시 오류를 본다면 아래와 같이 설정을 합니다. 무시해도 됩니다.</p>
-<pre><code>echo "Set disable_coredump false" &gt;&gt; /etc/sudo.conf<br /></code></pre>
-<p></p>
-<h2>Hyper-V(그리고 LCOW)를 이용하는 실행 방식의 장점</h2>
-<p>게스트 운영체제로 Windows 10을 사용하는 컨테이너와 Linux를 사용하는 컨테이너를 동시에 만들고 실행할 수 있습니다.</p>
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/vergence/2020/04/003224.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
               <nav class="page-navigation entry-navigation pagination content-nav">
   <ul class="pagination-list">
 <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://connexus.youre.space/mt6/mt-search.cgi?IncludeBlogs=11&amp;template_id=952&amp;limit=10&amp;archive_type=Index&amp;page=2">Older entries</a></li>
@@ -670,6 +630,10 @@ UnixWare 2.0 had separate boot media for PE vs. AS.
   <div class="widget-content">
     <select>
       <option>Select a Month...</option>
+    
+      <option value="https://weblog.youre.space/vergence/2021/08/">August 2021</option>
+    
+  
     
       <option value="https://weblog.youre.space/vergence/2021/03/">March 2021</option>
     

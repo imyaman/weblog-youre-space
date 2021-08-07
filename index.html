@@ -88,6 +88,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <div id="content-inner">
             <div id="index-main" class="main" role="main">
 
+              <article id="entry-5226" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
+  <div class="asset-header">
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2021/08/005226.html">프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기</a></h2>
+    <footer class="asset-meta">
+      <ul class="asset-meta-list">
+        <li class="asset-meta-list-item">Posted on <time datetime="2021-08-07T23:12:08+09:00" itemprop="datePublished">August  7, 2021</time></li>
+        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
+
+  
+
+      </ul>
+    </footer>
+  </div>
+  <div class="asset-content entry-content" itemprop="articleBody">
+    <p>JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까?</p>
+<p>짧은 답: gradlew 를 수정하자.<br />gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이 있다.<br />어느 예에는, collect all arguments... 이런 행에 이어서 eval set... 이런 행이 있다. <br />어느 예에는, "$@" 이런 구문이 있다.</p>
+<p>수정의 예는 아래와 같다.</p>
+<pre><code>APPARGS="connectlive:publishToMavenLocal"<br />eval set -- $DEFAULT_JVM_OPTS 중간생략 org.gradle.wrapper.GradleWrapplerMain "$APP_ARGS"</code></pre>
+JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.
+  </div>
+  <div class="entry-more-link">
+    <a href="https://weblog.youre.space/vergence/2021/08/005226.html" itemprop="url">Continue reading</a>
+  </div>
+</article>
+
+
               <article id="entry-5225" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
     <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2021/07/005225.html">New: Improve your content with Search Console Insights</a></h2>
@@ -1337,124 +1363,6 @@ Need more information or help?
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/imyaman/2021/04/005217.html" itemprop="url">Continue reading</a>
-  </div>
-</article>
-
-
-              <article id="entry-5216" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/imyaman/2021/03/005216.html">New Mobile Usability issues detected for site pacificmedia.sys5.co</a></h2>
-    <footer class="asset-meta">
-      <ul class="asset-meta-list">
-        <li class="asset-meta-list-item">Posted on <time datetime="2021-03-17T05:47:19+09:00" itemprop="datePublished">March 17, 2021</time></li>
-        <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
-
-  
-
-      </ul>
-    </footer>
-  </div>
-  <div class="asset-content entry-content" itemprop="articleBody">
-    Mobile Usability issues detected on &lt;a style=&quot;color: inherit;&quot;&gt;pacificmedia.sys5.co&lt;/a&gt;
-
-
-  
-
-  <div>
-    
-      
-        
-      
-      
-        
-      
-      
-        
-      
-    <table><tr><td>
-          <span>
-            Message type: [WNC-10030322]
-          </span>
-        </td></tr><tr><td>
-          <div>
-            <img>
-            <span>
-              Search Console
-            </span>
- 
-          </div>
-<p><span>Mobile Usability issues detected on <a>pacificmedia.sys5.co</a></span></p>
-          <div>
-<div><p>      To the owner of <a>pacificmedia.sys5.co</a>:
-</p>
-<p>Search Console has identified that your site is affected by 3 Mobile Usability issues:
-</p>
-
-
-
-
-<p><span>Top Issues</span></p>
-
-<p>The following issues were found on your site:</p>
-
-<div><p>
-<span><a>Text too small to read</a></span>
-</p>
-<p>
-<span><a>Clickable elements too close together</a></span>
-</p>
-<p>
-<span><a>Content wider than screen</a></span>
-</p>
-</div>
-
-<p>We recommend that you fix these issues when possible to enable the best experience and coverage in Google Search.</p>
-
-
-</div>
-
-<div>
-
-
-
-
-<table><tr><td>
-  <div>
-    <div>
-      <a>
-Fix Mobile Usability issues      </a>
-    </div>
-  </div>
-</td></tr></table>
-</div>
-
-          </div>
-        </td></tr><tr><td>
-          
-            
-              
-            
-          <table><tr><td>
-
-
-
-
-Google LLC, 1600 Amphitheatre Parkway Mountain View, CA 94043 |
-You&#39;ve received this transactional email because your site is listed in Google Search Console |
-<a>  Unsubscribe from this type of message
-</a><br />
-<a>  Add partners
-</a>who should receive messages for this Search Console account<br />
-              </td></tr></table>
-        </td></tr></table>
-  </div>
-<img>
-
-
-
-  </div>
-  <div class="entry-more-link">
-    <a href="https://weblog.youre.space/imyaman/2021/03/005216.html" itemprop="url">Continue reading</a>
   </div>
 </article>
 
