@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="generator" content="Movable Type 6.3.6">
-    <title>JFrog Artifactory에 라이브러리 게시하기, JFrog Pipelines를 이용하여 - vergence의 이상한 세상</title>
+    <title>JFrog Artifactory에 라이브러리 게시하기, GitLab CI를 이용하여 - vergence의 이상한 세상</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://weblog.youre.space/vergence/styles.css">
     <!--[if lt IE 9]>
@@ -14,7 +14,7 @@
     
     <link rel="start" href="https://weblog.youre.space/vergence/">
     <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="https://weblog.youre.space/vergence/atom.xml" />
-    <link rel="canonical" href="https://weblog.youre.space/vergence/2021/08/005228.html" />
+    <link rel="canonical" href="https://weblog.youre.space/vergence/2021/08/005229.html" />
     <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-102177098-1']);
@@ -31,20 +31,20 @@
         var sp=sp||[];(function(){var e=["init","identify","track","trackLink","pageview"],t=function(e){return function(){sp.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var n=0;n<e.length;n++)sp[e[n]]=t(e[n])})(),sp.load=function(e,o){sp._endpoint=e;if(o){sp.init(o)};var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"===document.location.protocol?"https://":"http://")+"d21ey8j28ejz92.cloudfront.net/analytics/v1/sp.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)};
         sp.load("http://splunk.sys5.co:3000"); // Replace with your own Collector URL
     </script>
-    <link rel="prev" href="https://weblog.youre.space/vergence/2021/08/005227.html" title="JFrog Artifactory에 라이브러리 게시하기, 로컬에서 빌드하여">
-    <link rel="next" href="https://weblog.youre.space/vergence/2021/08/005229.html" title="JFrog Artifactory에 라이브러리 게시하기, GitLab CI를 이용하여">
-    <link rel="amphtml" href="https://weblog.youre.space/vergence/2021/08/005228.amp.html">
+    <link rel="prev" href="https://weblog.youre.space/vergence/2021/08/005228.html" title="JFrog Artifactory에 라이브러리 게시하기, JFrog Pipelines를 이용하여">
+    
+    <link rel="amphtml" href="https://weblog.youre.space/vergence/2021/08/005229.amp.html">
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="ko_KR">
-    <meta property="og:title" content="JFrog Artifactory에 라이브러리 게시하기, JFrog Pipelines를 이용하여">
-    <meta property="og:url" content="https://weblog.youre.space/vergence/2021/08/005228.html">
+    <meta property="og:title" content="JFrog Artifactory에 라이브러리 게시하기, GitLab CI를 이용하여">
+    <meta property="og:url" content="https://weblog.youre.space/vergence/2021/08/005229.html">
     <meta property="og:description" content="">
     <meta property="og:site_name" content="vergence의 이상한 세상">
     <meta property="og:image" content="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     <!-- Metadata -->
     <meta itemprop="description" content="">
-    <link itemprop="url" href="https://weblog.youre.space/vergence/2021/08/005228.html">
+    <link itemprop="url" href="https://weblog.youre.space/vergence/2021/08/005229.html">
     <link itemprop="image" href="https://weblog.youre.space/vergence/assets_c/2017/08/20170719_155350_HDR-thumb-320x320-2.jpg">
     
   </head>
@@ -80,15 +80,15 @@
           <div id="content-inner">
             <ul class="breadcrumb breadcrumb-list">
               <li class="breadcrumb-list-item"><a href="https://weblog.youre.space/vergence/">Home</a></li>
-              <li class="breadcrumb-list-item">JFrog Artifactory에 라이브러리 게시하기, JFrog Pipelines를 이용하여</li>
+              <li class="breadcrumb-list-item">JFrog Artifactory에 라이브러리 게시하기, GitLab CI를 이용하여</li>
             </ul>
             <div id="individual-main" class="main" role="main">
-              <article id="entry-5228" class="entry entry-asset asset hentry">
+              <article id="entry-5229" class="entry entry-asset asset hentry">
                 <div class="asset-header">
-                  <h2 itemprop="name" class="asset-name entry-title">JFrog Artifactory에 라이브러리 게시하기, JFrog Pipelines를 이용하여</h2>
+                  <h2 itemprop="name" class="asset-name entry-title">JFrog Artifactory에 라이브러리 게시하기, GitLab CI를 이용하여</h2>
                   <footer class="asset-meta">
                     <ul class="asset-meta-list">
-                      <li class="asset-meta-list-item">Posted on <time datetime="2021-08-07T23:34:11+09:00" itemprop="datePublished">August  7, 2021</time></li>
+                      <li class="asset-meta-list-item">Posted on <time datetime="2021-08-07T23:35:16+09:00" itemprop="datePublished">August  7, 2021</time></li>
                       <li class="asset-meta-list-item">by <span class="author entry-author vcard"><a class="fn url" href="https://weblog.youre.space/vergence/">Sangyong Gwak</a></span></li>
 
   
@@ -103,10 +103,8 @@
                 <nav class="page-navigation entry-navigation pagination content-nav">
                   <ul class="page-navigation-list">
 
-                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2021/08/005227.html" title="JFrog Artifactory에 라이브러리 게시하기, 로컬에서 빌드하여">Previous entry</a></li>
+                    <li class="page-navigation-list-item page-navigation-prev"><a rel="prev" href="https://weblog.youre.space/vergence/2021/08/005228.html" title="JFrog Artifactory에 라이브러리 게시하기, JFrog Pipelines를 이용하여">Previous entry</a></li>
 
-
-                    <li class="page-navigation-list-item page-navigation-next"><a rel="next" href="https://weblog.youre.space/vergence/2021/08/005229.html" title="JFrog Artifactory에 라이브러리 게시하기, GitLab CI를 이용하여">Next entry</a></li>
 
                   </ul>
                 </nav>
@@ -121,7 +119,7 @@
                 <aside id="trackbacks" class="trackbacks feedback">
   <h2>TrackBacks</h2>
   
-  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/389</p>
+  <p id="trackback-url">TrackBack URL: https://connexus.youre.space/mt6/mt-tb.cgi/390</p>
   
   
 </aside>
