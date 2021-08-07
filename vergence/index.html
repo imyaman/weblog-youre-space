@@ -78,7 +78,7 @@
 
               <article id="entry-5226" class="entry-asset entry asset hentry" itemscope itemType="http://schema.org/BlogPosting">
   <div class="asset-header">
-    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2021/08/005226.html">프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기</a></h2>
+    <h2 class="asset-name entry-title" itemprop="name"><a href="https://weblog.youre.space/vergence/2021/08/005226.html">Android Project의 여러 모듈 중 하나를 JitPack에 게시하기</a></h2>
     <footer class="asset-meta">
       <ul class="asset-meta-list">
         <li class="asset-meta-list-item">Posted on <time datetime="2021-08-07T23:12:08+09:00" itemprop="datePublished">August  7, 2021</time></li>
@@ -94,7 +94,7 @@
 <p>짧은 답: gradlew 를 수정하자.<br />gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이 있다.<br />어느 예에는, collect all arguments... 이런 행에 이어서 eval set... 이런 행이 있다. <br />어느 예에는, "$@" 이런 구문이 있다.</p>
 <p>수정의 예는 아래와 같다.</p>
 <pre><code>APPARGS="connectlive:publishToMavenLocal"<br />eval set -- $DEFAULT_JVM_OPTS 중간생략 org.gradle.wrapper.GradleWrapplerMain "$APP_ARGS"</code></pre>
-JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.
+<p>JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.</p>
   </div>
   <div class="entry-more-link">
     <a href="https://weblog.youre.space/vergence/2021/08/005226.html" itemprop="url">Continue reading</a>

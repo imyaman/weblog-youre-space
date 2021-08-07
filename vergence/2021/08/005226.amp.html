@@ -15,7 +15,7 @@ body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:non
 <script async src="https://cdn.ampproject.org/v0.js"></script>
   <meta name="description" content="JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...">
   <meta name="generator" content="Movable Type 6.3.6">
-  <title>프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기 - vergence의 이상한 세상</title>
+  <title>Android Project의 여러 모듈 중 하나를 JitPack에 게시하기 - vergence의 이상한 세상</title>
 
   <link rel="prev" href="https://weblog.youre.space/vergence/2021/03/005214.amp.html" title="Fedora 33, Korea Mirror, Kaist Mirror ">
   
@@ -23,7 +23,7 @@ body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:non
     <!-- Open Graph Protocol -->
     <meta property="og:type" content="article">
     <meta property="og:locale" content="ko_KR">
-    <meta property="og:title" content="프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기">
+    <meta property="og:title" content="Android Project의 여러 모듈 중 하나를 JitPack에 게시하기">
     <meta property="og:url" content="https://weblog.youre.space/vergence/2021/08/005226.html">
     <meta property="og:description" content="JitPack은 프로젝트 소스코드를 가져와 ./gradlew install 명령을 실행한다. 그런데 내 프로젝트에 여러 개의 모듈이 있고, 그 중 하나만 라이브러리 모듈이고 이 모듈을 JitPack에 게시하고 싶다. 어떻게 해야할까? 짧은 답: gradlew 를 수정하자.gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이...">
     <meta property="og:site_name" content="vergence의 이상한 세상">
@@ -37,7 +37,7 @@ body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:non
   </head>
   <body itemscope itemtype="http://schema.org/Article">
 
-<h1 itemprop="headline">프로젝트에 여러 개의 모듈 중 하나를 JitPack에 게시하기</h1>
+<h1 itemprop="headline">Android Project의 여러 모듈 중 하나를 JitPack에 게시하기</h1>
 <time datetime="2021-08-07T23:12:08+09:00" itemprop="datePublished">August  7, 2021</time>
 <time datetime="2021-08-07T23:12:08+09:00" itemprop="dateModified">August  7, 2021</time>
 
@@ -48,7 +48,7 @@ by <span itemprop="author"><a class="fn url" href="https://weblog.youre.space/ve
 <p>짧은 답: gradlew 를 수정하자.<br />gradlew 아랫부분에 java를 실행하는 행 근처에 옵션이 모인 곳이 있다.<br />어느 예에는, collect all arguments... 이런 행에 이어서 eval set... 이런 행이 있다. <br />어느 예에는, "$@" 이런 구문이 있다.</p>
 <p>수정의 예는 아래와 같다.</p>
 <pre><code>APPARGS="connectlive:publishToMavenLocal"<br />eval set -- $DEFAULT_JVM_OPTS 중간생략 org.gradle.wrapper.GradleWrapplerMain "$APP_ARGS"</code></pre>
-JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.
+<p>JitPack이 gradlew에 어떤 명령을 주든 지정된 gradle project와 task를(connectlive와 publishToMavenLocal) 실행하게 된다.</p>
   
 </div>
 
