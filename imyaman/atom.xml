@@ -4,9 +4,33 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-07-01T01:06:09Z</updated>
+    <updated>2021-08-14T02:37:54Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Your unused Realtime Database &apos;weblog-683a9&apos; will be deactivated in 14 day(s)</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/08/005230.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5230</id>
+
+    <published>2021-08-14T02:37:54Z</published>
+    <updated>2021-08-14T02:37:54Z</updated>
+
+    <summary> weblog-683a9[Firebase] Your unused Realtime Database &apos;weblog-683a9&apos; will be deactivated in 14 day(s)We&apos;ve detected the following issue(s) with your Security Rules:any user can read your entire databaseany user can write to your entire databaseYour Security Rules allow anyone on the...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Firebase" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[<div><div><img src="https://www.gstatic.com/mobilesdk/190425_mobilesdk/firebase_lockup.png" alt="Firebase branding logo"></div> <table><tr><td><div>weblog-683a9</div><div>[Firebase] Your unused Realtime Database 'weblog-683a9' will be deactivated in 14 day(s)</div></td><td><img src="https://www.gstatic.com/mobilesdk/180621_mobilesdk/firebase_database_white_24@2x.png" alt=""></td><tr></tr></tr></table><div><div><div><table><tr><td><img src="https://www.gstatic.com/mobilesdk/171101_mobilesdk/images/caution_orange_24dp_@2x.png" alt=""></td><td><span>We've detected the following issue(s) with your Security Rules:<ul><li>any user can read your entire database</li><li>any user can write to your entire database</li></ul></span></td></tr></table></div></div><div>Your Security Rules allow anyone on the internet to read or write to your database. Without strong Security Rules your data is vulnerable to attackers stealing, modifying, or deleting data as well as performing costly operations.<br /><br />Your database has not received traffic for almost 6 months and has insecure rules; it will be automatically deactivated in 14 days unless your database receives traffic or you update your Security Rules. You won't lose any data, and can restore the database from the console at any time.<br /><br />If you are not currently using the database, feel free to disregard this email—no action is required on your part. You may be receiving this email if you created your Firebase project in 2017 or prior, and as a result you may have an empty auto-provisioned Realtime Database instance. Again, if you are not currently using the database, feel free to disregard this email.</div></div><div></div><div><div><div>Pending Deactivation</div></div><div>weblog-683a9</div><div><div><div>Database</div><div>weblog-683a9</div></div></div><div><div><span><a href="https://firebase.google.com/docs/rules/insecure-rules#database">Learn more</a></span><span><a href="https://console.firebase.google.com/project/weblog-683a9/database/weblog-683a9/rules">Edit rules</a></span></div></div></div><div></div><div><div><div>If you have questions or feel you've received this message in error, please contact <a href="https://firebase.google.com/support/">Firebase support</a></div><div>Thanks for using Firebase!</div></div></div><div><div>This email is notifying you about important service information regarding your Firebase project</div><div><div>Manage your <a href="https://console.firebase.google.com/subscriptions/project/weblog-683a9">Alert settings</a></div></div></div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png" alt=""></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>New: Improve your content with Search Console Insights</title>
@@ -2096,35 +2120,6 @@ Need more information or help?
   
       장기화된 코로나 바이러스로 인하여 자원봉사활동을 하기도 점점 어려워지는 현실입니다.비록 직접 현장에서 대면하며 진행하는 봉사활동은 잠시 멈추었지만 사회적 거리두기를 실천하며 활동할 수 있는 비대면 봉사가 있어, 시민들의 봉사활동은 계속된다고 해요!비대면 모니터링 봉사활동고양시대화노인종합복지관&lt;우리 동네 마을 탐방&gt;고양시대화노인종합복지관에서 주최하는 '우리 동네 마을 탐방 자원봉사'는 고양시대화노인종합복지관이 코로나19로 활동이 중단된 지역사회 봉사자들을 위해 마련된 비대면 자원봉사 활동입니다.코로나19의 지역사회 감염을 줄이기 위해 주민들이 관심을 가질 수 있도록 유도하며 안.......
   <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMPDXpUR-2B1kDg6d5aG7N4mbr82lwJd1Sv8nfl2CqKNuYWG9yXrkCAX4QexMx7IK8TRsZ3V3kHrSx7nnSnSKV7in5tABw08LcEiTL-2B0nsg-2FOdwKnax8SYKpwSPugY5JSeR0NV5cNtcGiJUjpoeEw-2B2vE16Zy0UBwUifAq5QhG3LTJVZmqwt4eNvfFkMNdsONtZHSVMBtcPAgJHCSM-2BqBLqk2U" alt="" width="1" height="1" />
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>선사시대 유물 품은 고양동 호랑이굴! - 고양시, 한반도 최초로 편마암지대 동굴에서 선사시대 유적 확인</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/03/005210.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5210</id>
-
-    <published>2021-03-07T12:07:12Z</published>
-    <updated>2021-03-07T12:07:12Z</updated>
-
-    <summary> 제가 살고 있는 이곳, 경기도 고양시 고양동은 유적지가 많이 있는 곳이랍니다.그중에서도 선사시대의 유물이 출토된 곳이 있어 현장에 다녀왔습니다.바로 고양동 호랑이 굴인데요.고양동 호랑이굴은 고양동 뒷산인 대자산 중턱에 자리하고 있고왼편에 고양향교와 중남미문화원이 있으며 아래로는 고양동 윤창 아파트가 있습니다.호랑이굴을 직접 답사하려면 윤창...</summary>
-    <author>
-        <name>hal9000</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-  
-  
-      제가 살고 있는 이곳, 경기도 고양시 고양동은 유적지가 많이 있는 곳이랍니다.그중에서도 선사시대의 유물이 출토된 곳이 있어 현장에 다녀왔습니다.바로 고양동 호랑이 굴인데요.고양동 호랑이굴은 고양동 뒷산인 대자산 중턱에 자리하고 있고왼편에 고양향교와 중남미문화원이 있으며 아래로는 고양동 윤창 아파트가 있습니다.호랑이굴을 직접 답사하려면 윤창 아파트 쪽으로 가시는 게 제일 빠릅니다.윤창 아파트 근처 농원 푯말을 발견하시게 될거에요.그 길을 쭉 따라 가시다가 농원을 끼고 올라가다 보면 두 갈래 길이 나옵니다.그중 오른쪽 길로 올라가시면 되는데요.길을 올라가다 보면 호랑이굴이라고 이정표가 나옵니다........
-  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMNYEIGFfKgHpq8kG2AT1CTJwLf1qfXRzIcB7w-2F2ZoXKb6vw6SKWBecItwmqzRRxyqn7jh6xiKT2FAghTvgipGjbMgLx7opJZRftV-2FF-2BhUPOmeEfq3iIfpfQbeCOrAgx8fYz9yrXGUsgVjSdbatRpXo69lTF7A5qE6duwKw6NEUm-2FWzo1-2BspyQQwcA-2FUq6x2YYcOcrItwHVPCULQNkOGM-2BsM" alt="" width="1" height="1" />
 ]]>
         
     </content>
