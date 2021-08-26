@@ -4,9 +4,33 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-08-14T02:37:54Z</updated>
+    <updated>2021-08-26T17:23:33Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Your unused Realtime Database &apos;weblog-683a9&apos; will be deactivated in 1 day(s)</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/08/005231.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5231</id>
+
+    <published>2021-08-26T17:23:33Z</published>
+    <updated>2021-08-26T17:23:33Z</updated>
+
+    <summary> weblog-683a9[Firebase] Your unused Realtime Database &apos;weblog-683a9&apos; will be deactivated in 1 day(s)We&apos;ve detected the following issue(s) with your Security Rules:any user can read your entire databaseany user can write to your entire databaseYour Security Rules allow anyone on the...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Firebase" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[<img><div><div><div><img alt="Firebase branding logo"></div></div> <table><tr><td><div>weblog-683a9</div><div>[Firebase] Your unused Realtime Database 'weblog-683a9' will be deactivated in 1 day(s)</div></td><td><img alt=""></td><tr></tr></tr></table><div><div><div><table><tr><td><img alt=""></td><td><span>We've detected the following issue(s) with your Security Rules:<ul><li>any user can read your entire database</li><li>any user can write to your entire database</li></ul></span></td></tr></table></div></div><div>Your Security Rules allow anyone on the internet to read or write to your database. Without strong Security Rules your data is vulnerable to attackers stealing, modifying, or deleting data as well as performing costly operations.<br /><br />Your database has not received traffic for almost 6 months and has insecure rules; it will be automatically deactivated in 1 days unless your database receives traffic or you update your Security Rules. You won't lose any data, and can restore the database from the console at any time.<br /><br />If you are not currently using the database, feel free to disregard this email—no action is required on your part. You may be receiving this email if you created your Firebase project in 2017 or prior, and as a result you may have an empty auto-provisioned Realtime Database instance. Again, if you are not currently using the database, feel free to disregard this email.</div></div><div></div><div><div><div>Pending Deactivation</div></div><div>weblog-683a9</div><div><div><div>Database</div><div>weblog-683a9</div></div></div><div><div><span><a>Learn more</a></span><span><a>Edit rules</a></span></div></div></div><div></div><div><div><div>If you have questions or feel you've received this message in error, please contact <a>Firebase support</a></div><div>Thanks for using Firebase!</div></div></div><div><div>This email is notifying you about important service information regarding your Firebase project</div><div><div>Manage your <a>Alert settings</a></div></div></div><div><table><tr><td><img alt=""></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Your unused Realtime Database &apos;weblog-683a9&apos; will be deactivated in 14 day(s)</title>
@@ -2091,35 +2115,6 @@ Need more information or help?
   
       코로나19 고양시 현황✅ 2020년 9월 21일(월)✅ 고양시 확진자 동선삭제 시민제보란https://forms.gle/qevEPkZvdVrYtwkJ8코로나19 감염이 의심된다면의료기관 방문 전 꼭 연락해주세요!(국번 없이) 1339 또는 고양시 보건소
   <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMMai5vLnp1-2BXn5aCxAjbiq6sbp6pBHXbEMHfJ9JaHyKt8d4jMzDStxkalvPeRSLjZRcJzwHSeesE9ZecGmDVVZF0GJvHxyza1uuaM2IWjEb9zLGuGc-2FQNBIKzcXcukenfXUf1GkxHdc2p-2Bm-2BQx5-2FybFs8otaR-2FkxRTPw3t4k6tEMbczC2JzZ4BG4-2F-2BN8GYcOdmcyKlnW3bOt2wRVWlk2vPU" alt="" width="1" height="1" />
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>고양시 비대면 모니터링 봉사활동 &apos;고양시대화노인종합복지관 - 우리 동네 마을 탐방&apos;</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/03/005211.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5211</id>
-
-    <published>2021-03-07T12:07:12Z</published>
-    <updated>2021-03-07T12:07:12Z</updated>
-
-    <summary><![CDATA[ 장기화된 코로나 바이러스로 인하여 자원봉사활동을 하기도 점점 어려워지는 현실입니다.비록 직접 현장에서 대면하며 진행하는 봉사활동은 잠시 멈추었지만 사회적 거리두기를 실천하며 활동할 수 있는 비대면 봉사가 있어, 시민들의 봉사활동은 계속된다고 해요!비대면 모니터링 봉사활동고양시대화노인종합복지관&lt;우리 동네 마을 탐방&gt;고양시대화노인종합복지관에서 주최하는 '우리 동네 마을 탐방...]]></summary>
-    <author>
-        <name>hal9000</name>
-        
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-  
-  
-      장기화된 코로나 바이러스로 인하여 자원봉사활동을 하기도 점점 어려워지는 현실입니다.비록 직접 현장에서 대면하며 진행하는 봉사활동은 잠시 멈추었지만 사회적 거리두기를 실천하며 활동할 수 있는 비대면 봉사가 있어, 시민들의 봉사활동은 계속된다고 해요!비대면 모니터링 봉사활동고양시대화노인종합복지관&lt;우리 동네 마을 탐방&gt;고양시대화노인종합복지관에서 주최하는 '우리 동네 마을 탐방 자원봉사'는 고양시대화노인종합복지관이 코로나19로 활동이 중단된 지역사회 봉사자들을 위해 마련된 비대면 자원봉사 활동입니다.코로나19의 지역사회 감염을 줄이기 위해 주민들이 관심을 가질 수 있도록 유도하며 안.......
-  <img src="https://u2109659.ct.sendgrid.net/wf/open?upn=cJLOC9d7r8t51HUVjv2NkHnAh-2BqQdgMVWdxi0cfrbMPDXpUR-2B1kDg6d5aG7N4mbr82lwJd1Sv8nfl2CqKNuYWG9yXrkCAX4QexMx7IK8TRsZ3V3kHrSx7nnSnSKV7in5tABw08LcEiTL-2B0nsg-2FOdwKnax8SYKpwSPugY5JSeR0NV5cNtcGiJUjpoeEw-2B2vE16Zy0UBwUifAq5QhG3LTJVZmqwt4eNvfFkMNdsONtZHSVMBtcPAgJHCSM-2BqBLqk2U" alt="" width="1" height="1" />
 ]]>
         
     </content>
