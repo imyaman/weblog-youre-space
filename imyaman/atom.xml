@@ -4,9 +4,126 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-08-27T18:44:53Z</updated>
+    <updated>2021-09-10T20:09:01Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>New Mobile Usability issues detected for site pacificmedia.sys5.co</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/09/005234.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5234</id>
+
+    <published>2021-09-10T20:09:01Z</published>
+    <updated>2021-09-10T20:09:01Z</updated>
+
+    <summary><![CDATA[Mobile Usability issues detected on &lt;a style=&quot;color: inherit;&quot;&gt;pacificmedia.sys5.co&lt;/a&gt; Message type: [WNC-10030322] Search Console Mobile Usability issues detected on pacificmedia.sys5.co To the owner of pacificmedia.sys5.co: Search Console has identified that your site is affected by 3 Mobile Usability issues: Top Issues...]]></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[Mobile Usability issues detected on &lt;a style=&quot;color: inherit;&quot;&gt;pacificmedia.sys5.co&lt;/a&gt;
+
+
+  
+
+  <div>
+    
+      
+        
+      
+      
+        
+      
+      
+        
+      
+    <table><tr><td>
+          <span>
+            Message type: [WNC-10030322]
+          </span>
+        </td></tr><tr><td>
+          <div>
+            <img>
+            <span>
+              Search Console
+            </span>
+ 
+          </div>
+<p><span>Mobile Usability issues detected on <a>pacificmedia.sys5.co</a></span></p>
+          <div>
+<div><p>      To the owner of <a>pacificmedia.sys5.co</a>:
+</p>
+<p>Search Console has identified that your site is affected by 3 Mobile Usability issues:
+</p>
+
+
+
+
+<p><span>Top Issues</span></p>
+
+<p>The following issues were found on your site:</p>
+
+<div><p>
+<span><a>Text too small to read</a></span>
+</p>
+<p>
+<span><a>Clickable elements too close together</a></span>
+</p>
+<p>
+<span><a>Content wider than screen</a></span>
+</p>
+</div>
+
+<p>We recommend that you fix these issues when possible to enable the best experience and coverage in Google Search.</p>
+
+
+</div>
+
+<div>
+
+
+
+
+<table><tr><td>
+  <div>
+    <div>
+      <a>
+Fix Mobile Usability issues      </a>
+    </div>
+  </div>
+</td></tr></table>
+</div>
+
+          </div>
+        </td></tr><tr><td>
+          
+            
+              
+            
+          <table><tr><td>
+
+
+
+
+Google LLC, 1600 Amphitheatre Parkway Mountain View, CA 94043 |
+You&#39;ve received this transactional email because your site is listed in Google Search Console |
+<a>  Unsubscribe from this type of message
+</a><br />
+<a>  Add partners
+</a>who should receive messages for this Search Console account<br />
+              </td></tr></table>
+        </td></tr></table>
+  </div>
+<img>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Your unused Realtime Database &apos;weblog-683a9&apos; has been deactivated</title>
@@ -1793,320 +1910,6 @@ Need more information or help?
                                                                                       
 </div>
 <img alt="">
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Updates to Actions on Google Policies: Smart Home and Alcohol,Tobacco &amp; Drugs</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/03/005213.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5213</id>
-
-    <published>2021-03-11T17:40:47Z</published>
-    <updated>2021-03-11T17:40:47Z</updated>
-
-    <summary> AFF Announcement .outlook_query { height: 40px; width: 200px; v-text-anchor: middle;} @media only screen and (max-width: 621px), only screen and (min-width: 360px) and (max-width: 767px) { .mobile { display: block !important } .desktop { display: none !important } } @media...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-  
-    
-    
-    
-    AFF Announcement
-
-      
-      .outlook_query { height: 40px; width: 200px; v-text-anchor: middle;}
-      
-      
-      
-    
-@media only screen and (max-width: 621px), only screen and (min-width: 360px) and (max-width: 767px) {
-    .mobile {
-        display: block !important
-        }
-    .desktop {
-        display: none !important
-        }
-    }
-@media only screen and (max-width: 621px), only screen and (min-width: 360px) and (max-width: 767px) {
-    h1 {
-        font-size: 18px !important;
-        line-height: 24px !important
-        }
-    p {
-        font-size: 14px !important;
-        line-height: 20px !important
-        }
-    .footer-copy p {
-        font-size: 8px !important;
-        line-height: 12px !important
-        }
-    .inner-card {
-        padding: 0 35px !important
-        }
-    }
-
-  
-      
-    
-  
-    
-      <img alt="">
-      
-      
-            
-            <table>
-              <tr>
-                <td>
-                  
-<table>
-  
-  <tr>
-    <td>
-      <img alt="">
-    </td>
-  </tr>
-  
-  <tr>
-    <td>
-      <table> 
-      
-        <tr>
-    <td>&nbsp;</td>
-  </tr>
-      
-        
-        <tr>
-          <td>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>
-            <table>
-              <tr>
-                <td>
-                  <table>
-                    <tr>
-    <td>&nbsp;</td>
-  </tr>
-                    
-  
-  
-  
-    
-    <tr>
-      <td>
-        
-          
-            Dear Actions on Google and Home Automation&nbsp;Developers,
-          
-        
-      </td>
-    </tr>
-    
-  
-
-                    <tr>
-    <td>&nbsp;</td>
-  </tr>
-                    
-  
-  
-  
-    
-    <tr>
-      <td>
-        <p>
-          
-            We're making some important changes to our <a>Smart-enabled devices policy</a> that will go into effect starting Ap&#xfeff;ril&nbsp;1&#xfeff;1,&nbsp;20&#xfeff;21. The changes are part of our continued effort to increase the security and safety of our users, bring more transparency on certification requirements to our developers, and support the quality of the smart home ecosystem we are building together.
-          
-        </p>
-      </td>
-    </tr>
-    
-  
-
-                    <tr>
-    <td>&nbsp;</td>
-  </tr>
-                    
-  
-  
-  
-    
-    <tr>
-      <td>
-        <p>
-          
-            The updated policy will apply to both Conversational&nbsp;Actions and smart home Actions, and will feature updated smart home documentation and language around secondary user verification, guidance on required features, and new requirements for the use of the 'Works with Hey Google' badge and related brand marks.
-          
-        </p>
-      </td>
-    </tr>
-    
-  
-
-                    <tr>
-    <td>&nbsp;</td>
-  </tr>
-                    
-  
-  
-  
-    
-    <tr>
-      <td>
-        <p>
-          
-            We are also making some updates to our <a>Alcohol, Tobacco and Drugs policy</a> which includes prohibiting the sale of tobacco products on our platform and referencing the <a>brand guidelines</a> for Alcohol&nbsp;related&nbsp;Actions.
-          
-        </p>
-      </td>
-    </tr>
-    
-  
-
-                    <tr>
-    <td>&nbsp;</td>
-  </tr>
-                    
-  
-  
-  
-    
-    <tr>
-      <td>
-        <p>
-          
-            Thank you for all of the hard work you have put into Actions&nbsp;on&nbsp;Google to date. Please <a>reach out to the Support team</a> if you have any questions.
-          
-        </p>
-      </td>
-    </tr>
-    
-  
-
-                    <tr>
-    <td>&nbsp;</td>
-  </tr>
-                    
-  
-  
-  
-    
-    <tr>
-      <td>
-        <p>
-          
-            Sincerely, <br /><strong>The Actions on Google Team</strong>
-          
-        </p>
-      </td>
-    </tr>
-    
-  
-
-                    <tr>
-    <td>&nbsp;</td>
-  </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        
-        <tr>
-          <td></td>
-        </tr>
-        <tr>
-          <td>
-            <table>
-              
-              <tr>
-    <td>&nbsp;</td>
-  </tr>
-              
-  
-  
-  
-    
-    <tr>
-      <td>
-        <p>
-          
-            G&#65279;oo&#65279;gle L&#65279;LC 16&#8203;0&#65279;0 A&#65279;m&#65279;p&#65279;h&#65279;ith&#8203;eatre Park&#8203;way, <span><br /></span>Moun&#8203;tain Vie&#8203;w, CA 94&#8203;043
-          
-        </p>
-      </td>
-    </tr>
-    
-  
-
-              <tr>
-    <td>&nbsp;</td>
-  </tr>
-              
-  
-  
-  
-    
-    <tr>
-      <td>
-        <p>
-          
-            You have received this mandatory service announcement to update you on important<span><br /></span> changes related to your Actions for Google&nbsp;Assistant.
-          
-        </p>
-      </td>
-    </tr>
-    
-  
-
-              <tr>
-    <td>&nbsp;</td>
-  </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-                </td>
-              </tr>
-            </table>
-            
-            
-      
-
-      
-    <table>
-    <tr>
-    <td><img alt=""></td>
-    <td><img alt=""></td>
-    <td><img alt=""></td>
-    <td><img alt=""></td>
-    <td><img alt=""></td>
-    <td><img alt=""></td>
-    <td><img alt=""></td>
-    </tr>
-    </table>
-      
-    
-  
-
 
 ]]>
         
