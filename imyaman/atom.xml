@@ -4,9 +4,126 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-09-27T12:01:08Z</updated>
+    <updated>2021-10-03T00:23:30Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>New Mobile Usability issues detected for site pacificmedia.sys5.co</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/10/005237.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5237</id>
+
+    <published>2021-10-03T00:23:30Z</published>
+    <updated>2021-10-03T00:23:30Z</updated>
+
+    <summary><![CDATA[Mobile Usability issues detected on &lt;a style=&quot;color: inherit;&quot;&gt;pacificmedia.sys5.co&lt;/a&gt; Message type: [WNC-10030322] Search Console Mobile Usability issues detected on pacificmedia.sys5.co To the owner of pacificmedia.sys5.co: Search Console has identified that your site is affected by 3 Mobile Usability issues: Top Issues...]]></summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[Mobile Usability issues detected on &lt;a style=&quot;color: inherit;&quot;&gt;pacificmedia.sys5.co&lt;/a&gt;
+
+
+  
+
+  <div>
+    
+      
+        
+      
+      
+        
+      
+      
+        
+      
+    <table><tr><td>
+          <span>
+            Message type: [WNC-10030322]
+          </span>
+        </td></tr><tr><td>
+          <div>
+            <img>
+            <span>
+              Search Console
+            </span>
+ 
+          </div>
+<p><span>Mobile Usability issues detected on <a>pacificmedia.sys5.co</a></span></p>
+          <div>
+<div><p>      To the owner of <a>pacificmedia.sys5.co</a>:
+</p>
+<p>Search Console has identified that your site is affected by 3 Mobile Usability issues:
+</p>
+
+
+
+
+<p><span>Top Issues</span></p>
+
+<p>The following issues were found on your site:</p>
+
+<div><p>
+<span><a>Text too small to read</a></span>
+</p>
+<p>
+<span><a>Content wider than screen</a></span>
+</p>
+<p>
+<span><a>Clickable elements too close together</a></span>
+</p>
+</div>
+
+<p>We recommend that you fix these issues when possible to enable the best experience and coverage in Google Search.</p>
+
+
+</div>
+
+<div>
+
+
+
+
+<table><tr><td>
+  <div>
+    <div>
+      <a>
+Fix Mobile Usability issues      </a>
+    </div>
+  </div>
+</td></tr></table>
+</div>
+
+          </div>
+        </td></tr><tr><td>
+          
+            
+              
+            
+          <table><tr><td>
+
+
+
+
+Google LLC, 1600 Amphitheatre Parkway Mountain View, CA 94043 |
+You&#39;ve received this transactional email because your site is listed in Google Search Console |
+<a>  Unsubscribe from this type of message
+</a><br />
+<a>  Add partners
+</a>who should receive messages for this Search Console account<br />
+              </td></tr></table>
+        </td></tr></table>
+  </div>
+<img>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Important updates by Firebase to our Data Processing and Security Terms</title>
@@ -1913,30 +2030,6 @@ Need more information or help?
 </div>
 <img alt="">
 
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Your project &apos;assistant-health&apos; was downgraded due to activity in Google Cloud</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/04/005217.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5217</id>
-
-    <published>2021-04-05T18:11:55Z</published>
-    <updated>2021-04-05T18:11:55Z</updated>
-
-    <summary> assistant-healthYour project was downgraded due to activity in Google CloudOpen ConsoleFirebase is deeply integrated with Google Cloud. Many of your settings, including billing information and collaborators, are shared by Firebase and Google Cloud. Learn moreOne of the following actions...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="Firebase" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[<div><div><img src="https://www.gstatic.com/mobilesdk/190425_mobilesdk/firebase_lockup.png" alt=""></div> <table><tr><td><div>assistant-health</div><div>Your project was downgraded due to activity in Google Cloud</div></td><tr></tr></tr></table><div><a href="https://console.firebase.google.com/project/assistant-health/overview">Open Console</a></div><div><div><table><tr><td><img src="https://www.gstatic.com/mobilesdk/170616_mobilesdk/info_bluegrey400_24dp@2x.png" alt=""></td><td><span>Firebase is deeply integrated with <a href="https://cloud.google.com/">Google Cloud</a>. Many of your settings, including billing information and collaborators, are shared by Firebase and Google Cloud. <a href="https://firebase.google.com/support/faq/#pricing-cloud">Learn more</a></span></td></tr></table></div><div><div>One of the following actions was performed by a user in the Google Cloud Console:<ul><li>Billing was disabled for your project, or</li><li>The billing account attached to your project was closed</li></ul>This action ended billing for your project, resulting in a downgrade to your project's Firebase plan.</div></div></div><div></div><div><div><div>Project Downgraded to</div></div><div>assistant-health</div><div><div>Plan</div><div>Spark - $0/month</div></div></div><div></div><div><div>If you have questions or feel you've received this message in error, please contact <a href="https://firebase.google.com/support/">Firebase support</a> or visit the <a href="https://www.google.com/url?q=https://firebase.google.com/support/faq/?hl=en#effects-billing-cloud-console">Firebase Pricing FAQs</a>.</div></div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png" alt=""></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
 ]]>
         
     </content>
