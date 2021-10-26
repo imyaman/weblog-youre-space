@@ -4,9 +4,297 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-10-26T20:56:38Z</updated>
+    <updated>2021-10-26T21:35:20Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Accept the updated Google Analytics Terms of Service</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/10/005240.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5240</id>
+
+    <published>2021-10-26T21:35:20Z</published>
+    <updated>2021-10-26T21:35:20Z</updated>
+
+    <summary> Mandatory Service Announcement from Firebase body{ font-family:Google Sans, Roboto, sans-serif; font-size:14px; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, td { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; } a{ color:#0288d1; text-decoration: none;&quot;&gt; } a:link, a:visited, a:hover, a:active {...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Action Required" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+  
+ 
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+    
+    Mandatory Service Announcement from Firebase
+    
+    
+      body{
+        font-family:Google Sans, Roboto,  sans-serif;
+        font-size:14px;
+        -webkit-text-size-adjust: none !important;
+        -webkit-font-smoothing: antialiased
+        !important;
+        -ms-text-size-adjust: none !important;
+      }
+      table, tr, td {
+        border-collapse:collapse;
+ 
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+      }
+      a{
+        color:#0288d1;
+        text-decoration: none;">
+      }
+      a:link, a:visited, a:hover, a:active {
+        color: #4285f4;
+        text-decoration: none;
+      }
+      .appleLinks a {
+        color:#000000   !important;
+ 
+        text-decoration:none !important;
+      }
+      strong {
+        font-weight: bold !important;
+      }
+      em {
+        font-style: italic !important;
+      }
+      .yshortcuts a span {
+        color: inherit !important;
+        border-bottom: none !important;
+      }
+      html {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: 100%;
+      }
+      .ReadMsgBody {
+        width: 100%;
+      }
+      .ExternalClass {
+        width:
+        100%;
+      }
+      .ExternalClass * {
+        line-height: 100%
+      }
+      td {
+        -webkit-text-size-adjust: none;
+      }
+      a[href^=tel] {
+        color:     inherit;
+        text-decoration:   none;
+      }
+      .mob-hide {
+        display:none !important;
+      }
+      div, p, a, li, td {
+        -webkit-text-size-adjust:none;
+      }
+      td {
+        text-decoration:none !important;
+      }
+      a[x-apple-data-detectors] {
+        color: inherit
+        !important;
+        text-decoration:   none !important;
+        font-size: inherit !important;
+ 
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height:   inherit
+        !important;
+      }
+      @media all and (max-width: 600px) {
+        .table-main-gmail {
+          /*   Forces
+          Gmail to display Desktop   view */
+          width: 100% !important;
+          min-width:100% !important;
+        }
+      }
+    
+  
+  
+    <div>
+        
+        
+        
+        <table>
+        
+        
+          
+
+            
+            <tr>
+              <td>
+                <table>
+                  
+                    <tr>
+                      <td>
+                        <a>
+                        <img alt="Firebase Console">
+                        </a>
+                      </td>
+                    </tr>
+                  
+                </table>
+              </td>
+            </tr>
+                
+  
+    <div></div>
+            
+            
+<tr>
+              <td>
+            
+            <div>
+                Hi Sangyong,</div>
+
+<p>You are receiving this email because you own one or more <strong>Firebase</strong> projects using <strong>Google Analytics</strong>. With the release of <a>Google Analytics 4 properties</a>, to keep using your Firebase projects with Google Analytics, <strong>you must take action to accept the Google Analytics Terms of Service</strong> for the following projects<strong>:</strong></p>
+
+<ul>
+  <li><a>weblog (weblog-683a9)</a></li>
+
+  <li><a>devopskorea (devopskorea)</a></li>
+
+  <li><a>assistant-health (assistant-health)</a></li>
+
+  <li><a>myhealthdata-teasing (myhealthdata-teasing)</a></li>
+
+  <li><a>b001 (b001-1ad64)</a></li>
+
+  <li><a>daegwang (daegwang-36a80)</a></li>
+
+  <li><a>pwa001 (pwa001-4c3dc)</a></li>
+
+  <li><a>blog (blog-c227a)</a></li>
+
+  <li><a>devopsdays (devopsdays-3b475)</a></li>
+
+  <li><a>pacificmedia (pacificmedia-38170)</a></li>
+
+  <li><a>lego (lego-35755)</a></li>
+</ul>
+
+<p>Any project that has not accepted the updated terms by <strong>February 15, 2022</strong>, will lose access to Google Analytics and the corresponding data will be deleted. This will affect <strong>Google Analytics for Firebase Integrations</strong> including:</p>
+
+<ul>
+  <li><a>Integrated Firebase products</a>
+    <ul>
+      <li>Crashlytics</li>
+      <li>FCM</li>
+      <li>Remote Config</li>
+      <li>A/B Testing</li>
+      <li>In-App Messaging</li>
+    </ul>
+  </li>
+  <li>Google Ads Links</li>
+  <li>AdMob Links</li>
+  <li>BigQuery Exports</li>
+</ul>
+
+<p><strong>How do I accept the updated Terms of Service?</strong></p>
+
+<p>To continue using Google Analytics, <strong>accept the updated Terms of Service by </strong><a><strong>following the instructions in the Google Analytics Help Center</strong></a>.</p>
+
+<p>By accepting the updated Terms of Service, you will gain access to additional features only available in the standalone <a>Google Analytics</a> interface for Google Analytics 4 properties, including:</p>
+
+<ul>
+  <li><a>Data Import</a></li>
+  <li><a>Reporting Customization</a></li>
+  <li><a>Explore Workspace</a> including <a>Funnels</a></li>
+  <li>...<a>and more</a>!</li>
+</ul>
+
+<p>You can read more about all the benefits of upgrading below:</p>
+
+<ul>
+  <li><a>Upgrade your Firebase project to our next generation of app analytics capabilities! - The Firebase Blog</a></li>
+  <li><a>What’s next with the latest in app analytics - The Firebase Blog</a></li>
+</ul>
+
+<p>Please take time to review the <a>Google Analytics Terms of Service Language Index</a>.</p>
+
+
+<p>If you have trouble accepting the updated Terms of Service, please <a>contact support</a>.</p>
+
+<div>
+Thank you for choosing <strong>Google Analytics.</strong></div>
+
+<div>
+<strong>– The Google Analytics Team</strong>
+</div>            
+
+
+</td>
+          </tr>
+         
+            
+
+
+          
+          <tr>
+            <td>
+You have received this mandatory email service announcement to update you about an issue affecting your Google Analytics accounts.            </td>
+          </tr>
+ 
+          <tr>
+            <td>
+              <table>
+                
+                  <tr>
+                    <td>
+                      <img alt="">
+                    </td>
+ 
+                    <td>
+                      <a>
+                        © 2021 Google LLC
+                        <br />
+                        1600 Amphitheatre Parkway
+                        <br />
+                        Mountain View, CA 94043 USA
+                      </a>
+                    </td>
+                  </tr>
+                
+              </table>
+            </td>
+          </tr>
+
+          
+ 
+        
+      </table>
+    
+    </div>
+  <img alt="">
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>New Mobile Usability issues detected for site pacificmedia.sys5.co</title>
@@ -1501,326 +1789,6 @@ What do I need to do to be compliant?
   <p>You have received this mandatory service announcement to update you about important changes to Google services you use.</p>
 </div>
 <img alt="">
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title> Changes to YouTube’s Terms of Service</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/05/005220.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5220</id>
-
-    <published>2021-05-20T08:34:35Z</published>
-    <updated>2021-05-20T08:34:35Z</updated>
-
-    <summary> Important update #outlook a { padding: 0; } * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } body { font-family: Roboto, Arial, Helvetica, sans-serif; margin: 0; padding: 0; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, th,...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-
-
-Important update
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#outlook a {
-padding: 0;
-}
-* {
--ms-text-size-adjust: 100%;
--webkit-text-size-adjust: 100%;
-}
-body {
-font-family: Roboto, Arial, Helvetica, sans-serif;
-margin: 0;
-padding: 0;
--webkit-text-size-adjust: none !important;
--webkit-font-smoothing: antialiased !important;
--ms-text-size-adjust: none !important;
-}
-table,
-tr,
-th,
-td {
-border-spacing: 0;
-border-collapse: collapse;
-mso-table-lspace: 0pt;
-mso-table-rspace: 0pt;
-}
-img {
-border: 0;
-height: auto;
-line-height: 100%;
-outline: none;
-text-decoration: none;
--ms-interpolation-mode: bicubic;
-}
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-color: #065fd4;
-text-decoration: none;
-}
-a[x-apple-data-detectors] {
-border-bottom: 0 !important;
-cursor: default !important;
-color: inherit !important;
-text-decoration: none !important;
-font-size: inherit !important;
-font-family: inherit !important;
-font-weight: inherit !important;
-line-height: inherit !important;
-}
-.im {
-color: inherit !important;
-}
-img.g-img + div {
-display: none !important;
-}
-sup {
-line-height: 0;
-font-size: 75%;
-}
-
-
-
-@media only screen and (max-width: 620px) {
-.hide-on-mobile {
-display: none !important;
-}
-.hide-on-desktop {
-display: block !important;
-max-height: none !important;
-}
-.hide-on-desktop td {
-display: table-cell !important;
-max-height: none !important;
-}
-}
-.hide-on-desktop,
-.hide-on-desktop td {
-mso-hide: all;
-display: none;
-max-height: 0;
-overflow: hidden;
-}
-
-
-@media only screen and (max-width:480px) {
-table.mj-full-width-mobile {
-width: 100% !important;
-}
-td.mj-full-width-mobile {
-width: auto !important;
-}
-}
-
-
-@media only screen and (min-width:620px) {
-.mj-column-per-100 {
-width: 100% !important;
-max-width: 100%;
-}
-.mj-column-per-50 {
-width: 50% !important;
-max-width: 50%;
-}
-}
-
-
-
-<div>
-<div>
-<table>
-
-<tr>
-<td>
-
-<div>
-<table>
-
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<a>
-<img alt="" />
-</a>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr>
-<tr>
-<td>
-You’re receiving this email because we’re updating the YouTube <a>Terms of Service</a> (“Terms”) to clarify our terms and provide transparency to our users. The Terms were similarly updated in the United States in November 2020. These changes shouldn't significantly alter your access or use of the YouTube&nbsp;service.
-</td>
-</tr>
-<tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr>
-<tr>
-<td>
-A summary of the changes:
-</td>
-</tr>
-<tr>
-<td>
-<ul>
-<li>
-<strong>Facial recognition restrictions</strong>: The Terms of Service already state that you cannot collect any information that might identify a person without their permission. While this has always included facial recognition information, the new Terms make that explicitly&nbsp;clear.
-</li>
-<li>
-<strong>YouTube’s right to monetize</strong>: YouTube has the right to monetize all content on the platform and ads may appear on videos from channels not in the YouTube&nbsp;Partner&nbsp;Program.
-</li>
-<li>
-<strong>Royalty payments and tax withholding</strong>: For creators entitled to revenue payments, such payments will be treated as royalties from a U.S. tax perspective and Google will withhold taxes where required by&nbsp;law.
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr>
-<tr>
-<td>
-<strong>Please make sure you read the updates to the Terms carefully. The new <a>Terms</a> will take effect on June 1, 2021 for users outside the U.S.</strong> By continuing to use YouTube after this date, you are agreeing to the new Terms. Please note, if you allow your child to use YouTube Kids, then you are agreeing to the new Terms on behalf of your child as well.
-</td>
-</tr>
-<tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr>
-<tr>
-<td>
-If you would like more information, visit our <a>Help Center</a>.
-</td>
-</tr>
-<tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr>
-<tr>
-<td>
-<p> </p>
-
-</td>
-</tr>
-<tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr><tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr>
-<tr>
-<td>
-You received this mandatory email service announcement to update you about important changes to the YouTube&nbsp;Terms.
-</td>
-</tr> <tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr>
-<tr>
-<td>
-<a><img alt="" /></a>
-</td>
-</tr>
-<tr>
-<td>
-
-<div>&nbsp;</div>
-
-</td>
-</tr>
-<tr>
-<td>
-&copy; 2021 <a> Google LLC d/b/a YouTube, 901 Cherry Ave, San Bruno, CA 94066 </a> </td>
-</tr>
-</table>
-</td>
-</tr>
-
-</table>
-</div>
-
-</td>
-</tr>
-
-</table>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td><img alt="" /></td>
-<td><img alt="" /></td>
-<td><img alt="" /></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</div>
-</div>
-
-
 ]]>
         
     </content>
