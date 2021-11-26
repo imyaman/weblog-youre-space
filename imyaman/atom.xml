@@ -4,9 +4,357 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-10-26T21:35:20Z</updated>
+    <updated>2021-11-26T19:15:51Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Updates to YouTube’s Terms of Service
+</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/11/005241.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5241</id>
+
+    <published>2021-11-26T19:15:51Z</published>
+    <updated>2021-11-26T19:15:51Z</updated>
+
+    <summary> Important update #outlook a { padding: 0; } * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } body { font-family: Roboto, Arial, Helvetica, sans-serif; margin: 0; padding: 0; -webkit-text-size-adjust: none !important; -webkit-font-smoothing: antialiased !important; -ms-text-size-adjust: none !important; } table, tr, th,...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+
+
+
+Important update
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#outlook a {
+padding: 0;
+}
+* {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+body {
+font-family: Roboto, Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+-webkit-text-size-adjust: none !important;
+-webkit-font-smoothing: antialiased !important;
+-ms-text-size-adjust: none !important;
+}
+table,
+tr,
+th,
+td {
+border-spacing: 0;
+border-collapse: collapse;
+mso-table-lspace: 0pt;
+mso-table-rspace: 0pt;
+}
+img {
+border: 0;
+height: auto;
+line-height: 100%;
+outline: none;
+text-decoration: none;
+-ms-interpolation-mode: bicubic;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+color: #065fd4;
+text-decoration: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin:0;
+padding:0;
+}
+a[x-apple-data-detectors] {
+border-bottom: 0 !important;
+cursor: default !important;
+color: inherit !important;
+text-decoration: none !important;
+font-size: inherit !important;
+font-family: inherit !important;
+font-weight: inherit !important;
+line-height: inherit !important;
+}
+.im {
+color: inherit !important;
+}
+img.g-img + div {
+display: none !important;
+}
+sup {
+line-height: 0;
+font-size: 75%;
+}
+
+
+
+@media only screen and (max-width: 620px) {
+.hide-on-mobile {
+display: none !important;
+}
+.hide-on-desktop {
+display: block !important;
+max-height: none !important;
+}
+.hide-on-desktop td {
+display: table-cell !important;
+max-height: none !important;
+}
+}
+.hide-on-desktop,
+.hide-on-desktop td {
+mso-hide: all;
+display: none;
+max-height: 0;
+overflow: hidden;
+}
+
+
+@media only screen and (max-width:480px) {
+table.mj-full-width-mobile {
+width: 100% !important;
+}
+td.mj-full-width-mobile {
+width: auto !important;
+}
+}
+
+
+@media only screen and (min-width:620px) {
+.mj-column-per-100 {
+width: 100% !important;
+max-width: 100%;
+}
+.mj-column-per-50 {
+width: 50% !important;
+max-width: 50%;
+}
+}
+
+
+
+<div>
+<div>
+<table>
+
+<tr>
+<td>
+
+<div>
+<table>
+
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<a>
+<img alt="" />
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr><tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<p>
+On January 5, 2022, we’re updating our Terms of Service (“<strong>Terms</strong>”) to help clarify and make it easier to understand what to expect as you use the service. These changes won’t affect the way you use YouTube. You can review a summary of the changes and the <a>updated Terms here</a>.
+</p>
+</td>
+</tr><tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<p>
+At a glance, this update covers:
+</p>
+</td>
+</tr><tr>
+<td>
+<ul>
+<li>
+<strong>More clarity on what to expect:</strong> We’re providing more transparency about how we develop, improve, and update our service, including more detail about the reasons we make changes and updates, and the advanced notice we provide to you.
+</li><li>
+<strong>General updates for improved readability:</strong> While our Terms remain a legal document, we’ve done our best to make them easier to understand. This includes reorganizing some sections (such as <span>Account Suspension</span> and <span>Termination</span>) and rewording others (such as <span>Changing this Agreement</span>).
+</li><li>
+<strong>Inclusion of the Community Guidelines strikes process:</strong> Your use of YouTube has always been subject to the Community Guidelines and its strikes process, but we’re now explicitly including the <a>Community Guidelines strikes</a> information in the Terms to increase transparency. There are no changes to how Community Guidelines strikes operate, or when a channel or content might receive a strike.
+</li> </ul>
+</td>
+</tr><tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<p>
+Please make sure you read the updates to the <a>Terms</a>. By continuing to use YouTube after this date, you are agreeing to the updated Terms. Note, if you allow your child to use YouTube Kids, or manage your child’s use of YouTube through <a>Family Link</a>, take a moment to talk to them about these changes.
+</p>
+</td>
+</tr><tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<p>
+Thank you for being part of our global community!
+</p>
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<p> </p>
+
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr><tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<p>
+<a>Help Center
+</a>
+<span>&bull; </span><a>Email options
+</a>
+</p>
+</td>
+</tr><tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<p>
+You have received this email to update you about important changes to YouTube’s Terms of Service. </p>
+</td>
+</tr> <tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+<a><img alt="" /></a>
+</td>
+</tr>
+<tr>
+<td>
+
+<div>&nbsp;</div>
+
+</td>
+</tr>
+<tr>
+<td>
+&copy; 2021 <a> Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA, 94043 </a> </td>
+</tr> </table>
+</td>
+</tr>
+
+</table>
+</div>
+
+</td>
+</tr>
+
+</table>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td><img alt="" /></td>
+<td><img alt="" /></td>
+<td><img alt="" /></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<img alt="">
+</div>
+</div>
+
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Accept the updated Google Analytics Terms of Service</title>
@@ -1713,82 +2061,6 @@ This informational email was sent to <a> imyamanhitelnet@gmail.com</a> because y
     
     <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
         <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; text-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 600px) {.mdv2rw {padding: 40px 40px;}} <table><tr><td></td></tr><tr><td><div><div></div></div><table><tr><td></td><td><div><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png" width="74" height="24" alt="Google"><div><div>New device signed in&nbsp;to </div><table><tr><td><img width="20" height="20" src="https://lh3.googleusercontent.com/a/AATXAJzvQoXNS_lOybAewr5lCAqcpUbFLi-IUPsM__Bu=s96" alt=""></td><td><a>imyamanhitelnet@gmail.com</a></td></tr></table> </div><div>Your Google Account was just signed in to from a new Windows device. You're getting this email to make sure it was you.<div><a href="https://accounts.google.com/AccountChooser?Email=imyamanhitelnet@gmail.com&amp;continue=https://myaccount.google.com/alert/nt/1624277031000?rfn%3D31%26rfnc%3D1%26eid%3D-1863804181869316575%26et%3D0%26anexp%3Dnret-fa">Check activity</a></div></div><div>You can also see security activity at<br /><a>https://myaccount.google.com/notifications</a></div></div><div><div><div>You received this email to let you know about important changes to your Google Account and services.</div><div>&copy; 2021 Google LLC, <a>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div></div></td><td></td></tr></table></td></tr><tr><td></td></tr></table>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Inactive registered OAuth URIs for your project(s) will be removed from Google Developer Console by July 12, 2021, for non-compliance with URI validation rules</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/06/005221.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5221</id>
-
-    <published>2021-06-02T19:03:53Z</published>
-    <updated>2021-06-02T19:03:53Z</updated>
-
-    <summary> Review your impacted URIs in your listed project(s). Hello Google Developer, We are writing to let you know that you have inactive OAuth redirect URIs and JavaScript origins in your Google Cloud project that are not in compliance with...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="Action Advised" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-<span> </span>
-<div><span><img alt="Google logo"> </span></div>
-<span>  </span>
-
-<div>Review your impacted URIs in your listed project(s).</div>
-
-
-<p>Hello Google Developer,</p>
-
-<p>We are writing to let you know that you have inactive OAuth redirect URIs and JavaScript origins in your Google Cloud project that are not in compliance with Google’s OAuth URI validation rules.</p>
-
-<ul>
-  <li><strong>On July 12, 2021</strong>, we will remove all inactive URIs that are invalid.</li>
-  <li><strong>On September 13, 2021,</strong> we will remove all URIs that are not in compliance with <a>redirect URIs</a> and <a>Javascript origins</a> rules (including formerly inactive URIs trying to become active).</li>
-</ul>
-
-What do I need to do to be compliant?
-
-<ul>
-  <li>If these inactive OAuth redirect URIs and JavaScript origins are no longer needed, you can remove them from your Google Cloud project. If they remain inactive, they will be automatically deleted after <strong>July 12, 2021.</strong></li>
-  <li>If your app still needs to use these URIs, please update your app and OAuth configuration from the Google Developer Console to use redirect URIs or JavaScript origins that are compliant with the <a>OAuth URI validation rules</a> <strong>by</strong> <strong>September 13, 2021</strong>.</li>
-</ul>
-
-<p>The following Google Cloud project(s), which has/have registered OAuth redirect URIs and JavaScript origins without usage for over 90 days, and which will be removed<strong> by July 12, 2021</strong>:</p>
-
-<ul>
-  <li>Project ID: <a>blog-c227a</a>
-
-    <ul>
-      <li>Client: <a>1014338909363-4fagm99u4dgbo4a4tpsahttnte6gd1gi.apps.googleusercontent.com</a>
-
-        <ul>          <li>URI: <a>http://cal.youre.space/625/mt.cgi?__mode=ga_oauth2callback</a></li>
-       	</ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-
-<p>If you have any questions or concerns regarding these changes, please review the documentation provided above in this email.</p>
-
-<p>Sincerely,</p>
-
-<p>The Google Developer Team</p>
-
-
-<div>
-  <p>© 2021 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
-
-  <p>You have received this mandatory service announcement to update you about important changes to Google services you use.</p>
-</div>
-<img alt="">
 ]]>
         
     </content>
