@@ -4,9 +4,283 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-12-01T09:31:23Z</updated>
+    <updated>2021-12-14T14:09:37Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Sangyong, take the next step on your Windows by confirming your Google Account settings</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/12/005244.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5244</id>
+
+    <published>2021-12-14T14:09:37Z</published>
+    <updated>2021-12-14T14:09:37Z</updated>
+
+    <summary> Finish setting up your device table td { border-collapse: collapse; } * { -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -o-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } img + div {display:none; display:none !important;} /* Potrait for Pixel2 */ @media only screen and (min-width: 411px)...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[
+
+
+Finish setting up your device
+
+
+
+
+
+
+
+
+ table td { border-collapse: collapse; } * { -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -o-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } img + div {display:none; display:none !important;} 
+
+/* Potrait for Pixel2 */
+@media only screen and (min-width: 411px) and (max-width: 412px) and (orientation:portrait){
+.head_cls {font-size: 22px !important;}
+.subhead_cls{font-size: 18px !important;}
+.headline_cls{font-size: 20px !important;}
+.subheadline_cls{font-size: 16px !important;}
+.cta_btn{font-size: 16px !important;}
+.footer_address{font-size: 14px !important;}
+}
+/*-- portrait for iphone */
+@media only screen and (device-width: 375px) and (orientation:portrait){
+.head_cls {font-size: 22px !important;}
+.subhead_cls{font-size: 18px !important;}
+.headline_cls{font-size: 20px !important;}
+.subheadline_cls{font-size: 16px !important;}
+.cta_btn{font-size: 16px !important;}
+.footer_address{font-size: 14px !important;}
+}
+/*-- Landscape for iPhone --*/
+@media only screen and (device-width: 375px) and (orientation:landscape){
+.head_cls {font-size: 22px !important;}
+.subhead_cls{font-size: 18px !important;}
+.headline_cls{font-size: 20px !important;}
+.subheadline_cls{font-size: 16px !important;}
+.cta_btn{font-size: 16px !important;}
+.footer_address{font-size: 14px !important;}
+}
+
+
+.mobile_only { display:none; font-size:0px; line-height:0; height:0px; max-height:0px; overflow:hidden; }
+
+
+@media screen and (max-width:900px){
+.footer_main{padding-bottom:0px !important;}
+.main_table{width:100% !important;}
+.subheadline_cls{padding-left: 40px !important; padding-right: 40px !important;}
+}
+
+
+
+
+
+<div></div>
+
+
+
+ <table>
+ <tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img>
+</td>
+</tr>
+<tr>
+<td>Hi Sangyong,</td>
+</tr>
+<tr>
+<td>Welcome to Google on your new <span>Windows.</span><br /> Next, take these 2 steps to confirm your Google Account settings.</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<table>
+<tr>
+<td>
+<img>
+</td>
+</tr>
+<tr>
+<td>Step 1: Privacy Checkup</td>
+</tr>
+<tr>
+<td>Confirm key settings and the data Google uses to personalize your experience</td>
+</tr>
+<tr>
+<td>
+<div>
+
+
+<a>
+<table>
+<tr><td></td></tr>
+<tr><td>Confirm Privacy Settings
+</td></tr>
+<tr><td></td></tr>
+</table></a>
+
+</div>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<img>
+</td>
+</tr>
+<tr>
+<td>Step 2: Security Checkup</td>
+</tr>
+<tr>
+<td>Confirm what devices may have access to your Google Account and more</td>
+</tr>
+<tr>
+<td>
+<div>
+
+
+<a>
+<table>
+<tr><td></td></tr>
+<tr><td>Check Security Status
+</td></tr>
+<tr><td></td></tr>
+</table></a>
+
+</div>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<img>
+</td>
+</tr>
+<tr>
+<td>Want to stay in the loop?
+</td>
+</tr>
+<tr>
+<td>Sign up to receive personalized tips, news and recommendations to help you get the most out of your Google Account.
+</td>
+</tr>
+<tr>
+<td>
+<div>
+
+
+<a>
+<table>
+<tr><td></td></tr>
+<tr><td>Keep me updated
+</td></tr>
+<tr><td></td></tr>
+</table></a>
+
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+<table>
+
+<tr>
+<td>
+This informational email was sent to <a> imyamanhitelnet@gmail.com</a> because you recently signed into your Google Account on your Windows. If you do not wish to receive emails to help you set up your new device with Google when you sign into your account on the device for the first time, please <a> unsubscribe</a>.
+</td>
+</tr>
+<tr>
+<td>
+<span>© 2021 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</span>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+  </td>
+</tr>
+</table>
+<table>
+<tr>
+<td>
+<img>
+</td>
+</tr>
+</table>
+
+
+<img alt="">
+
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Security alert</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/12/005243.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5243</id>
+
+    <published>2021-12-14T14:09:35Z</published>
+    <updated>2021-12-14T14:09:35Z</updated>
+
+    <summary>.awl a {color: #FFFFFF; text-decoration: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; text-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: 6px 30px...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[.awl a {color: #FFFFFF; text-decoration: none;} .abml a {color: #000000; font-family: Roboto-Medium,Helvetica,Arial,sans-serif; font-weight: bold; text-decoration: none;} .adgl a {color: rgba(0, 0, 0, 0.87); text-decoration: none;} .afal a {color: #b0b0b0; text-decoration: none;} @media screen and (min-width: 600px) {.v2sp {padding: 6px 30px 0px;} .v2rsp {padding: 0px 10px;}} @media screen and (min-width: 600px) {.mdv2rw {padding: 40px 40px;}} <table><tr><td></td></tr><tr><td><div><div></div></div><table><tr><td></td><td><div><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_color_74x24dp.png" width="74" height="24" alt="Google"><div><div>New device signed in&nbsp;to </div><table><tr><td><img width="20" height="20" src="https://lh3.googleusercontent.com/a/AATXAJzvQoXNS_lOybAewr5lCAqcpUbFLi-IUPsM__Bu=s96" alt=""></td><td><a>imyamanhitelnet@gmail.com</a></td></tr></table> </div><div>Your Google Account was just signed in to from a new Windows device. You're getting this email to make sure it was you.<div><a href="https://accounts.google.com/AccountChooser?Email=imyamanhitelnet@gmail.com&amp;continue=https://myaccount.google.com/alert/nt/1639490752000?rfn%3D31%26rfnc%3D1%26eid%3D-5763608779144089142%26et%3D0%26anexp%3Dnret-fa">Check activity</a></div></div><div>You can also see security activity at<br /><a>https://myaccount.google.com/notifications</a></div></div><div><div><div>You received this email to let you know about important changes to your Google Account and services.</div><div>&copy; 2021 Google LLC, <a>1600 Amphitheatre Parkway, Mountain View, CA 94043, USA</a></div></div></div></td><td></td></tr></table></td></tr><tr><td></td></tr></table>
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Learn more about our updated Terms of Service</title>
@@ -1765,375 +2039,6 @@ You&#39;ve received this transactional email because your site is listed in Goog
     <div>Message type: [WNC-20154754]</div>
   </div>
 <img>
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>New Mobile Usability issues detected for site pacificmedia.sys5.co</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/06/005224.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5224</id>
-
-    <published>2021-06-21T19:47:11Z</published>
-    <updated>2021-06-21T19:47:11Z</updated>
-
-    <summary><![CDATA[Mobile Usability issues detected on &lt;a style=&quot;color: inherit;&quot;&gt;pacificmedia.sys5.co&lt;/a&gt; Message type: [WNC-10030322] Search Console Mobile Usability issues detected on pacificmedia.sys5.co To the owner of pacificmedia.sys5.co: Search Console has identified that your site is affected by 3 Mobile Usability issues: Top Issues...]]></summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[Mobile Usability issues detected on &lt;a style=&quot;color: inherit;&quot;&gt;pacificmedia.sys5.co&lt;/a&gt;
-
-
-  
-
-  <div>
-    
-      
-        
-      
-      
-        
-      
-      
-        
-      
-    <table><tr><td>
-          <span>
-            Message type: [WNC-10030322]
-          </span>
-        </td></tr><tr><td>
-          <div>
-            <img>
-            <span>
-              Search Console
-            </span>
- 
-          </div>
-<p><span>Mobile Usability issues detected on <a>pacificmedia.sys5.co</a></span></p>
-          <div>
-<div><p>      To the owner of <a>pacificmedia.sys5.co</a>:
-</p>
-<p>Search Console has identified that your site is affected by 3 Mobile Usability issues:
-</p>
-
-
-
-
-<p><span>Top Issues</span></p>
-
-<p>The following issues were found on your site:</p>
-
-<div><p>
-<span><a>Text too small to read</a></span>
-</p>
-<p>
-<span><a>Clickable elements too close together</a></span>
-</p>
-<p>
-<span><a>Content wider than screen</a></span>
-</p>
-</div>
-
-<p>We recommend that you fix these issues when possible to enable the best experience and coverage in Google Search.</p>
-
-
-</div>
-
-<div>
-
-
-
-
-<table><tr><td>
-  <div>
-    <div>
-      <a>
-Fix Mobile Usability issues      </a>
-    </div>
-  </div>
-</td></tr></table>
-</div>
-
-          </div>
-        </td></tr><tr><td>
-          
-            
-              
-            
-          <table><tr><td>
-
-
-
-
-Google LLC, 1600 Amphitheatre Parkway Mountain View, CA 94043 |
-You&#39;ve received this transactional email because your site is listed in Google Search Console |
-<a>  Unsubscribe from this type of message
-</a><br />
-<a>  Add partners
-</a>who should receive messages for this Search Console account<br />
-              </td></tr></table>
-        </td></tr></table>
-  </div>
-<img>
-
-
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Sangyong, take the next step on your Windows by confirming your Google Account settings</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/06/005223.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5223</id>
-
-    <published>2021-06-21T12:05:07Z</published>
-    <updated>2021-06-21T12:05:07Z</updated>
-
-    <summary> Finish setting up your device table td { border-collapse: collapse; } * { -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -o-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } img + div {display:none; display:none !important;} /* Potrait for Pixel2 */ @media only screen and (min-width: 411px)...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[
-
-
-Finish setting up your device
-
-
-
-
-
-
-
-
- table td { border-collapse: collapse; } * { -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -o-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } img + div {display:none; display:none !important;} 
-
-/* Potrait for Pixel2 */
-@media only screen and (min-width: 411px) and (max-width: 412px) and (orientation:portrait){
-.head_cls {font-size: 22px !important;}
-.subhead_cls{font-size: 18px !important;}
-.headline_cls{font-size: 20px !important;}
-.subheadline_cls{font-size: 16px !important;}
-.cta_btn{font-size: 16px !important;}
-.footer_address{font-size: 14px !important;}
-}
-/*-- portrait for iphone */
-@media only screen and (device-width: 375px) and (orientation:portrait){
-.head_cls {font-size: 22px !important;}
-.subhead_cls{font-size: 18px !important;}
-.headline_cls{font-size: 20px !important;}
-.subheadline_cls{font-size: 16px !important;}
-.cta_btn{font-size: 16px !important;}
-.footer_address{font-size: 14px !important;}
-}
-/*-- Landscape for iPhone --*/
-@media only screen and (device-width: 375px) and (orientation:landscape){
-.head_cls {font-size: 22px !important;}
-.subhead_cls{font-size: 18px !important;}
-.headline_cls{font-size: 20px !important;}
-.subheadline_cls{font-size: 16px !important;}
-.cta_btn{font-size: 16px !important;}
-.footer_address{font-size: 14px !important;}
-}
-
-
-.mobile_only { display:none; font-size:0px; line-height:0; height:0px; max-height:0px; overflow:hidden; }
-
-
-@media screen and (max-width:900px){
-.footer_main{padding-bottom:0px !important;}
-.main_table{width:100% !important;}
-.subheadline_cls{padding-left: 40px !important; padding-right: 40px !important;}
-}
-
-
-
-
-
-<div></div>
-
-
-
- <table>
- <tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<img>
-</td>
-</tr>
-<tr>
-<td>Hi Sangyong,</td>
-</tr>
-<tr>
-<td>Welcome to Google on your new <span>Windows.</span><br /> Next, take these 2 steps to confirm your Google Account settings.</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<table>
-<tr>
-<td>
-<img>
-</td>
-</tr>
-<tr>
-<td>Step 1: Privacy Checkup</td>
-</tr>
-<tr>
-<td>Confirm key settings and the data Google uses to personalize your experience</td>
-</tr>
-<tr>
-<td>
-<div>
-
-
-<a>
-<table>
-<tr><td></td></tr>
-<tr><td>Confirm Privacy Settings
-</td></tr>
-<tr><td></td></tr>
-</table></a>
-
-</div>
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-<img>
-</td>
-</tr>
-<tr>
-<td>Step 2: Security Checkup</td>
-</tr>
-<tr>
-<td>Confirm what devices may have access to your Google Account and more</td>
-</tr>
-<tr>
-<td>
-<div>
-
-
-<a>
-<table>
-<tr><td></td></tr>
-<tr><td>Check Security Status
-</td></tr>
-<tr><td></td></tr>
-</table></a>
-
-</div>
-</td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-<img>
-</td>
-</tr>
-<tr>
-<td>Want to stay in the loop?
-</td>
-</tr>
-<tr>
-<td>Sign up to receive personalized tips, news and recommendations to help you get the most out of your Google Account.
-</td>
-</tr>
-<tr>
-<td>
-<div>
-
-
-<a>
-<table>
-<tr><td></td></tr>
-<tr><td>Keep me updated
-</td></tr>
-<tr><td></td></tr>
-</table></a>
-
-</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-<table>
-
-<tr>
-<td>
-<table>
-
-<tr>
-<td>
-This informational email was sent to <a> imyamanhitelnet@gmail.com</a> because you recently signed into your Google Account on your Windows. If you do not wish to receive emails to help you set up your new device with Google when you sign into your account on the device for the first time, please <a> unsubscribe</a>.
-</td>
-</tr>
-<tr>
-<td>
-<span>© 2021 Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</span>
-</td>
-</tr>
-
-</table>
-</td>
-</tr>
-
-</table>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr>
-<td>
-  </td>
-</tr>
-</table>
-<table>
-<tr>
-<td>
-<img>
-</td>
-</tr>
-</table>
-
-
-<img alt="">
 
 ]]>
         
