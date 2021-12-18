@@ -4,9 +4,636 @@
     <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/" />
     <link rel="self" type="application/atom+xml" href="https://weblog.youre.space/imyaman/atom.xml" />
     <id>tag:weblog.youre.space,2017-07-10:/imyaman/12</id>
-    <updated>2021-12-14T14:20:42Z</updated>
+    <updated>2021-12-18T17:30:16Z</updated>
     
     <generator uri="http://www.sixapart.com/movabletype/">Movable Type 6.3.6</generator>
+
+<entry>
+    <title>Build your Cloud Storage skills now</title>
+    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/12/005246.html" />
+    <id>tag:weblog.youre.space,2021:/imyaman//12.5246</id>
+
+    <published>2021-12-18T17:30:16Z</published>
+    <updated>2021-12-18T17:30:16Z</updated>
+
+    <summary> Get the most out of Cloud Storage @media screen and (max-width:737px) { .flexible {max-width: 600px !important;} .webkit { width: 100% !important;min-width: 100% !important;} .wrapper_new{width:100% !important;} .bullet_td {} #footer_tr1 { padding-bottom: 0px !important; } #footer_tr2 { padding-top: 0px !important; }...</summary>
+    <author>
+        <name>Sangyong Gwak</name>
+        <uri>https://weblog.youre.space/vergence/</uri>
+    </author>
+    
+        <category term="Cloud Storage resources" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
+        <![CDATA[ 
+   
+
+ 
+
+
+ 
+
+
+  
+  
+  
+
+ 
+  
+  
+ 
+
+
+
+  
+  
+   
+ 
+
+
+
+
+    
+    
+    Get the most out of Cloud Storage
+  
+@media screen and (max-width:737px) {
+.flexible {max-width: 600px !important;}
+.webkit { width: 100% !important;min-width: 100% !important;}
+.wrapper_new{width:100% !important;}
+  
+  .bullet_td {}
+  
+  #footer_tr1 {
+    padding-bottom: 0px !important;
+  }
+  #footer_tr2 {
+    padding-top: 0px !important;
+  }
+  
+}
+@media screen and (max-width:414px) {
+  .desk_grey_section {
+    display: none !important;
+  }
+  .mob_grey_section {
+    display: table-cell !important;
+  }
+  .flexible { 
+    width: 100% !important;
+    max-width: 600px !important;
+  }
+  .lrpd1 .flexible {
+    width: auto !important;
+  }
+  .body {
+    padding-left: 10px !important;
+    padding-right: 10px !important
+  }
+  .banner_logo {
+    width: 202px !important;
+  }
+  #columndiv .inner {
+    padding-top: 4px !important;
+  }
+  .logo_holder_container {
+    padding: 24px 13px 18px 10px !important;
+  }
+  .bigger_wrapper_body {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+   .bigger_wrapper_body_3msg {
+    padding-left: 25px !important;
+    padding-right: 0px !important;
+  }
+  .bigger_wrapper_body_3msg .bottom_link_footer_td {
+    padding-right:25px !important;
+  }
+  .space_3msg{
+    padding-left:0px !important;
+  }
+  .pad_right25{
+    padding-right:25px !important;
+  }
+  .bullet_td {
+    padding-left: 0px !important;
+  }
+  .btm_pad {
+    padding-bottom: 17px !important;
+  }
+  .body_img {
+    width: 100% !important;
+    display: none !important;
+  }
+  .mobile_img {
+    width: 100% !important;
+    display: block !important;
+  }
+  .bottom_icons {
+    padding-top: 2px !important;
+  }
+  .bottom_icons .text_wrapper_inner_td {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .contents {
+    display: block !important;
+    width: 100% !important;
+	height: 39px !important;
+   
+  }
+  .macro_wrapper .para1 {
+    padding-right: 0px !important;
+  }
+  .para1{
+    width: 92% !important;
+  }
+  .footer_pad {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .contents .text {
+    min-width: 18px;
+    padding-right: 8px !important;
+  }
+  .contents td {
+    height: auto;
+  }
+  .headline {
+    font-size:24px !important; 
+    line-height:32px !important;
+  }
+  .outer_cover2 {
+    padding-top: 6px !important;
+  }
+  .footer_wrapper_td, .social_icons_container {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+  .two_col_td {
+    display: block;
+    width: 100% !important;
+  }
+  .split_mobile {
+    display: block;
+    width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-bottom: 8px !important;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+  .split_mobile2 {
+    display: block;
+    width: 100% !important;
+    padding-left: 24px !important;
+    padding-right: 20px !important;
+    text-align: left !important;
+    box-sizing: border-box;
+  }
+  .grey_section {
+    padding-top: 20px !important;
+    padding-bottom: 23px !important;
+  }
+  .grey_td_head {
+    padding-bottom: 12px !important;
+  }
+  .grey_section .split_mobile td {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+  .grey_section .split_mobile td img {
+    text-align: left !important;
+  }
+  .two_link_td, .two_link_td2 {
+    width: 100% !important;
+    display: block !important;
+  }
+  .two_link_td2 .body_link_tbl_td {
+    padding-left: 0 !important;
+    padding-top: 12px !important;
+  }
+  .bullet_table {
+    width: 100%  !important;
+    display: block  !important;
+  }
+  .headline_3msg{
+       padding-top:20px !important;
+  }
+  .em3_cta_sec .docs_link {
+      display: inline-block;
+      margin-top: 18px;
+      clear: both;
+  }
+  .sales_card_wrapper {
+    width: 100%  !important;
+    display: block  !important;
+  }
+  .img1{
+    width:8% !important;
+  }
+  
+  .sales_card_wrapper .para1 {
+    width: 100%  !important;
+    display: block  !important;
+    padding-top: 25px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .sales_card_em3 {
+    padding-right: 25px !important;
+  }
+}
+    
+    @media screen and (min-width:414px){
+      #logo_above_space {
+    padding: 22px 22px 18px 29px !important;
+}
+    }
+
+@media screen and (min-width: 812px) and (max-width: 812px),
+screen and (min-width: 736px) and (max-width: 736px),
+screen and (min-width: 667px) and (max-width: 667px),
+screen and (min-width: 568px) and (max-width: 568px),
+screen and (min-width: 414px) and (max-width: 414px),
+screen and (min-width: 375px) and (max-width: 375px),
+screen and (min-width: 320px) and (max-width: 320px) {
+  .body {
+    min-width: 100vw !important;
+  }
+}
+
+@media screen yahoo {
+  .yahooHide {
+    display:none !important;
+    font-size:0px !important;
+    line-height:0 !important;
+    height:0px !important;
+    max-height:0px !important;
+    overflow:hidden !important;
+  }
+}
+
+
+    
+
+
+
+
+  <img alt="">
+         <div>
+           <div>Check out top tips and resources for Cloud Storage.</div>
+      
+	<table>
+ 
+  <tr>
+            <td>
+
+                <table>
+            <tr>
+              <td>
+                
+                <div>
+                      <table>
+                              <tr>
+                                  <td>
+                                      <table>
+                                          <tr> 
+                                            <td>
+                                               <img alt="Google Cloud">
+                                            </td>
+                                          </tr>
+                                      </table>
+                                  </td>
+                              </tr>
+                      </table>
+               </div>
+                
+               <div>
+              <table>
+                  <tr>
+                      <td>
+                         <table>
+                             <tr>
+                                <td>
+                                   <table>
+                                        <tr>
+                                            <td>
+                                            <a>Go to your Console</a>
+                                            </td>
+                                          <td>
+                                            <table>
+                                                  <tr>
+                                                    
+                                                    
+                                                    <td>
+													
+                                                        <a><img alt=""></a>
+                                                    </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                   </td>
+                                 </tr>
+                               </table>
+                        </td>
+                      </tr>
+                    </table>
+                </div>
+                
+            </td>
+         </tr>
+       </table>
+    </td>
+  </tr>
+ 
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <table>
+                  <tr>
+                    <td>
+                     <table>
+                        <tr>
+                           <td>Get up and running with <span>Cloud Storage.</span>
+                           </td>
+                        </tr>
+                       
+                       <tr>
+                           <td>Explore resources to help set you up for success with <span>Cloud Storage.</span>
+                           </td>
+                        </tr>
+                     </table>
+                      </td>
+                  </tr>
+<tr>
+          <td>Build your Cloud Storage skills with a broad range of options. You can:
+          </td>
+</tr>
+
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <img height="">
+            </td>
+            <td>
+               <table>
+
+
+<tr>
+          <td>Explore documentation
+          </td>
+</tr>
+
+                  
+<tr>
+          <td>Find <a>technical documentation</a>, from foundational concepts to quickstarts, to get key insights and learn best practices.
+          </td>
+</tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <img height="">
+            </td>
+            <td>
+               <table>
+
+
+<tr>
+          <td>Take a tutorial
+          </td>
+</tr>
+
+                  
+<tr>
+          <td>Get started with guided, step-by-step tutorials like <a>Cloud Storage: Qwik Start - Console</a> to gain hands-on experience.
+          </td>
+</tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <img height="">
+            </td>
+            <td>
+               <table>
+
+
+<tr>
+          <td>Watch a video
+          </td>
+</tr>
+
+                  
+<tr>
+          <td>Check out the <a>Cloud Storage Bytes video series</a> hosted by Developer Advocate Jenny Brown to learn how you can get the most out of <span>Cloud Storage.</span>
+          </td>
+</tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<tr>
+   <td>
+      <table>
+         <tr>
+            <td>
+               <img height="">
+            </td>
+            <td>
+               <table>
+
+
+<tr>
+          <td>Connect with the Cloud Storage community
+          </td>
+</tr>
+
+                  
+<tr>
+          <td><a>Chat with Cloud Storage users and experts</a> to ask questions, discuss projects, and get support.
+          </td>
+</tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+                 
+                 
+                 
+                
+             
+                 
+<tr>
+          <td>See you in the cloud,
+          </td>
+</tr>
+
+<tr>
+          <td>The Google Cloud Team
+          </td>
+</tr>
+
+<tr>
+   <td>
+
+ 
+<table>
+ 
+  <tr>
+     <td>
+        <table>
+      
+    <tr>
+       <td>
+         <table>
+            <tr>
+              <td>
+     
+     <table>
+       <tr>
+           <td>
+             <a><img></a>
+            </td>
+            <td>
+ <a>Support</a>
+           </td>
+     </tr>
+   </table>
+    
+     <table>
+       <tr>
+           <td>
+ <a><img></a>
+           </td>
+           <td>
+ <a>FAQ</a>
+           </td>
+       </tr>
+   </table>
+     
+                
+     
+     <table>
+       <tr>
+          <td>
+ <a><img></a>
+          </td>
+          <td>
+ <a>Documentation</a>
+          </td>
+      </tr>
+    </table>
+     
+     <table>
+       <tr>
+           <td>
+ <a><img></a>
+            </td>
+            <td>
+ <a>Tutorials</a>
+             </td>
+       </tr>
+     </table>
+     
+     </td>
+     </tr>
+     </table>
+         </td>
+         </tr>
+      
+     </table>
+     </td>
+     </tr>
+</table>
+</td>
+</tr>
+               </table>
+            </td>
+         </tr>
+      </table>
+   </td>
+</tr>
+ 
+<tr>
+  <td>
+     <table>
+        <tr>
+            <td> 
+               <img alt="Google Cloud">
+             </td>
+       </tr>
+       <tr>
+                     <td> 
+                            <a>Google LLC 1600 Amphitheatre Parkway, Mountain View, CA 94043</a>
+                       <br />
+                       <br />
+                       This email was sent to <span>imyamanhitelnet@gmail.com</span> because you indicated that you’d like to receive feature announcements about Google Cloud. If you don’t want to receive such emails in the future, please unsubscribe <a>here</a>. You can also change your preferences on your account’s profile page by logging in at <a>console.cloud.google.com</a> 
+                              </td>
+                    </tr>
+   </table>
+ </td>
+</tr>
+<tr>
+                      <td> 
+                        <table> 
+                          <tr>
+                            
+                             
+                            <td><a><img alt="Google Cloud Blog"></a></td> 
+                             <td>   </td>
+                            <td><a><img></a></td>
+                             <td>   </td>
+                            <td><a><img></a></td>
+                             <td>   </td>
+                             <td><a><img></a></td>
+							 <td>   </td>
+							 <td><a><img></a></td>
+                          </tr>
+                        </table>
+                       </td>
+                    </tr>
+
+ 
+</table>
+
+</div>
+
+
+ 
+
+]]>
+        
+    </content>
+</entry>
 
 <entry>
     <title>Sangyong Gwak invited you as an owner on the project &apos;sys5&apos;</title>
@@ -1957,30 +2584,6 @@ You&#39;ve received this transactional email because your site is listed in Goog
     
     <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
         <![CDATA[<img><div><div><div><img alt="Firebase branding logo"></div></div> <table><tr><td><div>weblog-683a9</div><div>[Firebase] Your unused Realtime Database 'weblog-683a9' will be deactivated in 1 day(s)</div></td><td><img alt=""></td><tr></tr></tr></table><div><div><div><table><tr><td><img alt=""></td><td><span>We've detected the following issue(s) with your Security Rules:<ul><li>any user can read your entire database</li><li>any user can write to your entire database</li></ul></span></td></tr></table></div></div><div>Your Security Rules allow anyone on the internet to read or write to your database. Without strong Security Rules your data is vulnerable to attackers stealing, modifying, or deleting data as well as performing costly operations.<br /><br />Your database has not received traffic for almost 6 months and has insecure rules; it will be automatically deactivated in 1 days unless your database receives traffic or you update your Security Rules. You won't lose any data, and can restore the database from the console at any time.<br /><br />If you are not currently using the database, feel free to disregard this email—no action is required on your part. You may be receiving this email if you created your Firebase project in 2017 or prior, and as a result you may have an empty auto-provisioned Realtime Database instance. Again, if you are not currently using the database, feel free to disregard this email.</div></div><div></div><div><div><div>Pending Deactivation</div></div><div>weblog-683a9</div><div><div><div>Database</div><div>weblog-683a9</div></div></div><div><div><span><a>Learn more</a></span><span><a>Edit rules</a></span></div></div></div><div></div><div><div><div>If you have questions or feel you've received this message in error, please contact <a>Firebase support</a></div><div>Thanks for using Firebase!</div></div></div><div><div>This email is notifying you about important service information regarding your Firebase project</div><div><div>Manage your <a>Alert settings</a></div></div></div><div><table><tr><td><img alt=""></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
-]]>
-        
-    </content>
-</entry>
-
-<entry>
-    <title>Your unused Realtime Database &apos;weblog-683a9&apos; will be deactivated in 14 day(s)</title>
-    <link rel="alternate" type="text/html" href="https://weblog.youre.space/imyaman/2021/08/005230.html" />
-    <id>tag:weblog.youre.space,2021:/imyaman//12.5230</id>
-
-    <published>2021-08-14T02:37:54Z</published>
-    <updated>2021-08-14T02:37:54Z</updated>
-
-    <summary> weblog-683a9[Firebase] Your unused Realtime Database &apos;weblog-683a9&apos; will be deactivated in 14 day(s)We&apos;ve detected the following issue(s) with your Security Rules:any user can read your entire databaseany user can write to your entire databaseYour Security Rules allow anyone on the...</summary>
-    <author>
-        <name>Sangyong Gwak</name>
-        <uri>https://weblog.youre.space/vergence/</uri>
-    </author>
-    
-        <category term="Firebase" scheme="http://www.sixapart.com/ns/types#category" />
-    
-    
-    <content type="html" xml:lang="en-us" xml:base="https://weblog.youre.space/imyaman/">
-        <![CDATA[<div><div><img src="https://www.gstatic.com/mobilesdk/190425_mobilesdk/firebase_lockup.png" alt="Firebase branding logo"></div> <table><tr><td><div>weblog-683a9</div><div>[Firebase] Your unused Realtime Database 'weblog-683a9' will be deactivated in 14 day(s)</div></td><td><img src="https://www.gstatic.com/mobilesdk/180621_mobilesdk/firebase_database_white_24@2x.png" alt=""></td><tr></tr></tr></table><div><div><div><table><tr><td><img src="https://www.gstatic.com/mobilesdk/171101_mobilesdk/images/caution_orange_24dp_@2x.png" alt=""></td><td><span>We've detected the following issue(s) with your Security Rules:<ul><li>any user can read your entire database</li><li>any user can write to your entire database</li></ul></span></td></tr></table></div></div><div>Your Security Rules allow anyone on the internet to read or write to your database. Without strong Security Rules your data is vulnerable to attackers stealing, modifying, or deleting data as well as performing costly operations.<br /><br />Your database has not received traffic for almost 6 months and has insecure rules; it will be automatically deactivated in 14 days unless your database receives traffic or you update your Security Rules. You won't lose any data, and can restore the database from the console at any time.<br /><br />If you are not currently using the database, feel free to disregard this email—no action is required on your part. You may be receiving this email if you created your Firebase project in 2017 or prior, and as a result you may have an empty auto-provisioned Realtime Database instance. Again, if you are not currently using the database, feel free to disregard this email.</div></div><div></div><div><div><div>Pending Deactivation</div></div><div>weblog-683a9</div><div><div><div>Database</div><div>weblog-683a9</div></div></div><div><div><span><a href="https://firebase.google.com/docs/rules/insecure-rules#database">Learn more</a></span><span><a href="https://console.firebase.google.com/project/weblog-683a9/database/weblog-683a9/rules">Edit rules</a></span></div></div></div><div></div><div><div><div>If you have questions or feel you've received this message in error, please contact <a href="https://firebase.google.com/support/">Firebase support</a></div><div>Thanks for using Firebase!</div></div></div><div><div>This email is notifying you about important service information regarding your Firebase project</div><div><div>Manage your <a href="https://console.firebase.google.com/subscriptions/project/weblog-683a9">Alert settings</a></div></div></div><div><table><tr><td><img src="https://www.gstatic.com/images/branding/googlelogo/2x/googlelogo_light_color_74x24dp.png" alt=""></td><td><div><a>Google LLC<br />1600 Amphitheatre Pkwy<br />Mountain View, CA, 94043 USA</a></div></td></tr></table></div></div>
 ]]>
         
     </content>
