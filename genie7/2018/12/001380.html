@@ -445,29 +445,6 @@ s.setAttribute('data-timestamp', +new Date());
   <p class="license">&copy; Copyright 2021.</p>
   <p class="poweredby">Powered by <a href="http://www.movabletype.org/">Movable Type</a></p>
 
-<script type="text/javascript" src="http://adddn.adotsolution.com/contents/sdk/js/tad.min.js"></script>
-<div class="main_banner" id="main_banner">
-  <script type="text/javascript">
-
-var tad_slot2_conf = {
-  slotNo: 2,
-  targetId: 'main_banner',
-  clientId: 'MX000603F',
-  newWindow: false,
-  test: false,
-  errorCallback: function(errorCode) {
-    if (errorCode == 0) {
-      // No Ad
-    } else if(errorCode == 1) {
-      // Frequency Over
-    }
-  }
-};
-TadSdk.AdView.init(tad_slot2_conf);    
-
-  </script>
-</div>
-
 </div>
 
           </div>
@@ -477,33 +454,23 @@ TadSdk.AdView.init(tad_slot2_conf);
     <script src="/mt-static/jquery/jquery.min.js"></script>
     <script src="https://weblog.youre.space/genie7/mt-theme-scale2.js"></script>
 
-<center>
+<script type="text/javascript" src="//scr.nsmartad.com/admixer/v3/admixer.js"></script>
 <script type="text/javascript">
-  ( function() {
-    if (window.CHITIKA === undefined) { window.CHITIKA = { 'units' : [] }; };
-    var unit = {"calltype":"async[2]","publisher":"imyaman","width":320,"height":50,"sid":"genie7"};
-    var placement_id = window.CHITIKA.units.length;
-    window.CHITIKA.units.push(unit);
-    document.write('<div id="chitikaAdBlock-' + placement_id + '"></div>');
-}());
+  new admixer_ad({
+    media_key : "zp1v4th5",
+    adunit :[
+      {
+        adunit_id : "20405221",
+        display_id : "display_admixer_20405221"
+      }
+    ],
+    coppa : 0,
+    admixer_log : true,
+    admixer_log_display_id : "display_admixer_log"
+    });
 </script>
-<script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
-</center>
-
-<center>
-<div id="admixer_display"></div>
-</center>
-<script type="text/javascript" src="//scr.nsmartad.com/admixer/admixer.js"></script>
-<script type="text/javascript">
-    new admixer_ad({
-    admixer_key:"zp1v4th5",
-    display_id:"admixer_display",
-    adsense_publisher_key:"ca-mb-pub-0000000000000000", //AdSense 사용시에만 필요
-    ad_change:true,  //default : true
-    test : false,//default : false
-    test_display_id : "log"
-});
-</script>
+<div id="display_admixer_20405221"></div>
+<div id="display_admixer_log"></div>
 
 </body>
 </html>
